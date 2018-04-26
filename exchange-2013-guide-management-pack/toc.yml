@@ -1,0 +1,19 @@
+- name: Exchange Server 2013 관리 팩 가이드
+  href: exchange-server-2013-management-pack-guide.md
+  items:
+  - name: Exchange Server 2013 관리 팩 가져오기
+    href: import-the-exchange-server-2013-management-pack.md
+  - name: Exchange Server 2013 관리 팩 시작
+    href: getting-started-with-exchange-server-2013-management-pack.md
+  - name: 문제 해결을 위해 Exchange Server 2013 관리 팩 사용
+    href: using-the-exchange-server-2013-management-pack-for-troubleshooting.md
+  - name: 배포와 관련된 절차
+    href: procedures-related-to-deployment.md
+  - name: Procedures related to post-deployment operation
+    href: procedures-related-to-post-deployment-operation.md
+  - name: Exchange Server 2013 관리 팩에서 시스템 상태를 보고하는 방법 이해
+    href: understanding-how-exchange-server-2013-management-pack-reports-system-health.md
+  - name: 'Appendix A: Exchange health sets'
+    href: appendix-a-exchange-health-sets.md
+  - name: '부록 B: 추가 리소스'
+    href: appendix-b-additional-resources.md
