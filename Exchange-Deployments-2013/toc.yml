@@ -1,0 +1,93 @@
+- name: Exchange Server 2013 하이브리드 배포
+  href: exchange-server-hybrid-deployments-exchange-2013-help.md
+  items:
+  - name: 하이브리드 구성 마법사
+    href: hybrid-configuration-wizard-exchange-2013-help.md
+  - name: 하이브리드 구성 마법사 FAQ
+    href: hybrid-configuration-wizard-faqs-exchange-2013-help.md
+  - name: 하이브리드 배포 필수 구성 요소
+    href: hybrid-deployment-prerequisites-exchange-2013-help.md
+  - name: 하이브리드 배포를 위한 인증서 요구 사항
+    href: certificate-requirements-for-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포의 전송 옵션
+    href: transport-options-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포의 전송 라우팅
+    href: transport-routing-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포에서 하이브리드 관리
+    href: hybrid-management-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포에서의 공유 약속 있음/없음
+    href: shared-free-busy-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포에서의 서버 역할
+    href: server-roles-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포의 IRM
+    href: irm-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포의 사용 권한
+    href: permissions-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: 하이브리드 배포의 Edge 전송 서버
+    href: edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md
+  - name: 하이브리드 배포 SSO(Single Sign-On)
+    href: single-sign-on-with-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 하이브리드 배포를 사용한 Exchange ActiveSync 장치 설정
+    href: exchange-activesync-device-settings-with-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: 하이브리드 마이그레이션의 성능 요인 및 모범 사례
+    href: performance-factors-and-best-practices-for-hybrid-migrations-exchange-2013-help.md
+  - name: 하이브리드 배포에서 온-프레미스 Exchange 서버를 제거하는 경우 및 방법
+    href: how-and-when-to-decommission-your-on-premises-exchange-servers-in-a-hybrid-deployment-exchange-2013-help.md
+  - name: 하이브리드 배포 절차
+    href: hybrid-deployment-procedures-exchange-2013-help.md
+    items:
+    - name: 하이브리드 구성 마법사를 사용하여 하이브리드 배포 만들기
+      href: create-a-hybrid-deployment-with-the-hybrid-configuration-wizard-exchange-2013-help.md
+    - name: 하이브리드 배포에서 온-프레미스 및 Exchange Online 조직 간의 사서함 이동
+      href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
+    - name: 하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성
+      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: 하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성
+      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: 하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성
+      href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: 하이브리드 배포에서 사용 권한을 위임 된 사서함을 지원 하도록 Exchange 구성
+      href: configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md
+    - name: 비즈니스용 OneDrive 및 2016 Exchange 온-프레미스로 최신 첨부 파일 구성
+      href: configure-document-collaboration-with-onedrive-for-business-and-exchange-2016-on-premises-exchange-2013-help.md
+    - name: 온-프레미스 Exchange 하이브리드로 Office 365의 그룹을 구성합니다.
+      href: configure-office-365-groups-with-on-premises-exchange-hybrid-exchange-2013-help.md
+    - name: 하이브리드 배포에서 온-프레미스 기본 사서함에 대해 클라우드 기반 보관 파일 만들기
+      href: create-a-cloud-based-archive-for-an-on-premises-primary-mailbox-in-an-exchange-hybrid-deployment-exchange-online-help.md
+    - name: Office 365 Hybrid용 Outlook Web App URL을 단순화
+      href: simplify-the-outlook-web-app-url-for-office-365-hybrid-exchange-2013-help.md
+    - name: 하이브리드 배포 문제 해결
+      href: troubleshoot-a-hybrid-deployment-exchange-2013-help.md
+  - name: Exchange 2013 및 Exchange 2007을 사용한 하이브리드 배포
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2007-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2007 하이브리드 배포에서의 서버 역할
+      href: server-roles-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 하이브리드 배포에서 하이브리드 관리
+      href: hybrid-management-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 하이브리드 배포의 Edge 전송 서버
+      href: edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 하이브리드 배포에서의 전송 옵션
+      href: transport-options-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 하이브리드 배포의 전송 라우팅
+      href: transport-routing-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 2013 및 Exchange 2007을 사용한 하이브리드 배포
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2010-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2010 하이브리드 배포에서의 서버 역할
+      href: server-roles-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 하이브리드 배포에서 하이브리드 관리
+      href: hybrid-management-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 하이브리드 배포의 Edge 전송 서버
+      href: edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 하이브리드 배포의 전송 옵션
+      href: transport-options-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 하이브리드 배포의 전송 라우팅
+      href: transport-routing-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 설명서에 대 한
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 장애가 있는 사용자를 위한 내게 필요한 옵션
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: 타사 저작권 표시
+      href: third-party-copyright-notices-exchange-2013-help.md
