@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-01-27_
+_<strong>마지막으로 수정된 항목:</strong>2016-01-27_
 
 사서함이 Exchange 온-프레미스 조직에서 Office 365로 이동한 경우 Exchange ActiveSync 장치가 자동으로 다시 구성됩니다. Exchange ActiveSync가 Office 365에서 새 사서함 위치를 찾아 Office 365에 직접 전달하도록 해당 구성을 업데이트합니다. Exchange ActiveSync 장치는 Office 365로 리디렉션된 후 온-프레미스 Exchange 서버에 연결을 시도하지 않습니다. 아래를 비롯한 몇 가지 예외적인 경우 외에는 사용자가 해당 장치를 수동으로 설정하지 않아도 메일이 정상적으로 작동합니다.
 

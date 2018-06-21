@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-04-29_
+_<strong>마지막으로 수정된 항목:</strong>2016-04-29_
 
 하이브리드 구성 마법사를 사용하여 Exchange에서 하이브리드 배포를 구성하면 하이브리드 배포에서 문제가 발생할 가능성이 최소화됩니다. 그러나 하이브리드 구성 마법사의 범위를 벗어나는 몇 가지 일반적인 영역에서 잘못 구성된 경우 하이브리드 배포에서 문제가 발생할 수 있습니다. 이 항목에서는 문제가 발생할 수 있는 다음과 같은 일반적인 영역을 알아보고 문제를 확인하거나 해결하기 위한 기본 단계를 간략하게 설명합니다.
 

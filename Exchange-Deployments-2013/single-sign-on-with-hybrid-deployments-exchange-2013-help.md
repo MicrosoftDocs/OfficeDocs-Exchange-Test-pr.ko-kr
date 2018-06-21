@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-01-29_
+_<strong>마지막으로 수정된 항목:</strong>2016-01-29_
 
 Single Sign-On을 사용하면 사용자는 단일 사용자 이름과 암호로 온-프레미스 조직과 Office 365 조직 모두에 액세스할 수 있습니다. Single Sign-On은 사용자에게 익숙한 로그온 환경을 제공하고 이를 통해 관리자는 온-프레미스 Active Directory 관리 도구를 사용하여 Exchange Online 조직 사서함에 대한 계정 정책을 쉽게 제어할 수 있습니다. Single Sign-On을 사용하여 하이브리드 배포를 구성하지 않아도 되는 경우라도 수행하는 것이 좋습니다. Single Sign-On을 수행하지 않으면 사용자가 온-프레미스 조직 및 Office 365에 대한 서로 다른 두 개의 자격 증명을 기억해야 합니다. Single Sign-On에 대한 기타 몇 가지 장점은 다음과 같습니다.
 

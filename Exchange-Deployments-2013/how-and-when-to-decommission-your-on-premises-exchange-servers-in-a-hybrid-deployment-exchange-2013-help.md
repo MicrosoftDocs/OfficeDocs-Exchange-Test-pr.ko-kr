@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-07-27_
+_<strong>마지막으로 수정된 항목:</strong>2017-07-27_
 
 Exchange 하이브리드 배포에서 전체 클라우드 구현으로 이동할 준비가 되면 이 문서를 읽어보세요.
 

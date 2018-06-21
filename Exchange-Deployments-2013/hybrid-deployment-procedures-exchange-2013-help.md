@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-06-14_
+_<strong>마지막으로 수정된 항목:</strong>2017-06-14_
 
 하이브리드 구성 마법사의 최신 개선 사항 덕분에 하이브리드 배포의 구성 및 관리가 과거 어느 때보다 쉬워졌습니다. 장기적인 동시 사용을 위해서든 클라우드 마이그레이션 전략의 일부로든 Exchange 온-프레미스 및 Exchange Online 조직을 연결하려는 경우, 하이브리드 배포를 구성하는 것이 Exchange 조직의 첫 번째 단계입니다.
 

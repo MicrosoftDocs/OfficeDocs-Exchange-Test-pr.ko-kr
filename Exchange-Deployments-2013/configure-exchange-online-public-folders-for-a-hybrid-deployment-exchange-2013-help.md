@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_<strong>적용 대상:</strong>Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-15_
 
 **요약:** 사용 하도록 설정 하는 것에 대 한 지침 온-프레미스 Exchange 2013 사용자가 Exchange Online의 공용 폴더에 액세스할 수 있습니다.
 

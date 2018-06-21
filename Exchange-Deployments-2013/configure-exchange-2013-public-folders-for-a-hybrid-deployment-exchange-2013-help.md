@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 **요약:** 온-프레미스 Exchange 2013 환경에서 공용 폴더에 액세스 하려면 Exchange Online 사용자를 사용 하도록 설정 하는 것에 대 한 지침입니다.
 

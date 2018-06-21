@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-07-29_
+_<strong>마지막으로 수정된 항목:</strong>2016-07-29_
 
 이 항목에서는 인터넷을 통해 주고받는 인바운드 메시지 및 아웃바운드 메시지용 라우팅 옵션에 대해 설명합니다.
 

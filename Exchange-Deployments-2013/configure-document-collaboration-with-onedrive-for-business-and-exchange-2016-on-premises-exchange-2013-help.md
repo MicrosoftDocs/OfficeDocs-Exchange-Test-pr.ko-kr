@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 **요약:** 온-프레미스 Exchange Server 2016 사용자가 하이브리드 구성에서 비즈니스용 OneDrive 및 SharePoint Online을 통해 문서 공동 작업을 수행하도록 하는 방법입니다.
 
