@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-04-29_
+_<strong>마지막으로 수정된 항목:</strong>2016-04-29_
 
 온-프레미스 및 Exchange Online 조직에 있는 사용자 간의 약속 있음/없음(일정 약속 있음/없음) 정보 공유는 하이브리드 배포의 주요 이점 중 하나입니다. 두 조직의 사용자가 실제로 동일한 조직에 있는 것처럼 서로의 일정을 볼 수 있습니다. 이 기능 덕분에 효율적으로 쉽게 모임 및 리소스를 예약할 수 있습니다.
 

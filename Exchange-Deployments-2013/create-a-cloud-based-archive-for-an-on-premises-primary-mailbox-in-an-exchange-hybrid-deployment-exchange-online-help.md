@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-01-20_
+_<strong>마지막으로 수정된 항목:</strong>2017-01-20_
 
 Exchange 하이브리드 배포에서는 Exchange Online의 클라우드 기반 보관 사서함을 사용하여 온-프레미스 기본 사서함을 구성할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-10-02_
+_<strong>마지막으로 수정된 항목:</strong>2017-10-02_
 
 Exchange 기반 하이브리드 배포에서는 온-프레미스 Exchange 사서함을 Exchange Online 조직으로 이동하거나 Exchange Online 사서함을 Exchange 조직으로 이동할 수 있습니다. 온-프레미스와 Exchange Online 조직 간에 사서함을 이동할 때 마이그레이션 일괄 처리를 사용하여 원격 사서함 이동 요청을 수행할 수 있습니다. 이 방법을 사용하면 새 사용자 사서함을 만들고 사용자 정보를 가져오는 대신 기존 사서함을 이동할 수 있습니다. 이 방법은 클라우드로의 전체 Exchange 마이그레이션의 일부로 온-프레미스 Exchange 조직에서 Exchange Online으로 다른 사용자 사서함을 마이그레이션하는 것과 다릅니다. 이 항목에서 설명하는 사서함 이동은 온-프레미스 Exchange와 Exchange Online 조직 간의 장기적인 공존 관계에서 Exchange를 관리하는 작업에 속합니다.
 
@@ -49,7 +49,7 @@ Exchange Online으로늬 온-프레미스 Exchange 조직 마이그레이션에 
 
 Exchange 하이브리드 배포에서 온보드 및 오프보드 원격 이동 마이그레이션을 수행하기 전에 Exchange 원격 마이그레이션 끝점을 만드는 것이 좋습니다. 마이그레이션 끝점에는 MRS 프록시 서비스를 실행하는 온-프레미스 Exchange 서버에 대한 연결 설정이 포함됩니다. 이 설정은 Exchange Online과의 원격 이동 마이그레이션을 수행하는 데 필요합니다.
 
-단계별 절차는 [마이그레이션 끝점 만들기](https://technet.microsoft.com/ko-kr/library/jj874458\(v=exchg.150\))를 참조하세요.
+단계별 절차는 마이그레이션 끝점 만들기를 참조하세요.
 
 ## 2단계: MRSProxy 서비스 사용
 

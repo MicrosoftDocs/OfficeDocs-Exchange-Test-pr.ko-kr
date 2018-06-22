@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**마지막으로 수정된 항목:**2016-11-11_
+_<strong>마지막으로 수정된 항목:</strong>2016-11-11_
 
 하이브리드 환경에서 클라우드 사서함 사용자의 웹에서 Outlook(Outlook Web App)용 URL을 구성하는 방법을 알아보세요.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 이 항목에서는 Exchange 하이브리드 배포 구성 프로세스의 개요, 사용 가능한 하이브리드 배포 기능과 옵션, 그리고 하이브리드 배포의 구성과 업데이트 모두에 필요한 핵심 작업을 실행하는 하이브리드 구성 엔진에 대해 살펴봅니다.
 

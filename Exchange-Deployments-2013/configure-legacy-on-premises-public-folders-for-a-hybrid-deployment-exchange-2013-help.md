@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-05-22_
+_<strong>마지막으로 수정된 항목:</strong>2018-05-22_
 
 **요약:** 이 문서의 단계를 사용하여 Office 365dhk Exchange 2007 또는 Exchange 2010 온-프레미스 배포 간에 공용 폴더를 동기화할 수 있습니다.
 

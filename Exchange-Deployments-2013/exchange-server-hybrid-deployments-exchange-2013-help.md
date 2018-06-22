@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-04-16_
+_<strong>마지막으로 수정된 항목:</strong>2018-04-16_
 
 **요약:** Exchange 하이브리드 배포를 계획하기 위해 알아야 할 사항입니다.
 

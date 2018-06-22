@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 이 항목은 진행 중입니다.  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-02-16_
+_<strong>마지막으로 수정된 항목:</strong>2017-02-16_
 
 Exchange 2010 조직에서 하이브리드 배포를 구성할 때는 기존 Exchange 2007 조직에서 클라이언트 액세스 서버 역할 및 사서함 서버 역할과 함께 Exchange 2010 서버를 하나 이상 설치해야 합니다. Exchange 2013 클라이언트 액세스 서버 및 사서함 서버는 기존 Exchange 2010 온-프레미스 조직과 Exchange Online 조직 간의 통신을 조정합니다. 이 통신에는 온-프레미스 조직과 Exchange Online 조직 사이의 메시지 전송 및 메시징 기능이 포함됩니다.
 
