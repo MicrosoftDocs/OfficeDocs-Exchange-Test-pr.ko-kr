@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 Microsoft는 하이브리드 배포의 구성을 단순화하고, 하이브리드 구성의 유연성을 높이고, 항상 최신 버전의 환경을 실행할 수 있도록 하는 새로운 하이브리드 구성 마법사를 배포했습니다. 이 버전의 하이브리드 마법사는 Exchange 2016 및 Exchange 2013 릴리스(누적 업데이트 10부터)에 기본적으로 제공되어 있지만 이전 Exchange 2013 CU(누적 업데이트) 또는 Exchange 2010 SP3(서비스 팩 3)를 실행하는 경우에도 새 마법사를 다운로드할 수 있습니다.
 

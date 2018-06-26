@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 이 항목은 진행 중입니다.  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 하이브리드 배포를 설정하면 기존 온-프레미스 Exchange Server 조직의 풍부한 기능과 관리 제어 능력을 클라우드로 확장할 수 있습니다. 하이브리드 배포는 또한 Exchange Online Archiving을 통해 온-프레미스 사서함에 대해 클라우드 기반 보관 솔루션을 지원하며, 온-프레미스 사서함을 Exchange Online으로 완전히 마이그레이션하기 위한 중간 단계 역할도 수행합니다.
 

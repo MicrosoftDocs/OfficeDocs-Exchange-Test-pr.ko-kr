@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 이 항목은 진행 중입니다.  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 Microsoft Exchange의 Edge 전송 서버는 조직의 온-프레미스 경계 네트워크에 배포됩니다. 이러한 서버는 인터넷 연결 메일 흐름을 처리하고 내부 네트워크의 Exchange 서버에 대한 SMTP 릴레이 및 스마트 호스트 역할을 하는 도메인에 가입하지 않은 컴퓨터입니다.
 

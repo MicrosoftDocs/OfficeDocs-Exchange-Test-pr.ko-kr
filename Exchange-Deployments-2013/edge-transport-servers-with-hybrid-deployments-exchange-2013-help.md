@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-04-16_
+_<strong>마지막으로 수정된 항목:</strong>2018-04-16_
 
 Edge 전송 서버 역할은 일반적으로 Exchange 조직의 경계 네트워크에 있는 컴퓨터에 배포되며 조직의 공격 영역을 최소화하도록 설계되었습니다. Edge 전송 서버 역할은 조직의 내부 온-프레미스 Exchange 서버에 대한 SMTP 릴레이 및 스마트 호스트 서비스를 제공하는 모든 인터넷 연결 메일 흐름을 처리합니다.
 

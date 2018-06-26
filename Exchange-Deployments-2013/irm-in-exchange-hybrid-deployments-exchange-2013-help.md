@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 **요약:** Exchange 하이브리드 환경에서 IRM이 작동하는 방법 및 Exchange Online과 온-프레미스 Exchange 서버 간에 작동하도록 IRM을 구성하는 방법입니다.
 
