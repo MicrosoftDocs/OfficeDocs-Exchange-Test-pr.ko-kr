@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-16_
+_**마지막으로 수정된 항목:** 2012-11-16_
 
 활성 사서함 및 연결이 끊긴된 사서함을 영구적으로 삭제할 때 Exchange 사서함 데이터베이스에서 모든 사서함 내용을 비워집니다 하 고 데이터 손실은 영구적입니다. 활성 사서함을 영구적으로 삭제 하는 경우 연결 된 Active Directory 사용자 계정이 삭제 됩니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM(통합 메시징)을 사용할 수 있는 사용자를 다른 UM 다이얼 플랜으로 전환하거나 해당 사용자와 연결된 다이얼 플랜을 변경해야 할 경우가 있습니다. 예를 들어 UM 사용 가능 사용자의 다이얼 플랜을 내선 번호에서 SIP URI로 변경해야 할 경우가 있습니다.
 

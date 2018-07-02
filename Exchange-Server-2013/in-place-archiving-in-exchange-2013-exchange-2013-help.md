@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 *원본 위치 보관*을 사용하면 개인 저장소(.pst) 파일을 사용하지 않아도 사용자가 MicrosoftOutlook 2010 이상 버전 및 Microsoft OfficeOutlook Web App에서 액세스할 수 있는 *보관 사서함*에 메시지를 저장할 수 있으므로 조직의 메시징 데이터를 다시 제어할 수 있습니다.
 

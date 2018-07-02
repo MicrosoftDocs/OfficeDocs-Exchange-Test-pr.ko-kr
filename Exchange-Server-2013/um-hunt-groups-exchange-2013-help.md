@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-18_
+_**마지막으로 수정된 항목:** 2013-02-18_
 
 전화 통신 헌트 그룹을 사용하면 단일 번호로 걸려 온 전화 통화를 여러 내선 번호 또는 전화 번호로 분배할 수 있습니다. UM(통합 메시징)에서 UM 헌트 그룹이란 전화 통신 헌트 그룹을 논리적으로 나타낸 것으로, UM IP 게이트웨이를 UM 다이얼 플랜에 연결합니다.
 

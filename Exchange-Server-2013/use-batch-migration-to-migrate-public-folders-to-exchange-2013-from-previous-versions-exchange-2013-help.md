@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-26_
+_**마지막으로 수정된 항목:** 2018-03-26_
 
 **요약**:이 문서는 Exchange 2007 또는 Exchange 2010에서 Exchange 2013 공용 폴더를 이동 하는 방법을 보여줍니다.
 

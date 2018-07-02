@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-19_
+_**마지막으로 수정된 항목:** 2012-11-19_
 
 이 항목에서는 Microsoft Exchange Server 2013에서 cmdlet 확장 에이전트를 사용하거나 사용하지 않도록 설정하고, 보고, 우선 순위를 변경하는 방법을 보여 줍니다. Exchange 2013의 cmdlet 확장 에이전트에 대한 자세한 내용은 [cmdlet 확장 에이전트](cmdlet-extension-agents-exchange-2013-help.md) 항목을 참조하십시오.
 

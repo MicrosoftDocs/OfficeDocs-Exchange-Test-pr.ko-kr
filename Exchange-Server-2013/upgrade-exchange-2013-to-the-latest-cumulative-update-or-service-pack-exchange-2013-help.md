@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-09-04_
+_**마지막으로 수정된 항목:** 2015-09-04_
 
 Microsoft Exchange Server 2013을 설치한 경우 최신 Exchange 2013 누적 업데이트 또는 서비스 팩으로 업그레이드할 수 있습니다. Exchange 2013 설치 마법사를 사용하여 현재 Exchange 2013 버전을 업그레이드할 수 있습니다. 최신 Exchange 2013 누적 업데이트 또는 서비스 팩에 대한 자세한 내용은 [Exchange 2013용 업데이트](updates-for-exchange-2013-exchange-2013-help.md)를 참조하세요. Exchange 2013에 대한 자세한 내용은 [Exchange 2013의 새로운 기능](what-s-new-in-exchange-2013-exchange-2013-help.md)를 참조하세요.
 

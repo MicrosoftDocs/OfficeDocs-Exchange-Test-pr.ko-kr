@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징)과 음성 메일 기능 및 UM과 음성 메일을 사용하도록 설정한 사용자의 구성 설정을 보거나 설정할 수 있습니다. 예를 들어 다음을 수행할 수 있습니다.
 

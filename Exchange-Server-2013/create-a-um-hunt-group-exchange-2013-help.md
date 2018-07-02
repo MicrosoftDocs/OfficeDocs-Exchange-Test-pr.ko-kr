@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-16_
+_**마지막으로 수정된 항목:** 2013-04-16_
 
 UM(통합 메시징) 헌트 그룹은 PBX(Private Branch eXchange) 또는 IP PBX 헌트 그룹을 논리적으로 나타낸 것입니다. UM 헌트 그룹은 UM IP 게이트웨이와 UM 다이얼 플랜 간의 연결 또는 링크 역할을 합니다.
 

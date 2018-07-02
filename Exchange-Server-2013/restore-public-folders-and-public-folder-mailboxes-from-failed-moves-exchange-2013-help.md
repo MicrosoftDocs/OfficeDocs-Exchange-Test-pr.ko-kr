@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-13_
+_**마지막으로 수정된 항목:** 2013-02-13_
 
 공용 폴더 또는 공용 폴더 사서함에 대한 이동 요청이 실패하는 경우 다음 조건이 적용되면 폴더 또는 사서함을 복원할 수 있습니다.
 

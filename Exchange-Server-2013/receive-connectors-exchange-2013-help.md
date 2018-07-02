@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 수신 커넥터는 Exchange 조직에 대한 인바운드 메시지의 흐름을 제어합니다. 수신 커넥터는 전송 서비스와 함께 Microsoft Exchange Server 2013을 실행 중인 컴퓨터나 클라이언트 액세스 서버의 프런트 엔드 서비스에서 구성됩니다. EAC(Exchange 관리 센터)나 Exchange 관리 셸에서 수신 커넥터를 만들 수 있습니다.
 

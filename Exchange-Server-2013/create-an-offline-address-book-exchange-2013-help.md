@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-24_
+_**마지막으로 수정된 항목:** 2015-04-24_
 
 Exchange Server 2013의 OAB(오프라인 주소록)는 Outlook 사용자가 서버와의 연결이 끊어진 동안에도 정보에 액세스할 수 있도록 하는 다운로드된 주소록 복사본입니다. Exchange 관리자는 오프라인으로 작업하는 사용자가 사용할 수 있는 주소록을 결정할 수 있으며 웹 기반 배포, 공용 폴더 배포 등의 주소록 배포 방법을 구성할 수도 있습니다.
 

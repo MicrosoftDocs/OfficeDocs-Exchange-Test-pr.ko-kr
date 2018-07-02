@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)을 배포하기 위해서는 기본적인 전화 통신 개념과 전화 통신 구성 요소에 대해 잘 알고 있어야 합니다. 기본적인 전화 통신 개념을 이해하면 UM을 Exchange 조직에 통합할 수 있습니다. 기본 개념과 구성 요소는 다음과 같습니다.
 

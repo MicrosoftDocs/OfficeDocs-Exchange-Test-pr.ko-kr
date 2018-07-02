@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-30_
+_**마지막으로 수정된 항목:** 2013-04-30_
 
 UM(통합 메시징) 자동 전화 교환을 만든 후 다양한 설정을 보거나 구성할 수 있습니다. 예를 들어 자동 전화 교환과 연결된 내선 번호를 추가, 제거 및 편집할 수 있습니다. 자동 전화 교환에 대해 ASR(자동 음성 인식)을 사용하거나 사용하지 않도록 설정하고 업무 시간 및 업무 시간 외 인사말을 변경할 수도 있습니다.
 

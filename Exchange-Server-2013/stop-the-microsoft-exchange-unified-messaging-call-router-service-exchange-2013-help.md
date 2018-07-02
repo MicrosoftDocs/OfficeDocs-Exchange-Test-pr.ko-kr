@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-16_
+_**마지막으로 수정된 항목:** 2012-11-16_
 
 Microsoft MMC(Microsoft Management Console)에서 서비스 스냅인을 사용하거나 명령 프롬프트에서 cmd.exe를 사용하여 클라이언트 액세스 서버의 MicrosoftExchange 통합 메시징 통화 라우터 서비스를 중지할 수 있습니다. 예를 들어 클라이언트 액세스 서버를 오프라인으로 만들어야 하는 경우와 같이 이 서비스를 중지해야 할 때가 있을 수 있습니다. MicrosoftExchange 통합 메시징 통화 라우터 서비스를 중지하면 클라이언트 액세스 서버에서 수신 전화를 수락하거나 처리할 수 없습니다.
 

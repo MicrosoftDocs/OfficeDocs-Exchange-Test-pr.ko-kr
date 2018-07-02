@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-04_
+_**마지막으로 수정된 항목:** 2012-10-04_
 
 [오프 라인 주소록 만들기](create-an-offline-address-book-exchange-2013-help.md)
 

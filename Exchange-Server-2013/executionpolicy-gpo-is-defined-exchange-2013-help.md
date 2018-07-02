@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_**마지막으로 수정된 항목:** 2016-12-15_
 
 **ExecutionPolicy** GPO(그룹 정책 개체)가 다음 정책 중 하나 또는 둘 다를 정의하므로 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

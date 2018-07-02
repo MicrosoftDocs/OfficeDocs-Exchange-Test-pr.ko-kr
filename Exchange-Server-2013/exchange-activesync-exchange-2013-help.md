@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 2013용 Exchange ActiveSync 클라이언트 프로토콜에 대해 알아봅니다. 보안 기능, 관리 가능한 항목, 안전하게 만드는 방법, Windows Phone 7과의 동기화 문제를 방지하는 방법 등 Exchange ActiveSync의 기능에 대해 알아봅니다.
 

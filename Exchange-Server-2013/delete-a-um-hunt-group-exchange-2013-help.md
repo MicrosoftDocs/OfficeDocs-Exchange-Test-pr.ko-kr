@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM(통합 메시징) 헌트 그룹을 삭제하면 해당 UM 헌트 그룹과 연결된 UM IP 게이트웨이는 더 이상 수신 전화를 처리하거나 응답하지 않습니다. UM 헌트 그룹을 삭제하면 UM IP 게이트웨이에 구성된 헌트 그룹이 없게 되고, UM IP 게이트웨이는 UM 통화를 처리할 수 없습니다.
 

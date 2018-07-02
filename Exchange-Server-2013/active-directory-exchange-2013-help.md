@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013Active Directory 를 사용 하 여 저장 하 고 Windows 와 디렉터리 정보를 공유 합니다. Exchange Server 2010Exchange 2013 에 대 한 Active Directory 포리스트 디자인 비슷합니다 아래에 설명 하는 몇가지 방법으로 제외 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-07-25_
+_**마지막으로 수정된 항목:** 2017-07-25_
 
 통합된 메시징 (UM) 조직에 대 한 기존 전화 통신 시스템과 Microsoft Exchange를 통합 해야 합니다. 성공적인 배포를 사용 해야 기존 전화 통신 인프라의 신중 하 게 분석을 확인 하 고 통합 메시징을 배포 하려면 올바른 계획 단계를 수행 합니다.
 

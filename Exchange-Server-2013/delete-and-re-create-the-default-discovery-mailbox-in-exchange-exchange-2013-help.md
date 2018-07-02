@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-05-04_
+_**마지막으로 수정된 항목:** 2016-05-04_
 
 Exchange 관리 셸을 사용하여 기본 검색 사서함을 삭제한 후 다시 만든 다음 사용 권한을 할당할 수 있습니다.
 

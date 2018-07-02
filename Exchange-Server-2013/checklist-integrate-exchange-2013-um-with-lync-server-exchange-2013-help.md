@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 검사 목록을 사용하여 UM(통합 메시징) 및 Microsoft Lync Server 2013을 설치하고 배포할 수 있습니다. 이 항목에서 "Lync Server"는 Lync Server 2010도 지칭합니다. 그러나 Microsoft Office Communications Server 2007 R2도 통합 메시징과 함께 배포할 수 있습니다.
 

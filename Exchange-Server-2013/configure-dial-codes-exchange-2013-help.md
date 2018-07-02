@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 전화걸기 코드, 번호 접두사 및 UM을 사용할 수 있는 사용자에 대 한 수신 및 발신 전화를 전화 통합 메시징에 사용 되는 숫자 형식을 구성할 수 있습니다. 대부분의 경우에서 전화걸기 코드, 접두사 및 전화 통신 네트워크에 현재 구성 된 숫자 형식으로 다이얼 플랜을 구성 합니다.
 

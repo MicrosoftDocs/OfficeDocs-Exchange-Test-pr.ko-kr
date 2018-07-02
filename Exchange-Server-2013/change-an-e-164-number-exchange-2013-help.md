@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-14_
+_**마지막으로 수정된 항목:** 2012-11-14_
 
 UM에 대 한 사용자를 사용 하도록 설정 하 고는 E.164 다이얼 플랜에 연결할 때 두 EUM 프록시 주소 만들어집니다. 사용자의 내선 번호를 포함 하 고 다른 사용자에 대 한 E.164 번호를 포함 합니다. 내선 번호는 Outlook Voice Access 번호의 사용자를 호출 하는 경우에 사용 됩니다.
 

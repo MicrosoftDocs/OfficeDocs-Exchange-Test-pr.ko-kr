@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-02-02_
+_**마지막으로 수정된 항목:** 2017-02-02_
 
 예상 완료 시간: 5분
 

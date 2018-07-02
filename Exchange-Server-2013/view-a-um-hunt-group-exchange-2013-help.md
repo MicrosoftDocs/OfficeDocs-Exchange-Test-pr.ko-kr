@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM (통합 메시징) 헌트 그룹에 대 한 속성을 볼 때 단일 UM 헌트 그룹 또는 단일 UM IP 게이트웨이에 연결 된 모든 UM 헌트 그룹과 연결 된 속성을 볼 수 있습니다. 두 매개 변수를 지정 하는 경우 모든 UM 헌트 그룹이 반환 됩니다. 속성을 보려면 UM 헌트 그룹; EAC를 사용할 수 없습니다. 셸을 사용 해야 합니다.
 

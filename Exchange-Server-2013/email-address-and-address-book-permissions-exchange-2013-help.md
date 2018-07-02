@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 전자 메일 주소 및 주소록 기능을 구성하는 데 필요한 권한은 수행하는 절차 또는 실행하려는 cmdlet에 따라 달라집니다. 전자 메일 주소 및 주소록에 대한 자세한 내용은 [전자 메일 주소 및 주소록](email-addresses-and-address-books-exchange-2013-help.md) 항목을 참조하십시오.
 

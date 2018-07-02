@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Transport Hygiene` 관리 역할을 통해 관리자가 조직의 스팸 방지 및 맬웨어 방지 기능을 관리할 수 있습니다.
 

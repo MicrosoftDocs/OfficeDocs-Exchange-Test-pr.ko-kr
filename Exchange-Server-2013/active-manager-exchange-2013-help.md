@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Microsoft Exchange Server 2013에는 DAG(데이터베이스 사용 가능 그룹) 및 사서함 데이터베이스 복사본이 들어 있는 고가용성 플랫폼을 관리하는 *Active Manager*라는 구성 요소가 들어 있습니다. Active Manager는 모든 사서함 서버의 Microsoft Exchange Replication Service(MSExchangeRepl.exe) 내에서 실행됩니다. DAG의 구성원이 아닌 사서함 서버에는 다음과 같은 단일 Active Manager 역할이 있습니다. *독립 실행형 Active Manager*. DAG의 구성원인 서버에는 다음과 같은 두 가지 Active Manager 역할이 있습니다. PAM(*Primary Active Manager*)과 SAM(*Standby Active Manager*), 두 가지입니다. PAM은 활성 및 수동 복사본을 결정하는 DAG의 Active Manager 역할입니다. PAM은 토폴로지 변경 알림을 가져오고 서버 오류에 대처하는 역할을 담당합니다. PAM 역할을 맡은 DAG 구성원은 항상 현재 클러스터 쿼럼 리소스(기본 클러스터 그룹)를 소유한 구성원입니다. 클러스터 쿼럼 리소스를 소유한 서버에 오류가 발생하면 PAM 역할은 클러스터 쿼럼 리소스 소유권을 취하는 남은 서버로 자동으로 이동됩니다. 또한 유지 관리 또는 업그레이드를 위해 클러스터 쿼럼 리소스를 호스팅하는 서버를 오프라인으로 전환해야 하는 경우 먼저 PAM을 DAG의 다른 서버로 옮겨야 합니다. PAM은 데이터베이스 복사본 간 활성 지정의 모든 움직임을 제어합니다. ((지정된 시간에 오직 하나의 복사본만 활성화 상태일 수 있으며, 해당 복사본은 탑재 또는 분리될 수 있습니다.) PAM은 로컬 시스템에서 SAM 역할의 기능도 수행합니다(로컬 데이터베이스 및 로컬 정보 저장소 오류 검색).
 

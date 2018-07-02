@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-20_
+_**마지막으로 수정된 항목:** 2013-02-20_
 
 이 항목에서는 Exchange UM(통합 메시징) 사용 가능 사용자가 자신의 사서함에 있는 전자 메일과 음성 메일 메시지에 액세스할 수 있도록 하는 클라이언트 기능을 설명합니다. 이러한 기능을 사용하면 사용자가 간편하게 음성 메일에 액세스할 수 있고 전반적인 사용자 환경이 향상됩니다.
 

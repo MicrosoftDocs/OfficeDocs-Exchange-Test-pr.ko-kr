@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 기본적으로 사용자는 발신 전화를 걸 수 없습니다. 사용자가 걸 수 있는 전화 유형을 지정하려면 먼저 전화 걸기 규칙을 만들고 UM 다이얼 플랜, UM 사서함 정책 또는 UM 자동 전화 교환에서 이 전화 걸기 규칙의 그룹에 권한을 부여합니다. 전화 걸기 규칙 그룹에 권한을 부여하려면 UM 다이얼 플랜에서 전화 걸기 규칙을 정의해야 합니다. 자세한 내용은 [사용자에 대 한 전화걸기 규칙 만들기](create-dialing-rules-for-users-exchange-2013-help.md)를 참조하십시오.
 

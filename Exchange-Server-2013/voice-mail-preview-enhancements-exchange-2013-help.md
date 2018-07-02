@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-07-05_
+_**마지막으로 수정된 항목:** 2012-07-05_
 
 음성 메일 미리 보기는 Microsoft Exchange Server 2010 Exchange Server 2013 UM(통합 메시징)을 사용하여 음성 메일 메시지를 받는 사용자가 사용할 수 있는 기능입니다. 음성 메일 미리 보기는 텍스트 버전의 오디오 기록을 제공하여 UM 음성 메일 기능을 향상시킵니다. 음성 메일 텍스트는 Microsoft Office Outlook Web App, Outlook 2010 및 기타 전자 메일 프로그램 내에서 전자 메일 메시지에 표시됩니다.
 

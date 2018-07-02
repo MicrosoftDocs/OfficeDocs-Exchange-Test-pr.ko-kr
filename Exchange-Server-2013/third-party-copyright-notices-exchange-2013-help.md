@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-18_
+_**마지막으로 수정된 항목:** 2013-02-18_
 
 HTML 내보내기에 대 한 외부 © 1991, 2011 Oracle
 

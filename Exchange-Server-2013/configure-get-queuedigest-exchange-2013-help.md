@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 **Get-QueueDigest** cmdlet을 사용하면 한 가지 명령을 사용하여 Exchange 조직의 큐 정보를 일부 또는 전부 볼 수 있습니다.
 

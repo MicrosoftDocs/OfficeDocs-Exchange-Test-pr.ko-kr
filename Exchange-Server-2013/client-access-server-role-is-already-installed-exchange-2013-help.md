@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013 설치 프로그램이 사용자가 클라이언트 액세스 서버 역할을 설치하려고 하는 것을 감지했지만 해당 역할은 컴퓨터에 이미 설치되어 있습니다.
 

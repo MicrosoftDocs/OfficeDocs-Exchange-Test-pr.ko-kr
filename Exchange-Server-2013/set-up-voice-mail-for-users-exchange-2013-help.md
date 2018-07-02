@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-10-13_
+_**마지막으로 수정된 항목:** 2012-10-13_
 
 하면 했을 때 전화 통신 네트워크 연결 또는 Microsoft Lync Server와 Exchange UM (통합 메시징)을 통합 하 고 만들고 구성한 후 필요한 UM 구성 요소를 사용자에 대 한 음성 메일을 설정 하려면 필요 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 정보 근로자가 전자 메일을 사용하여 중요한 정보를 교환하는 경우가 점점 더 늘어나고 있습니다. 이 정보를 안전하게 보호하려면 조직에서 IRM(정보 권한 관리)을 사용하여 메시징 콘텐츠에 영구 보호를 적용할 수 있습니다. Microsoft Exchange Server 2010 이전에는 IRM 보호의 효과적인 사용이 Outlook 클라이언트로 제한되어 있었습니다. Exchange Server 2007에서 Microsoft Outlook Web Access 사용자는 IRM 보호 콘텐츠를 액세스하려면 Microsoft Internet Explorer용 정보 권한 관리 추가 기능을 다운로드해야 했습니다.
 

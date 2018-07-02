@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 (DAG) 데이터베이스 가용성 그룹의 구성원 인 사서함 서버 손실 또는 그렇지 않은 경우 실패 하 고 복구할 수 없는 하 고을 교체 해야, 하는 경우에 서버 복구 작업을 수행할 수 있습니다. Microsoft Exchange Server 2013 설치 프로그램을 사용 하 여 서버 복구 작업을 수행할 수 있는 스위치 */m:RecoverServer* 를 포함 합니다. */m:RecoverServer* 스위치를 사용 하면 설치 프로그램을 실행 하는 서버와 이름이 같은 서버에 대 한 Active Directory 에서 서버의 구성 정보를 읽을 수는 설치 된 설치 프로그램을 실행 합니다. 서버의 구성 후 Active Directory, 원래 Exchange 파일에서에서 정보를 수집 하 고 서비스는 다음의 서버에 설치 됩니다 역할 및 Active Directory 에 저장 된 설정 그러면 서버에 적용 됩니다.
 

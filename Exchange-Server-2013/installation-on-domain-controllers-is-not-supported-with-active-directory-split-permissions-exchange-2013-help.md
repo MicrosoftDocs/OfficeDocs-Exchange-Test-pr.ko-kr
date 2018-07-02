@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2012-11-12_
+_**마지막으로 수정된 항목:** 2012-11-12_
 
 Microsoft Exchange Server 2013 설치 프로그램이 사용자가 Active Directory 도메인 컨트롤러에서 설치를 실행하려고 하며, 다음 중 하나가 참인 것을 감지했습니다.
 

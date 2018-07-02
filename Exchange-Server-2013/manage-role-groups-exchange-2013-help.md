@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-08_
+_**마지막으로 수정된 항목:** 2012-10-08_
 
 이 항목에서는 Microsoft Exchange Server 2013에서 관리 역할 그룹을 추가, 제거, 복사하고 보는 방법을 설명합니다. 또한 역할 그룹에서 관리 역할을 추가, 제거 및 나열하는 방법과 역할 그룹에서 관리 범위와 대리자를 변경하는 방법에 대해서도 설명합니다. Exchange 2013의 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해 (영문)](understanding-management-role-groups-exchange-2013-help.md)를 참조하십시오.
 

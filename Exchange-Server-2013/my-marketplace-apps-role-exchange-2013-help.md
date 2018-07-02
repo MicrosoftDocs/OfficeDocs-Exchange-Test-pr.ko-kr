@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 내 마켓플레이스 앱 관리 역할을 사용하면 개별 사용자가 Microsoft Office Store에서 앱을 추가할 수 있습니다.
 

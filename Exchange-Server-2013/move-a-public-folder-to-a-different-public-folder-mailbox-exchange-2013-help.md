@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-11-16_
+_**마지막으로 수정된 항목:** 2016-11-16_
 
 공용 폴더 사서함의 콘텐츠가 사서함 할당량을 초과하기 시작하면 공용 폴더를 다른 공용 폴더 사서함으로 이동해야 할 수 있습니다. 몇 가지 방법을 통해 이 작업을 수행할 수 있습니다. 하위 폴더가 없는 공용 폴더를 하나 이상 이동하려는 경우 **PublicFolderMoveRequest** cmdlet을 사용할 수 있습니다. 상위 공용 폴더와 모든 하위 폴더가 포함되는 전체 공용 폴더 분기를 이동해야 하는 경우에는 Exchange 2013을 설치하면 제공되는 `Move-PublicFolderBranch.ps1` 스크립트를 사용하면 됩니다.
 

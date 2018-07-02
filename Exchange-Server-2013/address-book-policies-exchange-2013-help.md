@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 전체 주소 목록 Outlook 및 Outlook Web App 에서 사용자 지정 된 Gal을 특정 그룹으로 분할 하는 방법에 대해 알아봅니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-05-26_
+_**마지막으로 수정된 항목:** 2014-05-26_
 
 Exchange 2013을 설치할 경우 Active Directory 포리스트 및 도메인이 변경됩니다. Exchange는 Exchange 서버, 사서함 및 조직의 Exchange와 관련된 기타 개체에 대한 정보를 저장할 수 있도록 이 작업을 수행합니다. 이러한 변경은 Exchange 2013 명령줄 설정 중에 Exchange 2013 설치 마법사를 실행하거나 *PrepareSchema*, *PrepareAD* 및 *PrepareDomains* 명령([Active Directory 및 도메인 준비](prepare-active-directory-and-domains-exchange-2013-help.md) 에서 이러한 명령 사용 방법 참조)을 실행할 때 수행됩니다. Exchange에서 Active Directory에 대해 변경한 내용이 알고 싶은 경우 이 항목이 도움이 될 것입니다. 여기서는 Exchange가 각 Active Directory 준비 단계에서 수행하는 작업에 대해 설명합니다.
 

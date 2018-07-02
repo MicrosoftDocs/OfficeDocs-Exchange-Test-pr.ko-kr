@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Exchange 관리 셸에서 설정 하는 **MailboxImportRequest** 또는 **MailboxExportRequest** cmdlet을 사용 하 여,.pst 파일에서 데이터 또는 데이터를 가져올 수 있습니다. 사서함 가져오기 작업을 시작 하거나 내보내기 요청을 한 후에 Microsoft Exchange 사서함 복제 서비스 (MRS) 하 여 프로세스 비동기적으로 완료 됩니다. MRS가 모든 Exchange 2010 클라이언트 액세스 서버에 있어야 하 고는 사서함을 이동 하 고 가져오기 (영문) 및.pst 파일 내보내기 (영문)를 담당 하는 서비스입니다.
 

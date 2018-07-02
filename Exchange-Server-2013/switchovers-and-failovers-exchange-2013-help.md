@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2015-12-02_
+_**마지막으로 수정된 항목:** 2015-12-02_
 
 전환 및 장애 조치(failover)는 Microsoft Exchange Server 2013에서 두 가지 형태의 중단입니다.
 

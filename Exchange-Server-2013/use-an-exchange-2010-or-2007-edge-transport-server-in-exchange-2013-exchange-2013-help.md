@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Edge 전송 서버는 Microsoft Exchange Server 2013 SP1(서비스 팩 1)에서 제공됩니다. 그러나 경계 네트워크에 배포한 기존 Exchange Server 2007 또는 Exchange Server 2010 Edge 전송 서버는 계속 사용할 수 있습니다. 신규 또는 업그레이드된 Exchange 2013 조직의 경우에는 경계 네트워크에 새 Exchange 2007 또는 Exchange 2010 Edge 전송 서버를 설치할 수 있습니다.
 

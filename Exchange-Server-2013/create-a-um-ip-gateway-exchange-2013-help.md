@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-16_
+_**마지막으로 수정된 항목:** 2013-04-16_
 
 UM(통합 메시징) IP 게이트웨이를 만들 때 Exchange 서버가 새 VoIP(Voice over IP) 게이트웨이, SIP(Session Initiation Protocol) 사용 가능 PBX(Private Branch eXchange), IP PBX 또는 SBC(Session Border Controller)에 연결하도록 설정합니다. UM IP 게이트웨이를 만든 직후에 새 UM 헌트 그룹을 만들어 UM IP 게이트웨이에 연결해야 합니다. 이때 하나 이상의 UM 헌트 그룹을 만들어 UM IP 게이트웨이를 하나 이상의 UM 다이얼 플랜과 연결할 수 있습니다.
 

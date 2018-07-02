@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) IP 게이트웨이를 만든 후 다양한 설정을 보거나 구성할 수 있습니다. 예를 들어 IP 주소 또는 FQDN(정규화된 도메인 이름)과 발신 전화 설정을 구성하고 MWI(Message Waiting Indicator)를 사용하거나 사용하지 않도록 설정할 수 있습니다.
 
@@ -47,8 +47,7 @@ UM IP 게이트웨이와 관련된 추가 관리 작업에 대한 자세한 내�
 
 1.  EAC에서 **통합 메시징** \> **UM IP 게이트웨이**로 이동합니다. 목록 보기에서 관리하려는 UM IP 게이트웨이를 선택하고 **편집**![편집 아이콘](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "편집 아이콘")을 클릭합니다.
 
-2.  
-    
+2.      
     **UM IP 게이트웨이** 페이지를 사용하여 UM IP 게이트웨이에 대한 설정을 보고 구성합니다. 다음 설정을 보거나 구성할 수 있습니다.
     
       - **상태**   이 표시 전용 필드에는 UM IP 게이트웨이의 상태가 표시됩니다.

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 Microsoft Forefront Identity Manager 2010 R2 SP1을 사용하여 포리스트 간 토폴로지에서 Exchange 2013을 배포하는 방법에 대해 설명합니다. 포리스트 간 토폴로지에서 Exchange 2013을 배포하려면 각 포리스트에 Exchange 2013을 설치한 다음 포리스트를 연결하여 사용자가 포리스트 전체에서 주소와 가용성 데이터를 확인할 수 있도록 해야 합니다.
 
@@ -78,7 +78,7 @@ Exchange 2013에서 다음 절차를 수행하려면 다음을 확인합니다.
     > 리소스 Exchange 2010 논의 하는 동안 Exchange 2013 FIM 2010 R2 s p 1에 대 한 지원 됩니다. Exchange 2013 에 대 한 FIM 2010 R2 s p 1의 <STRONG>내선 번호</STRONG> 를 구성 하는 있는지 확인 하십시오.
 
     
-    1.  **확장 구성** 페이지의 **프로비전 대상:** 옆에 있는 **파티션 표시 이름 구성**에서 **Exchange 2013**을 선택합니다. **Exchange 2013 RPS URI** 필드가 표시됩니다. Exchange 2013 클라이언트 액세스 서버의 URI를 입력하여 원격 PowerShell 연결이 작동 중인지 확인합니다. **Exchange 2013 RPS URI**는 http://CAS\_Server\_FQDN/Powershell 형식으로 되어 있어야 합니다. **확인**을 클릭합니다.
+    1.  **확장 구성** 페이지의 **프로비전 대상:**  옆에 있는 **파티션 표시 이름 구성**에서 **Exchange 2013**을 선택합니다. **Exchange 2013 RPS URI** 필드가 표시됩니다. Exchange 2013 클라이언트 액세스 서버의 URI를 입력하여 원격 PowerShell 연결이 작동 중인지 확인합니다. **Exchange 2013 RPS URI**는 http://CAS\_Server\_FQDN/Powershell 형식으로 되어 있어야 합니다. **확인**을 클릭합니다.
         
 
         > [!NOTE]

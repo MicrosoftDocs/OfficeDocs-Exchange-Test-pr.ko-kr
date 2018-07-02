@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**마지막으로 수정된 항목:** 2013-05-01_
+_**마지막으로 수정된 항목:**  2013-05-01_
 
 Microsoft Exchange Server 2013 관리 팩은 Exchange 조직에 종합적인 서비스 상태 정보를 제공합니다.
 

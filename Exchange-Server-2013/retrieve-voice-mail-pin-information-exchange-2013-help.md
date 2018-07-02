@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-03_
+_**마지막으로 수정된 항목:** 2013-04-03_
 
 UM(통합 메시징) 사용이 가능한 사용자의 PIN 정보를 검색할 수 있습니다. 사용자가 UM을 사용하도록 설정한 후 PIN이 생성되거나 만들어진 다음 암호화되어 사용자 사서함에 저장됩니다.
 

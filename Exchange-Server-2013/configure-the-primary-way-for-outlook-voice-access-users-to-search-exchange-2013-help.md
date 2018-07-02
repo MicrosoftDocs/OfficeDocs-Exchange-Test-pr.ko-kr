@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) 다이얼 플랜을 만드는 경우 발신자가 다이얼 플랜과 연결된 UM 자동 전화 교환 또는 Outlook Voice Access 번호로 전화를 걸 때 이름을 검색하여 사용자를 찾는 기본 방법과 보조 방법을 구성할 수 있습니다. 발신자는 누름 단추식 입력을 사용하여 UM 사용 가능 사용자를 찾을 수 있습니다.
 

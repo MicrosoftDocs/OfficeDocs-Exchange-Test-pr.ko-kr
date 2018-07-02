@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-15_
+_**마지막으로 수정된 항목:** 2013-02-15_
 
 [팩스 서버 팩스를 허용 하는 URI 파트너를 설정 합니다.](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)
 

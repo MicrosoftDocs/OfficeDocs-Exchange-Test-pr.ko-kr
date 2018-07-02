@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 조직에서 메일을 라우팅하도록 담당 하는 사서함 서버의 전송 파이프라인의 전반적인 상태를 모니터링 하는 **HubTransport** 상태 설정 합니다. 자세한 내용은 [메일 흐름](https://technet.microsoft.com/ko-kr/library/aa996349\(v=exchg.150\))을 참조 하십시오.
 

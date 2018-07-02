@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-30_
+_**마지막으로 수정된 항목:** 2012-11-30_
 
 사용자가 UM(통합 메시징) 및 음성 사서함을 사용할 수 있도록 설정하는 경우에는 해당 사용자의 사서함에 연결할 UM 사서함 정책을 선택해야 합니다. 사용자가 UM을 사용할 수 있도록 설정한 후에 해당 사용자 사서함에 연결된 UM 사서함 정책을 변경할 수 있습니다.
 

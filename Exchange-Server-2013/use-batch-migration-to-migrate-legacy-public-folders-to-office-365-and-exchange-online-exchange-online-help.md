@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-26_
+_**마지막으로 수정된 항목:** 2018-03-26_
 
-**요약:** Office 365에 Exchange 2007 및 Exchange 2010 공용 폴더를 이동 하려면 다음이 절차를 사용 합니다.
+**요약:**  Office 365에 Exchange 2007 및 Exchange 2010 공용 폴더를 이동 하려면 다음이 절차를 사용 합니다.
 
 이 항목에서는 Office 365 또는 Exchange Online에 업데이트 롤업 8 Exchange Server 2010 서비스 팩 3 (SP3) 또는 Exchange 2007 s p 3 용 업데이트 롤업 15에서 단독형 또는 미리 구성 된 마이그레이션에 공용 폴더를 마이그레이션하는 방법에 설명 합니다.
 

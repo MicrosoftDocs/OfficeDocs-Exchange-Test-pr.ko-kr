@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2010 및 Exchange Server 2007에는 여러 서버 역할이 있습니다. 클라이언트 액세스, 사서함, 허브 전송, 통합 메시징 및 Edge 전송과 같은 여러 서버 역할이 있습니다. Exchange Server 2013에서는 서버 역할의 수가 5개에서 클라이언트 액세스, 사서함 및 Edge 전송의 3개로 줄었습니다. 통합 메시징은 이제 Exchange 2013에서 제공되는 음성 관련 기능의 구성 요소나 하위 기능으로 간주됩니다. 변경에 대한 자세한 내용은 [Exchange 2013의 새로운 기능](what-s-new-in-exchange-2013-exchange-2013-help.md)의 "Exchange 2013 아키텍처"를 참조하세요.
 

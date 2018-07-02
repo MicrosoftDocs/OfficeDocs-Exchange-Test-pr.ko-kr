@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-04_
+_**마지막으로 수정된 항목:** 2012-10-04_
 
 cmdlet에 대한 액세스 권한을 부여하려면 연결된 관리 역할 항목을 관리 역할에 추가해야 합니다. 역할에 역할 항목을 추가하면 해당 역할이 할당된 사용자가 cmdlet에 액세스할 수 있습니다. Microsoft Exchange Server 2013의 관리 역할 항목에 대한 자세한 내용은 [관리 역할 이해 (영문)](understanding-management-roles-exchange-2013-help.md)를 참조하십시오.
 

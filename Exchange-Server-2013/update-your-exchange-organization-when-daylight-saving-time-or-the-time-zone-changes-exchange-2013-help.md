@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 조직이나 사용자 일부가 거주하는 국가나 지역에서 DST(일광 절약 시간제)를 인식하는 정책을 변경하거나 UTC(협정 세계시)에서 현지 시간 오프셋을 변경한 경우 Microsoft Windows, Microsoft Exchange, Microsoft Outlook 또는 기타 프로그램을 이러한 변경에 맞게 업데이트해야 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Active Directory Permissions` 관리 역할을 사용하면 관리자가 조직의 Active Directory 사용 권한을 구성할 수 있습니다. Active Directory 사용 권한이나 ACL(액세스 제어 목록)을 사용하는 기능에는 전송 수신 및 송신 커넥터, 사서함에 대한 다른 사람 이름으로 보내기 및 대신 보내기 권한 등이 있습니다.
 

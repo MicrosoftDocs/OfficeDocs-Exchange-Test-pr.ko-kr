@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-04-30_
+_**마지막으로 수정된 항목:** 2018-04-30_
 
-**요약:** Exchange 2013 조직의 사용자가 자신의 Outlook iOS 및 기본 인증을 사용 하 여 Android 계정에 대 한을 신속 하 게 설정 하는 방법을 합니다.
+**요약:**  Exchange 2013 조직의 사용자가 자신의 Outlook iOS 및 기본 인증을 사용 하 여 Android 계정에 대 한을 신속 하 게 설정 하는 방법을 합니다.
 
 IOS와 Android에 대 한 outlook은 Exchange 관리자 계정 구성을 ActiveSync 프로토콜을 통해 기본 인증을 사용 하는 온-프레미스 사용자에 게 "푸시" 하는 기능을 제공 합니다. 이 기능은 for Android iOS 또는 [기업에서 Android](https://developer.android.com/samples/apprestrictions/index.html) 채널에 대 한 [관리 되는 응용 프로그램 구성](https://developer.apple.com/library/content/samplecode/sc2279/introduction/intro.html) 채널을 사용 하는 모바일 장치 관리 (MDM) 공급자와 함께 작동 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 Microsoft Exchange Server 2013에서 제거되거나, 더 이상 지원되지 않거나, 바뀐 구성 요소, 특징 또는 기능에 대해 설명합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 셸을 사용 하 여 하나 이상의 전화 사용자에 대 한 응답 규칙을 만들 수 있습니다. 여러 사용자에 대 한 전화 응답 규칙을 만들 수는 Exchange 관리 셸 스크립트에서 **New-UMCallAnsweringRule** cmdlet를 사용할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) IP 게이트웨이에서 SIP(Session Initiation Protocol) 요청을 수신 대기하는 데 사용되는 TCP 포트를 구성할 수 있습니다. 기본적으로, UM IP 게이트웨이를 만들 때 TCP SIP 수신 대기 포트 번호는 5060으로 설정됩니다. TCP SIP 수신 대기 포트는 EAC를 사용하여 구성하거나 변경할 수 없습니다. TCP SIP 수신 대기 포트 번호는 **Set-UMIPGateway** cmdlet을 사용하여 구성해야 합니다.
 

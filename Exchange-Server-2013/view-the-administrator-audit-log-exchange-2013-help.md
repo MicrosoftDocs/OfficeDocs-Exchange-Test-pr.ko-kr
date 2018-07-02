@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-05-03_
+_**마지막으로 수정된 항목:** 2016-05-03_
 
 Microsoft EOP(Exchange Online Protection), Microsoft Exchange Online 및 Microsoft Exchange 2013에서는 EAC(Exchange 관리 센터)를 사용하여 *관리자 감사 로그*의 항목을 검색하고 볼 수 있습니다. 관리자 감사 로그에는 관리 권한이 할당된 관리자와 사용자가 수행하는 특정 작업이 Exchange 관리 셸 cmdlet을 기준으로 기록됩니다. 관리자 감사 로그의 항목은 실행된 cmdlet, 사용된 매개 변수, cmdlet을 실행한 사용자 및 영향을 받은 개체에 대한 정보를 제공합니다.
 

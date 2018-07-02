@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**마지막으로 수정된 항목:** 2013-04-17_
+_**마지막으로 수정된 항목:**  2013-04-17_
 
 이 섹션에서는 Exchange Server 2013 관리 팩을 가져올 때 참조로 사용할 수 있는 절차에 대해 설명합니다. 배포 후 작업과 관련된 절차는 [Procedures related to post-deployment operation](procedures-related-to-post-deployment-operation.md)를 참조하십시오.
 

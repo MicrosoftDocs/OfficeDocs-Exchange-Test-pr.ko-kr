@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 다음 표에서 **New-SystemMessage** cmdlet은 함께 사용할 수 있는 지원 되는 언어 코드를 보여줍니다.
 

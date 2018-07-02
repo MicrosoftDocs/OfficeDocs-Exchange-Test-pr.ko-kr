@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-18_
+_**마지막으로 수정된 항목:** 2012-11-18_
 
 클라이언트 액세스 서버의 Microsoft Exchange 통합 메시징 통화 라우터 서비스가 새로 걸려온 전화에 응답하는 것을 허용하거나 금지할 수 있습니다. 기본적으로 클라이언트 액세스 서버는 설치 후 사용 가능한 상태로 있습니다. 클라이언트 액세스 서버가 들어오는 음성, 팩스, 자동 전화 교환 및 Outlook Voice Access 통화를 수락하도록 설정하려면 **Set-ServerComponentState** cmdlet을 사용합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `LegalHoldApplication` 관리 역할을 사용하면 파트너 응용 프로그램에서 사서함의 법적 보유 상태를 설정하고 확인할 수 있습니다.
 

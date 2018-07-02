@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-16_
+_**마지막으로 수정된 항목:** 2012-10-16_
 
 셸을 사용 하 여 받는 사람 필터를 사용 하 여 전자 메일 주소 정책을 만들 수 있습니다. 전자 메일 주소 정책에 대 한 자세한 내용은, [전자 메일 주소 정책](email-address-policies-exchange-2013-help.md)를 참조 하십시오.
 

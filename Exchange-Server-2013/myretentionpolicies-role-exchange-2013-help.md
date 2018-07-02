@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 개별 사용자는 `MyRetentionPolicies` 관리 역할을 사용하여 보존 태그를 보고, 보존 태그 설정 및 기본값을 보고 수정할 수 있습니다.
 

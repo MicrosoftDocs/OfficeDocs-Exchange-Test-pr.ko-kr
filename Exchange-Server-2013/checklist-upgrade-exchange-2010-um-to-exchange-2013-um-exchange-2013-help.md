@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 검사 목록은 Exchange 2010 UM(통합 메시징)을 Exchange 2013 UM으로 업그레이드하는 데 도움이 됩니다. Exchange 2010 조직 및 UM 배포를 Exchange 2013으로 업그레이드할 때 이 정보를 참조하십시오. Exchange 2013 UM으로 업그레이드하는 단계별 지침은 [Exchange 2010 UM을 Exchange 2013 UM으로 업그레이드](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)를 참조하십시오.
 

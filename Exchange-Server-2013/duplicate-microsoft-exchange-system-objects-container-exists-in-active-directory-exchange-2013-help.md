@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2013-02-18_
+_**마지막으로 수정된 항목:** 2013-02-18_
 
 Active Directory 도메인 이름 지정 컨텍스트에 중복 Microsoft Exchange System Objects 컨테이너가 있어서 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. 중복 Microsoft Exchange System Objects 컨테이너가 발견되는 경우 설치를 계속하려면 중복 컨테이너를 삭제해야 합니다. 중복 Microsoft Exchange System Objects 컨테이너가 있으면 **DomainPrep**을 다시 실행하여 문제를 해결할 수 없습니다. 중복 Microsoft Exchange System Objects 컨테이너를 식별하여 삭제해야 합니다.
 

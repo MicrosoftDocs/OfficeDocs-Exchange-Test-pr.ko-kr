@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-25_
+_**마지막으로 수정된 항목:** 2013-02-25_
 
 Microsoft Exchange Server 2013에서 메시지 추적 로그는 사서함 서버의 전송 서비스, 사서함 서버의 사서함 및 Edge 전송 서버를 오고가는 메시지 전송 시 수행되는 모든 메시지 작업에 대한 상세 레코드입니다.
 
@@ -91,7 +91,7 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
 ## 셸을 사용하여 메시지 추적 로그에서 여러 서버의 메시지 항목 검색
 
-일반적으로 **MessageID:** 헤더 필드의 값은 메시지가 Exchange 조직 전체를 이동하는 과정에서 일정하게 유지됩니다. 이 값의 이름은 큐 뷰어 유틸리티에서는 **InternetMessageId**이고 메시지 추적 로그 유틸리티에서는 **MessageId**입니다. 특정 메시지의 `MessageID:` 값을 확인한 후에는 Exchange 조직의 모든 사서함 서버에 있는 메시지 추적 로그에서 해당 메시지에 대한 정보를 검색할 수 있습니다.
+일반적으로 **MessageID:**  헤더 필드의 값은 메시지가 Exchange 조직 전체를 이동하는 과정에서 일정하게 유지됩니다. 이 값의 이름은 큐 뷰어 유틸리티에서는 **InternetMessageId**이고 메시지 추적 로그 유틸리티에서는 **MessageId**입니다. 특정 메시지의 `MessageID:` 값을 확인한 후에는 Exchange 조직의 모든 사서함 서버에 있는 메시지 추적 로그에서 해당 메시지에 대한 정보를 검색할 수 있습니다.
 
 모든 사서함 서버에서 특정 메시지에 대한 모든 메시지 추적 로그 항목을 검색하려면 다음 구문을 사용합니다.
 
@@ -99,7 +99,7 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
 이 예에서는 다음 검색 조건을 사용하여 모든 Exchange 2013 사서함 서버에서 메시지 추적 로그를 검색합니다.
 
-  - **MessageID:** 값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<``>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 **MessageID:** 값을 따옴표로 묶어야 합니다.
+  - **MessageID:**  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<``>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 **MessageID:**  값을 따옴표로 묶어야 합니다.
 
   - 각 항목에 대해 필드 **date-time**, **server-hostname**, **client-hostname**, **source**, **event-id** 및 **recipient-address**를 표시합니다.
 

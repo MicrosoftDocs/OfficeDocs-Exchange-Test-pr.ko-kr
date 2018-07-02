@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-06_
+_**마지막으로 수정된 항목:** 2015-03-06_
 
 *스팸*또는 악의적인 보낸 사람이 조직에 원치 않는 전자 메일을 보내려고 다양 한 기술 사용 합니다. 없음 단일 도구 또는 프로세스는 모든 스팸을 제거할 수 있습니다. 그러나 Microsoft Exchange Server 2013 이러한 원치 않는 메시지를 줄이는 것 계층화 된, multipronged, 및 넘어가는 방법을 제공 합니다. Exchange 전송 에이전트를 사용 하 여 스팸 방지 보호 기능을 제공 하 고 Exchange 2013 에서 사용할 수 있는 기본 제공 에이전트 Microsoft Exchange Server 2010 에서 상대적으로 변경 되지 않습니다.
 

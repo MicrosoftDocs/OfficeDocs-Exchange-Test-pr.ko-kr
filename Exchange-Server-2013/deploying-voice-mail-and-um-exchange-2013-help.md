@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange UM(통합 메시징)을 사용하면 조직 내 사용자에게 음성 사서함 서비스를 제공할 수 있습니다. 통합 메시징을 배포할 때는 Exchange Server 배포를 조직의 기존 전화 통신 시스템과 통합하거나 Microsoft Lync Server와 통합해야 합니다. 배포를 적절하게 수행하려면 기존 전화 통신 인프라를 주의 깊게 분석해야 하며, 통합 메시징에서 음성 메일을 배포 및 관리하기 위한 정확한 계획 단계를 수행해야 합니다. Exchange를 Lync Server와 통합하는 경우 Lync Server에 익숙해야 합니다.
 

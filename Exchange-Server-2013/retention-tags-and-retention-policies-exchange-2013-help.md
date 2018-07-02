@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013 및 Exchange Online의 MRM(메시징 레코드 관리)은 조직에서 전자 메일 수명 주기를 관리하고 전자 메일 및 기타 통신과 관련된 법적 위험을 줄이는 데 유용합니다. MRM을 사용하면 회사 정책, 정부 규정 또는 법적 요구 사항을 준수하기 위해 필요한 메시지를 간편하게 보존하고, 법적 가치 또는 업무적 가치가 없는 콘텐츠를 쉽게 제거할 수 있습니다.
 

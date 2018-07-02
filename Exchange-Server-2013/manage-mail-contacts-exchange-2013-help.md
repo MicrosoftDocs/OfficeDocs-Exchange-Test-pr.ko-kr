@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-10-04_
+_**마지막으로 수정된 항목:** 2017-10-04_
 
 메일 연락처는 Exchange 또는 Exchange Online 조직의 외부 사람 또는 외부 조직에 대한 정보를 포함하는 메일 사용이 가능한 디렉터리 서비스 개체입니다. 각 메일 연락처에는 외부 전자 메일 주소가 있습니다. 메일 연락처에 대한 자세한 내용은 [받는 사람](recipients-exchange-2013-help.md)을 참조하십시오.
 

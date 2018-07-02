@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Outlook Voice Access에는 Exchange UM (통합 메시징) 아날로그, 디지털 또는 휴대폰 전화를 사용 하 여 자신의 사서함에 액세스에 사용할 수 있는 사용자 수 있습니다.
 

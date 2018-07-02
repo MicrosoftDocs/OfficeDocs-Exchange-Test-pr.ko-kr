@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Microsoft Exchange Server 2013에서 MRM(메시징 레코드 관리)은 보존 태그 및 보존 정책을 사용하여 수행됩니다. 보존 정책은 사서함에 적용할 수 있는 보존 태그의 그룹입니다. 자세한 내용은 [보존 태그 및 보존 정책](retention-tags-and-retention-policies-exchange-2013-help.md)을 참조하십시오. Exchange Server 2007에 도입된 MRM 기술인 관리되는 폴더는 지원되지 않습니다.
 

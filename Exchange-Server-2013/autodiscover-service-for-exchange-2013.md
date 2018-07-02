@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange 2013용 Exchange 자동 검색 서비스에 대해 알아봅니다. Exchange 자동 검색 서비스란 무엇이며 어떤 방식으로 작동하고 사용할 수 있는 배포 옵션은 무엇인지 알아봅니다.
 

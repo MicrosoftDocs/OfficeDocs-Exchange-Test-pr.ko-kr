@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `TeamMailboxLifecycleApplication` 관리 역할은 파트너 응용 프로그램이 사이트 사서함 수명 주기 상태를 업데이트할 수 있도록 합니다.
 

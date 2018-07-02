@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access 사용자가 Outlook Voice Access 번호로 전화를 걸면 음성 메일 시스템에서 사용자를 인증할 수 있도록 PIN을 입력하라는 메시지가 표시됩니다. 인증 후 사용자는 모든 전화기에서 사서함에 있는 음성 메일, 전자 메일, 일정 및 개인 연락처 정보에 액세스할 수 있습니다.
 

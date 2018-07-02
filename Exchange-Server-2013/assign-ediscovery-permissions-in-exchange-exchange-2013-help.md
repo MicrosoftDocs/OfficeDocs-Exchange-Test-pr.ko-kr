@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-10-02_
+_**마지막으로 수정된 항목:** 2014-10-02_
 
 사용자가 Microsoft Exchange Server 2013 In-place eDiscovery를 사용 하 여 수을 하려는 경우 먼저 권한을 부여 해야 해당 검색 관리 역할 그룹에 추가 하 여 합니다. 검색 관리 역할 그룹의 구성원에 게 Exchange 설치를 통해 만들어진 검색 사서함에 대 한 전체 액세스 사서함 권한이 합니다.
 

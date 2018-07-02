@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-04-01_
+_**마지막으로 수정된 항목:** 2018-04-01_
 
 **요약**:이 문서에서는 암호와 보안 iOS에 대 한 Outlook 및 Exchange Server와 Android에서 작동 하는 방법에 대해 설명 합니다.
 

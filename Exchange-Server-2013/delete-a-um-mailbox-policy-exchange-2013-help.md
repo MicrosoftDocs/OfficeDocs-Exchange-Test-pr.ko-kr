@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM(통합 메시징) 사서함 정책을 삭제하면 UM 사서함 정책은 UM을 사용하도록 설정된 받는 사람과 더 이상 연결되지 않습니다. UM 사용 가능 사서함에 참조한 UM 사서함 정책은 삭제할 수 없으며, UM 사서함 정책과 연결된 UM 다이얼 플랜도 삭제할 수 없습니다.
 

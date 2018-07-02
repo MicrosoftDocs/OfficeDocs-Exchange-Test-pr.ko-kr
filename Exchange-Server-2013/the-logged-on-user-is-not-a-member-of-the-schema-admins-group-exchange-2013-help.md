@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-12-02_
+_**마지막으로 수정된 항목:** 2014-12-02_
 
 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다는 Active Directory 스키마를 수행 하는 사용자 계정 업데이트 프로세스 Schema Admins 및 Enterprise Admins 그룹의 구성원이 아닙니다.
 

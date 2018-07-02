@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-16_
+_**마지막으로 수정된 항목:** 2012-10-16_
 
 Microsoft Exchange Server 2013에서는 Microsoft Outlook 2010 이상 버전 및 Microsoft Office Outlook Web App 사용자가 IRM(정보 권한 관리)을 통해 메시지를 보호할 수 있습니다. Outlook 2010 클라이언트에서 메시지를 보내기 전에 IRM 보호를 자동으로 적용하는 Outlook 보호 규칙을 만들 수 있습니다. 뿐만 아니라 규칙 조건과 일치하는 전송 메시지에 IRM 보호를 적용하는 전송 보호 규칙도 만들 수 있습니다.
 

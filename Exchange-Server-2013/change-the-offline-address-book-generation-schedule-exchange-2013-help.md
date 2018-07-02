@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-12-05_
+_**마지막으로 수정된 항목:** 2012-12-05_
 
 OAB(오프라인 주소록)는 다운로드된 주소록의 복사본이므로 Outlook 사용자는 서버와의 연결이 끊긴 동안 OAB에 포함된 정보에 액세스할 수 있습니다. Set-MailboxServer cmdlet에서 *OABGeneratorWorkCycle* 및 *OABGeneratorWorkCycleCheckpoint* 매개 변수를 사용하면 OAB 생성 빈도를 구성할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-13_
+_**마지막으로 수정된 항목:** 2012-10-13_
 
 메일 그룹에 대한 그룹 명명 정책은 사용자가 만드는 그룹에만 적용됩니다. 관리자가 EAC(Exchange 관리 센터)를 사용하여 메일 그룹을 만들면 그룹 명명 정책이 무시되고 그룹 이름에 적용되지 않습니다.
 

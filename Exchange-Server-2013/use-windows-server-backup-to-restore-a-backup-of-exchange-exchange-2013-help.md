@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-18_
+_**마지막으로 수정된 항목:** 2014-06-18_
 
 Windows Server 백업을 사용하여 Exchange 데이터베이스를 백업하고 복원할 수 있습니다. Exchange에는 Exchange 데이터의 VSS(볼륨 섀도 복사본 서비스) 기반 백업을 만들고 복원할 수 있는 Windows Server 백업용 플러그 인이 포함됩니다. 자세한 내용은 [Windows Server 백업을 사용하여 Exchange 데이터 백업 및 복원](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md)을 참조하세요.
 

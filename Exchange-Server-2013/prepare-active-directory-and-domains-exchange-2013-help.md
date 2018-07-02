@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013을 설치하기 전에 Active Directory 포리스트 및 해당 도메인을 준비해야 합니다. Exchange는 조직에서 사용자 사서함 및 Exchange 서버의 구성에 대한 정보를 저장할 수 있도록 Active Directory를 준비해야 합니다. Active Directory 포리스트나 도메인에 익숙하지 않은 경우 [Active Directory 도메인 서비스 개요](https://go.microsoft.com/fwlink/p/?linkid=399226)를 확인하세요.
 

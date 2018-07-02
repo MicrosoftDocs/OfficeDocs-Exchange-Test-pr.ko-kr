@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Outlook 2010 이상에서 최종 사용자에게 제공되는 기능인 HAB(계층 구조 주소록)를 구성할 수 있습니다. HAB를 사용하면 연공서열 또는 관리 구조를 기반으로 하는 조직의 계층 구조를 사용하여 Exchange 조직에서 받는 사람을 찾을 수 있습니다. HAB에 대한 자세한 내용은 [계층 구조 주소록](hierarchical-address-books-exchange-2013-help.md)를 참조하십시오.
 

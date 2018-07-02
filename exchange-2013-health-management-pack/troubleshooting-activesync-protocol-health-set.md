@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-06_
+_**마지막으로 수정된 항목:** 2013-02-06_
 
 ActiveSync.Protocol 상태 설정은 사서함 서버의 Exchange ActiveSync 통신 프로토콜에 대한 전반적인 상태를 모니터링합니다. ActiveSync.Protocol 상태 설정의 상태가 비정상임을 지정하는 경고가 표시되면 경고에 나와 있는 사서함 서버의 ActiveSync 구성 요소에 영향을 주는 문제가 있는 것입니다.
 

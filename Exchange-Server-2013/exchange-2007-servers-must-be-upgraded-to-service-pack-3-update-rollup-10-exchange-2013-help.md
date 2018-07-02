@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 2007 SP3(서비스 팩 3) RU10(롤업 10)으로 업그레이드하지 않은 Exchange Server 2007 서버가 하나 이상 검색되었으므로 Microsoft Exchange Server 2013 설치 프로그램을 계속할 수 없습니다. Exchange 2013을 설치하려면 조직에 있는 모든 Exchange 2007 서버를 Exchange 2007 SP3 RU10으로 업그레이드해야 합니다. 이 요구 사항에는 Exchange 2007 Edge 전송 서버가 포함됩니다. 자세한 내용은 [Exchange 2007에서 Exchange 2013으로 업그레이드](upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)를 참조하십시오.
 

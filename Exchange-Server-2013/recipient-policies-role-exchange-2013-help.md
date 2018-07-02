@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Recipient Policies` 관리 역할을 사용하면 관리자가 제한 정책, Microsoft Office Outlook Web App 사서함 정책 및 모바일 장치 정책과 같은 조직의 받는 사람 정책을 관리할 수 있습니다.
 

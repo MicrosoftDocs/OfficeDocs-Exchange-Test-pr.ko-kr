@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 메시징 정책 및 규정 준수를 구성하는 데 필요한 권한은 수행하는 절차 또는 실행하려는 cmdlet에 따라 달라집니다. 메시징 정책 및 규정 준수에 대한 자세한 내용은 [메시징 정책 및 규정 준수](messaging-policy-and-compliance-exchange-2013-help.md)를 참조하십시오.
 

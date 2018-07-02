@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 미리 정의 된 사용 권한 설정, 쉽게 관리자 및 사용자에 게 권한을 부여 하는 즉시 사용할 수 있는 역할 기반 액세스 제어 rbac (역할) 사용 권한 모델에 따라 Microsoft Exchange Server 2013 큰를 포함 합니다. 새 조직 하 고 실행을 신속 하 게 얻을 수 있도록 Exchange 2013 의 사용 권한 기능을 사용할 수 있습니다.
 

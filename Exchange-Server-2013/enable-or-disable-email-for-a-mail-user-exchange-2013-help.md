@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-14_
+_**마지막으로 수정된 항목:** 2012-11-14_
 
 Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없도록 설정할 수 있습니다. 메일 사용자가 전자 메일을 사용할 수 없도록 설정하면 Exchange 및 조직의 주소록에서 해당 전자 메일이 제거됩니다. 메일 사용자가 메일 그룹의 구성원인 경우에는 그룹으로 보내는 메일을 더 이상 받을 수 없습니다. 또한 Active Directory의 사용자 개체에서 Exchange 특성이 제거됩니다. 그러나 사용자 개체 및 Exchange 특성이 아닌 연락처나 조직 정보 등의 특성은 Active Directory에 보존됩니다.
 

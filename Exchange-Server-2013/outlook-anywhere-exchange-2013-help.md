@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013의 Outlook Anywhere 기능(이전의 RPC over HTTP)은 MicrosoftOutlook 2013, Outlook 2010 또는 Outlook 2007을 사용하는 클라이언트가 회사 네트워크의 외부에서, 또는 RPC over HTTP Windows 네트워킹 구성 요소를 사용하여 인터넷을 통해 Exchange 서버에 연결할 수 있게 해줍니다. 이 항목에서는 Outlook Anywhere 기능 및 Outlook Anywhere를 사용하는 경우의 이점에 대해 설명합니다.
 

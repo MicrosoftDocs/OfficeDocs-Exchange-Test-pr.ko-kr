@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-17_
+_**마지막으로 수정된 항목:** 2012-10-17_
 
 `MyAddressInformation` 관리 역할을 사용하여 개별 사용자가 우편 주소와 직장 전화 번호 및 팩스 번호를 보고 수정할 수 있습니다. 이는 [MyContactInformation 역할](mycontactinformation-role-exchange-2013-help.md) 상위 역할에서 생성된 사용자 지정 역할입니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-14_
+_**마지막으로 수정된 항목:** 2015-01-14_
 
 이 항목에서는 솔루션 및 RollAlternateServiceAccountPassword.ps1 스크립트를 사용 하는 경우 발생할 수 있는 일반적인 오류에 대 한 정보를 제공 합니다.
 

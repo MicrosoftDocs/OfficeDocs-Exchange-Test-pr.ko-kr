@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Exchange Server 2013은 설치 중에 여러 IIS(인터넷 정보 서비스) 가상 디렉터리를 자동으로 구성합니다. 이 항목에는 클라이언트 액세스 서버 및 사서함 서버에 대한 기본 IIS 인증 설정 및 기본 SSL(Secure Sockets Layer) 설정에 대한 정보가 포함되어 있습니다.
 

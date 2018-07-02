@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange 2013의 온-프레미스 배포에 대해 장치용 OWA 푸시 알림(iPhone/iPad용 OWA)을 사용하도록 설정하면 사용자가 사용자 받은 편지함에서 확인하지 않은 메시지 수를 나타내는 Outlook Web App 아이콘 업데이트를 iPhone/iPad용 OWA에서 받을 수 있습니다. 푸시 알림을 구성하고 사용하도록 설정하지 않으면 장치용 OWA 사용자가 앱을 시작해야 받은 편지함에 확인하지 않은 메시지가 있음을 알 수 있습니다. 새 메시지가 있으면 사용자 장치에서 장치용 OWA 배지가 업데이트되어 다음과 같이 표시됩니다.
 

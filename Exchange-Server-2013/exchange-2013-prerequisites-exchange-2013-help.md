@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-03-20_
+_**마지막으로 수정된 항목:** 2017-03-20_
 
 이 항목에서는 Microsoft Exchange 2013 사서함, 클라이언트 액세스 서버 및 Edge 전송 서버 역할에 필요한 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2 SP1(서비스 팩 1) 운영 체제 필수 구성 요소를 설치하기 위한 단계가 제공됩니다. 또한 Windows 8, Windows 8.1 및 Windows 7 클라이언트 컴퓨터에 Exchange 2013 관리 도구를 설치하는 데 필요한 필수 구성 요소도 설명합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 관리자는 `Exchange Connectors` 관리 역할을 통해 배달 에이전트 커넥터를 만들고, 수정하고, 보고, 제거할 수 있습니다.
 

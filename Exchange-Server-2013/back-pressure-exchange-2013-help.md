@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 역 압력은 Microsoft Exchange 2013 사서함 서버 및 Edge 전송 서버에 있는 Microsoft Exchange Transport 서비스의 시스템 리소스 모니터링 기능입니다.
 

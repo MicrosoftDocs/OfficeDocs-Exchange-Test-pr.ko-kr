@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-10-03_
+_**마지막으로 수정된 항목:** 2014-10-03_
 
 Microsoft Exchange Server 2013에서는 전송 규칙의 몇 가지 기능이 향상되었습니다. 이 항목에서는 몇 가지 주요 변경 내용과 기능 향상에 대한 간략한 개요를 제공합니다. 전송 규칙에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)항목을 참조하십시오.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Outlook Web Access 2010 보다 이전 버전의 Microsoft Exchange에서 걸려온는 Outlook Web App에 대해 설명 합니다. 이 문서에 도움이 되는 정보에 아웃 링크와 함께 간략 한 개요를 제공합니다.
 

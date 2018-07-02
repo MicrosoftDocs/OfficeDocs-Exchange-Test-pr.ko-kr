@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-03-25_
+_**마지막으로 수정된 항목:** 2014-03-25_
 
 이 절차를 사용하여 ABP(주소록 정책)를 제거합니다.
 

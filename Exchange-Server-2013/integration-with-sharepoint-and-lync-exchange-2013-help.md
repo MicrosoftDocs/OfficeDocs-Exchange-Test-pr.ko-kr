@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013에는 Microsoft SharePoint 2013 및 Microsoft Lync 2013과 통합되는 많은 기능이 포함되어 있습니다. 이러한 제품은 사이트 사서함을 사용하는 엔터프라이즈 eDiscovery 및 공동 작업과 같은 시나리오가 가능해지도록 하는 여러 기능들을 제공합니다.
 

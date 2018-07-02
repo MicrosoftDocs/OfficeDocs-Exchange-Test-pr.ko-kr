@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 Exchange 관리 셸을 사용하여 Microsoft Exchange Server 2013 사서함 서버와 클라이언트 액세스 서버에서 전송 파이프라인의 전송 에이전트 목록을 확인할 수 있습니다. 구체적으로는 **Get-TransportPipeline** cmdlet이 전송 파이프라인에 있는 다음과 같은 유형의 전송 에이전트에 대한 정보를 표시합니다.
 

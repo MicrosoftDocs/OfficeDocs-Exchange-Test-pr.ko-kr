@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-02-01_
+_**마지막으로 수정된 항목:** 2016-02-01_
 
 Exchange Server 2013 및 Exchange Online 에서 자동으로 항목을 이동할 사서함 개인 (온-프레미스) 또는 클라우드 기반 보관 사서함에 보관 정책을 사용할 수 있습니다. 보관 정책에는 **보관 사서함으로 이동** 보존 작업을 사용 하는 보존 태그입니다.
 
@@ -25,9 +25,9 @@ Exchange 설치 프로그램은 **기본 MRM 정책**이라는 보존 정책을 
 
 보관 관련 된 추가 관리 작업에 대 한 참조:
 
-  - **Exchange Server 2013:** [Exchange 2013에서 원본 위치 보관 관리](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [Exchange 2013에서 원본 위치 보관 관리](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Exchange Online의 보관 사서함을 사용 하지 않도록 설정 하거나 사용](https://technet.microsoft.com/ko-kr/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [Exchange Online의 보관 사서함을 사용 하지 않도록 설정 하거나 사용](https://technet.microsoft.com/ko-kr/library/jj984357\(v=exchg.150\))
 
 
 > [!NOTE]

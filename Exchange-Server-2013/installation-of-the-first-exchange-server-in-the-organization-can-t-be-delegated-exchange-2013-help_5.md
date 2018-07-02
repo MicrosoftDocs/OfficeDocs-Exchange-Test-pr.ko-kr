@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-11-05_
+_**마지막으로 수정된 항목:** 2014-11-05_
 
 로그온한 사용자의 계정에는 조직에 첫 번째 Exchange 2013 서버를 설치하는 데 필요한 권한이 없기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

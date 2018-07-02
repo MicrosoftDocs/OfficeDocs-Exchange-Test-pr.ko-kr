@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Organization Configuration` 관리 역할을 통해 관리자가 조직 차원의 설정을 관리할 수 있습니다. 이 역할을 사용하여 제어할 수 있는 조직 구성에는 다음이 포함됩니다.
 

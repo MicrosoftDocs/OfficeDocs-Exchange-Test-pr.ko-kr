@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-05-03_
+_**마지막으로 수정된 항목:** 2013-05-03_
 
 [UM IP 게이트웨이에 메시지 대기 표시기 (MWI)을 허용 합니다.](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 

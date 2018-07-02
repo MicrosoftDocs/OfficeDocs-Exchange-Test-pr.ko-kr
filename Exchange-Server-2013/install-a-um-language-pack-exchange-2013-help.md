@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 언어를 UM 다이얼 플랜 또는 UM 자동 전화 교환에서 통합 메시징을 사용할 수 있는 언어의 목록에서 사용할 수 있도록 하려면 먼저 적절 한 UM 언어팩을 설치 해야 합니다. 특정 언어 관련 자동 압축풀기 실행 파일 또는 **setup.exe /AddUmLanguagePack** 명령을 사용 하 여 Microsoft Exchange 통합 메시징 서비스를 실행 하는 사서함 서버에 언어팩을 설치 합니다. UM 언어팩을 설치 하기 전에 먼저 다운로드 해야 사서함 서버에서 로컬 폴더에 있습니다. [Exchange Server 2013 UM 언어팩](https://go.microsoft.com/fwlink/p/?linkid=266542)에서 UM 언어팩을 다운로드할 수 있습니다. 각 언어에 대 한 별도 실행 파일 방법이 있습니다.
 

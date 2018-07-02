@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-12-02_
+_**마지막으로 수정된 항목:** 2013-12-02_
 
 관리자 감사 로그를 검색하여 누가 조직, 서버, 받는 사람 구성을 변경했는지 알아낼 수 있습니다. 이 기능은 예기치 않은 동작의 원인을 추적하거나, 악의적인 관리자를 식별하거나, 규정 준수 요구 사항이 충족되었는지 확인할 경우에 유용합니다. 관리자 감사 로깅에 대한 자세한 내용은 [관리자 감사 로깅](administrator-audit-logging-exchange-2013-help.md)을 참조하십시오.
 

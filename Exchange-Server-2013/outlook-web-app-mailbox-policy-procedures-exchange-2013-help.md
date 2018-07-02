@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-09-22_
+_**마지막으로 수정된 항목:** 2012-09-22_
 
 [Outlook Web App 사서함 정책 만들기](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

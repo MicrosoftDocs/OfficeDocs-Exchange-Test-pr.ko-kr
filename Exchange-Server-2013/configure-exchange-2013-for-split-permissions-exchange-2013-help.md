@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 사용 권한을 분할하면 Active Directory 관리자 및 Microsoft Exchange Server 2013 관리자와 같은 별개의 두 그룹에서 각자의 서비스, 개체 및 특성을 관리할 수 있습니다. Active Directory 관리자는 Active Directory 포리스트에 대한 액세스 권한을 제공하는 사용자 등의 보안 주체를 관리합니다. Exchange 관리자는 Active Directory 개체에 대한 Exchange 관련 특성을 관리하고 Exchange 관련 개체를 만들고 관리합니다.
 

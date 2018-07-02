@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-17_
+_**마지막으로 수정된 항목:** 2012-10-17_
 
 `MyName` 관리 역할을 사용하면 각 사용자가 전체 이름과 메모 필드를 보고 수정할 수 있습니다. 이것은 [MyProfileInformation 역할](myprofileinformation-role-exchange-2013-help.md) 부모 역할에서 만들어진 사용자 지정 역할입니다.
 

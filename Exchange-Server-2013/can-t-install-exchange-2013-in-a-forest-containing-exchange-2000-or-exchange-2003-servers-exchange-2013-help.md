@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 2000 Server 또는 Exchange Server 2003을 실행하는 하나 이상의 컴퓨터가 Active Directory 포리스트에 있으므로 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. Exchange 2013을 설치하려면 모든 Exchange 2000 및 Exchange 2003 서버를 포리스트에서 제거해야 합니다. 사서함, 공용 폴더 및 기타 모든 Exchange 개체 또는 구성 요소는 Exchange Server 2007 또는 Exchange Server 2010으로 업그레이드해야 합니다. Exchange 2000 또는 Exchange 2003에서 Exchange 2013으로 직접 업그레이드할 수는 없습니다.
 

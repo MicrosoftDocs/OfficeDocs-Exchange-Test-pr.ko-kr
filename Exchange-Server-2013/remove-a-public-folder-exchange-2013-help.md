@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-11-16_
+_**마지막으로 수정된 항목:** 2016-11-16_
 
 조직에서 더 이상 사용되지 않는 공용 폴더를 제거해야 할 수 있습니다. 어떤 공용 폴더를 제거해야 할지 확인하려면 [공용 폴더 및 공용 폴더 항목에 대 한 통계 보기](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)를 참조하십시오.
 

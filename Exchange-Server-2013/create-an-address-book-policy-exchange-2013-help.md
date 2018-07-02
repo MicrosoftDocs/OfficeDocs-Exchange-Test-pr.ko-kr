@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 ABP(주소록 정책)를 사용하면 사용자를 특정 그룹으로 분할하여 조직의 GAL(전체 주소 목록)에 대한 사용자 지정 보기를 제공할 수 있습니다. ABP를 만들 때 GAL, OAB(오프라인 주소록), 방 목록 및 하나 이상의 주소 목록을 정책에 할당합니다. 그런 다음 ABP를 사서함 사용자에게 할당하여 사서함 사용자에게 Outlook과 Outlook Web App에서 사용자 지정된 GAL에 액세스할 수 있는 권한을 제공할 수 있습니다. 여러 개의 GAL이 필요한 온-프레미스 조직에서 보다 간단하게 GAL 조각화를 수행할 수 있는 메커니즘을 제공하는 것이 목표입니다. ABP에 대한 자세한 내용은 [주소록 정책](address-book-policies-exchange-2013-help.md)를 참조하십시오.
 
@@ -43,15 +43,15 @@ ABP와 관련된 추가 관리 작업에 대한 자세한 내용은 [주소 주�
 
 이 예제에서는 다음과 같은 설정으로 ABP를 만듭니다.
 
-  - **이름:** 모든 Fabrikam ABP
+  - **이름:**  모든 Fabrikam ABP
 
-  - **GAL:** 모든 Fabrikam
+  - **GAL:**  모든 Fabrikam
 
-  - **OAB:** Fabrikam-All-OAB
+  - **OAB:**  Fabrikam-All-OAB
 
-  - **대화방 목록:** All Fabrikam Rooms
+  - **대화방 목록:**  All Fabrikam Rooms
 
-  - **주소 목록:** All Fabrikam, All Fabrikam Mailboxes, All Fabrikam DLs 및 All Fabrikam Contacts
+  - **주소 목록:**  All Fabrikam, All Fabrikam Mailboxes, All Fabrikam DLs 및 All Fabrikam Contacts
 
 <!-- end list -->
 

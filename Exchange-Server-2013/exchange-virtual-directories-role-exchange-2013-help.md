@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Exchange Virtual Directories` 관리 역할 관리자가 Microsoft OfficeOutlook Web App, Microsoft ActiveSync 관리를 사용 하면, 오프 라인 주소록이 (Oab), 자동 검색, Windows PowerShell, 웹 관리 인터페이스 개별 서버에서 가상 디렉터리입니다.
 

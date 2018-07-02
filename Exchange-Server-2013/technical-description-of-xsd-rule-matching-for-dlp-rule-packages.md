@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-07-28_
+_**마지막으로 수정된 항목:** 2016-07-28_
 
 이 항목에서는 사용자 자신의 사용자 지정 중요한 정보 유형 규칙 패키지를 포함하도록 설계된 DLP(데이터 손실 방지) XML 파일 내의 Pattern 및 Evidence 요소 일치 방법에 대해 설명합니다. 올바른 형식의 XML 파일을 만든 후 EAC(Exchange 관리 센터)나 Exchange 관리 셸을 사용하여 파일을 가져오면 Microsoft Exchange Server 2013 DLP 솔루션을 만드는 데 도움이 될 수 있습니다. 여기에 설명된 일치 방법을 사용하려면 먼저 DLP XML 파일이 이미 시작된 상태여야 합니다. 사용자 자신의 DLP 템플릿 및 XML 파일 정의에 대한 자세한 내용은 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)를 참조하십시오.
 

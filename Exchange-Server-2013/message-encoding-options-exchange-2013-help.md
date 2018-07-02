@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange에서 사용할 수 있는 메시지 인코딩 옵션은 MIME 및 비 MIME 문자 집합, 이진 인코딩, 첨부 파일 형식 등, 메시지 특성을 지정합니다. 메시지 인코딩 옵션은 다음 위치에 지정할 수 있습니다.
 

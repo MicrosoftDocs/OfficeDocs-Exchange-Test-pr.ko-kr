@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-03_
+_**마지막으로 수정된 항목:** 2012-10-03_
 
 관리 역할에 대한 각 관리 역할 항목은 단일 cmdlet을 나타냅니다. 역할 항목에 대해 매개 변수를 추가하거나 제거하여 이러한 변경 내용을 관리 역할에 추가함으로써 해당 cmdlet에서 매개 변수의 사용 여부를 제어할 수 있습니다. Microsoft Exchange Server 2013의 관리 역할 항목에 대한 자세한 내용은 [관리 역할 이해 (영문)](understanding-management-roles-exchange-2013-help.md)를 참조하십시오.
 

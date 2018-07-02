@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징) 및 Microsoft Lync Server를 함께 배포하여 음성 메시징, 인스턴트 메시징, 향상된 사용자 현재 상태, 오디오/비디오 회의, 통합 전자 메일 및 메시징 환경 등을 조직의 사용자에게 제공할 수 있습니다. 통합 메시징은 음성 메일에 대한 전화 응답, Outlook Voice Access 및 자동 전화 교환 서비스를 제공하는 데 사용됩니다. Microsoft Lync Server에서는 IM(인스턴트 메시징), 회의, 인바운드 및 아웃바운드 호출과 같이 Enterprise Voice에 있는 고급 기능을 사용할 수 있습니다. 이 항목에서는 이러한 기능을 지원하기 위해 통합 메시징 및 Microsoft Lync Server를 구성하는 방법에 대해 설명합니다.
 

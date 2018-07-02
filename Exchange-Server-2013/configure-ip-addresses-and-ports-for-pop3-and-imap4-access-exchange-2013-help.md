@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-28_
+_**마지막으로 수정된 항목:** 2012-11-28_
 
 EAC와 셸을 사용하여 Microsoft Exchange POP3 및 IMAP4 서비스에서 기본 설정과는 다른 IP 주소 및 포트를 사용하도록 구성할 수 있습니다.
 

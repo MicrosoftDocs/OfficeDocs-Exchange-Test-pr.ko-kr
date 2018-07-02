@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 발신자가 자동 전화 교환을 통해 사용자에게 통화를 전송할 수 있도록 설정하거나 전송할 수 없도록 차단할 수 있습니다. 이 옵션은 기본적으로 사용하도록 설정되므로 발신자가 UM(통합 메시징) 자동 전화 교환과 연결된 UM 다이얼 플랜의 UM 사용 가능 사용자에게 통화를 전송할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-04_
+_**마지막으로 수정된 항목:** 2013-02-04_
 
 EAC(Exchange 관리 센터)가 Exchange Server 2013의 웹 기반 관리 콘솔이기 때문에 웹 브라우저에서 ECP 가상 디렉터리 URL을 사용하여 EAC에 액세스합니다. 이 항목에서는 ECP 가상 디렉터리 URL을 찾는 방법을 보여줍니다.
 

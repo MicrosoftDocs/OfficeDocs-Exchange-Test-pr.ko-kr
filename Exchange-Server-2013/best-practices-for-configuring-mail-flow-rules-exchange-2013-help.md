@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 일반적인 구성 오류를 방지 하기 위해 이러한 Exchange 전송 규칙에 대 한 모범 사례 권장 사항을 따릅니다. 각 것이 좋습니다 예 및 단계별 지침과 함께 항목에 연결 합니다.
 

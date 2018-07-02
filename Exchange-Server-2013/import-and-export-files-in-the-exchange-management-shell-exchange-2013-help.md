@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013에서는 Windows PowerShell 명령줄 인터페이스 원격 기능을 사용하여 Exchange를 관리 중인 서버 또는 워크스테이션과 관리 중인 Exchange 2013을 실행하는 서버 간에 연결을 설정합니다. Exchange 2013에서는 이를 원격 Exchange 관리 셸 또는 원격 셸이라고 합니다. 로컬 Exchange 2013 서버를 관리하는 중인 경우에도 연결을 설정하기 위해 원격 셸이 사용됩니다. 로컬 및 원격 셸에 대한 자세한 내용은 [PowerShell을 사용 하 여 Exchange 2013 (Exchange 관리 셸)](https://technet.microsoft.com/ko-kr/library/bb123778\(v=exchg.150\))를 참조하십시오.
 

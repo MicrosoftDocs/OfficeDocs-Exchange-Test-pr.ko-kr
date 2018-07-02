@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 사용자가 PIN을 사용하지 않고 음성 메일에 로그인할 수 있도록 UM(통합 메시징)을 설정할 수 있습니다. 기본적으로 Outlook Voice Access 사용자가 사서함에 로그인하여 음성 메일, 전자 메일, 일정, 개인 연락처, 디렉터리 및 개인 옵션에 액세스하려고 하면 PIN을 입력하라는 메시지가 표시됩니다.
 

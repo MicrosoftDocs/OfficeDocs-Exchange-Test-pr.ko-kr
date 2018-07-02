@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 MWI(Message Waiting Indicator)는 대부분의 레거시 음성 메일 시스템에서 사용되는 기능으로, 사용자에게 새 음성 메일 메시지나 듣지 않은 음성 메일 메시지가 있음을 알려줍니다. 가장 일반적인 형태로, 새 음성 메시지나 듣지 않은 음성 메시지가 있음을 나타내기 위해 사용자의 전화기에서 램프가 켜집니다.
 

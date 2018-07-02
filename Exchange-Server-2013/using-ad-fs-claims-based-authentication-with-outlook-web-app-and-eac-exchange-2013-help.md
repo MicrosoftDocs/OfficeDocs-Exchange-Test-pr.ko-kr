@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2017-04-14_
+_**마지막으로 수정된 항목:** 2017-04-14_
 
 **요약**:
 

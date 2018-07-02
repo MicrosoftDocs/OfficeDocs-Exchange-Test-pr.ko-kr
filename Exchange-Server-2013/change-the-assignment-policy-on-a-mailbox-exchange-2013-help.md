@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-08_
+_**마지막으로 수정된 항목:** 2012-10-08_
 
 사서함에 할당된 관리 역할 할당 정책을 변경할 수 있습니다. 사서함의 할당 정책을 변경하면 다음에 사용자가 사서함에 로그인하거나 사서함 옵션 페이지를 여는 등 연결을 새로 고치는 즉시 변경 내용이 적용됩니다. Microsoft Exchange Server 2013의 할당 정책에 대한 자세한 내용은 [관리 역할 할당 정책 이해 (영문)](understanding-management-role-assignment-policies-exchange-2013-help.md)를 참조하십시오.
 

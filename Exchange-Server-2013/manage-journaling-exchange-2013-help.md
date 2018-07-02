@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 저널링에는 인바운드 및 아웃 바운드 전자 메일 통신을 기록 하 여 법적, 규정 및 조직 규정 준수 요구 사항에 응답 하 여 조직의 데 도움이 됩니다. 이 항목에서는 Exchange 2013 및 Exchange Online 저널링 관리와 관련 된 기본 작업을 수행 하는 방법을 보여줍니다.
 

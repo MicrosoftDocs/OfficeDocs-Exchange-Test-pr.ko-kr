@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-01-30_
+_**마지막으로 수정된 항목:** 2013-01-30_
 
 [UM 자동 전화 교환을 설정합니다](set-up-a-um-auto-attendant-exchange-2013-help.md)
 

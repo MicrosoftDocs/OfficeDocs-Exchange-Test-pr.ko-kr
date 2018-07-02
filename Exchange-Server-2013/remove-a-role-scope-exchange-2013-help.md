@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-02_
+_**마지막으로 수정된 항목:** 2012-10-02_
 
 관리 역할 범위는 사용자가 사용할 수 있는 개체를 지정하며, 사용자는 자신에게 할당된 cmdlet 및 매개 변수를 사용하여 개체를 변경할 수 있습니다. 범위를 더 이상 사용하지 않는 경우 제거할 수 있습니다. Microsoft Exchange Server 2013의 관리 역할 범위에 대한 자세한 내용은 [관리 역할 범위 이해 (영문)](understanding-management-role-scopes-exchange-2013-help.md)를 참조하십시오.
 

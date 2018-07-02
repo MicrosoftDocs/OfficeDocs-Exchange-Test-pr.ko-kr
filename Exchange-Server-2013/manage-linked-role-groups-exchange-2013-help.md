@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-09_
+_**마지막으로 수정된 항목:** 2012-10-09_
 
 자원 Active Directory 포리스트에서 Microsoft Exchange Server 2013 조직 관리에 외부 Active Directory 포리스트에서 유니버설 보안 그룹 (USG)의 구성원을 사용 하도록 설정 하면 연결 된 관리 역할 그룹을 사용할 수 있습니다. 연결 된 역할 그룹과 외래 포리스트에 USG를 연결 하 여 그 구성원 USG의 사용 권한은 부여 받습니다 연결 된 역할 그룹에 할당 된 관리 역할에서 제공 합니다. 연결 된 역할 그룹에 대 한 자세한 내용은 [관리 역할 그룹 이해 (영문)](understanding-management-role-groups-exchange-2013-help.md)을 참조 하십시오.
 

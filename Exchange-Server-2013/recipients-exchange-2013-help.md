@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 메시지를 주고받는 사람과 리소스는 메시징 및 공동 작업 시스템의 핵심입니다. Exchange 조직에서 이러한 사람과 리소스를 *받는 사람*이라고 합니다. 받는 사람은 Microsoft Exchange에서 메시지를 배달하거나 라우팅할 수 있는 Active Directory의 메일 사용 가능 개체입니다.
 

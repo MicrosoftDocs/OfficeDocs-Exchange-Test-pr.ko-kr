@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-03_
+_**마지막으로 수정된 항목:** 2012-10-03_
 
 더 이상 필요 없는 관리 역할은 조직에서 제거할 수 있습니다. 직접 만든 관리 역할만 제거할 수 있고 기본 제공 관리 역할은 제거할 수 없습니다. Microsoft Exchange Server 2013의 관리 역할에 대한 자세한 내용은 [관리 역할 이해 (영문)](understanding-management-roles-exchange-2013-help.md)를 참조하십시오.
 

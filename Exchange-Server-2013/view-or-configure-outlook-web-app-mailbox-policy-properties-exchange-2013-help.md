@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-04-13_
+_**마지막으로 수정된 항목:** 2016-04-13_
 
 Outlook Web App 사서함 정책을 만든 후에는 Outlook Web App에서 사용할 수 있는 기능을 제어하는 다양한 옵션을 구성할 수 있습니다. 예를 들어 받은 편지함 규칙을 사용하거나 사용하지 않도록 설정하거나 또는 첨부 파일에 허용되는 파일 유형 목록을 만들 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-01-30_
+_**마지막으로 수정된 항목:** 2013-01-30_
 
 [인증 된 호출자 로부터 보호 된 음성 메일 구성](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
 

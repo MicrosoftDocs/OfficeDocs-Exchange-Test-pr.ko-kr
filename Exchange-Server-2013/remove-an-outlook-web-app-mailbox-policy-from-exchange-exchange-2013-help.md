@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-03-15_
+_**마지막으로 수정된 항목:** 2013-03-15_
 
 EAC 또는 셸을 사용 하 여 Exchange 조직에서 MicrosoftOutlook Web App 사서함 정책을 제거할 수 있습니다.
 

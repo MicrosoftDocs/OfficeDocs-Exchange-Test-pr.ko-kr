@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 사용자가 Microsoft Exchange ActiveSync를 통해 자신의 전자 메일, 일정, 연락처 및 작업 정보 휴대폰, 태블릿 및 기타 휴대용 장치에 액세스할 수 있습니다. 자신의 서명 및 자동 회신을 설정 하려면 사용할 수 있습니다. 다양 한 휴대폰 및 모바일 장치 Exchange ActiveSync를 사용 합니다.
 

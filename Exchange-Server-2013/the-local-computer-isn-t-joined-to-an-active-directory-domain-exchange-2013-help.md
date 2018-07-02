@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2013-03-22_
+_**마지막으로 수정된 항목:** 2013-03-22_
 
 로컬 컴퓨터는 Active Directory 도메인의 구성원이 아닌는 않기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. Exchange Server 2013 를 설치 하기 전에 Active Directory 도메인에 로컬 컴퓨터를 가입 해야 합니다. Exchange 2013 를 설치 하려면 충분 한 관리 권한이 있는 도메인 사용자 계정 하는 대신 컴퓨터에 로컬 사용자 계정에 로그인 하는 경우에이 메시지가 나타날 수 있습니다.
 

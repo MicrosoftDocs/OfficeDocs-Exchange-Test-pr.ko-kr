@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-01-23_
+_**마지막으로 수정된 항목:** 2017-01-23_
 
 Edge 구독 프로세스를 사용하여 Exchange 조직과 Edge 전송 서버 간의 메일 흐름을 설정하는 것이 좋습니다. 그러나 Edge 구독 프로세스를 사용하여 Exchange 조직에 Edge 전송 서버를 구독할 수 없는 상황도 있습니다. Exchange 조직과 Edge 전송 서버 간의 메일 흐름을 수동으로 설정하려면 Exchange 조직의 Edge 전송 서버와 사서함 서버에서 송신 커넥터와 수신 커넥터를 만들고 구성해야 합니다.
 

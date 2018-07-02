@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-14_
+_**마지막으로 수정된 항목:** 2015-01-14_
 
 보기 지정, 변경 또는 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸을 사용 하 여 Microsoft Exchange 에서 기존 데이터 손실 방지 (DLP) 정책을 제거 합니다.
 

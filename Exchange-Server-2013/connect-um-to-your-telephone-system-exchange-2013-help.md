@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-30_
+_**마지막으로 수정된 항목:** 2012-11-30_
 
 UM(통합 메시징)은 음성 메시징과 전자 메일 메시징을 다양한 장치에서 액세스할 수 있는 사서함 하나로 결합합니다. 따라서 사용자가 전자 메일 받은 편지함에서 또는 전화기에서 Outlook Voice Access를 사용하여 음성 사서함 메시지를 들을 수 있습니다.
 

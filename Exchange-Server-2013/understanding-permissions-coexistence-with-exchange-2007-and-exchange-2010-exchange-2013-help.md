@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 기존 Exchange Server 2010 또는 Microsoft Exchange Server 2007 조직에 Microsoft Exchange Server 2013을 설치할 때는 새 조직에서 사용 권한이 작동하는 방식을 이해해야 합니다. 아래에서 사용자의 조직에 해당하는 섹션을 읽어 보십시오.
 

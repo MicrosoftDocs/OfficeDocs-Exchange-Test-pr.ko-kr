@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-29_
+_**마지막으로 수정된 항목:** 2012-11-29_
 
 사용자는 여러 개의 모바일 장치를 구성하여 MicrosoftExchange Server 2013과 동기화할 수 있습니다. EAC 또는 셸을 사용하여 특정 사용자와 연결된 모바일 장치 목록을 볼 수 있습니다.
 

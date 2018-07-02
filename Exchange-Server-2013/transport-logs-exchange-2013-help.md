@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-01-28_
+_**마지막으로 수정된 항목:** 2013-01-28_
 
 전송 로그 전송 파이프라인에 진행 하는 방법에 대 한 정보를 제공 합니다. 다음 전송 로그 Microsoft Exchange Server 2013 에서 사용할 수 있습니다.
 

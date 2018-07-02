@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 해당 UM (통합 메시징) 또는 음성 메일 PIN 다시 설정 하는 경우 사용자에 게 전송 된 전자 메일 메시지에 추가 텍스트를 포함할 수 있습니다. UM 사서함 정책에 대 **한 사용자의 Outlook Voice Access PIN 다시 설정 하는 경우** 상자에 사용자 지정 텍스트를 입력 하 여이 작업을 수행 합니다. 사용자 지정 된 텍스트를 포함할 수 등 UM 사용이 가능한 사용자에 대 한 보안 관련 정보입니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Outlook.Proxy 상태 설정은 CAS(클라이언트 액세스 서버)에 있는 외부에서 Outlook 사용 프록시 인프라의 사용 가능 여부를 모니터링합니다.
 

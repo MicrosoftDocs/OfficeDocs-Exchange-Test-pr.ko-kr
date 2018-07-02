@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2010-07-16_
+_**마지막으로 수정된 항목:** 2010-07-16_
 
 [사서함 감사 사서함에 대해 로깅을 사용 하지 않도록 설정 하거나 사용](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)
 

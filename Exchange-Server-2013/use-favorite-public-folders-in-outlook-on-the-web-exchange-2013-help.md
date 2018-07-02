@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-06-24_
+_**마지막으로 수정된 항목:** 2016-06-24_
 
 Outlook 클라이언트에서 조직의 사용자가 자신의 **즐겨찾기** 폴더에 공용 폴더를 추가할 수 있습니다. 그런 다음, 조직의 정책에 따라 즐겨찾기로을 같은 해당 공용 폴더를 추가 하는 Outlook 클라이언트에서 사용 하는 웹에서 Outlook 의 특정 기능을 수행할 웹에서 Outlook 를 사용할 수 있습니다.
 

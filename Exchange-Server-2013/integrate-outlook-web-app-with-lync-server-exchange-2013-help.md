@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-17_
+_**마지막으로 수정된 항목:** 2013-02-17_
 
 Outlook Web App에서는 Outlook Web App 및 Microsoft Lync Server 2013의 통합을 지원합니다. Lync Server 2013와의 통합이 구성되고 IM(통합 메시징)이 Outlook Web App에서 활성화된 경우 사용자는 Outlook Web App을 사용하여 IM 세션을 시작하거나 응답할 수 있습니다.
 

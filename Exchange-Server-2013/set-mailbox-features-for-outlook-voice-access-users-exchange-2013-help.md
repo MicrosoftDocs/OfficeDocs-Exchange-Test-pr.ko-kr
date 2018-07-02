@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access에는 TUI(전화 사용자 인터페이스)와 VUI(음성 사용자 인터페이스)의 두 가지 인터페이스가 있습니다. 사용자가 Exchange 2013의 UM(통합 메시징) 시스템을 사용하여 사서함에 액세스할 때 UM 사용 가능 사용자의 TUI 설정을 구성할 수 있습니다. UM 사서함 정책에서 UM 사용이 가능한 사용자의 TUI 설정을 수정하면 변경 내용이 UM 사서함 정책에 연결된 모든 사용자에게 영향을 줍니다. UM 사서함 정책에서 다음 TUI 설정을 수정할 수 있습니다.
 

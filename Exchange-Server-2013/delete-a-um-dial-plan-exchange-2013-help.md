@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-11_
+_**마지막으로 수정된 항목:** 2012-11-11_
 
 기존 UM(통합 메시징) 다이얼 플랜을 삭제할 수 있습니다. UM 다이얼 플랜을 삭제할 경우 UM IP 게이트웨이, UM 사서함 정책 및 UM 헌트 그룹을 더 이상 사용할 수 없게 됩니다. UM 사서함 정책, UM 자동 전화 교환, UM IP 게이트웨이 또는 UM 헌트 그룹에서 참조되거나 여기에 연결되어 있는 UM 다이얼 플랜은 삭제할 수 없습니다.
 

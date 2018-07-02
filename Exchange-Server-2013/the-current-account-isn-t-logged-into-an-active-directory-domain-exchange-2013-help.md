@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-12-02_
+_**마지막으로 수정된 항목:** 2014-12-02_
 
 현재 계정 Active Directory 도메인에 로그온 하지 않기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. Exchange Server 2013을 설치 하는 데 필요한 사용 권한이 있는 Active Directory 계정을 사용 하 여 로그인 해야 합니다.
 

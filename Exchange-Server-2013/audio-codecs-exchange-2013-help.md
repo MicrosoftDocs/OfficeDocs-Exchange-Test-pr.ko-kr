@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)에서는 오디오 코덱을 사용하여 음성 메일 메시지를 저장합니다. VoIP 게이트웨이나 IP PBX(Private Branch eXchange) 및 Microsoft Exchange 통합 메시징 서비스를 실행하는 사서함 서버나 Microsoft Exchange 통합 메시징 통화 라우터 서비스를 실행하는 클라이언트 액세스 서버 간에는 다른 코덱이 사용됩니다. 통합 메시징은 다음 네 가지 오디오 코덱 중 하나를 사용하여 음성 메시지를 만들고 저장할 수 있습니다.
 

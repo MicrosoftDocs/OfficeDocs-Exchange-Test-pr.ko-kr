@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-05-26_
+_**마지막으로 수정된 항목:** 2016-05-26_
 
 다음은 Microsoft Exchange Server 2013, 대부분의 Microsoft Exchange Server 2010 는 동일한 기본 제공 스팸 방지 기능을 사용 하는 것과 반대로 클라우드 (Microsoft Exchange Online 또는 Microsoft Exchange Online Protection )에서 Exchange 스팸 방지 보호 기능을 사용할 때의 이점:
 

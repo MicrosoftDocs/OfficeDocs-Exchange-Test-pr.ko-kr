@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2016, Office 365_
+_**적용 대상:** Exchange Online, Exchange Server 2016, Office 365_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 조직에서 새 메일 그룹을 만들려면 또는 메일 사용이 가능한 Active Directory 에서 기존 그룹에 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸을 사용 하 여 합니다.
 

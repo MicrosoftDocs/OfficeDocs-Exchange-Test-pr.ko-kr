@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Online 및 Exchange Server 2013 에서 전자 메일 수명 주기를 관리 하려면 보존 정책을 사용할 수 있습니다. 보존 태그 만들기 (영문), 보존 정책에 추가 하 고 사서함 사용자에 게 정책을 적용 하 여 보존 정책이 적용 됩니다.
 

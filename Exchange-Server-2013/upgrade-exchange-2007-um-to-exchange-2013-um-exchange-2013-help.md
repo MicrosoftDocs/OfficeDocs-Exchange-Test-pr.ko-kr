@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)을 사용하는 Microsoft Exchange 2007 조직이 Exchange 2013 통합 메시징을 사용하도록 업그레이드할 때는 몇 가지 필수 단계를 수행해야 합니다. 기타 단계는 Exchange 2007 UM 배포의 일부분으로 이미 완료되었습니다. Exchange 2007에서 통합 메시징을 지원하도록 만들고 구성한 UM 구성 요소 및 전화 통신 환경에 따라 VoIP(Voice over IP) 게이트웨이, IP PBX(Private Branch Exchange) 또는 일반/SIP 사용 가능 PBX를 비롯한 추가 전화 통신 장비를 배포한 다음 Exchange 2013 UM에 필요한 추가 UM 구성 요소를 만들고 구성해야 할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-12-13_
+_**마지막으로 수정된 항목:** 2012-12-13_
 
 Outlook Voice Access 사용자가 같은 다이얼 플랜에 연결된 다른 UM 사용 가능 사용자에게 음성 메일 메시지를 보내도록 설정하거나 보내지 못하도록 설정할 수 있습니다.
 

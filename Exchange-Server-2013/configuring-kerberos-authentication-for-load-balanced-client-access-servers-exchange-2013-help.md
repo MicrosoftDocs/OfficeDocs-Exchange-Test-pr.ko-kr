@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
-**요약:** Kerberos 인증 부하 분산 된 클라이언트 액세스 서버와 Exchange 2013에서 사용 하는 방법에 설명 합니다.
+**요약:**  Kerberos 인증 부하 분산 된 클라이언트 액세스 서버와 Exchange 2013에서 사용 하는 방법에 설명 합니다.
 
 부하 분산 된 클라이언트 액세스 서버와 Kerberos 인증을 사용 하는 순서로이 문서에 설명 된 구성 단계를 완료 해야 합니다.
 
@@ -59,7 +59,7 @@ ASA 자격 증명을 설정 하는 경우 다음이 지침 사항에 유의 해�
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **예제:**
+    **예제:** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -69,7 +69,7 @@ ASA 자격 증명을 설정 하는 경우 다음이 지침 사항에 유의 해�
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **예제:**
+    **예제:** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     

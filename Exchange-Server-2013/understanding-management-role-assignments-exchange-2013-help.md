@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-04_
+_**마지막으로 수정된 항목:** 2012-10-04_
 
 *관리 역할 할당*은 Microsoft Exchange Server 2013의 RBAC(역할 기반 액세스 제어) 권한 모델의 일부로, 관리 역할과 역할 담당자 간의 연결입니다. *역할 담당자*는 역할 그룹, 역할 할당 정책, 사용자 또는 USG(유니버설 보안 그룹)입니다. 역할을 적용하려면 역할 담당자에게 할당해야 합니다. RBAC에 대한 자세한 내용은 [역할 기반 액세스 제어 이해](understanding-role-based-access-control-exchange-2013-help.md) 항목을 참조하십시오.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-07-28_
+_**마지막으로 수정된 항목:** 2016-07-28_
 
 이 항목의 XML 스키마 및 지침은 분류 규칙 패키지에서 중요한 정보 유형을 정의하는 기본 DLP(데이터 손실 방지) XML 파일을 직접 만들어 보는 데 도움이 됩니다. 잘 구성된 XML 파일을 만들면 Microsoft Exchange Server 2013 DLP 솔루션을 만드는 데 사용할 수 있도록 Exchange 관리 센터 또는 Exchange 관리 셸을 통해 해당 파일을 가져올 수 있습니다. 사용자 지정 DLP 정책 템플릿인 XML 파일에는 분류 규칙 패키지인 XML이 포함될 수 있습니다. 자신의 DLP 템플릿을 XML 파일로 정의하는 방법에 대한 개요는 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)를 참조하십시오.
 

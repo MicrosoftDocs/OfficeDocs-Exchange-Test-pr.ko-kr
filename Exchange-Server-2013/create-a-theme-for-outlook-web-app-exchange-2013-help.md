@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 *테마* , 배경색, 글꼴, 강조 표시 색상, 아이콘, 및 MicrosoftOutlook Web App 에서 사용 되는 머리글을 정의 합니다. 각 테마는 미디어 파일 및 MicrosoftExchange 서버 \\Client Access\\OWA\\prem\\*version*\\resources\\themes에서 설치 디렉터리에 저장 된 계단식 스타일 시트 (.css) 파일의 컬렉션입니다. 각 테마 \\themes의 자체의 하위 디렉터리에 저장 됩니다.
 

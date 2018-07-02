@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 익명 발신자 로부터 음성 메시지를 받거나에서 작업을 금지 UM 사용이 가능한 사용자를 허용할 수 있습니다. UM (통합 메시징) 및 음성 메일에 대해 활성화 된 사용자에 게 기본적으로 익명 되며 호출자 ID 정보를 포함 하지 않고는 전화를 받을 수 있습니다.
 

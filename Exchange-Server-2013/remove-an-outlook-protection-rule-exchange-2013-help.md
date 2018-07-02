@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Outlook 보호 규칙을 사용 하는 메시지 전송 하기 전에 Outlook 2010 에 [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) 서식 파일을 적용 하 여 정보 권한 관리 (IRM)와 메시지를 보호할 수 있습니다. Outlook 보호 규칙 적용 되 고 하지 못하도록 하려면 규칙을 비활성화할 수 있습니다. Active Directory 에서 규칙 정의 제거 하면 Outlook 보호 규칙을 제거 합니다.
 

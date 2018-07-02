@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-01-30_
+_**마지막으로 수정된 항목:** 2014-01-30_
 
 호환되지 않는 운영 체제가 검색되어 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. Exchange 2013을 설치하기 전에 이 컴퓨터에 호환되는 운영 체제를 설치해야 합니다. 다음 표에는 Exchange 2013과 호환되는 운영 체제가 나와 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Active Directory 사용자 계정과 Exchange 사서함 데이터베이스에 저장 된 사서함 데이터의 각 Microsoft Exchange 사서함 구성 됩니다. 사서함에 대 한 모든 구성 데이터 Active Directory 사용자 개체의 Exchange 특성에 저장 됩니다. 사서함 데이터베이스의 사서함에 연결 된 사용자 계정 메일 데이터를 포함 합니다. 다음 그림은 사서함의 구성 요소를 보여줍니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 2013 에 대 한 Microsoft의 [기본 아키텍처](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx)Exchange 네이티브 데이터 보호 라고 하는 개념을 활용 합니다. Exchange 네이티브 데이터 보호의 일반 백업을 사용 하지 않고 사서함 데이터를 보호 하기 위해 기본 Exchange 기능에 의존 합니다. 하지만 백업을 만들려는 ExchangeWindows ServerExchange 데이터의 Exchange 인식 VSS 볼륨 섀도 복사본 서비스 기반 백업을 만들 수 있게 하는 백업 (WSB)에 대 한 플러그인 포함 됩니다. Exchange 인식 백업이 되려면 WSB 기능을 설치 해야 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-04-20_
+_**마지막으로 수정된 항목:** 2017-04-20_
 
 전자 메일 수명 주기를 관리 [보존 태그 및 보존 정책](retention-tags-and-retention-policies-exchange-2013-help.md) 를 사용할 수 있습니다. 보존 정책 설정이 삭제 해야할 때 또는 보관 사서함으로 메시지를 자동으로 이동 해야 하는 경우를 지정 하는데 사용할 수 있는 보존 태그를 포함 합니다.
 

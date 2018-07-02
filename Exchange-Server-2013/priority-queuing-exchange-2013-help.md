@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 *우선 순위 큐*는 사서함 서버의 Transport Service에 의한 메시지 처리에 영향을 주기 위해 보낸 사람이 정의한 메시지 우선 순위를 사용하는 Microsoft Exchange Server 2013의 기능입니다.
 

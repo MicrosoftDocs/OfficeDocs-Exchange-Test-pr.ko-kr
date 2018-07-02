@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 메일 사용자는 메일 연락처와 비슷합니다. 둘 다 외부 전자 메일 주소가 있고 Exchange 또는 Exchange Online 조직 외부에 있는 사람에 대한 정보를 포함하며 공유 주소록과 기타 주소 목록에 표시될 수 있습니다. 그러나 메일 사용자는 메일 연락처와 달리 Exchange 또는 Office 365 조직 로그온 자격 증명이 있으며 리소스에 액세스할 수 있습니다. 자세한 내용은 [받는 사람](recipients-exchange-2013-help.md)을 참조하십시오.
 

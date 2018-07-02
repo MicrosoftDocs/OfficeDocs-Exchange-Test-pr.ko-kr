@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-07-31_
+_**마지막으로 수정된 항목:** 2015-07-31_
 
 사용 하 여 MicrosoftOfficeOutlook Web App 열려는 사서함을 지정 하려면 웹 파트를 열려면 해당 사서함 내 폴더 및 콘텐츠 보기를 사용할 수 있습니다.
 
@@ -169,13 +169,13 @@ Outlook Web App 웹 파트도 수를 직접 입력 웹 브라우저에서 합니
 
 다음 예제에는 일반적인 Outlook Web App 보기에 직접 액세스 하는 방법을 보여줍니다.
 
-  - **받은 편지함:** https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = = 받은 편지함
+  - **받은 편지함:**  https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = = 받은 편지함
 
-  - **(오늘) 일정:**https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 & exsvurl = = 1
+  - **(오늘) 일정:** https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 & exsvurl = = 1
 
-  - **(매주) 일정:** https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 및 보기 = 매주 & exsvurl = = 1
+  - **(매주) 일정:**  https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 및 보기 = 매주 & exsvurl = = 1
 
-  - **(월별) 일정:** https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 및 보기 = 월별 & exsvurl = = 1
+  - **(월별) 일정:**  https://*\<server name\>*/owa/?cmd 내용을 /resources/msdn/en-us/office/media/courseviewer/sharepoint2013trainingitpro\_mod1.xml\&operation = 일정 및 보기 = 월별 & exsvurl = = 1
 
 ## 자세한 내용
 

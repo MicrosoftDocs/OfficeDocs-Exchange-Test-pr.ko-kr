@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 특정 요일에 Exchange 서버에서 처리한 통화에 대한 자세한 정보를 보려면 해당 요일의 통화 데이터를 호출 통계 보고서에서 내보냅니다. 지난 90일간의 데이터를 조회할 수 있는 일별 통화 데이터를 통해 오디오 품질 또는 거부된 통화와 관련된 문제를 진단하고 조직의 Exchange 서버에서 감사 또는 보고서용으로 정보를 제공할 수 있습니다.
 

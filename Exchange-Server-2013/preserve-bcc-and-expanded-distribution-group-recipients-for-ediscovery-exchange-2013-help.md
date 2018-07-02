@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**마지막으로 수정된 항목:**2017-06-19_
+_**마지막으로 수정된 항목:** 2017-06-19_
 
 원본 위치 유지, 소송 보존 및 [Office 365 보존 정책](http://go.microsoft.com/fwlink/?linkid=827811) ( Office 365 보안 및 준수 센터 에서 만든) 규정 준수 및 eDiscovery 요구 사항에 맞게 사서함 콘텐츠를 유지 하도록 수 있습니다. 받는 사람에 대 한 정보 직접에서 해결 되는 받는 사람 및 참조 필드의 메시지는 기본적으로 모든 메시지에 포함 되어 있지만 조직에 대 한 검색 하 고 메시지의 모든 받는 사람에 대 한 세부 정보를 재현 하는 기능 필요할 수 있습니다. 이는 다음이 포함 됩니다.
 

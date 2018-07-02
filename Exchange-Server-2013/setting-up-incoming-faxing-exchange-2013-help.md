@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange UM(통합 메시징)은 아웃바운드 팩스 또는 팩스 라우팅 같은 향상된 팩스 기능을 위해 인증된 팩스 파트너 솔루션을 사용합니다. 기본적으로 Exchange 서버는 UM 사용 가능 사용자에게 수신되는 팩스를 배달하도록 구성되지 않습니다. 대신에 Exchange 서버는 수신 팩스 호출을 인증된 팩스 파트너 솔루션으로 리디렉션합니다. 팩스 파트너의 서버는 팩스 데이터를 받은 후 이 팩스가 .tif 첨부 파일로 포함된 전자 메일 메시지로 사용자의 사서함에 보냅니다.
 

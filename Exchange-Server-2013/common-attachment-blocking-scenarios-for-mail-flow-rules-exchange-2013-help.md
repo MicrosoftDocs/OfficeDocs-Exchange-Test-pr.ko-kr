@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-02-23_
+_**마지막으로 수정된 항목:** 2017-02-23_
 
 특정 유형의 메시지 차단 되거나 거부 법률 또는 규정 준수 요구 사항을 충족 하기 위해 또는 특정 비즈니스 요구를 구현 하는 조직 필요할 수 있습니다. Exchange 에서 전송 규칙을 사용 하 여 설정할 수 있는 모든 첨부 파일을 차단 하기 위한 일반적인 시나리오에 대 한 예가 다음과 같습니다.
 
@@ -51,7 +51,7 @@ _**마지막으로 수정된 항목:**2017-02-23_
 
 5.  조건 및 동작을 선택 합니다.
 
-**참고:** EAC를 입력할 수 있는 가장 작은 첨부 파일 크기는 대부분 첨부 파일을 검색 해야 하는 1kb입니다. 그러나 모든 규모의 가능한 모든 첨부 파일을 검색 하려면 PowerShell을 사용 하 여 EAC의 규칙을 만든 후에 1 바이트를 첨부 파일 크기를 조정 해야 합니다. 온-프레미스 Exchange 조직에서 Exchange 관리 셸을 여는 방법을 확인하려면 organization, see [셸을 엽니다.](https://technet.microsoft.com/ko-kr/library/dd638134\(v=exchg.150\))을 참조하세요. Windows PowerShell을 사용하여 Exchange Online에 연결하는 방법을 알아보려면 [Exchange Online PowerShell에 연결](https://go.microsoft.com/fwlink/p/?linkid=396554)을 참조하세요. Windows PowerShell을 사용하여 Exchange Online Protection에 연결하는 방법을 알아보려면 [Exchange Online Protection PowerShell에 연결](https://go.microsoft.com/fwlink/p/?linkid=627290)을 참조하세요.
+**참고:**  EAC를 입력할 수 있는 가장 작은 첨부 파일 크기는 대부분 첨부 파일을 검색 해야 하는 1kb입니다. 그러나 모든 규모의 가능한 모든 첨부 파일을 검색 하려면 PowerShell을 사용 하 여 EAC의 규칙을 만든 후에 1 바이트를 첨부 파일 크기를 조정 해야 합니다. 온-프레미스 Exchange 조직에서 Exchange 관리 셸을 여는 방법을 확인하려면 organization, see [셸을 엽니다.](https://technet.microsoft.com/ko-kr/library/dd638134\(v=exchg.150\))을 참조하세요. Windows PowerShell을 사용하여 Exchange Online에 연결하는 방법을 알아보려면 [Exchange Online PowerShell에 연결](https://go.microsoft.com/fwlink/p/?linkid=396554)을 참조하세요. Windows PowerShell을 사용하여 Exchange Online Protection에 연결하는 방법을 알아보려면 [Exchange Online Protection PowerShell에 연결](https://go.microsoft.com/fwlink/p/?linkid=627290)을 참조하세요.
 
 *\<Rule Name\>* 기존 규칙의 이름을 바꿉니다 하 고 1 바이트를 첨부 파일 크기를 설정 하려면 다음 명령을 실행 합니다.
 

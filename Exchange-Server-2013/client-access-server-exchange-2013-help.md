@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-07-02_
+_**마지막으로 수정된 항목:** 2014-07-02_
 
 Microsoft Exchange 2013의 경우 Exchange 서버 역할의 아키텍처가 대폭 변경되었습니다. Exchange 2010과 Exchange 2007에서는 서버 역할이 5개 있었지만 Exchange 2013에서는 서버 역할 수가 클라이언트 액세스 서버 및 사서함 서버와 서비스 팩 1을 설치한 경우 Edge 전송 서버 역할까지 3개로 줄어들었습니다.
 

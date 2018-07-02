@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-08-12_
+_**마지막으로 수정된 항목:** 2013-08-12_
 
 EAC 또는 셸을 사용하여 Outlook Web App 가상 디렉터리의 속성을 보거나 구성할 수 있습니다.
 

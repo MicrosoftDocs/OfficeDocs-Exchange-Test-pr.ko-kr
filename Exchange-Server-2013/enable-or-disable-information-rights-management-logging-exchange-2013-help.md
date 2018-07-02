@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-12_
+_**마지막으로 수정된 항목:** 2012-10-12_
 
 Exchange Server 2013 를 모니터링 하 고 해결 IRM 작업 정보 권한 관리 (IRM) 로그를 사용할 수 있습니다. IRM 로깅은 기본적으로 사용 됩니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-14_
+_**마지막으로 수정된 항목:** 2013-02-14_
 
 개인, IT 또는 비즈니스 요구 사항을 충족시키기 위해 개인 사용자 또는 사서함 서버용 MRM(메시징 레코드 관리)을 해제하거나 일시적으로 중단해야 할 수도 있습니다. MRM을 해제하거나 일시적으로 중단해야 하는 이유는 다음과 같습니다.
 

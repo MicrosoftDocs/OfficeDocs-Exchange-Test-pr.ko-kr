@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Edge 전송 서버를 배포할 때 해당 서버에는 Active Directory 액세스 권한이 없습니다. 받는 사람 조회 및 수신 허용 목록 집계 작업을 수행하고 MTLS(상호 전송 계층 보안) 인증을 사용하여 도메인 보안을 구현하려면 Edge 전송 서버에는 Active Directory의 데이터가 필요합니다. 이 데이터는 EdgeSync를 사용하여 Edge 전송 서버로 복제됩니다. Edge 전송 서버는 복제된 모든 정보를 AD LDS(Active Directory Lightweight Directory Services)에 저장합니다.
 

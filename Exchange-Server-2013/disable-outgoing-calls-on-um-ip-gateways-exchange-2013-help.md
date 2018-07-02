@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-13_
+_**마지막으로 수정된 항목:** 2012-11-13_
 
 UM(통합 메시징) IP 게이트웨이의 보내는 호출을 사용하거나 사용하지 않도록 설정할 수 있습니다. UM IP 게이트웨이의 속성에서 **이 UM IP 게이트웨이를 통한 발신 전화 허용** 옵션을 선택 취소하면 VoIP(Voice over IP) 게이트웨이, IP PBX 또는 SBC(Session Border Controller)에 대한 발신 전화를 수락하지 않고 보내지 않도록 UM IP 게이트웨이가 구성됩니다. **이 UM IP 게이트웨이를 통해 보내는 호출 허용** 설정에 따라 UM IP 게이트웨이가 사용자의 보내는 호출을 시작할 수 있는지 여부가 제어되지만 VoIP 게이트웨이, IP PBX 또는 SBC의 호출 전송 또는 들어오는 호출에는 영향을 주지 않습니다.
 

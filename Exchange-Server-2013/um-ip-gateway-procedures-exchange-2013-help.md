@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-05-03_
+_**마지막으로 수정된 항목:** 2013-05-03_
 
 [UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md)
 

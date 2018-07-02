@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-08-09_
+_**마지막으로 수정된 항목:** 2016-08-09_
 
 정책 정보 설정이 포함 된 파일을 가져와서 DLP 정책을 통해 중요 한 정보를 관리할 수 있습니다. DLP 정책 템플릿 개발할 수 Exchange에 관계 없이 XML 파일로 합니다. 그러나 제대로 작동 하기 위해 특정 형식 요구 사항을 충족 해야 합니다. 또는 이전 버전의 Exchange에서 내보내는 정책 Microsoft Exchange Server 2013 로 가져올 수 있습니다.
 

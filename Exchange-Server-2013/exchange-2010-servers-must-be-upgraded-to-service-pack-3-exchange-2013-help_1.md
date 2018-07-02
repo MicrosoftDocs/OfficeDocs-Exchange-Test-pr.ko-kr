@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-11-05_
+_**마지막으로 수정된 항목:** 2014-11-05_
 
 Exchange Server 2010용 SP3(서비스 팩 3)으로 업그레이드하지 않은 Microsoft Exchange Server 2010 서버가 검색되었으므로 Microsoft Exchange Server 2013 설치 프로그램을 계속할 수 없습니다. Exchange 2013을 설치하려면 조직에 있는 Exchange 2010 서버를 Exchange 2010 SP3으로 업그레이드해야 합니다. 이 요구 사항에는 Exchange 2010 Edge 전송 서버가 포함됩니다. 자세한 내용은 [Exchange 2010에서 Exchange 2013으로 업그레이드](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)를 참조하십시오.
 

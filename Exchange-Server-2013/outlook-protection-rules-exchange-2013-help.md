@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 매일, 정보 근로자가 전자 메일, 재무 보고서 및 데이터, 고객 및 직원 정보 및 기밀 제품 정보 및 사양을 포함 하 여 중요 한 정보를 교환 합니다. Microsoft Exchange Server 2013, Microsoft Outlook, 및 Microsoft OfficeOutlook Web App 에서 사용자는 Active Directory (AD RMS) Rights Management Services 권한 정책 템플릿을 적용 하 여 메시지에 정보 권한 관리 (IRM) 보호를 적용할 수 있습니다. 이 경우 조직에서 AD RMS 배포를 해야 합니다. AD RMS에 대 한 자세한 내용은 [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=129823)을 참조 하십시오.
 

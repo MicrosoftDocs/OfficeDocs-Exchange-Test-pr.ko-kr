@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-07-31_
+_**마지막으로 수정된 항목:** 2014-07-31_
 
 Exchange Server 2013 를 사용 하면 Exchange 2013 조직 관리 역할 그룹의 구성원 없는 사람에 게 Exchange 서버 설치를 위임할 수 있습니다. 이 종종 유용 대기업의 위치를 설치 하 고 서버 설정 사람 없는 Exchange 와 같은 서비스를 관리 하는 동일한 사람입니다. 수행 하려는 것 처럼 소리이 하는 경우이 항목은 있습니다.
 

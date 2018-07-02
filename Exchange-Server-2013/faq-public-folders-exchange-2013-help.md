@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-03-27_
+_**마지막으로 수정된 항목:** 2017-03-27_
 
 이 항목에서는 Exchange Server 2013의 공용 폴더에 관련된 자주 묻는 질문의 목록을 제공합니다. 공용 폴더에 대한 자세한 내용은 [공용 폴더](public-folders-exchange-2013-help.md)를 참조하십시오.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 GAL(전체 주소 목록)은 Exchange 조직 내의 모든 그룹, 사용자 및 연락처에 대한 항목이 포함된 디렉터리입니다.
 

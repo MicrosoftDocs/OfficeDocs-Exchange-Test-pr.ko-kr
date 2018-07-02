@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-05-04_
+_**마지막으로 수정된 항목:** 2016-05-04_
 
 보거나 수 정책 내보내기 (영문)를 XML 파일로 저장 하 고 해당 XML 파일을 수정 하 여 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸 cmdlet을 사용 하지 않고 DLP 정책 내에서 세부 정보를 변경 합니다. 일반적으로 다음 파일을 가져오면 XML Exchange 에 다시 합니다. 이와 같은 방식으로 정책은 편집할 수 있습니다 독립적 Exchange 입니다. 그러나 라고도 XML 스키마를 제대로 작동 하기 위해 특정 형식 요구 사항을 충족 해야 합니다.
 

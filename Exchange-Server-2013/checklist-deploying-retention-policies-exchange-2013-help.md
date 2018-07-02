@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 검사 목록을 사용하여 Microsoft Exchange Server 2013 조직에서 보존 정책을 배포합니다. 이 검사 목록으로 작업을 시작하기 전에 다음 항목의 개념을 익혀야 합니다.
 

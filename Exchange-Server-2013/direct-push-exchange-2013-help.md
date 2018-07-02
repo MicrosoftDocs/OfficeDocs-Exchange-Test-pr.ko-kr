@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-07-11_
+_**마지막으로 수정된 항목:** 2012-07-11_
 
 직접 올리기는 Microsoft Exchange Server 2013에 내장된 기능입니다. 직접 올리기는 셀룰러 또는 무선 네트워크 연결을 통해 모바일 장치를 최신 상태로 유지합니다. 또한 새 콘텐츠가 동기화될 준비가 되면 모바일 장치에 알립니다.
 

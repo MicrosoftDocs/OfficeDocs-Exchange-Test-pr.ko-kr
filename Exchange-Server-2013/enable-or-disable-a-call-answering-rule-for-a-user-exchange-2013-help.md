@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 셸을 사용 하 여 하나를 사용 하지 않도록 설정 하거나 사용 또는 사용자에 대 한 자세한 전화 응답 규칙. 여러 사용자에 대 한 자세한 전화 응답 규칙 또는 하나를 사용 하지 않도록 설정 하거나 사용 Exchange 관리 셸 스크립트에서 **Enable-UMCallAnsweringRule** 또는 **Disable-UMCallAnsweringRule** cmdlet을 사용할 수도 있습니다.
 

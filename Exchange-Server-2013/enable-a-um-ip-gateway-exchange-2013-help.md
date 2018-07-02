@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 기본적으로 UM (통합 메시징) IP 게이트웨이 만들 때 해당 상태를 설정 사용 합니다. 그러나 오프 라인 상태로 들어오거나 나가는 호출을 수행할 수 없도록 하는 UM IP 게이트웨이 사용 하지 않도록 설정 해야 합니다. UM IP 게이트웨이 만든 후에 변수를 사용 또는 사용 안함 상태를 설정 하 여 해당 작업 및 기능을 제어할 수 있습니다.
 

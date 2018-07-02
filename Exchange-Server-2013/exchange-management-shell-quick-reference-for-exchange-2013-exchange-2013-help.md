@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이 항목에서는 RTM(Release To Manufacturing) 및 최신 버전의 Microsoft Exchange Server 2013에서 제공하는 가장 일반적으로 사용되는 cmdlet에 대해 설명하며 사용 예를 보여 줍니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-06-11_
+_**마지막으로 수정된 항목:** 2013-06-11_
 
 Microsoft Lync Server와 Exchange UM(통합 메시징)을 통합하는 경우 셸에서 ExchUcUtil.ps1 스크립트를 실행해야 합니다. ExchUcUtil.ps1 스크립트는 다음을 수행합니다.
 

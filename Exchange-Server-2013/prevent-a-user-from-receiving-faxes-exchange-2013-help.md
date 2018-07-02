@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM (통합 메시징) 사용자에서 팩스를 받을 수 없도록 합니다. 기존 및 새 UM 사용자에 대 한 팩스 설정을 변경 하는 방법에 대해 알아봅니다.
 

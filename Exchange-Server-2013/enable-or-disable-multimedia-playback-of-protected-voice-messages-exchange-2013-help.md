@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 보호된 음성 메일 메시지를 받는 사용자가 전화에서 재생 기능을 통해 메시지를 듣도록 강제 적용할 수 있습니다. 클라이언트 소프트웨어에서 권한 관리를 지원하지 않는 경우 사용자는 Outlook Voice Access를 사용하여 메시지를 들어야 합니다.
 
