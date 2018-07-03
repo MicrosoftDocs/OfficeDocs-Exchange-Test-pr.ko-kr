@@ -41,5 +41,5 @@ Boot.ini 파일에서 디버그/매개 변수를 추가 하 여 Windows 디버�
 
 5.  하 여 파일을 저장 하 고 닫은 다음 변경 내용을 적용 하려면 Exchange Server 컴퓨터를 다시 시작 합니다.
 
-Boot.ini 파일에서 사용할 수 있는 매개 변수에 대 한 자세한 내용은 Microsoft 기술 자료 문서 833721, "Windows XP 및 Windows Server 2003 Boot.ini 파일에 대 한 사용 가능한 스위치 옵션"을 참조 하십시오. ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721)).
+Boot.ini 파일에서 사용할 수 있는 매개 변수에 대 한 자세한 내용은 Microsoft 기술 자료 문서 833721, "Windows XP 및 Windows Server 2003 Boot.ini 파일에 대 한 사용 가능한 스위치 옵션"을 참조 하십시오. ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721)).
 

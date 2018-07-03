@@ -52,7 +52,7 @@ Exchange 2013 의 최신 버전을 가져오려면를 다운로드 하 고 [Micr
 </tr>
 <tr class="even">
 <td><p>Exchange 2013 CU18</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936%0d%0a">릴리스: 2017 년 9 월 분기별 Exchange 업데이트</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936">릴리스: 2017 년 9 월 분기별 Exchange 업데이트</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Exchange 2013 CU17</p></td>

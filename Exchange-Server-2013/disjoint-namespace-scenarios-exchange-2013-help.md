@@ -101,7 +101,7 @@ Exchange 2013 서버에 연결 되는 도메인 컨트롤러를 액세스를 허
 
   - [그룹 정책 자주 묻는 질문 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003의 DNS에 대한 새 그룹 정책](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003의 DNS에 대한 새 그룹 정책](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [그룹 정책](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

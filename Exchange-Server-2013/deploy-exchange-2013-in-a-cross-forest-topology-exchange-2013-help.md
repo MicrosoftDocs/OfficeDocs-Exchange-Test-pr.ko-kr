@@ -37,7 +37,7 @@ Exchange 2013에서 다음 절차를 수행하려면 다음을 확인합니다.
 
   - Windows 업데이트를 통해 Windows 원격 관리가 설치되지 않았는지 확인합니다.
 
-  - Windows PowerShell과 Windows 원격 관리를 설치합니다. 자세한 내용은 Microsoft 기술 자료 문서 968930, [Windows Management Framework 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)를 참조하십시오.
+  - Windows PowerShell과 Windows 원격 관리를 설치합니다. 자세한 내용은 Microsoft 기술 자료 문서 968930, [Windows Management Framework 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)를 참조하십시오.
 
   - Forefront Identity Manager 2010 R2 s p 1을 다운로드 합니다. [Microsoft Forefront Identity Manager 2010 R2 s p 1을 다운로드](https://go.microsoft.com/fwlink/p/?linkid=279868)를 참조 하십시오.
 

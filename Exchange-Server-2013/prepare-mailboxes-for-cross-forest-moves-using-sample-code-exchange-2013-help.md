@@ -27,7 +27,7 @@ Microsoft Exchange 2013 사서함 이동 및 **New-MoveRequest** 및 **New-Migra
 
   - Microsoft 다운로드 센터에서 [온라인 사서함 이동에 대 한 준비](https://go.microsoft.com/fwlink/p/?linkid=177882) 페이지에서 예제 코드를 다운로드 합니다.
 
-  - 예제 코드를 실행 하려면 ILM 2007 기능 팩 1 서비스 팩 1 (SP1) 해야 합니다. 기능 팩을 다운로드 하려면 Microsoft 기술 자료 문서 977791, [서비스 팩 1 (빌드 3.3.1139.2) Identity Lifecycle Manager 2007 기능 팩 1에 대 한 교육은](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791)를 참조 하십시오.
+  - 예제 코드를 실행 하려면 ILM 2007 기능 팩 1 서비스 팩 1 (SP1) 해야 합니다. 기능 팩을 다운로드 하려면 Microsoft 기술 자료 문서 977791, [서비스 팩 1 (빌드 3.3.1139.2) Identity Lifecycle Manager 2007 기능 팩 1에 대 한 교육은](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791)를 참조 하십시오.
 
   - 또한 다음이 필요 합니다.
     

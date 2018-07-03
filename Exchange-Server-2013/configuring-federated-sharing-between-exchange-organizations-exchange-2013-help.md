@@ -117,7 +117,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
         </thead>
         <tbody>
         <tr class="odd">
-        <td>Exchange 2013 및 Exchange 2003 조직 간에 약속 있음/없음 공유가 제대로 작동하려면 공유 폴더 계층에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공유 폴더가 있어야 합니다. Exchange 2010 설치 중 Outlook 2003 지원을 위한 클라이언트 설정 구성의 일부로 공용 폴더를 만드는 옵션을 선택하는 경우에만 Exchange 2003 조직의 Exchange 2010 사서함 서버에 이 폴더가 자동으로 생성됩니다. 또한 이 옵션은 Exchange 2010 사서함 서버가 조직에 설치된 첫 번째 사서함 서버인 경우에만 설치 프로세스 중에 표시됩니다. 설치 중에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공용 폴더가 만들어지지 않으면 이 폴더를 수동으로 만들어야 합니다. 이 공용 폴더를 만드는 방법에 대한 자세한 내용은 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">엔터프라이즈 환경용 Microsoft Office 365에서 Exchange 페더레이션을 사용하는 경우 약속 있음/없음 문제를 해결하는 방법</a>을 참조하십시오.</td>
+        <td>Exchange 2013 및 Exchange 2003 조직 간에 약속 있음/없음 공유가 제대로 작동하려면 공유 폴더 계층에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공유 폴더가 있어야 합니다. Exchange 2010 설치 중 Outlook 2003 지원을 위한 클라이언트 설정 구성의 일부로 공용 폴더를 만드는 옵션을 선택하는 경우에만 Exchange 2003 조직의 Exchange 2010 사서함 서버에 이 폴더가 자동으로 생성됩니다. 또한 이 옵션은 Exchange 2010 사서함 서버가 조직에 설치된 첫 번째 사서함 서버인 경우에만 설치 프로세스 중에 표시됩니다. 설치 중에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공용 폴더가 만들어지지 않으면 이 폴더를 수동으로 만들어야 합니다. 이 공용 폴더를 만드는 방법에 대한 자세한 내용은 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">엔터프라이즈 환경용 Microsoft Office 365에서 Exchange 페더레이션을 사용하는 경우 약속 있음/없음 문제를 해결하는 방법</a>을 참조하십시오.</td>
         </tr>
         </tbody>
         </table>
