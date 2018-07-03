@@ -203,8 +203,7 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
     </Regex>
     ...
     <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-  
-         ]\d{4})(?:$|[\s\,]|\.\s)
+        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
     </Regex>
     ...
     <Regex id="NorthCarolinaDriversLicenseNumber">
