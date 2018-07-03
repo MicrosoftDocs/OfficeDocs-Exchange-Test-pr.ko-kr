@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 사서함 데이터베이스 를 제거할 수 없습니다.
+# 사서함 데이터베이스 [UnwillingToRemoveMailboxDatabase]를 제거할 수 없습니다.
 
  
 

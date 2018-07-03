@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 로컬 컴퓨터 Active Directory 도메인에 가입 되어있지 않은
+# 로컬 컴퓨터 [ComputerNotPartofDomain] Active Directory 도메인에 가입 되어있지 않은
 
  
 

@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 도메인 컨트롤러에서 Exchange 설치 하지 않기
+# 도메인 컨트롤러에서 Exchange 설치 [WarningInstallExchangeRolesOnDomainController] 하지 않기
 
  
 

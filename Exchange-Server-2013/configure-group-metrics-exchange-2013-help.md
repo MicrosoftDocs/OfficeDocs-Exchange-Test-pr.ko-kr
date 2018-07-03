@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 그룹 메트릭 구성
+# 그룹 메트릭 [2013] 구성
 
  
 

@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 크로스 포리스트 송신 커넥터를 구성 합니다.
+# [Wave15] 크로스 포리스트 송신 커넥터를 구성 합니다.
 
  
 

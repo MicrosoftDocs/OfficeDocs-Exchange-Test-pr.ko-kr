@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Exchange 2010 서버 서비스 팩 3 로 업그레이드 해야
+# Exchange 2010 서버 서비스 팩 3 [E15E14CoexistenceMinVersionRequirement]로 업그레이드 해야
 
  
 

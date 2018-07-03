@@ -63,8 +63,7 @@ OAuth 인증에는 보통 세 가지 구성 요소, 즉 권한 부여 서버 하
 
 Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 서버 간 인증을 구성하려면 다음 두 단계를 완료해야 합니다.
 
-  -  
-    **1단계 - 온-프레미스 Exchange Server의 기본 제공 토큰 발급자에 인증서를 할당합니다.** 먼저 온-프레미스 Exchange 관리자가 이전에 인증서를 만들지 않은 경우 다음 Exchange 관리 셸 스크립트를 사용하여 인증서를 만든 다음 온-프레미스 Exchange Server의 기본 제공 토큰 발급자에 할당해야 합니다. 이 프로세스는 한 번만 수행하면 되며 인증서를 만든 후에는 다른 인증 시나리오에서도 해당 인증서를 바꾸지 말고 다시 사용해야 합니다. *$tenantDomain*의 값은 도메인 이름으로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
+  - **1단계 - 온-프레미스 Exchange Server의 기본 제공 토큰 발급자에 인증서를 할당합니다.** 먼저 온-프레미스 Exchange 관리자가 이전에 인증서를 만들지 않은 경우 다음 Exchange 관리 셸 스크립트를 사용하여 인증서를 만든 다음 온-프레미스 Exchange Server의 기본 제공 토큰 발급자에 할당해야 합니다. 이 프로세스는 한 번만 수행하면 되며 인증서를 만든 후에는 다른 인증 시나리오에서도 해당 인증서를 바꾸지 말고 다시 사용해야 합니다. *$tenantDomain*의 값은 도메인 이름으로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
     
     <table>
     <thead>
@@ -159,8 +158,7 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
     </table>
 
 
-  -  
-    **2단계 – Exchange 2013 온-프레미스와 통신하도록 Office 365를 구성합니다.** Exchange Server 2013이 통신할 Office 365 서버를 파트너 응용 프로그램으로 구성합니다. 예를 들어 Exchange Server 2013 온-프레미스가 Office 365와 통신해야 하는 경우 Exchange 온-프레미스를 파트너 응용 프로그램으로 구성해야 합니다. 파트너 응용 프로그램은 Exchange 2013이 타사 보안 토큰 서버를 거치지 않고도 보안 토큰을 직접 교환할 수 있는 응용 프로그램입니다. 온-프레미스 Exchange 2013 관리자는 다음 Exchange 관리 셸 스크립트를 사용하여 Exchange 2013이 통신할 Office 365 테넌트를 파트너 응용 프로그램으로 구성해야 합니다. 실행 중에는 Office 365 테넌트 도메인 관리자의 사용자 이름과 암호를 입력하라는 메시지가 표시됩니다(예: administrator@fabrikam.com). 이전 스크립트에서 만들지 않은 경우 *$CertFile* 값은 인증서 위치로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
+  - **2단계 – Exchange 2013 온-프레미스와 통신하도록 Office 365를 구성합니다.** Exchange Server 2013이 통신할 Office 365 서버를 파트너 응용 프로그램으로 구성합니다. 예를 들어 Exchange Server 2013 온-프레미스가 Office 365와 통신해야 하는 경우 Exchange 온-프레미스를 파트너 응용 프로그램으로 구성해야 합니다. 파트너 응용 프로그램은 Exchange 2013이 타사 보안 토큰 서버를 거치지 않고도 보안 토큰을 직접 교환할 수 있는 응용 프로그램입니다. 온-프레미스 Exchange 2013 관리자는 다음 Exchange 관리 셸 스크립트를 사용하여 Exchange 2013이 통신할 Office 365 테넌트를 파트너 응용 프로그램으로 구성해야 합니다. 실행 중에는 Office 365 테넌트 도메인 관리자의 사용자 이름과 암호를 입력하라는 메시지가 표시됩니다(예: administrator@fabrikam.com). 이전 스크립트에서 만들지 않은 경우 *$CertFile* 값은 인증서 위치로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
     
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         

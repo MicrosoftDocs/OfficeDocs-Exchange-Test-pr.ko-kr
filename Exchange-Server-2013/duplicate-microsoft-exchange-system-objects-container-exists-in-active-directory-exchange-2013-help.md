@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Active Directory 에 존재 하는 중복 된 Microsoft Exchange System Objects 컨테이너
+# Active Directory [AdInitErrorRule]에 존재 하는 중복 된 Microsoft Exchange System Objects 컨테이너
 
  
 

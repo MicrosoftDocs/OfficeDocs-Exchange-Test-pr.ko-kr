@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 로그온 한 사용자 Schema Admins 그룹의 구성원이 아닙니다.
+# 로그온 한 사용자 [SchemaUpdateRequired] Schema Admins 그룹의 구성원이 아닙니다.
 
  
 

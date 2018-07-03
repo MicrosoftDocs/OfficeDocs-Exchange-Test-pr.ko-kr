@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 현재 계정 Active Directory 도메인에 로그인 하지 않습니다.
+# 현재 계정 [LoggedOntoDomain] Active Directory 도메인에 로그인 하지 않습니다.
 
  
 

@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Exchange 조직 컨테이너 에 쓸 수 없음
+# Exchange 조직 컨테이너 [GlobalServerInstall]에 쓸 수 없음
 
  
 
