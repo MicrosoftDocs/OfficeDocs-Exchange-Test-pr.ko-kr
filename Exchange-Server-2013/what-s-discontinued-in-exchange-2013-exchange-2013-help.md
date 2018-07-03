@@ -381,7 +381,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 </tr>
 <tr class="odd">
 <td><p>UDP(사용자 데이터그램 프로토콜) 알림</p></td>
-<td><p>UDP(User Datagram Protocol) 알림에 대한 지원이 Exchange 2013에서 제거되었습니다. 이러한 변경은 Outlook 2003 클라이언트가 Exchange 2013 서버의 사서함에 연결될 때 사용자 환경에 영향을 미칩니다. 자세한 내용은 Microsoft 기술 자료 문서 2009942, <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2009942">Exchange Server 2010 사용자가 온라인 모드에서 Outlook 2003을 사용할 때 폴더를 업데이트하는 데 시간이 오래 걸림</a>을 참조하십시오.</p></td>
+<td><p>UDP(User Datagram Protocol) 알림에 대한 지원이 Exchange 2013에서 제거되었습니다. 이러한 변경은 Outlook 2003 클라이언트가 Exchange 2013 서버의 사서함에 연결될 때 사용자 환경에 영향을 미칩니다. 자세한 내용은 Microsoft 기술 자료 문서 2009942, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2009942">Exchange Server 2010 사용자가 온라인 모드에서 Outlook 2003을 사용할 때 폴더를 업데이트하는 데 시간이 오래 걸림</a>을 참조하십시오.</p></td>
 </tr>
 </tbody>
 </table>

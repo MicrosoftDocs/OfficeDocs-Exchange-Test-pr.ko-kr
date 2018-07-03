@@ -29,7 +29,7 @@ Exchange 2013 설치 프로그램 제대로 작동 하려면 외부에서 Outloo
 
 
 
-Microsoft 기술 자료 문서 KB2619234, [핫픽스는 또한 Windows 7 및 Windows Server 2008 r 2에서 RPC 계층에서 사용할 HTTP를 통한 RPC에서 사용 되는 연결 쿠키/GUID를 사용 하도록 설정할 수)](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+Microsoft 기술 자료 문서 KB2619234, [핫픽스는 또한 Windows 7 및 Windows Server 2008 r 2에서 RPC 계층에서 사용할 HTTP를 통한 RPC에서 사용 되는 연결 쿠키/GUID를 사용 하도록 설정할 수)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), 또는 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)
 

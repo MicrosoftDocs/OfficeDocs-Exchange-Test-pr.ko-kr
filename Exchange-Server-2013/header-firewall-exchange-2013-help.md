@@ -148,7 +148,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 
@@ -176,7 +176,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버만 해당
 
 
@@ -254,7 +254,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 
@@ -271,7 +271,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 

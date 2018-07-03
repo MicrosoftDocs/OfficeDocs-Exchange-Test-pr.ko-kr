@@ -31,7 +31,7 @@ UM 문제 해결 도구는 로컬 통합 메시징 서버, Exchange 2013 사서�
     
       - Windows Vista 또는 Windows Server 2008 컴퓨터에서 도구를 실행 하는 경우 [Windows Server 2008 x64 및 Windows Vista x64, 용 Microsoft.NET Framework 3.5 제품군 업데이트](https://go.microsoft.com/fwlink/p/?linkid=178998)를 참조 하십시오.
     
-      - WinRM(Windows 원격 관리) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu). Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=968930)를 참조하세요.
+      - WinRM(Windows 원격 관리) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu). Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=968930)를 참조하세요.
     
       - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi). [Unified Communications Managed API 2.0, Core Runtime (64 비트)](https://go.microsoft.com/fwlink/p/?linkid=198175)를 참조 하십시오.
 

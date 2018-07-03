@@ -29,7 +29,7 @@ Exchange 2013 설치 프로그램을 실행하면 WMI(Windows Management Instrum
 
 설치를 계속하려면 **ExecutionPolicy** GPO에서 **MachinePolicy** 또는 **UserPolicy** 정의를 일시적으로 제거해야 합니다.
 
-**ExecutionPolicy** GPO **MachinePolicy** 또는 **UserPolicy** 정의 제거 하는 방법에는 내용은 [기술 자료 문서 KB981474](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=981474)를 참조 하십시오.
+**ExecutionPolicy** GPO **MachinePolicy** 또는 **UserPolicy** 정의 제거 하는 방법에는 내용은 [기술 자료 문서 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)를 참조 하십시오.
 
 
 > [!NOTE]

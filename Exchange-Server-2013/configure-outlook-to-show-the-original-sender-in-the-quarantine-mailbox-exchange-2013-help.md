@@ -126,7 +126,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
         
           - *\<OfficeVersion\>*   Outlook 2007의 경우 값은 `Office12`입니다. Outlook 2010의 경우 값은 `Office14`입니다. Outlook 2013의 경우 값은 `Office15`입니다.
         
-          - *\<LCID\>*   LCID(로캘 ID) 값입니다. 예를 들어 미국 영어의 LCID는 1033입니다. 자세한 내용은 [KB221435: Word에서 지원되는 로캘 식별자 목록](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=221435)(기계 번역)을 참조하십시오.
+          - *\<LCID\>*   LCID(로캘 ID) 값입니다. 예를 들어 미국 영어의 LCID는 1033입니다. 자세한 내용은 [KB221435: Word에서 지원되는 로캘 식별자 목록](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435)(기계 번역)을 참조하십시오.
     
       - **이름**   이 절차의 나머지 부분에서는 파일 이름이 `QTNE.cfg`라고 가정합니다. 파일 이름은 중요하지 않지만, 값을 따옴표로 묶어야 파일이 QTNE.cfg.txt가 아닌 QTNE.cfg로 저장됩니다.
     

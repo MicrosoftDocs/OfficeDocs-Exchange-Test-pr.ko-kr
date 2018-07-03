@@ -191,11 +191,11 @@ Windows Server 2008 R2 SP1 컴퓨터에 Exchange 2013을 설치하는 데 필요
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64비트](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Microsoft 기술 자료 문서 KB974405(Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+4.  [Microsoft 기술 자료 문서 KB974405(Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-5.  [기술 자료 문서 KB2619234(RPC over HTTP에 사용되는 연결 쿠키/GUID를 Windows 7과 Windows Server 2008 R2의 RPC 계층에서도 사용되도록 설정)(기계 번역)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+5.  [기술 자료 문서 KB2619234(RPC over HTTP에 사용되는 연결 쿠키/GUID를 Windows 7과 Windows Server 2008 R2의 RPC 계층에서도 사용되도록 설정)(기계 번역)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
-6.  [기술 자료 문서 KB2533623(비보안 라이브러리 로드로 원격 코드 실행 가능)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2533623)
+6.  [기술 자료 문서 KB2533623(비보안 라이브러리 로드로 원격 코드 실행 가능)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
 
     > [!NOTE]
@@ -251,7 +251,7 @@ Exchange 관리 도구를 설치하려는 도메인 가입 Windows 7 64비트 �
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3.  [기술 자료 문서 KB974405(Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+3.  [기술 자료 문서 KB974405(Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
 ## Windows 8 및 Windows 8.1 필수 구성 요소(관리 도구에만 해당)
 

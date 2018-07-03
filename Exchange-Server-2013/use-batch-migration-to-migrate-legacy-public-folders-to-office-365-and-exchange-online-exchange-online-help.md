@@ -77,7 +77,7 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
   - Exchange 2007, 해야 Exchange 조직 관리자 역할 또는 Exchange Server 관리자 역할이 할당 되어야 합니다. 또한 공용 폴더 관리자 역할 및 대상 서버에 대 한 로컬 관리자 그룹에 할당 해야 합니다. 자세한 내용은 [사용자 또는 그룹 관리자 역할을 추가 하는 방법](https://go.microsoft.com/fwlink/p/?linkid=81779)를 참조 하십시오.
 
-  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)으로 업그레이드합니다.
+  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)으로 업그레이드합니다.
 
   - 조직에 2GB보다 큰 공용 폴더가 있으면 마이그레이션 전에 해당 폴더의 콘텐츠를 삭제하거나 여러 공용 폴더로 분할하는 것이 좋습니다. 이 두 옵션 중 하나를 사용할 수 없으면 공용 폴더를 Office 365 및 Exchange Online으로 이동하지 않는 것이 좋습니다.
 

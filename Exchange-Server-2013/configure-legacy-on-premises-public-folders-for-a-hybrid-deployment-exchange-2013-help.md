@@ -104,7 +104,7 @@ Exchange 2003 공용 폴더와의 하이브리드 구성은 지원되지 않습�
 
 7.  Exchange 2007에서는 Exchange Organization Administrator 역할 또는 Exchange Server Administrator 역할을 할당받아야 합니다. 또한 대상 서버에 대한 로컬 관리자 그룹 및 Public Folder Administrator 역할을 할당받아야 합니다. 자세한 내용은 [관리자 역할에 사용자 또는 그룹을 추가하는 방법](https://go.microsoft.com/fwlink/p/?linkid=81779)을 참조하세요.
 
-8.  Windows Server 2008 x64에서 Exchange Server 2007을 실행하는 경우 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)으로 업그레이드해야 합니다. Windows Server 2003 x64에서 Exchange Server 2007을 실행하는 경우에는 Windows PowerShell 2.0으로 업그레이드해야 합니다. 자세한 내용은 [Windows Server 2003 x64 Edition용 업데이트](https://www.microsoft.com/ko-kr/download/details.aspx?id=10512)를 참조하세요.
+8.  Windows Server 2008 x64에서 Exchange Server 2007을 실행하는 경우 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)으로 업그레이드해야 합니다. Windows Server 2003 x64에서 Exchange Server 2007을 실행하는 경우에는 Windows PowerShell 2.0으로 업그레이드해야 합니다. 자세한 내용은 [Windows Server 2003 x64 Edition용 업데이트](https://www.microsoft.com/ko-kr/download/details.aspx?id=10512)를 참조하세요.
 
 9.  프레미스 간 공용 폴더에 액세스하려면 사용자는 Outlook 클라이언트를 2012년 11월 Outlook 공개 업데이트 이상으로 업그레이드해야 합니다.
     

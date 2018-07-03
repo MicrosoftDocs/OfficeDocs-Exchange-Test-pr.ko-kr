@@ -55,5 +55,5 @@ Microsoft Exchange 설치 Exchange 조직에 있는 서버의 FQDN 같은 Exchan
 
 4.  **전자 메일 주소** 탭을 클릭 한 다음 적절 한 SMTP 주소를 변경
 
-받는 사람 정책 명명 문제에 대 한 자세한 내용은 Microsoft 기술 자료 문서 288175을 참조 하십시오. "XCON: 받는 사람 정책 5.4.8 조직에서 모든 서버의 FQDN과 일치할 수 없도록 하는 Ndr" ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175)).
+받는 사람 정책 명명 문제에 대 한 자세한 내용은 Microsoft 기술 자료 문서 288175을 참조 하십시오. "XCON: 받는 사람 정책 5.4.8 조직에서 모든 서버의 FQDN과 일치할 수 없도록 하는 Ndr" ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)).
 
