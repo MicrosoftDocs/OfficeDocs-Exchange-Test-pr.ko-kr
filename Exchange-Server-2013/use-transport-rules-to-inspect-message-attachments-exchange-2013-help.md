@@ -72,11 +72,9 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
 여기에 표시된 조건의 Exchange 관리 셸 이름은 `TransportRule` cmdlet이 필요한 매개 변수입니다.
 
-  -  
-    [New-TransportRule](https://technet.microsoft.com/ko-kr/library/bb125138\(v=exchg.150\))에서 cmdlet에 대해 자세히 알아보세요.
+  -  [New-TransportRule](https://technet.microsoft.com/ko-kr/library/bb125138\(v=exchg.150\))에서 cmdlet에 대해 자세히 알아보세요.
 
-  -  
-    [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)에서 이러한 조건의 속성 유형에 대해 자세히 알아보세요.
+  -  [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)에서 이러한 조건의 속성 유형에 대해 자세히 알아보세요.
 
 전송 규칙은 지원되는 파일 형식의 콘텐츠만 조사할 수 있습니다. 전송 규칙 에이전트가 지원되는 파일 형식 목록에 없는 첨부 파일을 발견하면 `AttachmentIsUnsupported` 조건이 트리거됩니다. 지원되는 파일 형식은 다음 섹션에 나와 있습니다. 나열되지 않은 파일은 `AttachmentIsUnsupported` 조건을 트리거합니다.
 
@@ -213,11 +211,9 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
 여기에 표시된 조건의 Exchange 관리 셸 이름은 `TransportRule` cmdlet이 필요한 매개 변수입니다.
 
-  -  
-    [New-TransportRule](https://technet.microsoft.com/ko-kr/library/bb125138\(v=exchg.150\))에서 cmdlet에 대해 자세히 알아보세요.
+  -  [New-TransportRule](https://technet.microsoft.com/ko-kr/library/bb125138\(v=exchg.150\))에서 cmdlet에 대해 자세히 알아보세요.
 
-  -  
-    [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)에서 이러한 조건의 속성 유형에 대해 자세히 알아보세요.
+  -  [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)에서 이러한 조건의 속성 유형에 대해 자세히 알아보세요.
 
 ## 전송 규칙 검사에 지원되는 실행 파일 형식
 
