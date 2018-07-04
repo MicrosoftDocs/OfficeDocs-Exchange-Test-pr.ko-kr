@@ -57,18 +57,8 @@ EAC를 사용하여 새로운 모바일 장치 사서함 정책을 만들 수 �
 
 2.  여러 확인란과 드롭다운 목록을 사용하여 모바일 장치 사서함 정책의 설정을 구성합니다.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>새 모바일 사서함 정책을 기본 모바일 사서함 정책으로 만들려면 <strong>기본 정책입니다.</strong>를 선택합니다. 모바일 사서함 정책을 기본 정책으로 만들면 모든 새 사용자가 만들어질 때 이 정책이 자동으로 할당됩니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 새 모바일 사서함 정책을 기본 모바일 사서함 정책으로 만들려면 <strong>기본 정책입니다.</strong>를 선택합니다. 모바일 사서함 정책을 기본 정책으로 만들면 모든 새 사용자가 만들어질 때 이 정책이 자동으로 할당됩니다.
 
 
 3.  **저장**을 클릭합니다.
@@ -77,18 +67,8 @@ EAC를 사용하여 새로운 모바일 장치 사서함 정책을 만들 수 �
 
 New-MobileDeviceMailboxPolicy cmdlet을 사용하여 새로운 모바일 장치 사서함 정책을 만듭니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>새 모바일 장치 사서함 정책을 만드는 데 사용할 수 있는 cmdlet은 두 가지입니다. <strong>New-ActiveSyncMailboxPolicy</strong> cmdlet과 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet은 동일한 작업을 수행합니다. Microsoft Exchange Server의 이후 버전에서는 <strong>New-ActiveSyncMailboxPolicy</strong> cmdlet을 포함하지 않을 예정입니다. <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet을 사용하려면 스크립트 및 프로시저를 업데이트하는 것이 좋습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 새 모바일 장치 사서함 정책을 만드는 데 사용할 수 있는 cmdlet은 두 가지입니다. <strong>New-ActiveSyncMailboxPolicy</strong> cmdlet과 <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet은 동일한 작업을 수행합니다. Microsoft Exchange Server의 이후 버전에서는 <strong>New-ActiveSyncMailboxPolicy</strong> cmdlet을 포함하지 않을 예정입니다. <strong>New-MobileDeviceMailboxPolicy</strong> cmdlet을 사용하려면 스크립트 및 프로시저를 업데이트하는 것이 좋습니다.
 
 
 1.  셸에서 다음 명령을 실행합니다.
@@ -133,18 +113,8 @@ EAC를 사용하여 모바일 장치 사서함 정책을 편집할 수 있습니
 
 셸을 사용하여 모바일 장치 사서함 정책을 편집할 수 있습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>모바일 장치 사서함 정책을 편집하는 데 사용할 수 있는 cmdlet은 두 가지입니다. Set-ActiveSyncMailboxPolicy cmdlet과 Set-MobileDeviceMailboxPolicy cmdlet은 동일한 작업을 수행합니다. Microsoft Exchange Server의 이후 버전에서는 <strong>Set-ActiveSyncMailboxPolicy</strong> cmdlet을 포함하지 않을 예정입니다. <strong>Set-MobileDeviceMailboxPolicy</strong> cmdlet을 사용하려면 스크립트 및 프로시저를 업데이트하는 것이 좋습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 모바일 장치 사서함 정책을 편집하는 데 사용할 수 있는 cmdlet은 두 가지입니다. Set-ActiveSyncMailboxPolicy cmdlet과 Set-MobileDeviceMailboxPolicy cmdlet은 동일한 작업을 수행합니다. Microsoft Exchange Server의 이후 버전에서는 <strong>Set-ActiveSyncMailboxPolicy</strong> cmdlet을 포함하지 않을 예정입니다. <strong>Set-MobileDeviceMailboxPolicy</strong> cmdlet을 사용하려면 스크립트 및 프로시저를 업데이트하는 것이 좋습니다.
 
 
 1.  셸에서 다음 명령을 실행합니다.

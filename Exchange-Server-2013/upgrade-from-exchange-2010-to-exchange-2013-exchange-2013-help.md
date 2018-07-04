@@ -27,18 +27,8 @@ Microsoft Exchange Server 2010 및 Exchange Server 2007에는 여러 서버 역�
 
 기존 Exchange 2003 조직을 직접 Exchange 2013으로 업그레이드할 수는 없습니다. 먼저 Exchange 2003 조직을 Exchange 2007 또는 Exchange 2010 조직으로 업그레이드해야 하며, 그런 다음 Exchange 2007 또는 Exchange 2010 조직을 Exchange 2013으로 업그레이드할 수 있습니다. 조직을 Exchange 2003에서 Exchange 2010으로 업그레이드한 다음 Exchange 2010에서 Exchange 2013으로 업그레이드하는 것이 좋습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>먼저 Exchange 2003의 모든 인스턴스를 조직에서 제거해야 Exchange 2013으로 업그레이드할 수 있습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 먼저 Exchange 2003의 모든 인스턴스를 조직에서 제거해야 Exchange 2013으로 업그레이드할 수 있습니다.
 
 
 모든 Exchange 2003 사서함을 Exchange Online으로 마이그레이션할 수 있습니다. 이 방식에 대한 자세한 내용은 [Office 365로 여러 전자 메일 계정을 마이그레이션하는 방법](https://go.microsoft.com/fwlink/p/?linkid=524030)을 참조하세요.

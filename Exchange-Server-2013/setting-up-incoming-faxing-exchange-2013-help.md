@@ -121,18 +121,8 @@ UM 사용 가능 사용자가 팩스를 받을 수 있도록 설정하려면 다
 
   - 자세한 내용은 [팩스 서버 팩스를 허용 하는 URI 파트너를 설정 합니다.](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)을 참조하십시오.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><em>FaxServerURI</em> 형식에는 세미콜론으로 구분된 여러 항목을 포함할 수 있지만 하나의 항목만 사용됩니다. 이 매개 변수는 하나의 항목만 사용하도록 하며 여러 항목을 추가하면 팩스 요청의 부하를 분산시킬 수 없습니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > <em>FaxServerURI</em> 형식에는 세미콜론으로 구분된 여러 항목을 포함할 수 있지만 하나의 항목만 사용됩니다. 이 매개 변수는 하나의 항목만 사용하도록 하며 여러 항목을 추가하면 팩스 요청의 부하를 분산시킬 수 없습니다.
 
 
   - UM 사용 가능 사서함이 팩스 메시지를 받을 수 있는지 확인합니다. 기본적으로 다이얼 플랜과 연결된 모든 사용자는 팩스를 받을 수 있습니다. 하지만 사서함에서 팩스 수신 기능이 사용하지 않도록 설정되어 사용자가 팩스를 받을 수 없는 경우도 있습니다. UM 사용 가능 사용자가 팩스를 받도록 설정하는 방법에 대한 자세한 내용은 [팩스를 받을 수 있도록 설정](enable-a-user-to-receive-faxes-exchange-2013-help.md)을 참조하십시오.

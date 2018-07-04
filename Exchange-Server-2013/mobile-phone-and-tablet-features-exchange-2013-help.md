@@ -71,18 +71,9 @@ Microsoft Exchange 과 호환 되는 휴대폰은 다음과 같습니다.
 <li><p>장치 암호화 필요</p></li>
 <li><p>원격 지우기</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>조직 다른 모바일 장치 사서함 정책 설정을 사용 하는 경우 <strong>지원 불가 장치 허용</strong> 정책을 true로 설정 해야 합니다. 이 수에 영향을 보안 조직에 대 한 되므로 다른 휴대폰 및 모바일 장치 정책 설정의 모든 요구 사항을 충족 하지 않는 장치를 동기화 할 수 있습니다. 자세한 내용은 <a href="mobile-device-mailbox-policies-exchange-2013-help.md">모바일 장치 사서함 정책</a>을 참조 하십시오.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]
+> 조직 다른 모바일 장치 사서함 정책 설정을 사용 하는 경우 <strong>지원 불가 장치 허용</strong> 정책을 true로 설정 해야 합니다. 이 수에 영향을 보안 조직에 대 한 되므로 다른 휴대폰 및 모바일 장치 정책 설정의 모든 요구 사항을 충족 하지 않는 장치를 동기화 할 수 있습니다. 자세한 내용은 <a href="mobile-device-mailbox-policies-exchange-2013-help.md">모바일 장치 사서함 정책</a>을 참조 하십시오.
 
 </td>
 </tr>

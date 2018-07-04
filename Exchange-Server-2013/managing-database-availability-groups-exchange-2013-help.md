@@ -275,18 +275,8 @@ DAG에 추가할 사서함 서버에 장애 조치(failover) 클러스터링 구
 
 CNO는 Active Directory에 만들어지고 클러스터의 이름 리소스와 연결되는 컴퓨터 계정입니다. 클러스터의 이름 리소스는 CNO에 연결되며, 클러스터의 ID로 동작하고 클러스터의 보안 컨텍스트를 제공하는 Kerberos 사용 가능 개체입니다. 첫 번째 구성원이 DAG에 추가될 때 DAG의 기본 클러스터 및 해당 클러스터에 대한 CNO 형성이 수행됩니다. 첫 번째 서버가 DAG에 추가되면 원격 Powershell은 추가 작업이 진행 중인 사서함 서버의 Microsoft Exchange 복제 서비스를 실행합니다. Microsoft Exchange 복제 서비스는 장애 조치(failover) 클러스터링 기능을 설치하고(아직 설치되지 않은 경우) 클러스터 생성 프로세스를 시작합니다. Microsoft Exchange 복제 서비스는 LOCAL SYSTEM 보안 컨텍스트에서 실행되며 이는 클러스터 생성이 수행되는 컨텍스트입니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DAG 구성원이 Windows Server 2012를 실행 중인 경우에는 첫 번째 서버를 DAG에 추가하기 전에 CNO를 미리 준비해야 합니다. DAG 구성원이 Windows Server 2012 R2를 실행하는 경우 클러스터 관리 액세스 포인트가 없는 DAG를 만들면 CNO가 생성되지 않으며 DAG용 CNO를 만들 필요가 없습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> DAG 구성원이 Windows Server 2012를 실행 중인 경우에는 첫 번째 서버를 DAG에 추가하기 전에 CNO를 미리 준비해야 합니다. DAG 구성원이 Windows Server 2012 R2를 실행하는 경우 클러스터 관리 액세스 포인트가 없는 DAG를 만들면 CNO가 생성되지 않으며 DAG용 CNO를 만들 필요가 없습니다.
 
 
 컴퓨터 계정 생성이 제한되는 환경이나 컴퓨터 계정이 기본 컴퓨터 컨테이너가 아닌 컨테이너에 만들어지는 환경에서는 CNO를 미리 준비하고 프로비전할 수 있습니다. CNO에 대한 컴퓨터 계정을 만들거나 사용하지 않도록 설정한 후 다음을 수행합니다.

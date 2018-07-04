@@ -29,18 +29,8 @@ Exchange 2013 사서함 서버에는 클라이언트 액세스 프로토콜, 전
 
 클라이언트 액세스 서버에서는 인증, 프록시 및 제한된 리디렉션 서비스가 제공되고 HTTP, POP, IMAP 및 SMTP와 같은 일상적인 클라이언트 액세스 프로토콜이 모두 제공됩니다. 클라이언트 액세스 서버는 데이터 렌더링을 수행하지 않는 상태 비저장 씬 서버입니다. 클라이언트 액세스 서버에서는 어떠한 항목도 큐에 추가되거나 저장되지 않습니다. 새 Exchange 2013 아키텍처에 대한 자세한 내용은 [Exchange 2013의 새로운 기능](what-s-new-in-exchange-2013-exchange-2013-help.md) 항목을 참조하십시오.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>클라이언트 액세스 서버는 경계 네트워크에서 지원되지 않으며 내부 Active Directory 환경에서 배포해야 합니다. 사서함 서버가 포함된 모든 Active Directory 사이트에는 클라이언트 액세스 서버도 포함되어야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 클라이언트 액세스 서버는 경계 네트워크에서 지원되지 않으며 내부 Active Directory 환경에서 배포해야 합니다. 사서함 서버가 포함된 모든 Active Directory 사이트에는 클라이언트 액세스 서버도 포함되어야 합니다.
 
 
 이러한 아키텍처 변경 사항으로 인해 클라이언트 연결이 약간 변경되었습니다. 먼저 RPC/TCP는 더 이상 지원되는 직접 액세스 프로토콜이 아닙니다. 즉, 모든 Outlook 연결이 RPC over HTTPS(Outlook Anywhere라고도 함) 또는 Exchange 2013 SP1 및 Outlook 2013 SP1, MAPI over HTTP를 사용하여 발생해야 합니다. 이러한 변경 때문에 클라이언트 액세스 서버에 RPC 클라이언트 액세스 서비스가 없어도 됩니다. 또한 Exchange 2010과 비교해 볼 때 사이트 복구 솔루션에 필요한 네임스페이스의 수가 2개 줄었으며 더 이상 RPC 클라이언트 액세스 서비스에 대한 선호도를 제공할 필요가 없습니다. 또한 모든 이전 버전의 Exchange에서와는 달리 Outlook 클라이언트가 더 이상 서버 FQDN(정규화된 도메인 이름)에 연결되지 않습니다. 자동 검색을 통해 Outlook은 사용자의 사서함 GUID + @ + 사용자의 기본 SMTP 주소의 도메인 부분으로 구성된 새 연결 지점을 찾습니다. 이로 인해 "관리자가 사서함을 변경했습니다." 메시지가 표시될 가능성이 크게 줄어들었습니다. Outlook 2007 이상 버전만 Exchange 2013과 함께 지원됩니다.

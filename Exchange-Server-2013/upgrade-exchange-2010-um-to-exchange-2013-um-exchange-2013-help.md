@@ -29,18 +29,8 @@ UM(통합 메시징)을 사용하는 Microsoft Exchange 2010 조직이 Exchange 
 
   - Microsoft Exchange UM(통합 메시징) 통화 라우터 서비스를 실행 중인 클라이언트 액세스 서버와 Microsoft Exchange UM(통합 메시징) 서비스를 실행 중인 사서함 서버를 올바르게 설치 및 구성했는지 확인합니다. UM 서비스에 대한 자세한 내용은 [UM 서비스](um-services-exchange-2013-help.md)를 참조하십시오.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.
 
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.

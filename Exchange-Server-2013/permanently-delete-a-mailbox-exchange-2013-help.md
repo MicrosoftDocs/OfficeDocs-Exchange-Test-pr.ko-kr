@@ -99,18 +99,8 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Remove-StoreMailbox</strong> cmdlet을 사용 하 여 연결이 끊긴된 사서함을 영구적으로 삭제 사서함 데이터베이스에서 모든 내용을 비워집니다 하 고 데이터 손실은 영구적입니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> <strong>Remove-StoreMailbox</strong> cmdlet을 사용 하 여 연결이 끊긴된 사서함을 영구적으로 삭제 사서함 데이터베이스에서 모든 내용을 비워집니다 하 고 데이터 손실은 영구적입니다.
 
 
 이 예에서는 사서함 데이터베이스 MBD01에서 GUID가 2ab32ce3-fae1-4402-9489-c67e3ae173d3인 사용되지 않는 사서함을 영구적으로 삭제합니다.

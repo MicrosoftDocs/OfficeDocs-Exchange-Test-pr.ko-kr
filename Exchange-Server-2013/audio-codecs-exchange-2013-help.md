@@ -27,18 +27,8 @@ UM(통합 메시징)에서는 오디오 코덱을 사용하여 음성 메일 메
 
   - G.711 PCM(Pulse Code Modulation) Linear
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>G.711(PCMA와 PCMU) 및 G.723.1 코덱은 VoIP 게이트웨이, 클라이언트 액세스 및 사서함 서버 간에 사용되는 VoIP 코덱입니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> G.711(PCMA와 PCMU) 및 G.723.1 코덱은 VoIP 게이트웨이, 클라이언트 액세스 및 사서함 서버 간에 사용되는 VoIP 코덱입니다.
 
 
 UM 시스템을 계획하는 데는 조직의 필요와 요구 사항에 따라 올바른 오디오 코덱을 선택하는 것이 포함됩니다. 이 항목에서는 UM에서 사용할 수 있고 UM 배포를 계획하는 데 도움이 되는 오디오 코덱에 대해 설명합니다.

@@ -97,18 +97,8 @@ EAC에 로그인하고 다음 단계를 수행합니다.
 
 3.  **이동 구성** 페이지에서 새 배치의 이름을 구성합니다. 보관 사서함에 대해 원하는 옵션과 사서함 데이터베이스 위치를 선택하고 **새로 만들기**를 클릭합니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>잘못된 항목 제한을 50개 항목보다 많이 설정하지 않도록 하십시오. 이렇게 설정하는 경우에는 이동이 실패할 수 있습니다. 잘못된 항목 제한을 50개 항목보다 많이 설정하려면 Exchange 관리 셸을 사용하여 –<em>AcceptLargeDataLoss</em> 매개 변수를 true로 설정해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 잘못된 항목 제한을 50개 항목보다 많이 설정하지 않도록 하십시오. 이렇게 설정하는 경우에는 이동이 실패할 수 있습니다. 잘못된 항목 제한을 50개 항목보다 많이 설정하려면 Exchange 관리 셸을 사용하여 –<em>AcceptLargeDataLoss</em> 매개 변수를 true로 설정해야 합니다.
 
 
 ## 셸을 사용하여 일괄 이동 요청 만들기

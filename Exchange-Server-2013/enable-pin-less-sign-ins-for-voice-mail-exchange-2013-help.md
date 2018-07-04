@@ -19,18 +19,8 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 사용자가 PIN을 사용하지 않고 음성 메일에 로그인할 수 있도록 UM(통합 메시징)을 설정할 수 있습니다. 기본적으로 Outlook Voice Access 사용자가 사서함에 로그인하여 음성 메일, 전자 메일, 일정, 개인 연락처, 디렉터리 및 개인 옵션에 액세스하려고 하면 PIN을 입력하라는 메시지가 표시됩니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>음성 메일을 사용할 수 있는 단일 사용자나 사용자 그룹에 대해 PIN 없이 로그인할 수 있도록 설정하면 음성 메일의 보안 수준이 떨어지고 조직이 보안 위험에 노출될 수 있습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 음성 메일을 사용할 수 있는 단일 사용자나 사용자 그룹에 대해 PIN 없이 로그인할 수 있도록 설정하면 음성 메일의 보안 수준이 떨어지고 조직이 보안 위험에 노출될 수 있습니다.
 
 
 PIN 없는 로그인을 사용하도록 설정하려면 UM 사서함 정책에서 매개 변수 *AllowPinlessVoiceMailAccess*를 `$true`로 설정하고 UM 사서함에서 매개 변수 *PinlessAccessToVoiceMailEnabled*를 `$true`로 설정해야 합니다. 기본적으로 두 매개 변수 모두 `$false`로 설정되므로, Outlook Voice Access 사용자는 음성 메일에 액세스할 때 PIN을 입력해야 합니다.

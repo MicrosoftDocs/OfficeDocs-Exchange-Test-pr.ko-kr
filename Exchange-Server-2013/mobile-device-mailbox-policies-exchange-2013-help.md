@@ -25,18 +25,8 @@ Microsoft Exchange Server 2013에서는 모바일 장치 사서함 정책을 만
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>iOS7 지문 판독기는 장치 암호로 지원되지 않습니다. 지문 판독기로 iOS7 장치를 보호하도록 설정하는 경우에도 모바일 장치 사서함 정책에서 암호를 필요로 하는 경우 암호를 만들고 입력해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> iOS7 지문 판독기는 장치 암호로 지원되지 않습니다. 지문 판독기로 iOS7 장치를 보호하도록 설정하는 경우에도 모바일 장치 사서함 정책에서 암호를 필요로 하는 경우 암호를 만들고 입력해야 합니다.
 
 
 ## 모바일 장치 사서함 정책의 개요

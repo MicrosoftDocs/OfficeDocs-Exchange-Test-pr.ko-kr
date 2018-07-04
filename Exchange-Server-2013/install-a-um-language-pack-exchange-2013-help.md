@@ -73,18 +73,8 @@ UM 언어와 관련된 추가 작업에 대한 자세한 내용은 [UM 언어, �
 
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>/IAcceptExchangeServerLicenseTerms 매개 변수를 사용 하지 않으면 다음과 같은 오류를 볼 수 있습니다: Microsoft Exchange Server 2013 무인 설치를 시작 합니다. Microsoft Exchange Server 2013을 설치 하려면 사용 조건에 동의 해야 합니다. 사용권 계약을 읽고, http://go.microsoft.com/fwlink/p/?LinkId=150127를 방문 합니다. 사용권 계약에 동의 하려면를 실행 중인 명령 /IAcceptExchangeServerLicenseTerms 매개 변수를 추가 합니다. 자세한 내용은 설치 프로그램을 실행 /?.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> /IAcceptExchangeServerLicenseTerms 매개 변수를 사용 하지 않으면 다음과 같은 오류를 볼 수 있습니다: Microsoft Exchange Server 2013 무인 설치를 시작 합니다. Microsoft Exchange Server 2013을 설치 하려면 사용 조건에 동의 해야 합니다. 사용권 계약을 읽고, http://go.microsoft.com/fwlink/p/?LinkId=150127를 방문 합니다. 사용권 계약에 동의 하려면를 실행 중인 명령 /IAcceptExchangeServerLicenseTerms 매개 변수를 추가 합니다. 자세한 내용은 설치 프로그램을 실행 /?.
 
 
 사용 가능한 UM 언어 및 문화권 코드에 대 한 자세한 내용은 [UM 언어, 프롬프트 및 인사말](um-languages-prompts-and-greetings-exchange-2013-help.md)을 참조 하십시오.

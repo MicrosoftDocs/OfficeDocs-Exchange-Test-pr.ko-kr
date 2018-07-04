@@ -183,18 +183,8 @@ Active Directory 포리스트에서 모든 도메인을 준비하기 전에 다�
 
 위의 모든 단계를 완료한 후에는 모든 작업이 원활하게 진행되었는지 확인할 수 있습니다. 이렇게 하려면 ADSI Edit(Active Directory Service Interfaces Editor)이라는 도구를 사용합니다. ADSI Edit은 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2의 Active Directory 도메인 서비스 도구 기능에 포함됩니다. 이 도구에 대해 자세히 알아보려면 [ADSI Edit(adsiedit.msc)](https://go.microsoft.com/fwlink/p/?linkid=294644)을 참조하세요.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 지원 서비스의 지시가 없는 경우 ADSI Edit에서는 절대 값을 변경하지 않도록 합니다. ADSI Edit에서 값을 변경하면 Exchange 조직 및 Active Directory에 치명적인 손상을 줄 수 있습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Microsoft 지원 서비스의 지시가 없는 경우 ADSI Edit에서는 절대 값을 변경하지 않도록 합니다. ADSI Edit에서 값을 변경하면 Exchange 조직 및 Active Directory에 치명적인 손상을 줄 수 있습니다.
 
 
 Exchange에 의해 Active Directory 스키마가 확장되고 Exchange에서 사용할 수 있게 Active Directory가 준비되면 준비가 완료되었음을 나타내기 위해 몇 가지 속성이 업데이트됩니다. 다음 목록의 정보를 사용하여 이러한 속성이 올바른 값을 갖는지 확인합니다. 각 속성은 설치하려는 Exchange 2013 릴리스에 대해 아래 표에 나와 있는 값과 일치해야 합니다.
