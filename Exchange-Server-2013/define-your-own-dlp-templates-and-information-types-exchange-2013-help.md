@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-14_
+_**마지막으로 수정된 항목:** 2015-01-14_
 
 Microsoft Exchange Server 2013과는 별도로 DLP(데이터 손실 방지) 정책 템플릿을 XML 파일로 개발한 다음 Exchange 관리 센터나 Exchange 관리 셸을 사용하여 가져올 수 있습니다. 이 섹션에서는 DLP 솔루션 내에서 사용할 수 있도록 DLP XML 파일을 제작하고 튜닝하는 프로세스 및 세부 정보에 대해 설명합니다. Exchange 관리 센터는 기존 DLP 정책 템플릿 및 전송 규칙으로 메시지를 빠르게 검색하는 방법을 제공하므로 자체 DLP XML 파일을 개발할 필요가 없습니다.
 

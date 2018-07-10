@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-04-26_
+_**마지막으로 수정된 항목:** 2018-04-26_
 
 UM(통합 메시징) 다이얼 플랜을 만든 후에 다양한 설정을 보고 구성할 수 있습니다. 예를 들어 VoIP(Voice over IP) 보안, 오디오 코덱 및 전화 걸기 제한 수준을 구성할 수 있습니다. UM 다이얼 플랜에 대해 구성하는 설정은 UM 사서함 정책을 통해 다이얼 플랜과 연결된 모든 사용자에게 영향을 줍니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)을 배포하기 위해서는 기본적인 전화 통신 개념과 전화 통신 구성 요소에 대해 잘 알고 있어야 합니다. 기본적인 전화 통신 개념을 이해하면 UM을 Exchange 조직에 통합할 수 있습니다. 기본 개념과 구성 요소는 다음과 같습니다.
 
@@ -77,16 +77,6 @@ Exchange UM 라우팅 구성 요소는 Lync Server와 Exchange 서버 간의 음
 
 Microsoft Lync Server에 대 한 자세한 내용은 [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752)을 참조 하십시오.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>온-프레미스 또는 하이브리드 배포에서 통합 메시징 및 Lync Server를 통합하는 경우 Exchange 2007 또는 Exchange 2010 사서함 서버에 사서함이 있는 사용자는 부재 중 전화 알림을 사용할 수 없습니다. 부재 중 전화 알림은 전화가 사서함 서버에 전송되기 전에 사용자의 연결이 끊기는 경우 생성됩니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 온-프레미스 또는 하이브리드 배포에서 통합 메시징 및 Lync Server를 통합하는 경우 Exchange 2007 또는 Exchange 2010 사서함 서버에 사서함이 있는 사용자는 부재 중 전화 알림을 사용할 수 없습니다. 부재 중 전화 알림은 전화가 사서함 서버에 전송되기 전에 사용자의 연결이 끊기는 경우 생성됩니다.
 

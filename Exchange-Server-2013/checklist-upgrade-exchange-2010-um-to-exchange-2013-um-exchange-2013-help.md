@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 검사 목록은 Exchange 2010 UM(통합 메시징)을 Exchange 2013 UM으로 업그레이드하는 데 도움이 됩니다. Exchange 2010 조직 및 UM 배포를 Exchange 2013으로 업그레이드할 때 이 정보를 참조하십시오. Exchange 2013 UM으로 업그레이드하는 단계별 지침은 [Exchange 2010 UM을 Exchange 2013 UM으로 업그레이드](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md)를 참조하십시오.
 
@@ -64,18 +64,9 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <tr class="even">
 <td><p></p></td>
 <td><p>필수 클라이언트 액세스 서버 및 사서함 서버를 설치합니다.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]
+> Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.
 
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">설치 마법사를 사용하여 Exchange 2013 설치</a></p></td>

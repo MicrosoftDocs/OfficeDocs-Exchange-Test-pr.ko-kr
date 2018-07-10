@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-06-25_
+_**마지막으로 수정된 항목:** 2013-06-25_
 
 이 항목에서는 셸을 사용하여 음성 메일 시스템의 작동을 테스트하는 방법을 설명합니다. 다음 절차를 수행할 때 사서함 서버는 Microsoft Exchange 통합 메시징 서비스를 실행하고 진단 SIP(Session Initiation Protocol) 호출을 시작한 다음 UM 서비스의 상태 변수를 반환합니다.
 

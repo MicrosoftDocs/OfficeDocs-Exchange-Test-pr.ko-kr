@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 통합 메시징에서는 음성 메일 메시지를 만드는 데 MP3, WMA(Windows Media Audio), GSM(Group System Mobile) 06.10 및 G.711 PCM(Pulse Code Modulation) Linear의 네 가지 코덱 중 하나를 사용할 수 있습니다. 기본적으로 UM(통합 메시징) 다이얼 플랜을 만들 때 UM 다이얼 플랜에서는 MP3 오디오 코덱을 사용하여 음성 메시지를 녹음합니다. MP3 오디오 형식은 여러 운영 체제, 전자 메일 클라이언트 및 MP3 플레이어에서 사용되는 잘 알려진 오디오 형식입니다. UM 다이얼 플랜을 만든 후 WMA, GSM 06.10 또는 G.711 PCM Linear 오디오 코덱을 비롯한 다른 오디오 형식 중 하나를 사용하도록 UM 다이얼 플랜을 구성할 수 있습니다. 음성 메시지를 들으려면 휴대폰이나 컴퓨터에 호환되는 오디오 소프트웨어 응용 프로그램이 설치되어 있어야 합니다.
 

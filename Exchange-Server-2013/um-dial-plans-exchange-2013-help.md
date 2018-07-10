@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 통합 메시징 (UM) 다이얼 플랜 통합 메시징의 주요 구성 요소 이며 네트워크에서 통합 메시징 음성 메일을 성공적으로 배포 하는 데 필요한. 다음 섹션에서는 UM 다이얼 플랜 및 UM 배포에서 사용 하는 방법에 대해 설명 합니다.
 

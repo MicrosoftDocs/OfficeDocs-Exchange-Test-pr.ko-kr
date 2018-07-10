@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-06-25_
+_**마지막으로 수정된 항목:** 2013-06-25_
 
 조직에서 클라이언트 액세스와 사서함 서버를 설치한 후에는 UM(통합 메시징)의 기능을 테스트해야 할 수 있습니다. 다음은 Exchange 2013 또는 UM 문제 해결 도구에 포함된 진단 도구 및 cmdlet을 사용하는 경우에 대해 설명한 것입니다.
 

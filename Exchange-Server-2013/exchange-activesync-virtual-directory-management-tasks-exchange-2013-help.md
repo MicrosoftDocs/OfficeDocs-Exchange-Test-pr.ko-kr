@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-05_
+_**마지막으로 수정된 항목:** 2012-10-05_
 
 여러 Exchange ActiveSync 가상 디렉터리를 통해 Exchange Server 2013Exchange ActiveSync 응용 프로그램 설정을 관리할 수 있습니다. 가상 디렉터리를 Exchange ActiveSync 와 같은 웹 응용 프로그램에 대 한 액세스를 허용 하도록 인터넷 정보 서비스 (IIS)에서 사용 됩니다. Exchange ActiveSync 에 대 한 관리할 수 있는 가상 디렉터리 설정 중 일부를 인증, 보안 및 보고를 포함 합니다.
 

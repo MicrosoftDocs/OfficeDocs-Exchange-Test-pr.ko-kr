@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 사용자가 보호된 음성 메시지를 받았는데 전자 메일 클라이언트가 IRM(정보 권한 관리) 또는 Windows Rights Management를 지원하지 않는 경우 사용자에게 전송되는 텍스트를 지정할 수 있습니다.
 

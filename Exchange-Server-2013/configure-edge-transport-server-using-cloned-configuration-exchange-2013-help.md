@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-13_
+_**마지막으로 수정된 항목:** 2015-04-13_
 
 %ExchangeInstallPath%Scripts에 위치한 제공된 Exchange 관리 셸 스크립트를 사용하여 Edge 전송 서버의 구성을 복제할 수 있습니다. 이러한 프로세스를 *복제된 구성*이라고 합니다. *복제된 구성*은 이전에 구성한 원본 서버의 구성 정보에 기반하여 새 Edge 전송 서버를 배포하는 기능입니다. 이전에 구성한 원본 서버의 구성 정보는 복사되어 XML 파일로 내보낸 후 대상 서버로 가져옵니다. 이 프로세스의 개요는 [Edge 전송 서버 복제 된 구성](edge-transport-server-cloned-configuration-exchange-2013-help.md)를 참조하세요.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-02_
+_**마지막으로 수정된 항목:** 2012-10-02_
 
 관리 역할 할당을 사용자 또는 유니버설 USG (보안 그룹)에 관리 역할을 할당합니다. 역할 할당을 제거 하는 경우 역할이 할당 된 사용자는 해당 역할에서 사용할 수 있는 cmdlet에 액세스할을 수 더이상 됩니다. Microsoft Exchange Server 2013 의 관리 역할 할당에 대 한 자세한 내용은 [관리 역할 할당 이해 (영문)](understanding-management-role-assignments-exchange-2013-help.md)을 참조 하십시오.
 

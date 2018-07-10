@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 IP Private Branch 교환 (Pbx) 올바르게 조직에 대 한 UM (통합 메시징)을 배포 하는 경우 및 (VoIP) IP 게이트웨이 통해 음성 구성 해야 합니다. 하이브리드 환경에서 UM을 배포 하는 경우 올바르게 세션 테두리 컨트롤러 (반자)를를 구성 해야 합니다. 이 작업을 수행 하는 인터페이스 또는 VoIP 게이트웨이, IP Pbx 및 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행 하는 클라이언트 액세스 서버 및 Microsoft Exchange 통합 메시징 서비스를 실행 하는 사서함 서버와 통신 하는 Sbc의 인터페이스를 구성 해야 합니다.
 

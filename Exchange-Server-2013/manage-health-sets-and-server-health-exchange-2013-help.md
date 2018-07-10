@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Online, Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2013-12-02_
+_**마지막으로 수정된 항목:** 2013-12-02_
 
 기본 제공 상태 보고 cmdlet을 사용하여 관리되는 가용성과 관련한 다음과 같은 여러 작업을 수행할 수 있습니다.
 

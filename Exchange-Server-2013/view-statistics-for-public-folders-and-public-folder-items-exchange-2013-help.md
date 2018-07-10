@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-14_
+_**마지막으로 수정된 항목:** 2013-02-14_
 
 이 항목에서는 표시 이름, 만든 시간, 사용자가 마지막으로 수정한 시간, 사용자가 마지막으로 액세스한 시간, 항목 크기 등 공용 폴더에 대한 통계를 가져오는 방법을 설명합니다. 이 정보를 사용하여 공용 폴더의 삭제 또는 보존에 대해 결정할 수 있습니다.
 

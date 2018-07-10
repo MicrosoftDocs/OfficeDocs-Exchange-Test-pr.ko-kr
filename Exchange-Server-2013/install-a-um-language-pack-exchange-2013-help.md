@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 언어를 UM 다이얼 플랜 또는 UM 자동 전화 교환에서 통합 메시징을 사용할 수 있는 언어의 목록에서 사용할 수 있도록 하려면 먼저 적절 한 UM 언어팩을 설치 해야 합니다. 특정 언어 관련 자동 압축풀기 실행 파일 또는 **setup.exe /AddUmLanguagePack** 명령을 사용 하 여 Microsoft Exchange 통합 메시징 서비스를 실행 하는 사서함 서버에 언어팩을 설치 합니다. UM 언어팩을 설치 하기 전에 먼저 다운로드 해야 사서함 서버에서 로컬 폴더에 있습니다. [Exchange Server 2013 UM 언어팩](https://go.microsoft.com/fwlink/p/?linkid=266542)에서 UM 언어팩을 다운로드할 수 있습니다. 각 언어에 대 한 별도 실행 파일 방법이 있습니다.
 
@@ -73,18 +73,8 @@ UM 언어와 관련된 추가 작업에 대한 자세한 내용은 [UM 언어, �
 
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>/IAcceptExchangeServerLicenseTerms 매개 변수를 사용 하지 않으면 다음과 같은 오류를 볼 수 있습니다: Microsoft Exchange Server 2013 무인 설치를 시작 합니다. Microsoft Exchange Server 2013을 설치 하려면 사용 조건에 동의 해야 합니다. 사용권 계약을 읽고, http://go.microsoft.com/fwlink/p/?LinkId=150127를 방문 합니다. 사용권 계약에 동의 하려면를 실행 중인 명령 /IAcceptExchangeServerLicenseTerms 매개 변수를 추가 합니다. 자세한 내용은 설치 프로그램을 실행 /?.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> /IAcceptExchangeServerLicenseTerms 매개 변수를 사용 하지 않으면 다음과 같은 오류를 볼 수 있습니다: Microsoft Exchange Server 2013 무인 설치를 시작 합니다. Microsoft Exchange Server 2013을 설치 하려면 사용 조건에 동의 해야 합니다. 사용권 계약을 읽고, http://go.microsoft.com/fwlink/p/?LinkId=150127를 방문 합니다. 사용권 계약에 동의 하려면를 실행 중인 명령 /IAcceptExchangeServerLicenseTerms 매개 변수를 추가 합니다. 자세한 내용은 설치 프로그램을 실행 /?.
 
 
 사용 가능한 UM 언어 및 문화권 코드에 대 한 자세한 내용은 [UM 언어, 프롬프트 및 인사말](um-languages-prompts-and-greetings-exchange-2013-help.md)을 참조 하십시오.

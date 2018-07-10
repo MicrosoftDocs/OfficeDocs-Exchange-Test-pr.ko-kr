@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Outlook Voice Access 번호를 사용하면 UM(통합 메시징) 및 음성 메일 사용 가능 사용자가 Outlook Voice Access를 통해 사서함에 액세스할 수 있습니다. 다이얼 플랜에서 Outlook Voice Access 또는 구독자 액세스 번호를 구성하는 경우 UM 사용 가능 사용자는 해당 번호로 전화를 걸고, 자신의 사서함에 로그인하고, 전자 메일, 음성 메일, 일정 및 개인 연락처 정보에 액세스할 수 있습니다.
 

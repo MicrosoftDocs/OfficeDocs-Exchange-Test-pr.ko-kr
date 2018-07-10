@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-29_
+_**마지막으로 수정된 항목:** 2013-04-29_
 
 상호 TLS(상호 전송 계층 보안)를 사용하여 Microsoft Exchange 2013 서버와 VoIP 게이트웨이, IP PBX, SBC(Session Border Controller) 및 Microsoft Lync Server 간 전송되는 데이터를 암호화할 수 있습니다. 인증서는 정보를 디지털 방식으로 암호화하고 서명하는 데 사용되는 전자 키(공개 및 개인) 쌍에 인증서 소유자의 ID를 바인딩합니다.
 

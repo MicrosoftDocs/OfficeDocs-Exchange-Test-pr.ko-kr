@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-23_
+_**마지막으로 수정된 항목:** 2013-02-23_
 
 Microsoft Exchange 통합 메시징 서비스를 실행 중인 사서함 서버에서 허용할 들어오는 동시 연결 수를 구성할 수 있습니다. 여기에는 Outlook Voice Access, 전화 응답, 자동 전화 교환 및 팩스 호출 등을 비롯한 모든 수신 전화가 포함됩니다. 사서함 서버의 동시 연결 수를 늘리는 데는 동시 전화 수를 줄일 때보다 시스템 리소스가 더 많이 필요합니다. 통합 메시징 서비스가 설치되어 있는 저속 컴퓨터에서는 동시 전화 수를 줄이는 것이 특히 중요합니다. 동시 음성 전화 수의 범위는 0~200입니다. 기본 설정은 100입니다.
 

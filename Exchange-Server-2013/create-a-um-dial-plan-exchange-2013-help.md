@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-16_
+_**마지막으로 수정된 항목:** 2013-04-16_
 
 UM(통합 메시징) 다이얼 플랜에는 전화 통신 네트워크와 관련된 구성 정보가 포함되어 있습니다. UM 다이얼 플랜은 음성 메일에 사용할 수 있는 사용자의 내선 전화 번호에서 자신의 사서함으로의 연결을 설정합니다. UM 다이얼 플랜을 만들 때 다이얼 플랜에 대한 내선 번호 자릿수, URI(Uniform Resource Identifier) 유형 및 VoIP(Voice over IP) 보안 설정을 구성할 수 있습니다.
 

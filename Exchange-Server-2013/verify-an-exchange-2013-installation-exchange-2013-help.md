@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Microsoft Exchange Server 2013 를 설치한 후에 **Get-ExchangeServer** cmdlet을 실행 하 고 설치 로그 파일을 검토 하 여 설치를 확인 하는 것이 좋습니다. 설치 프로세스가 실패 또는 설치 중에 오류가 발생 하는 경우에 문제의 원인을 추적 하기가 설치 로그 파일을 사용할 수 있습니다.
 

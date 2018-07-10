@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-11-30_
+_**마지막으로 수정된 항목:** 2016-11-30_
 
 응용 프로그램은 `ApplicationImpersonation` 관리 역할을 통해 조직의 사용자를 가장하여 사용자 대신 작업을 수행할 수 있습니다.
 

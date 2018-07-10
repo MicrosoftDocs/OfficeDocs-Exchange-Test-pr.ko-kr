@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-12_
+_**마지막으로 수정된 항목:** 2012-10-12_
 
 Microsoft Exchange Server 2013에서는 기본적으로 내부 메시지에 IRM(정보 권한 관리)을 사용할 수 있도록 설정되어 있습니다. 이 설정을 사용하여 전송 보호 규칙과 Microsoft Outlook 보호 규칙을 만들어 전송되는 메시지와 Microsoft Outlook 2010 이후 클라이언트의 메시지를 IRM으로 보호할 수 있습니다. 전송 암호 해독, 저널 규칙 암호 해독, Microsoft Exchange Server 2013 Office의 IRM, Microsoft Outlook Web App의 IRM과 같은 Exchange ActiveSync의 기타 모든 IRM 기능을 사용하려면 내부 메시지에 IRM을 사용하도록 설정해야 합니다.
 

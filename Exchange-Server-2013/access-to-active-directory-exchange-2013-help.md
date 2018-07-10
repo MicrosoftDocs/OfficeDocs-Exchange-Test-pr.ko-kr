@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013에서는 Active Directory 디렉터리 서비스 데이터베이스에 모든 구성 및 받는 사람 정보를 저장합니다. Exchange 2013을 실행하는 컴퓨터에서 Exchange 조직의 구성 정보 및 받는 사람 정보가 필요한 경우 Active Directory에 쿼리하여 해당 정보에 액세스해야 합니다. Active Directory이 제대로 작동하기 위해서는 Exchange 2013 서버가 사용 가능해야 합니다.
 

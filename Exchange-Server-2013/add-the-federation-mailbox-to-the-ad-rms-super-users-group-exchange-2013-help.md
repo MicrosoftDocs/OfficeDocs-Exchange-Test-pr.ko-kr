@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 다음 Microsoft Exchange Server 2013 정보 권한 관리 (IRM) 기능을 사용 하려면 사용 하도록 설정, 조직의 [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) 클러스터에서 고급 사용자 그룹에 페더레이션 사서함 ( Exchange 2013 설치 하 여 만든 시스템 사서함)를 추가 해야 합니다.
 

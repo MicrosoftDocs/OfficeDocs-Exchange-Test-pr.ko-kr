@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 페이지에서는 만들고 Microsoft 또는 VoIP 게이트웨이 파트너에 의해 테스트 구성 참고 사항에 대 한 링크를 제공 합니다. Microsoft 또는 파트너 새 VoIP 게이트웨이와 PBX 또는 IP PBX 구성 사용 하 여 통합 메시징을 배포, 필수 구성 요소 및 구성 설정을 문서화 됩니다. 이 정보는 구성 메모를 작성 하는데 사용 됩니다.
 

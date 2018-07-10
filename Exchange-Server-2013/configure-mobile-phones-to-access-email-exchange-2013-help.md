@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-12_
+_**마지막으로 수정된 항목:** 2015-03-12_
 
 Microsoft Exchange ActiveSync를 사용하도록 Windows Phone 등의 휴대폰을 구성할 수 있습니다. 조직에 있는 각 휴대폰에서 이 절차를 수행해야 합니다.
 

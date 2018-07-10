@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-12-16_
+_**마지막으로 수정된 항목:** 2012-12-16_
 
 사용자의 사서함이 UM(통합 메시징) 음성 메일을 사용할 수 있도록 설정되어 있는 경우 통합 메시징 사용자를 환영하는 전자 메일 메시지가 보내집니다. 이 메시지에는 사용자가 음성 메일 시스템에 처음 액세스하는 데 사용할 PIN 정보가 들어 있습니다.
 

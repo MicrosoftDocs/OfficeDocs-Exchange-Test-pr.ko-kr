@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 다중 테 넌 트 (호스트) Exchange 2013 배포 다중 호스트 하도록 구성 된 Exchange 조직 곳으로 정의 된 및 개별 조직 또는 비즈니스 단위 (테 넌 트의)에서는 일반적으로 공유 하지 않는 전자 메일, 데이터, 사용자, 전체 주소 목록 (Gal) 또는 기타 일반적으로 사용 되는 Exchange 개체입니다. 이 공유 하드웨어, 소프트웨어 및 리소스 (테 넌 트 간의 논리적 구분을 유지 하면서), 모두의 다중 테 넌 트 기능 및 호스팅 자신의 요구를 충족 하는 서비스를 제공 하는 동안 사용 되는 표준 Exchange 배포의 간단 하 게 활용 하는 조직은 수 있습니다.
 

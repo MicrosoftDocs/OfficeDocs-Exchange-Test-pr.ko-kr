@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-09-11_
+_**마지막으로 수정된 항목:** 2014-09-11_
 
 조직에서 정보 근로자는 일상적으로 다양한 종류의 중요한 정보를 처리합니다. *문서 지문*을 사용하면 조직 전체에서 사용되는 표준 양식을 식별하여 이 정보를 보다 쉽게 보호할 수 있습니다. 이 항목에서는 문서 지문의 개념에 대해 설명합니다. 문서 지문을 만드는 방법에 대한 자세한 내용은 [문서 지문을 사용 하 여 양식 데이터를 보호 합니다.](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)를 참조하세요.
 

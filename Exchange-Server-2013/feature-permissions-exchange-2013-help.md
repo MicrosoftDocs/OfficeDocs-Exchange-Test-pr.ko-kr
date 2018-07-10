@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-12_
+_**마지막으로 수정된 항목:** 2012-10-12_
 
 Microsoft Exchange Server 2013의 사용 권한은 RBAC(역할 기반 액세스 제어) 권한 모델을 사용하여 관리됩니다. 다음 항목에서는 Exchange 2013의 각 기능 영역과 연결된 기능을 관리하는 데 필요한 관리 역할 그룹을 식별합니다.
 

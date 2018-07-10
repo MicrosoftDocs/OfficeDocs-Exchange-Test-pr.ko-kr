@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-05_
+_**마지막으로 수정된 항목:** 2012-10-05_
 
 Microsoft Outlook Web App 사서함 정책을 사용하여 Outlook Web App의 기능에 대한 액세스를 관리하는 조직 수준의 정책을 만들 수 있습니다.
 

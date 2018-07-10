@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 특정 메시지를 받을 수 있는지 확인 하려는 경우에 이러한 메시지 검사 간단 하 게 표시 폴더를 우회 하 게 하는 Exchange 전송 규칙을 만들 수 있습니다. 포함 되는 문서에 대 한 추가 정보에 대 한 [낮은 우선순위 메시지를 Outlook Web App에서 정렬에 포함 되는 사용 하 여 문서](https://go.microsoft.com/fwlink/p/?linkid=528411) 를 체크아웃 합니다.
 

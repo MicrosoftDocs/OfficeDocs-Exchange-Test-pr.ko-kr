@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 관리자 감사 로그에는 Exchange 관리 셸과 EMC(Exchange 관리 콘솔)에서 실행된 모든 cmdlet 및 매개 변수의 레코드가 포함됩니다. EAC에서 관리자 감사 로그 보고서를 실행하거나 셸에서 **New-AdminAuditLogSearch** cmdlet을 실행하면 필요에 따라 로그가 만들어집니다. 감사 로그에 대한 자세한 내용은 [관리자 감사 로깅](administrator-audit-logging-exchange-2013-help.md)를 참조하십시오.
 

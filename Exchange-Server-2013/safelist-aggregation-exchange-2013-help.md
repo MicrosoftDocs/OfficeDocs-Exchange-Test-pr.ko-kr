@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-09-30_
+_**마지막으로 수정된 항목:** 2013-09-30_
 
 Microsoft Exchange Server 2013에서 *수신 허용 목록 집계*는 Microsoft Outlook 및 Exchange에서 공유되는 스팸 방지 기능을 의미합니다. 이 기능은 Outlook 사용자가 구성한 스팸 방지 수신 허용 - 받는 사람 목록, 수신 허용 - 보낸 사람 목록, 수신 거부 목록 및 연락처 데이터의 데이터를 수집하고, Exchange 스팸 방지 에이전트가 이 데이터를 사용할 수 있도록 합니다.
 

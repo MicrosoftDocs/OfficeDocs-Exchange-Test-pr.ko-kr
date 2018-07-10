@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 이 항목에서는 GAL(전체 주소 목록) 설정을 수정하는 방법을 설명합니다.
 

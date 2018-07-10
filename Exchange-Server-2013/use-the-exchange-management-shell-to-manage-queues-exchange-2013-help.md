@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이전 버전의 Exchange에서와 마찬가지로 Microsoft Exchange Server 2013의 Exchange 관리 셸을 사용하여 큐 및 해당 큐의 메시지에 대한 정보를 보고 큐 및 메시지에 대해 관리 작업을 수행할 수 있습니다. Exchange 2013에서 큐는 사서함 서버 및 Edge 전송 서버에 있습니다. 이 항목에서는 이러한 서버를 *전송 서버*라고 합니다.
 

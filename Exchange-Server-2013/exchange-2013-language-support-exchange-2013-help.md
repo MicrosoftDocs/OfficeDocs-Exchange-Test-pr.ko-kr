@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-08_
+_**마지막으로 수정된 항목:** 2013-02-08_
 
 Microsoft Exchange Server 2013은 서버와 클라이언트에 모두 향상된 언어 지원을 제공합니다. 이 항목에는 Exchange 2013의 서버와 클라이언트 모두에 사용할 수 있는 언어가 나열되어 있습니다.
 

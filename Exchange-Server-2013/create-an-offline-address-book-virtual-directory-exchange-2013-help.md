@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-16_
+_**마지막으로 수정된 항목:** 2012-10-16_
 
 OAB 가상 디렉터리는 OAB의 배포입니다. Microsoft Exchange Server 2013을 설치하면 기본적으로 IIS(인터넷 정보 서비스)의 기본 내부 웹 사이트에 OAB라는 새 가상 디렉터리가 만들어집니다. 조직의 방화벽 외부에서 MicrosoftOutlook에 연결하는 클라이언트 쪽 사용자인 경우 외부 웹 사이트를 추가할 수 있습니다. 또는 셸에서 **New-OABVirtualDirectory** cmdlet을 실행하는 경우 로컬 Exchange 서버의 기본 IIS 웹 사이트에 새 가상 디렉터리 OAB가 만들어집니다.
 

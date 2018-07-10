@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 일부 레거시 Private Branch eXchange (PBX) 및 IP PBX 전화 통신 시스템에는 호출자가 음성 메일 메시지를 표시 개인, 다른 사용자에 게 착신 전환에서 메시지의 받는 사람된을 차단 하도록 허용 합니다. 통합 된 음성 메일 시스템에서 음성 메시지를 사용 하면 의도 하지 않은 수신기에 노출 되지 않도록 비공개로 음성 메시지를 방지 하기 위해 시도 중 여러 방법으로 액세스할 수 있습니다.
 

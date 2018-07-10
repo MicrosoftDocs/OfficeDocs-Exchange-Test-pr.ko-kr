@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-08-02_
+_**마지막으로 수정된 항목:** 2013-08-02_
 
 [Exchange 2013: 에디션 및 버전](exchange-2013-editions-and-versions-exchange-2013-help.md)
 

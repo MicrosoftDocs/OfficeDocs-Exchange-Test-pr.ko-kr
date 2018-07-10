@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 EWS(Exchange 웹 서비스) 상태 설정은 EWS 서비스의 전체 상태를 모니터링합니다. EWS 상태 설정은 다음 상태 설정과 밀접하게 연관되어 있습니다.
 

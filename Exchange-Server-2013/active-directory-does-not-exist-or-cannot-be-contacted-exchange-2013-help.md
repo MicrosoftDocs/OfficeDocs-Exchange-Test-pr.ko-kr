@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 올바른 Active Directory 디렉터리 서비스 사이트에 연결할 수 없기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. 설치하려면 Exchange를 설치하려는 서버에서 Active Directory의 구성 명명 컨텍스트를 찾을 수 있어야 합니다.
 

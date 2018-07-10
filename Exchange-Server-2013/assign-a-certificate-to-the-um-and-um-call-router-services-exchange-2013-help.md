@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-29_
+_**마지막으로 수정된 항목:** 2013-04-29_
 
 EAC 또는 셸을 사용하여 특정 Exchange 서비스에 대해 자체 서명된, 내부 PKI(공개 키 인프라) 또는 상업용 타사 인증서를 할당할 수 있습니다. *Services* 매개 변수와 함께 **New-ExchangeCertificate** cmdlet을 사용하여 인증서를 Exchange 서비스에 할당할 경우 인증서를 Exchange 서비스에 할당하라는 메시지가 표시됩니다. EAC를 사용하여 인증서를 만들 때는에는 새 Exchange 인증서 마법사에 인증서를 Exchange 서비스에 할당하라는 메시지가 표시되지 않습니다. 인증서 속성을 편집하고 인증서를 할당할 서비스를 선택하여 인증서를 할당해야 합니다.
 

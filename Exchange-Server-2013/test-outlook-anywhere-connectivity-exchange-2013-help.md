@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 셸 또는 ExRCA(Exchange Remote Connectivity Analyzer)를 사용하여 종단 간 클라이언트 Outlook Anywhere 연결을 테스트할 수 있습니다. 여기에는 자동 검색 서비스를 통한 연결 테스트, 사용자 프로필 만들기, 사용자 사서함 로그인 등이 포함됩니다. 필요한 모든 값은 자동 검색 서비스에서 검색됩니다.
 

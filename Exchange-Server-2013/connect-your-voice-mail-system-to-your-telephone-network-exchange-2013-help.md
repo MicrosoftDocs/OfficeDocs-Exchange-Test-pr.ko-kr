@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-20_
+_**마지막으로 수정된 항목:** 2013-04-20_
 
 VoIP 게이트웨이, IP PBX, SIP 사용 가능 PBX 또는 Microsoft Lync Server를 비롯하여 조직에 필요한 모든 전화 통신 장비를 배포한 후에는 전화 통신 장치가 조직의 서버와 통신할 수 있도록 하는 UM(통합 메시징) 구성 요소를 모두 만들어야 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-19_
+_**마지막으로 수정된 항목:** 2013-02-19_
 
 Microsoft Exchange Server 2013에서는 SMTP 트래픽을 압축하는 WOC(WAN 최적화 컨트롤러) 장치가 사용되는 특정 토폴로지에서 사서함 서버 간의 SMTP 통신에 대해 TLS를 사용하지 않도록 설정할 수 있습니다.
 

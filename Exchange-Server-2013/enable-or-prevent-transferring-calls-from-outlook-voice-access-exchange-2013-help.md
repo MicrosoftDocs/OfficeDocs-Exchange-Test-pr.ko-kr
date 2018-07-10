@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access 사용자가 UM(통합 메시징) 다이얼 플랜에 연결된 사용자에게 통화를 전송할 수 있도록 설정하거나 전송하지 못하도록 차단할 수 있습니다. 기본적으로는 이 옵션과 **사용자 전화를 울리지 않고 음성 메시지 남기기** 옵션은 모두 사용하도록 설정되므로 Outlook Voice Access 사용자가 같은 UM 다이얼 플랜의 사용자에게 통화를 전송하고 음성 메시지를 남길 수 있습니다. 이 설정은 PIN을 입력했으며 인증된 Outlook Voice Access 사용자에게만 적용됩니다.
 

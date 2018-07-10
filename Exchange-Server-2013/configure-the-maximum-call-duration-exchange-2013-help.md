@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 들어오는 호출이 종료되기 전까지 유효한 내선 번호로 전환되지 않고 시스템에 연결될 수 있는 최대 시간(분)을 지정할 수 있습니다. 대부분의 조직에서는 이 값을 기본값으로 설정해야 합니다. 30분. 이 설정은 들어오는 Outlook Voice Access 호출, 조직 내부의 음성 호출, UM(통합 메시징) 자동 전화 교환으로 수신되는 음성 호출 및 조직 외부에서 걸려오는 팩스 호출을 포함한 모든 호출에 적용됩니다.
 

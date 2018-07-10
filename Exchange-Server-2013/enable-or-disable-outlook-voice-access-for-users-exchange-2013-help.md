@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-12-12_
+_**마지막으로 수정된 항목:** 2012-12-12_
 
 UM(통합 메시징) 사서함 정책과 연결된 UM 사용 가능 사용자에 대해 Outlook Voice Access에 대한 액세스를 사용하거나 사용하지 않도록 설정할 수 있습니다. Outlook Voice Access는 UM 사용 가능 사용자가 전화로 사서함에 액세스할 수 있는 기능입니다. 기본적으로 이 설정은 사용하도록 설정되어 있습니다.
 

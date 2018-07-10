@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-16_
+_**마지막으로 수정된 항목:** 2013-04-16_
 
 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)
 

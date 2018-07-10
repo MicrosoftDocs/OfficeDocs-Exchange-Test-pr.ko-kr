@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-09-23_
+_**마지막으로 수정된 항목:** 2012-09-23_
 
 [인터넷에서 전자 메일을 수신 하도록 수신 커넥터 만들기](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 

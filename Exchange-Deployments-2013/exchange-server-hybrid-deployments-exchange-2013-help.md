@@ -17,7 +17,7 @@ _<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange 
 
 _<strong>마지막으로 수정된 항목:</strong>2018-04-16_
 
-**요약:** Exchange 하이브리드 배포를 계획하기 위해 알아야 할 사항입니다.
+**요약:**  Exchange 하이브리드 배포를 계획하기 위해 알아야 할 사항입니다.
 
 조직에서 하이브리드 배포를 활용하면 기존 온-프레미스 Microsoft Exchange 조직의 풍부한 기능과 관리 제어 능력을 클라우드로 확장할 수 있습니다. 하이브리드 배포에서는 온-프레미스 Exchange 조직과 Microsoft Office 365의 Exchange Online 간에 단일 Exchange 조직의 원활한 모양과 느낌을 제공합니다. 또한 Exchange Online 조직으로 완전하게 이전하는 중간 단계로 하이브리드 배포를 활용할 수 있습니다.
 

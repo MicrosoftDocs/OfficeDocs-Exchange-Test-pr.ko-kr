@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-04-26_
+_**마지막으로 수정된 항목:** 2017-04-26_
 
 사서함 사서함의 다른 형식으로 변환 매우 비슷합니다 환경에서 Exchange 2010 합니다. 여전히 변환을 수행 하려면 셸에서 Set-mailbox cmdlet을 사용 해야 합니다.
 

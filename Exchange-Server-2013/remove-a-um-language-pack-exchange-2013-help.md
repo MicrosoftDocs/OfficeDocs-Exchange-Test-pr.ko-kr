@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-14_
+_**마지막으로 수정된 항목:** 2013-02-14_
 
 EAC 또는 셸을 사용하여 Microsoft Exchange 통합 메시징 서비스를 실행하는 사서함 서버의 UM(통합 메시징) 언어를 관리할 수 있습니다. 그러나 UM 다이얼 플랜의 목록에서 언어를 제거하려면 **Setup.exe /RemoveUmLanguagePack** 명령을 사용하여 사서함 서버에서 해당하는 UM 언어 팩을 제거해야 합니다. 사서함 서버에서 UM 언어 팩을 제거한 후 UM 다이얼 플랜 또는 UM 자동 전화 교환을 구성할 때 이 언어를 사용할 수 없습니다. 사서함 서버의 속성을 보거나 **Get-UMService** cmdlet을 사용하여 설치된 UM 언어 팩을 확인할 수 있습니다.
 

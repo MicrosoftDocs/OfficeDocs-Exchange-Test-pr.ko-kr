@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**마지막으로 수정된 항목:** 2013-04-17_
+_**마지막으로 수정된 항목:**  2013-04-17_
 
 This topic contains the procedures that you can use as a reference when managing the Exchange Server 2013 Management Pack. For procedures related to deployment, see [배포와 관련된 절차](procedures-related-to-deployment.md).
 

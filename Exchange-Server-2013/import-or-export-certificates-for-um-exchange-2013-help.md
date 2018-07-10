@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-12-18_
+_**마지막으로 수정된 항목:** 2013-12-18_
 
 EAC 또는 셸을 사용하여 자체 서명된 인증서, 내부 PKI(공개 키 인프라) 인증서 또는 타사의 상업용 인증서를 가져오거나 내보낼 수 있습니다. UM(통합 메시징)의 경우에는 Microsoft Exchange 통합 메시징 서비스와 Microsoft Exchange 통합 메시징 통화 라우터 서비스에 대해 이러한 인증서 중 하나를 사용할 수 있습니다. 두 서비스에 대해 같은 인증서를 사용해도 되고 서비스마다 다른 인증서를 사용해도 됩니다.
 

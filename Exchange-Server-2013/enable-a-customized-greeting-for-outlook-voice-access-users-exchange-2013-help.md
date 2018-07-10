@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 기본적으로 각 UM(통합 메시징) 다이얼 플랜에서는 구성된 Outlook Voice Access 번호로 전화를 건 Outlook Voice Access 사용자를 비롯한 발신자에게 재생되는 환영 인사말로 표준 .wav 파일을 사용합니다. 하지만 환영 인사말로 사용할 .wav 또는 .wma 파일을 직접 만든 다음 UM 다이얼 플랜에서 이 파일을 사용하도록 설정할 수도 있습니다.
 

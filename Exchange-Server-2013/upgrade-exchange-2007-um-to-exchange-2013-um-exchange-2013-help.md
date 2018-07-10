@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)을 사용하는 Microsoft Exchange 2007 조직이 Exchange 2013 통합 메시징을 사용하도록 업그레이드할 때는 몇 가지 필수 단계를 수행해야 합니다. 기타 단계는 Exchange 2007 UM 배포의 일부분으로 이미 완료되었습니다. Exchange 2007에서 통합 메시징을 지원하도록 만들고 구성한 UM 구성 요소 및 전화 통신 환경에 따라 VoIP(Voice over IP) 게이트웨이, IP PBX(Private Branch Exchange) 또는 일반/SIP 사용 가능 PBX를 비롯한 추가 전화 통신 장비를 배포한 다음 Exchange 2013 UM에 필요한 추가 UM 구성 요소를 만들고 구성해야 할 수 있습니다.
 
@@ -520,14 +520,11 @@ Exchange 2013 UM으로 업그레이드할 때는 전화 통신 네트워크의 P
 
 Exchange 2013 UM으로 업그레이드하는 과정의 마지막 단계는 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX가 수신 전화(사용자에게 음성 메일을 남기려는 발신자, Outlook Voice Access로 전화를 거는 UM 사용 가능 사용자의 전화 및 UM 자동 전화 교환으로 전화를 거는 발신자의 전화 포함)를 Exchange 2013 클라이언트 액세스 서버로 보내도록 구성하는 것입니다. 이러한 모든 통화는 먼저 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX에서 수신된 다음 Exchange 2013 조직의 Exchange 2013 클라이언트 액세스 서버로 전달됩니다. 자세한 내용은 다음 리소스를 참조하십시오.
 
-  -  
-    [UM 서비스](um-services-exchange-2013-help.md)
+  -  [UM 서비스](um-services-exchange-2013-help.md)
 
-  -  
-    [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 14단계: Exchange 2007 통합 메시징 서버에서 전화 응답을 사용하지 않도록 설정
 

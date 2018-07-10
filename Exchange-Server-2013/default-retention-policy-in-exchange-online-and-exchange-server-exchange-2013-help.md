@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Exchange 보존 정책을 기본 MRM 정책에 프로그램 Exchange Online 만들고 온-프레미스 Exchange 조직입니다. 정책을은 Exchange Online 에서 새 사용자에 게 자동으로 적용 됩니다. 온-프레미스 조직에서 사서함에 대 한 아카이브를 만들 때 정책이 적용 됩니다. 언제 든 지 사용자에 게 적용 되는 보존 정책을 변경할 수 있습니다.
 

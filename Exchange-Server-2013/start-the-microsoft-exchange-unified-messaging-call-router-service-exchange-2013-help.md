@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-16_
+_**마지막으로 수정된 항목:** 2012-11-16_
 
 Microsoft MMC(Microsoft Management Console)에서 서비스 스냅인을 사용하거나 명령 프롬프트에서 cmd.exe를 사용하여 클라이언트 액세스 서버에서 MicrosoftExchange 통합 메시징 통화 라우터 서비스를 시작할 수 있습니다. 기본적으로 MicrosoftExchange 통합 메시징 통화 라우터 서비스는 클라이언트 액세스 서버가 설치된 후에 시작됩니다. 그러나 클라이언트 액세스 서버를 오프라인으로 전환한 상태에서 다시 온라인으로 전환해야 하는 경우와 같이 MicrosoftExchange 통합 메시징 통화 라우터 서비스를 수동으로 다시 시작하거나 중지해야 하는 경우가 있을 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 Edge 전송 서버를 Exchange 조직에 구독하기 전에 $env:ExchangeInstallPath\\Scripts에 있는 **ConfigureAdam.ps1** 스크립트를 사용하여 Edge 전송 서버의 기본 AD LDS(Active Directory Lightweight Directory Services) 구성을 수정할 수 있습니다.
 

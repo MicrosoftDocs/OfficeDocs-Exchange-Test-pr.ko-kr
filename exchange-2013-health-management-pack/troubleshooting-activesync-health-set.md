@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Exchange ActiveSync 상태 설정은 조직의 모바일 클라이언트에 대한 ActiveSync 서비스의 전체 상태를 모니터링합니다. ActiveSync 상태 설정은 다음 상태 설정과 밀접하게 관련됩니다.
 

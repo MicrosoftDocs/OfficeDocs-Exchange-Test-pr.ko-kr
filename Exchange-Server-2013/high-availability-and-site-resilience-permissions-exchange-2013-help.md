@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-11-12_
+_**마지막으로 수정된 항목:** 2015-11-12_
 
 고가용성을 구성하는 데 필요한 사용 권한은 수행하는 절차 또는 실행하려는 cmdlet에 따라 달라집니다. 고가용성에 대한 자세한 내용은 [고가용성 및 사이트 복구](high-availability-and-site-resilience-exchange-2013-help.md)를 참조하십시오.
 

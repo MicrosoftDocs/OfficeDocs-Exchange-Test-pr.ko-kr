@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-08-13_
+_**마지막으로 수정된 항목:** 2013-08-13_
 
 사서함을 만들거나 이동할 때 또는 기존 사용자가 메일을 사용할 수 있도록 설정할 때 해당 사서함을 사서함 데이터베이스에 저장해야 합니다. Microsoft Exchange Server 2013에서는 Exchange가 자동 사서함 배포를 사용하여 데이터베이스를 선택하게 하는 옵션을 제공합니다.
 

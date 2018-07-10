@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 제품 키 Standard 또는 Enterprise Edition 라이선스를 구입한 Exchange Server 2013 에 지시 합니다. Enterprise Edition 라이선스에 대 한 제품 키를 구입한 경우 Standard Edition 라이센스와 함께 사용할 수 있는 모든 항목 외에도 서버당 5 개 이상의 데이터베이스를 탑재할 수 있습니다. 자세한 하려는 경우 Exchange 라이선스에 대 한 [Exchange 2013: 에디션 및 버전](exchange-2013-editions-and-versions-exchange-2013-help.md)를 참조 합니다.
 

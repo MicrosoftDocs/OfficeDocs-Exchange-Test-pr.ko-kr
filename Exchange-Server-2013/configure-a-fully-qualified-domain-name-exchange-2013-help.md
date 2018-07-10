@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 IP 주소나 FQDN(정규화된 도메인 이름)으로 UM(통합 메시징) IP 게이트웨이를 구성할 수 있습니다. UM IP 게이트웨이를 만들 때 사용 중인 VoIP 게이트웨이, IP PBX 또는 SBC(Session Border Controller)에 구성된 IP 주소 또는 FQDN을 정의해야 합니다. UM IP 게이트웨이가 만들어진 후 IP 주소나 FQDN을 변경할 수 있습니다.
 

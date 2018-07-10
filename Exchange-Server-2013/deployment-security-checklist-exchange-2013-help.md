@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013 기능은 메시징 환경의 보안을 개선할 수 있도록 설계되었습니다. 일반적으로 Exchange 2013에서는 다음 내용이 적용됩니다.
 

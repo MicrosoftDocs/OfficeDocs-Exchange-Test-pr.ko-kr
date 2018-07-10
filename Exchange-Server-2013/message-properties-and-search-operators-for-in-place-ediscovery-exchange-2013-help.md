@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 원본 위치 eDiscovery 및 유지를 사용 하 여 검색할 수 있는 Exchange 전자 메일 메시지의 속성을 설명 Exchange Server 2013 및 Exchange Online 합니다. 부울 검색 연산자 및 eDiscovery 검색 결과 구체화 하는데 사용할 수 있는 다른 검색 쿼리 기법에도 항목에 설명 합니다.
 

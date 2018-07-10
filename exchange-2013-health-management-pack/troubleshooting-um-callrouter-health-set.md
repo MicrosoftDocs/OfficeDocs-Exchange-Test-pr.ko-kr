@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange UM(통합 메시징) 통화 라우터 상태 설정은 UM 통화 라우터 서비스의 전체 상태를 모니터링합니다.
 
@@ -122,7 +122,7 @@ CAS의 이벤트 로그를 확인하여 UM 개체(예: **umipgateway** 및 **umh
 
 CAS에서 UM 통화 라우터 서비스 인증서를 확인합니다.
 
-**추가 문제 해결 단계:**
+**추가 문제 해결 단계:** 
 
 1.  IIS 관리자를 시작한 후 문제를 보고한 서버에 연결하여 **MSExchangeServicesAppPool** 응용 프로그램 풀이 실행 중인지 확인합니다.
 

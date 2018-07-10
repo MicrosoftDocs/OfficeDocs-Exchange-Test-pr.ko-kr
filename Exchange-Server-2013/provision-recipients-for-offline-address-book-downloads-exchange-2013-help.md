@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-15_
+_**마지막으로 수정된 항목:** 2013-02-15_
 
 조직에서 OAB(오프라인 주소록)를 여러 개 사용하는 경우 받는 사람 중 누가 어떤 OAB를 다운로드할지 지정하는 몇 가지 방법이 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_**마지막으로 수정된 항목:** 2016-12-15_
 
 Microsoft Exchange Server 2013에서 UM(통합 메시징)을 위한 전화 통신 및 데이터 네트워크를 구성할 경우 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행하는 클라이언트 액세스 서버 및 Microsoft Exchange 통합 메시징 서비스를 실행하는 사서함 서버와 통신하도록 VoIP 게이트웨이를 구성해야 합니다. 또한 조직의 PBX(Private Branch eXchanges)와 통신하도록 VoIP 게이트웨이를 구성해야 합니다. 이 항목의 정보와 링크를 사용하여 PBX와 통신하도록 VoIP 게이트웨이를 구성할 수 있습니다.
 

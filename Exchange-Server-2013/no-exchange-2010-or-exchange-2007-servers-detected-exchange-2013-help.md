@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2012-11-08_
+_**마지막으로 수정된 항목:** 2012-11-08_
 
 조직에 Exchange Server 2010 또는 Exchange Server 2007 서버 역할이 없기 때문에 Microsoft Exchange Server 2013 설치 시 이 경고가 표시됩니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 GPMC(그룹 정책 관리 콘솔)를 사용하여 DNS(Domain Name System) 접미사 검색 목록을 구성하는 방법에 대해 설명합니다. 일부 Microsoft Exchange 2013 시나리오의 경우 연결되지 않은 네임스페이스가 있으면 복수 DNS 접미사를 포함하도록 DNS 접미사 검색 목록을 구성해야 합니다.
 

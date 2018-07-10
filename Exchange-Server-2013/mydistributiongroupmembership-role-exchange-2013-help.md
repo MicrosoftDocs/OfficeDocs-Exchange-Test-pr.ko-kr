@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 조직의 메일 그룹에서 그룹 구성원을 조작할 수 있는 경우 개별 사용자는 `MyDistributionGroupMembership` 관리 역할을 사용하여 조직의 메일 그룹에서 구성원을 보고 수정할 수 있습니다.
 

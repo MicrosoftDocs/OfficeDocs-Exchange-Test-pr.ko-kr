@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 서로 다른 세 영역에서 발생 하는 Exchange ActiveSync, Outlook Web App, POP3, IMAP4, 자동 검색 서비스, Exchange 웹 서비스 및 가용성 서비스의 클라이언트 프로토콜 관리: Exchange 관리 센터 (EAC), Exchange 관리 셸 및 인터넷 정보 서비스 (IIS) 관리자입니다. 각 위치에서 관리 되는 설정 클라이언트 프로토콜에 따라 다릅니다.
 

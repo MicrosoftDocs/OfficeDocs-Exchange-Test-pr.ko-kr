@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-09-25_
+_**마지막으로 수정된 항목:** 2012-09-25_
 
 콘텐츠 변환 추적 Microsoft Exchange Server 2013 사서함 서버에서 인바운드 및 아웃 바운드 메시지에 사서함 전송 서비스에 의해 수행 되는 MAPI 콘텐츠 변환 오류를 캡처합니다.
 

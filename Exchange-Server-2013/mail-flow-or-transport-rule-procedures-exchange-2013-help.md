@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-13_
+_**마지막으로 수정된 항목:** 2015-04-13_
 
 다음 절차를 사용하여 전송 규칙을 사용할 수 있습니다. 전송 규칙의 개념 및 목표에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)을 참조하세요.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Edge 전송 서버의 구성 정보는 AD LDS(Active Directory Lightweight Directory Services)에 저장됩니다. 경계 네트워크에 Edge 전송 서버를 두 대 이상 설치하고 DNS 라운드 로빈을 사용하여 Edge 전송 서버 간의 네트워크 트래픽을 균형 있게 조정할 수 있습니다. 라운드 로빈은 네트워크 리소스에 대한 로드를 공유 및 배포하기 위해 DNS 서버에서 사용하는 간단한 메커니즘입니다.
 

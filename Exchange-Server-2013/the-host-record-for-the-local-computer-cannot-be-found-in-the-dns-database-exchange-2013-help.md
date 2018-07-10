@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 DNS(Domain Name System) 데이터베이스에서 이 컴퓨터의 호스트(A) 레코드를 찾을 수 없기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

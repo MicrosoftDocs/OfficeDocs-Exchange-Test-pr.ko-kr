@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-08-12_
+_**마지막으로 수정된 항목:** 2013-08-12_
 
 EAC 또는 셸을 사용하여 Outlook Web App 가상 디렉터리의 속성을 보거나 구성할 수 있습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Online에서 관리자는 Outlook Web App 가상 디렉터리를 보거나 구성할 수 없습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Exchange Online에서 관리자는 Outlook Web App 가상 디렉터리를 보거나 구성할 수 없습니다.
 
 
 셸을 사용하여 Outlook Web App 가상 디렉터리의 속성을 보는 경우 반환되는 정보는 사용할 수 있는 정보의 하위 집합입니다. 예를 들어 **Get-OWAVirtualDirectory** cmdlet을 사용하여 속성을 보는 경우 Exchange에서 반환되는 정보는 다음과 같습니다.

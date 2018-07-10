@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-11-22_
+_**마지막으로 수정된 항목:** 2017-11-22_
 
-**요약:** Exchange 2013 에서 크로스 포리스트 이동에 대 한 사서함을 준비 하는 방법에 대 한 설명입니다.
+**요약:**  Exchange 2013 에서 크로스 포리스트 이동에 대 한 사서함을 준비 하는 방법에 대 한 설명입니다.
 
 사서함 이동 및 마이그레이션 Exchange 관리 셸을 사용 하 여 Microsoft Exchange 2013 지원 **New-MoveRequest** 및 **New-MigrationBatch** cmdlet 특히 합니다. Exchange 관리 센터 (EAC)를 통해 사서함에 이동할 수도 있습니다. Note Exchange 2013 포리스트에 Exchange 2010과 Exchange 2013 사서함을 이동할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Cmdlet Extension Agents` 관리 역할을 사용하면 관리자가 조직의 cmdlet 확장 에이전트를 사용하거나 사용하지 않도록 설정하고 우선 순위를 설정할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-14_
+_**마지막으로 수정된 항목:** 2012-10-14_
 
 [보존 정책 만들기](create-a-retention-policy-exchange-2013-help.md)
 

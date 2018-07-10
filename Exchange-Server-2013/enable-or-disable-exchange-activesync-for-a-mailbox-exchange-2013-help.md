@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-13_
+_**마지막으로 수정된 항목:** 2012-11-13_
 
 사용자 사서함에 대 한 Microsoft Exchange ActiveSync 를 사용할지 여부를 EAC 또는 셸을 사용할 수 있습니다. Exchange ActiveSync 은 사용자가 자신의 Exchange 사서함이 있는 모바일 장치를 동기화 할 수 있는 클라이언트 프로토콜입니다. Exchange ActiveSync 사용자 사서함을 만들 때 기본적으로 활성화 됩니다. 자세한 내용은 [Exchange ActiveSync](exchange-activesync-exchange-2013-help.md)를 참조 하십시오.
 

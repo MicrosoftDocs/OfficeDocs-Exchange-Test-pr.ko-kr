@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-11_
+_**마지막으로 수정된 항목:** 2012-10-11_
 
 주소록 정책 (ABP)을 만든 후 사서함 사용자에 게 할당 해야 합니다. 사용자가 자신의 사용자 계정이 만들어질 때 기본 ABP를 할당 되지 않습니다. ABP을 사용자에 게 할당 하지 않은 경우에 전체 조직에 대 한 전체 주소 목록 (gal 전체) Outlook 및 Outlook Web App을 통해 사용자에 게 액세스할 수 있습니다. 자세한 내용은 [주소록 정책](address-book-policies-exchange-2013-help.md)를 참조 하십시오.
 

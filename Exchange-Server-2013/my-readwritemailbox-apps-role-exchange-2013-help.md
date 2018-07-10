@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**마지막으로 수정된 항목:**2017-02-08_
+_**마지막으로 수정된 항목:** 2017-02-08_
 
 내 ReadWriteMailbox 앱 역할에는 개별 사용자가 자신의 매니페스트에 ReadWriteMailbox 사용 권한을 요청 하는 추가 기능을 추가할 수 있습니다.
 

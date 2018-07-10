@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013의 여러 구성 요소에 대해 구성 작업을 수행하는 데 필요한 권한은 수행되는 절차나 실행하려는 cmdlet에 따라 달라집니다. 해당 기능에 대한 자세한 내용은 이 항목의 각 섹션을 참조하십시오.
 

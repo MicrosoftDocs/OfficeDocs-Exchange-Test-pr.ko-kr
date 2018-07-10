@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 포함된 DLP 정책 및 테스트 방법을 비롯하여 Exchange Server에 2013 및 Exchange Online의 DLP 정책에 대해 자세히 알아봅니다. 또한 Exchange DLP의 새 기능에 대해서도 알아봅니다.
 

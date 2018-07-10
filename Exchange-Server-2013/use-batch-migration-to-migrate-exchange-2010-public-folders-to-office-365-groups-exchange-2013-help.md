@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-04-30_
+_**마지막으로 수정된 항목:** 2018-04-30_
 
-**요약:** Office 365 그룹에 Exchange 2010 공용 폴더를 이동 하는 방법입니다.
+**요약:**  Office 365 그룹에 Exchange 2010 공용 폴더를 이동 하는 방법입니다.
 
 *마이그레이션 일괄 처리*라고 하는 프로세스를 통해 Office 365 그룹에 Exchange 2010 공용 폴더의 일부 또는 전부를 이동할 수 있습니다. 그룹은 공용 폴더에 비해 특정 이점을 제공 하는 Microsoft에서 제공 하는 새로운 공동 작업입니다. [Office 365 그룹에 공용 폴더 마이그레이션](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md) 공용 폴더 및 그룹 및 조직 수 또는 그룹에 전환에서 혜택을 받는 하지 이유 이유 간의 차이점에 대 한 개요를 참조 하십시오.
 
@@ -282,9 +282,9 @@ Office 365 그룹에는 대부분의 공용 폴더의 데이터는 마이그레�
 
 이 스크립트 마이그레이션되는 공용 폴더의 사용 권한을 읽고 구성원 및 소유자 그룹에 추가할 Office 365 다음과 같이 됩니다.
 
-  - 다음 사용 권한 역할을 가진 사용자는 Office 365의 그룹에 구성원으로 추가 됩니다. **사용 권한 역할:** 소유자 "," PublishingEditor "," 편집기 "," PublishingAuthor "," 만든이
+  - 다음 사용 권한 역할을 가진 사용자는 Office 365의 그룹에 구성원으로 추가 됩니다. **사용 권한 역할:**  소유자 "," PublishingEditor "," 편집기 "," PublishingAuthor "," 만든이
 
-  - 또한 위의 인 사용자에 게 다음과 같은 최소 액세스 권한도 추가 됩니다 구성원으로 Office 365의 그룹에 있습니다. **액세스 권한:** ReadItems, CreateItems, foldervisible가, EditOwnedItems, DeleteOwnedItems
+  - 또한 위의 인 사용자에 게 다음과 같은 최소 액세스 권한도 추가 됩니다 구성원으로 Office 365의 그룹에 있습니다. **액세스 권한:**  ReadItems, CreateItems, foldervisible가, EditOwnedItems, DeleteOwnedItems
 
   - 오른쪽 "소유자"으로 추가할 소유자 그룹에 액세스할 수 있는 사용자 및 다른 가능한 액세스 권한이 있는 사용자가 구성원으로 추가 됩니다.
 

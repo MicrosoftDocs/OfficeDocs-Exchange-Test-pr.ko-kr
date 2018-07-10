@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `User Options` 관리 역할에는 관리자를 조직에서 사용자의 Outlook Web App 옵션을 볼 수 있습니다. 이 역할 구성 문제를 진단 하는데 사용할 수 있습니다.
 

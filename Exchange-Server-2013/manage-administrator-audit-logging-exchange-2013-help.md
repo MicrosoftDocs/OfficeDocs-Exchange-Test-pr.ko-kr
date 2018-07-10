@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-05-17_
+_**마지막으로 수정된 항목:** 2013-05-17_
 
 Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정된 cmdlet을 실행할 때마다 로그 항목을 만들 수 있습니다. 로그 항목은 실행된 cmdlet, 사용된 매개 변수, cmdlet을 실행한 사용자 및 영향을 받은 개체에 대한 정보를 제공합니다. 관리자 감사 로깅에 대한 자세한 내용은 [관리자 감사 로깅](administrator-audit-logging-exchange-2013-help.md)을 참조하십시오.
 

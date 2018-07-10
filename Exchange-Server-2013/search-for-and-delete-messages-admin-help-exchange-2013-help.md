@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-12-20_
+_**마지막으로 수정된 항목:** 2017-12-20_
 
 관리자는 사용자 사서함을 검색 하 고 다음 사서함에서 메시지를 삭제 하려면 **Search-Mailbox** cmdlet을 사용할 수 있습니다.
 

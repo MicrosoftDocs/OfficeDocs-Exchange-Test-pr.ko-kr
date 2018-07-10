@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2014-04-03_
+_**마지막으로 수정된 항목:** 2014-04-03_
 
 계층 구조 동기화 장치 및 사서함 도우미를 수동으로 호출하려는 경우에만 공용 폴더 계층 구조를 업데이트해야 합니다. 둘 다 조직의 각 공용 폴더 사서함에 대해 24시간에 한 번 이상 호출됩니다. 계층 구조 동기화 장치는 사용자가 Microsoft Outlook 또는 Microsoft Exchange 웹 서비스 클라이언트를 통해 보조 사서함에 로그온되어 있는 경우 15분마다 호출됩니다.
 

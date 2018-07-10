@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_**마지막으로 수정된 항목:** 2016-12-15_
 
 Microsoft Exchange Server 2013의 경우 이 항목의 내용이 업데이트되지 않았습니다. 아직 업데이트되지 않았지만 Exchange 2013에 계속 적용할 수 있습니다. 여전히 도움이 필요하면 아래 커뮤니티 리소스를 확인하세요.
 
@@ -54,11 +54,11 @@ Microsoft Exchange 설치 하려면 받는 사람 업데이트 서비스의 인�
 
 받는 사람 업데이트 서비스에 대 한 자세한 내용은 다음 Microsoft 기술 자료 문서를 참조 하십시오.
 
-  - "받는 사람 업데이트 서비스에서 적용 하는 방법의 받는 사람 정책을" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738)).
+  - "받는 사람 업데이트 서비스에서 적용 하는 방법의 받는 사람 정책을" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738)).
 
-  - "방법: 받는 사람 업데이트 서비스도 채웁니다 주소 목록" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828))입니다.
+  - "방법: 받는 사람 업데이트 서비스도 채웁니다 주소 목록" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828))입니다.
 
-  - "Exchange 받는 사람 업데이트 서비스의 진행률을 확인 하는 방법" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127))입니다.
+  - "Exchange 받는 사람 업데이트 서비스의 진행률을 확인 하는 방법" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127))입니다.
 
-  - "Exchange 받는 사람 업데이트 서비스에 의해 수행 되는 작업" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770))입니다.
+  - "Exchange 받는 사람 업데이트 서비스에 의해 수행 되는 작업" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770))입니다.
 

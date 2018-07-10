@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Exchange Server 2013 DLP 정책 규칙 집합 내에서 문제 보고서 생성 동작을 설정할 수 있습니다. 또한 누구에 게 보고서를 보낼 수 있어야 하 고 원본 메시지와 함께 수행할 작업을 나타낼 수 있습니다. 문제 보고서의 다음 정보를 포함할 수 있습니다.
 

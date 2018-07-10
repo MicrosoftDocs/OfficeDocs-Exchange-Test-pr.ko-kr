@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 서버에서 처리 표준 FIPS (Federal Information) 설정의 전반적인 상태를 모니터링 하는 **FIPS** 상태 설정 합니다. FIPS 140 하는 방법에 대 한 자세한 내용은 [FIPS 140 유효성 검사](https://go.microsoft.com/fwlink/p/?linkid=521913)을 참조 하십시오.
 

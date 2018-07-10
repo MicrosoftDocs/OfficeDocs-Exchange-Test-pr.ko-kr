@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-06-04_
+_**마지막으로 수정된 항목:** 2015-06-04_
 
 Exchange Server 2013에서 Exchange DAG에 대해 알아봅니다. 이 문서에서는 DAG(데이터베이스 사용 가능 그룹) 수명 주기뿐만 아니라 고가용성 및 사이트 복구를 위한 DAG 사용 방법도 설명합니다.
 

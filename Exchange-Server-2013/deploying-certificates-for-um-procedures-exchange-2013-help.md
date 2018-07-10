@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-19_
+_**마지막으로 수정된 항목:** 2013-04-19_
 
 [UM에 대 한 인증서를 만듭니다.](create-certificates-for-um-exchange-2013-help.md)
 

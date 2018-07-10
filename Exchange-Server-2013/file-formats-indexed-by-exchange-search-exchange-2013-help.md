@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-07-21_
+_**마지막으로 수정된 항목:** 2015-07-21_
 
 Microsoft Exchange Server 2013 및 Exchange Online에서 Exchange 검색에는 메시지 첨부 파일로 포함된 가장 일반적인 유형의 파일 형식을 인덱싱하기 위한 필터가 포함되어 있습니다. 추가 파일 형식을 인덱싱하기 위해 필터를 설치할 수도 있습니다.
 

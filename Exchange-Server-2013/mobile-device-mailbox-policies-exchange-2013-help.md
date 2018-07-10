@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-06-16_
+_**마지막으로 수정된 항목:** 2016-06-16_
 
 Microsoft Exchange Server 2013에서는 모바일 장치 사서함 정책을 만들어 사용자 모음에 공통된 정책이나 보안 설정 집합을 적용할 수 있습니다. Exchange ActiveSync 조직에 Exchange 2013를 배포한 후 새 모바일 장치 사서함 정책을 만들거나 기존 정책을 수정할 수 있습니다. Exchange 2013을 설치할 때 기본 모바일 장치 사서함 정책이 만들어집니다. 모든 사용자에게 자동으로 이 기본 모바일 장치 사서함 정책이 할당됩니다.
 
@@ -25,18 +25,8 @@ Microsoft Exchange Server 2013에서는 모바일 장치 사서함 정책을 만
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>iOS7 지문 판독기는 장치 암호로 지원되지 않습니다. 지문 판독기로 iOS7 장치를 보호하도록 설정하는 경우에도 모바일 장치 사서함 정책에서 암호를 필요로 하는 경우 암호를 만들고 입력해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> iOS7 지문 판독기는 장치 암호로 지원되지 않습니다. 지문 판독기로 iOS7 장치를 보호하도록 설정하는 경우에도 모바일 장치 사서함 정책에서 암호를 필요로 하는 경우 암호를 만들고 입력해야 합니다.
 
 
 ## 모바일 장치 사서함 정책의 개요

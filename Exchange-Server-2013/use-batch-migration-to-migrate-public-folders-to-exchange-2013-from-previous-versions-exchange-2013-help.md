@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-26_
+_**마지막으로 수정된 항목:** 2018-03-26_
 
 **요약**:이 문서는 Exchange 2007 또는 Exchange 2010에서 Exchange 2013 공용 폴더를 이동 하는 방법을 보여줍니다.
 
@@ -75,7 +75,7 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
   - Exchange 2007, 해야 Exchange 조직 관리자 역할 또는 Exchange Server 관리자 역할이 할당 되어야 합니다. 또한 공용 폴더 관리자 역할 및 대상 서버에 대 한 로컬 관리자 그룹에 할당 해야 합니다. 자세한 내용은 [사용자 또는 그룹 관리자 역할을 추가 하는 방법](https://go.microsoft.com/fwlink/p/?linkid=81779)를 참조 하십시오.
 
-  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)으로 업그레이드합니다.
+  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)으로 업그레이드합니다.
 
   - 마이그레이션하기 전에 [공용 폴더의 제한](limits-for-public-folders-exchange-2013-help.md)을 고려해야 합니다.
 
@@ -149,18 +149,8 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.
 
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
@@ -450,18 +440,8 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 마이그레이션과 관련된 문제가 발생하여 레거시 Exchange 공용 폴더를 다시 활성화해야 하는 경우 다음 단계를 수행하십시오.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>롤백하는 경우 마이그레이션 레거시 Exchange 서버에, 메일 사용이 가능한 공용 폴더 또는 마이그레이션 후 Exchange 2013의 공용 폴더에 게시 된 콘텐츠에 게 보낸 모든 전자 메일을 손실 됩니다. 이 콘텐츠를 저장 하려면 공용 폴더 콘텐츠를.pst 파일로 내보내고 롤백을 완료 되 면 레거시 공용 폴더를 가져올 해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 롤백하는 경우 마이그레이션 레거시 Exchange 서버에, 메일 사용이 가능한 공용 폴더 또는 마이그레이션 후 Exchange 2013의 공용 폴더에 게시 된 콘텐츠에 게 보낸 모든 전자 메일을 손실 됩니다. 이 콘텐츠를 저장 하려면 공용 폴더 콘텐츠를.pst 파일로 내보내고 롤백을 완료 되 면 레거시 공용 폴더를 가져올 해야 합니다.
 
 
 1.  레거시 Exchange 서버에서 다음 명령을 실행하여 레거시 Exchange 공용 폴더의 잠금을 해제합니다. 이 프로세스를 수행하는 데 몇 시간이 걸릴 수 있습니다.

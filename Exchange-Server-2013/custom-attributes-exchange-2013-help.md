@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-17_
+_**마지막으로 수정된 항목:** 2012-10-17_
 
 Microsoft Exchange Server 2013에는 15개의 확장 특성이 있습니다. 이러한 특성을 사용하여 직원 ID, OU(조직 구성 단위) 또는 기존 특성이 없는 다른 사용자 지정 값 등의 받는 사람과 관련된 정보를 추가할 수 있습니다. Active Directory에서는 이러한 사용자 지정 특성에 **ms-Exch-Extension-Attribute1**부터 **ms-Exch-Extension-Attribute15**까지의 레이블이 지정됩니다. Exchange 관리 셸에서 여기에 해당되는 매개 변수는 *CustomAttribute1*부터 *CustomAttribute15*까지입니다. 이러한 특성은 Exchange 구성 요소에서 사용되지 않습니다. 이러한 특성을 사용하면 Active Directory 스키마를 확장하지 않고도 Active Directory 데이터를 저장할 수 있습니다.
 

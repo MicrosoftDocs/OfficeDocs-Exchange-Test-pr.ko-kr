@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 OAB.Proxy 상태 설정은 CAS(클라이언트 액세스 서버)에서 OAB(오프라인 주소록) 프록시 인프라의 가용성을 모니터링합니다.
 

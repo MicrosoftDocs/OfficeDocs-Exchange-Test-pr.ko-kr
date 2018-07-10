@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-05-07_
+_**마지막으로 수정된 항목:** 2014-05-07_
 
 사서함 데이터베이스를 만든 후 EAC나 셸을 사용하여 다른 볼륨, 폴더, 위치 또는 경로로 이동할 수 있습니다. 복제되지 않은 사서함 데이터베이스의 데이터베이스 경로를 이동하는 방법에 대한 단계별 지침은 [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) 항목을 참조하십시오.
 

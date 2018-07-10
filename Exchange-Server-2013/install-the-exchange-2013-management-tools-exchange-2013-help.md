@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-01-28_
+_**마지막으로 수정된 항목:** 2013-01-28_
 
 Microsoft Exchange Server 2013 관리 도구를 사용하면 Exchange 조직을 원격으로 구성하고 관리할 수 있습니다. Exchange 2013 관리 도구에는 Exchange 관리 셸 및 Exchange 도구 상자가 포함되어 있습니다. 이 항목에서는 Setup.exe나 무인 설치 모드를 사용하여 Exchange 2013 관리 도구를 설치하는 방법을 설명합니다.
 

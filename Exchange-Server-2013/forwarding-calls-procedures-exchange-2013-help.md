@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-29_
+_**마지막으로 수정된 항목:** 2013-04-29_
 
 [허용 또는 전화 응답 규칙 만들기 (영문)에서 사용자를 차단](allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 로컬 컴퓨터를 다른 프로그램의 설치를 완료 하려면 다시 시작 해야 또는 업데이트 하는 Windows 않기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수는 없습니다.
 

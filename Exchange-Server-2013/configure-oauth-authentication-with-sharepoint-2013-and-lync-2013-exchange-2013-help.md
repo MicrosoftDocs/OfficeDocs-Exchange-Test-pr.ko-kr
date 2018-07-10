@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-03-03_
+_**마지막으로 수정된 항목:** 2014-03-03_
 
 Exchange Server 2013에서는 다른 응용 프로그램이 OAuth를 사용하여 Exchange를 인증할 수 있습니다. 해당 응용 프로그램은 Exchange 2013에서 파트너 응용 프로그램으로 구성되어야 합니다.
 

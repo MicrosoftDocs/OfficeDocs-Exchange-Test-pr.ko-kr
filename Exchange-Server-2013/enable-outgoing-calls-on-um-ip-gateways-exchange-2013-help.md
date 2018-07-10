@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-13_
+_**마지막으로 수정된 항목:** 2012-11-13_
 
 발신 전화가 허용되지 않은 경우 UM(통합 메시징) IP 게이트웨이에서 발신 전화를 허용하도록 설정할 수 있습니다. UM IP 게이트웨이에 대한 속성에서 **이 UM 게이트웨이를 통해 나가는 호출 허용** 옵션을 선택하면 VoIP(Voice over IP) 게이트웨이, SIP(Session Initiation Protocol)에 사용할 수 있는 PBX(Private Branch eXchange), IP PBX 또는 SBC(Session Border Controller)에 대한 발신 전화를 허용하고 보내도록 UM IP 게이트웨이를 구성할 수 있습니다. **이 UM IP 게이트웨이를 통해 나가는 호출 허용** 설정에 따라 VoIP 게이트웨이, SIP에 사용할 수 있는 PBX, IP PBX 또는 SBC가 사용자에 대한 발신 전화를 시작할 수 있는지 여부가 제어되지만 UM IP 게이트웨이의 호출 전송 또는 수신 전화에는 영향을 주지 않습니다.
 

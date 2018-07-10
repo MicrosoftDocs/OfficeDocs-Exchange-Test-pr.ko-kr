@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 여러 포리스트 토폴로지에서 Microsoft Exchange Server 2013 배포의 개요를 제공 합니다. 다음 주제에 대 한 정보를 찾을 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 가져오기 및 UM (통합 메시징) 다이얼 플랜 및 자동 전화 교환에 사용 하 여 기록한 했을 때 오디오 파일을 내보낼 수 있습니다. 예, 다음 내보내기 및 Exchange의 이전 버전에서 업그레이드 하는 경우 오디오 파일의 복사본을 저장 하는 것이 좋습니다. 또는 파악 해야 다이얼 플랜을 구성 하기 전에 기록 된 오디오 음성 안내의 복사본을 가져오거나 자동 전화 교환 합니다.
 

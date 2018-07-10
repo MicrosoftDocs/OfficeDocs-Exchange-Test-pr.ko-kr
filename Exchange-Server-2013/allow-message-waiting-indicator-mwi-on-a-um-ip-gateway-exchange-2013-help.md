@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-23_
+_**마지막으로 수정된 항목:** 2013-02-23_
 
 UM(통합 메시징) IP 게이트웨이에서 수신한 통화에 대해 사용자에게 음성 메일 알림을 보내거나 보내지 않도록 지정할 수 있습니다. 이 설정을 사용하면 UM IP 게이트웨이가 사용자에 대해 SIP NOTIFY 메시지를 보내고 받을 수 있습니다. MWI(Message Waiting Indicator)는 기본적으로 사용되며 메시지 대기 알림이 사용자에게 전송되도록 하지만, 필요에 따라 이 기능을 사용하지 않을 수 있습니다.
 

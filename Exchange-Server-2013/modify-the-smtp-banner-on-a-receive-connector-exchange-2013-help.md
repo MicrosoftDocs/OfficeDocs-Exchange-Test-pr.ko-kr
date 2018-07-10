@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 *SMTP 배너*는 원격 SMTP 메시징 서버가 Microsoft Exchange Server 2013을 실행하는 컴퓨터에 구성된 수신 커넥터에 연결된 후에 받는 SMTP 연결 응답입니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 2013용 Exchange ActiveSync 클라이언트 프로토콜에 대해 알아봅니다. 보안 기능, 관리 가능한 항목, 안전하게 만드는 방법, Windows Phone 7과의 동기화 문제를 방지하는 방법 등 Exchange ActiveSync의 기능에 대해 알아봅니다.
 
@@ -128,18 +128,8 @@ Exchange ActiveSync에서는 Exchange 서버와 모바일 장치 간의 통신 �
 
   - **장치 암호 정책**   Exchange ActiveSync에서는 여러 장치 암호 옵션을 구성할 수 있습니다.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>iOS7 지문 판독기 기술은 장치 암호로 사용할 수 없습니다. iOS7 지문 판독기를 사용하기로 선택한 경우에도 조직의 모바일 장치 사서함 정책에서 장치 암호를 필요로 하는 경우 장치 암호를 만들고 입력해야 합니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > iOS7 지문 판독기 기술은 장치 암호로 사용할 수 없습니다. iOS7 지문 판독기를 사용하기로 선택한 경우에도 조직의 모바일 장치 사서함 정책에서 장치 암호를 필요로 하는 경우 장치 암호를 만들고 입력해야 합니다.
     
     장치 암호 옵션은 다음과 같습니다.
     

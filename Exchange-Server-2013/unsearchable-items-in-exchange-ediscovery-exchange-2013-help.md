@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 2013 및 Exchange Online 에 대 한 원본 위치 eDiscovery를 검색할 수 없는 항목에는 Exchange 검색을 통해 인덱싱할 수 없는 또는 있는 부분적 으로만 인덱싱된 사서함 항목은입니다. 검색할 수 없는 항목에는 일반적으로 전자 메일 메시지에 첨부 된 인덱싱할 수 없는 파일을 포함 합니다. 파일 검색용으로 인덱싱할 수 없습니다 및 전자 메일 메시지에 첨부 하는 경우에 검색할 수 없는 항목으로 반환 되는 몇가지 이유는 다음과 같습니다.
 

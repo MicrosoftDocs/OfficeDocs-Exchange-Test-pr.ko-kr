@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013에서는 Microsoft Exchange Online 또는 다른 Exchange 조직과의 조직 관계를 구성할 수 있습니다. 조직 관계를 설정하면 다른 조직을 처리할 때 사용자 환경을 개선할 수 있습니다. 예를 들어 약속 있음/없음 데이터를 공유하고, 보안 메시지 흐름을 구성하고, 두 조직 모두에서 메시지 추적을 사용하도록 설정할 수 있습니다.
 

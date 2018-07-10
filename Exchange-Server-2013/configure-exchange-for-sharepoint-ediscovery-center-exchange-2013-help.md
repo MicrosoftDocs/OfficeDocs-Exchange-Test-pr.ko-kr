@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013에는 *파트너 응용 프로그램*이라고 하는 Microsoft SharePoint Server 2013 및 Microsoft Lync Server 2013에서 작동하는 기능이 포함되어 있습니다. 이러한 파트너 응용 프로그램이 각 리소스에 서로 액세스할 수 있도록 하려면 서버 간 인증을 구성해야 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access 사용자의 PIN을 다시 설정하기 전 허용되는 로그인 실패 횟수를 1에서 998까지 구성할 수 있으며 기본값은 5입니다. PIN을 다시 설정하기 전 허용되는 로그인 실패 횟수는 UM(통합 메시징) 사서함 정책에 구성되며 UM 사서함 정책과 연결된 모든 Outlook Voice Access 사용자에게 적용됩니다.
 

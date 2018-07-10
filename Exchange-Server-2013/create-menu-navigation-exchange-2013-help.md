@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 자동 전화 교환에 대 한 업무 시간 외 주 메뉴 음성 안내 하거나 비즈니스에 대 한 단일 만들려는 **새 메뉴 탐색 항목** 페이지 또는 여러 키 매핑을 사용할 수 있습니다. 전화기 키패드의 키를 누를 때, 예는 내선 번호 또는 다른 자동 전화 교환에 대 한 호출을 전송 수행 될 작업을 정의할 수 있습니다.
 

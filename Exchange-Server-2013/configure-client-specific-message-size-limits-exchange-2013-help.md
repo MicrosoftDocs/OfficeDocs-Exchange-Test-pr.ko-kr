@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-01-26_
+_**마지막으로 수정된 항목:** 2017-01-26_
 
 Microsoft Exchange Server 2013에는 Exchange 조직을 통과하는 메시지에 적용되는 여러 다양한 메시지 크기 제한이 있습니다. 자세한 내용은 [메시지 크기 제한](message-size-limits-exchange-2013-help.md)을 참조하십시오.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Mail Recipients` 관리 역할을 사용하면 관리자가 조직에서 기존 사서함, 메일 사용자 및 메일 연락처를 관리할 수 있습니다. 그러나 받는 사람을 만들 수는 없습니다. 받는 사람을 만들려면 `Mail Recipient Creation` 역할을 사용하십시오.
 

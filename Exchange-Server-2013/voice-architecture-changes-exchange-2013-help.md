@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013 아키텍처는 Exchange Server 2007 및 Exchange Server 2010 아키텍처와는 다릅니다. Exchange 2007 및 Exchange 2010에서는 서버 유형이 클라이언트 액세스, 사서함, 허브 전송 및 통합 메시징이라는 역할로 구분되었습니다. Exchange 2013에서는 이러한 서버 역할이 두 가지 유형으로 결합되었으며 두 서버 역할의 모든 구성 요소나 서비스는 동일한 실제 서버에서 또는 클라이언트 액세스와 사서함이라는 별개의 두 서버에서 실행됩니다. 새 모델에서 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행하는 클라이언트 액세스 서버는 들어오는 호출에서 생성된 SIP(Session Initialization Protocol) 트래픽을 사서함 서버로 리디렉션합니다. 그 다음에는 VoIP 게이트웨이나 IP PBX(Private Branch eXchange)에서 사용자 사서함을 호스트하는 사서함 서버로의 미디어(RTP(Realtime Transport Protocol) 또는 SRTP(보안 RTP)) 채널이 설정됩니다. Exchange 2013에서 사서함 서버의 프로세스는 Exchange 2007 및 Exchange 2010의 통합 메시징 서버 역할과 동일합니다. 사서함 서버는 Microsoft Exchange 통합 메시징 서비스와 UM 작업자 프로세스를 모두 실행합니다. 클라이언트 액세스 서버는 들어오는 호출을 받아 사서함 서버로 전달하는 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행합니다.
 

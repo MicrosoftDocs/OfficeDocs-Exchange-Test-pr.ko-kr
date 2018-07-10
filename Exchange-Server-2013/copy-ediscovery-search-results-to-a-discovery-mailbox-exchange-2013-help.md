@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-02-24_
+_**마지막으로 수정된 항목:** 2014-02-24_
 
 원본 위치 eDiscovery 검색을 만든 후에 결과 검색 사서함으로 복사 하려면 EAC를 사용할 수 있습니다. 검색을 만들 때 지정 된 검색 사서함으로 결과 복사할는 **New-MailboxSearch** cmdlet을 사용 하 여 만든 eDiscovery 검색을 시작 하려면 셸을 사용할 수도 있습니다.
 

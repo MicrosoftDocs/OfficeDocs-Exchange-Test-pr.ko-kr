@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-18_
+_**마지막으로 수정된 항목:** 2012-11-18_
 
 새 호출에 응답 하거나 그 이렇게 하지 못하도록 하려면 사서함 서버에서 Microsoft Exchange 통합 메시징 서비스를 허용할 수 있습니다. 기본적으로 사서함 서버가 설치 된 후 활성된 상태로 설정입니다. 들어오는 음성, 팩스, 자동 전화 교환 및 Outlook Voice Access 호출을 수락 하도록 사서함 서버를 설정 하는 경우 **Set-ServerComponentState** cmdlet을 사용 합니다.
 

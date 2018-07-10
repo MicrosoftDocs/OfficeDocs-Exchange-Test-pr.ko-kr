@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 페더레이션 공유를 사용하면 온-프레미스 Exchange 조직의 사용자가 역시 페더레이션 공유에 대해 구성된 다른 Exchange 조직의 받는 사람과 약속 있음/없음 일정 정보를 공유할 수 있습니다. 약속 있음/없음 공유는 Exchange 2013을 실행 중인 두 조직 간에 가능하며 혼합된 Exchange 배포가 있는 조직 간에도 가능합니다. 페더레이션 공유에 대한 자세한 내용은 [공유](sharing-exchange-2013-help.md) 항목을 참조하십시오.
 
@@ -109,18 +109,8 @@ _**마지막으로 수정된 항목:**2016-12-09_
         
         Exchange 2003 조직에서 클라이언트 액세스 서버 역할을 가진 Exchange 2010 SP2 서버를 설치 해야 합니다. 기존 Exchange 2010 서버가 자신이 업데이트 해야 Exchange 2010 s p 2로 합니다. Exchange 2003 조직에 Exchange 2010을 설치 하는 방법에 대 한 정보를 [Exchange 2003-업그레이드 및 동시 사용 계획 로드맵](https://go.microsoft.com/fwlink/?linkid=268414)을 참조 하십시오.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange 2013 및 Exchange 2003 조직 간에 약속 있음/없음 공유가 제대로 작동하려면 공유 폴더 계층에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공유 폴더가 있어야 합니다. Exchange 2010 설치 중 Outlook 2003 지원을 위한 클라이언트 설정 구성의 일부로 공용 폴더를 만드는 옵션을 선택하는 경우에만 Exchange 2003 조직의 Exchange 2010 사서함 서버에 이 폴더가 자동으로 생성됩니다. 또한 이 옵션은 Exchange 2010 사서함 서버가 조직에 설치된 첫 번째 사서함 서버인 경우에만 설치 프로세스 중에 표시됩니다. 설치 중에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공용 폴더가 만들어지지 않으면 이 폴더를 수동으로 만들어야 합니다. 이 공용 폴더를 만드는 방법에 대한 자세한 내용은 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">엔터프라이즈 환경용 Microsoft Office 365에서 Exchange 페더레이션을 사용하는 경우 약속 있음/없음 문제를 해결하는 방법</a>을 참조하십시오.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!CAUTION]
+        > Exchange 2013 및 Exchange 2003 조직 간에 약속 있음/없음 공유가 제대로 작동하려면 공유 폴더 계층에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공유 폴더가 있어야 합니다. Exchange 2010 설치 중 Outlook 2003 지원을 위한 클라이언트 설정 구성의 일부로 공용 폴더를 만드는 옵션을 선택하는 경우에만 Exchange 2003 조직의 Exchange 2010 사서함 서버에 이 폴더가 자동으로 생성됩니다. 또한 이 옵션은 Exchange 2010 사서함 서버가 조직에 설치된 첫 번째 사서함 서버인 경우에만 설치 프로세스 중에 표시됩니다. 설치 중에 <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> 공용 폴더가 만들어지지 않으면 이 폴더를 수동으로 만들어야 합니다. 이 공용 폴더를 만드는 방법에 대한 자세한 내용은 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">엔터프라이즈 환경용 Microsoft Office 365에서 Exchange 페더레이션을 사용하는 경우 약속 있음/없음 문제를 해결하는 방법</a>을 참조하십시오.
     
     2.  **페더레이션 위임 구성**.
         
@@ -169,18 +159,8 @@ _**마지막으로 수정된 항목:**2016-12-09_
         
           - **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 폴더에 대해 위의 단계와 동일한 단계를 완료합니다.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>공용 폴더의 크기에 따라 이 복제를 완료하는 데 몇 시간이 걸릴 수 있습니다.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!CAUTION]
+            > 공용 폴더의 크기에 따라 이 복제를 완료하는 데 몇 시간이 걸릴 수 있습니다.
         
           - **OU=EXTERNAL (FYDIBOHF25SPDLT)** 및 **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** 공용 폴더를 Exchange 2010 클라이언트 액세스/사서함 서버에 복제한 후에는 Exchange 2003 서버에서 이러한 공용 폴더의 복제본을 제거해야 합니다.
     

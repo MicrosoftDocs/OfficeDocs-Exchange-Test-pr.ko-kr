@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-16_
+_**마지막으로 수정된 항목:** 2012-11-16_
 
 Microsoft Exchange Server 2013, Exchange 검색 IRM으로 보호 된 메시지를 인덱싱할 수 있도록 정보 권한 관리 (IRM)를 구성할 수 있습니다.
 

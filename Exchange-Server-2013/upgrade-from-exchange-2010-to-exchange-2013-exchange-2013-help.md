@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2010 및 Exchange Server 2007에는 여러 서버 역할이 있습니다. 클라이언트 액세스, 사서함, 허브 전송, 통합 메시징 및 Edge 전송과 같은 여러 서버 역할이 있습니다. Exchange Server 2013에서는 서버 역할의 수가 5개에서 클라이언트 액세스, 사서함 및 Edge 전송의 3개로 줄었습니다. 통합 메시징은 이제 Exchange 2013에서 제공되는 음성 관련 기능의 구성 요소나 하위 기능으로 간주됩니다. 변경에 대한 자세한 내용은 [Exchange 2013의 새로운 기능](what-s-new-in-exchange-2013-exchange-2013-help.md)의 "Exchange 2013 아키텍처"를 참조하세요.
 
@@ -27,18 +27,8 @@ Microsoft Exchange Server 2010 및 Exchange Server 2007에는 여러 서버 역�
 
 기존 Exchange 2003 조직을 직접 Exchange 2013으로 업그레이드할 수는 없습니다. 먼저 Exchange 2003 조직을 Exchange 2007 또는 Exchange 2010 조직으로 업그레이드해야 하며, 그런 다음 Exchange 2007 또는 Exchange 2010 조직을 Exchange 2013으로 업그레이드할 수 있습니다. 조직을 Exchange 2003에서 Exchange 2010으로 업그레이드한 다음 Exchange 2010에서 Exchange 2013으로 업그레이드하는 것이 좋습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>먼저 Exchange 2003의 모든 인스턴스를 조직에서 제거해야 Exchange 2013으로 업그레이드할 수 있습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 먼저 Exchange 2003의 모든 인스턴스를 조직에서 제거해야 Exchange 2013으로 업그레이드할 수 있습니다.
 
 
 모든 Exchange 2003 사서함을 Exchange Online으로 마이그레이션할 수 있습니다. 이 방식에 대한 자세한 내용은 [Office 365로 여러 전자 메일 계정을 마이그레이션하는 방법](https://go.microsoft.com/fwlink/p/?linkid=524030)을 참조하세요.

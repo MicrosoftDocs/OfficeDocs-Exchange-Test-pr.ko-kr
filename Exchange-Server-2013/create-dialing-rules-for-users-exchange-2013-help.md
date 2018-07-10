@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 전화 걸기 규칙 그룹은 전화 걸기 규칙 항목으로 구성됩니다. 전화 걸기 규칙은 전화 번호를 발신 전화용으로 온-프레미스 전화 시스템(PBX) 또는 IP PBX로 보내기 전에 수정하는 데 사용됩니다. 전화 걸기 규칙에는 두 가지 목적이 있습니다.
 

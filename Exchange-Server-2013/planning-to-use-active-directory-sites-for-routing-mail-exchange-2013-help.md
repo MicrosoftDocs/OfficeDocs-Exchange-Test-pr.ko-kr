@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-05-21_
+_**마지막으로 수정된 항목:** 2013-05-21_
 
 Microsoft Exchange Server 2013에서는 Active Directory 사이트 및 DAG(데이터베이스 사용 가능 그룹)를 라우팅 경계로 인식합니다. 그러나 Exchange 2013은 계속 Active Directory 사이트 토폴로지를 사용하여 조직 내의 개별 DAG 또는 사이트에서 Exchange 서버 간에 메시지가 전송되는 방법을 결정합니다. 자세한 내용은 [메일 라우팅](mail-routing-exchange-2013-help.md)을 참조하십시오.
 

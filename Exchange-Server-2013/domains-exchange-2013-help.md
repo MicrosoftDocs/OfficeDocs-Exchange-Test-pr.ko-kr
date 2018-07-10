@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Office 365_
+_**적용 대상:** Exchange Server 2013, Office 365_
 
-_**마지막으로 수정된 항목:**2012-10-11_
+_**마지막으로 수정된 항목:** 2012-10-11_
 
 도메인은 전자 메일 디렉터리 및 사서함이 설정된 SMTP 네임스페이스를 나타냅니다. Microsoft Exchange Server 2013 조직과 상호 작용하는 도메인을 구성하여 다양한 도메인과 주고받는 전자 메일이 Exchange에서 처리되는 방식을 구성할 수 있습니다.
 

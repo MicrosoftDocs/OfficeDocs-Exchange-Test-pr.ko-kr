@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-13_
+_**마지막으로 수정된 항목:** 2012-11-13_
 
 UM (통합 메시징) IP 게이트웨이 만들 때에 기본적으로 UM IP 게이트웨이 상태의 활성화 됩니다. UM IP 게이트웨이 만든 후에 해당 상태 사용 안함으로 설정 하 여 게이트웨이의 작업을 비활성화할 수 있습니다. UM IP 게이트웨이, (VoIP) IP 게이트웨이 통해 음성을 해제 한 후 IP Private Branch eXchange (PBX) 또는 사용 하도록 구성 된 세션 테두리 컨트롤러 (SBC) 들어오는 통합 메시징 호출 더이상 처리할 수 없습니다.
 

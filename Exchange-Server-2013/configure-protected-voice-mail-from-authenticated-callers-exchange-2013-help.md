@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 수신 전화에 응답 하 고 다음 음성 메일 메시지를 암호화를 사용 하 여 보호에 적용 합니다 있는지 여부를 결정 하도록 통합 메시징을 구성할 수 있습니다. 음성 메시지를 보호 될 때:
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange 2013 통합된 메시징 (UM) 여러 TCP 및 사용자 데이터 그램 프로토콜 (UDP) 포트 Exchange 2013 및 다른 장치를 실행 하는 서버 간의 통신을 설정 하는데 사용할 필요 합니다. 이러한 IP 포트를 통해 액세스를 허용 하 여 제대로 작동 하도록 통합 메시징을 사용 하도록 설정 합니다. 이 항목에서는 Exchange 2013 에 사용 되는 TCP 및 UDP 포트에 설명 통합 메시징 합니다.
 

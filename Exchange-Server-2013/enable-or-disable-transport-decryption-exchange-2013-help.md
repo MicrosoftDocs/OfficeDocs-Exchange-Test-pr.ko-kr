@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 전송 암호 해독을 사용 하면 전송 규칙 에이전트 Microsoft Exchange Server 2013 에서 정보 권한 관리 (IRM)으로 보호 된 메시지의 콘텐츠에 액세스 하려면 사서함 서버를 수 있습니다. 따라서 다른 전송 에이전트는 메시지 콘텐츠에 액세스 하 고 가능한 경우 항목을 변경 수 있습니다. 예, 메시지 콘텐츠를 조사 하 고 (예: 메시지에는 고 지 사항을 적용 하는 규칙) 전송 규칙을 적용 하는 전송 규칙 에이전트 해야 합니다. IRM으로 보호 된 메시지를 성공적으로 해독 하려면 [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) 서버에 구성 된 고급 사용자 그룹에는 페더레이션 배달 사서함을 추가 해야 합니다.
 

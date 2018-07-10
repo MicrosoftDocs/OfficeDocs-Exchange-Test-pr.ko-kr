@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-30_
+_**마지막으로 수정된 항목:** 2012-11-30_
 
 UM(통합 메시징) 자동 전화 교환을 삭제한 후에는 이전에 UM 자동 전화 교환에서 응답했던 수신 전화를 교환원이 직접 응답해야 합니다. UM 자동 전화 교환이 기본 UM 자동 전화 교환으로 UM 다이얼 플랜과 연관된 경우에는 삭제할 수 없습니다.
 

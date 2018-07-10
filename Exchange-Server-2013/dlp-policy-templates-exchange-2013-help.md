@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-14_
+_**마지막으로 수정된 항목:** 2015-01-14_
 
 Microsoft Exchange 2013 에서 DLP 솔루션을 사용 하는 데이터 손실 방지 (DLP) 정책 템플릿을 사용할 수 있습니다. DLP 정책 서식 파일은 정책에 대 한 모델입니다. 사용자 고유의 사용자 지정된 DLP 정책 만들기 (영문)의 프로세스를 시작 하려면 서식 파일을 선택할 수 있습니다. DLP 정책 내에서 데이터 손실 방지에 대 한 비즈니스 요구를 충족 하는지 확인 하는 규칙을 사용자 지정할 수 있습니다. 여러 정책 템플릿 Microsoft에서 제공 되지만 이러한 Exchange 에서 데이터 손실 방지 솔루션을 구현 하는 유일한 방법은 없습니다.
 
@@ -47,24 +47,19 @@ For more information
 
 Microsoft에서 정의한 특정 XML 스키마 정의를 준수하는 Exchange와는 별개인 DLP 정책 템플릿 파일을 만든 다음 해당 파일을 시스템에 가져와 DLP 정책을 만들 수 있습니다. 자신만의 템플릿 파일을 만들면 Microsoft에서 기본 제공하지 않는 DLP 정책에 대한 모델을 직접 정의할 수 있습니다. 이는 일반적으로 정책 템플릿을 사용할 수 있게 된 후에 Exchange 관리 센터를 사용하여 DLP 정책을 만드는 것과는 다릅니다. Exchange와는 별도로 정책 템플릿을 만들 경우 이 템플릿을 사용하여 메시지를 검사하려면 먼저 템플릿을 가져와야 합니다. 또한 Exchange에서 Microsoft가 정의한 정보 정의 외에 자신만의 중요한 정보 정의를 만들 수 있습니다. DLP 정책 템플릿 파일 및 분류 규칙 패키지에 대한 별도의 XML 스키마 정의가 있습니다. 시작하려면 다음 정보를 참조하십시오.
 
-  -  
-    [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
+  -  [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
-  -  
-    [파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
+  -  [파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 
 ## 기존 전송 규칙에 DLP 기능 포함
 
 새 DLP 정책을 만들지 않고 기존 전송 규칙에 DLP 검색 기능을 통합할 수 있습니다. Exchange의 이전 버전에서 복잡한 규칙 집합을 만들었고 이를 복제하거나 Exchange 2013에 중요한 정보 검색을 추가하려는 경우 Exchange 관리 센터의 전송 규칙 편집기 또는 Exchange 관리 셸을 사용하여 이러한 두 기능을 통합할 수 있습니다. 시작하려면 다음 정보를 참조하십시오.
 
-  -  
-    [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
+  -  [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
 
-  -  
-    [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\)) (Exchange Online)
+  -  [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  
-    [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
     
     [정책 및 규정 준수 Cmdlet](https://technet.microsoft.com/ko-kr/library/dd298082\(v=exchg.150\))
 

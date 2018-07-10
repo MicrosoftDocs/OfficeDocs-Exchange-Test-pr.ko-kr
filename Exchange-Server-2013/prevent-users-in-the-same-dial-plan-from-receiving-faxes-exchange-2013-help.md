@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징) 다이얼 플랜과 연결된 UM 사용 가능 사용자가 팩스 메시지를 받지 못하도록 차단할 수 있습니다. 기본적으로 통합 메시징을 사용할 수 있고 UM 다이얼 플랜과 연결되어 있는 사용자는 팩스 메시지를 받을 수 있습니다. 그러나 특정 UM 다이얼 플랜과 연결된 사용자가 팩스를 수신할 수 없도록 하려는 경우가 있을 수 있습니다.
 

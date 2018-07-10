@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 사서함 데이터베이스 를 제거할 수 없습니다.
+# 사서함 데이터베이스 [UnwillingToRemoveMailboxDatabase]를 제거할 수 없습니다.
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2012-11-08_
+_**마지막으로 수정된 항목:** 2012-11-08_
 
 잠재적인 데이터 손실 없이는 로컬 서버에서 사용자 사서함 데이터베이스를 제거할 수 없기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-26_
+_**마지막으로 수정된 항목:** 2018-03-26_
 
-**요약:** Office 365에 Exchange 2007 및 Exchange 2010 공용 폴더를 이동 하려면 다음이 절차를 사용 합니다.
+**요약:**  Office 365에 Exchange 2007 및 Exchange 2010 공용 폴더를 이동 하려면 다음이 절차를 사용 합니다.
 
 이 항목에서는 Office 365 또는 Exchange Online에 업데이트 롤업 8 Exchange Server 2010 서비스 팩 3 (SP3) 또는 Exchange 2007 s p 3 용 업데이트 롤업 15에서 단독형 또는 미리 구성 된 마이그레이션에 공용 폴더를 마이그레이션하는 방법에 설명 합니다.
 
@@ -77,7 +77,7 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
   - Exchange 2007, 해야 Exchange 조직 관리자 역할 또는 Exchange Server 관리자 역할이 할당 되어야 합니다. 또한 공용 폴더 관리자 역할 및 대상 서버에 대 한 로컬 관리자 그룹에 할당 해야 합니다. 자세한 내용은 [사용자 또는 그룹 관리자 역할을 추가 하는 방법](https://go.microsoft.com/fwlink/p/?linkid=81779)를 참조 하십시오.
 
-  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)으로 업그레이드합니다.
+  - Exchange 2007 서버에서 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)으로 업그레이드합니다.
 
   - 조직에 2GB보다 큰 공용 폴더가 있으면 마이그레이션 전에 해당 폴더의 콘텐츠를 삭제하거나 여러 공용 폴더로 분할하는 것이 좋습니다. 이 두 옵션 중 하나를 사용할 수 없으면 공용 폴더를 Office 365 및 Exchange Online으로 이동하지 않는 것이 좋습니다.
 
@@ -157,18 +157,8 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.
 
 
 4.  확인을 위해 마이그레이션의 끝에, 현재 공용 폴더 배포의 스냅숏을를 레거시 Exchange 서버에서 다음 Exchange 관리 셸 명령을 먼저 실행 하는 것이 좋습니다.
@@ -542,18 +532,8 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
 마이그레이션과 관련된 문제가 발생하여 레거시 Exchange 공용 폴더를 다시 활성화해야 하는 경우 다음 단계를 수행하십시오.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>롤백하는 경우 마이그레이션 레거시 Exchange 서버에, 메일 사용이 가능한 공용 폴더 또는 공용 폴더 마이그레이션 후 게시 된 콘텐츠에 게 보낸 모든 전자 메일을 손실 됩니다. 이 콘텐츠를 저장 하려면 공용 폴더 콘텐츠를.pst 파일로 내보내고 롤백을 완료 되 면 레거시 공용 폴더를 가져올 해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 롤백하는 경우 마이그레이션 레거시 Exchange 서버에, 메일 사용이 가능한 공용 폴더 또는 공용 폴더 마이그레이션 후 게시 된 콘텐츠에 게 보낸 모든 전자 메일을 손실 됩니다. 이 콘텐츠를 저장 하려면 공용 폴더 콘텐츠를.pst 파일로 내보내고 롤백을 완료 되 면 레거시 공용 폴더를 가져올 해야 합니다.
 
 
 1.  레거시 Exchange 서버에서 다음 명령을 실행하여 레거시 Exchange 공용 폴더의 잠금을 해제합니다. 이 프로세스를 수행하는 데 몇 시간이 걸릴 수 있습니다.
@@ -596,26 +576,13 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
 6.  EAC를 사용하여 공용 폴더에 사용 권한을 설정합니다. 자세한 내용은 [새 조직에서 공용 폴더 설정](set-up-public-folders-in-a-new-organization-exchange-2013-help.md) 항목의 [Step 3: Assign permissions to the public folder](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)을 참조하세요.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PST 마이그레이션을 이미 시작했는데 기본 사서함이 가득 찬 문제가 발생하는 경우에는 두 가지 옵션을 통해 PST 마이그레이션을 복구할 수 있습니다.
-<ol>
-<li><p>자동 분할 기능이 기본 사서함에서 데이터를 이동할 때까지 기다립니다. 데이터가 이동되려면 최대 2주가 걸릴 수 있습니다. 그러나 자동 분할이 완료될 때까지 완전히 채워진 공용 폴더 사서함의 모든 공용 폴더는 새 콘텐츠를 받을 수 없습니다.</p></li>
-<li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">공용 폴더 사서함 만들기</a>를 수행한 다음 <em>Mailbox</em> 매개 변수를 포함한 <strong>New-PublicFolder</strong> cmdlet을 사용하여 보조 공용 폴더 사서함에 나머지 공용 폴더를 만듭니다. 이 예에서는 보조 공용 폴더 사서함에 PF201이라는 새 공용 폴더를 만듭니다.</p>
-<pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> PST 마이그레이션을 이미 시작했는데 기본 사서함이 가득 찬 문제가 발생하는 경우에는 두 가지 옵션을 통해 PST 마이그레이션을 복구할 수 있습니다.
+> <ol>
+> <li><p>자동 분할 기능이 기본 사서함에서 데이터를 이동할 때까지 기다립니다. 데이터가 이동되려면 최대 2주가 걸릴 수 있습니다. 그러나 자동 분할이 완료될 때까지 완전히 채워진 공용 폴더 사서함의 모든 공용 폴더는 새 콘텐츠를 받을 수 없습니다.</p></li>
+> <li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">공용 폴더 사서함 만들기</a>를 수행한 다음 <em>Mailbox</em> 매개 변수를 포함한 <strong>New-PublicFolder</strong> cmdlet을 사용하여 보조 공용 폴더 사서함에 나머지 공용 폴더를 만듭니다. 이 예에서는 보조 공용 폴더 사서함에 PF201이라는 새 공용 폴더를 만듭니다.</p>
+> <pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
+> </ol>
 
 
 ## Office 365의 새로운 기능

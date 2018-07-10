@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) 사서함 정책을 만든 후 다양한 설정을 보고 구성할 수 있습니다. 예를 들면, 음성 메일 미리 보기 또는 전화에서 재생과 같은 UM 기능과 보호된 음성 메일 및 PIN 정책 설정과 같은 기타 보안 관련 옵션을 구성할 수 있습니다.
 

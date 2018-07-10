@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2014-06-24_
+_**마지막으로 수정된 항목:** 2014-06-24_
 
 UM(통합 메시징) IP 게이트웨이는 실제 VoIP(Voice over IP) 게이트웨이, IP PBX(Private Branch eXchange) 또는 SBC(Session Border Controller) 하드웨어 장치를 나타냅니다. 음성 메일 사용자가 수신 전화를 받고 발신 전화를 거는 데 VoIP 게이트웨이, IP PBX 또는 SBC를 사용하려면 디렉터리 서비스에 UM IP 게이트웨이가 생성되어 있어야 합니다.
 

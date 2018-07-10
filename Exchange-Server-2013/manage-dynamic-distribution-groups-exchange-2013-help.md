@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 동적 메일 그룹은 Microsoft Exchange 조직 내에서 전자 메일 메시지 및 기타 정보를 빠르게 대량 전송하기 위해 만든 메일 사용이 가능한 Active Directory 그룹 개체입니다.
 

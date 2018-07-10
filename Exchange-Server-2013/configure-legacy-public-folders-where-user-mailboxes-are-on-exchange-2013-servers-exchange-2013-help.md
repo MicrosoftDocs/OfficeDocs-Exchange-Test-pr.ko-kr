@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-03-27_
+_**마지막으로 수정된 항목:** 2017-03-27_
 
 Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이전 공용 폴더 (로 알려져 레거시 공용 폴더)로 설정 하는 방법입니다.
 

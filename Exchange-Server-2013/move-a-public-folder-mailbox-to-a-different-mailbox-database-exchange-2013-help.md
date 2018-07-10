@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-07-21_
+_**마지막으로 수정된 항목:** 2015-07-21_
 
 부하 분산을 목적으로 또는 리소스를 보다 가까운 지리적 위치로 이동할 목적으로 공용 폴더 사서함을 다른 사서함 데이터베이스로 이동해야 할 수 있습니다. 일반적인 사서함 이동과 마찬가지로 **MoveRequest** cmdlet을 사용하여 공용 폴더 사서함을 이동할 수 있습니다. 사서함 이동에 대한 자세한 내용은 [Exchange 2013 사서함 이동](mailbox-moves-in-exchange-2013-exchange-2013-help.md)을 참조하십시오.
 

@@ -13,14 +13,14 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 *관리 역할 그룹*은 Microsoft Exchange Server 2013에서 RBAC(역할 기반 액세스 제어) 사용 권한 모델에 사용되는 USG(유니버설 보안 그룹)입니다. 관리 역할 그룹을 사용하여 관리 역할을 사용자 그룹에 간편하게 할당할 수 있습니다. 역할 그룹의 모든 구성원에게 동일한 역할 집합이 할당됩니다. 역할 그룹에는 조직 관리, 받는 사람 관리 및 기타 작업과 같은 Exchange 2013의 주요 관리 작업을 정의하는 관리자 및 전문가 역할이 할당됩니다. 역할 그룹을 사용하면 관리자 또는 전문가 사용자 그룹에 보다 광범위한 사용 권한 집합을 쉽게 할당할 수 있습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 이 항목에서는 고급 RBAC 기능에 대해 중점적으로 설명합니다. EAC(Exchange 2013 관리 센터)를 사용하여 구성원을 역할 그룹에 추가 및 역할 그룹에서 제거, 역할 그룹 생성과 수정 또는 역할 할당 정책 생성과 수정과 같은 기본 Exchange 권한을 관리하려면, <A href="permissions-exchange-2013-help.md">사용 권한</A>를 참조하세요.
 
 
@@ -42,7 +42,7 @@ Role group membership
 Role group creation workflow
 
 
-> [!NOTE]
+> [!NOTE]  
 > 사용자에게 자신의 사서함이나 메일 그룹을 관리할 수 있는 권한을 할당하려면 <A href="understanding-management-role-assignment-policies-exchange-2013-help.md">관리 역할 할당 정책 이해 (영문)</A> 항목을 참조하십시오.
 
 
@@ -115,7 +115,7 @@ RBAC에 대한 자세한 내용은 [역할 기반 액세스 제어 이해](under
 <p><a href="change-a-role-entry-exchange-2013-help.md">역할 항목 변경</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">역할에서 역할 항목을 제거 합니다.</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 역할 그룹에서 관리 역할의 관리 역할 항목을 변경하는 것은 고급 작업이며 일반적으로 필요하지 않습니다. 대신 요구 사항에 맞는 기존 관리 역할을 사용할 수 있습니다. 자세한 내용은 <A href="built-in-role-groups-exchange-2013-help.md">기본 제공 역할 그룹</A> 항목을 참조하십시오.
 
 
@@ -236,7 +236,7 @@ RBAC에 대한 자세한 내용은 [역할 기반 액세스 제어 이해](under
 역할 그룹에 **ManagedBy** 속성을 설정하지 않으면 조직 관리 역할의 구성원이거나 직접 또는 간접적으로 역할 관리 관리 역할이 할당된 사용자만 역할 그룹 또는 역할 그룹 구성원을 수정할 수 있습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 역할 그룹에 할당되는 역할을 위임 역할 할당으로 할당할 수도 있습니다. 위임 역할 할당을 사용하면 위임 역할이 할당된 역할 그룹의 구성원이 해당 역할을 다른 역할 그룹, 할당 정책, 사용자 또는 USG에 할당할 수 있습니다. 역할 그룹의 구성원은 <STRONG>ManagedBy</STRONG> 속성에도 추가되어 있는 경우가 아니면 해당 역할만 할당할 수 있고 역할 그룹을 위임할 수는 없습니다. 위임 역할 할당에 대한 자세한 내용은 <A href="understanding-management-role-assignments-exchange-2013-help.md">관리 역할 할당 이해 (영문)</A> 항목을 참조하십시오.
 
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-12-12_
+_**마지막으로 수정된 항목:** 2012-12-12_
 
 UM(통합 메시징) 사서함 정책과 연결된 사용자에 대해 전화에서 재생 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 이 옵션은 기본적으로 사용하도록 설정되어 있으며 사용자가 전화로 음성 메일 메시지를 재생할 수 있도록 합니다. Microsoft Exchange Server 2007 서버에 사서함이 있는 UM 사용 가능 사용자는 이 옵션을 사용할 수 없습니다.
 

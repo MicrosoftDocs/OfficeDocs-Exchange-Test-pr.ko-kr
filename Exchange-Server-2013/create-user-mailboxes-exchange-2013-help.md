@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-04-12_
+_**마지막으로 수정된 항목:** 2013-04-12_
 
 사서함은 Exchange 조직의 정보 근로자가 사용하는 가장 일반적인 받는 사람 유형입니다. 각 사서함은 Active Directory 사용자 계정과 연결되어 있습니다. 사용자는 사서함을 사용하여 메시지를 주고받고, 메시지, 약속, 작업, 메모 및 문서를 저장할 수 있습니다. EAC 또는 셸을 사용하여 사용자 사서함을 만들 수 있습니다.
 

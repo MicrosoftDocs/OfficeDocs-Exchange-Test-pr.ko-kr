@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access에는 TUI(전화 사용자 인터페이스)와 VUI(음성 사용자 인터페이스)의 두 가지 인터페이스가 있습니다. 기본적으로 사용자는 Outlook Voice Access로 전화를 걸 때 일정, 전자 메일 및 개인 연락처에 액세스하고 디렉터리를 검색할 수 있습니다. 관리자는 사용자가 Outlook Voice Access를 통해 자신의 사서함에 액세스할 때 이러한 기능 중 일부에 액세스하지 못하도록 셸을 사용하여 설정할 수 있습니다. UM(통합 메시징) 사서함 정책에서 Outlook Voice Access 기능을 수정하면 변경 내용이 UM 사서함 정책에 연결된 모든 사용자에게 영향을 줍니다.
 

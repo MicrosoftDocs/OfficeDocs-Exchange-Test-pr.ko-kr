@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 POP 상태 설정은 Microsoft Exchange POP3 서비스의 전체적인 상태와 가용성 및 POP3 클라이언트 연결을 모니터링합니다. POP 상태 설정은 다음 상태 설정과 밀접하게 관련됩니다.
 

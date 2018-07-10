@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-06_
+_**마지막으로 수정된 항목:** 2012-11-06_
 
 이 절차에서는 사서함 데이터베이스 복사본을 제거하는 방법을 보여 줍니다. 이 절차를 따라 사서함 데이터베이스의 마지막 복사본을 제거할 수는 없습니다. 사서함 데이터베이스의 마지막 복사본을 제거하는 방법에 대한 자세한 내용은 [Remove a mailbox database](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) 또는 [Remove-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/aa997931\(v=exchg.150\)) 항목을 참조하십시오.
 

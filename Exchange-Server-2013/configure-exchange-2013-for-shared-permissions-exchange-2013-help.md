@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 공유 사용 권한을 사용하면 Microsoft Exchange Server 2013 관리자는 Active Directory 보안 주체(예: 사용자)를 만들어 Exchange 받는 사람으로 구성할 수 있습니다. Exchange 관리자 그룹과 Active Directory 관리자 그룹 간 관리 작업을 나누는 사용 권한 분할 모델과는 달리 공유 사용 권한에는 작업 구분이 없습니다.
 

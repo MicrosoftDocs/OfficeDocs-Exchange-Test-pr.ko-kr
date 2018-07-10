@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-19_
+_**마지막으로 수정된 항목:** 2013-04-19_
 
 UM(통합 메시징) 자동 전화 교환에 대해 사용자 지정 업무 시간 인사말을 사용하도록 설정할 수 있습니다. 업무 시간 인사말은 발신자가 업무 시간 중에 건 전화를 UM 자동 전화 교환에서 받을 경우 맨 처음 듣게 되는 말입니다. 이 인사말을 사용자 지정할 수 있습니다.
 

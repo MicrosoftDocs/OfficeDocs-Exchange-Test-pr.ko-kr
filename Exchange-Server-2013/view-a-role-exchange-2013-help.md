@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-03_
+_**마지막으로 수정된 항목:** 2012-10-03_
 
 원하는 정보에 따라 다양한 방식으로 관리 역할을 나열할 수 있습니다. 예를 들어 특정 역할 유형의 역할만 반환하거나, 특정 cmdlet과 매개 변수만 포함된 역할을 반환하거나, 특정 관리 역할의 세부 정보를 표시하도록 선택할 수 있습니다. Microsoft Exchange Server 2013의 관리 역할에 대한 자세한 내용은 [관리 역할 이해 (영문)](understanding-management-roles-exchange-2013-help.md)를 참조하십시오.
 

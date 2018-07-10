@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Windows Phone 8, Windows 8 및 Windows RT 릴리스마다 Exchange ActiveSync 및 모바일 장치 사서함 정책을 지 원하는 장치의 수가 있습니다. 각 장치 운영 체제에는 특정 모바일 장치 사서함 정책 설정 집합을 지원합니다.
 

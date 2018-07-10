@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)에서 발신자는 터치톤이라고도 하는 DTMF(복합 주파수 부호) 또는 음성 입력을 사용하여 시스템과 상호 작용할 수 있습니다. 발신자가 사용할 수 있는 방법은 UM 다이얼 플랜 및 자동 전화 교환이 구성된 방식에 따라 다릅니다.
 

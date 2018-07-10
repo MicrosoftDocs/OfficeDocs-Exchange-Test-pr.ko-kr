@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-03-20_
+_**마지막으로 수정된 항목:** 2018-03-20_
 
 Microsoft Exchange 관리자는 Exchange Server 지원 가능성 행렬을 통해 지원되는 Microsoft Exchange 버전의 필수 구성 요소나 모든 구성에 사용할 수 있는 지원 수준에 대한 정보를 중앙에서 쉽게 찾을 수 있습니다.
 

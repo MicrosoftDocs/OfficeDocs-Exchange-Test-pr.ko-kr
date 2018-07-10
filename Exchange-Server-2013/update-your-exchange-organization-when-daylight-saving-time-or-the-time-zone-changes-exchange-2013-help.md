@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 조직이나 사용자 일부가 거주하는 국가나 지역에서 DST(일광 절약 시간제)를 인식하는 정책을 변경하거나 UTC(협정 세계시)에서 현지 시간 오프셋을 변경한 경우 Microsoft Windows, Microsoft Exchange, Microsoft Outlook 또는 기타 프로그램을 이러한 변경에 맞게 업데이트해야 합니다.
 
@@ -31,7 +31,7 @@ _**마지막으로 수정된 항목:**2016-12-09_
 
 DST 또는 표준 시간대가 변경되면 Office 365 인증 시스템이 업데이트되므로 모든 Office 365 클라이언트 컴퓨터를 업데이트해야 합니다. 그렇지 않으면 연결 문제가 발생할 수 있습니다.
 
-  - 모든 클라이언트 및 데스크톱 컴퓨터 Windows DST 업데이트 설치 되어있는지 확인 합니다. 자세한 내용은 [Microsoft Windows 운영 체제에 대 한 일광 절약 시간제를 구성 하는 방법](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=914387)를 참조 합니다.
+  - 모든 클라이언트 및 데스크톱 컴퓨터 Windows DST 업데이트 설치 되어있는지 확인 합니다. 자세한 내용은 [Microsoft Windows 운영 체제에 대 한 일광 절약 시간제를 구성 하는 방법](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387)를 참조 합니다.
 
 ## 2단계: 모든 서버에 Windows DST 업데이트 설치
 
@@ -39,7 +39,7 @@ DST 또는 표준 시간대가 변경되면 Office 365 인증 시스템이 업�
 
 2.  Office 365를 실행 중이면 DirSync 또는 AD FS 서버 등 Office 365 인증 시스템과 상호 작용하는 서버를 업데이트합니다. 이러한 서버를 업데이트하여 가동 시간을 보장합니다.
 
-**참고 사항**   서버 클러스터를 업데이트 하는 경우 클러스터를 업데이트 하는 일반적인 프로세스를 수행 해야 합니다. 하면 수동 서버를 먼저 업데이트, 수동 서버 (활성화 됨), 장애 조치 파일과 이전 활성 (이제 수동) 서버를 업데이트 합니다. 서버 클러스터 및 고가용성 서버 클러스터를 업데이트 하는 방법에 대 한 자세한 내용은 [Exchange 서버 클러스터 및 높은 가용성 서버 업데이트](https://technet.microsoft.com/ko-kr/library/hh530052\(v=exchg.150\)) 및 [Windows Server 장애 조치 클러스터를 업데이트 하는 방법](https://support.microsoft.com/en-us/kb/174799)를 참조 하십시오.
+**참고 사항**   서버 클러스터를 업데이트 하는 경우 클러스터를 업데이트 하는 일반적인 프로세스를 수행 해야 합니다. 하면 수동 서버를 먼저 업데이트, 수동 서버 (활성화 됨), 장애 조치 파일과 이전 활성 (이제 수동) 서버를 업데이트 합니다. 서버 클러스터 및 고가용성 서버 클러스터를 업데이트 하는 방법에 대 한 자세한 내용은 Exchange 서버 클러스터 및 높은 가용성 서버 업데이트 및 [Windows Server 장애 조치 클러스터를 업데이트 하는 방법](https://support.microsoft.com/en-us/kb/174799)를 참조 하십시오.
 
 ## 3 단계: 업데이트 Exchange 및 Outlook, 클라이언트 및 데스크톱 컴퓨터에서 필요한 곳에
 
@@ -47,7 +47,7 @@ DST 또는 표준 시간대가 변경되면 Office 365 인증 시스템이 업�
 
 2.  컴퓨터를 업데이트해야 하는 사용자에게 해당 도구에 대한 링크를 제공하는 메시지를 보냅니다.
 
-다음 표와 사용자가 [Exchange 일정 업데이트 도구](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879) 나 [Microsoft Office Outlook 용 표준 시간대 데이터 업데이트 도구](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667)을 실행 해야 합니다. 조직의 서버를 실행 하는 버전을 확인 하 고 사용자가 실행 되는 클라이언트 프로그램을 결정 합니다.
+다음 표와 사용자가 [Exchange 일정 업데이트 도구](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879) 나 [Microsoft Office Outlook 용 표준 시간대 데이터 업데이트 도구](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667)을 실행 해야 합니다. 조직의 서버를 실행 하는 버전을 확인 하 고 사용자가 실행 되는 클라이언트 프로그램을 결정 합니다.
 
 
 <table>
@@ -69,45 +69,45 @@ DST 또는 표준 시간대가 변경되면 Office 365 인증 시스템이 업�
 </tr>
 <tr class="odd">
 <td><p><strong>Exchange 2003 온-프레미스</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 일정 도구</a> 또는</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 일정 도구</a> 또는</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Exchange 2007 온-프레미스</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 일정 도구</a> 또는</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 일정 도구</a> 또는</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Exchange 2010 온-프레미스</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 일정 도구</a> 나</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 일정 도구</a> 나</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>온-프레미스 Exchange 2013</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPOS-S(Exchange 2007)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BPOS-D(Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 Microsoft Office Outlook 용 도구</a></p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Office 365(Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 도구 Microsoft Office Outlook 용</a> (Outlook 2003과 지원 되지 않음)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 도구 Microsoft Office Outlook 용</a> (Outlook 2003과 지원 되지 않음)</p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Office 365 (Exchange 2013)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">표준 시간대 데이터 업데이트 도구 Microsoft Office Outlook 용</a> (Outlook 2003과 지원 되지 않음)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">표준 시간대 데이터 업데이트 도구 Microsoft Office Outlook 용</a> (Outlook 2003과 지원 되지 않음)</p></td>
 <td><p>필요한 작업이 없습니다.</p></td>
 </tr>
 <tr class="odd">

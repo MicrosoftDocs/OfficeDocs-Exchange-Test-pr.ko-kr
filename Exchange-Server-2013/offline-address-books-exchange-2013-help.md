@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-11-16_
+_**마지막으로 수정된 항목:** 2014-11-16_
 
 OAB(오프라인 주소록)는 다운로드된 주소 목록 모음의 복사본이므로 Microsoft Outlook 사용자는 서버에서 연결이 끊긴 동안에도 주소록에 액세스할 수 있습니다. Microsoft Exchange에서는 새 OAB 파일을 생성한 다음 압축하여 로컬 공유에 저장합니다. 오프라인으로 작업하는 사용자가 사용할 수 있는 주소 목록을 결정할 수 있으며 주소록 배포 방법을 구성할 수도 있습니다.
 

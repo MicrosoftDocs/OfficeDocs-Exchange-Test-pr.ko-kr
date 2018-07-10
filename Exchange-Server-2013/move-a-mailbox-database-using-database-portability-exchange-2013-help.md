@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-16_
+_**마지막으로 수정된 항목:** 2014-06-16_
 
 데이터베이스 이식성을 사용하여 같은 조직에 있는 Exchange Server 2013 사서함 서버 간에 Microsoft Exchange 2013 사서함 데이터베이스를 이동할 수 있습니다. 이 경우 일부 오류 시나리오에 대한 전체 복구 시간을 줄일 수 있습니다. 자세한 내용은 [데이터베이스 이식성](database-portability-exchange-2013-help.md)을 참조하십시오.
 

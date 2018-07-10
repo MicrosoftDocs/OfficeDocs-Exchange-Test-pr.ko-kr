@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 프로토콜 로깅을 사용하여 Exchange 환경의 POP3 및 IMAP4 연결을 검토할 수 있습니다. POP3 또는 IMAP4 성능 관련 문제를 해결하는 경우에 유용합니다.
 

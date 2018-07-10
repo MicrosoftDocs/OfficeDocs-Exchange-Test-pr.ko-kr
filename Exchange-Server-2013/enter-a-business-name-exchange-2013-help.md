@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-19_
+_**마지막으로 수정된 항목:** 2013-04-19_
 
 UM 자동 전화 교환의 **회사 이름** 상자에 회사 이름을 입력할 수 있습니다. 기본적으로 회사 이름은 입력되어 있지 않습니다. 회사 이름을 입력한 경우 발신자가 UM(통합 메시징) 자동 전화 교환으로 전화를 걸면 회사 이름이 포함된 기본 인사말 음성 안내가 재생됩니다.
 

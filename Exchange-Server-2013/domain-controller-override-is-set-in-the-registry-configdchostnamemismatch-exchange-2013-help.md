@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_**마지막으로 수정된 항목:** 2016-12-15_
 
 Microsoft Exchange Server 2013의 경우 이 항목의 내용이 업데이트되지 않았습니다. 아직 업데이트되지 않았지만 Exchange 2013에 계속 적용할 수 있습니다. 여전히 도움이 필요하면 아래 커뮤니티 리소스를 확인하세요.
 
@@ -27,5 +27,5 @@ Exchange 2007 설치 프로그램 설치 명령에 지정 된 도메인 컨트�
 
 이 문제, 설치 프로그램을 실행된을 다시 해결 하려면 정적으로 매핑된 도메인 컨트롤러에 대 한을 지정 하는 **/DomainController: \<***FQDN of thestatically mapped domain controller***\>** 매개 변수입니다.
 
-자세한 내용은 대 한 DSAccess 및 디렉터리 서비스 감지 Microsoft 기술 자료 문서 250570, "디렉터리 서비스 서버 감지 및 DSAccess 사용" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570))를 참조 합니다.
+자세한 내용은 대 한 DSAccess 및 디렉터리 서비스 감지 Microsoft 기술 자료 문서 250570, "디렉터리 서비스 서버 감지 및 DSAccess 사용" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570))를 참조 합니다.
 

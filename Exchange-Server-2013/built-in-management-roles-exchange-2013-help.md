@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-08-21_
+_**마지막으로 수정된 항목:** 2012-08-21_
 
 Microsoft Exchange Server 2013 는 기본적으로 여러 관리 역할을 포함 합니다. 다음 역할 관리 역할 그룹 또는 관리 하 고 Exchange 2013 에서 제공 하는 기능을 사용할 수 있는 권한을 부여 하는 다양 한 조합에 관리 역할 할당 정책에 할당 됩니다. 역할에 대 한 자세한 내용은 [관리 역할 이해 (영문)](understanding-management-roles-exchange-2013-help.md)을 참조 하십시오.
 

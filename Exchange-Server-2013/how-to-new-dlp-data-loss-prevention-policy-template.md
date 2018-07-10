@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-14_
+_**마지막으로 수정된 항목:** 2015-01-14_
 
 Microsoft Exchange Server 2013에서는 DLP(데이터 손실 방지) 정책 템플릿을 사용하여 조직의 메시징 정책 및 규정 준수 요구 사항을 쉽게 충족할 수 있습니다. 이러한 템플릿에는 일반적인 여러 법적 및 규정 요구 사항과 연결된 메시지 데이터를 관리하는 데 유용한 미리 만들어진 규칙 집합이 포함됩니다. Microsoft에서 제공하는 모든 템플릿의 목록을 보려면 [Exchange에서 제공 하는 DLP 정책 템플릿](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)을 참조하십시오. 제공되는 DLP 템플릿 예는 다음을 관리하는 데 유용할 수 있습니다.
 

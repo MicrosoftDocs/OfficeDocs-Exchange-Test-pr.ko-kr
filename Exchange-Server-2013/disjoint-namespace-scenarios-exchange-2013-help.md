@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 분리된 네임스페이스의 개념 및 분리된 네임스페이스가 있는 도메인에서 Microsoft Exchange 2013을 배포하는 데 지원되는 시나리오를 제공합니다.
 
@@ -101,7 +101,7 @@ Exchange 2013 서버에 연결 되는 도메인 컨트롤러를 액세스를 허
 
   - [그룹 정책 자주 묻는 질문 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003의 DNS에 대한 새 그룹 정책](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003의 DNS에 대한 새 그룹 정책](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [그룹 정책](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-03-08_
+_**마지막으로 수정된 항목:** 2013-03-08_
 
 UM(통합 메시징) 사서함 정책을 만들어 PIN 정책 설정 또는 전화 걸기 제한과 같은 공통 UM 정책 설정 집합을 UM 사용 가능 사서함 모음에 적용할 수 있습니다. UM 사서함 정책은 UM 사용 가능 사용자와 UM 다이얼 플랜을 연결하여 공통 정책 집합이나 보안 설정을 UM 사용 가능 사서함 모음에 적용할 수 있습니다. UM 사서함 정책은 UM 사용 가능 사용자에 대해 UM 구성 설정을 적용하고 표준화하는 데 유용합니다.
 

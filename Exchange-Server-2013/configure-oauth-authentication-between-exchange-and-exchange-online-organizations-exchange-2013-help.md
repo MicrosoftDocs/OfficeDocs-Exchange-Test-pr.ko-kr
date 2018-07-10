@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 2013 전용 하이브리드 배포는 하이브리드 구성 마법사를 사용할 때 OAuth 인증을 구성합니다. 혼합된 Exchange 2013/2010 및 Exchange 2013/2007 하이브리드 배포에서는 하이브리드 구성 마법사에 의해 Office 365와 온-프레미스 Exchange 조직 간에 새로운 하이브리드 배포 OAuth 기반 인증 연결이 구성되지 않습니다. 이러한 배포는 기본적으로 페더레이션 트러스트 프로세스를 계속 사용합니다. 그러나 특정 Exchange 2013 기능은 새 Exchange OAuth 인증 프로토콜을 사용해야만 조직 내에서 완전히 사용 가능합니다.
 

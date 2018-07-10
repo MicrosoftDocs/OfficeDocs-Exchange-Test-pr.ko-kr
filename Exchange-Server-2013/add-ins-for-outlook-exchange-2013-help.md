@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-03-13_
+_**마지막으로 수정된 항목:** 2017-03-13_
 
-**요약:** 추가 기능, Outlook에 대 한 모바일 장치에서 및 Outlook Web App 및 웹에 있는 Outlook에서 Windows 및 MacIntosh 컴퓨터에서 Outlook과 함께 작동 하는 대 한 개요입니다.
+**요약:**  추가 기능, Outlook에 대 한 모바일 장치에서 및 Outlook Web App 및 웹에 있는 Outlook에서 Windows 및 MacIntosh 컴퓨터에서 Outlook과 함께 작동 하는 대 한 개요입니다.
 
 Outlook 에 대 한 추가 기능에는 정보 또는 사용자에 게 Outlook을 떠날 필요 없이 사용할 수 있는 도구를 추가 하 여 Outlook 클라이언트의 유용성을 확장 하는 응용 프로그램입니다. 추가 기능은 타사 개발자가 제작 및 파일 또는 URL에서 또는 Office 스토어에서 설치할 수 있습니다. 기본적으로 모든 사용자가 추가 기능을 설치할 수 있는 Exchange 관리자가 사용 역할 추가 기능을 설치 하는 사용자의 기능을 제어할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-04-16_
+_**마지막으로 수정된 항목:** 2018-04-16_
 
 Microsoft Exchange Server 2013을 시작합니다. 이 항목에는 Exchange 2013을 성공적으로 배포하기 위해 알아 두어야 할 중요한 정보가 포함되어 있습니다. 배포를 시작하기 전에 이 항목을 자세히 읽으십시오.
 

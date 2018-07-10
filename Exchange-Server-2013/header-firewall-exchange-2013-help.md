@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013에서 *헤더 방화벽*은 인바운드와 아웃바운드 메시지에서 특정 헤더 필드를 제거하는 메커니즘입니다. 헤더 방화벽의 영향을 받는, 다음과 같은 두 가지 유형의 헤더 필드가 있습니다.
 
@@ -49,9 +49,9 @@ Organization X-headers and forest X-headers in Exchange
     
     조직 X-헤더 및 포리스트 X-헤더의 예를 보려면 이 항목 끝부분에 있는 Organization X-headers and forest X-headers in Exchange 섹션을 참조하십시오.
 
-  - **Received: 라우팅 헤더**   받는 사람에 대해 메시지를 수락하고 전달한 모든 메시징 서버에 의해 이 헤더 필드의 다른 인스턴스가 메시지 머리글에 추가됩니다. **Received:** 헤더에는 일반적으로 메시징 서버의 이름과 날짜 타임스탬프가 포함됩니다.
+  - **Received: 라우팅 헤더**   받는 사람에 대해 메시지를 수락하고 전달한 모든 메시징 서버에 의해 이 헤더 필드의 다른 인스턴스가 메시지 머리글에 추가됩니다. **Received:**  헤더에는 일반적으로 메시징 서버의 이름과 날짜 타임스탬프가 포함됩니다.
 
-  - **Resent-\*: 라우팅 헤더**   Resent 헤더 필드는 메시지가 특정 사용자에 의해 전달되었는지 여부를 확인하는 데 사용할 수 있는 정보 헤더 필드입니다. 여기서는 **Resent-Date:**, **Resent-From:**, **Resent-Sender:**, **Resent-To:**, **Resent-Cc:**, **Resent-Bcc:** 및 **Resent-Message-ID:**와 같은 Resent 헤더 필드를 사용할 수 있습니다. **Resent-** 필드는 메시지가 원래 보낸 사람이 직접 보낸 것처럼 받는 사람에게 나타나도록 하는 데 사용됩니다. 받는 사람은 메시지 머리글을 보고 메시지를 전달한 사람을 알 수 있습니다.
+  - **Resent-\*: 라우팅 헤더**   Resent 헤더 필드는 메시지가 특정 사용자에 의해 전달되었는지 여부를 확인하는 데 사용할 수 있는 정보 헤더 필드입니다. 여기서는 **Resent-Date:** , **Resent-From:** , **Resent-Sender:** , **Resent-To:** , **Resent-Cc:** , **Resent-Bcc:**  및 **Resent-Message-ID:** 와 같은 Resent 헤더 필드를 사용할 수 있습니다. **Resent-** 필드는 메시지가 원래 보낸 사람이 직접 보낸 것처럼 받는 사람에게 나타나도록 하는 데 사용됩니다. 받는 사람은 메시지 머리글을 보고 메시지를 전달한 사람을 알 수 있습니다.
 
 Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지에 있는 조직 X-헤더, 포리스트 X-헤더 및 라우팅 헤더에 헤더 방화벽을 적용합니다.
 
@@ -148,7 +148,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 
@@ -176,7 +176,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버만 해당
 
 
@@ -254,7 +254,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 
@@ -271,7 +271,7 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
 <li><p>Edge 전송 서버</p></li>
 <li><p>Exchange Server</p>
 
-> [!NOTE]
+> [!NOTE]  
 > 허브 전송 서버에서만 해당
 
 
@@ -333,13 +333,13 @@ Exchange에서는 다음과 같은 두 개의 방법을 사용하여 메시지�
     
     라우팅 헤더는 Replay 디렉터리에서 전송된 메시지에 보존됩니다.
     
-    조직 X-헤더 및 포리스트 X-헤더가 Replay 디렉터리의 메시지에 보존되는지 이 메시지에서 제거되는지 여부는 메시지 파일의 **X-CreatedBy:** 헤더 필드에 의해 제어됩니다.
+    조직 X-헤더 및 포리스트 X-헤더가 Replay 디렉터리의 메시지에 보존되는지 이 메시지에서 제거되는지 여부는 메시지 파일의 **X-CreatedBy:**  헤더 필드에 의해 제어됩니다.
     
-      - **X-CreatedBy:** 값이 `MSExchange15`일 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에 보존됩니다.
+      - **X-CreatedBy:**  값이 `MSExchange15`일 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에 보존됩니다.
     
-      - **X-CreatedBy:** 값이 `MSExchange15`가 아닐 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에서 제거됩니다.
+      - **X-CreatedBy:**  값이 `MSExchange15`가 아닐 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에서 제거됩니다.
     
-      - 메시지 파일에 **X-CreatedBy:** 헤더 필드가 없는 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에서 제거됩니다.
+      - 메시지 파일에 **X-CreatedBy:**  헤더 필드가 없는 경우 조직 X-헤더 및 포리스트 X-헤더는 메시지에서 제거됩니다.
 
   - **Drop 디렉터리**   Drop 디렉터리는 사서함 서버의 외부 커넥터에서 SMTP를 사용하여 메시지를 전송하지 않는 메시징 서버에 메시지를 전송하는 데 사용됩니다. 외부 커넥터에 대한 자세한 내용은 [외부 커넥터](foreign-connectors-exchange-2013-help.md)를 참조하십시오.
     

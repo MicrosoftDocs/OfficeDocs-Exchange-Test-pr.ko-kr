@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Active Directory 사이트는 네트워크의 물리적 측면을 기반으로 하는 논리적 구성 요소입니다. Active Directory 사이트를 만드는 주요 목적은 네트워크에서 Active Directory 복제 트래픽을 최적으로 제어할 수 있는 방식으로 연결되어 있는 서브넷을 정의하기 위한 것입니다. Microsoft Exchange Server 2013은 DAG(데이터베이스 사용 가능 그룹) 및 Active Directory 사이트를 라우팅 경계로 인식하며, Exchange 2013 서버는 Active Directory 사이트 토폴로지를 기반으로 라우팅 결정을 내립니다.
 

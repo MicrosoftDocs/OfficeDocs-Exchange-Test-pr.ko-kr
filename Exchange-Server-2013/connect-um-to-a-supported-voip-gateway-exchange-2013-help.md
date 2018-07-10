@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-19_
+_**마지막으로 수정된 항목:** 2013-04-19_
 
 UM(통합 메시징)을 설정할 경우 Exchange 조직에서 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행하는 클라이언트 액세스 서버 및 Microsoft Exchange 통합 메시징 서비스를 실행하는 사서함 서버와 통신할 수 있도록 네트워크에 VoIP(Voice over IP) 게이트웨이, IP PBX, SIP 사용 가능 PBX 또는 SBC(Session Border Controller)를 구성해야 합니다. 또한 VoIP 게이트웨이, IP PBX, SIP 사용 가능 PBX 또는 SBC와 통신할 수 있도록 클라이언트 액세스 서버 및 사서함 서버를 구성해야 합니다.
 

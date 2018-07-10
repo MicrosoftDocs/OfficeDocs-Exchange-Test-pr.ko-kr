@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 개별 사용자가 사서함 속성을 구성하여 고유의 전화 응답 규칙을 만들고 관리할 수 있도록 할지 여부를 지정할 수 있습니다. 기본적으로 개별 사용자는 전화 응답 규칙을 만들 수 있습니다.
 

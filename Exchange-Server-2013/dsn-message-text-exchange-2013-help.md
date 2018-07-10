@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013 에서 사용자 지정 된 배달 상태 알림 (DSN) 메시지에 텍스트를 포함할 수 하 고 해당 텍스트를 HTML 서식을 지정할 수 있습니다.
 

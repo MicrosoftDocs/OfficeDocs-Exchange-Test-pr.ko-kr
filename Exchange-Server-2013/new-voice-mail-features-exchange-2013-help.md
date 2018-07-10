@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013의 UM(통합 메시징)에는 Exchange 2010 및 Exchange 2007과 동일한 기능 집합이 포함되어 있으나 몇 가지 기능이 향상되고 아키텍처가 변경되었습니다. 그러나 통합 메시징은 더 이상 별도의 서버 역할이 아닙니다. 이것은 이제 Exchange 2013에서 제공되는 음성 관련 기능의 구성 요소입니다.
 

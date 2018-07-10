@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 사용 저널 보고서 암호 해독 저널링 에이전트를 권한으로 보호 된 메시지의 암호가 해독 된 복사본을 저널 보고서를 연결할 수 있습니다. 저널 보고서 암호 해독을 사용 하도록 설정 하기 전에 [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) 서버에 구성 된 고급 사용자 그룹에는 페더레이션 배달 사서함을 추가 해야 합니다.
 

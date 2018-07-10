@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-25_
+_**마지막으로 수정된 항목:** 2013-04-25_
 
 음성 메일이 도착하면 사용자는 컴퓨터 스피커 또는 헤드폰을 통해 음성 메일 메시지를 듣거나 전화에서 재생 기능을 사용할 수 있습니다. 전화에서 재생 기능은 Microsoft Outlook 및 Outlook Web App에 포함되어 있으며 전화에서 재생 설정은 **음성 메일** 옵션의 **전화에서 재생** 섹션에 제공됩니다. 이 항목에서는 UM(통합 메시징) 사용 가능 사용자가 전화에서 재생 기능을 사용할 수 있는 방법을 설명합니다.
 

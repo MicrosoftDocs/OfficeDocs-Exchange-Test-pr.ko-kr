@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-13_
+_**마지막으로 수정된 항목:** 2012-10-13_
 
 [전자 메일 주소 정책 만들기](create-an-email-address-policy-exchange-2013-help.md)
 

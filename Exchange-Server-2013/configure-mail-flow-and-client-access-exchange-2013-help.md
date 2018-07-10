@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 SSL 인증서 구성 방법을 포함하여 Exchange Server 2013 메일 흐름 및 클라이언트 액세스에 대한 설치 후 작업.
 

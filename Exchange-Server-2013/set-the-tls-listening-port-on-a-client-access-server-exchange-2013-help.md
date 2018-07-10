@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-17_
+_**마지막으로 수정된 항목:** 2013-02-17_
 
 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행 하는 클라이언트 액세스 서버에 대 한 SIP 요청에 대 한 수신 대기 하는데 사용 되는 전송 계층 보안 (TLS) 포트를 구성할 수 있습니다. 기본적으로 클라이언트 액세스 서버를 설치할 때 TLS SIP 수신 대기 포트 번호는 5061로 설정 합니다.
 

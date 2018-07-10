@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 셸을 사용 하 여 하나 이상의 전화 사용자에 대 한 응답 규칙을 제거할 수 있습니다. 하나 이상의 전화 여러 사용자에 대 한 응답 규칙을 제거 하려면 Exchange 관리 셸 스크립트에서 **Remove-UMCallAnsweringRule** cmdlet를 사용할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 전자 메일 전달을 또는 조직 외부에 있는 다른 사용자의 사서함에 해당 사서함에 전송 하는 정방향 전자 메일 메시지에 사서함을 설정할 수 있습니다.
 

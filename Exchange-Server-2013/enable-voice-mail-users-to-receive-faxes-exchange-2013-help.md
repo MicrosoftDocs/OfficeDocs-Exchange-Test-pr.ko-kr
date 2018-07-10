@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Microsoft Exchange UM (통합 메시징) 음성 메일 메시지를 사용자의 사서함에 배달할 수 있도록 하 고 또한 사용자가 사서함에서 팩스를 받을 수 있습니다. Um에서 팩스 이미지 파일 첨부 된.tif 확장명이 포함 된 전자 메일 메시지로 사용자의 사서함에 전송 됩니다. 사용자를 열 수 있는 소프트웨어 응용 프로그램 및.tif 확장명을 가진 보기 이미지 파일을 사용 하 여 첨부 파일을 열 수 있습니다. 이 항목에서는 팩스에 대해 설명 하 고 UM에서 작동 방식입니다.
 

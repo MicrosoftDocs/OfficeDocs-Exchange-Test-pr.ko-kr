@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-12-31_
+_**마지막으로 수정된 항목:** 2017-12-31_
 
 사용자 사서함에 대 한 MAPI를 사용할지 여부를 Exchange 관리 센터 또는 Exchange 관리 셸 를 사용할 수 있습니다. MAPI를 사용 하는 경우 Outlook 또는 다른 MAPI 전자 메일 클라이언트에서 사용자의 사서함에 액세스할 수 있습니다. MAPI를 사용 하지 않도록 설정 하는 경우에 Outlook 또는 다른 MAPI 클라이언트에서 액세스할 수 없습니다. 그러나 전자 메일 메시지를 받을 계속 사서함 및 사용자 Outlook Web App, POP 전자 메일 클라이언트를 또는 IMAP 클라이언트를 사용 하 여 전자 메일을 송수신 하는 사서함에 액세스할 수에 대 한 액세스를 지원 하기 위해 해당 클라이언트에서 사서함을 사용 합니다.
 

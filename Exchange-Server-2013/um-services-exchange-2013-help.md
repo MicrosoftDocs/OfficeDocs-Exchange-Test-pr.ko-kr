@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-18_
+_**마지막으로 수정된 항목:** 2012-11-18_
 
 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행 하는 클라이언트 액세스 서버 및 Microsoft Exchange 통합 메시징 서비스를 실행 하는 사서함 서버를 통해 UM (통합 메시징) 및 조직의 사용자에 대 한 음성 메일 기능을 배포할 수 있습니다.
 

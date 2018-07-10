@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-15_
+_**마지막으로 수정된 항목:** 2013-02-15_
 
 [사용 하도록 설정 하거나 사용자에 대 한 Outlook Voice Access를 사용 하지 않도록 설정](enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md)
 

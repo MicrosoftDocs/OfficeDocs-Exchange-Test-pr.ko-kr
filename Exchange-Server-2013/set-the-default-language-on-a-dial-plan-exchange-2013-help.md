@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징) 다이얼 플랜의 기본 언어를 설정할 수 있습니다. 만든 각 다이얼 플랜은 처음에 기본 언어로 영어(en-US)가 사용됩니다. 영어(en-US) 언어 팩은 MicrosoftExchange Server 2013의 모든 버전에 설치되며 제거할 수 없습니다.
 

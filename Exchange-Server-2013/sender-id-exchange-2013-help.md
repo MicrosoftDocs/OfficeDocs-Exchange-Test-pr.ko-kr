@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 보낸 사람 ID 에이전트는 Microsoft Exchange Server 2013에서 사용할 수 있는 스팸 방지 에이전트입니다. 받는 사람 ID 에이전트는 RECEIVED SMTP 헤더와 보내는 시스템의 DNS 서비스에 대한 쿼리에 따라 수신 메시지에 대해 수행할 작업(있는 경우)을 결정합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-05_
+_**마지막으로 수정된 항목:** 2012-10-05_
 
 기본적으로 Microsoft Exchange IMAP4 서비스와 Microsoft Exchange IMAP4 Backend 서비스라는 두 가지 IMAP4 서비스는 MicrosoftExchange Server 2013을 실행하는 컴퓨터에서 시작되지 않습니다. 전자 메일 클라이언트가 IMAP4를 사용하여 Exchange에 연결할 수 있도록 하려면 이 두 가지 서비스를 시작해야 합니다. 이 서비스가 실행 중이면 Exchange 2013에서는 포트 143과 포트 993에서 SSL(Secure Sockets Layer)을 사용한 보안되지 않은 IMAP4 클라이언트 통신을 수락합니다.
 

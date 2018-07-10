@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 [조직에서 음성 메일 호출을 검토 합니다.](review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md)
 

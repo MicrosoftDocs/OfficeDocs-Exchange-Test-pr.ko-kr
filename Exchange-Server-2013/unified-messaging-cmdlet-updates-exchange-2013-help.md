@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Exchange Server 2010의 많은 UM(통합 메시징) cmdlet은 Exchange Server 2013에서 가져왔지만 이 cmdlet 중 일부는 변경되었습니다. 또한 Exchange 2013에 새로운 cmdlet이 추가되었습니다.
 

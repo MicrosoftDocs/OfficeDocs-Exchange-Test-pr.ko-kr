@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-05-22_
+_**마지막으로 수정된 항목:** 2018-05-22_
 
-**요약:** 이 문서의 단계를 사용하여 Office 365dhk Exchange 2007 또는 Exchange 2010 온-프레미스 배포 간에 공용 폴더를 동기화할 수 있습니다.
+**요약:**  이 문서의 단계를 사용하여 Office 365dhk Exchange 2007 또는 Exchange 2010 온-프레미스 배포 간에 공용 폴더를 동기화할 수 있습니다.
 
 하이브리드 배포에서는 사용자가 Exchange Online이나 온-프레미스 중 하나 또는 둘 다에 있을 수 있으며 공용 폴더는 Exchange Online이나 온-프레미스 중 하나에 있습니다. 공용 폴더는 한 곳에만 있을 수 있으므로 Exchange Online 또는 온-프레미스 중에서 공용 폴더를 배치할 곳을 결정해야 합니다. 두 위치에 모두 공용 폴더를 배치할 수는 없습니다. 공용 폴더 사서함은 디렉터리 동기화 서비스에 의해 Exchange Online에 동기화됩니다. 그러나 메일 사용 가능 공용 폴더는 프레미스 간에 동기화되지 않습니다.
 
@@ -104,7 +104,7 @@ Exchange 2003 공용 폴더와의 하이브리드 구성은 지원되지 않습�
 
 7.  Exchange 2007에서는 Exchange Organization Administrator 역할 또는 Exchange Server Administrator 역할을 할당받아야 합니다. 또한 대상 서버에 대한 로컬 관리자 그룹 및 Public Folder Administrator 역할을 할당받아야 합니다. 자세한 내용은 [관리자 역할에 사용자 또는 그룹을 추가하는 방법](https://go.microsoft.com/fwlink/p/?linkid=81779)을 참조하세요.
 
-8.  Windows Server 2008 x64에서 Exchange Server 2007을 실행하는 경우 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)으로 업그레이드해야 합니다. Windows Server 2003 x64에서 Exchange Server 2007을 실행하는 경우에는 Windows PowerShell 2.0으로 업그레이드해야 합니다. 자세한 내용은 [Windows Server 2003 x64 Edition용 업데이트](https://www.microsoft.com/ko-kr/download/details.aspx?id=10512)를 참조하세요.
+8.  Windows Server 2008 x64에서 Exchange Server 2007을 실행하는 경우 [Windows Server 2008 x64 Edition용 Windows PowerShell 2.0 및 WinRM 2.0](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)으로 업그레이드해야 합니다. Windows Server 2003 x64에서 Exchange Server 2007을 실행하는 경우에는 Windows PowerShell 2.0으로 업그레이드해야 합니다. 자세한 내용은 [Windows Server 2003 x64 Edition용 업데이트](https://www.microsoft.com/ko-kr/download/details.aspx?id=10512)를 참조하세요.
 
 9.  프레미스 간 공용 폴더에 액세스하려면 사용자는 Outlook 클라이언트를 2012년 11월 Outlook 공개 업데이트 이상으로 업그레이드해야 합니다.
     

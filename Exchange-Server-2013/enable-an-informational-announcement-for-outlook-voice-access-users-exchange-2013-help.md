@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징) 다이얼 플랜에서 정보 알림을 사용하도록 설정할 수 있습니다. 정보 알림은 환영 인사말보다 더 자주 변경되는 일반 알림과 회사 규정 준수 정책에 필요한 알림에 사용됩니다.
 

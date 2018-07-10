@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange UM(통합 메시징)은 아웃바운드 팩스 또는 팩스 라우팅 같은 향상된 팩스 기능을 위해 인증된 팩스 파트너 솔루션을 사용합니다. 기본적으로 Exchange 서버는 UM 사용 가능 사용자에게 수신되는 팩스를 배달하도록 구성되지 않습니다. 대신에 Exchange 서버는 수신 팩스 호출을 인증된 팩스 파트너 솔루션으로 리디렉션합니다. 팩스 파트너의 서버는 팩스 데이터를 받은 후 이 팩스가 .tif 첨부 파일로 포함된 전자 메일 메시지로 사용자의 사서함에 보냅니다.
 
@@ -121,18 +121,8 @@ UM 사용 가능 사용자가 팩스를 받을 수 있도록 설정하려면 다
 
   - 자세한 내용은 [팩스 서버 팩스를 허용 하는 URI 파트너를 설정 합니다.](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)을 참조하십시오.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><em>FaxServerURI</em> 형식에는 세미콜론으로 구분된 여러 항목을 포함할 수 있지만 하나의 항목만 사용됩니다. 이 매개 변수는 하나의 항목만 사용하도록 하며 여러 항목을 추가하면 팩스 요청의 부하를 분산시킬 수 없습니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > <em>FaxServerURI</em> 형식에는 세미콜론으로 구분된 여러 항목을 포함할 수 있지만 하나의 항목만 사용됩니다. 이 매개 변수는 하나의 항목만 사용하도록 하며 여러 항목을 추가하면 팩스 요청의 부하를 분산시킬 수 없습니다.
 
 
   - UM 사용 가능 사서함이 팩스 메시지를 받을 수 있는지 확인합니다. 기본적으로 다이얼 플랜과 연결된 모든 사용자는 팩스를 받을 수 있습니다. 하지만 사서함에서 팩스 수신 기능이 사용하지 않도록 설정되어 사용자가 팩스를 받을 수 없는 경우도 있습니다. UM 사용 가능 사용자가 팩스를 받도록 설정하는 방법에 대한 자세한 내용은 [팩스를 받을 수 있도록 설정](enable-a-user-to-receive-faxes-exchange-2013-help.md)을 참조하십시오.

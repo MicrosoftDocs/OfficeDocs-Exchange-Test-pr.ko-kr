@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 UM(통합 메시징)을 사용하는 Microsoft Exchange 2010 조직이 Exchange 2013 통합 메시징을 사용하도록 업그레이드할 때는 몇 가지 필수 단계를 수행해야 합니다. 기타 단계는 Exchange 2010 UM 배포의 일부분으로 이미 완료되었습니다. Exchange 2010에서 통합 메시징을 지원하도록 만들고 구성한 UM 구성 요소 및 전화 통신 환경에 따라 VoIP(Voice over IP) 게이트웨이, IP PBX(Private Branch Exchange) 또는 일반/SIP 사용 가능 PBX를 비롯한 추가 전화 통신 장비를 배포한 다음 Exchange 2013 UM에 필요한 추가 UM 구성 요소를 만들고 구성해야 할 수 있습니다.
 
@@ -29,18 +29,8 @@ UM(통합 메시징)을 사용하는 Microsoft Exchange 2010 조직이 Exchange 
 
   - Microsoft Exchange UM(통합 메시징) 통화 라우터 서비스를 실행 중인 클라이언트 액세스 서버와 Microsoft Exchange UM(통합 메시징) 서비스를 실행 중인 사서함 서버를 올바르게 설치 및 구성했는지 확인합니다. UM 서비스에 대한 자세한 내용은 [UM 서비스](um-services-exchange-2013-help.md)를 참조하십시오.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.
 
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
@@ -558,14 +548,11 @@ Exchange 2013 UM으로 업그레이드할 때는 전화 통신 네트워크의 P
 
 Exchange 2013 UM으로 업그레이드하는 과정의 마지막 단계는 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX가 수신 전화(사용자에게 음성 메일을 남기려는 발신자, Outlook Voice Access로 전화를 거는 UM 사용 가능 사용자의 전화 및 UM 자동 전화 교환으로 전화를 거는 발신자의 전화 포함)를 Exchange 2013 클라이언트 액세스 서버로 보내도록 구성하는 것입니다. 이러한 모든 통화는 먼저 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX에서 수신된 다음 Exchange 2013 조직의 Exchange 2013 클라이언트 액세스 서버로 전달됩니다. 자세한 내용은 다음 리소스를 참조하십시오.
 
-  -  
-    [UM 서비스](um-services-exchange-2013-help.md)
+  -  [UM 서비스](um-services-exchange-2013-help.md)
 
-  -  
-    [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 15단계: Exchange 2010 통합 메시징 서버에서 전화 응답을 사용하지 않도록 설정
 

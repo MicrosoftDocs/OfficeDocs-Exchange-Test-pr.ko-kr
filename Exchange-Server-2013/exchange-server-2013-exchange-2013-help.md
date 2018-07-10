@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013을 시작합니다. 여러분이 이 순간을 고대해 왔음을 알고 있지만 Exchange 2013으로 작업을 시작하고 이 콘텐츠를 사용하기에 앞서 주의해야 할 점이 몇 가지 있습니다.
 
