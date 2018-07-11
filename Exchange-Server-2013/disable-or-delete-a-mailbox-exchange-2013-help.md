@@ -139,11 +139,17 @@ Exchange Online으로 사서함 삭제 해야하는 경우 [Exchange Online의 �
 
 다음은 사서함을 사용 하지 않도록 설정 하는 것에 대 한 명령의 예입니다.
 
-    Disable-Mailbox danj
+```
+Disable-Mailbox danj
+```
 
-    Disable-Mailbox "Conf Room 31/1234 (12)"
+```
+Disable-Mailbox "Conf Room 31/1234 (12)"
+```
 
-    Disable-Mailbox sharedmbx@contoso.com
+```
+Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -197,11 +203,17 @@ Exchange Online으로 사서함 삭제 해야하는 경우 [Exchange Online의 �
 
 다음은 사서함 삭제 명령의 예입니다.
 
-    Remove-Mailbox pilarp@contoso.com
+```
+Remove-Mailbox pilarp@contoso.com
+```
 
-    Remove-Mailbox "Fleet Van (16)"
+```
+Remove-Mailbox "Fleet Van (16)"
+```
 
-    Remove-Mailbox corpprint
+```
+Remove-Mailbox corpprint
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

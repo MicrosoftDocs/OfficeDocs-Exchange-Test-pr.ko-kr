@@ -112,9 +112,13 @@ Exchange Server 2013 및 Exchange Online 을 원본 위치 eDiscovery 검색 결
     
       - **셸 사용:**  다음 명령을 실행하여 검색 결과를 복사합니다. 검색 결과를 복사하려면 먼저 *EstimateOnly* 스위치를 제거해야 합니다.
         
-            Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-        
-            Start-MailboxSearch "Search results from 2010"
+         ```
+         Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
+         ```
+      
+         ```
+         Start-MailboxSearch "Search results from 2010"
+         ```
     
       - **EAC 사용:**  **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 해당 검색을 선택하고 **검색**![검색 아이콘](images/Dd353189.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "검색 아이콘")을 클릭한 후 **검색 결과 복사**를 클릭합니다.
     

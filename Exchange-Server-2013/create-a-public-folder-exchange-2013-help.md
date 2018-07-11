@@ -94,11 +94,17 @@ EAC를 사용하여 공용 폴더를 만드는 경우에는 공용 폴더의 이
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
-        Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
-        Get-PublicFolder -Recurse
+    ```
+    Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
+    ```
+
+    ```
+    Get-PublicFolder -Identity \Marketing\2013 -GetChildren
+    ```
+
+    ```
+    Get-PublicFolder -Recurse
+    ```
 
 
 > [!TIP]

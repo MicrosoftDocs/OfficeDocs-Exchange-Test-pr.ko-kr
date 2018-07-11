@@ -49,9 +49,13 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 조직의 모든 사용자 사서함에 대해 사서함 감사를 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
 
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

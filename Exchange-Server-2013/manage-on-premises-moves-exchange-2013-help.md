@@ -105,9 +105,13 @@ EAC에 로그인하고 다음 단계를 수행합니다.
 
 이 예에서는 지정된 .csv 파일의 사서함이 다른 사서함 데이터베이스로 이동되는 로컬 이동을 위한 마이그레이션 일괄 처리를 만듭니다. 이 .csv 파일에는 이동될 각 사서함의 전자 메일 주소가 있는 단일 열이 포함되어 있습니다. 이 열의 헤더 이름은 **EmailAddress**로 지정해야 합니다. 이 예의 마이그레이션 일괄 처리는 **Start-MigrationBatch** cmdlet이나 EAC(Exchange 관리 센터)를 사용하여 수동으로 시작해야 합니다. 또는 *AutoStart* 매개 변수를 사용하여 마이그레이션 일괄 처리를 자동으로 시작할 수 있습니다.
 
-    New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
+```
+New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
+```
 
-    Start-MigrationBatch -Identity LocalMove1
+```
+Start-MigrationBatch -Identity LocalMove1
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [Start-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219165\(v=exchg.150\))을 참조하십시오.
 
@@ -161,10 +165,14 @@ EAC에 로그인하고 다음 단계를 수행합니다.
 
 이 예에서는 마이그레이션 끝점을 구성한 다음 .csv 파일을 사용하여 원본 포리스트에서 대상 포리스트로의 포리스트 간 일괄 이동을 만듭니다.
 
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
-    
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+```
+
+```
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```
 
 포리스트 간 이동을 위한 포리스트 준비에 대한 자세한 내용은 다음 항목을 참조하십시오.
 

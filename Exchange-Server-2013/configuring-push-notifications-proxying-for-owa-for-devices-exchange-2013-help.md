@@ -68,6 +68,7 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
     > [!CAUTION]
     > 코드를 복사하여 메모장 등의 텍스트 편집기에 붙여 넣은 다음 .ps1 확장명으로 저장하면 셸 스크립트를 보다 쉽게 실행할 수 있습니다.
     
+    ```
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
         
         $tenantDomain = "Fabrikam.com"
@@ -127,19 +128,23 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
             Write-Host "AuthServer Config already exists."
         }
         Write-Host "Complete."
-    
+    ```
+
     스크립트 실행 결과는 다음 출력과 유사합니다.
     
+    ```
         Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
         Exporting certificate...
         Complete.
-    
-    > [!CAUTION]
+    ```
+
+    > [!CAUTION]  
     > 계속 하기 전에 Windows PowerShell용 Azure Active Directory 모듈 cmdlet가 필요 합니다. (이전에 Microsoft Online Services 모듈에 대 한 Windows PowerShell 라고 함) Windows PowerShell용 Azure Active Directory 모듈 cmdlet이 설치 된 하지 않은 경우에 <a href="http://aka.ms/aadposh">Windows PowerShell을 사용 하 여 Azure AD 관리</a>에서 설치할 수 있습니다.
 
 
   - **2단계 – Exchange 2013 온-프레미스와 통신하도록 Office 365를 구성합니다.** Exchange Server 2013이 통신할 Office 365 서버를 파트너 응용 프로그램으로 구성합니다. 예를 들어 Exchange Server 2013 온-프레미스가 Office 365와 통신해야 하는 경우 Exchange 온-프레미스를 파트너 응용 프로그램으로 구성해야 합니다. 파트너 응용 프로그램은 Exchange 2013이 타사 보안 토큰 서버를 거치지 않고도 보안 토큰을 직접 교환할 수 있는 응용 프로그램입니다. 온-프레미스 Exchange 2013 관리자는 다음 Exchange 관리 셸 스크립트를 사용하여 Exchange 2013이 통신할 Office 365 테넌트를 파트너 응용 프로그램으로 구성해야 합니다. 실행 중에는 Office 365 테넌트 도메인 관리자의 사용자 이름과 암호를 입력하라는 메시지가 표시됩니다(예: administrator@fabrikam.com). 이전 스크립트에서 만들지 않은 경우 *$CertFile* 값은 인증서 위치로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
     
+    ```
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
         
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
@@ -170,22 +175,28 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
         {
             Write-Error "Cannot find certificate."
         } 
-    
+    ```
+
     결과는 다음과 같습니다.
     
+    ```
         Please enter the administrator user name and password of the Office 365 tenant domain...
         Adding a key to Service Principal...
         Complete.
+    ```
 
 ## 푸시 알림 프록시 사용
 
 위의 단계를 수행하여 OAuth 인증을 정상적으로 설정한 후 온-프레미스 관리자는 다음 스크립트를 사용하여 푸시 알림 프록시를 사용하도록 설정해야 합니다. *$tenantDomain*의 값은 도메인 이름으로 업데이트해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
 
+```
     $tenantDomain = "Fabrikam.com"
     Enable-PushNotificationProxy -Organization:$tenantDomain
+```
 
 스크립트 실행 결과는 다음 출력과 유사합니다.
 
+```
     RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
     DisplayName       : On Premises Proxy app
     Enabled           : True
@@ -207,6 +218,7 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
     OrganizationId    :
     OriginatingServer : server.fabrikam.com
     ObjectState       : Unchanged
+```
 
 ## 푸시 알림이 작동하는지 확인
 
@@ -224,6 +236,7 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
 
   - **모니터링 사용.** 푸시 알림을 테스트하거나 알림이 실패하는 이유를 조사하는 또 다른 방법은 조직의 사서함 서버에 대해 모니터링을 사용하도록 설정하는 것입니다. 온-프레미스 Exchange 2013 서버 관리자는 다음 스크립트를 사용하여 푸시 알림 프록시 모니터링을 호출해야 합니다. 이렇게 하려면 다음 코드를 복사하여 붙여 넣습니다.
     
+    ```
         # Send a push notification to verify connectivity.
         
         $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
@@ -245,10 +258,13 @@ Exchange Server 2013에서 Office 365로의 온-프레미스 구현에 대해 �
         {
             Write-Error "Cannot find a Mailbox server in the current site."
         }
-    
+    ```
+
     스크립트 실행 결과는 다음 출력과 유사합니다.
     
+    ```
         ResultType : Succeeded
         Error      :
         Exception  :
+    ```
 

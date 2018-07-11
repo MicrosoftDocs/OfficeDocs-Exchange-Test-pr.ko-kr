@@ -22,7 +22,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 전화 응답 규칙은 받은 편지함 규칙을 받는 전자 메일 메시지에 적용 되는 방식과 비슷합니다 수신 통화에 적용 됩니다. 사용자에 대 한 UM (통합 메시징)을 사용 하는 경우에 기본적으로 전화 응답 규칙의 없이 구성 됩니다. 그럼에도 수신 전화는 메일 시스템에 의해 응답이 제공 되 고 발신자는 음성 메시지를 남길 하 라는 메시지가 표시 됩니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > UM 사용이 가능한 사용자 만들기, 관리 및 전화 응답 규칙을 제거 하도록 Outlook Web App에 로그인 할 수 있습니다.
 
 
@@ -46,7 +46,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 

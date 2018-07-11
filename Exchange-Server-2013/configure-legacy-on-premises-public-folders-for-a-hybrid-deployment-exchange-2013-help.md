@@ -144,9 +144,13 @@ Exchange 2003 공용 폴더와의 하이브리드 구성은 지원되지 않습�
 
 3.  새 사서함 데이터베이스 내에서 프록시 사서함을 만들고 주소록에서 해당 사서함을 숨깁니다. 이 사서함의 SMTP는 자동 검색에서 *DefaultPublicFolderMailbox* SMTP로 반환되므로 클라이언트는 이 SMTP를 확인하여 공용 폴더 액세스를 위해 레거시 Exchange 서버에 연결할 수 있습니다.
     
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-    
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
+    ```
+
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 
 4.  Exchange 2010의 경우 자동 검색에서 프록시 공용 폴더 사서함을 반환하도록 설정합니다. Exchange 2007의 경우에는 이 단계를 수행할 필요가 없습니다.
     

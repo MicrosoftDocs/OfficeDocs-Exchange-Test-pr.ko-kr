@@ -103,9 +103,13 @@ Exchange 조직의 개별 사용자는 공유 정책을 사용하여 다른 페�
 
   - 첫 번째 예에서는 공유 정책 Contoso를 제거합니다. 두 번째 예에서는 공유 정책 Contoso를 제거하고 정책 제거를 확인하는 메시지를 생략합니다.
     
-        Remove-SharingPolicy -Identity Contoso
-    
-        Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
+      Remove-SharingPolicy -Identity Contoso
+      ```
+
+      ```
+      Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd297931\(v=exchg.150\)) 및 [Remove-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd351071\(v=exchg.150\))을 참조하십시오.
 

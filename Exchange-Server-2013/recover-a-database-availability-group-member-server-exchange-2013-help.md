@@ -89,9 +89,13 @@ DAG 구성원을 성공적으로 복구 했는지를 확인 하려면 다음을 
 
   - 셸에서 복구 된 DAG 구성원의 상태를 확인 하려면 다음 명령을 실행 합니다.
     
-        Test-ReplicationHealth <ServerName>
+    ```
+    Test-ReplicationHealth <ServerName>
+    ```
     
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
+    ```
+    Get-MailboxDatabaseCopyStatus -Server <ServerName>
+    ```
     
     복제 상태 테스트를 모두 성공적으로 전달 해야 하 고 데이터베이스 및 해당 콘텐츠 인덱스의 상태가 정상 이어야 합니다.
 

@@ -85,10 +85,13 @@ _**마지막으로 수정된 항목:** 2014-02-24_
 
 이 검색의 결과 검색 사서함으로 복사 하려면 다음 명령을 실행 하는:
 
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
-
+  ```
+  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+  ```  
+  
+  ```
+  Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
 ## 검색 결과 복사 하는 방법에 대 한 자세한 내용
 
   - 검색 사서함으로 검색 결과 복사한 후에 PST 파일에 해당 검색 결과 내보낼 수 있습니다. 자세한 내용은 [PST 파일로 eDiscovery 검색 결과 내보내기](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)을 참조 하십시오.

@@ -39,9 +39,13 @@ _**마지막으로 수정된 항목:** 2018-03-02_
 
 이 예제에서는 전체 시간 employees 동적 메일 그룹에 대 한 팀 구성원의 목록을 반환 합니다. 첫번째 명령은 변수 `$FTE`에서 동적 메일 그룹 개체를 저장합니다. 두번째 명령은 **Get-Recipient** cmdlet를 사용 하 여 동적 메일 그룹에 대해 정의 된 조건과 일치 하는 받는 사람 목록을 합니다.
 
-    $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
+  $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
 
-    Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
+  Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-DynamicDistributionGroup](https://technet.microsoft.com/ko-kr/library/bb124762\(v=exchg.150\)) 및 [Get-Recipient](https://technet.microsoft.com/ko-kr/library/aa996921\(v=exchg.150\))를 참조하십시오.
 

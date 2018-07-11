@@ -65,9 +65,13 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 조직의 모든 사용자 사서함에서 사서함 감사 로깅을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
 
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 2단계: XML 첨부 파일을 허용하도록 Outlook Web App 구성
 
