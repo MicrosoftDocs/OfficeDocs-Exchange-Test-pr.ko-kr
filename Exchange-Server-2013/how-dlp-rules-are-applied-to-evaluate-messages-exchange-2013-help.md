@@ -147,9 +147,13 @@ Microsoft에서 이 규칙을 설정한 방식에서는 규칙과 일치하기 �
 
 이 문서의 신용 카드 예를 다른 중요한 정보 규칙으로도 확장할 수 있습니다. Exchange에서 Microsoft가 제공한 규칙의 전체 목록을 보려면 다음 방법으로 Exchange 관리 셸에서 [Get-ClassificationRuleCollection](https://technet.microsoft.com/ko-kr/library/jj218696\(v=exchg.150\)) cmdlet을 사용하세요.
 
-    $rule_collection = Get-ClassificationRuleCollection
+```
+$rule_collection = Get-ClassificationRuleCollection
+```
 
-    $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
+$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## 자세한 내용
 

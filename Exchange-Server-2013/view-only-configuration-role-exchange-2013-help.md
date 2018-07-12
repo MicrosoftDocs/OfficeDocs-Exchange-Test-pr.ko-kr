@@ -139,7 +139,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="even">
 <td><p><a href="delegated-setup-exchange-2013-help.md">위임 설치</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -148,7 +148,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="odd">
 <td><p><a href="hygiene-management-exchange-2013-help.md">Hygiene Management</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -166,7 +166,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="odd">
 <td><p><a href="view-only-organization-management-exchange-2013-help.md">보기 전용 조직 관리</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>

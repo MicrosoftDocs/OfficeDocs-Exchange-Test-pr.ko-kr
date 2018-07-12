@@ -213,9 +213,13 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
         > 공용 폴더에 포함 된 정보를 모두 제거 하면 영구적으로 삭제 됩니다.
 
         
-            Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-        
-            Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
+        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
+
+        ```
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하세요.
 
@@ -250,8 +254,8 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 2.  공용 폴더와 사서함 매핑 파일을 만들려면 `PublicFolderToMailboxMapGenerator.ps1` 스크립트를 실행 합니다. 이 파일은 Exchange 2013 사서함 서버에서 공용 폴더 사서함의 올바른 수를 계산 하는데 사용 됩니다.
     
 
-    > [!NOTE]
-    > <STRONG>\</STRONG> 백슬래시를 포함 하는 공용 폴더의 이름, 공용 폴더의 상위 공용 폴더에 만들어집니다. .Csv 파일을 검토 하 고 백슬래시를 포함 하는 이름을 편집 하는 것이 좋습니다.
+    > [!NOTE] 
+    > **\\** 백슬래시를 포함 하는 공용 폴더의 이름, 공용 폴더의 상위 공용 폴더에 만들어집니다. .Csv 파일을 검토 하 고 백슬래시를 포함 하는 이름을 편집 하는 것이 좋습니다.
 
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
@@ -284,9 +288,13 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 1.  예: OWAScratchPad 및 스키마 루트 폴더 하위 트리 레거시 시스템 공용 폴더 Exchange 2007 Exchange 2013에서 인식할 수 없습니다 고 따라서 "불량" 항목으로 취급 됩니다. 이렇게 하면 마이그레이션이 실패 합니다. 마이그레이션 요청의 일부로 `BadItemLimit` 매개 변수에 대 한 값을 지정 해야 합니다. 이 값이 있는 공용 폴더 데이터베이스의 수에 따라 달라 집니다. 다음 명령을 포함 하 고 마이그레이션 요청에 대 한 `BadItemLimit` 계산 얼마나 많은 공용 폴더 데이터베이스를 결정 합니다.
     
-        $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
-    
-        $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+    ```
+    $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
+    ```
+
+    ```
+    $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+    ```
 
 2.  Exchange 2013 서버에서 다음 명령을 실행 합니다.
     
@@ -450,9 +458,13 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 2.  Exchange 2013 서버에서 공용 폴더 사서함을 제거 하려면 다음 명령을 실행 합니다.
     
-        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
+    Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
         
-        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
+    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
 
 3.  레거시 Exchange 서버에서 다음 명령을 실행하여 `PublicFolderMigrationComplete` 플래그를 `$false`로 설정합니다.
     

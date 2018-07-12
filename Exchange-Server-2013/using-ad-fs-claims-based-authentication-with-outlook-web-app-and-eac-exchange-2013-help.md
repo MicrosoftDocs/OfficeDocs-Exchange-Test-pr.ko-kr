@@ -272,9 +272,13 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
 
 다음 Windows PowerShell 명령을 앞의 단계와 동일한 작업을 수행 합니다.
 
-    Import-Module ADFS
+```
+Import-Module ADFS
+```
 
-    Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
+Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
 
 자세한 내용 및 구문에 대 한 [설치 AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)을 참조 하십시오.
 

@@ -51,9 +51,13 @@ Exchange 조직에서 개별 사용자가 기본 제한 설정을 변경 하 여
 
 **Set-ThrottlingPolicyAssociation** cmdlet을 사용 하 여 정책을 사용 하 여 사용자를 연결할 필요가 없습니다. 다음 명령은에서는 tonysmith 제한 정책 ITStaffPolicy와 연결 하는 다른 방법은 보여줍니다.
 
-    $b = Get-ThrottlingPolicy ITStaffPolicy
+```
+$b = Get-ThrottlingPolicy ITStaffPolicy
+```
 
-    Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
+Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
 
 구문과 매개 변수에 대 한 자세한 내용은 [New-ThrottlingPolicy](https://technet.microsoft.com/ko-kr/library/dd351045\(v=exchg.150\)) 및 [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/ko-kr/library/ff459231\(v=exchg.150\))를 참조 하십시오.
 

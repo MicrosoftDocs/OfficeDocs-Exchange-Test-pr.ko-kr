@@ -101,9 +101,13 @@ MRS 프록시 끝점이 사용하도록 설정되었는지 확인할 수 있는 
 
 다음 예에서는 corp.contoso.com 포리스트에서 서버와의 연결을 테스트합니다.
 
-    $Credentials = Get-Credential
+```
+$Credentials = Get-Credential
+```
 
-    Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
+```
+Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
+```
 
 이 명령을 실행하려면 MRS 프록시 끝점이 사용하도록 설정되어야 합니다.
 

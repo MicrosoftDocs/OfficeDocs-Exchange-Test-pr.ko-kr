@@ -85,10 +85,14 @@ _**마지막으로 수정된 항목:** 2014-06-27_
         Mount-Database -Identity RDB1
 
 13. 다음 예에서와 같이, [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 및 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\)) cmdlet을 사용하여 RDB에서 데이터를 내보내고 복구된 데이터베이스로 가져옵니다. 이렇게 하면 발신음 데이터베이스를 사용하여 주고 받은 모든 메시지를 프로덕션 데이터베이스로 가져옵니다.
-    
-        $mailboxes = Get-Mailbox -Database DTDB1
-    
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+
+    ```
+    $mailboxes = Get-Mailbox -Database DTDB1
+    ```
+
+    ```
+    $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+    ```
 
 14. 복원 작업이 완료되면 다음 예에서와 같이 RDB를 분리하고 제거합니다.
     
