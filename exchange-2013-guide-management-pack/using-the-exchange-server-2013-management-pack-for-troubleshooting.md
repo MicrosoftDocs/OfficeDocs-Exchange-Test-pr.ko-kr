@@ -27,39 +27,53 @@ Rob은 서버를 두 번 클릭하여 **상태 탐색기** 창을 엽니다. 이
 
 외부 기술 자료 아래의 링크를 클릭하여 [OWA.Proxy 상태 설정 문제 해결](https://technet.microsoft.com/ko-kr/library/jj737712\(v=exchg.150\)) 항목으로 이동합니다. 이 문서에는 우선 문제가 아직 존재하는지를 확인하라는 지침이 나와 있습니다. 이 지침에 따라 Rob은 다음 명령을 실행하여 셸에서 OWA.Proxy 상태 설정의 현재 상태를 확인합니다.
 
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
+```
 
 이 명령을 실행하면 다음 출력이 표시됩니다.
 
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Unhealthy  OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
+```
 
 이 출력을 통해 OWA 응용 프로그램에 문제가 있음을 확인할 수 있습니다. 다음 단계로 비정상 상태인 모니터에 대해 관련 프로브를 다시 실행합니다. Rob은 "OWA.Proxy 상태 설정 문제 해결" 항목의 표를 참조하여 다시 실행해야 하는 프로브가 OWAProxyTestProbe임을 확인하고 다음 명령을 실행합니다.
 
+```Powershell
     Invoke-MonitoringProbe OWA.Proxy\OWAProxyTestProbe -Server Server1.contoso.com | Format-List
+```
 
 Rob은 출력을 검사해 ResultType 값을 찾아서 프로브에 오류가 발생했음을 확인합니다.
 
+```Powershell
     ResultType : Failed
+```
 
 Rob은 해당 문서의 "OWAProxyTestMonitor 복구 작업"을 계속 진행합니다. 이를 위해 IIS 관리자를 사용해 서버1에 연결하여 IIS 서버에서 MSExchangeOWAAppPool이 실행되고 있는지를 확인합니다. 실행되고 있음을 확인하면, 다음 단계 지침에 따라 MSExchangeOWAAppPool을 재순환합니다.
 
+```Powershell
     C:\Windows\System32\Inetsrv\Appcmd recycle APPPOOL MSExchangeOWAAppPool
+```
 
 MSExchangeOWAAppPool이 재순환되었음을 확인한 후 Rob은 Invoke-MonitoringProbe cmdlet을 사용해 프로브를 다시 실행하여 문제가 계속 존재하는지를 다시 확인합니다. 이번에는 결과가 성공으로 확인됩니다. 다음으로 Rob은 다음 명령을 실행하여 상태 설정이 **정상** 상태를 보고하는지 다시 확인합니다.
 
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
+```
 
 이제 문제가 해결되었음을 확인할 수 있습니다.
 
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Healthy    OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
+```
 
 Rob은 SCOM 콘솔로 돌아가 문제가 해결되었음을 확인합니다.
 
