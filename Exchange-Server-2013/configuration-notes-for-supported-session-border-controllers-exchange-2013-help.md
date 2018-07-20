@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-07-25_
+_**마지막으로 수정된 항목:** 2017-07-25_
 
 SBC(Session border controllers)를 사용하면 공용 WAN 연결을 통해 온-프레미스 전화 통신 네트워크를 Microsoft 데이터센터에 연결할 수 있습니다. SBC는 온-프레미스 IP 네트워크 에지에 위치하며 Microsoft 데이터센터의 보조 SBC에 연결합니다.
 

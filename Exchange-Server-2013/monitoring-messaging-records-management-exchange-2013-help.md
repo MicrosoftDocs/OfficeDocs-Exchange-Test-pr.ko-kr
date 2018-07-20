@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2009-11-03_
+_**마지막으로 수정된 항목:** 2009-11-03_
 
 [메시징 레코드 관리에 대 한 성능 카운터 보기](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
 

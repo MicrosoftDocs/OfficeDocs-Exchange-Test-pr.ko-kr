@@ -13,9 +13,9 @@ ms.translationtype: MT
 
 이 항목은 진행 중입니다. 
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 다음은 Microsoft Exchange에 사용되는 기술 또는 주제별로 구성된 개념 및 절차 항목의 모음입니다. 왼쪽 창의 목차와 다른 도움말 항목의 링크, 검색 결과 또는 사용자 지정 즐겨찾기 항목 목록에서 바로 각 항목에 액세스할 수 있습니다.
 

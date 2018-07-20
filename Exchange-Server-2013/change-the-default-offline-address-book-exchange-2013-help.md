@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 기본적으로 사서함 서버 역할을 설치하면 기본 오프라인 주소록이라는 웹 기반 기본 OAB(오프라인 주소록)가 만들어집니다. Exchange 조직에 있는 OAB 중 원하는 항목을 기본 OAB로 설정할 수 있습니다. 이렇게 새로 설정한 기본 OAB는 새로 작성되는 모든 사서함 데이터베이스와 연결됩니다. 조직에는 기본 OAB가 하나만 있을 수 있습니다. 기본 OAB를 삭제할 경우 MicrosoftExchange에서 다른 OAB를 기본값으로 자동 지정하지 않습니다. 수동으로 다른 OAB를 기본값으로 지정해야 합니다.
 

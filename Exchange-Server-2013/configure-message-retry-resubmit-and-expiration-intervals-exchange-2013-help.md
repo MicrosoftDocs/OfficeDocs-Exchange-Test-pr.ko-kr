@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 Microsoft Exchange Server 2013에서는 사서함 서버 및 Edge 전송 서버의 전송 서비스에서 메시지 다시 시도, 다시 전송 및 만료 간격을 구성할 수 있습니다. 이 설정에 대한 자세한 내용은 [메시지 다시 시도, 다시 전송, 및 만료 간격](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md)을 참조하십시오.
 

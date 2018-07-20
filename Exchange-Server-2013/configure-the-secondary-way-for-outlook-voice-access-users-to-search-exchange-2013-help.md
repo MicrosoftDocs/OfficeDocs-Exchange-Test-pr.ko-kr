@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 다이얼 플랜을 만드는 경우 발신자가 이름을 검색할 수 있는 기본 및 보조 *이름으로 전화 걸기 방법*을 구성할 수 있습니다. 발신자는 이름으로 전화 걸기 방법을 사용하여 발신자가 Outlook Voice Access 번호로 전화를 걸거나 다이얼 플랜에 연결된 UM 자동 전화 교환으로 전화를 걸 경우 사용자를 찾아서 연락할 이름을 조회합니다. 발신자는 누름 단추식 입력을 사용하여 UM 사용 가능 사용자를 찾을 수 있습니다.
 

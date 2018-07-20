@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-11_
+_**마지막으로 수정된 항목:** 2013-02-11_
 
 SiteMailbox 상태 설정은 조직 사이트 사서함의 전체 상태 및 접근성을 모니터링합니다.
 

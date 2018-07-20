@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013, 정보 권한 관리 (IRM) 작업 IRM 로그에 기록 됩니다. IRM 로그를 모니터링 하 고 Exchange 2013 서버에서 서비스 RMS (권한 관리) 클라이언트와 조직에서 Active Directory 권한 관리 서비스 (AD RMS) 클러스터 간의 상호작용 문제를 해결 하는데 도움이 됩니다.
 
@@ -103,13 +103,13 @@ IRM 로그 파일 이름의 예는 EdgeTransport\_1056\_IRMLOG20101201-1.log입�
 
 IRM 로그 파일은 CSV(쉼표로 분리된 값) 형식으로 데이터를 포함하는 텍스트 파일입니다. 각 IRM 로그에는 다음과 같은 정보가 포함된 헤더가 있습니다.
 
-  - **\#Software:**   IRM 로그 파일을 만든 소프트웨어의 이름입니다. 일반적으로 값은 `Microsoft Exchange Server`입니다.
+  - **\#Software:**    IRM 로그 파일을 만든 소프트웨어의 이름입니다. 일반적으로 값은 `Microsoft Exchange Server`입니다.
 
-  - **\#Version:**   IRM 로그 파일을 만든 소프트웨어의 버전 번호입니다.
+  - **\#Version:**    IRM 로그 파일을 만든 소프트웨어의 버전 번호입니다.
 
   - **\#Log-type**   로그 유형 값으로, `Rms Client Manager Log`입니다.
 
-  - **\#Date:**   로그 파일이 만들어진 UTC 날짜 및 시간입니다. UTC 날짜 및 시간은 다음과 같은 ISO 8601 날짜-시간 형식으로 표시됩니다. *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z. 여기서 각 항목은 다음을 나타냅니다.
+  - **\#Date:**    로그 파일이 만들어진 UTC 날짜 및 시간입니다. UTC 날짜 및 시간은 다음과 같은 ISO 8601 날짜-시간 형식으로 표시됩니다. *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z. 여기서 각 항목은 다음을 나타냅니다.
     
       - yyyy = 년
     
@@ -129,7 +129,7 @@ IRM 로그 파일은 CSV(쉼표로 분리된 값) 형식으로 데이터를 포�
     
       - Z = Zulu(UTC를 표시하는 또 다른 방법)
 
-  - **\#Fields:**   IRM 로그 파일에서 사용되는 쉼표로 구분된 필드 이름입니다.
+  - **\#Fields:**    IRM 로그 파일에서 사용되는 쉼표로 구분된 필드 이름입니다.
     
     IRM 로그에는 각 RMS 트랜잭션 이벤트가 단일 줄에 저장되며 쉼표로 구분된 필드로 구성됩니다. 다음 표는 IRM 기능이 사용되는 모든 서버 역할에 대한 IRM 로그의 필드를 보여 줍니다.
     

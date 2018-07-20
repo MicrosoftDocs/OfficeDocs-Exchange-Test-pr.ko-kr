@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
 
-_**마지막으로 수정된 항목:**2017-05-19_
+_**마지막으로 수정된 항목:** 2017-05-19_
 
-**요약:** 지원 되는 가장 최근의 사용자가 for mac입니다. Outlook 2016와 공용 폴더에 액세스할 수 있도록 하는 Exchange 토폴로지
+**요약:**  지원 되는 가장 최근의 사용자가 for mac입니다. Outlook 2016와 공용 폴더에 액세스할 수 있도록 하는 Exchange 토폴로지
 
 Mac 클라이언트에 대 한 버전의 Outlook 2016에 대 한 [2016 년 4 월 업데이트](https://go.microsoft.com/fwlink/?linkid=829202) 에서는 Exchange 2013에 대 한 [누적 업데이트 14 (CU14)](https://go.microsoft.com/fwlink/p/?linkid=849432) 및 Exchange 2016, Mac 용 Outlook 2016의 사용자에 대 한 [누적 업데이트 2 (CU 2)](https://go.microsoft.com/fwlink/p/?linkid=849793) 이제에 액세스할 수 더 많은 유형의 토폴로지의 공용 폴더 하기 전에 수 있으므로 보다 합니다.
 

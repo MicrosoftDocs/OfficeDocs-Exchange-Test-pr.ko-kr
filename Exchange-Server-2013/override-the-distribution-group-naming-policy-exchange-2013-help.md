@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-13_
+_**마지막으로 수정된 항목:** 2012-10-13_
 
 메일 그룹에 대한 그룹 명명 정책은 사용자가 만드는 그룹에만 적용됩니다. 관리자가 EAC(Exchange 관리 센터)를 사용하여 메일 그룹을 만들면 그룹 명명 정책이 무시되고 그룹 이름에 적용되지 않습니다.
 
@@ -69,9 +69,13 @@ Microsoft Exchange에서는 이 그룹을 만들 때 *Name* 및 *DisplayName* �
 
 그룹 명명 정책을 무시하는 배포 그룹을 성공적으로 만들거나 이름을 변경했는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-DistributionGroup <Name> | FL DisplayName
+```
+Get-DistributionGroup <Name> | FL DisplayName
+```
 
-    Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
+Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
 
 그룹의 표시 이름 형식이 조직의 그룹 명명 정책에서 지정하는 형식과 다르면 정상적으로 수행된 것입니다.
 

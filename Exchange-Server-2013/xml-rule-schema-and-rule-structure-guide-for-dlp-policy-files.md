@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이 개요 문서에서는 DLP(데이터 손실 방지) 정책 템플릿 파일에 대한 XML 스키마 정의의 구성 요소에 대해 설명하고 XML 형식의 정책 파일 예를 제공합니다. 이 문서는 시작하기 전에 전반적인 DLP 아키텍처와 규칙 개발 프로세스를 이해하는 데 도움이 됩니다. 자세한 내용은 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md) 및 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md) 항목을 참조하십시오.
 

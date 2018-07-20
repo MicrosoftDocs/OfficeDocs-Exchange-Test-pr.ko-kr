@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 발신자의 연결을 끊기 전에 허용되는 연속적으로 실패한 로그인 시도 횟수를 지정할 수 있습니다. 이 설정의 값은 1 ~ 20이 될 수 있습니다. 이 값을 너무 작은 값으로 설정하면 사용자가 불편할 수 있습니다. 대부분의 조직에서 기본값인 3회로 설정합니다.
 

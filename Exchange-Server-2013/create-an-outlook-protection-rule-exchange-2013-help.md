@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Outlook 보호 규칙을 사용 하는 메시지 전송 하기 전에 Outlook 2010 에서 Active Directory 권한 관리 서비스 (AD RMS) 서식 파일을 적용 하 여 정보 권한 관리 (IRM)와 메시지를 보호할 수 있습니다.
 

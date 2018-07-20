@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access 사용자가 자신의 사서함에서 잠기기 전에 허용되는 로그인 실패 횟수를 구성할 수 있습니다. 음성 메일 사용자가 잠기기 전에 허용되는 로그인 실패 횟수는 UM(통합 메시징) 사서함 정책에서 구성되며 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에게 적용됩니다. 기본 설정은 15입니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 *콘텐츠 전송 인코딩*은 이진 전자 메일 메시지 데이터를 US-ASCII 일반 텍스트 형식으로 변환하는 인코딩 방법을 정의합니다. 이러한 변환을 통해 메시지는 US-ASCII 텍스트 메시지만 지원하는 이전 SMTP 메시징 서버를 통해 이동할 수 있습니다. 콘텐츠 전송 인코딩은 RFC 2045에 정의되어 있습니다. 전송 인코딩 방법은 메시지의 **Content-Transfer-Encoding** 헤더 필드에 저장됩니다. Microsoft Exchange Server 2013에서는 다음 콘텐츠 전송 인코딩 방법을 사용할 수 있습니다.
 

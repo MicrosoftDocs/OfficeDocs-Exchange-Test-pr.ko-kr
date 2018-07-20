@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Organization Transport Settings` 관리 역할에는 관리자를 시스템 메시지, Active Directory 사이트 구성 및 전체 Exchange 조직에 대 한 전송 구성 설정 등의 조직 전체의 전송 설정을 관리할 수 있습니다.
 

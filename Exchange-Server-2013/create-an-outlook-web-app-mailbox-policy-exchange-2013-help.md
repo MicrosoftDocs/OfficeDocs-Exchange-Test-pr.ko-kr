@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-05-30_
+_**마지막으로 수정된 항목:** 2013-05-30_
 
 일련의 공용 정책 설정을 적용할 Outlook Web App 사서함 정책을 만들 수 있습니다. Outlook Web App 사서함 정책은 특정 사용자 그룹에 대한 설정(예: 첨부 파일 설정)을 적용하고 표준화하는 데 유용합니다.
 

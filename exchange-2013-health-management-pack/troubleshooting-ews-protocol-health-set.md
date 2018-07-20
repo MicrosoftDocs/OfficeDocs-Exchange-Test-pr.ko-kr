@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 EWS.Protocol 상태 설정은 사서함 서버에서 EWS(Exchange Web Services) 통신 프로토콜을 모니터링합니다. EWS.Protocol 상태 설정은 다음 상태 설정과 밀접하게 관련됩니다.
 

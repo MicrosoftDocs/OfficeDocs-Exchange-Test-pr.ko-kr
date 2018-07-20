@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-14_
+_**마지막으로 수정된 항목:** 2012-11-14_
 
 EAC 또는 셸을 사용하여 사용자 사서함에 대해 Outlook Web App을 사용하거나 사용하지 않도록 설정할 수 있습니다. Outlook Web App을 사용하도록 설정하면 사용자는 Outlook Web App을 사용하여 전자 메일을 보내고 받을 수 있습니다. Outlook Web App을 사용하지 않도록 설정하면 사서함에서 계속 전자 메일 메시지를 받게 되고 사용자는 Microsoft Outlook 같은 MAPI 클라이언트나 POP 또는 IMAP 전자 메일 클라이언트를 통해 사서함에 액세스하여 전자 메일을 보내고 받을 수 있습니다(해당 클라이언트의 액세스를 지원하도록 사서함이 설정된 경우).
 

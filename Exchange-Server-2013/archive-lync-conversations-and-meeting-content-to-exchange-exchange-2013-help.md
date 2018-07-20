@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Online 에서 사용자의 사서함에 IM 대화와 같은 Lync Online 콘텐츠를 보관할 수 있습니다. 온-프레미스 배포에서 Exchange 2013 사서함에 Lync 2013 콘텐츠를 보관할 수 있습니다. 온라인에서 모두에서 온-프레미스 환경에서는이 위해서는 사용자의 사서함에 소송 보존 또는 In-place Hold를 배치 합니다. 보관 사서함이에 있는 사용자가 Lync 콘텐츠는 영구적으로 삭제 내용이 사용자의 사서함에서 복구 가능한 항목 폴더에 보존 되 보관 된 Lync 합니다. 사용자가 볼 수 있지만 eDiscovery 검색에 포함 됩니다.
 

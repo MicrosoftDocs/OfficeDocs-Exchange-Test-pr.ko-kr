@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-20_
+_**마지막으로 수정된 항목:** 2018-03-20_
 
 Microsoft Exchange Server 2013에 대 한 업데이트 프로세스에 변경 하는 방법에 대해 알아봅니다. 이 문서는 또한 기능 및 Exchange 2013 의 현재 및 이전 버전에 포함 된 향상 된 기능에 대 한 정보에 대 한 링크를 제공 합니다.
 
@@ -52,7 +52,7 @@ Exchange 2013 의 최신 버전을 가져오려면를 다운로드 하 고 [Micr
 </tr>
 <tr class="even">
 <td><p>Exchange 2013 CU18</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936%0d%0a">릴리스: 2017 년 9 월 분기별 Exchange 업데이트</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936">릴리스: 2017 년 9 월 분기별 Exchange 업데이트</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Exchange 2013 CU17</p></td>

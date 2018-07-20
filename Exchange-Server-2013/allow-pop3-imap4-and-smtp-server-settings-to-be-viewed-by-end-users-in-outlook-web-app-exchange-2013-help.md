@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-11-28_
+_**마지막으로 수정된 항목:** 2012-11-28_
 
 Microsoft Exchange Server 2013 사서함에 연결하는 데 POP3 또는 IMAP4를 사용하는 사용자는 올바른 서버 설정을 알아야만 이러한 사서함에 연결할 수 있습니다. 기본 Exchange 2013 설치가 끝난 후에는 사용자가 자신의 들어오는 POP3 또는 IMAP4 서버 설정이나 나가는 SMTP 서버 설정을 찾을 수 없습니다. 하지만 사용자가 MicrosoftOutlook Web App을 사용하여 자신의 설정을 찾을 수 있도록 Exchange를 구성할 수 있습니다.
 

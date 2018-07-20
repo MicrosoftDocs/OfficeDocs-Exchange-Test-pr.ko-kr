@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) IP 게이트웨이를 삭제하면 Exchange 서버는 해당 UM IP 게이트웨이와 연결된 VoIP(Voice over IP) 게이트웨이, SIP(Session Initiation Protocol) 사용 가능 PBX(Private Branch eXchange), IP PBX 또는 SBC(Session Border Controller)에서 들어오는 수신 전화를 더 이상 수락할 수 없게 됩니다.
 

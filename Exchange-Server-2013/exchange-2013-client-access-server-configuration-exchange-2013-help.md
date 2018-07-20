@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-07-25_
+_**마지막으로 수정된 항목:** 2017-07-25_
 
 Exchange 2013 클라이언트 액세스 서버를 설치한 후에는 다양한 구성 작업을 수행할 수 있습니다. Exchange 2013의 클라이언트 액세스 서버는 클라이언트 프로토콜을 처리하지 않지만 가상 디렉터리 설정과 인증서 설정을 포함한 여러 설정을 클라이언트 액세스 서버에 적용해야 합니다.
 
@@ -73,9 +73,13 @@ Exchange 2013에 대해 가상 디렉터리를 구성하려면 다음 명령을 
     
     Outlook Web App 가상 디렉터리를 설정한 후 명령 프롬프트에서 다음 명령을 실행합니다.
     
-        Net stop IISAdmin /y
-    
-        Net start W3SVC
+      ```
+      Net stop IISAdmin /y
+      ```
+
+      ```
+      Net start W3SVC
+      ```
 
 2.  외부 EAC 액세스를 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_**마지막으로 수정된 항목:** 2016-12-15_
 
 Microsoft Exchange Server 2013의 경우 이 항목의 내용이 업데이트되지 않았습니다. 아직 업데이트되지 않았지만 Exchange 2013에 계속 적용할 수 있습니다. 여전히 도움이 필요하면 아래 커뮤니티 리소스를 확인하세요.
 
@@ -60,9 +60,9 @@ Exchange 2007 또는 Exchange 2010 설치 ADC에 대 한 구성 요소를 모두
 
 ADC에 대 한 자세한 내용은 다음 Microsoft 기술 자료 문서를 참조 하십시오.
 
-  - 325300, "웹캐스트 지원: Active Directory Connector 소개" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300)).
+  - 325300, "웹캐스트 지원: Active Directory Connector 소개" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300)).
 
-  - 325221, "웹캐스트: Microsoft Active Directory Connector 고급" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221)).
+  - 325221, "웹캐스트: Microsoft Active Directory Connector 고급" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221)).
 
-  - 312632, "설치 및 Exchange 2000 Server의 Active Directory 커넥터를 구성 하는 방법" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632)).
+  - 312632, "설치 및 Exchange 2000 Server의 Active Directory 커넥터를 구성 하는 방법" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632)).
 

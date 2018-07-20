@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 받는 사람을 관리하기 위한 작업을 수행하는 데 필요한 사용 권한은 수행하는 절차 또는 실행하려는 cmdlet에 따라 달라집니다.
 
@@ -28,7 +28,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 3.  이제 **Get-ManagementRoleAssignment** cmdlet을 실행하여 자신에게 할당된 역할 그룹이나 관리 역할을 보고 기능 관리에 필요한 사용 권한이 있는지 확인합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > <STRONG>Get-ManagementRoleAssignment</STRONG> cmdlet을 실행하려면 Role Management 관리 역할을 할당받아야 합니다. <STRONG>Get-ManagementRoleAssignment</STRONG> cmdlet을 실행할 사용 권한이 없는 경우에는 Exchange 관리자에게 문의하여 자신에게 할당된 역할 그룹이나 관리 역할을 검색합니다.
 
 
@@ -78,7 +78,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 <p><a href="view-only-organization-management-exchange-2013-help.md">보기 전용 조직 관리</a></p>
 <p>Support Diagnostics 역할</p>
 
-> [!NOTE]
+> [!NOTE]  
 > Support Diagnostics 역할은 역할 그룹에 할당되지 않습니다. 자세한 내용은 <A href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">사용자 또는 USG에는 역할을 추가 합니다.</A>를 참조하십시오.
 
 
@@ -93,7 +93,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 <td><p>가져오기 내보내기</p></td>
 <td><p>Mailbox Import Export 역할</p>
 
-> [!NOTE]
+> [!NOTE]  
 > Mailbox Import Export 역할은 역할 그룹에 할당되지 않습니다. 자세한 내용은 <A href="mailbox-import-export-role-exchange-2013-help.md">Mailbox Import Export 역할</A>을 참조하십시오.
 
 

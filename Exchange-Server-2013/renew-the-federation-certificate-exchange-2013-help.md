@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**마지막으로 수정된 항목:**2017-02-28_
+_**마지막으로 수정된 항목:** 2017-02-28_
 
 이 항목에서는 페더레이션 트러스트에 사용 되는 페더레이션 자체 서명 된 인증서를 업데이트 하는 방법에 설명 합니다.
 
@@ -37,18 +37,8 @@ _**마지막으로 수정된 항목:**2017-02-28_
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, 또는 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a></td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, 또는 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>
 
 
 ## 작업 페더레이션 인증서를 업데이트 합니다.
@@ -83,7 +73,7 @@ _**마지막으로 수정된 항목:**2017-02-28_
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd298034\(v=exchg.150\))을 참조 하십시오.
 
-**참고:** 명령 출력 DNS에서 TXT 레코드 도메인 소유권 증명을 업데이트 해야 알리는 경고 메시지를 포함 합니다. 다음 단계에는 작업을 수행 합니다.
+**참고:**  명령 출력 DNS에서 TXT 레코드 도메인 소유권 증명을 업데이트 해야 알리는 경고 메시지를 포함 합니다. 다음 단계에는 작업을 수행 합니다.
 
 ## 3 단계: 도메인 소유권 외부 DNS에서 TXT 레코드의 페더레이션 증명 업데이트
 
@@ -119,7 +109,7 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
     $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
 
-**참고:** **Test-FederationCertificate** cmdlet의 출력을 Exchange 2010 서버 이름을 포함 합니다. Exchange 2013 또는 나중에 cmdlet의 출력에는 서버 이름은 포함 되지 않습니다.
+**참고:**  **Test-FederationCertificate** cmdlet의 출력을 Exchange 2010 서버 이름을 포함 합니다. Exchange 2013 또는 나중에 cmdlet의 출력에는 서버 이름은 포함 되지 않습니다.
 
 ## 5 단계: 새 페더레이션 인증서를 활성화 합니다.
 
@@ -129,7 +119,7 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd298034\(v=exchg.150\))을 참조 하십시오.
 
-**참고:** 명령 출력 (이미 수행한 단계 3에서)는 DNS에서 TXT 레코드 도메인 소유권 증명을 업데이트 하는 경고를 포함 합니다.
+**참고:**  명령 출력 (이미 수행한 단계 3에서)는 DNS에서 TXT 레코드 도메인 소유권 증명을 업데이트 하는 경고를 포함 합니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 

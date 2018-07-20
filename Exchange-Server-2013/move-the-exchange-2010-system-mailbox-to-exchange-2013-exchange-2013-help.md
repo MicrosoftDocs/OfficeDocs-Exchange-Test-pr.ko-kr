@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Exchange 2010, 시스템 사서함 관리자 감사 로그를 eDiscovery 검색 하 고 메뉴, 예: 통합 메시징 데이터에 대 한 메타 데이터와 같은 조직 전체의 데이터를 저장 하는데 사용 되는 중재 사서함이 Microsoft Exchange에서에서 다이얼 플랜 및 사용자 지정 인사말 합니다. Microsoft Exchange 시스템 사서함 **SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}**; 라고 합니다. 표시 이름은 **Microsoft Exchange** 입니다.
 

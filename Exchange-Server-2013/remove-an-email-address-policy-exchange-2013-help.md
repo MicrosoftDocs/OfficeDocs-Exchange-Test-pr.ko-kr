@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-13_
+_**마지막으로 수정된 항목:** 2012-10-13_
 
 기본적으로 Exchange 전자 메일 주소의 로컬 일부로 받는 사람의 별칭을 지정 하 고 기본 허용 도메인을 사용 하 여 전자 메일 주소 정책을 포함 합니다. 전자 메일 주소의 로컬 부분은 "at" 기호 앞에 나타나는 이름 (@). 조직에서 모든 사용자에 게이 전자 메일 주소 정책을 적용 됩니다. 이 전자 메일 주소 정책을 제거할 수 없습니다.
 
@@ -35,18 +35,8 @@ _**마지막으로 수정된 항목:**2012-10-13_
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, 또는 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a></td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, 또는 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>
 
 
 ## 무슨 작업을 하고 싶으십니까?

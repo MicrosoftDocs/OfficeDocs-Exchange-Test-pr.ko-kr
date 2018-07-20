@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 공유 및 공동 작업 기능을 구성 하는 데 필요한 사용 권한은 수행 하는 절차 또는 실행 하려는 cmdlet에 따라 다릅니다. 공유 및 공동 작업 하는 방법에 대 한 자세한 내용은 [공동 작업](collaboration-exchange-2013-help.md) 및 [공유](sharing-exchange-2013-help.md)를 참조 하십시오.
 

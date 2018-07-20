@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 Outlook Voice Access 사용자에 대해 공통 UM(통합 메시징) PIN 패턴을 사용하거나 사용하지 않도록 설정할 수 있습니다. UM 사서함 정책에서 공통 PIN 패턴 설정을 사용하거나 사용하지 않도록 설정하면 이 설정은 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에게 적용됩니다. 기본적으로 UM 사용 가능 사용자는 PIN을 만들 때 공통 패턴을 사용할 수 없습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 전송 형식 TNEF (Neutral Encapsulation)을 유지 하거나 Exchange 조직 하는 메시지에서 제거를 지정할 수 있습니다. TNEF, Outlook 서식 있는 텍스트 또는 Exchange 서식 있는 텍스트 형식으로 라고도 Microsoft-MAPI 메시지 속성을 캡슐화 하는 것에 대 한 특정 형식입니다. 모든 버전의 MicrosoftOutlook TNEF를 완벽 하 게 이해합니다. Outlook Web App MAPI에 TNEF를 변환 하 고 서식이 지정 된 메시지를 표시 하는 합니다. 그러나 모르고 TNEF TNEF를 일반적으로 표시 하는 다른 전자 메일 클라이언트도 서식이 지정 된 메시지 Win.dat 또는 Winmail.dat 첨부 파일이 있는 일반 텍스트 메시지입니다.
 

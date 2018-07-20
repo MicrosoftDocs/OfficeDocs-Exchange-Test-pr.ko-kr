@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-07-16_
+_**마지막으로 수정된 항목:** 2015-07-16_
 
-**요약:** 이 문서의 절차를 사용하여 조직의 사용자가 Exchange 2013에서 OWA에 액세스하는 URL을 단순화합니다.
+**요약:**  이 문서의 절차를 사용하여 조직의 사용자가 Exchange 2013에서 OWA에 액세스하는 URL을 단순화합니다.
 
 사용자가 Exchange Server 2013 사서함에 액세스하는 데 사용하는 MicrosoftOutlook Web App URL을 단순화할 수 있습니다.
 

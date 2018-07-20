@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) 사용 가능 음성 메일 사용자가 올바르지 않은 PIN을 여러 번 사용하여 로그인을 시도함으로써 Outlook Voice Access를 사용하는 자신의 사서함을 잠근 경우 또는 자신의 PIN을 잊어버린 경우에는 다음 절차 중 하나를 사용하여 사용자의 PIN을 다시 설정할 수 있습니다. 사용자의 Outlook Voice Access PIN을 다시 설정할 때 PIN이 자동 생성되도록 UM을 구성하거나 수동으로 PIN을 지정할 수 있습니다. 새 PIN은 전자 메일로 사용자에게 보내집니다. 처음 로그인 시 PIN 다시 설정과 같은 추가 PIN 옵션을 지정할 수 있습니다.사용자는 PIN Outlook 또는 Outlook Web App을 사용하여도 UM PIN을 다시 설정할 수 있습니다..
 

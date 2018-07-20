@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 사용 하지 않도록 설정 하거나 삭제 된 사서함 Exchange 2013 EAC 또는 셸을 사용할 수 있습니다. 사서함을 사용 하지 않도록 설정 하거나 삭제 Exchange 사서함 데이터베이스에서 사서함을 유지 하 고 사서함을 비활성된 상태로 전환 합니다. 비활성화 및 삭제 된 사서함은 사서함 데이터베이스에서 삭제 된 사서함 보존 기간이 만료 되 면 30 일 때까지 기본적으로 유지 됩니다. 사서함 영구적으로 삭제 보존 기간이 만료 되 면 후 되거나 *제거*합니다.
 
@@ -139,11 +139,17 @@ Exchange Online으로 사서함 삭제 해야하는 경우 [Exchange Online의 �
 
 다음은 사서함을 사용 하지 않도록 설정 하는 것에 대 한 명령의 예입니다.
 
-    Disable-Mailbox danj
+```
+Disable-Mailbox danj
+```
 
-    Disable-Mailbox "Conf Room 31/1234 (12)"
+```
+Disable-Mailbox "Conf Room 31/1234 (12)"
+```
 
-    Disable-Mailbox sharedmbx@contoso.com
+```
+Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -197,11 +203,17 @@ Exchange Online으로 사서함 삭제 해야하는 경우 [Exchange Online의 �
 
 다음은 사서함 삭제 명령의 예입니다.
 
-    Remove-Mailbox pilarp@contoso.com
+```
+Remove-Mailbox pilarp@contoso.com
+```
 
-    Remove-Mailbox "Fleet Van (16)"
+```
+Remove-Mailbox "Fleet Van (16)"
+```
 
-    Remove-Mailbox corpprint
+```
+Remove-Mailbox corpprint
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

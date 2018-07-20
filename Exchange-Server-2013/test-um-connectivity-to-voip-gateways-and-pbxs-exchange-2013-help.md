@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2014-09-17_
+_**마지막으로 수정된 항목:** 2014-09-17_
 
 UM(통합 메시징) 및 연결된 전화 통신 장비와 관련된 작업을 테스트할 수 있습니다. 다음 절차를 수행하면 클라이언트 액세스와 메시징 서버에서 음성 메일 시스템의 전체 종단 간 작업을 테스트합니다. 여기에는 VoIP 게이트웨이와 PBX(Private Branch eXchange), IP PBX 및 케이블 등 클라이언트 액세스 및 사서함 서버에 연결된 전화 통신 구성 요소가 포함됩니다.
 

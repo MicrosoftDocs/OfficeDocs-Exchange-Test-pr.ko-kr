@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-01-15_
+_**마지막으로 수정된 항목:** 2014-01-15_
 
 Exchange를 설치 하는 컴퓨터에 대 한 기본 도메인 이름 시스템 (DNS) 접미사 구성 되지 않았습니다 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

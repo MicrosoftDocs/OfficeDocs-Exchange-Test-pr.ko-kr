@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM 사용이 가능한 사용자에 대 한 UM (통합 메시징)을 사용 하지 않도록 설정할 수 있습니다. 이렇게 하면 통합 메시징에 음성 메일 기능 더이상 사용할 수 없습니다. 원하는 경우 사용자에 대 한 UM을 사용 하지 않도록 설정할 때, 사용자에 대 한 UM 설정을 유지할 수 있습니다.
 

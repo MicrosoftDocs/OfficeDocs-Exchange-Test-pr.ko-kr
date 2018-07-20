@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-05-18_
+_**마지막으로 수정된 항목:** 2016-05-18_
 
 Microsoft Exchange Server 2013 새로 추가 하 고 기존 Active Directory 스키마 클래스와 특성을 수정 합니다. 이 참조 항목 간략하게 나와 Active DirectoryExchange 2013 또는의 모든 누적 업데이트 또는 서비스 팩 버전 (RTM) 릴리스를 설치 하는 경우 적용 된 스키마 변경 합니다. Active Directory 스키마를 변경 하는 방법에 대 한 자세한 내용은.ldf 파일을 참조 하십시오. .Ldf 파일 Exchange 설치 파일에서 \\amd64\\Setup\\Data\\ 디렉터리에 있습니다.
 

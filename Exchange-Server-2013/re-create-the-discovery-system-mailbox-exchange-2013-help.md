@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-01-17_
+_**마지막으로 수정된 항목:** 2018-01-17_
 
 원본 위치 eDiscovery 시스템 사서함을 사용 하 여 원본 위치 eDiscovery 검색 메타 데이터를 저장 합니다. 검색 시스템 사서함이 이름이 표시 **SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}** 입니다. 시스템 사서함에서 Exchange 관리 센터 (EAC) 또는 Exchange 주소 목록에 표시 되지않는, 때문에 실수로 삭제 거의 됩니다.
 

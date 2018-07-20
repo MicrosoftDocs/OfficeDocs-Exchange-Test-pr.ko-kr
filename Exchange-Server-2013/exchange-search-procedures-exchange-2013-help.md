@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-05_
+_**마지막으로 수정된 항목:** 2013-02-05_
 
 [Exchange 검색 사용 또는 사용 안 함](disable-or-enable-exchange-search-exchange-2013-help.md)
 

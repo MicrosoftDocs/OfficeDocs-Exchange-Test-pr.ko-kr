@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange 2010 통합 메시징 문제해결 도구는 **Test-ExchangeUMCallFlow**라는 Exchange 관리 셸 cmdlet은입니다. 이 도구를 사용 하 여 조직에서 일련의 진단 테스트에 대 한 UM (통합 메시징)을 수행할 수 있습니다. 테스트 중 하나라도 실패 문제를 해결 하려면 오류 및 가능한 솔루션에 대 한 이유를 보고 하는 도구입니다. 만 Exchange 2010 또는 이후 서버에서 UM 문제해결 도구를 사용할 수 있습니다.
 
@@ -221,7 +221,7 @@ UM 문제 해결 도구는 로컬 통합 메시징 서버나 다음 중 하나�
 
 
 
-  - WinRM(Windows 원격 관리) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu)   Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=968930)를 참조하세요.
+  - WinRM(Windows 원격 관리) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu)   Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=968930)를 참조하세요.
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi) [Unified Communications Managed API 2.0, Core Runtime (64 비트)](https://go.microsoft.com/fwlink/p/?linkid=198175)를 참조 하십시오.
 

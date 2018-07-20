@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-03-18_
+_**마지막으로 수정된 항목:** 2016-03-18_
 
 사용자 지정 데이터 손실 방지 (DLP) 정책을 사용 하면 기존 DLP 서식 파일 중 하나에 조건, 규칙 및 작업을 사용 하 여 조직의 특정 요구를 충족 도움이 되 고 설명 되어있지 수를 설정할 수 있습니다.
 

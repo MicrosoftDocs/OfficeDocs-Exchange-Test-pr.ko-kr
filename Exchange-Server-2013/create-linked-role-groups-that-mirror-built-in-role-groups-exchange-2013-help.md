@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-03_
+_**마지막으로 수정된 항목:** 2012-10-03_
 
 Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하면 Exchange 2013 리소스 포리스트에 있는 역할 그룹을 외부 사용자 포리스트에 있는 USG(유니버설 보안 그룹)와 연결할 수 있습니다. 사용자 포리스트에 계정이 있는 관리자가 리소스 포리스트에서 Exchange를 실행하는 서버를 관리하게 하려는 경우 이 방법이 유용합니다. 연결된 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해 (영문)](understanding-management-role-groups-exchange-2013-help.md)를 참조하십시오.
 

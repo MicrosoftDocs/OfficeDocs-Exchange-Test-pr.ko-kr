@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) 통화 보고서는 UM으로 전달되거나 UM에서 건 통화에 대한 정보를 제공합니다. 이러한 보고서를 사용하여 조직의 UM을 모니터링하고 UM에 대한 문제를 해결하고 보고할 수 있습니다. 통화 통계 도구를 사용하여 통합 메시징 통화 통계 보고서에 액세스하고 사용자 호출 로그 도구를 사용하여 UM 사용 가능 사용자에 대한 호출 로그에 액세스할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 현재 Active Directory 포리스트의 포리스트 기능 수준이 Windows Server 2003 Native 이상이 아니기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다. Exchange 2013을 설치하려면 포리스트 기능 수준을 Windows Server 2003 이상으로 올려야 합니다.
 

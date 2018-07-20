@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-01-07_
+_**마지막으로 수정된 항목:** 2015-01-07_
 
 다음 절차를 사용하여 메시징 환경에서 DLP(데이터 손실 방지) 솔루션 사용을 시작할 수 있습니다. DLP의 개념 및 목적을 알아보려면 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)를 참조하십시오.
 

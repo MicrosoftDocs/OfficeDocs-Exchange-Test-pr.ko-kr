@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-23_
+_**마지막으로 수정된 항목:** 2013-02-23_
 
 발신자에게 재생되도록 UM(통합 메시징) 자동 전화 교환에 회사 위치를 지정할 수 있습니다. 기본적으로 회사 위치는 입력되어 있지 않습니다.
 

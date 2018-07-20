@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 메일 흐름 규칙로 알려져 전송 규칙을 만들면 때마다 테스트 해야 켜기 전에 합니다. 이와 같은 방식이으로 실수로 만드는 경우 정확 하 게 수행 하지 또는 상호작용 하는데 사용 하는 조건을 다른 규칙을 예기치 않은 방법으로 모든 예기치 않은 결과가 발생할이 없습니다.
 

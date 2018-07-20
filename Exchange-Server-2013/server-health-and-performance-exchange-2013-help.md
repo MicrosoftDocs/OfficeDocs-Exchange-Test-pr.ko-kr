@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이해 서버 상태 및 성능을 디자인 하 고 유지 관리 하 고성능 메시징 인프라에 중요 한 됩니다. Microsoft Exchange Server 2013 서버 상태 및 성능 향상을 소개합니다.
 

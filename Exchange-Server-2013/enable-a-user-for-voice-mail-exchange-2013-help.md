@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 사용자가 UM(통합 메시징)을 사용하도록 설정하면 해당 사용자에게 기본 속성 집합이 적용되고 사용자는 통합 메시징에 포함된 음성 메일 기능을 사용할 수 있습니다. 사용자가 음성 메일을 사용하도록 설정한 후 SIP URI 다이얼 플랜에 연결된 UM 사서함 정책에 해당 사용자가 할당되면 사용자에 대한 SIP(Session Initiation Protocol) 주소를 추가할 수 있습니다. 또는 E.164 다이얼 플랜에 연결된 UM 사서함 정책에 해당 사용자가 할당되면 사용자에 대한 E.164 번호를 추가할 수 있습니다. 두 경우 모두 사용자에게 구성된 내선 번호가 있어야 합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-02-15_
+_**마지막으로 수정된 항목:** 2014-02-15_
 
 Exchange 조직의 개별 사용자는 공유 정책을 사용하여 다른 페더레이션 Exchange 조직, 페더레이션되지 않은 Exchange 조직 및 개별 인터넷 사용자와 약속 있음/없음 일정 정보를 공유할 수 있습니다. 일반적인 작업을 수행하는 동안 공유 규칙 수정, 약속 있음/없음 액세스 수준 변경, 일시적으로 공유 정책을 사용하지 않도록 설정 또는 공유 정책을 완전히 제거와 같이 일부 공유 정책 속성을 변경하려고 할 수 있습니다.
 
@@ -103,9 +103,13 @@ Exchange 조직의 개별 사용자는 공유 정책을 사용하여 다른 페�
 
   - 첫 번째 예에서는 공유 정책 Contoso를 제거합니다. 두 번째 예에서는 공유 정책 Contoso를 제거하고 정책 제거를 확인하는 메시지를 생략합니다.
     
-        Remove-SharingPolicy -Identity Contoso
-    
-        Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
+      Remove-SharingPolicy -Identity Contoso
+      ```
+
+      ```
+      Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd297931\(v=exchg.150\)) 및 [Remove-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd351071\(v=exchg.150\))을 참조하십시오.
 

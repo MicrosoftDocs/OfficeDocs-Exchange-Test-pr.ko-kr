@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013 사서함의 정보에 액세스하는 데 사용할 수 있는 클라이언트는 매우 다양합니다. 이러한 클라이언트는 Microsoft Outlook, Outlook Web App 같은 데스크톱 프로그램과 휴대폰, 태블릿, 기타 모바일 장치 등, 모바일 클라이언트를 포함하며, 각 클라이언트는 여러 가지 기능을 제공합니다.
 

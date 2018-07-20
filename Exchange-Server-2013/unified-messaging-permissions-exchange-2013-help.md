@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 실행 하려는 Microsoft Exchange 통합 메시징 호출 라우터 서비스를 실행 하는 클라이언트 액세스 서버와 Microsoft Exchange 통합 메시징 서비스 수행 하는 절차에 따라 다를 실행 하는 사서함 서버 또는 cmdlet에서 작업을 수행 하는 데 필요한 사용 권한입니다.
 

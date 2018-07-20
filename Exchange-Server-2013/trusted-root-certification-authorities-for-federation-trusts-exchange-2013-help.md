@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-07-26_
+_**마지막으로 수정된 항목:** 2017-07-26_
 
 Microsoft Exchange Server 2013 조직과 [Azure Active Directory 인증 시스템](https://go.microsoft.com/fwlink/p/?linkid=135986)간에 페더레이션 트러스트를 설정 하기 위해 사용 하는 트러스트를 만들려면 Exchange 서버에 설치 된 디지털 인증서가 필요 합니다. 자체 서명 된 인증서를 사용 하는 것이 좋습니다. 자체 서명 된 인증서를 만들고 Exchange 관리 센터 (EAC) **페더레이션 트러스트 사용** 마법사를 사용 하는 경우 자동으로 설치 됩니다.
 

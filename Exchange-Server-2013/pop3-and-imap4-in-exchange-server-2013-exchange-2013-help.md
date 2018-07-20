@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-08-16_
+_**마지막으로 수정된 항목:** 2016-08-16_
 
 Exchange Server 2013의 POP3 및 IMAP4 프로토콜 간 차이점과 다양한 전자 메일 프로그램에서 Exchange 2013 사서함에 액세스하도록 옵션을 구성하는 방법에 대해 자세히 알아보세요.
 

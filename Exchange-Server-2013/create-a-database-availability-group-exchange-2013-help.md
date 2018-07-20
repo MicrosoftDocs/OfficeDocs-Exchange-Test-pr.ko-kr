@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 DAG(데이터베이스 사용 가능 그룹)는 데이터베이스, 서버 또는 네트워크 오류에 대한 데이터베이스 수준의 자동 복구 기능을 제공하는 최대 16개의 Microsoft Exchange Server 2013 사서함 서버로 이루어진 집합입니다. 사서함 서버를 DAG에 추가하면 이 서버가 DAG의 다른 서버와 함께 작동하여 데이터베이스, 서버 및 네트워크 오류에 대한 데이터베이스 수준의 자동 복구 기능을 제공합니다.
 
@@ -44,7 +44,7 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
       - 사용자는 DAG의 이름을 지정하고, **미러링 모니터 서버** 필드를 비워 두고, 미러링 모니터 서버에서 만들고 공유할 디렉터리를 지정할 수 있습니다. 이 시나리오에서 마법사는 사서함 서버 역할이 설치되어 있지 않은 클라이언트 액세스 서버를 검색하고, 해당 서버에 지정된 감시 디렉터리를 자동으로 만들고 공유하며, 해당 클라이언트 액세스 서버를 미러링 모니터 서버로 사용하도록 DAG를 구성합니다.
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > 지정한 미러링 모니터 서버는 Exchange 2013 또는 Exchange 2010 서버 없으면 미러링 모니터 서버에서 로컬 Administrators 그룹에 Exchange 신뢰할 수 있는 하위 시스템 유니버설 보안 그룹을 추가 해야 합니다. 이러한 보안 권한을 해당 Exchange 수 있는 디렉터리를 만들고 필요에 따라 미러링 모니터 서버에서 공유할 수 있도록 필요 합니다. 적절 한 사용 권한이 구성 되지 않은 경우 다음과 같은 오류가 반환 됩니다.<BR><CODE>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API "AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied."</CODE>
 
 
@@ -65,9 +65,7 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 2.  ![아이콘 추가](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "아이콘 추가")을 클릭하여 DAG를 만듭니다.
 
-3.  
-    
-    **새 데이터베이스 사용 가능 그룹** 페이지에서 DAG에 대한 다음 정보를 입력합니다.
+3.  **새 데이터베이스 사용 가능 그룹** 페이지에서 DAG에 대한 다음 정보를 입력합니다.
     
       - **데이터베이스 사용 가능 그룹 이름**   이 필드에 유효하고 고유한 DAG 이름을 입력합니다(최대 15자). 이 이름은 컴퓨터 이름과 동일하며 해당하는 CNO가 이 이름으로 Active Directory에 만들어집니다. 이 이름은 DAG의 이름과 기본 클러스터 모두의 이름이 됩니다.
     

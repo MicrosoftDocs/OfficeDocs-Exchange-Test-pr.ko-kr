@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 UM(통합 메시징) 헌트 그룹을 삭제하면 해당 UM 헌트 그룹과 연결된 UM IP 게이트웨이는 더 이상 수신 전화를 처리하거나 응답하지 않습니다. UM 헌트 그룹을 삭제하면 UM IP 게이트웨이에 구성된 헌트 그룹이 없게 되고, UM IP 게이트웨이는 UM 통화를 처리할 수 없습니다.
 
 UM 헌트 그룹과 관련된 추가 작업에 대한 자세한 내용은 [UM 헌트 그룹 절차](um-hunt-group-procedures-exchange-2013-help.md)를 참조하십시오.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UM 헌트 그룹 설정을 변경하려면 헌트 그룹을 삭제한 다름 적절한 설정이 포함된 다른 헌트 그룹을 만들어야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> UM 헌트 그룹 설정을 변경하려면 헌트 그룹을 삭제한 다름 적절한 설정이 포함된 다른 헌트 그룹을 만들어야 합니다.
 
 
 ## 시작하기 전에 알아야 할 내용

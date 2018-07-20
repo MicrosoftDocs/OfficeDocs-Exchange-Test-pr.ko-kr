@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-15_
+_**마지막으로 수정된 항목:** 2013-02-15_
 
 [사서함 서버에서 UM 설정 관리](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)
 

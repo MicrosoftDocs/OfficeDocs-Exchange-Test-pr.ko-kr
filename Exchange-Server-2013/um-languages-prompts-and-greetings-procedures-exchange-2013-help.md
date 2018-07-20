@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-17_
+_**마지막으로 수정된 항목:** 2013-04-17_
 
 [UM 언어 팩 설치](install-a-um-language-pack-exchange-2013-help.md)
 

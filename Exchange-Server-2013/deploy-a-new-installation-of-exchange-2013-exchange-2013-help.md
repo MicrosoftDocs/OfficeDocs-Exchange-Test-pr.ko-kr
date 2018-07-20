@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-07-31_
+_**마지막으로 수정된 항목:** 2014-07-31_
 
 MicrosoftExchange Server 2013을 설치하기 전에 [계획 및 배포](planning-and-deployment-for-exchange-2013-installation-instructions.md) 항목에서 중요한 계획 정보와 시스템 요구 사항 및 필수 구성 요소에 대한 정보를 참조하세요.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft UM(통합 메시징)은 송신 팩스 또는 팩스 라우팅 같은 향상된 팩스 기능을 위해 인증된 팩스 파트너 솔루션을 사용합니다. 기본적으로 사용자는 수신 팩스 메시지를 UM 사용 가능 사용자에게 배달할 수 있도록 구성되지 않습니다. Exchange 서버는 팩스 요청을 인증된 팩스 파트너 솔루션으로 전송합니다. 팩스 파트너의 서버는 팩스 데이터를 받은 후 이 팩스가 .tif 첨부 파일로 포함된 전자 메일 메시지로 받는 사람의 사서함에 보냅니다. 자세한 내용은 [음성 메일 사용자가 팩스를 받을 수 있도록](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)을 참조하십시오.
 

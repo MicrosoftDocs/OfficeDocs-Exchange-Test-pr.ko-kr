@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-01_
+_**마지막으로 수정된 항목:** 2014-06-01_
 
 *메일 설명*은 사용자가 전자 메일 메시지를 작성하는 동안 다음 중 하나를 수행할 때 Outlook Web App 및 Microsoft Outlook 2010 이상 버전의 정보 표시줄에 표시되는 정보 메시지입니다.
 

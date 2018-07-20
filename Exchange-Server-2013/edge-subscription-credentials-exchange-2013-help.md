@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이 항목에서는 Edge 구독 프로세스에서 EdgeSync 동기화 프로세스 보안에 사용되는 자격 증명을 프로비전하는 방법과 EdgeSync에서 해당 자격 증명을 사용하여 Exchange 2013 사서함 서버와 Edge 전송 서버 간에 보안 LDAP 연결을 설정하는 방법에 대해 설명합니다. Edge 구독에 대한 자세한 내용은 [Edge 구독](edge-subscriptions-exchange-2013-help.md)를 참조하세요.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Online, Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2013-12-02_
+_**마지막으로 수정된 항목:** 2013-12-02_
 
 기본 제공 상태 보고 cmdlet을 사용하여 관리되는 가용성과 관련한 다음과 같은 여러 작업을 수행할 수 있습니다.
 
@@ -49,17 +49,27 @@ _**마지막으로 수정된 항목:**2013-12-02_
 
 Exchange 2013을 실행 중인 서버에서 상태 집합 및 상태 정보를 보려면 다음 명령 중 하나를 실행합니다.
 
-    Get-HealthReport -Identity <ServerName>
+```
+Get-HealthReport -Identity <ServerName>
+```
 
-    Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
+Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
 
 Exchange 2013을 실행 중인 서버 또는 데이터베이스 가용성 그룹의 상태 집합을 보려면 다음 명령 중 하나를 실행합니다.
 
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup
+```
 
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
 
-    (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
+(Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
 
 ## 상태 집합 목록 보기
 

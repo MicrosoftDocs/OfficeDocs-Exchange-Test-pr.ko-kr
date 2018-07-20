@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013 설치는 기본적으로 검색 사서함을 만듭니다. Exchange Online 기본적으로 검색 사서함도 생성 됩니다. 검색 사서함은 Exchange 관리 센터 (EAC) [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 검색에 대 한 대상 사서함으로 사용 됩니다. 필요에 따라 추가 검색 사서함을 만들 수 있습니다. 새 검색 사서함을 만든 후에 검색 사서함으로 복사 되는 eDiscovery 검색 결과 액세스할 수 있도록 적절 한 사용자에 대 한 전체 액세스 권한을 할당 해야 합니다.
 

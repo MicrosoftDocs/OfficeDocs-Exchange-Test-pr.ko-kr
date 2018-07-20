@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 UM(통합 메시징) 사용 가능 사용자는 Outlook Voice Access를 통해 아날로그, 디지털 또는 휴대 전화를 사용하여 자신의 사서함에 액세스할 수 있습니다. UM 사용 가능 사용자는 Outlook Voice Access에 있는 메뉴 시스템을 사용하여 전자 메일 읽기, 음성 메시지 듣기, Outlook 일정과의 상호 작용, 개인 연락처에 대한 액세스, 개인 옵션 관리(예: Outlook Voice Access PIN 구성 또는 음성 메일 메시지 녹음)를 수행할 수 있습니다. 이 항목에는 Outlook Voice Access 명령 목록 및 사용자가 Outlook Voice Access 번호로 전화를 걸어 자신의 사서함에 액세스할 때 명령을 사용하는 방법 등이 나와 있습니다.
 

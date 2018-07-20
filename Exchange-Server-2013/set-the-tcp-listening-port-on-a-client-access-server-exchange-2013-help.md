@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-09_
+_**마지막으로 수정된 항목:** 2013-04-09_
 
 Microsoft Exchange 통합 메시징 통화 라우터 서비스를 실행 중인 클라이언트 액세스 서버에서 SIP 요청을 수신 대기하는 데 사용되는 TCP 포트를 구성할 수 있습니다. 기본적으로 클라이언트 액세스 서버를 설치할 때 SIP TCP 수신 대기 포트 번호는 5060으로 설정되고 클라이언트 액세스 서버는 TCP 모드로 시작합니다. SIP TCP 포트는 EAC를 사용하여 구성할 수 없습니다. SIP TCP 수신 대기 포트 번호는 **Set-UMCallRouterSettings** cmdlet을 사용하여 구성해야 합니다.
 

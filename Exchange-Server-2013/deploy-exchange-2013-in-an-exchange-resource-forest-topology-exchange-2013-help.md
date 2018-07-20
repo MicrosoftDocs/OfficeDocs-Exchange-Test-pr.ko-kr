@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 이 항목에서는 Microsoft Exchange 2013Exchange 리소스 포리스트 토폴로지에서 배포 하는 방법에 설명 합니다. Exchange 리소스 포리스트는 전용된 Exchange 포리스트를 라고도 합니다. 이 항목에서는 기존 Exchange 2013 토폴로지를 없는 가정 합니다.
 

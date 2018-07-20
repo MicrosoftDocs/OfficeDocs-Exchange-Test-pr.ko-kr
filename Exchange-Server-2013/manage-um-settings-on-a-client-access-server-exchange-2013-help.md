@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-09_
+_**마지막으로 수정된 항목:** 2013-04-09_
 
 Microsoft Exchange 통합 메시징 통화 라우터 서비스를 실행 중인 클라이언트 액세스 서버를 설치하면 동시 통화 수, TCP 및 TLS(전송 계층 보안) 수신 포트, 상태, 시작 모드 등 여러 옵션을 구성할 수 있습니다.
 

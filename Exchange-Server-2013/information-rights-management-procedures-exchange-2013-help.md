@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-11-01_
+_**마지막으로 수정된 항목:** 2013-11-01_
 
 [내부 메시지에 대 한 IRM을 사용 하지 않도록 설정 하거나 사용](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md)
 

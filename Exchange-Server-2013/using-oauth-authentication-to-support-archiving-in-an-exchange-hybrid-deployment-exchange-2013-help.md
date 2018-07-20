@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 2013 하이브리드 배포에 있으며 Exchange Server용 EOA(Exchange Online Archiving)를 사용하는 경우 Exchange 2013 CU5(누적 업데이트 5)로 업그레이드한 후에 온-프레미스 및 Exchange Online 조직 간에 OAuth 인증을 구성해야 합니다. EOA는 온-프레미스 사서함이 있는 사용자에 대해 클라우드 기반 보관을 허용합니다. 이 시나리오에서 온-프레미스 사서함 서버의 MRM(메시징 레코드 관리) 도우미는 보관 정책을 적용하고 사용자의 사서함에서 클라우드 기반 보관 저장소로 메시지를 자동으로 이동합니다. Exchange 2013 CU5에서는 OAuth 인증이 사용됩니다.
 

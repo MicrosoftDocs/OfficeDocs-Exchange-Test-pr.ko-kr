@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-08-26_
+_**마지막으로 수정된 항목:** 2013-08-26_
 
 SSL(Secure Sockets Layer)은 클라이언트와 서버 간의 통신 보안을 유지하는 방법입니다. Exchange Server 2013의 경우 서버와 클라이언트 간의 보안 통신에 SSL이 사용됩니다. 클라이언트에는 휴대폰, 조직 네트워크의 내부 컴퓨터 및 외부 컴퓨터가 포함됩니다.
 

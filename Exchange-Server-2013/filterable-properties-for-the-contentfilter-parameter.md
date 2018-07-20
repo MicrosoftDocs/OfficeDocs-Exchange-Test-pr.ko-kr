@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-09-10_
+_**마지막으로 수정된 항목:** 2015-09-10_
 
 이 항목에서는 *ContentFilter* 매개 변수의 필터링할 수 있는 속성에 대해 설명합니다. *ContentFilter* 매개 변수를 사용하여 메시지를 필터가 일치하는 .pst 파일로 내보낼 수 있습니다. *ContentFilter* 매개 변수는 [New-MailboxExportRequest](https://technet.microsoft.com/ko-kr/library/ff607299\(v=exchg.150\)) cmdlet에서 사용됩니다.
 

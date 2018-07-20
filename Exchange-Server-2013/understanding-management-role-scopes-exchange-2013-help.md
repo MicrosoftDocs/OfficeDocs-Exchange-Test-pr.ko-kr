@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 *관리 역할 범위*를 이용하면 관리 역할 할당을 만들 때 관리 역할의 영향 범위를 정의할 수 있습니다. 범위를 적용하면 역할이 할당된 역할 담당자는 그 범위에 있는 개체만 수정할 수 있습니다. 역할 담당자는 관리 역할 그룹, 관리 역할, 관리 역할 할당 정책, 사용자 또는 USG(유니버설 보안 그룹)입니다. 관리 역할에 대한 자세한 내용은 [역할 기반 액세스 제어 이해](understanding-role-based-access-control-exchange-2013-help.md)를 참조하십시오.
 

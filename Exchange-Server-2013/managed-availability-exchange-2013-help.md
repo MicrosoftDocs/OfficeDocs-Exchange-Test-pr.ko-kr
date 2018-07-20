@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Online, Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2017-03-29_
+_**마지막으로 수정된 항목:** 2017-03-29_
 
 메시징 시스템 관리자의 기본적인 목표는 사용자에게 항상 효율적인 전자 메일 환경을 제공하는 것입니다. Microsoft Exchange Server 2013 조직의 가용성과 안정성을 보장하려면 시스템의 모든 측면을 적극적으로 모니터링하고 확인된 문제를 신속하게 해결해야 합니다. 이전 Exchange 버전에서는 중요 시스템 구성 요소를 모니터링할 때 대개 Microsoft System Center 2012 Operations Manager와 같은 외부 응용 프로그램을 사용하여 데이터를 수집한 다음 수집된 데이터 분석을 통해 확인된 문제에 대한 복구 작업을 제공했습니다. Exchange 2010 이하 버전에서는 상태 매니페스트 및 상관 관계 엔진이 관리 팩 형태로 포함되어 있었습니다. Operations Manager에서는 이러한 구성 요소를 통해 특정 구성 요소의 상태가 정상인지 여부를 확인했습니다. 또한 Operations Manager는 Exchange 2010에서 기본 제공되는 진단 cmdlet 인프라를 사용하여 다양한 시스템 측면에 대해 가상 트랜잭션을 실행했습니다.
 

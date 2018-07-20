@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 EWS.Proxy 상태 설정은 CAS(클라이언트 액세스 서버)에서 EWS(Exchange 웹 서비스) 프록시 인프라의 가용성을 모니터링합니다. EWS.Proxy 상태 설정은 다음 상태 설정과 밀접하게 관련됩니다.
 

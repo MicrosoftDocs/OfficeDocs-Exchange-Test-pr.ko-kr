@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-02-03_
+_**마지막으로 수정된 항목:** 2017-02-03_
 
 설치 하거나 EAC 또는 셸을 사용 하 여 조직에 대 한 Outlook 용 추가 기능을 제거할 수 있습니다.
 

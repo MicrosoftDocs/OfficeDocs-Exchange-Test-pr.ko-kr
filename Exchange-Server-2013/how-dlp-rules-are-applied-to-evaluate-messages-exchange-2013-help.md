@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange DLP(데이터 손실 방지) 정책 내에 중요한 정보 규칙을 설정하여 이메일 메시지에서 매우 구체적인 데이터를 검색할 수 있습니다. 이 항목은 이러한 규칙의 적용 방법과 메시지의 평가 방법을 이해하는 데 도움이 됩니다. 규칙이 적용되는 방법을 알면 DLP 검색 정확성을 높일 수 있을 뿐만 아니라 이메일 사용자에 대한 워크플로 중단을 방지할 수 있습니다. Microsoft에서 제공한 신용 카드 정보 규칙을 예로 사용합니다. 전송 규칙 또는 DLP 정책을 활성화하면 Exchange 전송 규칙 에이전트가 사용자가 보내는 모든 메시지를 만든 규칙 집합과 비교합니다.
 
@@ -147,9 +147,13 @@ Microsoft에서 이 규칙을 설정한 방식에서는 규칙과 일치하기 �
 
 이 문서의 신용 카드 예를 다른 중요한 정보 규칙으로도 확장할 수 있습니다. Exchange에서 Microsoft가 제공한 규칙의 전체 목록을 보려면 다음 방법으로 Exchange 관리 셸에서 [Get-ClassificationRuleCollection](https://technet.microsoft.com/ko-kr/library/jj218696\(v=exchg.150\)) cmdlet을 사용하세요.
 
-    $rule_collection = Get-ClassificationRuleCollection
+```
+$rule_collection = Get-ClassificationRuleCollection
+```
 
-    $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
+$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## 자세한 내용
 

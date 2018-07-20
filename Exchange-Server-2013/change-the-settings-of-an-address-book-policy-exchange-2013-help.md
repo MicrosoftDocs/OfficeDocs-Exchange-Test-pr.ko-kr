@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-03-30_
+_**마지막으로 수정된 항목:** 2016-03-30_
 
 ABP(주소록 정책)를 만들면 이름 및 할당된 GAL(전체 주소 목록), OAB(오프라인 주소록), 방 목록 및 주소 목록을 보거나 수정할 수 있습니다.
 

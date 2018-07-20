@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-17_
+_**마지막으로 수정된 항목:** 2015-04-17_
 
 Exchange 검색에서는 전자 메일 메시지의 보낸 사람, 받는 사람, 메시지 본문, 첨부 파일 등 다양한 항목 속성을 인덱싱합니다.
 

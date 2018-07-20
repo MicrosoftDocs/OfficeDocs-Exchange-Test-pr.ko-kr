@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-11-15_
+_**마지막으로 수정된 항목:** 2017-11-15_
 
 다음을 포함하여 보존 태그를 내보내거나 가져오는 여러 가지 시나리오가 있습니다.
 

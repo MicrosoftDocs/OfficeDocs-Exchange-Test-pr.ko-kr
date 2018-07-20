@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-06-04_
+_**마지막으로 수정된 항목:** 2015-06-04_
 
 Microsoft Exchange Server 2013을 사용 하는 이유에서 Exchange 공유 사서함에 대 한 설명 및 사서함을 공유 하는 Exchange에 위임 된 사서함을 변환 하는 방법입니다.
 
@@ -35,9 +35,9 @@ Microsoft Exchange Server 2013을 사용 하는 이유에서 Exchange 공유 사
 
 공유 사서함은 고유한 사용자 이름과 암호가 없는 사용자 사서함의 유형입니다. 따라서 사용자가 공유 사서함에 직접 로그인할 수 없습니다. 공유 사서함에 액세스하려면 사용자는 먼저 사서함에 대한 다른 사람 이름으로 보내기 또는 모든 액세스 권한을 부여받아야 합니다. 권한이 부여되면 사용자는 자신의 사서함에 로그인한 다음 Outlook 프로필에 공유 사서함을 추가하여 액세스합니다. Exchange 2003 이하 버전에서 공유 사서함은 관리자가 위임 액세스 권한을 부여하는 일반 사서함이었습니다. Exchange 2007부터 공유 사서함은 자체 받는 사람 유형이 되었습니다.
 
-  - **RecipientType:** UserMailbox
+  - **RecipientType:**  UserMailbox
 
-  - **RecipientTypeDetails:** SharedMailbox
+  - **RecipientTypeDetails:**  SharedMailbox
 
 이전 버전의 Exchange에서 공유 사서함을 만드는 작업은 Exchange 관리 셸을 사용하여 일부 작업을 완료해야 하는 여러 단계로 구성된 프로세스였습니다. Exchange 2013에서는 EAC(Exchange 관리 센터)를 사용하여 한 단계에서 공유 사서함을 만들 수 있습니다. 자세한 내용은 [공유 사서함 만들기](create-a-shared-mailbox-exchange-2013-help.md)를 참조하십시오. 실제로 EAC에는 공유 사서함을 만들기 위한 전용 기능 영역이 있습니다. **받는 사람** \> **공유 사서함**으로 이동하여 공유 사서함에 대한 모든 관리 작업을 봅니다.
 

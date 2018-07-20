@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-15_
+_**마지막으로 수정된 항목:** 2012-11-15_
 
 통합 메시징 (UM) 사서함 정책을 사용자가 통합 메시징을 사용 하도록 설정 하는 경우에 필요 합니다. 음성 메일 사용자의 사서함의 컬렉션에 정책 또는 보안 설정의 공통 집합을 적용 하려면 UM 사서함 정책을 만듭니다. UM 사서함 정책 다음과 같은 UM 설정을 지정 하는데 사용 됩니다.
 

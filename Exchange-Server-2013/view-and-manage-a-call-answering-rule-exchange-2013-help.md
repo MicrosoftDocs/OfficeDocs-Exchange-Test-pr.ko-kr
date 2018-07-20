@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 셸을 사용 하 여를 보거나 구성 하나 또는 사용자에 대 한 자세한 전화 응답 규칙. 확인 하거나 전화 응답 규칙을 여러 사용자에 대 한 관리 하려면 Exchange 관리 셸 스크립트에서 **Get-UMCallAnsweringRule** 또는 **Set-UMCallAnsweringRule** cmdlet를 사용할 수 있습니다.
 

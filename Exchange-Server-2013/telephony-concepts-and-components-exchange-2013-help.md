@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-25_
+_**마지막으로 수정된 항목:** 2013-04-25_
 
 계획 및 MicrosoftExchange 2013 를 배포 하는 경우에서 통합 메시징 (UM) 네트워크를 통합 메시징 및 전화 통신 네트워크를 이해 해야 합니다. 이 항목에 간략하게 전화 통신 인프라 개념을 제공 하는데 도움이 되는 구성 요소 계획 및 Exchange 2013 를 실행 하는 서버를 배포 및 통합 메시징 합니다.
 

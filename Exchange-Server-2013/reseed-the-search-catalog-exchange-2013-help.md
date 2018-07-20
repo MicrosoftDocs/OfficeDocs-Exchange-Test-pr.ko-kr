@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 사서함 데이터베이스 복사본의 콘텐츠 인덱스 카탈로그가 손상된 경우 카탈로그를 다시 시드해야 할 수 있습니다. 손상된 콘텐츠 인덱스는 응용 프로그램 이벤트 로그에서 다음 이벤트로 표시됩니다.
 
@@ -88,9 +88,13 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 
 1.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 중지합니다.
     
-        Stop-Service MSExchangeFastSearch
-    
-        Stop-Service HostControllerService
+    ```
+    Stop-Service MSExchangeFastSearch
+    ```
+
+    ```
+    Stop-Service HostControllerService
+    ```
 
 2.  Exchange 콘텐츠 인덱스 카탈로그가 포함된 폴더를 삭제하거나 이동하거나 이름을 바꿉니다. 이 폴더의 이름은 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`입니다. 예를 들어 폴더 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`의 이름을 바꿀 수 있습니다.
     
@@ -102,9 +106,13 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 
 3.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 다시 시작합니다.
     
-        Start-Service MSExchangeFastSearch
-    
-        Start-Service HostControllerService
+    ```
+    Start-Service MSExchangeFastSearch
+    ```
+
+    ```
+    Start-Service HostControllerService
+    ```
     
     이러한 서비스를 다시 시작하면 Exchange Search가 콘텐츠 인덱스 카탈로그를 다시 작성합니다.
 

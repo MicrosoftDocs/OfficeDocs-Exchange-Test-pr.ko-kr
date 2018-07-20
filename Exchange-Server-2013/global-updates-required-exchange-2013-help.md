@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-12-02_
+_**마지막으로 수정된 항목:** 2014-12-02_
 
 설치를 계속할 수 없는 Microsoft Exchange Server 2013 로그온 한 사용자는 Active Directory에 게 전역 업데이트 하는 데 필요한 계정 사용 권한이 없으면 때문입니다.
 

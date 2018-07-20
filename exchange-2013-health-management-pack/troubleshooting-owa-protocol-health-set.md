@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 OWA 합니다. 사서함 서버에서 Outlook Web App 프로토콜을 모니터링 하는 프로토콜 상태 설정 합니다.
 

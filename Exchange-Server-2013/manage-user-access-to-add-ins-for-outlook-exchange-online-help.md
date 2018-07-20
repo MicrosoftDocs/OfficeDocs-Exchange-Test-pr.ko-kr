@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2018-04-17_
+_**마지막으로 수정된 항목:** 2018-04-17_
 
 Outlook 용 추가 기능에 대 한 사용자 액세스를 관리 하는 EAC 또는 Exchange Online PowerShell을 사용할 수 있습니다.
 
@@ -111,9 +111,13 @@ Exchange Online PowerShell 여부를 지정할 추가 기능을 사용할 수 �
 
 LinkedIn 추가 기능을 사용할 수 있도록 Marketing 팀 메일 그룹의 구성원만을 하려는 경우에 다음 명령을 실행 합니다.
 
-    $a = Get-DistributionGroupMember Marketing
+```
+$a = Get-DistributionGroupMember Marketing
+```
 
-    Set-app <add-in ID for the LinkedIn add-in> -Organizationadd-in -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled}
+```
+Set-app <add-in ID for the LinkedIn add-in> -Organizationadd-in -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled}
+```
 
 자세한 구문 및 매개 변수 [Set-App](https://technet.microsoft.com/ko-kr/library/jj218630\(v=exchg.150\))를 참조 하십시오.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 이 항목에서는 받는 사람 필터를 사용하여 주소 목록을 만드는 방법에 대해 설명합니다. 주소 목록에 대한 자세한 내용은 [주소 목록](address-lists-exchange-2013-help.md)를 참조하십시오.
 

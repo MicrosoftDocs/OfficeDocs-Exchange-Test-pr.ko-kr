@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-16_
+_**마지막으로 수정된 항목:** 2013-04-16_
 
 UM (통합 메시징) 사용자가 전화를 통해 음성 메일 시스템에 연결 때 Outlook Voice Access 메뉴 시스템을 탐색에 사용 합니다. 사용자가 음성 메일 시스템에 액세스 하기 전에 시스템은 자신의 PIN을 입력 하 라는 메시지가 나타납니다. 관리자로 PIN 설정 및 요구 사항을 구성할 수 있으며 PIN 관리 작업을 수행할 수 있습니다. 사용자가 음성 메일에 대해 활성화 된 PIN을 생성 된 후 사용자의 사서함에서 암호화 된 사용자의 PIN 저장 됩니다.
 

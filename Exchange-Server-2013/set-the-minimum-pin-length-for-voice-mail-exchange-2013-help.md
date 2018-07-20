@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징)을 사용할 수 있도록 설정된 Outlook Voice Access 사용자의 최소 PIN 길이를 구성할 수 있습니다. UM 사서함 정책에 대해 구성하는 PIN 설정은 해당 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에게 적용됩니다.
 

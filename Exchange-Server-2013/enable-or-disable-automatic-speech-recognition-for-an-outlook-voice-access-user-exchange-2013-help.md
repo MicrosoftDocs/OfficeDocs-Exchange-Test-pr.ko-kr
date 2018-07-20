@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) 및 음성 사서함 사용이 가능한 사용자에 대해 ASR(자동 음성 인식)을 구성할 수 있습니다. 사서함에서 ASR을 사용하도록 설정된 Outlook Voice Access 사용자는 음성 명령을 사용하여 사서함 메뉴에서 이동할 수 있습니다. ASR은 기본적으로 사용됩니다. ASR을 사용하도록 설정되지 않은 사용자는 터치톤이라고도 하는 DTMF(복합 주파수 부호) 입력을 사용하여 메뉴에서 이동해야 합니다.
 

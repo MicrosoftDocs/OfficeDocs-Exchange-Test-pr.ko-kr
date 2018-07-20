@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 전화 응답 규칙을 구성 하는 UM (통합 메시징) 사서함 정책과 사용 하 여 연관 된 사용자를 허용 하거나에서 작업을 금지 수 있습니다. UM 다이얼 플랜에서 전화 응답 규칙을 구성 하는 옵션을 비활성화 하는 경우에 전화 응답 규칙 기능 UM 사서함 정책에 연결 된 UM 사용이 가능한 사용자에 게 사용할 수 없습니다. 기본 설정은 사용 됩니다.
 

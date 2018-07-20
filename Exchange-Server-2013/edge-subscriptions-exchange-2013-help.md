@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Edge 전송 서버는 모든 인터넷 연결 메일 흐름을 처리하고 Exchange 조직에 대해 SMTP 릴레이 및 스마트 호스트 서비스를 제공하여 공격 영역을 최소화합니다. 조직 경계 네트워크의 Edge 전송 서버에서 실행되는 일련의 에이전트에 의해 추가적인 메시지 보호 및 보안 계층이 제공됩니다. 이러한 에이전트는 바이러스 및 스팸 방지 기능을 제공하고 메시지 흐름을 제어하는 전송 규칙을 적용합니다.
 
@@ -120,7 +120,7 @@ ESRA 계정 및 이러한 계정을 사용하여 안전한 EdgeSync 동기화 �
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
 
 
-> [!NOTE]
+> [!NOTE]  
 > <EM>CreateInternetSendConnector</EM> 및 <EM>CreateInboundSendConnector</EM> 매개 변수의 기본값은 모두 <CODE>$true</CODE>이며, 여기서는 예시용으로만 표시됩니다.
 
 
@@ -130,7 +130,7 @@ ESRA 계정 및 이러한 계정을 사용하여 안전한 EdgeSync 동기화 �
     New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
 
 
-> [!NOTE]
+> [!NOTE]  
 > Edge 전송 서버에서 <STRONG>New-EdgeSubscription</STRONG> cmdlet을 실행하면 사용하지 않도록 설정할 명령과 Edge 전송 서버에서 덮어쓸 구성을 확인하라는 메시지가 표시됩니다. 이 확인 메시지를 무시하려면 <EM>Force</EM> 매개 변수를 사용해야 합니다. 이 매개 변수는 <STRONG>New-EdgeSubscription</STRONG> cmdlet을 스크립팅하는 경우에 유용합니다. <EM>Force</EM> 매개 변수는 Edge 전송 서버를 다시 구독할 때 만들어지는 파일과 이름이 같은 기존 파일을 덮어쓰는 데에도 사용됩니다.
 
 
@@ -229,7 +229,7 @@ Edge 구독 프로세스는 다음과 같은 송신 커넥터를 프로비전합
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>Edge 구독 이름</em>&gt;</p>
 
-> [!NOTE]
+> [!NOTE]  
 > Edge 구독의 이름은 가입된 Edge 전송 서버의 이름과 같습니다.
 
 
@@ -314,13 +314,13 @@ Edge 전송 서버를 Active Directory 사이트에 처음 구독하면 디렉�
 이러한 잠금 및 임대 방식을 사용하면 여러 EdgeSync 인스턴스가 데이터를 동시에 같은 Edge 전송 서버로 전달하지 못하도록 할 수 있습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 구독된 Active Directory 서비스에 Exchange 2010 또는 Exchange 2007 사서함 서버도 있는 경우에는 Exchange 2013 사서함 서버가 항상 우선적으로 사용되며 복제를 수행합니다.
 
 
 
 
-> [!NOTE]
+> [!NOTE]  
 > Edge 전송 서버를 Active Directory 사이트에 구독하면 구독 시 해당 Active Directory 사이트에 설치되어 있는 모든 사서함 서버가 EdgeSync 동기화 프로세스에 참여할 수 있습니다. 이 서버 중 하나를 제거하면 나머지 사서함 서버에서 실행 중인 EdgeSync 서비스에서 데이터 동기화 프로세스를 계속 진행합니다. 그러나 나중에 Active Directory 사이트에 새로 설치하는 사서함 서버는 EdgeSync 동기화에 자동으로 참여하지 않습니다. 이러한 새 사서함 서버가 EdgeSync 동기화에 참여하도록 하려면 Edge 전송 서버를 다시 구독해야 합니다.
 
 

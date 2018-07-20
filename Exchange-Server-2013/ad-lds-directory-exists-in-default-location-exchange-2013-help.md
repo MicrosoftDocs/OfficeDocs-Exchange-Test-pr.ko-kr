@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 AD LDS(Active Directory Lightweight Directory Services) 설치에 실패했기 때문에 Microsoft Exchange Server 2013 설치를 계속할 수 없습니다.
 

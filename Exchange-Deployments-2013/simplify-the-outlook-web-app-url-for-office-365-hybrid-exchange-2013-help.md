@@ -53,7 +53,7 @@ _<strong>마지막으로 수정된 항목:</strong>2016-11-11_
     
         Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
     
-    **참고:**
+    **참고:** 
     
       - https가 아닌 http를 사용합니다.
     
@@ -110,5 +110,5 @@ _<strong>마지막으로 수정된 항목:</strong>2016-11-11_
 </table>
 
 
-**참고:** ID 페더레이션을 사용하려면 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 항목에 설명된 것처럼 AD FS 끝점이 Internet Explorer의 인트라넷 영역에 구성되어야 하고, 해당 AD FS가 일반 Office 365 지침별로 구성되어야 합니다.
+**참고:**  ID 페더레이션을 사용하려면 [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=83446) 항목에 설명된 것처럼 AD FS 끝점이 Internet Explorer의 인트라넷 영역에 구성되어야 하고, 해당 AD FS가 일반 Office 365 지침별로 구성되어야 합니다.
 

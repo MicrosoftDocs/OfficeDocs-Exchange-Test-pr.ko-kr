@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Exchange Server Certificates` 관리 역할에는 관리자가 만들기, 가져오기, 내보내기 및 개별 서버에서 Exchange 서버 인증서를 관리할 수 있도록 합니다.
 

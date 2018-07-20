@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-01-30_
+_**마지막으로 수정된 항목:** 2013-01-30_
 
 [사용자에 대 한 음성 메일 미리 보기 파트너 서비스를 구성 합니다.](configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md)
 

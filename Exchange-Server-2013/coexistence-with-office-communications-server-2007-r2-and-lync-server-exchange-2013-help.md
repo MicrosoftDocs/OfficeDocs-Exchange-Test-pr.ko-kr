@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Communications Server 2007 R2 및 Lync Server에는 IM (인스턴트 메시징)을 포함 하 여 다양 한 최종 사용자 기능을, 현재 상태, 단체 IM 및 해당 음성 메일 기능 통합 될 수 있는 Exchange UM (통합 메시징)를 제공 합니다. Lync Server 2010 또는 2013을 통합 하는 배포의 경우 사용자가 음성 메일 액세스 Lync Server 구성 요소를 사용 하 여 음성 메일에 대해 사용할 수 있는 사용자를 사용할 수 있는 Enterprise Voice에 대해 사용할 수 있습니다.
 

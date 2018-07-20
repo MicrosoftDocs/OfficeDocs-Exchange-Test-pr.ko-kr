@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013 SP1_
+_**적용 대상:** Exchange Server 2013 SP1_
 
-_**마지막으로 수정된 항목:**2017-04-14_
+_**마지막으로 수정된 항목:** 2017-04-14_
 
 **요약**:
 
@@ -272,9 +272,13 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
 
 다음 Windows PowerShell 명령을 앞의 단계와 동일한 작업을 수행 합니다.
 
-    Import-Module ADFS
+```
+Import-Module ADFS
+```
 
-    Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
+Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
 
 자세한 내용 및 구문에 대 한 [설치 AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)을 참조 하십시오.
 
@@ -402,18 +406,8 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 웹 응용 프로그램 프록시는 Windows Server 2012 r 2에서에서 새 원격 액세스 역할 서비스입니다. 웹 응용 프로그램 프록시는 회사 네트워크 외부에서 액세스할 수 있는 많은 장치에서 사용자를 허용 하려면 회사 네트워크 내부 웹 응용 프로그램에 대 한 역방향 프록시 기능을 제공 합니다. 웹 응용 프로그램 프록시 Active Directory Federation Services (AD FS)를 사용 하 여 웹 응용 프로그램에 대 한 액세스를 사전 인증 및 AD FS 프록시도도 기능을 수행 합니다. 웹 응용 프로그램 프록시 필요 하지 않지만 AD FS 외부 클라이언트에 액세스할 수 있는 경우 것이 좋습니다. 그러나 Outlook Web App 에서 오프 라인 액세스는 웹 응용 프로그램 프록시를 통해 AD FS 인증을 사용 하는 경우 지원 되지 않습니다. [설치 하 고 내부 응용 프로그램을 게시에 대 한 웹 응용 프로그램 프록시 구성](https://go.microsoft.com/fwlink/?linkid=392705) 를 표시 하 여 웹 응용 프로그램 프록시를 통합 하는 방법에 대 한 자세한 정보를 찾을 수 있습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD FS가 설치되어 있는 것과 같은 서버에는 웹 응용 프로그램 프록시를 설치할 수 없습니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> AD FS가 설치되어 있는 것과 같은 서버에는 웹 응용 프로그램 프록시를 설치할 수 없습니다.
 
 
 웹 응용 프로그램 프록시를 배포하려면 웹 응용 프로그램 프록시 서버로 사용할 서버에 웹 응용 프로그램 프록시 역할 서비스가 포함된 원격 액세스 서버 역할을 설치해야 합니다. 웹 응용 프로그램 프록시 역할 서비스를 설치하려면 다음을 수행합니다.

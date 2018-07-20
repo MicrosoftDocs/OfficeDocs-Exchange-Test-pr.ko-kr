@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 50GB 제한을 초과하는 검색 사서함이 있습니까? 새 검색 사서함을 만들고 큰 검색 사서함의 검색 결과를 새 검색 사서함으로 복사하여 이 문제를 해결할 수 있습니다.
 
@@ -100,23 +100,27 @@ Exchange Server 2013 및 Exchange Online 을 원본 위치 eDiscovery 검색 결
 
 2.  검색이 만들어진 후에 셸 또는 EAC(Exchange 관리 센터)를 사용하여 검색을 시작합니다.
     
-      - **셸 사용:** 다음 명령을 실행하여 이전 단계에서 만든 검색을 시작합니다. *EstimateOnly* 스위치는 검색이 만들어질 때 포함되므로 검색 결과가 대상 검색 사서함으로 복사되지 않습니다.
+      - **셸 사용:**  다음 명령을 실행하여 이전 단계에서 만든 검색을 시작합니다. *EstimateOnly* 스위치는 검색이 만들어질 때 포함되므로 검색 결과가 대상 검색 사서함으로 복사되지 않습니다.
         
             Start-MailboxSearch "Search results from 2010"
     
-      - **EAC 사용:** **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 이전 단계에서 만든 검색을 선택하고 **검색**![검색 아이콘](images/Dd353189.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "검색 아이콘")을 클릭한 다음 **검색 결과 예상**을 클릭합니다.
+      - **EAC 사용:**  **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 이전 단계에서 만든 검색을 선택하고 **검색**![검색 아이콘](images/Dd353189.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "검색 아이콘")을 클릭한 다음 **검색 결과 예상**을 클릭합니다.
 
 3.  필요한 경우 날짜 범위를 조정하여 반환되는 검색 결과의 양을 늘리거나 줄입니다. 날짜 범위를 변경하는 경우 검색을 다시 실행하여 새로운 결과 예상값을 가져옵니다. 새 날짜 범위를 반영하도록 검색 이름을 변경하는 것을 고려할 수 있습니다.
 
 4.  검색 테스트가 끝나면 셸 또는 EAC를 사용하여 검색 결과를 대상 검색 사서함으로 복사합니다.
     
-      - **셸 사용:** 다음 명령을 실행하여 검색 결과를 복사합니다. 검색 결과를 복사하려면 먼저 *EstimateOnly* 스위치를 제거해야 합니다.
+      - **셸 사용:**  다음 명령을 실행하여 검색 결과를 복사합니다. 검색 결과를 복사하려면 먼저 *EstimateOnly* 스위치를 제거해야 합니다.
         
-            Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-        
-            Start-MailboxSearch "Search results from 2010"
+         ```
+         Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
+         ```
+      
+         ```
+         Start-MailboxSearch "Search results from 2010"
+         ```
     
-      - **EAC 사용:** **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 해당 검색을 선택하고 **검색**![검색 아이콘](images/Dd353189.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "검색 아이콘")을 클릭한 후 **검색 결과 복사**를 클릭합니다.
+      - **EAC 사용:**  **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 해당 검색을 선택하고 **검색**![검색 아이콘](images/Dd353189.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "검색 아이콘")을 클릭한 후 **검색 결과 복사**를 클릭합니다.
     
     자세한 내용은 [EDiscovery 검색 결과 검색 사서함으로 복사](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)를 참조하세요.
 
@@ -132,11 +136,11 @@ Exchange Server 2013 및 Exchange Online 을 원본 위치 eDiscovery 검색 결
 
 셸 또는 EAC를 사용하여 eDiscovery 검색을 삭제할 수 있습니다.
 
-  - **셸 사용:** 다음 명령을 실행합니다.
+  - **셸 사용:**  다음 명령을 실행합니다.
     
         Remove-MailboxSearch -Identity <name of search>
 
-  - **EAC 사용:** **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 삭제할 검색을 선택한 다음 **삭제**![삭제 아이콘](images/Dd979797.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "삭제 아이콘")을 클릭합니다.
+  - **EAC 사용:**  **규정 준수 관리** \> **원본 위치 eDiscovery 및 유지**로 이동합니다. 삭제할 검색을 선택한 다음 **삭제**![삭제 아이콘](images/Dd979797.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "삭제 아이콘")을 클릭합니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 

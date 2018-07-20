@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-07-14_
+_**마지막으로 수정된 항목:** 2014-07-14_
 
 Microsoft Exchange Server 2013 를 사서함 콘텐츠를 검색 하려면 원본 위치 eDiscovery를 사용할 수 있습니다. 언제 든 지 원본 위치 eDiscovery 검색을 제거할 수 있습니다. 원본 위치 eDiscovery 검색을 제거 하면 검색 결과 검색 사서함에서 제거 됩니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) 사서함 정책과 연결된 사용자에 대해 음성 메일 미리 보기 기능을 사용하지 않도록 설정할 수 있습니다. 이 설정을 사용하지 않도록 설정하면 사용자가 음성 메일 메시지의 텍스트를 전자 메일의 메시지 본문이나 문자 메시지로 받을 수 없습니다. 기본적으로 사용하도록 설정되어 있습니다.
 

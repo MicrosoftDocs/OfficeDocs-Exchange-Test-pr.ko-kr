@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-08-26_
+_**마지막으로 수정된 항목:** 2013-08-26_
 
 Microsoft Exchange UM(통합 메시징)을 사용하면 조직의 필요에 따라 하나 또는 여러 개의 UM 자동 전화 교환을 만들 수 있습니다. UM 다이얼 플랜 및 UM IP 게이트웨이와 같은 다른 통합 메시징 구성 요소와는 달리 UM 자동 전화 교환을 만들 필요가 없습니다. 자동 전화 교환을 사용하면 내부 발신자와 외부 발신자가 조직 내의 사용자나 부서를 찾아서 호출을 전달할 수 있습니다. 이 항목에서는 통합 메시징에 포함된 UM 자동 전화 교환 기능에 대해 설명합니다.
 

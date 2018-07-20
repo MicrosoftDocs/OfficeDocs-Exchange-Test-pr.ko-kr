@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**라는 Exchange 관리 셸 cmdlet입니다. 이 cmdlet을 사용하여 전화 응답 시나리오와 관련된 구성 오류를 진단하고 온-프레미스 및 크로스-프레미스 Microsoft Exchange Server 2010 SP1(서비스 팩 1) 이상의 UM 배포에서 음성 사서함이 제대로 작동하는지 테스트할 수 있습니다. 이 cmdlet은 Microsoft Office Microsoft Lync Server 2010 이상이 배포된 환경 또는 Vo IP 게이트웨이, IP PBX 또는 SBC(Session Border Controller)가 포함된 UM 배포 환경에서 사용할 수 있습니다.
 
@@ -47,7 +47,7 @@ UM 문제해결 도구를 실행 하는 경우 기본적으로 컴퓨터에 로�
 
   - Microsoft .NET Framework 3.5 제품군 업데이트 Windows Vista x64 및 Windows Server 2008 x64 Windows Vista 또는 Windows Server 2008 컴퓨터에서 도구를 실행 하는 경우를 업데이트 합니다. 업데이트를 다운로드 하려면 [Windows Server 2008 x64 및 Windows Vista x64, 용 Microsoft.NET Framework 3.5 제품군 업데이트](https://go.microsoft.com/fwlink/p/?linkid=178998)를 참조 하십시오.
 
-  - Windows Remote Management(WinRM) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu). 자세한 내용은 Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=968930)를 참조하세요.
+  - Windows Remote Management(WinRM) 2.0 및 Windows PowerShell V2(Windows6.0-KB968930.msu). 자세한 내용은 Microsoft 기술 자료 문서 968930, [Windows 관리 프레임워크 핵심 패키지(Windows PowerShell 2.0 및 WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=968930)를 참조하세요.
 
   - Unified Communications Managed AP1 2.0, Core Runtime (64 비트)입니다. UcmaRuntimeWebDownloadX64.msi 프로그램 파일을 다운로드 하려면 [Unified Communications Managed API 2.0, Core Runtime (64 비트)](https://go.microsoft.com/fwlink/p/?linkid=198175)를 참조 하십시오.
 

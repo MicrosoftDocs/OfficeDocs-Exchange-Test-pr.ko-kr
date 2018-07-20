@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Microsoft Exchange Server 2013의 경우 이 항목의 내용이 업데이트되지 않았습니다. 아직 업데이트되지 않았지만 Exchange 2013에 계속 적용할 수 있습니다. 여전히 도움이 필요하면 아래 커뮤니티 리소스를 확인하세요.
 
@@ -103,7 +103,7 @@ Exchange 설치 하려면 사용 권한 상속 다음 Exchange 개체에 사용�
 <li><p><strong>보안</strong> 탭을 선택 하 고 <strong>고급</strong> 을 클릭 합니다.</p></li>
 <li><p>다시 사용 권한 상속을 사용 하도록 설정 하려면 <strong>이 개체 및 모든 자식 개체에 전파 하는 부모 로부터 상속 가능한 사용 권한을 허용</strong> 선택 합니다.</p></li>
 <li><p><strong>확인</strong> 하면 변경 내용은 적용을 두번 선택 합니다.</p></li>
-<li><p>Active Directory 복제가를 전파 하 여 변경 내용을 하거나 Microsoft 기술 자료 문서 232072, &quot;시작 하려면 복제 간의 Active Directory 직접 복제 파트너&quot; (<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)에 대 한 지침을 수행 하 여 Active Directory 복제를 적용 될 때까지 기다립니다.</p></li>
+<li><p>Active Directory 복제가를 전파 하 여 변경 내용을 하거나 Microsoft 기술 자료 문서 232072, &quot;시작 하려면 복제 간의 Active Directory 직접 복제 파트너&quot; (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>)에 대 한 지침을 수행 하 여 Active Directory 복제를 적용 될 때까지 기다립니다.</p></li>
 </ol></td>
 </tr>
 </tbody>

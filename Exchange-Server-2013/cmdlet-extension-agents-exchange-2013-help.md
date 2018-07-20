@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 cmdlet 확장 에이전트는 cmdlet을 실행할 때 Exchange Server 2013 cmdlet에서 호출하는 Microsoft Exchange 2013의 구성 요소입니다. 이름에서 알 수 있듯이, cmdlet 확장 에이전트는 데이터 처리를 지원하거나 cmdlet의 요구 사항에 따라 추가 작업을 수행하여 자신을 호출하는 cmdlet의 기능을 확장합니다. cmdlet 확장 에이전트는 모든 서버 역할에서 사용할 수 있습니다.
 

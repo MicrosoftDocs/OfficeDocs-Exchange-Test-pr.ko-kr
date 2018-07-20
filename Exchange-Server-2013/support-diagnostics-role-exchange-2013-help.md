@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Support Diagnostics` 관리 역할을 사용하면 관리자가 Microsoft 고객 지원 서비스의 지시에 따라 조직에서 고급 진단을 수행할 수 있습니다.
 

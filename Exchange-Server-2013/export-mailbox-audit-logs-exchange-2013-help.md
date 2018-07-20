@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 사서함에 대해 사서함 감사를 사용하도록 설정하면 소유자 이외의 사용자가 해당 사서함에 액세스할 때마다 *사서함 감사 로그*에 정보가 기록됩니다. 각각의 로그 항목에는 사서함에 액세스한 사람 소유자가 아닌 사람이 수행한 작업과 작업 시기 및 작업이 성공했는지 여부에 대한 정보가 포함됩니다. 사서함 감사 로그의 항목은 기본적으로 90일 동안 유지됩니다. 사서함 감사 로그를 사용하여 소유자 이외의 사용자가 사서함에 액세스했는지 여부를 확인할 수 있습니다.
 
@@ -65,9 +65,13 @@ _**마지막으로 수정된 항목:**2015-04-07_
 
 조직의 모든 사용자 사서함에서 사서함 감사 로깅을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
 
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 2단계: XML 첨부 파일을 허용하도록 Outlook Web App 구성
 

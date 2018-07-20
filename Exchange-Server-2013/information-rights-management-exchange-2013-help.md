@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 정보 근로자는 일상 업무에서 재무 보고서와 데이터, 법적 계약, 기밀 제품 정보, 매출 보고서 및 매출 예상, 경쟁 분석, 연구 및 특허 정보, 고객 및 직원 정보와 같은 중요한 정보를 전자 메일을 사용하여 교환합니다. 사람들은 이제 어디에서나 자신의 전자 메일에 액세스할 수 있기 때문에 사서함은 잠재적으로 중요한 정보를 대량 포함하는 리포지토리로 변모했고, 그에 따라 정보 유출은 조직에 심각한 위협이 될 수 있습니다. Microsoft Exchange Server 2013에는 정보 유출을 방지하기 위해 전자 메일 메시지와 첨부 파일을 온라인과 오프라인에서 지속적으로 보호하는 IRM(정보 권한 관리) 기능이 포함되어 있습니다.
 
@@ -323,7 +323,7 @@ Exchange 2013 조직 내에 IRM을 구현하려면 배포는 다음 표에 설�
 <tr class="odd">
 <td><p>AD RMS 클러스터</p></td>
 <td><ul>
-<li><p><strong>운영 체제</strong>   Windows Server 2012, Windows Server 2008 R2 또는 Windows Server 2008 SP2와 핫픽스 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Windows Server 2008의 Active Directory Rights Management Services 역할</a> 항목이 필요합니다.</p></li>
+<li><p><strong>운영 체제</strong>   Windows Server 2012, Windows Server 2008 R2 또는 Windows Server 2008 SP2와 핫픽스 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Windows Server 2008의 Active Directory Rights Management Services 역할</a> 항목이 필요합니다.</p></li>
 <li><p><strong>서비스 연결 지점</strong> Exchange 2010 및 AD RMS 인식 응용 프로그램 Active Directory 에 등록 된 서비스 연결 지점을 사용 하 여 AD RMS 클러스터 및 Url을 검색 하도록 합니다. AD RMS를 사용 하면 AD RMS 설치 프로그램 내에서 서비스 연결 지점을 등록할 수 있습니다. AD RMS를 설정 하려면 사용 하는 계정은 Enterprise Admins 보안 그룹의 구성원이 아니면 설치가 완료 된 후 서비스 연결 지점 등록을 수행할 수 있습니다. 하나의 서비스 연결 지점을 Active Directory 포리스트의 AD RMS에 대 한 방법이 있습니다.   </p></li>
 <li><p><strong>권한</strong>   AD RMS 서버 인증 파이프 라인에 대한 읽기 및 실행 권한(AD RMS 서버의 <code>ServerCertification.asmx</code> 파일)은 다음과 같이 지정해야 합니다.</p>
 <ul>
@@ -338,7 +338,7 @@ Exchange 2013 조직 내에 IRM을 구현하려면 배포는 다음 표에 설�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010 이후 버전이 필요 합니다.</p></li>
-<li><p>핫픽스 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">FIX: .NET Framework 2.0 SP2 기반 응용 프로그램이 ASP.NET 웹 서비스 요청을 비동기화하기 위해 길이가 0인 콘텐츠로 응답을 처리하려고 시도할 경우의 ArgumentNullException 예외 오류 메시지: &quot;값이 Null일 수 없음&quot;</a> 항목을 Microsoft .NET Framework 2.0 SP2의 경우에 참조하십시오.</p></li>
+<li><p>핫픽스 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">FIX: .NET Framework 2.0 SP2 기반 응용 프로그램이 ASP.NET 웹 서비스 요청을 비동기화하기 위해 길이가 0인 콘텐츠로 응답을 처리하려고 시도할 경우의 ArgumentNullException 예외 오류 메시지: &quot;값이 Null일 수 없음&quot;</a> 항목을 Microsoft .NET Framework 2.0 SP2의 경우에 참조하십시오.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

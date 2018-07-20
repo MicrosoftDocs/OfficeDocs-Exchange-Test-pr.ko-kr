@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-14_
+_**마지막으로 수정된 항목:** 2012-10-14_
 
 Exchange의 각 OAB(오프라인 주소록) 배포 지점에 대해 내부 회사 네트워크에서만 액세스할 수 있는 내부 URL과 인터넷에서 액세스할 수 있는 외부 URL의 두 가지 URL을 구성할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 조직에서 UM(통합 메시징) 통화 및 음성 메일 메시지의 오디오 품질에 문제가 있는 경우 호출 통계 보고서를 사용하여 문제의 원인을 파악할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 UM(통합 메시징) 사서함 정책에 대해 PIN 정책을 설정할 수 있습니다. 사용자에게 조직에 미리 정의된 PIN 정책을 따르도록 요청하여 Outlook Voice Access를 사용하는 UM 사용 가능한 사용자에 대한 보안 수준이 향상되도록 UM 사서함 정책을 구성할 수 있습니다.
 

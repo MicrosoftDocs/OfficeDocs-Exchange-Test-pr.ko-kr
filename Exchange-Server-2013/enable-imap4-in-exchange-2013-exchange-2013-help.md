@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-06-02_
+_**마지막으로 수정된 항목:** 2016-06-02_
 
 Exchange 2016 (MMC (Microsoft Management Console) 또는 Exchange 관리 셸 (EMS) 사용 하 여에서 IMAP4 클라이언트 연결을 사용 하도록 설정 하는 방법에 알아봅니다.
 

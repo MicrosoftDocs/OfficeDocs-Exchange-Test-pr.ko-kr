@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-01-31_
+_**마지막으로 수정된 항목:** 2014-01-31_
 
 Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange 관리 셸의 큐 뷰어를 사용하여 큐를 관리할 수 있습니다. Exchange 관리 셸에서 큐 관리 cmdlet을 사용하는 방법에 대한 자세한 내용은 [Exchange 관리 셸을 사용 하 여 큐를 관리](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)를 참조하십시오.
 

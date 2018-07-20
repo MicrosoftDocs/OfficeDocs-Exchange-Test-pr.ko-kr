@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-08-08_
+_**마지막으로 수정된 항목:** 2017-08-08_
 
 가상화된 환경에서 Microsoft Exchange Server 2013을 배포할 수 있습니다. 이 항목에서는 하드웨어 가상화 소프트웨어에 Exchange 2013을 배포하기 위해 지원되는 시나리오에 대한 개요를 제공합니다.
 

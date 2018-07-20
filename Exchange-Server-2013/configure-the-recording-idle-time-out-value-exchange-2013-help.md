@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-11_
+_**마지막으로 수정된 항목:** 2012-11-11_
 
 통화가 종료되기 전에 음성 메시지가 녹음될 때 시스템에서 소리가 나지 않아도 되게 허용하는 시간(초)을 지정할 수 있습니다. 대부분의 조직에서 기본값인 5초로 설정합니다.
 

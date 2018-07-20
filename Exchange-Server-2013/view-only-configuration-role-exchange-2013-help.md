@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `View-Only Configuration` 관리 역할을 통해 관리자가 조직에서 받는 사람이 아닌 모든 Exchange 구성 설정을 볼 수 있습니다. 볼 수 있는 구성의 예로는 서버 구성, 전송 구성, 데이터베이스 구성 및 조직 전체 구성이 있습니다.
 
@@ -139,7 +139,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 <tr class="even">
 <td><p><a href="delegated-setup-exchange-2013-help.md">위임 설치</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -148,7 +148,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 <tr class="odd">
 <td><p><a href="hygiene-management-exchange-2013-help.md">Hygiene Management</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -166,7 +166,7 @@ _**마지막으로 수정된 항목:**2015-03-09_
 <tr class="odd">
 <td><p><a href="view-only-organization-management-exchange-2013-help.md">보기 전용 조직 관리</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) 사서함 정책에서 전화 걸기 권한 부여를 사용하도록 설정할 수 있습니다. 사서함 정책에서 전화 걸기 권한 부여를 사용하여 UM 사서함 정책에 연결된, 인증된 Outlook Voice Access 사용자가 국내나 국제 전화 또는 *외부로 전화 걸기*를 수행하지 못하도록 차단할 수 있습니다. 외부로 전화 걸기는 통합 메시징에서 UM 다이얼 플랜에 대해 구성된 Outlook Voice Access 전화 번호로 전화를 건 후 통합 메시징에서 사용자에 대해 발신 전화를 걸 경우 일어나는 과정입니다. UM 사서함 정책에 대한 설정을 구성하는 경우 해당 설정이 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에게 적용됩니다.
 

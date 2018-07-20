@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 TUI(전화 사용자 인터페이스) 설정은 사용자가 Outlook Voice Access를 사용하여 UM(통합 메시징) 시스템에 액세스할 때 사용됩니다. UM 사용 가능 사용자의 TUI 구성 설정을 수정할 때는 UM 사용 가능 사용자의 사서함에 대한 속성과 해당 값을 수정해야 합니다.
 

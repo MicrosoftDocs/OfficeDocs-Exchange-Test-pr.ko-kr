@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-22_
+_**마지막으로 수정된 항목:** 2013-02-22_
 
 전화 응답 규칙 기능은 Exchange 2010에 처음 도입되었습니다. 이 기능을 사용하면 음성 메일 사용이 가능한 사용자가 수신 전화를 처리하는 방식을 제어할 수 있습니다. 전화 응답 규칙이 수신 전화에 적용되는 방식은 받은 편지함 규칙이 받는 전자 메일 메시지에 적용되는 방식과 유사합니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-07_
+_**마지막으로 수정된 항목:** 2015-04-07_
 
 Edge 전송 서버 역할은 Exchange 서비스 팩 1에 다시 도입되었습니다. Edge 전송은 Exchange 조직에 향상된 스팸 방지 보호 기능을 제공합니다. 또한 Edge 전송 서버는 조직 간의 전송 시 정책을 메시지에 적용합니다. 이 서버 역할은 경계 네트워크 및 Active Directory 포리스트 외부에서 배포됩니다. Edge 전송 서버는 구성 및 받는 사람 정보를 위해 클라이언트 액세스 또는 사서함 서버와 같은 방식으로 Active Directory에 직접 액세스하지 않습니다. Edge 전송 서버는 AD LDS(Active Directory Lightweight Directory Service)를 사용하여 구성 및 받는 사람 정보를 로컬로 저장합니다.
 

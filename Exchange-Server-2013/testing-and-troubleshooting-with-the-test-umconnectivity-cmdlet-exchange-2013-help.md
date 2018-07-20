@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-06-25_
+_**마지막으로 수정된 항목:** 2013-06-25_
 
 클라이언트 액세스와 사서함 서버를 설치하고 통합 메시징을 구성한 후에는 여러 진단 테스트와 소프트웨어 기반 전화 응용 프로그램을 사용하여 전화 통신 연결 및 통합 메시징 서비스 작업을 테스트할 수 있습니다.
 

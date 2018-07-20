@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-09_
+_**마지막으로 수정된 항목:** 2012-10-09_
 
 최종 사용자의 그룹에 할당 된 사용 권한을 사용자 지정 하려는 경우에 새 사용자 지정 관리 역할 할당 정책을 만듭니다. 만들 할당 정책은 최종 사용자에 게 특정 요구 사항에 맞게 사용자 지정할 수 있습니다. Microsoft Exchange Server 2013 에 할당 정책에 대 한 자세한 내용은 [관리 역할 할당 정책 이해 (영문)](understanding-management-role-assignment-policies-exchange-2013-help.md)을 참조 하십시오.
 

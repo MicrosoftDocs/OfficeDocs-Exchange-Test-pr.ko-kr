@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Exchange 조직 컨테이너 에 쓸 수 없음
+# Exchange 조직 컨테이너 [GlobalServerInstall]에 쓸 수 없음
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-11-05_
+_**마지막으로 수정된 항목:** 2014-11-05_
 
 설치를 계속할 수 없는 Microsoft Exchange Server 2013 로그온 한 사용자는 Active Directory 디렉터리 서비스에서 조직 컨테이너에 쓰려는 필요한 계정 사용 권한이 없으면 때문입니다.
 

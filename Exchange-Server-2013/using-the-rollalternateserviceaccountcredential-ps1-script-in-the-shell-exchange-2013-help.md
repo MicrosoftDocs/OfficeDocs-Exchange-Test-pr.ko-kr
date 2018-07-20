@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 대체 서비스 계정 자격 증명 (ASA 자격 증명) Exchange Server 2013 fto 업데이트에 RollAlternateServiceAccountPassword.ps1 스크립트를 사용할 수 있으며 지정 된 클라이언트 액세스 서버에 대 한 업데이트를 배포할 수 있습니다.
 

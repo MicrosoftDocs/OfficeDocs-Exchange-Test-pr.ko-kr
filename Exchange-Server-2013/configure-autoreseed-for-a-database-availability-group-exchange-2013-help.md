@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2013-04-15_
+_**마지막으로 수정된 항목:** 2013-04-15_
 
 자동 다시 시드는 디스크 오류가 발생한 후 데이터베이스 중복성을 빠르게 복원하는 기능입니다. 디스크 오류가 발생하면 해당 디스크에 저장된 데이터베이스 복사본이 사서함 서버의 미리 구성된 예비용 디스크에 자동으로 다시 시드됩니다. 이 항목의 단계에 따라 DAG(데이터베이스 가용성 그룹)에 대해 자동 다시 시드를 구성할 수 있습니다.
 
@@ -122,13 +122,21 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 다음으로, 루트 경로 C:\\ExchangeDatabases 아래에 데이터베이스 디렉터리를 만듭니다. 이 예에서는 각 볼륨에서 4개의 데이터베이스가 있는 저장소 구성에 대해 디렉터리를 만드는 방법을 보여줍니다.
 
-    md c:\ExchangeDatabases\db001
+```
+md c:\ExchangeDatabases\db001
+```
 
-    md c:\ExchangeDatabases\db002
+```
+md c:\ExchangeDatabases\db002
+```
 
-    md c:\ExchangeDatabases\db003
+```
+md c:\ExchangeDatabases\db003
+```
 
-    md c:\ExchangeDatabases\db004
+```
+md c:\ExchangeDatabases\db004
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -162,21 +170,37 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 이 예에서는 볼륨 1에 저장될 4개의 데이터베이스에 대해 디렉터리를 만드는 방법을 보여줍니다.
 
-    md c:\ExchangeDatabases\db001\db001.db
+```
+md c:\ExchangeDatabases\db001\db001.db
+```
 
-    md c:\ExchangeDatabases\db001\db001.log
+```
+md c:\ExchangeDatabases\db001\db001.log
+```
 
-    md c:\ExchangeDatabases\db002\db002.db
+```
+md c:\ExchangeDatabases\db002\db002.db
+```
 
-    md c:\ExchangeDatabases\db002\db002.log
+```
+md c:\ExchangeDatabases\db002\db002.log
+```
 
-    md c:\ExchangeDatabases\db003\db003.db
+```
+md c:\ExchangeDatabases\db003\db003.db
+```
 
-    md c:\ExchangeDatabases\db003\db003.log
+```
+md c:\ExchangeDatabases\db003\db003.log
+```
 
-    md c:\ExchangeDatabases\db004\db004.db
+```
+md c:\ExchangeDatabases\db004\db004.db
+```
 
-    md c:\ExchangeDatabases\db004\db004.log
+```
+md c:\ExchangeDatabases\db004\db004.log
+```
 
 모든 볼륨의 데이터베이스에 대해 위의 명령을 반복합니다.
 
@@ -212,7 +236,11 @@ DAG에 대해 자동 다시 시드가 구성되었는지 확인하려면 다음�
 
 2.  다음 명령을 실행하여 디렉터리 구조가 제대로 구성되었는지 확인합니다. 여기에 사용된 경로는 기본 경로이며 필요한 경우 실제 사용하는 경로로 바꿉니다.
     
-        Dir c:\ExchangeDatabases /s
-    
-        Dir c:\ExchangeVolumes /s
+    ```
+    Dir c:\ExchangeDatabases /s
+    ```
+
+    ```
+    Dir c:\ExchangeVolumes /s
+    ```
 

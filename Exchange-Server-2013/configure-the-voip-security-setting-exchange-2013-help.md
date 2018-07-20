@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2014-10-16_
+_**마지막으로 수정된 항목:** 2014-10-16_
 
 UM (통합 메시징) 다이얼 플랜에 대 한 IP (VoIP) 보안을 통해 음성을 설정할 수 있습니다. 기본적으로 UM 다이얼 플랜을 만들 때 보안 되지 않은 모드 또는 암호화 사용 합니다. Exchange 서버 단일 또는 여러 UM 다이얼 플랜에 대 한 호출에 응답할 수 및 다른 VoIP 보안 설정을 포함 하는 다이얼 플랜에 대 한 통화에 응답할 수 있습니다. Office 365 및 Exchange Online 보안 모드 필요 하 고 사용 하지 않도록 설정할 수 없습니다.
 

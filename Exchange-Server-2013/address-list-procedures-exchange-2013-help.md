@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-12_
+_**마지막으로 수정된 항목:** 2012-10-12_
 
 [주소 목록 만들기](create-an-address-list-exchange-2013-help.md)
 

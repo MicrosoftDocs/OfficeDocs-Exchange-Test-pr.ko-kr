@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 Outlook Voice Access 사용자로부터 전달된 통화 또는 음성 사서함 메시지를 수신할 수 있는 사용자를 지정할 수 있습니다. 기본적으로 **이 다이얼 플랜에서만** 옵션이 선택되어 있습니다. 이 설정을 변경하여 Outlook Voice Access 사용자가 전체 조직에 있는 사용자, 기존 UM 자동 전화 교환 또는 특정 내선 번호에 통화를 전달하거나 음성 메시지를 보내도록 허용할 수 있습니다.
 

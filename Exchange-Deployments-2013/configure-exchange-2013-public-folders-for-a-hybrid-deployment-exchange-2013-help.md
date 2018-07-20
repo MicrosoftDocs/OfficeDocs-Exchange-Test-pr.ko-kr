@@ -17,7 +17,7 @@ _<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
 _<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
-**요약:** 온-프레미스 Exchange 2013 환경에서 공용 폴더에 액세스 하려면 Exchange Online 사용자를 사용 하도록 설정 하는 것에 대 한 지침입니다.
+**요약:**  온-프레미스 Exchange 2013 환경에서 공용 폴더에 액세스 하려면 Exchange Online 사용자를 사용 하도록 설정 하는 것에 대 한 지침입니다.
 
 하이브리드 배포에서 Exchange Online, 온-프레미스, 또는 둘 모두에 사용자가 될 수 있습니다 하 고 공용 폴더는 하거나 Exchange Online 또는 온-프레미스 합니다. 경우에 따라 온라인 사용자가 Exchange Server 2013 온-프레미스 환경에서 공용 폴더에 액세스 해야 합니다. 마찬가지로, Exchange 2013 사용자가 Office 365 또는 Exchange Online의 공용 폴더에 액세스 해야 합니다.
 

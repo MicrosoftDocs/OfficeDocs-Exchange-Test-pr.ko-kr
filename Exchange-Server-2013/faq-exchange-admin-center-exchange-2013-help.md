@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 이 항목에서는 Microsoft Exchange Server 2013의 새로운 EAC(Exchange 관리 센터)에 대한 질문과 대답의 목록을 제공합니다. 여기에서 다루지 않은 EAC에 대한 질문이 더 있으면 [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com)으로 전자 메일을 보내십시오.
 

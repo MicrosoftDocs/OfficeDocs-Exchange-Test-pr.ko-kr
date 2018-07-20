@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 2013을 설치하기 전에 알아야 하는 Exchange 2013 요구 사항을 알아봅니다. 예를 들어 하드웨어, 네트워크 및 운영 체제 요구 사항에 대해 알아봅니다.
 
@@ -155,7 +155,7 @@ Exchange 2013에서는 최신 버전의 Office 365로 업그레이드된 Office 
 <li><p>단일 레이블 도메인</p></li>
 <li><p>분리</p></li>
 </ul>
-<p>Exchange에서 지원되는 DNS 네임스페이스에 대한 자세한 내용은 Microsoft 기술 자료 문서 2269838, <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">단일 레이블 도메인, 분리된 네임스페이스 및 연속하지 않는 네임스페이스와의 Microsoft Exchange 호환성</a>을 참조하세요.</p></td>
+<p>Exchange에서 지원되는 DNS 네임스페이스에 대한 자세한 내용은 Microsoft 기술 자료 문서 2269838, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">단일 레이블 도메인, 분리된 네임스페이스 및 연속하지 않는 네임스페이스와의 Microsoft Exchange 호환성</a>을 참조하세요.</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 지원</p></td>
@@ -175,7 +175,7 @@ Exchange 2013에서는 최신 버전의 Office 365로 업그레이드된 Office 
 
 
 > [!NOTE]
-> 멀티 도메인 환경에서, Active Directory 언어 로캘이 일본어로 설정된 Windows Server 2008 도메인 컨트롤러의 경우 인바운드 복제 중 개체에 저장되는 일부 특성을 수신하지 못할 수 있습니다. 자세한 내용은 Microsoft 기술 자료 문서 949189, <A href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">일본어 로캘을 사용하여 구성된 Windows Server 2008 도메인 컨트롤러는 인바운드 복제 중 개체의 특성에 업데이트를 적용하지 못할 수 있습니다.</A>를 참조하세요.
+> 멀티 도메인 환경에서, Active Directory 언어 로캘이 일본어로 설정된 Windows Server 2008 도메인 컨트롤러의 경우 인바운드 복제 중 개체에 저장되는 일부 특성을 수신하지 못할 수 있습니다. 자세한 내용은 Microsoft 기술 자료 문서 949189, <A href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">일본어 로캘을 사용하여 구성된 Windows Server 2008 도메인 컨트롤러는 인바운드 복제 중 개체의 특성에 업데이트를 적용하지 못할 수 있습니다.</A>를 참조하세요.
 
 
 

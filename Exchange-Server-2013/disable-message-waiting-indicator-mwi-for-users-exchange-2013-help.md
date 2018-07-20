@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-21_
+_**마지막으로 수정된 항목:** 2013-02-21_
 
 UM(통합 메시징) 사서함 정책과 연결된 사용자에 대해 MWI(Message Waiting Indicator)를 사용하거나 사용하지 않도록 설정할 수 있습니다. MWI(Message Waiting Indicator)는 대부분의 레거시 음성 메일 시스템에서 사용되는 기능입니다. 가장 일반적인 형태는 새 음성 메일 메시지가 있음을 알리기 위해 음성 메일 구독자의 전화기 램프가 켜지는 것입니다. 또한 Message Waiting Indicator는 UM 사용 가능 사용자의 휴대폰으로 문자 메시지를 보낼 수도 있습니다. 기본적으로 사용하도록 설정되어 있습니다.
 

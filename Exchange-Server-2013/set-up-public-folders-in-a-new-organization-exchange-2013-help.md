@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-11-09_
+_**마지막으로 수정된 항목:** 2015-11-09_
 
-**요약:** EAC에서 자신에 게 사용 권한 할당을 포함 하 여 공용 폴더를 설정 하는 방법입니다.
+**요약:**  EAC에서 자신에 게 사용 권한 할당을 포함 하 여 공용 폴더를 설정 하는 방법입니다.
 
 이 항목에서는 이전에 공용 폴더가 없었던 조직이나 새 조직에서 공용 폴더를 구성 및 실행하는 방법을 보여줍니다.
 

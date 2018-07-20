@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 도메인 컨트롤러에서 Exchange 설치 하지 않기
+# 도메인 컨트롤러에서 Exchange 설치 [WarningInstallExchangeRolesOnDomainController] 하지 않기
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2013-03-22_
+_**마지막으로 수정된 항목:** 2013-03-22_
 
 Microsoft Exchange Server 2013 설치 프로그램에서 Exchange 2013을 설치하려는 컴퓨터가 Active Directory 도메인 컨트롤러에 있음을 감지했습니다. Exchange 2013을 도메인 컨트롤러에 설치하는 것은 권장되지 않습니다.
 

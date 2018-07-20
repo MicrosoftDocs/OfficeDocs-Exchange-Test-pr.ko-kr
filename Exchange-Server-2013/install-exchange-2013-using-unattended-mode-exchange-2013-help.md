@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-19_
+_**마지막으로 수정된 항목:** 2014-06-19_
 
 무인 설치를 수행하려면 명령 프롬프트에서 Microsoft Exchange Server 2013을 설치해야 합니다. Exchange 2013 계획 및 배포에 대한 자세한 내용은 [계획 및 배포](planning-and-deployment-for-exchange-2013-installation-instructions.md) 항목을 참조하십시오.
 

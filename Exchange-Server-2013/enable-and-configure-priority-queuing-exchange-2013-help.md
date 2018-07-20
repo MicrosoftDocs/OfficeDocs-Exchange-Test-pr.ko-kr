@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-12-16_
+_**마지막으로 수정된 항목:** 2014-12-16_
 
 *우선 순위 큐*는 Microsoft Outlook 또는 Outlook Web Access에서 보낸 사람이 구성하는 메시지 우선 순위가 사서함 서버의 전송 서비스에 의한 메시지 처리에 적용되도록 설정하는 Microsoft Exchange Server 2013의 기능입니다. 우선 순위 큐를 사용하도록 설정한 경우 높은 우선 순위 메시지는 보통 우선 순위 메시지 전에 전송되며 보통 우선 순위 메시지는 낮은 우선 순위 메시지 전에 전송됩니다. 자세한 내용은 [우선순위 큐](priority-queuing-exchange-2013-help.md)를 참조하십시오.
 

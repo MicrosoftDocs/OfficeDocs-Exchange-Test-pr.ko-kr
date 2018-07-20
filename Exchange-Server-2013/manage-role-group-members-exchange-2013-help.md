@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-10-08_
+_**마지막으로 수정된 항목:** 2012-10-08_
 
 이 항목에서는 추가, 제거 및 Microsoft Exchange Server 2013 에서 관리 역할 그룹의 구성원을 확인 하는 방법을 보여줍니다. Exchange 2013 의 역할 그룹에 대 한 자세한 내용은 [관리 역할 그룹 이해 (영문)](understanding-management-role-groups-exchange-2013-help.md)을 참조 하십시오.
 

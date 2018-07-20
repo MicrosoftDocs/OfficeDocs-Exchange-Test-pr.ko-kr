@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 주소 다시 쓰기 및 주소 다시 쓰기 에이전트와 관련된 모든 관리 작업에 대해 Edge 전송 서버에서 Exchange 관리 셸을 사용할 수 있습니다. 주소 다시 쓰기에 대한 자세한 내용은 [주소 Edge 전송 서버에서 다시 쓰기](address-rewriting-on-edge-transport-servers-exchange-2013-help.md)를 참조하세요.
 

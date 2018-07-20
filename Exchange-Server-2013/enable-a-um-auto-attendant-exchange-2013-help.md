@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-05_
+_**마지막으로 수정된 항목:** 2012-11-05_
 
 기본적으로 UM(통합 메시징) 자동 전화 교환을 만들면 상태가 사용 안 함으로 설정됩니다. UM 자동 전화 교환을 만든 후 상태를 변경하여 들어오는 호출에 응답하도록 할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-11-16_
+_**마지막으로 수정된 항목:** 2014-11-16_
 
 Exchange 작업은 Exchange 시스템 리소스 관리를 위해 명시적으로 정의된 Exchange Server 기능, 프로토콜 또는 서비스입니다. 각 Exchange 작업은 사용자 요청이나 백그라운드 작업을 실행하기 위해 CPU, 사서함 데이터베이스 작업 또는 Active Directory 요청 등과 같은 시스템 리소스를 사용합니다. Exchange 작업의 예로는 Outlook Web App, Exchange ActiveSync, 사서함 마이그레이션 및 사서함 도우미가 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-27_
+_**마지막으로 수정된 항목:** 2014-06-27_
 
 발신음 이식성을 사용하면 사용자의 원래 사서함이 복원 또는 복구되는 동안 전자 메일을 보내고 받을 수 있는 임시 사서함을 사용할 수 있습니다. 임시 사서함은 조직 내에서 같은 Exchange 2013 사서함 서버나 다른 Exchange 2013 사서함 서버에 위치할 수 있습니다. 발신음 이식성을 사용하기 위한 과정을 발신음 복구라고 하며, 여기에는 오류가 발생한 데이터베이스를 대체하기 위해 사서함 서버에 빈 데이터베이스를 만드는 작업이 포함됩니다. 자세한 내용은 [발신음 이식성](dial-tone-portability-exchange-2013-help.md)을 참조하십시오.
 
@@ -85,10 +85,14 @@ _**마지막으로 수정된 항목:**2014-06-27_
         Mount-Database -Identity RDB1
 
 13. 다음 예에서와 같이, [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 및 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\)) cmdlet을 사용하여 RDB에서 데이터를 내보내고 복구된 데이터베이스로 가져옵니다. 이렇게 하면 발신음 데이터베이스를 사용하여 주고 받은 모든 메시지를 프로덕션 데이터베이스로 가져옵니다.
-    
-        $mailboxes = Get-Mailbox -Database DTDB1
-    
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+
+    ```
+    $mailboxes = Get-Mailbox -Database DTDB1
+    ```
+
+    ```
+    $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+    ```
 
 14. 복원 작업이 완료되면 다음 예에서와 같이 RDB를 분리하고 제거합니다.
     

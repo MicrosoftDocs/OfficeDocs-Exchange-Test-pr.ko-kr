@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange Server 배포 도우미는 Microsoft Exchange Server 2016 및 Exchange Server 2013 배포와 함께 하는데 도움이 되는 웹 기반 도구입니다. 배포 도우미 현재 환경에 대 한 몇가지 질문을 요청 하 고 사용자 지정 검사 하 고 배포를 단순화 하는 데 도움이 되는 절차를 생성 합니다. 배포 도우미에 액세스 하려면 [Exchange Server 배포 도우미](https://go.microsoft.com/fwlink/p/?linkid=277105)를 참조 하십시오.
 

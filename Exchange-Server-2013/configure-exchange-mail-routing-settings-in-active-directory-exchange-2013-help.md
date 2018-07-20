@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 기본적으로 Microsoft Exchange Server 2013은 Active Directory의 IP 사이트 링크 개체를 참조하여 최저 비용 라우팅 경로를 결정합니다. 그러나 Active Directory 사이트 링크 비용과 트래픽 흐름 패턴이 Exchange의 메일 라우팅에 대해 최적화되어 있지 않다고 판단되면 Exchange에서만 사용되는 Active Directory의 설정을 구성하여 메일 흐름을 최적화할 수 있습니다.
 

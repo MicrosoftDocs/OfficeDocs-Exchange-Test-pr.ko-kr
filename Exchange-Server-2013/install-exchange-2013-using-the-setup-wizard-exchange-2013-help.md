@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-06-19_
+_**마지막으로 수정된 항목:** 2014-06-19_
 
 이 항목에서는 Microsoft Exchange Server 2013 설치 마법사를 사용하여 컴퓨터에 Exchange 2013 사서함 및 클라이언트 액세스 역할을 설치하는 방법에 대해 설명합니다. Exchange 2013 계획 및 배포에 대한 자세한 내용은 [계획 및 배포](planning-and-deployment-for-exchange-2013-installation-instructions.md) 항목을 참조하십시오.
 

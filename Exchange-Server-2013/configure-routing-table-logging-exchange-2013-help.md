@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-04-08_
+_**마지막으로 수정된 항목:** 2015-04-08_
 
 라우팅 테이블 기록은 Microsoft Exchange Server 2013에서 메시지를 해당 대상으로 라우팅하는 데 사용하는 라우팅 테이블의 스냅숏을 정기적으로 기록합니다.
 

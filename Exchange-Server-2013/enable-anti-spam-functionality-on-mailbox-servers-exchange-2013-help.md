@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-01-23_
+_**마지막으로 수정된 항목:** 2014-01-23_
 
 Microsoft Exchange Server 2013에서는 사서함 서버의 전송 서비스에서 다음 스팸 방지 에이전트를 사용할 수 있지만 기본적으로 설치되지는 않습니다.
 

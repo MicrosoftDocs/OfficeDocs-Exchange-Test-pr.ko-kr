@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-03-02_
+_**마지막으로 수정된 항목:** 2018-03-02_
 
 동적 메일 그룹은 구성원 자격의 기준이 정의된 받는 사람 집합이 아닌 특정 받는 사람 필터인 메일 그룹입니다. MicrosoftExchange의 미리 만든 필터를 사용하여 동적 메일 그룹의 받는 사람 필터를 보다 쉽게 만들 수 있습니다. *미리 만든 필터*는 일반적으로 사용되는 필터로, 다양한 받는 사람 필터링 기준을 충족합니다. 동적 메일 그룹에 포함할 받는 사람 유형을 지정할 수 있습니다. 또한 받는 사람이 충족해야 하는 조건 목록을 지정할 수도 있습니다. 미리 만든 필터를 사용하는 동적 메일 그룹의 받는 사람 목록을 미리 볼 때 셸을 사용할 수 있습니다.
 
@@ -39,9 +39,13 @@ _**마지막으로 수정된 항목:**2018-03-02_
 
 이 예제에서는 전체 시간 employees 동적 메일 그룹에 대 한 팀 구성원의 목록을 반환 합니다. 첫번째 명령은 변수 `$FTE`에서 동적 메일 그룹 개체를 저장합니다. 두번째 명령은 **Get-Recipient** cmdlet를 사용 하 여 동적 메일 그룹에 대해 정의 된 조건과 일치 하는 받는 사람 목록을 합니다.
 
-    $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
+  $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
 
-    Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
+  Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-DynamicDistributionGroup](https://technet.microsoft.com/ko-kr/library/bb124762\(v=exchg.150\)) 및 [Get-Recipient](https://technet.microsoft.com/ko-kr/library/aa996921\(v=exchg.150\))를 참조하십시오.
 

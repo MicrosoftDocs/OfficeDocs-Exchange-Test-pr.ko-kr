@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 사용 권한 를 분할 하는 Active Directory 도메인 컨트롤러에 설치 지원 되지 않습니다.
+# 사용 권한 [InstallOnDCInADSplitPermissionMode]를 분할 하는 Active Directory 도메인 컨트롤러에 설치 지원 되지 않습니다.
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2012-11-12_
+_**마지막으로 수정된 항목:** 2012-11-12_
 
 Microsoft Exchange Server 2013 설치 프로그램이 사용자가 Active Directory 도메인 컨트롤러에서 설치를 실행하려고 하며, 다음 중 하나가 참인 것을 감지했습니다.
 

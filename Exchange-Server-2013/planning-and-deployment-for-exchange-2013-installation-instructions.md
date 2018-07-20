@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 지침 해야 Exchange 설치를 수행 하 시겠습니까? 이 문서에서는 Microsoft Exchange Server 2013 배포 하는 동안 수행 해야 하는 문서에 대 한 링크의 배포를 계획 하기 위한 지침을 제공 합니다.
 

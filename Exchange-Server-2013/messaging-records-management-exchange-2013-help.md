@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-02-01_
+_**마지막으로 수정된 항목:** 2016-02-01_
 
 사용자가 전자 메일 송수신 매일 합니다. 왼쪽에는 다음 관리 되지 않을 경우 생성 되 고 매일 받은 전자 메일의 볼륨 사용자에 게 제공 되는 영향 사용자의 생산성을 inundate 수 있으며 조직 위험에 노출 수 있습니다. 결과적으로, 전자 메일 수명 주기 관리는 대부분의 조직에 대 한 중요 한 구성 요소입니다.
 
@@ -47,9 +47,9 @@ Exchange Server 2013 및 Exchange Online MRM 보존 태그 및 보존 정책을 
 
 **메시지를 보관 사서함으로 이동**   이 전략에는 사용자의 보관 사서함에 항목을 이동 하는 MRM 정책을 구현할 수 있습니다. 보관 사서함에는 콘텐츠를 자주 액세스 및 이전 유지 하기 위해 사용자에 대 한 추가 저장소를 제공 합니다. 항목을 이동 하는 보존 태그는 *보관 정책*을 라고도 합니다. 동일한 보존 정책 내에서 항목을 삭제 하려면 항목 및 DPT, Rpt, 및 개인 태그를 이동 하는 DPT 및 개인 태그를 결합할 수 있습니다. 보관 정책에 대 한 자세한 내용은, 다음을 참조 합니다.
 
-  - **Exchange Server 2013:** [전체에서 Exchange 2013의 보관](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [전체에서 Exchange 2013의 보관](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Exchange Online의 보관 사서함](https://technet.microsoft.com/ko-kr/library/dn922147\(v=exchg.150\))
+  - **Exchange Online:**  [Exchange Online의 보관 사서함](https://technet.microsoft.com/ko-kr/library/dn922147\(v=exchg.150\))
 
 
 > [!NOTE]

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 MWI(Message Waiting Indicator)는 대부분의 레거시 음성 메일 시스템에서 사용되는 기능으로, 사용자에게 새 음성 메일 메시지나 듣지 않은 음성 메일 메시지가 있음을 알려줍니다. 가장 일반적인 형태로, 새 음성 메시지나 듣지 않은 음성 메시지가 있음을 나타내기 위해 사용자의 전화기에서 램프가 켜집니다.
 
@@ -369,18 +369,8 @@ MWI 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을
 
 3.  **문자 메시지** 페이지에서 **알림 사용** 단추를 클릭합니다.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>음성 메일 알림</strong>을 클릭하지 마십시오. 클릭하면 <strong>음성 메일</strong> 페이지로 이동됩니다.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > <strong>음성 메일 알림</strong>을 클릭하지 마십시오. 클릭하면 <strong>음성 메일</strong> 페이지로 이동됩니다.
 
 
 4.  **문자 메시지** 페이지의 **로캘**에 있는 드롭다운 목록에서 문자 메시지 통신사의 위치나 로캘을 선택합니다.

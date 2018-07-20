@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Exchange 2013 하이브리드 조직에서 프레미스 간 eDiscovery 검색을 정상적으로 수행하려면 원본 위치 eDiscovery를 사용하여 온-프레미스 및 클라우드 기반 사서함을 검색할 수 있도록 Exchange 온-프레미스 및 Exchange Online 조직 간에 OAuth(Open Authorization) 인증을 구성해야 합니다. OAuth 인증에서는 Exchange 하이브리드 배포에서 다음 eDiscovery 시나리오가 지원됩니다.
 

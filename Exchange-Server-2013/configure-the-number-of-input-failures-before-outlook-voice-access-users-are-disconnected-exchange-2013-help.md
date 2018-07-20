@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2012-11-09_
+_**마지막으로 수정된 항목:** 2012-11-09_
 
 Outlook Voice Access 번호로 전화를 거는 사용자의 연결을 끊기 전까지 사용자가 잘못된 데이터를 입력할 수 있는 횟수를 구성할 수 있습니다. 이 설정은 Outlook Voice Access 사용자 및 디렉터리 검색을 사용하는 인증되지 않은 발신자에게 모두 적용됩니다.
 

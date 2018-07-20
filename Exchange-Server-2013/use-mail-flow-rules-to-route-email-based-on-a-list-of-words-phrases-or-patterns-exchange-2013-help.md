@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-10-30_
+_**마지막으로 수정된 항목:** 2017-10-30_
 
 사용자가 조직의 전자 메일 정책 준수를 위해 특정 단어 또는 패턴을 포함 하는 전자 메일 라우팅되는 방법을 확인 하려면 Exchange 전송 규칙을 사용할 수 있습니다. 단어 또는 구를 몇 명에 대 한 Exchange 관리 센터 를 사용할 수 있습니다. 긴 목록에 대 한 텍스트 파일을 사용 하 여 목록 읽어올 수 ExchangeWindows PowerShell 에 대 한 모듈 사용 하는 것이 좋습니다.
 

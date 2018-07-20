@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 `Mail Recipient Creation` 관리 역할을 통해 관리자가 조직의 사서함, 메일 사용자, 메일 연락처, 메일 그룹 및 동적 메일 그룹을 만들 수 있습니다. 이 역할을 `Mail Recipients` 역할과 결합하여 받는 사람을 만들고 관리할 수 있습니다. 자세한 내용은 [메일 받는 사람에 게 역할](mail-recipients-role-exchange-2013-help.md)을 참조하십시오.
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2014-02-24_
+_**마지막으로 수정된 항목:** 2014-02-24_
 
 공용 폴더는 공유 액세스를 위해 설계된 폴더입니다. 이 폴더를 통해 간단하고 효율적으로 정보를 수집 및 구성하고 작업 그룹이나 조직의 다른 사람과 공유할 수 있습니다.
 
@@ -94,11 +94,17 @@ EAC를 사용하여 공용 폴더를 만드는 경우에는 공용 폴더의 이
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
-        Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
-        Get-PublicFolder -Recurse
+    ```
+    Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
+    ```
+
+    ```
+    Get-PublicFolder -Identity \Marketing\2013 -GetChildren
+    ```
+
+    ```
+    Get-PublicFolder -Recurse
+    ```
 
 
 > [!TIP]

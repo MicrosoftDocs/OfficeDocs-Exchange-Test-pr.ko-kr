@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 Exchange Server 2013 메시징 레코드 관리 (MRM)에 대 한 보존 정책 또는 관리 되는 폴더를 사용할 수 있습니다. Microsoft Outlook 2010 를 실행 하는 사용자만 하며 나중에 보존 정책에 대 한 모든 클라이언트 기능에 대 한 액세스를 포함 합니다. 그러나 보존 정책은 관리 하는 폴더 도우미에 의해, 사용자가 사용 되는 Outlook 클라이언트 버전에 관계 없이 사서함 서버에 적용 됩니다. 이전 버전의 Outlook 클라이언트에서 이러한 기능 MRM 기능을 제공 하지 않습니다. 예, Outlook 2007에는 보존 정책을 지원 하지 않으므로, 사용자는 항목 또는 폴더에 개인 태그를 적용할 수 없습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 메시지를 주고받는 사람과 리소스는 메시징 및 공동 작업 시스템의 핵심입니다. Exchange 조직에서 이러한 사람과 리소스를 *받는 사람*이라고 합니다. 받는 사람은 Microsoft Exchange에서 메시지를 배달하거나 라우팅할 수 있는 Active Directory의 메일 사용 가능 개체입니다.
 
@@ -143,18 +143,8 @@ Exchange에는 여러 가지 명시적인 받는 사람 유형이 포함되어 �
 
 ![사서함을 구성하는 요소](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "사서함을 구성하는 요소")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="경고" alt="경고" />경고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>사서함을 제거하는 경우 Exchange 사서함 데이터베이스에 저장되어 있는 사서함 데이터는 삭제되도록 표시되고 연결된 사용자 계정도 Active Directory에서 삭제됩니다. 사용자 계정을 보존하고 사서함 데이터만 삭제하려면 사서함을 사용할 수 없도록 설정해야 합니다.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 사서함을 제거하는 경우 Exchange 사서함 데이터베이스에 저장되어 있는 사서함 데이터는 삭제되도록 표시되고 연결된 사용자 계정도 Active Directory에서 삭제됩니다. 사용자 계정을 보존하고 사서함 데이터만 삭제하려면 사서함을 사용할 수 없도록 설정해야 합니다.
 
 
 ## 사서함 유형

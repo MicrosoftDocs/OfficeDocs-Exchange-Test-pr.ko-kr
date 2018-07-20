@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-02-13_
+_**마지막으로 수정된 항목:** 2013-02-13_
 
 UM(통합 메시징) 사서함 정책에서 음성 메일 미리 보기 파트너에 대한 최대 메시지 기간을 설정할 수 있습니다. 최대 메시지 기간을 설정하면 해당 사서함 정책과 연결된 모든 UM 사용 가능 사용자에게 설정이 적용됩니다.
 

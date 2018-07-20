@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_**적용 대상:** Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-10-04_
+_**마지막으로 수정된 항목:** 2017-10-04_
 
 메일 사용이 가능한 보안 그룹은 메시지 배포 및 Active Directory의 리소스에 대한 액세스 권한 부여에 사용할 수 있습니다. 자세한 내용은 [받는 사람](recipients-exchange-2013-help.md) 항목을 참조하십시오.
 

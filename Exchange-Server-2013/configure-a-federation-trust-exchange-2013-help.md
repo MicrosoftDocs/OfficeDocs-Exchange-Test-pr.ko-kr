@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2017-07-26_
+_**마지막으로 수정된 항목:** 2017-07-26_
 
 페더레이션 트러스트 Microsoft Exchange 2013 조직과 Azure Active Directory 인증 시스템 간에 트러스트 관계를 설정 합니다. 페더레이션 트러스트를 구성 하 여 받는 사람에 게 일정 약속 있음/없음 정보를 공유할 다른 페더레이션 Exchange 조직과 페더레이션 공유를 구성할 수 있습니다. 두 페더레이션된 Exchange 2013 조직 간에 또는 페더레이션된 Exchange 2013 조직 및 페더레이션된 Exchange 2010 조직 간의 페더레이션 공유를 구성할 수 있습니다. Office 365 조직과 공유 설정할 수 있습니다.
 

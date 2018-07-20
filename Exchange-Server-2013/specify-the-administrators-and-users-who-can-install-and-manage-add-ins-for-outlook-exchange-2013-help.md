@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-02-08_
+_**마지막으로 수정된 항목:** 2017-02-08_
 
 설치 및 Outlook 용 추가 기능을 관리 하는 관리자가 조직에서 사용 권한이 지정할 수 있습니다. 설치 하 여 자신의 사용에 대 한 추가 기능 관리 권한이 있는 사용자 조직에서 지정할 수 있습니다.
 

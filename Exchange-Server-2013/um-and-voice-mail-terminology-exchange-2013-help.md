@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2013-04-22_
+_**마지막으로 수정된 항목:** 2013-04-22_
 
 이 항목에는 통합 메시징에서 사용되는 용어 및 정의가 나와 있습니다.
 

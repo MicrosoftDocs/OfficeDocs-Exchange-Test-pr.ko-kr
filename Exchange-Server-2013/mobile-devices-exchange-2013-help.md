@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2012-09-24_
+_**마지막으로 수정된 항목:** 2012-09-24_
 
 Microsoft Exchange ActiveSync와 호환되는 모바일 장치를 사용하는 사용자는 언제 어디서나 대부분의 Microsoft Exchange 사서함 데이터에 액세스할 수 있습니다. Exchange ActiveSync에서 사용할 수 있는 휴대폰 및 장치에는 여러 가지가 있습니다. 예를 들면 Windows Phone, Nokia 휴대폰, Android 휴대폰 및 태블릿, Apple iPhone, iPod 및 iPad 등이 있습니다.
 

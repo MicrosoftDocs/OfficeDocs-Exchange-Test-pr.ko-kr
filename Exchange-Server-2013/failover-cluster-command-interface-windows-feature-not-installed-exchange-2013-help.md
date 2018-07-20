@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server_
+_**적용 대상:** Exchange Server_
 
-_**마지막으로 수정된 항목:**2014-12-03_
+_**마지막으로 수정된 항목:** 2014-12-03_
 
 로컬 컴퓨터에 필요한 Windows 기능이 없으므로 Microsoft Exchange Server 2013 설치 프로그램이 설치를 계속할 수 없습니다. 이 Windows 기능을 설치해야 Exchange 2013이 설치를 계속할 수 있습니다.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2010, Exchange Server 2013_
+_**적용 대상:** Exchange Server 2010, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2018-04-02_
+_**마지막으로 수정된 항목:** 2018-04-02_
 
 **요약**:이 문서에서는 아키텍처 및 iOS에 대 한 Outlook과 Exchange 2013의 Android 하는 방법에 대 한 관리자를 위한 보안 정보 온-프레미스 환경입니다.
 

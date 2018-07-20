@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013_
+_**적용 대상:** Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 Microsoft Exchange Server 2013의 **Setup /m:RecoverServer** 스위치를 사용하여 손실된 서버를 복구할 수 있습니다. Exchange 2013을 실행하는 컴퓨터의 설정은 대부분 Active Directory에 저장됩니다. */m:RecoverServer* 스위치는 Exchange에 저장된 설정 및 기타 정보를 사용하여 Active Directory 서버를 동일한 이름으로 다시 작성합니다.
 
