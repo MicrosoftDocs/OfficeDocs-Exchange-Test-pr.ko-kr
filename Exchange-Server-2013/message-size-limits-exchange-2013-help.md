@@ -117,18 +117,9 @@ Exchange 조직에 대한 메시지 크기 제한을 계획할 때는 다음 질
 </tr>
 <tr class="odd">
 <td><p>메시지당 최대 받는 사람 수</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ126407.note(EXCHG.150).gif" title="참고" alt="참고" />참고:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+
+> [!Tip]  
+> <p></p>
 
 </td>
 <td><p>5000</p></td>
