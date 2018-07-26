@@ -94,7 +94,7 @@ MFA(관리되는 폴더 도우미)는 사서함 서버에서 실행되는 많은
 <ol>
 <li><p>되풀이하지 않는 작업(있는 경우)은 해당 <code>message-received date</code>에 따라 만료됩니다.</p></li>
 <li><p>되풀이하지 않는 작업에 <code>message-received date</code>가 없으면 해당 작업은 <code>message-creation date</code>에 따라 만료됩니다.</p></li>
-<li><p>되풀이하지 않는 작업에 <code>message-received date</code>와 <code></code><code>message-creation date</code>가 모두 없으면 작업이 만료되지 않습니다.</p></li>
+<li><p>되풀이하지 않는 작업에 <code>message-received date</code>와 <code>message-creation date</code>가 모두 없으면 작업이 만료되지 않습니다.</p></li>
 </ol></li>
 <li><p>되풀이 작업은 마지막 항목의 <code>end date</code>에 따라 만료됩니다. 되풀이 작업에 <code>end date</code>가 없으면 작업이 만료되지 않습니다.</p></li>
 <li><p>다시 생성하는 작업(작업의 이전 인스턴스가 완료된 후 지정한 시간을 다시 생성하는 되풀이 작업)은 만료되지 않습니다.</p></li>
