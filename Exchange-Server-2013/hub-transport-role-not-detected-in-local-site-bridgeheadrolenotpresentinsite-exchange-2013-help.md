@@ -1,5 +1,5 @@
 ﻿---
-title: '허브 전송 역할을 로컬 site_BridgeheadRoleNotPresentInSite에서 검색 되지 않음: Exchange 2013 Help'
+title: '허브 전송 역할이 로컬 사이트에서 검색되지 않음'
 TOCTitle: 허브 전송 역할을 로컬 site_BridgeheadRoleNotPresentInSite에서 검색 되지 않음
 ms:assetid: f318c947-81a8-4c18-975a-0f1e7868042a
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.bridgeheadrolenotpresentinsite(v=EXCHG.150)

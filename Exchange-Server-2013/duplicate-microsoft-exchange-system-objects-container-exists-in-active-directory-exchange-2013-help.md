@@ -1,5 +1,5 @@
 ﻿---
-title: 'Active Directory 에 존재 하는 중복 된 Microsoft Exchange System Objects 컨테이너: Exchange 2013 Help'
+title: 'Active Directory에 중복된 Exchange System 개체 컨테이너가 있음'
 TOCTitle: Active Directory 에 존재 하는 중복 된 Microsoft Exchange System Objects 컨테이너
 ms:assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.adiniterrorrule(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: '클라이언트 액세스 역할 로컬 site_ClientAccessRoleNotPresentInSite에서 검색 되지 않음: Exchange 2013 Help'
+title: '로컬 사이트에서 Client Access 역할이 감지되지 않음'
 TOCTitle: 클라이언트 액세스 역할 로컬 site_ClientAccessRoleNotPresentInSite에서 검색 되지 않음
 ms:assetid: b5bfc6af-9c55-46c0-a293-6078b64e87dd
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: '설치 수 continue_EventSystemStopped 전에 COM + 이벤트 시스템 서비스를 시작 해야 합니다.: Exchange 2013 Help'
+title: '설정을 시작하기 전에 먼저 COM+ 이벤트 시스템 서비스를 시작해야 함'
 TOCTitle: 설치 수 continue_EventSystemStopped 전에 COM + 이벤트 시스템 서비스를 시작 해야 합니다.
 ms:assetid: 3b8d2ba3-87fb-4749-b4d1-5dfec97e1ca4
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.eventsystemstopped(v=EXCHG.150)

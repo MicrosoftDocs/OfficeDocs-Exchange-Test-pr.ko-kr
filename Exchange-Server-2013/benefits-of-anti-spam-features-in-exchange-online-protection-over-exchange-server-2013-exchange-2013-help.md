@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange Server 2013의 Exchange Online Protection에서 제공되는 스팸 방지 기능의 이점: Exchange 2013 Help'
+title: 'Exchange Server 2013에 비해 Exchange Online Protection이 제공하는 스팸 방지 기능의 이점'
 TOCTitle: Exchange Server 2013의 Exchange Online Protection에서 제공되는 스팸 방지 기능의 이점
 ms:assetid: 00e37a3c-3fbc-488f-bdad-d52a3c80fd72
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/JJ673032(v=EXCHG.150)

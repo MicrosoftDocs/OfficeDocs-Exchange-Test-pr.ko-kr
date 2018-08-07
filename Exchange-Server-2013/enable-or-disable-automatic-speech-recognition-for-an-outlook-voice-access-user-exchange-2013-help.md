@@ -1,5 +1,5 @@
 ﻿---
-title: 'Outlook Voice Access 사용자에 대 한 자동 음성 인식 기능을 사용 하지 않도록 설정 하거나 사용: Exchange 2013 Help'
+title: 'Outlook Voice Access 사용자에게 자동 음성 인식을 사용하거나 사용하지 않도록 설정'
 TOCTitle: Outlook Voice Access 사용자에 대 한 자동 음성 인식 기능을 사용 하지 않도록 설정 하거나 사용
 ms:assetid: 58f41016-e725-432b-953e-415d61e0664c
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/Bb232062(v=EXCHG.150)

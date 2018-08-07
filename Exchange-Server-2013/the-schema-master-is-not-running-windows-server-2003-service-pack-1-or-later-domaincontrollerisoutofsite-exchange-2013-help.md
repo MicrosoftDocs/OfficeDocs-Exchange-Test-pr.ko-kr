@@ -1,5 +1,5 @@
 ﻿---
-title: '스키마 마스터에는 Windows Server 2003 서비스 팩 1 또는 later_DomainControllerIsOutOfSite 실행 되지 않음: Exchange 2013 Help'
+title: '스키마 마스터가 Windows Server 2003 서비스 팩 1 이상을 실행하지 않음'
 TOCTitle: 스키마 마스터에는 Windows Server 2003 서비스 팩 1 또는 later_DomainControllerIsOutOfSite 실행 되지 않음
 ms:assetid: 5edbe0b8-7610-4a52-aaaa-38c6a99e7e53
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.domaincontrollerisoutofsite(v=EXCHG.150)

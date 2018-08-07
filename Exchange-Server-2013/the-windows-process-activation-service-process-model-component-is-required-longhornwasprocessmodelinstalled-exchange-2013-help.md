@@ -1,5 +1,5 @@
 ﻿---
-title: 'Windows Process Activation Service-프로세스 모델 구성 요소는 required_LonghornWASProcessModelInstalled: Exchange 2013 Help'
+title: 'Windows Process Activation Service - 프로세스 모델 구성 요소가 필요함'
 TOCTitle: Windows Process Activation Service-프로세스 모델 구성 요소는 required_LonghornWASProcessModelInstalled
 ms:assetid: 8cc13dbb-4921-4c07-8602-d26613d7730a
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.longhornwasprocessmodelinstalled(v=EXCHG.150)

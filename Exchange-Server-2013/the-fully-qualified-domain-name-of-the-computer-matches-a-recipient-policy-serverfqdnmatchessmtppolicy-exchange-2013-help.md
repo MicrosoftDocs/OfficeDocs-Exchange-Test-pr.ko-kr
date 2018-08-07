@@ -1,5 +1,5 @@
 ﻿---
-title: '받는 사람 policy_ServerFQDNMatchesSMTPPolicy 일치 하는 컴퓨터의 정규화 된 도메인 이름: Exchange 2013 Help'
+title: '컴퓨터의 정규화된 도메인 이름이 받는 사람 정책과 일치'
 TOCTitle: 받는 사람 policy_ServerFQDNMatchesSMTPPolicy 일치 하는 컴퓨터의 정규화 된 도메인 이름
 ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)

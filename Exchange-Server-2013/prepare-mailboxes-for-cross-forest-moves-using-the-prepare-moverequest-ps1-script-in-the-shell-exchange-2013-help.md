@@ -1,5 +1,5 @@
 ﻿---
-title: '셸에서 준비 MoveRequest.ps1 스크립트를 사용 하 여 크로스 포리스트 이동에 대 한 준비 사서함: Exchange 2013 Help'
+title: '셸에서 Prepare-MoveRequest.ps1 스크립트를 사용하여 크로스 포리스트 이동을 위한 사서함 준비'
 TOCTitle: 셸에서 준비 MoveRequest.ps1 스크립트를 사용 하 여 크로스 포리스트 이동에 대 한 준비 사서함
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/Ee861103(v=EXCHG.150)

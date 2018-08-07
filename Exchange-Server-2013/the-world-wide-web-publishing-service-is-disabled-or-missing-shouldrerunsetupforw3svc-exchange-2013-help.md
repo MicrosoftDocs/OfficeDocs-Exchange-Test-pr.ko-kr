@@ -1,5 +1,5 @@
 ﻿---
-title: 'World Wide Web 게시 서비스를 사용할 수 없거나 missing_ShouldReRunSetupForW3SVC: Exchange 2013 Help'
+title: 'World Wide Web Publishing 서비스를 사용하지 않도록 설정했거나 누락되어 있음'
 TOCTitle: World Wide Web 게시 서비스를 사용할 수 없거나 missing_ShouldReRunSetupForW3SVC
 ms:assetid: f1815a6d-d16b-4271-9fab-84087465529e
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.shouldrerunsetupforw3svc(v=EXCHG.150)

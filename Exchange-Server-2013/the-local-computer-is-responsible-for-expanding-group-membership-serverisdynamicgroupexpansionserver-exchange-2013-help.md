@@ -1,5 +1,5 @@
 ﻿---
-title: '로컬 컴퓨터가 그룹 membership_ServerIsDynamicGroupExpansionServer 확장을 담당: Exchange 2013 Help'
+title: '그룹 구성원을 확장하는 것은 로컬 컴퓨터의 책임임'
 TOCTitle: 로컬 컴퓨터가 그룹 membership_ServerIsDynamicGroupExpansionServer 확장을 담당
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)

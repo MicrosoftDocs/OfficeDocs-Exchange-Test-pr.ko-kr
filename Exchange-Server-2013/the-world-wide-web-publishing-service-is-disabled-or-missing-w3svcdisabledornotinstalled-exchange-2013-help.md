@@ -1,5 +1,5 @@
 ﻿---
-title: 'World Wide Web 게시 서비스를 사용할 수 없거나 missing_W3SVCDisabledOrNotInstalled: Exchange 2013 Help'
+title: 'World Wide Web Publishing 서비스를 사용하지 않도록 설정했거나 누락되어 있음'
 TOCTitle: World Wide Web 게시 서비스를 사용할 수 없거나 missing_W3SVCDisabledOrNotInstalled
 ms:assetid: 2d26d778-ddf1-4225-b5e2-f6b49d819c94
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.w3svcdisabledornotinstalled(v=EXCHG.150)

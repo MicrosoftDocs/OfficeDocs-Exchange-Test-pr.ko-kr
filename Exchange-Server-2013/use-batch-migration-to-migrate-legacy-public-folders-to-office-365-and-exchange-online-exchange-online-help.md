@@ -1,5 +1,5 @@
 ﻿---
-title: '마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션: Exchange 2013 Help'
+title: '일괄 처리 마이그레이션을 사용하여 레거시 공용 폴더를 Office 365 및 Exchange Online에 마이그레이션'
 TOCTitle: 마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션
 ms:assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/Dn874017(v=EXCHG.150)

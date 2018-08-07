@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange 2010_NoE12ServerWarning에 대 한 Active Directory를 준비한 후 Exchange 2007 역할을 설치할 수 없습니다.: Exchange 2013 Help'
+title: 'Exchange 2010용 Active Directory를 준비한 후 Exchange 2007 역할을 설치할 수 없음'
 TOCTitle: Exchange 2010_NoE12ServerWarning에 대 한 Active Directory를 준비한 후 Exchange 2007 역할을 설치할 수 없습니다.
 ms:assetid: 4e579f69-0de9-421c-ba31-4e63a25e6a45
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.noe12serverwarning(v=EXCHG.150)
