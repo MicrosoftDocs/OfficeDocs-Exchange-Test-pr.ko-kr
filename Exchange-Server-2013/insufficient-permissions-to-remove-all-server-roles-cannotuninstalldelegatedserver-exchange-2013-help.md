@@ -1,5 +1,5 @@
 ﻿---
-title: '모든 서버 roles_CannotUninstallDelegatedServer를 제거 하려면 있는 권한이 없습니다.: Exchange 2013 Help'
+title: '모든 서버 역할을 제거할 수 있는 권한이 없음'
 TOCTitle: 모든 서버 roles_CannotUninstallDelegatedServer를 제거 하려면 있는 권한이 없습니다.
 ms:assetid: 214ae6f3-15e7-4337-99e8-40f9547c8e0c
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.cannotuninstalldelegatedserver(v=EXCHG.150)

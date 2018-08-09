@@ -1,5 +1,5 @@
 ﻿---
-title: '설치 수 continue_MSDTCStopped 전에 분산 트랜잭션 코디네이터 서비스를 시작 해야 합니다.: Exchange 2013 Help'
+title: '설정을 시작하기 전에 먼저 Distributed Transaction Coordinator 서비스를 시작해야 함'
 TOCTitle: 설치 수 continue_MSDTCStopped 전에 분산 트랜잭션 코디네이터 서비스를 시작 해야 합니다.
 ms:assetid: 96e33c94-348e-4a0b-9585-9bee81be4355
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.msdtcstopped(v=EXCHG.150)

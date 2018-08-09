@@ -1,5 +1,5 @@
 ﻿---
-title: 'IIS 7 구성 요소 하지 installed_LonghornIIS7WindowsAuthNotInstalled: Exchange 2013 Help'
+title: 'IIS 7 구성 요소가 설치되지 않음'
 TOCTitle: IIS 7 구성 요소 하지 installed_LonghornIIS7WindowsAuthNotInstalled
 ms:assetid: f0e75196-5d0d-4e6d-8931-e6c576f55caa
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.longhorniis7windowsauthnotinstalled(v=EXCHG.150)

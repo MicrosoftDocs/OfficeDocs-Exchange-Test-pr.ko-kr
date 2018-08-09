@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange 2000 또는 Exchange 2003 서버를 포함 하는 포리스트에 Exchange 2013을 설치할 수 없습니다.: Exchange 2013 Help'
+title: 'Exchange 2000 또는 Exchange 2003 서버를 포함하는 포리스트에 Exchange 2013을 설치할 수 없음'
 TOCTitle: Exchange 2000 또는 Exchange 2003 서버를 포함 하는 포리스트에 Exchange 2013을 설치할 수 없습니다.
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)

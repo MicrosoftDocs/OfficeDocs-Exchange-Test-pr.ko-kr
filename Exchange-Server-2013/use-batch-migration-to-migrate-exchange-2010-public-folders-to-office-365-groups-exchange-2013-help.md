@@ -1,5 +1,5 @@
 ﻿---
-title: '마이그레이션 일괄 처리를 사용 하 여 Office 365 그룹에 Exchange 2010 공용 폴더 마이그레이션: Exchange 2013 Help'
+title: '일괄 처리 마이그레이션을 사용하여 Exchange 2010 공용 폴더를 Office 365 그룹에 마이그레이션'
 TOCTitle: 마이그레이션 일괄 처리를 사용 하 여 Office 365 그룹에 Exchange 2010 공용 폴더 마이그레이션
 ms:assetid: d018558d-3075-4dd3-9ff7-91ce66b8d5fb
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/Mt843875(v=EXCHG.150)

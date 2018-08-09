@@ -1,5 +1,5 @@
 ﻿---
-title: '마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션: Exchange 2013 Help'
+title: '일괄 처리 마이그레이션을 사용하여 Exchange 2013 공용 폴더를 Exchange Online에 마이그레이션'
 TOCTitle: 마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션
 ms:assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/Mt798260(v=EXCHG.150)

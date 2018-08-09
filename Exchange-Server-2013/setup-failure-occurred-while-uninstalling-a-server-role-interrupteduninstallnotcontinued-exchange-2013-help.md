@@ -1,5 +1,5 @@
 ﻿---
-title: '서버 role_InterruptedUninstallNotContinued를 제거 하는 동안 설치 프로그램 오류가 발생 했습니다.: Exchange 2013 Help'
+title: '서버 역할을 제거하는 동안 설정 오류가 발생함'
 TOCTitle: 서버 role_InterruptedUninstallNotContinued를 제거 하는 동안 설치 프로그램 오류가 발생 했습니다.
 ms:assetid: 187967b2-cb28-45d7-8858-2a083c1ebe58
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.interrupteduninstallnotcontinued(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'IIS 6 호환성 구성 요소 하지 installed_LonghornIIS6MgmtConsoleNotInstalled: Exchange 2013 Help'
+title: 'IIS 6 호환성 구성 요소가 설치되지 않음'
 TOCTitle: IIS 6 호환성 구성 요소 하지 installed_LonghornIIS6MgmtConsoleNotInstalled
 ms:assetid: 8358eafb-def7-4b8d-8fe1-623bc5a0e20e
 ms:mtpsurl: https://technet.microsoft.com/ko-kr/library/ms.exch.setupreadiness.longhorniis6mgmtconsolenotinstalled(v=EXCHG.150)
