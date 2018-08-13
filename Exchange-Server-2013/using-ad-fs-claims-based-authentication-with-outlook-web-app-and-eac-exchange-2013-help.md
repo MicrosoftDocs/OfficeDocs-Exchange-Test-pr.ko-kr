@@ -288,7 +288,7 @@ Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7
 
 모든 응용 프로그램 및 웹 응용 프로그램 프록시를 통해 게시 하려는 서비스에 대 한 AD FS 서버에서 신뢰 당사자 트러스트를 구성 해야 합니다. 별도 네임 스페이스를 사용 하는 여러 Active Directory 사이트 배포의 경우, 각 네임 스페이스에 대 한 신뢰 당사자 트러스트 Outlook Web App 및 EAC에 대 한 추가 되어야 합니다.
 
-EAC는 ECP 가상 디렉터리를 사용합니다. [Get-EcpVirtualDirectory](https://technet.microsoft.com/ko-kr/library/dd351058\(v=exchg.150\)) 및 [Set-EcpVirtualDirectory](https://technet.microsoft.com/ko-kr/library/dd297991\(v=exchg.150\)) cmdlet을 사용하여 EAC에 대한 설정을 확인하거나 구성할 수 있습니다. EAC에 액세스하려면 웹 브라우저를 통해 **http://server1.contoso.com/ecp**로 이동해야 합니다.
+EAC는 ECP 가상 디렉터리를 사용합니다. [Get-EcpVirtualDirectory](https://technet.microsoft.com/ko-kr/library/dd351058\(v=exchg.150\)) 및 [Set-EcpVirtualDirectory](https://technet.microsoft.com/ko-kr/library/dd297991\(v=exchg.150\)) cmdlet을 사용하여 EAC에 대한 설정을 확인하거나 구성할 수 있습니다. EAC에 액세스하려면 웹 브라우저를 통해 <strong>http://server1.contoso.com/ecp</strong>로 이동해야 합니다.
 
 
 > [!NOTE]
@@ -326,7 +326,7 @@ Outlook Web App의 경우 Windows Server 2012 R2에서 AD FS 관리 스냅인을
 
 14. **마침** 페이지에서 **마법사를 닫을 때 이 신뢰 당사자 트러스트에 대한 클레임 규칙 편집 대화 상자 열기**가 선택되어 있지 않은지 확인한 후 **닫기**를 클릭합니다.
 
-EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다시 수행하여 두 번째 신뢰 당사자 트러스트를 만들되 표시 이름으로 **Outlook Web App**이 아닌 **EAC**를 입력해야 합니다. 설명으로는 **This is a trust for the Exchange Admin Center**를 입력하고 **신뢰 당사자 WS-Federation 수동 프로토콜 URL**로는 **https://mail.contoso.com/ecp**를 입력합니다.
+EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다시 수행하여 두 번째 신뢰 당사자 트러스트를 만들되 표시 이름으로 **Outlook Web App**이 아닌 **EAC**를 입력해야 합니다. 설명으로는 **This is a trust for the Exchange Admin Center**를 입력하고 **신뢰 당사자 WS-Federation 수동 프로토콜 URL**로는 <strong>https://mail.contoso.com/ecp</strong>를 입력합니다.
 
 클레임 기반 ID 모델에서 페더레이션 서비스로서의 AD FS(Active Directory Federation Services) 기능은 클레임 집합이 포함된 토큰을 발급하는 것입니다. 클레임 규칙은 AD FS에서 발급하는 클레임과 관련한 결정을 관리합니다. 클레임 규칙 및 모든 서버 구성 데이터는 AD FS 구성 데이터베이스에 저장됩니다.
 
@@ -583,7 +583,7 @@ Outlook Web App 창에 로드 됩니다.
 
 EAC에 대해 AD FS 클레임을 테스트하려면 다음을 수행합니다.
 
-1.  웹 브라우저에서 **https://mail.contoso.com/ecp**로 이동합니다.
+1.  웹 브라우저에서 <strong>https://mail.contoso.com/ecp</strong>로 이동합니다.
 
 2.  브라우저 창에서 인증서 오류가 표시 되어도 계속 ECP 웹사이트에 로그온 합니다. 경우에 ADFS 리디렉션해야 로그인 페이지 또는 고 ADFS 자격 증명을 요청 합니다.
 
