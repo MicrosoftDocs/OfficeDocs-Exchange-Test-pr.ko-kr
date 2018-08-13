@@ -232,7 +232,7 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
 
 1.  **설치 진행률** 페이지의 **Active Directory Federation Services** 아래 창에서 **이 서버에 페더레이션 서비스를 구성**을 클릭합니다. Active Directory Federation Service 구성 마법사가 열립니다.
 
-2.  **시작** 페이지에서 **페더레이션 서버 팜에 첫 번째 페더레이션 서버를 만듭니다.**를 클릭하고 **다음**을 클릭합니다.
+2.  **시작** 페이지에서 <strong>페더레이션 서버 팜에 첫 번째 페더레이션 서버를 만듭니다.</strong>를 클릭하고 **다음**을 클릭합니다.
 
 3.  **AD DS에 연결** 페이지에서 이 컴퓨터가 구독된 올바른 Active Directory 도메인에 대한 도메인 관리자 권한이 있는 계정을 지정하고 **다음**을 클릭합니다. 다른 사용자를 선택하려면 **변경**을 클릭합니다.
 
@@ -242,7 +242,7 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
     
       - 페더레이션 서비스의 이름을 **adfs.contoso.com**과 같이 입력합니다.
     
-      - 페더레이션 서비스의 표시 이름을 지정하려면 **Contoso, Ltd.**와 같이 조직 이름을 입력합니다.
+      - 페더레이션 서비스의 표시 이름을 지정하려면 **Contoso, Ltd.** 와 같이 조직 이름을 입력합니다.
 
 5.  **서비스 계정 지정** 페이지에서 **기존 도메인 사용자 계정 또는 그룹 관리 서비스 계정 사용**을 선택하고 도메인 컨트롤러를 만들 때 만든 GMSA 계정(FsGmsa)을 지정합니다. 계정 암호를 입력하고 **다음**을 클릭합니다.
     
@@ -260,7 +260,7 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
     
         New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
 
-8.  **구성 데이터베이스 지정** 페이지에서 **Windows 내부 데이터베이스를 사용하여 이 서버에 데이터베이스를 만듭니다.**를 선택하고 **다음**을 클릭합니다.
+8.  **구성 데이터베이스 지정** 페이지에서 <strong>Windows 내부 데이터베이스를 사용하여 이 서버에 데이터베이스를 만듭니다.</strong>를 선택하고 **다음**을 클릭합니다.
 
 9.  **옵션 검토** 페이지에서 구성 선택을 확인합니다. 원하는 경우 **스크립트 보기** 단추를 사용하여 추가 AD FS 설치를 자동화할 수 있습니다. **다음**을 클릭합니다.
 
@@ -312,7 +312,7 @@ Outlook Web App의 경우 Windows Server 2012 R2에서 AD FS 관리 스냅인을
 
 7.  **인증서 구성** 페이지에서 **다음**을 클릭합니다.
 
-8.  **URL 구성** 페이지에서 **Ws-federation 수동 프로토콜 지원 사용** 을 클릭 하 고 **신뢰 당사자 Ws-federation 수동 프로토콜 URL**, **유형 https://mail.contoso.com/owa/**아래에서 다음 다음 **다음을 클릭 하 고** .
+8.  **URL 구성** 페이지에서 **Ws-federation 수동 프로토콜 지원 사용** 을 클릭 하 고 **신뢰 당사자 Ws-federation 수동 프로토콜 URL**, <strong>유형 https://mail.contoso.com/owa/</strong>아래에서 다음 다음 **다음을 클릭 하 고** .
 
 9.  **식별자 구성** 페이지에서 이 신뢰 당사자에 대한 식별자를 하나 이상 지정하고 **추가**를 클릭하여 식별자를 목록에 추가한 후에 **다음**을 클릭합니다.
 
@@ -474,7 +474,7 @@ AD FS 서버에 연결하도록 웹 응용 프로그램 프록시를 구성해�
 
 2.  새 응용 프로그램 게시 마법사의 **시작** 페이지에서 **다음**을 클릭합니다.
 
-3.  **사전 인증** 페이지에서 **AD FS(Active Directory Federation Services)**를 클릭하고 **다음**을 클릭합니다.
+3.  **사전 인증** 페이지에서 <strong>AD FS(Active Directory Federation Services)</strong>를 클릭하고 **다음**을 클릭합니다.
 
 4.  **신뢰 당사자** 페이지의 신뢰 당사자 목록에서 게시할 응용 프로그램의 신뢰 당사자를 선택하고 **다음**을 클릭합니다.
 
@@ -512,9 +512,9 @@ AD FS 서버에 연결하도록 웹 응용 프로그램 프록시를 구성해�
 
 Exchange 2013에서 Outlook Web App 및 EAC에 대해 클레임 기반 인증에 사용되도록 AD FS를 구성할 때는 Exchange 조직에 대해 AD FS를 사용하도록 설정해야 합니다. [Set-OrganizationConfig](https://technet.microsoft.com/ko-kr/library/aa997443\(v=exchg.150\)) cmdlet을 사용하여 조직의 AD FS 설정을 구성해야 합니다.
 
-  - **Https://adfs.contoso.com/adfs/ls/**을 AD FS 발급자를 설정 합니다.
+  - <strong>Https://adfs.contoso.com/adfs/ls/</strong>을 AD FS 발급자를 설정 합니다.
 
-  - AD FS Uri를 **https://mail.contoso.com/owa/** 및 **https://mail.contoso.com/ecp/**설정 합니다.
+  - AD FS Uri를 <strong>https://mail.contoso.com/owa/</strong> 및 <strong>https://mail.contoso.com/ecp/</strong>.설정 합니다.
 
   - 인증서 지문을 Windows PowerShell을 사용 하 여 AD FS 서버에서 열고 `Get-ADFSCertificate -CertificateType "Token-signing"`를 입력 하 여 서명 AD FS 토큰을 소개 합니다. 찾을 수 있는 토큰 서명 인증서 지문을 할당 합니다. AD FS 토큰 서명 인증서가 만료 된 경우 새 AD FS 토큰 서명 인증서의 지문은 [Set-OrganizationConfig](https://technet.microsoft.com/ko-kr/library/aa997443\(v=exchg.150\)) cmdlet을 사용 하 여 업데이트 되어야 합니다.
 
