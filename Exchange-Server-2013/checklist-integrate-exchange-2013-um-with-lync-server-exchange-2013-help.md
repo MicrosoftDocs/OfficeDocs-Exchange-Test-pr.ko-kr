@@ -23,6 +23,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 > [!NOTE]  
 > <p>&nbsp;</p>
 
+
 이 검사 목록으로 작업을 시작하기 전에 다음 개념을 익히십시오.
 
   - [Exchange 2013 UM 및 Lync Server 배포 개요](deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md)
