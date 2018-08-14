@@ -72,7 +72,7 @@ Exchange 2013 핫픽스를 제공 하 고 서비스 팩에는 방식을 변경 �
 
 ## Exchange Server 2007 최종-의 수명
 
-Exchange 2007 11 2017 년 4 월, [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/p/?linkid=833210)당에서 지원의 끝에 도달 합니다. 미리 알림으로, 해당 날짜에 다음과 같은 새로운 보안 업데이트가 없으면 될 후 비보안 업데이트 무료 또는 지급 된 지원 옵션 또는 온라인 기술 콘텐츠 업데이트 합니다. 또한 Office 365의 채택 가속화 하 고 사용량이 증가 함 클라우드, Office 제품에 대 한 사용자 지정 지원 옵션 제공 되지 않습니다. Exchange Server와 Office 제품군; 포함 SharePoint Server; Office Communications Server; Lync Server; 비즈니스 서버에 대 한 Skype Project Server 및 Visio 합니다. 고객의 마이그레이션을 완료 하 고 계획 업그레이드 문서의 내용도 필요 Exchange 2007 에 대 한 지원 날짜의 끝에 도달 합니다. Software Assurance 배포 및 계획 Microsoft 및 클라우드 마이그레이션 및 [에 대 한](https://go.microsoft.com/fwlink/p/?linkid=833211)[Microsoft FastTrack](https://go.microsoft.com/fwlink/p/?linkid=238431) 를 포함 하 여 Microsoft 공인 파트너가 제공 하는 배포 장점을 활용 하는 고객을 것이 좋습니다. 서비스 온-프레미스 업그레이드 합니다.
+Exchange 2007 11 2017 년 4 월, [Microsoft 수명 주기 정책](https://go.microsoft.com/fwlink/p/?linkid=833210)당에서 지원의 끝에 도달 합니다. 미리 알림으로, 해당 날짜에 다음과 같은 새로운 보안 업데이트가 없으면 될 후 비보안 업데이트 무료 또는 지급 된 지원 옵션 또는 온라인 기술 콘텐츠 업데이트 합니다. 또한 Office 365의 채택 가속화 하 고 사용량이 증가 함 클라우드, Office 제품에 대 한 사용자 지정 지원 옵션 제공 되지 않습니다. Exchange Server와 Office 제품군; 포함 SharePoint Server; Office Communications Server; Lync Server; 비즈니스 서버에 대 한 Skype Project Server 및 Visio 합니다. 고객의 마이그레이션을 완료 하 고 계획 업그레이드 문서의 내용도 필요 Exchange 2007 에 대 한 지원 날짜의 끝에 도달 합니다. Software Assurance 배포 및 계획 Microsoft 및 클라우드 마이그레이션 및 [에 대 한 를 포함 하 여 Microsoft 공인 파트너가 제공 하는 배포 장점을 활용 하는 고객을 것이 좋습니다. 서비스](https://go.microsoft.com/fwlink/p/?linkid=833211) 온-프레미스 업그레이드 합니다.
 
 ## 지원되는 운영 체제 플랫폼
 
