@@ -223,24 +223,29 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
     하위 Match 요소의 정확한 하위 집합 일치
 
 <!-- end list -->
-
+```
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
+```
 
+```
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
+```
 
+```
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
         <Match idRef="Name" />
     </Any>
+```
 
 ## 더 많은 증거로 신뢰 수준 향상
 

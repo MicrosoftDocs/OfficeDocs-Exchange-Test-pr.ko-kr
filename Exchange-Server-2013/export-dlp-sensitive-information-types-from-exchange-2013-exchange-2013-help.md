@@ -47,7 +47,7 @@ EAC에서 외부 파일에 DLP 정책 또는 서식 파일을 내보낼 하는 �
 
 2.  형식은 **Get-classificationrulecollection**및 조직의 중요 한 정보 유형 화면에 표시 되어야 합니다. 기본, 기본 제공 중요 한 정보 유형 컬렉션을 "Microsoft 규칙 패키지." 라는 표시 됩니다 자신만의 모든 중요 한 정보 유형을 만들지 않은 경우
 
-3.  입력 하 여 중요 한 정보 유형을 변수에 저장 **$ruleCollections Get-classificationrulecollection =**합니다.
+3.  입력 하 여 중요 한 정보 유형을 변수에 저장 <strong>$ruleCollections Get-classificationrulecollection =</strong>합니다.
 
 4.  이제 모든 데이터와 서식이 지정 된 XML 파일을 입력 하 여 확인 **집합-콘텐츠-경로 "C:\\My Documents\\exportedRules.xml"-인코딩 바이트-$ruleCollections.SerializedClassificationRuleCollection 값이**.
 

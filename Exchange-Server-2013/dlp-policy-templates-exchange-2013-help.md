@@ -61,7 +61,7 @@ Microsoft에서 정의한 특정 XML 스키마 정의를 준수하는 Exchange�
 
   -  [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [정책 및 규정 준수 Cmdlet](https://technet.microsoft.com/ko-kr/library/dd298082\(v=exchg.150\))
+  -  [정책 및 규정 준수 Cmdlet](https://technet.microsoft.com/ko-kr/library/dd298082\(v=exchg.150\))
 
 ## Microsoft에서 만든 DLP 정책 사용
 

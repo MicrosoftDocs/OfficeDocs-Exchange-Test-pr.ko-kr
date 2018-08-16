@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong> 2016-12-09_
 
 다음 Microsoft Exchange Server 2013 정보 권한 관리 (IRM) 기능을 사용 하려면 사용 하도록 설정, 조직의 [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) 클러스터에서 고급 사용자 그룹에 페더레이션 사서함 ( Exchange 2013 설치 하 여 만든 시스템 사서함)를 추가 해야 합니다.
 
@@ -63,7 +63,7 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 1.  AD RMS Super Users 그룹으로만 사용할 메일 그룹을 만듭니다. 자세한 내용은 [메일 그룹 만들기 및 관리](create-and-manage-distribution-groups-exchange-2013-help.md)를 참조하십시오.
 
-2.  사용자 **FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042**를 새 메일 그룹에 추가합니다. 페더레이션 사서함은 시스템 사서함이므로 EAC에서 볼 수 없습니다. 사용자를 메일 그룹에 추가하려면 셸에서 [Add-DistributionGroupMember](https://technet.microsoft.com/ko-kr/library/bb124340\(v=exchg.150\)) cmdlet을 사용해야 합니다.
+2.  사용자 <strong>FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042</strong>를 새 메일 그룹에 추가합니다. 페더레이션 사서함은 시스템 사서함이므로 EAC에서 볼 수 없습니다. 사용자를 메일 그룹에 추가하려면 셸에서 [Add-DistributionGroupMember](https://technet.microsoft.com/ko-kr/library/bb124340\(v=exchg.150\)) cmdlet을 사용해야 합니다.
     
     이 예제에서는 페더레이션 사서함을 ADRMSSuperUsers 메일 그룹에 추가합니다.
     
@@ -77,19 +77,19 @@ AD RMS 클러스터에서 다음 절차를 수행합니다. 이 절차를 수행
 
 1.  AD RMS(Active Directory Rights Management Services) 콘솔을 열고 AD RMS 클러스터를 확장합니다.
 
-2.  콘솔 트리에서 **보안 정책**을 확장한 다음 **Super Users**를 클릭합니다.
+2.  콘솔 트리에서 <strong>보안 정책</strong>을 확장한 다음 <strong>Super Users</strong>를 클릭합니다.
 
-3.  작업 창에서 **Super Users 사용**을 클릭합니다.
+3.  작업 창에서 <strong>Super Users 사용</strong>을 클릭합니다.
 
-4.  결과 창에서 **Super User 그룹 변경**을 클릭하여 **Super Users** 속성 시트를 엽니다.
+4.  결과 창에서 <strong>Super User 그룹 변경</strong>을 클릭하여 <strong>Super Users</strong> 속성 시트를 엽니다.
 
-5.  **Super Users 그룹** 상자에 이전 절차에서 만든 메일 그룹의 전자 메일 주소를 입력하거나, **찾아보기**를 클릭하여 메일 그룹을 선택합니다.
+5.  <strong>Super Users 그룹</strong> 상자에 이전 절차에서 만든 메일 그룹의 전자 메일 주소를 입력하거나, <strong>찾아보기</strong>를 클릭하여 메일 그룹을 선택합니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 
 새 메일 그룹이나 기존 메일 그룹에 페더레이션 사서함을 추가한 후에 [Get-DistributionGroupMember](https://technet.microsoft.com/ko-kr/library/aa996367\(v=exchg.150\)) cmdlet을 사용하여 그룹 구성원을 확인할 수 있습니다.
 
-메일 그룹 구성원을 확인하는 방법의 예제는 **Get-DistributionGroupMember**의 [Examples](https://technet.microsoft.com/ko-kr/aa996367\(exchg.150\)#examples) 항목을 참조하십시오.
+메일 그룹 구성원을 확인하는 방법의 예제는 <strong>Get-DistributionGroupMember</strong>의 [Examples](https://technet.microsoft.com/ko-kr/aa996367\(exchg.150\)#examples) 항목을 참조하십시오.
 
 AD RMS를 사용하여 Super Users 그룹을 설정한 후 다음 방법으로 Super Users 그룹이 올바르게 구성되었는지 확인할 수 있습니다. 또한 [Test-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979798\(v=exchg.150\)) cmdlet을 사용하여 IRM 기능을 확인할 수 있습니다.
 

@@ -29,14 +29,14 @@ UM(통합 메시징)을 사용하는 Microsoft Exchange 2010 조직이 Exchange 
 
   - Microsoft Exchange UM(통합 메시징) 통화 라우터 서비스를 실행 중인 클라이언트 액세스 서버와 Microsoft Exchange UM(통합 메시징) 서비스를 실행 중인 사서함 서버를 올바르게 설치 및 구성했는지 확인합니다. UM 서비스에 대한 자세한 내용은 [UM 서비스](um-services-exchange-2013-help.md)를 참조하십시오.
     
-    > [!CAUTION]
+    > [!CAUTION]  
     > Exchange 2013 클라이언트 액세스 서버로 UM SIP 및 RTP 트래픽을 보내도록 VoIP 게이트웨이 또는 IP PBX를 구성하기 전에 조직에 Exchange 2013 사서함 서버를 하나 이상 배포해야 합니다.
 
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 
@@ -50,7 +50,7 @@ UM 언어 팩을 사용하면 발신자와 Outlook Voice Access 사용자가 여
 기본적으로 Exchange 2013 사서함 서버를 설치하면 미국 영어(en-US) 언어 팩이 설치됩니다. 다른 UM 언어 팩을 설치하지 않을 경우 다이얼 플랜에 이 언어 옵션만 사용할 수 있습니다. 미국 영어는 컴퓨터에서 사서함 서버를 제거하지 않는 한 제거할 수 없습니다. Exchange 2013 사서함 서버에 UM 언어 팩을 설치하고 나면 다이얼 플랜에 대한 기본 언어를 구성할 때 해당 언어 팩에 연결된 언어가 사용 가능한 옵션으로 나열됩니다. 기본적으로 UM 자동 전화 교환은 만들 때 UM 다이얼 플랜에 연결되므로 연결된 UM 다이얼 플랜의 기본 언어 설정을 사용합니다. 그러나 UM 자동 전화 교환을 만든 후에 이 설정을 변경할 수 있습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 미국 영어만 다이얼 플랜에 제공하려는 경우 이 단계를 건너뛰고 2단계로 이동할 수 있습니다.
 
 
@@ -150,7 +150,7 @@ UM에서 Exchange 2013 서버와 VoIP 게이트웨이, IP PBX 및 SIP 사용 가
     6.  포함한 도메인이 올바른지 확인한 후 **마침**을 선택합니다.
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > EAC를 사용하여 인증서를 만들 때는 인증서에 대해 서비스를 사용하도록 설정하라는 메시지가 표시되지 않습니다. 인증서를 만든 후에 EAC를 통해 서비스를 사용하도록 설정할 수 있습니다. 서비스에서 인증서를 사용하도록 설정하는 방법에 대한 자세한 내용은 <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">UM 및 UM 통화 라우터 서비스에 인증서 할당</A>을 참조하십시오.
 
     
@@ -159,7 +159,7 @@ UM에서 Exchange 2013 서버와 VoIP 게이트웨이, IP PBX 및 SIP 사용 가
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > <EM>Services</EM> 매개 변수를 통해 사용하도록 설정할 서비스를 지정하는 경우에는 만든 인증서에 대해 서비스를 사용하도록 설정하라는 메시지가 표시됩니다. 이 예에서는 통합 메시징 및 통합 메시징 통화 라우터 서비스에서 인증서를 사용하도록 설정하라는 메시지가 표시됩니다. 서비스에서 인증서를 사용하도록 설정하는 방법에 대한 자세한 내용은 <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">UM 및 UM 통화 라우터 서비스에 인증서 할당</A>을 참조하십시오.
 
 
@@ -254,7 +254,7 @@ UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고�
     
       - **이름**   다이얼 플랜의 이름을 입력합니다. UM 다이얼 플랜 이름은 필수이며 고유해야 합니다. 하지만 입력한 이름은 EAC와 셸에 표시되는 용도로만 사용됩니다. UM 다이얼 플랜 이름의 최대 길이는 64자이며 공백을 포함할 수 있습니다. 그러나 다음 문자는 사용할 수 없습니다. " / \\ \[ \] : ; | = , + \* ? \< \>.
         
-        다이얼 플랜의 이름 상자에는 64자까지 입력할 수 있지만 다이얼 플랜 이름은 49자보다 길 수 없습니다. 49자보다 많은 문자를 포함하는 다이얼 플랜 이름을 만들려고 하면 오류 메시지가 나타납니다. 메시지에는 UM 다이얼 플랜 이름이 너무 길어 UM 사서함 정책을 생성할 수 없다는 내용이 표시됩니다. 이 문제는 다이얼 플랜을 만들 때 이름이 *\<DialPlanName\>***기본 정책**인 기본 UM 사서함 정책도 만들어지기 때문에 발생합니다. 기본 정책의 15자가 다이얼 플랜 이름에 추가되면 총 문자 수가 제한을 초과합니다. UM 다이얼 플랜과 UM 사서함 정책에 대한 *name* 매개 변수는 모두 64자일 수 있습니다. 하지만 다이얼 플랜의 이름이 49자보다 길면 기본 UM 사서함 정책의 이름이 64자보다 길어지므로 시스템에서 허용되지 않습니다.
+        다이얼 플랜의 이름 상자에는 64자까지 입력할 수 있지만 다이얼 플랜 이름은 49자보다 길 수 없습니다. 49자보다 많은 문자를 포함하는 다이얼 플랜 이름을 만들려고 하면 오류 메시지가 나타납니다. 메시지에는 UM 다이얼 플랜 이름이 너무 길어 UM 사서함 정책을 생성할 수 없다는 내용이 표시됩니다. 이 문제는 다이얼 플랜을 만들 때 이름이 <em>\<DialPlanName\></em>**기본 정책**인 기본 UM 사서함 정책도 만들어지기 때문에 발생합니다. 기본 정책의 15자가 다이얼 플랜 이름에 추가되면 총 문자 수가 제한을 초과합니다. UM 다이얼 플랜과 UM 사서함 정책에 대한 *name* 매개 변수는 모두 64자일 수 있습니다. 하지만 다이얼 플랜의 이름이 49자보다 길면 기본 UM 사서함 정책의 이름이 64자보다 길어지므로 시스템에서 허용되지 않습니다.
     
       - **내선 번호 길이(자릿수)**   다이얼 플랜에서 내선 번호의 자릿수를 입력합니다. 내선 번호 자릿수는 PBX에 만들어진 전화 통신 다이얼 플랜을 기반으로 합니다. 예를 들어 전화 통신 다이얼 플랜과 연결된 사용자가 4자리 내선 번호를 돌려 동일한 전화 통신 다이얼 플랜의 다른 사용자에게 전화하는 경우 내선 번호 자릿수로 4를 선택합니다.
         
@@ -355,7 +355,7 @@ EAC를 사용하여 기존 UM IP 게이트웨이를 구성하려면 다음을 �
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 
 
-> [!TIP]
+> [!TIP]  
 > UM 헌트 그룹의 설정은 구성하거나 변경할 수 없습니다. UM 헌트 그룹의 구성 설정을 변경하려면 해당 그룹을 삭제한 후 올바른 설정으로 새 UM 헌트 그룹을 추가해야 합니다.
 
 
@@ -415,7 +415,7 @@ EAC를 사용하여 기존 UM IP 게이트웨이를 구성하려면 다음을 �
 3.  **새 UM 사서함 정책** 페이지의 **이름** 상자에 새 UM 사서함 정책의 이름을 입력합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 이 상자에 UM 사서함 정책의 고유 이름을 지정합니다. 이 이름은 EAC에 나타나는 표시 이름입니다. UM 사서함 정책을 만든 후 표시 이름을 변경해야 하는 경우 기존 UM 사서함 정책을 먼저 삭제한 다음 적합한 이름으로 다른 UM 사서함 정책을 만들어야 합니다. UM 사용 가능 사용자가 연결되어 있는 UM 사서함 정책은 삭제할 수 없습니다. UM 사서함 정책 이름은 필수 항목이지만 표시 목적으로만 사용됩니다. 조직에서 여러 개의 UM 사서함 정책을 사용할 수 있기 때문에 UM 사서함 정책에 대해 의미 있는 이름을 사용하는 것이 좋습니다. UM 사서함 정책 이름의 최대 길이는 64자이며 공백을 포함할 수 있습니다. 그러나 다음 문자는 사용할 수 없습니다. " / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
@@ -423,7 +423,7 @@ EAC를 사용하여 기존 UM IP 게이트웨이를 구성하려면 다음을 �
 4.  **저장**을 클릭합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > UM 사서함 정책을 저장할 때 PIN 정책, 음성 메일 기능 및 보호된 음성 메일 설정을 비롯한 모든 기본 설정이 사용되도록 설정됩니다. 방금 만든 UM 사서함 정책의 기본 설정을 사용자 지정하거나 변경하려면 <STRONG>Set-UMMailbox</STRONG> cmdlet 또는 EAC를 사용합니다.
 
 
@@ -577,7 +577,7 @@ Exchange 관리 콘솔을 사용하여 Exchange 2010 UM 서버에서 통합 메�
     Disable-UMServer -Identity MyUMServer -Immediate $true
 
 
-> [!TIP]
+> [!TIP]  
 > Exchange 2010 UM 서버에서 <STRONG>Disable-UMServer</STRONG> cmdlet을 사용하거나 Exchange 2013 사서함 서버에서 <STRONG>Disable-UMService</STRONG> cmdlet을 사용하여 전화 응답을 사용하지 않도록 설정할 수 있습니다.
 
 
@@ -616,7 +616,7 @@ Exchange 관리 콘솔을 사용하여 다이얼 플랜에서 Exchange 2010 UM �
     Set-UMServer -id MyUMServer -DialPlans SipDP1
 
 
-> [!TIP]
+> [!TIP]  
 > Exchange 2010 통합 메시징 서버의 셸에서 <STRONG>Set-UMServer</STRONG> cmdlet을 사용하거나 Exchange 2013 사서함 서버에서 <STRONG>Set-UMService</STRONG> cmdlet을 사용하여 다이얼 플랜 하나 또는 여러 개에서 Exchange 2010 UM 서버를 제거할 수 있습니다. 예를 들어 모든 다이얼 플랜에서 UM 서버를 제거하려면 다음 명령을 실행합니다. <CODE>Set-UMServer -identity MyUMServer -DialPlans $null</CODE>
 
 

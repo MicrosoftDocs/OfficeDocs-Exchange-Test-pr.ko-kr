@@ -89,13 +89,19 @@ Exchange 검색과 관련된 추가 관리 작업에 대한 자세한 내용은 
 
 다음 명령을 실행하여 Microsoft Exchange Search Service를 중지하고 사용하지 않도록 설정합니다.
 
+```
     Stop-Service MSExchangeFastSearch
+```
 
+```
     Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 다음 명령을 실행하고 Exchange Search Service가 자동으로 시작되도록 구성한 후 이 서비스를 시작합니다.
 
+```
     Set-Service MSExchangeFastSearch -StartupType Automatic
-
+```
+```
     Start-Service MSExchangeFastSearch
-
+```

@@ -87,7 +87,7 @@ Office 2010 Filter Pack 배포는 두 가지 주요 단계로 구성됩니다.
     
     3.  방금 만든 키를 클릭하고 **(기본값)** 값을 Office 2010 Filter Pack을 설치한 위치로 설정합니다. 기본적으로 Filter Pack은 `C:\Program Files\Common Files\Microsoft Shared\Filters\ONIFilter.dll`에 설치됩니다.
     
-    4.  **{B8D12492-CE0F-40AD-83EA-099A03D493F1}**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 가리킨 다음 **문자열 값**을 클릭합니다.
+    4.  <strong>{B8D12492-CE0F-40AD-83EA-099A03D493F1}</strong>을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 가리킨 다음 **문자열 값**을 클릭합니다.
     
     5.  새 문자열 값의 이름을 `ThreadingModel`로 지정하고 그 값을 `Both`로 설정합니다.
 
@@ -99,7 +99,7 @@ Office 2010 Filter Pack 배포는 두 가지 주요 단계로 구성됩니다.
     
     3.  방금 만든 키를 클릭하고 **(기본값)** 값을 Office 2010 Filter Pack을 설치한 위치로 설정합니다. 기본적으로 Filter Pack은 `C:\Program Files\Common Files\Microsoft Shared\Filters\PUBFILT.dll`에 설치됩니다.
     
-    4.  **{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}**를 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 가리킨 다음 **문자열 값**을 클릭합니다.
+    4.  <strong>{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}</strong>를 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 가리킨 다음 **문자열 값**을 클릭합니다.
     
     5.  새 문자열 값의 이름을 `ThreadingModel`로 지정하고 그 값을 `Both`로 설정합니다.
 

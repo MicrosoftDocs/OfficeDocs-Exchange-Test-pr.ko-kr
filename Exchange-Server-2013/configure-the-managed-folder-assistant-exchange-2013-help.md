@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2014-10-01_
+_<strong>마지막으로 수정된 항목:</strong> 2014-10-01_
 
 다음은 *관리 되는 폴더 도우미가* 사서함 도우미 보존 정책에 구성 된 메시지 보존 설정을 적용 하는 MicrosoftExchange 입니다.
 

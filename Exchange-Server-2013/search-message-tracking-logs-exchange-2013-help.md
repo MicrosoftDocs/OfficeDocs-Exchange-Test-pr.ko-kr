@@ -13,13 +13,13 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2013-02-25_
+_<strong>마지막으로 수정된 항목:</strong> 2013-02-25_
 
 Microsoft Exchange Server 2013에서 메시지 추적 로그는 사서함 서버의 전송 서비스, 사서함 서버의 사서함 및 Edge 전송 서버를 오고가는 메시지 전송 시 수행되는 모든 메시지 작업에 대한 상세 레코드입니다.
 
-Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 검색 조건으로 메시지 추적 로그의 항목을 검색할 수 있습니다.
+Exchange 관리 셸의 <strong>Get-MessageTrackingLog</strong> cmdlet을 사용하여 특정 검색 조건으로 메시지 추적 로그의 항목을 검색할 수 있습니다.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -29,21 +29,21 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
   - 메시지 추적 로그를 검색하려면 Microsoft Exchange Transport Log Search Service가 실행 중이어야 합니다. 이 서비스를 사용하지 않도록 설정하거나 중지하면 메시지 추적 로그를 검색하거나 배달 보고서를 실행할 수 없습니다. 그러나 이 서비스를 중지해도 Exchange의 다른 기능에는 영향을 주지 않습니다.
 
-  - **Get-MessageTrackingLog** cmdlet의 결과로 표시된 필드 이름은 메시지 추적 로그에 사용되는 실제 필드 이름과 유사합니다. 가장 큰 차이점은 다음과 같습니다.
+  - <strong>Get-MessageTrackingLog</strong> cmdlet의 결과로 표시된 필드 이름은 메시지 추적 로그에 사용되는 실제 필드 이름과 유사합니다. 가장 큰 차이점은 다음과 같습니다.
     
-      - 필드 이름에서 대시가 제거됩니다. 예를 들어 **internal-message-id**는 `InternalMessageId`로 표시됩니다.
+      - 필드 이름에서 대시가 제거됩니다. 예를 들어 <strong>internal-message-id</strong>는 `InternalMessageId`로 표시됩니다.
     
-      - **date-time** 필드는 `Timestamp`로 표시됩니다.
+      - <strong>date-time</strong> 필드는 `Timestamp`로 표시됩니다.
     
-      - **recipient-address** 필드는 `Recipients`로 표시됩니다.
+      - <strong>recipient-address</strong> 필드는 `Recipients`로 표시됩니다.
     
-      - **sender-address** 필드는 `Sender`로 표시됩니다.
+      - <strong>sender-address</strong> 필드는 `Sender`로 표시됩니다.
 
-  - 메시지 추적 로그의 **date-time** 필드에는 정보가 UTC(Coordinated Universal Time)로 저장됩니다. 그러나 *Start* 또는 *End* 매개 변수에 대한 날짜-시간 검색 조건은 검색을 수행하는 데 사용하는 컴퓨터의 국가별 날짜-시간 형식으로 입력해야 합니다.
+  - 메시지 추적 로그의 <strong>date-time</strong> 필드에는 정보가 UTC(Coordinated Universal Time)로 저장됩니다. 그러나 *Start* 또는 *End* 매개 변수에 대한 날짜-시간 검색 조건은 검색을 수행하는 데 사용하는 컴퓨터의 국가별 날짜-시간 형식으로 입력해야 합니다.
 
-  - **Get-MessageTrackingLog** cmdlet을 사용하여 다른 Exchange 서버에서 메시지 추적 로그 파일을 복사한 다음 검색할 수는 없습니다. 또한 기존 메시지 추적 로그 파일을 수동으로 저장하면 해당 파일의 날짜-시간 스탬프가 변경되어 Exchange에서 메시지 추적 로그를 검색하는 데 사용하는 쿼리 논리가 손상됩니다.
+  - <strong>Get-MessageTrackingLog</strong> cmdlet을 사용하여 다른 Exchange 서버에서 메시지 추적 로그 파일을 복사한 다음 검색할 수는 없습니다. 또한 기존 메시지 추적 로그 파일을 수동으로 저장하면 해당 파일의 날짜-시간 스탬프가 변경되어 Exchange에서 메시지 추적 로그를 검색하는 데 사용하는 쿼리 논리가 손상됩니다.
 
-  - Exchange 2013**Get-MessageTrackingLog** cmdlet으로 동일한 Active Directory 사이트에 있는 Exchange 2007 및 Exchange 2010 서버의 메시지 추적 로그를 검색할 수 있습니다.
+  - Exchange 2013<strong>Get-MessageTrackingLog</strong> cmdlet으로 동일한 Active Directory 사이트에 있는 Exchange 2007 및 Exchange 2010 서버의 메시지 추적 로그를 검색할 수 있습니다.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -65,7 +65,7 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
     Get-MessageTrackingLog
 
-이 예제에서는 메시지 보낸 사람이 pat@contoso.com인 모든 **FAIL** 이벤트에 대해 로컬 서버의 메시지 추적 로그에서 2013년 3월 28일 오전 8시에서 2013년 3월 28일 오후 5시 사이의 모든 항목을 검색합니다.
+이 예제에서는 메시지 보낸 사람이 pat@contoso.com인 모든 <strong>FAIL</strong> 이벤트에 대해 로컬 서버의 메시지 추적 로그에서 2013년 3월 28일 오전 8시에서 2013년 3월 28일 오후 5시 사이의 모든 항목을 검색합니다.
 
     Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
 
@@ -77,7 +77,7 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
 이 예제에서는 다음 검색 조건을 사용하여 메시지 추적 로그를 검색합니다.
 
-  - 처음 1,000개 **Send** 이벤트에 대한 결과를 반환합니다.
+  - 처음 1,000개 <strong>Send</strong> 이벤트에 대한 결과를 반환합니다.
 
   - 결과를 목록 형식으로 표시합니다.
 
@@ -91,7 +91,7 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
 ## 셸을 사용하여 메시지 추적 로그에서 여러 서버의 메시지 항목 검색
 
-일반적으로 **MessageID:**  헤더 필드의 값은 메시지가 Exchange 조직 전체를 이동하는 과정에서 일정하게 유지됩니다. 이 값의 이름은 큐 뷰어 유틸리티에서는 **InternetMessageId**이고 메시지 추적 로그 유틸리티에서는 **MessageId**입니다. 특정 메시지의 `MessageID:` 값을 확인한 후에는 Exchange 조직의 모든 사서함 서버에 있는 메시지 추적 로그에서 해당 메시지에 대한 정보를 검색할 수 있습니다.
+일반적으로 <strong>MessageID:</strong>  헤더 필드의 값은 메시지가 Exchange 조직 전체를 이동하는 과정에서 일정하게 유지됩니다. 이 값의 이름은 큐 뷰어 유틸리티에서는 <strong>InternetMessageId</strong>이고 메시지 추적 로그 유틸리티에서는 <strong>MessageId</strong>입니다. 특정 메시지의 `MessageID:` 값을 확인한 후에는 Exchange 조직의 모든 사서함 서버에 있는 메시지 추적 로그에서 해당 메시지에 대한 정보를 검색할 수 있습니다.
 
 모든 사서함 서버에서 특정 메시지에 대한 모든 메시지 추적 로그 항목을 검색하려면 다음 구문을 사용합니다.
 
@@ -99,11 +99,11 @@ Exchange 관리 셸의 **Get-MessageTrackingLog** cmdlet을 사용하여 특정 
 
 이 예에서는 다음 검색 조건을 사용하여 모든 Exchange 2013 사서함 서버에서 메시지 추적 로그를 검색합니다.
 
-  - **MessageID:**  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<``>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 **MessageID:**  값을 따옴표로 묶어야 합니다.
+  - <strong>MessageID:</strong>  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<``>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 <strong>MessageID:</strong>  값을 따옴표로 묶어야 합니다.
 
-  - 각 항목에 대해 필드 **date-time**, **server-hostname**, **client-hostname**, **source**, **event-id** 및 **recipient-address**를 표시합니다.
+  - 각 항목에 대해 필드 <strong>date-time</strong>, <strong>server-hostname</strong>, <strong>client-hostname</strong>, <strong>source</strong>, <strong>event-id</strong> 및 <strong>recipient-address</strong>를 표시합니다.
 
-  - 결과를 **date-time** 필드 기준으로 정렬합니다.
+  - 결과를 <strong>date-time</strong> 필드 기준으로 정렬합니다.
 
 <!-- end list -->
 
