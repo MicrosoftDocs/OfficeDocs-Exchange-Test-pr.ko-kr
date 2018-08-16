@@ -71,7 +71,7 @@ Microsoft Lync Server와 같은 토폴로지에 있는 조직의 Exchange Server
 
 1.  Exchange 관리 셸을 엽니다.
 
-2.  `C:\Windows\System32` 프롬프트에서 **cd \&quot;\<드라이브 문자\>\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts\>.ExchUcUtil.ps1\&quot;**을 입력한 다음 Enter 키를 누릅니다.
+2.  `C:\Windows\System32` 프롬프트에서 <strong>cd \&quot;\<드라이브 문자\>\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts\>.ExchUcUtil.ps1\&quot;</strong>을 입력한 다음 Enter 키를 누릅니다.
 
 ## 작동 여부를 확인하는 방법
 

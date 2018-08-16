@@ -13,17 +13,17 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2015-04-07_
+_<strong>마지막으로 수정된 항목:</strong> 2015-04-07_
 
 사용 권한을 분할하면 Active Directory 관리자 및 Microsoft Exchange Server 2013 관리자와 같은 별개의 두 그룹에서 각자의 서비스, 개체 및 특성을 관리할 수 있습니다. Active Directory 관리자는 Active Directory 포리스트에 대한 액세스 권한을 제공하는 사용자 등의 보안 주체를 관리합니다. Exchange 관리자는 Active Directory 개체에 대한 Exchange 관련 특성을 관리하고 Exchange 관련 개체를 만들고 관리합니다.
 
 Microsoft Exchange Server 2013은 다음과 같은 유형의 사용 권한 분할 모델을 제공합니다.
 
-  - **RBAC 사용 권한 분할**   Active Directory 도메인 파티션에 보안 주체를 만드는 권한은 RBAC(역할 기반 액세스 제어)에서 제어합니다. 적절한 역할 그룹의 구성원만 보안 주체를 만들 수 있습니다.
+  - <strong>RBAC 사용 권한 분할</strong>   Active Directory 도메인 파티션에 보안 주체를 만드는 권한은 RBAC(역할 기반 액세스 제어)에서 제어합니다. 적절한 역할 그룹의 구성원만 보안 주체를 만들 수 있습니다.
 
-  - **Active Directory 분할 권한**   Active Directory 도메인 파티션에서 보안 주체를 만들 권한이 Exchange 사용자, 서비스 또는 서버에서 완전히 제거됩니다. RBAC에는 보안 주체를 만들 수 있는 옵션이 제공되지 않습니다. Active Directory에서 보안 주체를 만들려면 Active Directory 관리 도구를 사용해야 합니다.
+  - <strong>Active Directory 분할 권한</strong>   Active Directory 도메인 파티션에서 보안 주체를 만들 권한이 Exchange 사용자, 서비스 또는 서버에서 완전히 제거됩니다. RBAC에는 보안 주체를 만들 수 있는 옵션이 제공되지 않습니다. Active Directory에서 보안 주체를 만들려면 Active Directory 관리 도구를 사용해야 합니다.
     
 
     > [!NOTE]
@@ -71,21 +71,21 @@ Microsoft Exchange Server 2013은 다음과 같은 유형의 사용 권한 분�
 
 RBAC 사용 권한 분할에 맞게 Exchange 2013 조직을 구성할 수 있습니다. 구성이 완료되면 Active Directory 관리자만 Active Directory 보안 주체를 만들 수 있습니다. 즉, Exchange 관리자는 다음 cmdlet을 사용할 수 없습니다.
 
-  - **New-Mailbox**
+  - <strong>New-Mailbox</strong>
 
-  - **New-MailContact**
+  - <strong>New-MailContact</strong>
 
-  - **New-MailUser**
+  - <strong>New-MailUser</strong>
 
-  - **New-RemoteMailbox**
+  - <strong>New-RemoteMailbox</strong>
 
-  - **Remove-Mailbox**
+  - <strong>Remove-Mailbox</strong>
 
-  - **Remove-MailContact**
+  - <strong>Remove-MailContact</strong>
 
-  - **Remove-MailUser**
+  - <strong>Remove-MailUser</strong>
 
-  - **Remove-RemoteMailbox**
+  - <strong>Remove-RemoteMailbox</strong>
 
 Exchange 관리자는 기존 Active Directory 보안 주체의 Exchange 특성만 관리할 수 있습니다. 하지만 전송 규칙 및 메일 그룹과 같은 Exchange 관련 개체는 만들고 관리할 수 있습니다. 자세한 내용은 [분할 권한 이해](understanding-split-permissions-exchange-2013-help.md)의 "RBAC 사용 권한 분할" 섹션을 참조하십시오.
 
@@ -136,7 +136,7 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
         > 조직 관리 역할 그룹 구성원이나 직접 또는 다른 역할 그룹이나 USG를 통해 역할 관리 역할이 할당된 사용자는 이 위임 보안 검사를 무시할 수 있습니다. Exchange 관리자가 새 역할 그룹에 자신을 추가하지 못하게 하려면 Role Management 역할과 Exchange 관리자 사이의 모든 역할 할당을 제거하고 관리자를 다른 역할 그룹에 할당해야 합니다.
 
     
-    5.  다음 명령을 사용하여 Mail Recipient Creation 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 **Name**, **Role** 및 **RoleAssigneeName** 속성을 표시합니다.
+    5.  다음 명령을 사용하여 Mail Recipient Creation 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 <strong>Name</strong>, <strong>Role</strong> 및 <strong>RoleAssigneeName</strong> 속성을 표시합니다.
         
             Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
     
@@ -151,7 +151,7 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
         
             Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
     
-    7.  다음 명령을 사용하여 Security Group Creation and Membership 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 **Name**, **Role** 및 **RoleAssigneeName** 속성을 표시합니다.
+    7.  다음 명령을 사용하여 Security Group Creation and Membership 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 <strong>Name</strong>, <strong>Role</strong> 및 <strong>RoleAssigneeName</strong> 속성을 표시합니다.
         
             Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
     
@@ -184,31 +184,31 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
 
 Exchange 2013 조직을 Active Directory 사용 권한 분할에 맞게 구성할 수 있습니다. Active Directory 사용 권한 분할은 Exchange 관리자 및 서버가 Active Directory에서 보안 주체를 만들거나 해당 개체에서 비 Exchange 특성을 수정하도록 해 주는 사용 권한을 완전히 제거합니다. 구성이 완료되면 Active Directory 관리자만 Active Directory 보안 주체를 만들 수 있습니다. 즉, Exchange 관리자는 다음 cmdlet을 사용할 수 없습니다.
 
-  - **Add-DistributionGroupMember**
+  - <strong>Add-DistributionGroupMember</strong>
 
-  - **New-DistributionGroup**
+  - <strong>New-DistributionGroup</strong>
 
-  - **New-Mailbox**
+  - <strong>New-Mailbox</strong>
 
-  - **New-MailContact**
+  - <strong>New-MailContact</strong>
 
-  - **New-MailUser**
+  - <strong>New-MailUser</strong>
 
-  - **New-RemoteMailbox**
+  - <strong>New-RemoteMailbox</strong>
 
-  - **Remove-DistributionGroup**
+  - <strong>Remove-DistributionGroup</strong>
 
-  - **Remove-DistributionGroupMember**
+  - <strong>Remove-DistributionGroupMember</strong>
 
-  - **Remove-Mailbox**
+  - <strong>Remove-Mailbox</strong>
 
-  - **Remove-MailContact**
+  - <strong>Remove-MailContact</strong>
 
-  - **Remove-MailUser**
+  - <strong>Remove-MailUser</strong>
 
-  - **Remove-RemoteMailbox**
+  - <strong>Remove-RemoteMailbox</strong>
 
-  - **Update-DistributionGroupMember**
+  - <strong>Update-DistributionGroupMember</strong>
 
 Exchange 관리자 및 서버는 기존 Active Directory 보안 주체의 Exchange 특성만 관리할 수 있습니다. 하지만 전송 규칙 및 통합 메시징 다이얼 플랜과 같은 Exchange 관련 개체를 만들고 관리할 수 있습니다.
 

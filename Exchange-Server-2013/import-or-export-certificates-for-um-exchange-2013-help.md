@@ -78,10 +78,12 @@ EAC 또는 셸을 사용하여 자체 서명된 인증서, 내부 PKI(공개 키
 3.  사용자 이름과 암호를 입력한 후 인증서를 파일로 출력합니다.
 
 <!-- end list -->
-
+  ```
     $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-
+  ```
+  ```
     Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
 
 ## EAC를 사용하여 인증서 가져오기
 

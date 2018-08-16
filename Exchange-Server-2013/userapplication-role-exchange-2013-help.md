@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2015-03-09_
+_<strong>마지막으로 수정된 항목:</strong> 2015-03-09_
 
 `UserApplication` 관리 역할을 사용하면 파트너 응용 프로그램이 최종 사용자 대신 작업할 수 있습니다.
 
@@ -69,17 +69,17 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 역할과 역할 담당자 사이에서 기존 역할 할당의 관리 범위를 변경할 수도 있습니다. 역할 할당의 범위를 변경하면 이 역할이 제공하는 사용 권한을 사용하여 관리할 수 있는 개체를 제어할 수 있습니다. 역할 할당의 범위를 변경하는 방법에는 여러 가지가 있습니다. 다음 중 하나를 수행할 수 있습니다.
 
-  - **Set-ManagementRoleAssignment** cmdlet을 사용하여 새 사용자 지정 범위를 추가합니다. 자세한 내용은 다음 항목을 참고하세요.
+  - <strong>Set-ManagementRoleAssignment</strong> cmdlet을 사용하여 새 사용자 지정 범위를 추가합니다. 자세한 내용은 다음 항목을 참고하세요.
     
       - [일반 또는 배타적 범위 만들기](create-a-regular-or-exclusive-scope-exchange-2013-help.md)
     
       - [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)
 
-  - **Set-ManagementRoleAssignment** cmdlet을 사용하여 조직 구성 단위 범위를 추가 또는 변경합니다. 자세한 내용은 [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)을 참고하세요.
+  - <strong>Set-ManagementRoleAssignment</strong> cmdlet을 사용하여 조직 구성 단위 범위를 추가 또는 변경합니다. 자세한 내용은 [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)을 참고하세요.
 
-  - **Set-ManagementRoleAssignment** cmdlet을 사용하여 미리 정의된 범위를 추가 또는 변경합니다. 자세한 내용은 [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)을 참고하세요.
+  - <strong>Set-ManagementRoleAssignment</strong> cmdlet을 사용하여 미리 정의된 범위를 추가 또는 변경합니다. 자세한 내용은 [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)을 참고하세요.
 
-  - **Set-ManagementScope** cmdlet을 사용하여 역할 할당과 연결된 사용자 지정 범위에서 받는 사람, 서버 또는 데이터베이스 범위를 변경합니다. 자세한 내용은 [역할 범위를 변경 합니다.](change-a-role-scope-exchange-2013-help.md)을 참고하세요.
+  - <strong>Set-ManagementScope</strong> cmdlet을 사용하여 역할 할당과 연결된 사용자 지정 범위에서 받는 사람, 서버 또는 데이터베이스 범위를 변경합니다. 자세한 내용은 [역할 범위를 변경 합니다.](change-a-role-scope-exchange-2013-help.md)을 참고하세요.
 
 ## 역할 할당 사용 또는 사용 안 함
 
@@ -89,17 +89,17 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 역할에는 하나 이상의 역할 담당자에 대한 역할 할당이 있습니다. 다음 표는 역할 할당이 일반인지 위임인지와 각 할당에 적용되는 관리 범위를 나타냅니다. 다음 목록에서는 각 열에 대해 설명합니다.
 
-  - **일반 할당**   역할 담당자는 일반 역할 할당을 사용하여 이 역할에 대한 관리 역할 항목에 의해 제공되는 사용 권한에 액세스할 수 있습니다.
+  - <strong>일반 할당</strong>   역할 담당자는 일반 역할 할당을 사용하여 이 역할에 대한 관리 역할 항목에 의해 제공되는 사용 권한에 액세스할 수 있습니다.
 
-  - **위임 할당**   역할 담당자는 위임 역할 할당을 사용하여 역할 그룹, 사용자 또는 USG에 이 역할을 할당할 수 있습니다.
+  - <strong>위임 할당</strong>   역할 담당자는 위임 역할 할당을 사용하여 역할 그룹, 사용자 또는 USG에 이 역할을 할당할 수 있습니다.
 
-  - **받는 사람 읽기 범위**   받는 사람 읽기 범위는 역할 담당자가 Active Directory에서 읽을 수 있는 받는 사람 개체를 결정합니다.
+  - <strong>받는 사람 읽기 범위</strong>   받는 사람 읽기 범위는 역할 담당자가 Active Directory에서 읽을 수 있는 받는 사람 개체를 결정합니다.
 
-  - **받는 사람 쓰기 범위**   받는 사람 쓰기 범위는 역할 담당자가 Active Directory에서 수정할 수 있는 받는 사람 개체를 결정합니다.
+  - <strong>받는 사람 쓰기 범위</strong>   받는 사람 쓰기 범위는 역할 담당자가 Active Directory에서 수정할 수 있는 받는 사람 개체를 결정합니다.
 
-  - **구성 읽기 범위**   구성 읽기 범위는 역할 담당자가 Active Directory에서 읽을 수 있는 구성 및 서버 개체를 결정합니다.
+  - <strong>구성 읽기 범위</strong>   구성 읽기 범위는 역할 담당자가 Active Directory에서 읽을 수 있는 구성 및 서버 개체를 결정합니다.
 
-  - **구성 쓰기 범위**   구성 쓰기 범위는 역할 담당자가 Active Directory에서 수정할 수 있는 조직 및 서버 개체를 결정합니다.
+  - <strong>구성 쓰기 범위</strong>   구성 쓰기 범위는 역할 담당자가 Active Directory에서 수정할 수 있는 조직 및 서버 개체를 결정합니다.
 
 ### 이 역할에 대한 기본 관리 역할 할당
 
@@ -154,7 +154,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 1.  이 역할의 복사본을 만듭니다. 자세한 내용은 [역할 만들기](create-a-role-exchange-2013-help.md)를 참조하세요.
 
-2.  **Set-ManagementRoleEntry** 및 **Remove-ManagementRoleEntry** cmdlet을 사용하여 새 역할에서 역할 항목을 변경하거나 제거합니다. 새 역할은 부모 기본 제공 역할에 있는 역할 항목만 포함할 수 있으므로 새 역할에 역할 항목을 추가할 수 없습니다. 자세한 내용은 다음 항목을 참고하세요.
+2.  <strong>Set-ManagementRoleEntry</strong> 및 <strong>Remove-ManagementRoleEntry</strong> cmdlet을 사용하여 새 역할에서 역할 항목을 변경하거나 제거합니다. 새 역할은 부모 기본 제공 역할에 있는 역할 항목만 포함할 수 있으므로 새 역할에 역할 항목을 추가할 수 없습니다. 자세한 내용은 다음 항목을 참고하세요.
     
       - [역할 항목 변경](change-a-role-entry-exchange-2013-help.md)
     

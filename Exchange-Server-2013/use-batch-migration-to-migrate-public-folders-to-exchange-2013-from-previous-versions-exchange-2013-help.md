@@ -460,9 +460,6 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
     
     ```
     Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-    ```
-        
-    ```
     Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
     ```
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2012-10-17_
+_<strong>마지막으로 수정된 항목:</strong> 2012-10-17_
 
 `MyName` 관리 역할을 사용하면 각 사용자가 전체 이름과 메모 필드를 보고 수정할 수 있습니다. 이것은 [MyProfileInformation 역할](myprofileinformation-role-exchange-2013-help.md) 부모 역할에서 만들어진 사용자 지정 역할입니다.
 
@@ -95,7 +95,7 @@ _**마지막으로 수정된 항목:** 2012-10-17_
 
 1.  이 역할의 복사본을 만듭니다. 자세한 내용은 [역할 만들기](create-a-role-exchange-2013-help.md)를 참조하세요.
 
-2.  **Set-ManagementRoleEntry** 및 **Remove-ManagementRoleEntry** cmdlet을 사용하여 새 역할에서 역할 항목을 변경하거나 제거합니다. 새 역할은 부모 기본 제공 역할에 있는 역할 항목만 포함할 수 있으므로 새 역할에 역할 항목을 추가할 수 없습니다. 자세한 내용은 다음 항목을 참고하세요.
+2.  <strong>Set-ManagementRoleEntry</strong> 및 <strong>Remove-ManagementRoleEntry</strong> cmdlet을 사용하여 새 역할에서 역할 항목을 변경하거나 제거합니다. 새 역할은 부모 기본 제공 역할에 있는 역할 항목만 포함할 수 있으므로 새 역할에 역할 항목을 추가할 수 없습니다. 자세한 내용은 다음 항목을 참고하세요.
     
       - [역할 항목 변경](change-a-role-entry-exchange-2013-help.md)
     

@@ -43,13 +43,13 @@ Exchange 관리 셸 를 사용 하 여 필요한 XML를 내보내려면 또는 �
 
 1.  Exchange 관리 셸 또는 Exchange Online PowerShell에서 조직의 규칙 화면에 표시 하려면 **Get-classificationrulecollection** 입력 합니다. 기본, 기본 제공 규칙, "Microsoft 규칙 패키지." 라는 표시 됩니다 만들지 않은 경우 직접,
 
-2.  조직의 규칙에서 저장을 입력 하 여 변수에 **$ruleCollections Get-classificationrulecollection =**합니다. 변수에 저장 하는 것을 사용 하면 원격 PowerShell 명령을 사용할 수 있는 형식으로 나중에 쉽게 사용할 수 있습니다.
+2.  조직의 규칙에서 저장을 입력 하 여 변수에 <strong>$ruleCollections Get-classificationrulecollection =</strong>합니다. 변수에 저장 하는 것을 사용 하면 원격 PowerShell 명령을 사용할 수 있는 형식으로 나중에 쉽게 사용할 수 있습니다.
 
 3.  모든 데이터와 서식이 지정 된 XML 파일을 입력 하 여 확인 **집합-콘텐츠-경로 "C:\\custompath\\exportedRules.xml"-인코딩 바이트-$ruleCollections.SerializedClassificationRuleCollection 값이**. (**Set-content** XML 파일에 기록 cmdlet의 일부입니다.)
     
 
     > [!IMPORTANT]
-    > 규칙 팩 실제로 저장 된 파일 위치를 사용 하 고 있는지 확인 합니다. <STRONG>C:\custompath\</STRONG> 자리 표시자입니다.
+    > 규칙 팩 실제로 저장 된 파일 위치를 사용 하 고 있는지 확인 합니다. <strong>C:\custompath\ </strong> 자리 표시자입니다.
 
 
 
@@ -110,7 +110,7 @@ XML에서 신용 카드 번호 규칙 정의 찾은 했으므로 요구 사항�
        </Rules>
     </RulePackage>
 
-이제 해야 된 항목은 다음과 같은 XML와 비슷합니다. 규칙 패키지와 규칙은 해당 고유 Guid에 의해 식별 됩니다, 때문에 두 Guid를 생성 해야 합니다: 규칙 패키지 및 신용 카드 번호 규칙에 대 한 GUID를 교체할 수 하나에 대 한 하나입니다. (다음 코드 예제에서 엔터티 ID에 대 한 GUID는 새 대체할 필요가 있는 기본 제공 규칙 정의 대 한.) 다양 한 방법을 Guid를 생성할 수 있지만 PowerShell **\[guid\]::NewGuid()**을 입력 하 여 쉽게 수행할 수 있습니다.
+이제 해야 된 항목은 다음과 같은 XML와 비슷합니다. 규칙 패키지와 규칙은 해당 고유 Guid에 의해 식별 됩니다, 때문에 두 Guid를 생성 해야 합니다: 규칙 패키지 및 신용 카드 번호 규칙에 대 한 GUID를 교체할 수 하나에 대 한 하나입니다. (다음 코드 예제에서 엔터티 ID에 대 한 GUID는 새 대체할 필요가 있는 기본 제공 규칙 정의 대 한.) 다양 한 방법을 Guid를 생성할 수 있지만 PowerShell <strong>\[guid\]::NewGuid()</strong>을 입력 하 여 쉽게 수행할 수 있습니다.
 
     <?xml version="1.0" encoding="utf-16"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">

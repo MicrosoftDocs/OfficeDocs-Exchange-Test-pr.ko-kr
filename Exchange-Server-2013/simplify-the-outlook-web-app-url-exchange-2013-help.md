@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:** Exchange Server 2013_
+_<strong>적용 대상:</strong> Exchange Server 2013_
 
-_**마지막으로 수정된 항목:** 2015-07-16_
+_<strong>마지막으로 수정된 항목:</strong> 2015-07-16_
 
-**요약:**  이 문서의 절차를 사용하여 조직의 사용자가 Exchange 2013에서 OWA에 액세스하는 URL을 단순화합니다.
+<strong>요약:</strong>  이 문서의 절차를 사용하여 조직의 사용자가 Exchange 2013에서 OWA에 액세스하는 URL을 단순화합니다.
 
 사용자가 Exchange Server 2013 사서함에 액세스하는 데 사용하는 MicrosoftOutlook Web App URL을 단순화할 수 있습니다.
 
@@ -43,27 +43,27 @@ Windows Server 2008의 최상위 디렉터리에서 리디렉션을 구성하면
 
 1.  IIS 관리자를 시작합니다.
 
-2.  로컬 컴퓨터를 확장하고 **사이트**를 확장한 다음 **기본 웹 사이트**를 클릭합니다.
+2.  로컬 컴퓨터를 확장하고 <strong>사이트</strong>를 확장한 다음 <strong>기본 웹 사이트</strong>를 클릭합니다.
 
-3.  기본 웹 사이트 홈 창 아래쪽에서 **기능 보기** 옵션이 아직 선택되어 있지 않은 경우 이를 클릭합니다.
+3.  기본 웹 사이트 홈 창 아래쪽에서 <strong>기능 보기</strong> 옵션이 아직 선택되어 있지 않은 경우 이를 클릭합니다.
 
-4.  **IIS** 섹션에서 **HTTP 리디렉션**을 두 번 클릭합니다.
+4.  <strong>IIS</strong> 섹션에서 <strong>HTTP 리디렉션</strong>을 두 번 클릭합니다.
 
-5.  **요청을 이 대상으로 리디렉션** 확인란을 선택합니다.
+5.  <strong>요청을 이 대상으로 리디렉션</strong> 확인란을 선택합니다.
 
-6.  /owa 가상 디렉터리의 절대 경로를 입력합니다. 예를 들어 **https://mail.contoso.com/owa**를 입력합니다.
+6.  /owa 가상 디렉터리의 절대 경로를 입력합니다. 예를 들어 <strong>https://mail.contoso.com/owa</strong>를 입력합니다.
 
-7.  **동작 리디렉션** 아래에서 **요청을 이 디렉터리(하위 디렉터리 제외)의 콘텐츠로만 리디렉션** 확인란을 선택합니다.
+7.  <strong>동작 리디렉션</strong> 아래에서 <strong>요청을 이 디렉터리(하위 디렉터리 제외)의 콘텐츠로만 리디렉션</strong> 확인란을 선택합니다.
 
-8.  **상태 코드** 목록에서 **찾음(302)**을 클릭합니다.
+8.  <strong>상태 코드</strong> 목록에서 <strong>찾음(302)</strong>을 클릭합니다.
 
-9.  작업 창에서 **적용**을 클릭합니다.
+9.  작업 창에서 <strong>적용</strong>을 클릭합니다.
 
-10. **기본 웹 사이트**를 클릭합니다.
+10. <strong>기본 웹 사이트</strong>를 클릭합니다.
 
-11. 기본 웹 사이트 홈 창에서 **SSL 설정**을 두 번 클릭합니다.
+11. 기본 웹 사이트 홈 창에서 <strong>SSL 설정</strong>을 두 번 클릭합니다.
 
-12. **SSL 설정**에서 **SSL 필요**의 선택을 취소합니다.
+12. <strong>SSL 설정</strong>에서 <strong>SSL 필요</strong>의 선택을 취소합니다.
     
 
     > [!NOTE]
@@ -101,7 +101,7 @@ Windows Server 2008의 최상위 디렉터리에서 리디렉션을 구성하면
 
 4.  `iisreset/noforce` 명령을 실행하여 완료합니다.
 
-최상위 디렉터리에서 리디렉션을 구성하면 web.config 파일이 \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab에 만들어질 수 있습니다. 이 경우 나중에 리디렉션을 제거하면 **보내기 및 받기**를 클릭했을 때 Outlook이 작동하지 않을 수 있습니다. 리디렉션 제거 후에 이 문제가 발생하지 않도록 하려면 \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab에서 web.config 파일을 삭제합니다.
+최상위 디렉터리에서 리디렉션을 구성하면 web.config 파일이 \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab에 만들어질 수 있습니다. 이 경우 나중에 리디렉션을 제거하면 <strong>보내기 및 받기</strong>를 클릭했을 때 Outlook이 작동하지 않을 수 있습니다. 리디렉션 제거 후에 이 문제가 발생하지 않도록 하려면 \<*drive*\>\\Program Files\\Microsoft\\Exchange Server\\\<*version*\>\\ClientAccess\\oab에서 web.config 파일을 삭제합니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 
