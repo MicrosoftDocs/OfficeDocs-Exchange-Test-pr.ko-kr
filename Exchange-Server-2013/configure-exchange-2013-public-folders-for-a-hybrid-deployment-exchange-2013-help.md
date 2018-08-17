@@ -77,7 +77,7 @@ Exchange Online/Office 365 사용자를 Exchange 2013 공용 폴더에 액세스
     
         Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
     
-    로그 동기화 작업 및.csv 형식의 오류를 원하는 위치에 대 한 경로 Office 365 사용자 이름 및 암호를 및 `CsvSummaryFile``Credential` 입니다.
+    로그 동기화 작업 및.csv 형식의 오류를 원하는 위치에 대 한 경로 Office 365 사용자 이름 및 암호를 및 CsvSummaryFileCredential 입니다.
 
 
 > [!NOTE]

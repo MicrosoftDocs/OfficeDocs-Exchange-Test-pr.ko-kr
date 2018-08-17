@@ -236,7 +236,7 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
     $Ie.Visible = $True
     $Ie.Document.Write("$Input")
     # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
+    # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
 
 이 스크립트를 사용하려면 스크립트가 실행될 컴퓨터의 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 디렉터리에 스크립트를 저장합니다. 파일 이름을 `Out-Ie.ps1`이라고 지정합니다. 파일을 저장한 다음 일반 cmdlet으로 스크립트를 사용할 수 있습니다.

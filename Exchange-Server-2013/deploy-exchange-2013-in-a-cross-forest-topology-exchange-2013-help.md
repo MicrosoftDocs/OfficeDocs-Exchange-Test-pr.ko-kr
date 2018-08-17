@@ -74,14 +74,14 @@ Exchange 2013에서 다음 절차를 수행하려면 다음을 확인합니다.
       - [Forefront Identity Manager 2010 R2 설명서 로드맵](https://go.microsoft.com/fwlink/p/?linkid=279871)
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > 리소스 Exchange 2010 논의 하는 동안 Exchange 2013 FIM 2010 R2 s p 1에 대 한 지원 됩니다. Exchange 2013 에 대 한 FIM 2010 R2 s p 1의 <STRONG>내선 번호</STRONG> 를 구성 하는 있는지 확인 하십시오.
 
     
-    1.  **확장 구성** 페이지의 **프로비전 대상:**  옆에 있는 **파티션 표시 이름 구성**에서 **Exchange 2013**을 선택합니다. **Exchange 2013 RPS URI** 필드가 표시됩니다. Exchange 2013 클라이언트 액세스 서버의 URI를 입력하여 원격 PowerShell 연결이 작동 중인지 확인합니다. **Exchange 2013 RPS URI**는 http://CAS\_Server\_FQDN/Powershell 형식으로 되어 있어야 합니다. **확인**을 클릭합니다.
+    1.  **확장 구성** 페이지의 **프로비전 대상:**  옆에 있는 **파티션 표시 이름 구성**에서 **Exchange 2013**을 선택합니다. **Exchange 2013 RPS URI** 필드가 표시됩니다. Exchange 2013 클라이언트 액세스 서버의 URI를 입력하여 원격 PowerShell 연결이 작동 중인지 확인합니다. **Exchange 2013 RPS URI**는 http://CAS_Server_FQDN/Powershell 형식으로 되어 있어야 합니다. **확인**을 클릭합니다.
         
 
-        > [!NOTE]
+        > [!NOTE]  
         > Exchange 2013&nbsp;포리스트에 연결하는 데 사용되는 관리자 자격 증명으로 해당 포리스트에 대한 원격 PowerShell 연결을 만들 수 있는지 확인합니다.<BR>다음 그림은 Exchange 2013에 대한 프로비전을 선택하는 방법을 보여줍니다.
 
         

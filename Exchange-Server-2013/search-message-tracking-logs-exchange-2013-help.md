@@ -99,7 +99,7 @@ Exchange 관리 셸의 <strong>Get-MessageTrackingLog</strong> cmdlet을 사용�
 
 이 예에서는 다음 검색 조건을 사용하여 모든 Exchange 2013 사서함 서버에서 메시지 추적 로그를 검색합니다.
 
-  - <strong>MessageID:</strong>  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<``>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 <strong>MessageID:</strong>  값을 따옴표로 묶어야 합니다.
+  - <strong>MessageID:</strong>  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 <strong>MessageID:</strong>  값을 따옴표로 묶어야 합니다.
 
   - 각 항목에 대해 필드 <strong>date-time</strong>, <strong>server-hostname</strong>, <strong>client-hostname</strong>, <strong>source</strong>, <strong>event-id</strong> 및 <strong>recipient-address</strong>를 표시합니다.
 

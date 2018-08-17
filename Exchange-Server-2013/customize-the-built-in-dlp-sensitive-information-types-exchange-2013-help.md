@@ -197,8 +197,8 @@ XML에서 신용 카드 번호 규칙 정의 찾은 했으므로 요구 사항�
 3.  Exchange 관리 셸 또는 Exchange Online PowerShell 입력 **New-classificationrulecollection FileData (Get-content-경로 "C:\\custompath\\MyNewRulePack.xml"-인코딩 바이트)**.
     
 
-    > [!IMPORTANT]
-    > 규칙 팩 실제로 저장 된 파일 위치를 사용 하 고 있는지 확인 합니다. <STRONG>C:\custompath\</STRONG> 자리 표시자입니다.
+    > [!IMPORTANT]  
+    > 규칙 팩 실제로 저장 된 파일 위치를 사용 하 고 있는지 확인 합니다. <STRONG>C:\custompath\\</STRONG> 자리 표시자입니다.
 
 
 

@@ -139,29 +139,42 @@ EAC를 사용하여 메일 그룹에 구성원을 추가할 수도 있습니다.
     
     다음 예에서 첫 번째 명령은 중재를 사용하도록 설정하고 차단된 구성원을 사용하여 메일 그룹을 만듭니다. 두 번째 명령은 공유 주소록에서 그룹을 숨깁니다.
     
-        New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
-    
-        Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
-    
+    ```
+    New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
+    ```
+    ```
+    Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
+    ```
+         
     메일 그룹을 만들고 관리하는 방법에 대한 자세한 내용은 [메일 그룹 만들기 및 관리](create-and-manage-distribution-groups-exchange-2013-help.md)를 참조하세요.
 
   - eDiscovery에 사용되는 사용자 지정 관리 범위에 대한 받는 사람 필터로 메일 그룹 구성원만 사용할 수 있지만 다른 받는 사람 속성을 사용하여 해당 메일 그룹에 사용자를 추가할 수 있습니다. 다음은 **Get-Mailbox** 및 **Get-Recipient** cmdlet을 사용하여 일반 사용자 또는 사서함 특성에 따라 특정 사용자 그룹을 반환하는 방법의 예입니다.
     
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
+    ```
+    ```
+     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+     ```
+     ```
+     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+     ```
+     ```
+     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+     ```
 
   - 그 다음 이전 글머리 기호 목록에 나온 예를 사용하여 사용자 그룹을 메일 그룹에 추가하기 위해 **Add-DistributionGroupMember** cmdlet과 함께 사용할 수 있는 변수를 만들 수 있습니다. 다음 예에서 첫 번째 명령은 해당 사용자 계정에 *Department* 속성 값으로 **Vancouver**를 갖는 모든 사용자 사서함이 포함된 변수를 만듭니다. 두 번째 명령은 이러한 사용자를 Vancouver Users 메일 그룹에 추가합니다.
     
-        $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
+    ```
+    $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
+    ```
     
-        $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
+    $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
 
   - **Add-RoleGroupMember** cmdlet을 사용하여 eDiscovery 검색 범위를 지정하는 데 사용되는 기존 역할 그룹에 구성원을 추가할 수 있습니다. 예를 들어 다음 명령은 Ottawa Discovery Management 역할 그룹에 사용자 admin@ottawa.contoso.com을 추가합니다.
     
