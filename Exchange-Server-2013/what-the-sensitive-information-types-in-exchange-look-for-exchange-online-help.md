@@ -1059,13 +1059,11 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <td><p>형식</p></td>
 <td><p>Registro Geral(이전 형식)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9자리 숫자</p>
 </dd>
 </dl>
 <p>Registro de Identidade(RIC)(새로운 형식)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>11자리 숫자</p>
 </dd>
 </dl></td>
@@ -3654,13 +3652,11 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <td><p>형식</p></td>
 <td><p>2010년 11월 1일 이후</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9개의 문자 및 숫자</p>
 </dd>
 </dl>
 <p>1987년 4월 1일부터 2010년 10월 31일까지</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>10자리 숫자</p>
 </dd>
 </dl></td>
@@ -4252,7 +4248,6 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul>
 <p>각 국가 대 한 형식은 약간 다릅니다. IBAN 중요 한 정보 유형에서는 이러한 60 국가 설명 합니다.</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>ad, ae, a에서에서 달리 ba, 배경, bh, 채널, cr, cy, cz, de, 진한, do, ee, es, 무선, 중, fr, gb, ge, gi, gl가, hr, 될 hu, 즉, 일리노이은 그, kw, kz, 파운드, li, lt, lu, lv, mc, md, me, mk, mr, 체, 뮤 nl, 아니요 pl, pt, 되는, rs, sa, se, si, sk, sm, 조지아 주, tr, vg</p>
 </dd>
 </dl></td>
@@ -4392,13 +4387,11 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <td><p>형식</p></td>
 <td><p>이전 형식(2012년 12월 31일까지)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>7자리 숫자와 1-2개 문자</p>
 </dd>
 </dl>
 <p>새 형식(2013년 1월 1일 이후)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>7자리 숫자와 2개 문자</p>
 </dd>
 </dl></td>
@@ -6494,13 +6487,11 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <td><p>형식</p></td>
 <td><p>생체 인식 여권 번호</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9자리 숫자</p>
 </dd>
 </dl>
 <p>비-생체 인식 여권 번호</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9자리 숫자</p>
 </dd>
 </dl></td>
