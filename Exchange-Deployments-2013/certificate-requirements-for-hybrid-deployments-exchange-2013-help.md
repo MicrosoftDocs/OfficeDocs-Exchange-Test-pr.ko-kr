@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 하이브리드 배포에서 디지털 인증서는 온-프레미스 Exchange 조직과 Office 365 간 통신의 보안을 유지하기 위한 중요한 부분입니다. 인증서를 사용하면 각 Exchange 조직은 상대방을 신뢰할 수 있습니다. 인증서는 또한 각 Exchange 조직이 올바른 소스와 통신하도록 보장합니다.
 

@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
-**요약:** Exchange 하이브리드 환경에서 IRM이 작동하는 방법 및 Exchange Online과 온-프레미스 Exchange 서버 간에 작동하도록 IRM을 구성하는 방법입니다.
+**요약:**  Exchange 하이브리드 환경에서 IRM이 작동하는 방법 및 Exchange Online과 온-프레미스 Exchange 서버 간에 작동하도록 IRM을 구성하는 방법입니다.
 
 IRM(정보 권한 관리)은 전자 메일 메시지와 첨부 파일을 온라인과 오프라인에서 지속적으로 보호하여 중요한 정보 유출을 방지할 수 있도록 도와줍니다. 엔터프라이즈용 Office 365에서 Exchange 온-프레미스 조직과 Exchange Online은 모두 IRM을 지원합니다. 하지만 두 구현 간에는 차이점이 있으며 Exchange Online 조직에서 IRM을 먼저 구성해야 해당 조직의 사용자가 사용할 수 있습니다.
 

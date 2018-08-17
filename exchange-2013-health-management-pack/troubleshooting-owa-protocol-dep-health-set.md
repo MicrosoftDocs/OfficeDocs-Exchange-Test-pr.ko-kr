@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_**마지막으로 수정된 항목:** 2016-12-09_
 
 IM (인스턴트 메시징) 서비스에 Outlook Web AppLync 2013 및 Exchange 2013 간의 통합 된의 전반적인 상태를 모니터링 하는 **OWA.Protocol.DEP** 상태 설정 합니다. Outlook Web App 에서 인스턴트 메시징을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [Microsoft Lync Server 2013 통합 (영문) 및 Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/p/?linkid=280418)을 참조 하십시오.
 

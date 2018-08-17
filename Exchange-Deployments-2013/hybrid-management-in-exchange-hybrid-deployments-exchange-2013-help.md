@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 Exchange 서버를 설치하면 Exchange 관리 도구가 서버에 자동으로 설치됩니다. 다음 도구를 사용하여 온-프레미스 Exchange 및 Exchange Online 조직을 모두 구성하고 관리하게 됩니다.
 

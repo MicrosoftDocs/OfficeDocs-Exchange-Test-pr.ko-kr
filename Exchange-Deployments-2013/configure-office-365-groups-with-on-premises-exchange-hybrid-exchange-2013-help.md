@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**마지막으로 수정된 항목:**2016-12-06_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-06_
 
 하이브리드 배포에서 Office 365 그룹을 사용하기 위해 온-프레미스 Exchange 사용자를 사용하도록 설정하는 방법을 알아보세요.
 
@@ -59,7 +59,7 @@ _**마지막으로 수정된 항목:**2016-12-06_
 
 7.  마법사가 완료되면 **구성 완료** 페이지에서 **끝내기**를 클릭합니다.
 
-8.  Active Directory 도메인 컨트롤러에서 Active Directory 사용자 및 컴퓨터를 열고 **AAD\_**로 시작하는 사용자를 찾습니다. 이 계정의 이름을 적어 둡니다.
+8.  Active Directory 도메인 컨트롤러에서 Active Directory 사용자 및 컴퓨터를 열고 **AAD\_** 로 시작하는 사용자를 찾습니다. 이 계정의 이름을 적어 둡니다.
 
 9.  온-프레미스 Exchange Server에서 Exchange 관리 셸을 열고 다음 명령을 실행합니다.
     
@@ -103,7 +103,7 @@ Office 365 그룹의 기본 SMTP 도메인은 *그룹 도메인*이라고 합니
     <td><p>MX</p></td>
     <td><p>groups-contoso-com.mail.protection.outlook.com</p>
 
-    > [!NOTE]
+    > [!NOTE]  
     > 이 DNS 레코드 값의 형식은 <EM>&lt;domain key&gt;</EM>.mail.protection.outlook.com입니다. 도메인 키를 알아보려면 <A href="https://support.office.com/en-us/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-us%26rs=en-us%26ad=us">Office 365 DNS 레코드를 만드는 데 필요한 정보 수집</A> 문서를 참조하세요.
 
 
@@ -118,8 +118,8 @@ Office 365 그룹의 기본 SMTP 도메인은 *그룹 도메인*이라고 합니
     </table>
     
 
-    > [!WARNING]
-    > 그룹 도메인의 MX DNS 레코드가 온-프레미스 Exchange 서버로 설정되어 있으면 온-프레미스 Exchange 조직의 사용자와 Office 365 그룹 간의 메일 흐름이 제대로 작동하지 않습니다.
+   > [!WARNING]  
+   > 그룹 도메인의 MX DNS 레코드가 온-프레미스 Exchange 서버로 설정되어 있으면 온-프레미스 Exchange 조직의 사용자와 Office 365 그룹 간의 메일 흐름이 제대로 작동하지 않습니다.
 
 
 
@@ -128,7 +128,7 @@ Office 365 그룹의 기본 SMTP 도메인은 *그룹 도메인*이라고 합니
         Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 송신 커넥터가 업데이트되지 않거나 그룹 도메인이 온-프레미스 Exchange 조직의 허용 도메인으로 추가되지 않으면, 해당 그룹이 외부 보낸 사람의 메일을 받도록 구성되지 않는 한, 온-프레미스 사서함에서 보낸 메일이 그룹으로 전달되지 않습니다.
 
 

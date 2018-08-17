@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013_
 
-_**마지막으로 수정된 항목:**2016-12-15_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-15_
 
 Microsoft에서는 모든 사용자가 더 쉽게 사용할 수 있는 제품 및 서비스를 만들기 위해 노력하고 있습니다. 다음 섹션에서는 장애인이 Microsoft Exchange를 보다 편리하게 사용할 수 있는 기능, 제품 및 서비스에 대한 정보를 제공합니다.
 

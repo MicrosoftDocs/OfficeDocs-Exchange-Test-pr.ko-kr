@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2015-03-09_
+_**마지막으로 수정된 항목:** 2015-03-09_
 
 DataProtection 상태 설정은 DAG(데이터베이스 사용 가능 그룹)의 데이터베이스 중복성을 모니터링합니다.
 

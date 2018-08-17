@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 Exchange 2013 및 Exchange 2016에 따라 하이브리드 배포를 구성할 수 있습니다. 하이브리드 배포를 지원하도록 구성해야 하는 역할은 사용 중인 Exchange 버전에 따라 달라집니다.
 

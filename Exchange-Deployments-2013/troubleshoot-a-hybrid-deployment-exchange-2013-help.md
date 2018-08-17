@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-04-29_
+_<strong>마지막으로 수정된 항목:</strong>2016-04-29_
 
 하이브리드 구성 마법사를 사용하여 Exchange에서 하이브리드 배포를 구성하면 하이브리드 배포에서 문제가 발생할 가능성이 최소화됩니다. 그러나 하이브리드 구성 마법사의 범위를 벗어나는 몇 가지 일반적인 영역에서 잘못 구성된 경우 하이브리드 배포에서 문제가 발생할 수 있습니다. 이 항목에서는 문제가 발생할 수 있는 다음과 같은 일반적인 영역을 알아보고 문제를 확인하거나 해결하기 위한 기본 단계를 간략하게 설명합니다.
 
@@ -124,12 +124,11 @@ _**마지막으로 수정된 항목:**2016-04-29_
 
   - **메시지:“\<서버 이름\> 서버에서 기본 수신 커넥터를 찾을 수 없습니다.”** `(Get-HybridConfiguration).ReceivingTransportServers.` 특성에 나열된 Exchange 서버의 수신 커넥터가 IPv4 및 IPv6 프로토콜 둘 다에 대해 TCP 포트 25를 수신 대기하지 않는 경우 이 메시지가 나타납니다.
     
-      -  
-        `(Get-HybridConfiguration).ReceivingTransportServers.`를 실행할 때 나열된 Exchange 서버의 수신 커넥터가 올바르게 바인딩되어 있는지 확인하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
+      -    `(Get-HybridConfiguration).ReceivingTransportServers.`를 실행할 때 나열된 Exchange 서버의 수신 커넥터가 올바르게 바인딩되어 있는지 확인하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
         
-            Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
+      Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        Exchange 서버에 대해 나열된 `{[::]:25, 0.0.0.0:25}` 항목을 확인해야 합니다.
+      Exchange 서버에 대해 나열된 `{[::]:25, 0.0.0.0:25}` 항목을 확인해야 합니다.
         
-        이 바인딩이 나열되지 않으면 **Set-ReceiveConnector** cmdlet의 *Bindings* 매개 변수를 사용하여 수신 커넥터에 추가해야 합니다. 자세한 내용은 [Set-ReceiveConnector](https://technet.microsoft.com/ko-kr/library/bb125140\(v=exchg.150\))를 참조하세요.
+      이 바인딩이 나열되지 않으면 **Set-ReceiveConnector** cmdlet의 *Bindings* 매개 변수를 사용하여 수신 커넥터에 추가해야 합니다. 자세한 내용은 [Set-ReceiveConnector](https://technet.microsoft.com/ko-kr/library/bb125140\(v=exchg.150\))를 참조하세요.
 

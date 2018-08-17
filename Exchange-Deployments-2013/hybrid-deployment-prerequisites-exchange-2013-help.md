@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2017-07-25_
+_<strong>마지막으로 수정된 항목:</strong>2017-07-25_
 
-**요약:** 하이브리드 배포를 설정하기 전에 Exchange 환경에 필요한 항목에 대해 설명합니다.
+**요약:**  하이브리드 배포를 설정하기 전에 Exchange 환경에 필요한 항목에 대해 설명합니다.
 
 하이브리드 구성 마법사를 사용하여 하이브리드 배포를 만들고 구성하기 전에 기존 온-프레미스 Exchange 조직이 특정 요구 사항을 충족해야 합니다. 이러한 요구 사항이 충족되지 않으면 하이브리드 구성 마법사 내의 각 단계를 완료할 수 없으며 온-프레미스 Exchange 조직과 Exchange Online 간에 하이브리드 배포를 구성할 수 없습니다.
 

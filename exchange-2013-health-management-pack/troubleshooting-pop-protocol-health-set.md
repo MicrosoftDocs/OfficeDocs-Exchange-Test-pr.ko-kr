@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**적용 대상:**Exchange Server 2013, Project Server 2013_
+_**적용 대상:** Exchange Server 2013, Project Server 2013_
 
-_**마지막으로 수정된 항목:**2013-02-11_
+_**마지막으로 수정된 항목:** 2013-02-11_
 
 POP.Protocol 상태 설정은 사서함 서버에서 Microsoft Exchange POP3 프로토콜을 모니터링합니다. POP.Protocol 상태 설정의 상태가 비정상임을 지정하는 경고가 표시되면 경고에 나와 있는 사서함 서버의 POP3 프로토콜에 영향을 주는 문제가 있는 것입니다.
 

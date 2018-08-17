@@ -1,0 +1,2589 @@
+- name: Exchange Server 2013
+  href: exchange-server-2013-exchange-2013-help.md
+  items:
+  - name: Exchange 2013의 새로운 기능
+    href: what-s-new-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: Exchange 2013에서 사라진 기능
+      href: what-s-discontinued-in-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013에서 Outlook Web App의 새 기능
+      href: what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md
+    - name: 새로운 소식 통합 메시징에 대 한 Exchange 2013
+      href: what-s-new-for-unified-messaging-in-exchange-2013-exchange-2013-help.md
+    - name: 전송 규칙에 대 한 새로운 기능
+      href: what-s-new-for-transport-rules-exchange-2013-help.md
+    - name: Exchange Server 2013 릴리스 정보
+      href: release-notes-for-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013용 업데이트
+      href: updates-for-exchange-2013-exchange-2013-help.md
+  - name: 계획 및 배포
+    href: planning-and-deployment-for-exchange-2013-installation-instructions.md
+    items:
+    - name: Exchange Server 배포 도우미
+      href: exchange-server-deployment-assistant-exchange-2013-help.md
+    - name: Active Directory
+      href: active-directory-exchange-2013-help.md
+      items:
+      - name: Active Directory에 대 한 액세스
+        href: access-to-active-directory-exchange-2013-help.md
+      - name: Exchange 2013 Active Directory 스키마 변경 사항
+        href: exchange-2013-active-directory-schema-changes-exchange-2013-help.md
+      - name: 분리 된 네임 스페이스 시나리오
+        href: disjoint-namespace-scenarios-exchange-2013-help.md
+        items:
+        - name: 분리 된 네임 스페이스에 대 한 DNS 접미사 검색 목록을 구성 합니다.
+          href: configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md
+    - name: Exchange 2013 시스템 요구 사항
+      href: exchange-2013-system-requirements-exchange-2013-help.md
+    - name: Exchange 2013 필수 구성 요소
+      href: exchange-2013-prerequisites-exchange-2013-help.md
+    - name: Active Directory 및 도메인 준비
+      href: prepare-active-directory-and-domains-exchange-2013-help.md
+    - name: Exchange 2013 새 설치 배포
+      href: deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      items:
+      - name: '검사 목록: Exchange 2013의 새로운 설치를 수행 합니다.'
+        href: checklist-perform-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      - name: 설치 마법사를 사용하여 Exchange 2013 설치
+        href: install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md
+      - name: 무인 모드로 Exchange 2013 설치
+        href: install-exchange-2013-using-unattended-mode-exchange-2013-help.md
+      - name: 설치 마법사를 사용하여 Exchange 2013 Edge 전송 역할 설치
+        href: install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md
+      - name: Exchange 2013 서버의 설치 위임
+        href: delegate-the-installation-of-an-exchange-2013-server-exchange-2013-help.md
+    - name: 최신 누적 업데이트 또는 서비스 팩으로 Exchange 2013 업그레이드
+      href: upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md
+    - name: Exchange 2010에서 Exchange 2013으로 업그레이드
+      href: upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: '검사 목록: Exchange 2010에서 업그레이드'
+        href: checklist-upgrade-from-exchange-2010-exchange-2013-help.md
+    - name: Exchange 2007에서 Exchange 2013으로 업그레이드
+      href: upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: '검사 목록: Exchange 2007에서 업그레이드'
+        href: checklist-upgrade-from-exchange-2007-exchange-2013-help.md
+    - name: Exchange 2013에 대 한 다중 포리스트 토폴로지를 배포 합니다.
+      href: deploy-multiple-forest-topologies-for-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 크로스 포리스트 토폴로지에서 Exchange 2013 배포
+        href: deploy-exchange-2013-in-a-cross-forest-topology-exchange-2013-help.md
+      - name: Exchange 리소스 포리스트 토폴로지에서 Exchange 2013 배포
+        href: deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help.md
+    - name: Exchange 2013 설치 후 작업
+      href: exchange-2013-post-installation-tasks-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 제품 키 입력
+        href: enter-your-exchange-2013-product-key-exchange-2013-help.md
+      - name: 메일 흐름 및 클라이언트 액세스 구성
+        href: configure-mail-flow-and-client-access-exchange-2013-help.md
+      - name: Exchange 2013 설치를 확인 합니다.
+        href: verify-an-exchange-2013-installation-exchange-2013-help.md
+      - name: Exchange 2013 관리 도구 설치
+        href: install-the-exchange-2013-management-tools-exchange-2013-help.md
+    - name: Exchange 2013 가상화
+      href: exchange-2013-virtualization-exchange-2013-help.md
+    - name: SharePoint 및 Lync와의 통합
+      href: integration-with-sharepoint-and-lync-exchange-2013-help.md
+      items:
+      - name: SharePoint 2013 및 Lync 2013 OAuth 인증 구성
+        href: configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md
+    - name: 배포 참조 (영문)
+      href: deployment-reference-exchange-2013-help.md
+      items:
+      - name: Exchange 2013이 설치될 때 Active Directory에서 변경되는 내용
+        href: what-changes-in-active-directory-when-exchange-2013-is-installed-exchange-2013-help.md
+      - name: 'Exchange 2013: 에디션 및 버전'
+        href: exchange-2013-editions-and-versions-exchange-2013-help.md
+      - name: Exchange Server 지원 가능성 행렬
+        href: exchange-server-supportability-matrix-exchange-2013-help.md
+      - name: Exchange 2013 배포 권한 참조
+        href: exchange-2013-deployment-permissions-reference-exchange-2013-help.md
+      - name: 배포 보안 검사 목록
+        href: deployment-security-checklist-exchange-2013-help.md
+      - name: Exchange 2013 크기 조정 및 용량 계획
+        href: exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md
+      - name: Exchange 2013 저장소 구성 옵션
+        href: exchange-2013-storage-configuration-options-exchange-2013-help.md
+      - name: Exchange 2013의 IPv6 지원
+        href: ipv6-support-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2013 언어 지원
+        href: exchange-2013-language-support-exchange-2013-help.md
+      - name: Exchange 2013 준비 검사
+        href: exchange-2013-readiness-checks-exchange-2013-help.md
+        items:
+        - name: AD LDS 디렉터리가 기본 위치에 있음
+          href: ad-lds-directory-exists-in-default-location-exchange-2013-help.md
+        - name: Active Directory [AdInitErrorRule]에 존재 하는 중복 된 Microsoft Exchange System Objects 컨테이너
+          href: duplicate-microsoft-exchange-system-objects-container-exists-in-active-directory-exchange-2013-help.md
+        - name: 장애 조치 클러스터 명령 인터페이스 Windows 기능이 설치 되지 않았습니다
+          href: failover-cluster-command-interface-windows-feature-not-installed-exchange-2013-help.md
+        - name: 클라이언트 액세스 서버 역할은 이미 설치
+          href: client-access-server-role-is-already-installed-exchange-2013-help.md
+        - name: Active Directory가 없거나 연결할 수 없음
+          href: active-directory-does-not-exist-or-cannot-be-contacted-exchange-2013-help.md
+        - name: 로컬 컴퓨터 [ComputerNotPartofDomain] Active Directory 도메인에 가입 되어있지 않은
+          href: the-local-computer-isn-t-joined-to-an-active-directory-domain-exchange-2013-help.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_1.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_2.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_3.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_4.md
+        - name: Active Directory 기능 수준이 Windows Server 2003 이상이 아님
+          href: active-directory-functional-level-isn-t-windows-server-2003-or-later-exchange-2013-help.md
+        - name: Exchange 조직 컨테이너 [GlobalServerInstall]에 쓸 수 없음
+          href: cannot-write-to-the-exchange-organization-container-exchange-2013-help.md
+        - name: 글로벌 업데이트 필요한
+          href: global-updates-required-exchange-2013-help.md
+        - name: DNS 데이터베이스에서 로컬 컴퓨터의 호스트 레코드를 찾을 수 없습니다.
+          href: the-host-record-for-the-local-computer-cannot-be-found-in-the-dns-database-exchange-2013-help.md
+        - name: 사용 권한 [InstallOnDCInADSplitPermissionMode]를 분할 하는 Active Directory 도메인 컨트롤러에 설치 지원 되지 않습니다.
+          href: installation-on-domain-controllers-is-not-supported-with-active-directory-split-permissions-exchange-2013-help.md
+        - name: 현재 계정 [LoggedOntoDomain] Active Directory 도메인에 로그인 하지 않습니다.
+          href: the-current-account-isn-t-logged-into-an-active-directory-domain-exchange-2013-help.md
+        - name: 설치를 계속하려면 컴퓨터를 다시 시작해야 함
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help.md
+        - name: 로그온 한 사용자 [SchemaUpdateRequired] Schema Admins 그룹의 구성원이 아닙니다.
+          href: the-logged-on-user-is-not-a-member-of-the-schema-admins-group-exchange-2013-help.md
+        - name: UCMA 4.0, Core Runtime이 설치되어 있지 않음
+          href: ucma-4-0-core-runtime-not-installed-exchange-2013-help.md
+        - name: 사서함 데이터베이스 [UnwillingToRemoveMailboxDatabase]를 제거할 수 없습니다.
+          href: cannot-remove-mailbox-database-exchange-2013-help.md
+        - name: 도메인 컨트롤러에서 Exchange 설치 [WarningInstallExchangeRolesOnDomainController] 하지 않기
+          href: installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md
+        - name: KB2619234 업데이트가 설치되어 있지 않음
+          href: kb2619234-update-not-installed-exchange-2013-help.md
+        - name: 서버는 조직에서이 아니어야 첫번째 Exchange 설치 위임
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_5.md
+        - name: Exchange 2010 또는 Exchange 2007 서버 없음 감지
+          href: no-exchange-2010-or-exchange-2007-servers-detected-exchange-2013-help.md
+        - name: 설치를 계속하려면 컴퓨터를 다시 시작해야 함
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help_1.md
+        - name: Exchange 2007 서버를 서비스 팩 3 업데이트 롤업 10으로 업그레이드해야 함
+          href: exchange-2007-servers-must-be-upgraded-to-service-pack-3-update-rollup-10-exchange-2013-help.md
+        - name: Exchange 2010 서버 서비스 팩 3 [E15E14CoexistenceMinVersionRequirement]로 업그레이드 해야
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help.md
+        - name: Office 2010 Filter Pack이 설치되어 있지 않음
+          href: office-2010-filter-pack-not-installed-exchange-2013-help.md
+        - name: Office 2010 Filter Pack SP1이 설치되어 있지 않음
+          href: office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md
+        - name: Exchange 2000 또는 Exchange 2003 서버를 포함 하는 포리스트에 Exchange 2013을 설치할 수 없습니다.
+          href: can-t-install-exchange-2013-in-a-forest-containing-exchange-2000-or-exchange-2003-servers-exchange-2013-help.md
+        - name: 호환되지 않는 운영 체제가 발견됨
+          href: an-incompatible-operating-system-was-found-exchange-2013-help.md
+        - name: Exchange 2010 서버 서비스 팩 3 [E15E14CoexistenceMinMajorVersionRequirement]로 업그레이드 해야
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help_1.md
+        - name: ExecutionPolicy GPO가 정의됨
+          href: executionpolicy-gpo-is-defined-exchange-2013-help.md
+        - name: 주 DNS 접미사가 없거나,
+          href: primary-dns-suffix-is-missing-exchange-2013-help.md
+        - name: 단순 메일 전송 프로토콜 installed_SMTPSvcInstalled 현재입니다.
+          href: the-simple-mail-transport-protocol-is-currently-installed-smtpsvcinstalled-exchange-2013-help.md
+        - name: 서식을 지정합니다 하지 Supported_SMTPAddressLiteral SMTP 주소 지정
+          href: smtp-addressing-format-not-supported-smtpaddressliteral-exchange-2013-help.md
+        - name: World Wide Web 게시 서비스를 사용할 수 없거나 missing_ShouldReRunSetupForW3SVC
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-shouldrerunsetupforw3svc-exchange-2013-help.md
+        - name: 이 서버는 보내는 Connector_ServerIsSourceForSendConnector에 대 한 원본
+          href: this-server-is-the-source-for-a-send-connector-serverissourceforsendconnector-exchange-2013-help.md
+        - name: 로컬 컴퓨터가 그룹 membership_ServerIsGroupExpansionServer 확장을 담당
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisgroupexpansionserver-exchange-2013-help.md
+        - name: 로컬 컴퓨터가 그룹 membership_ServerIsDynamicGroupExpansionServer 확장을 담당
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisdynamicgroupexpansionserver-exchange-2013-help.md
+        - name: 받는 사람 policy_ServerFQDNMatchesSMTPPolicy 일치 하는 컴퓨터의 정규화 된 도메인 이름
+          href: the-fully-qualified-domain-name-of-the-computer-matches-a-recipient-policy-serverfqdnmatchessmtppolicy-exchange-2013-help.md
+        - name: 이전 데이터베이스 파일 present_SecondSGFilesExist
+          href: older-database-files-present-secondsgfilesexist-exchange-2013-help.md
+        - name: 스키마 마스터에는 Windows Server 2003 서비스 팩 1 또는 later_SchemaFSMONotWin2003SPn 실행 되지 않음
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-schemafsmonotwin2003spn-exchange-2013-help.md
+        - name: 받는 사람 업데이트 service_RUSMissing를 찾을 수 없음
+          href: cannot-find-a-recipient-update-service-rusmissing-exchange-2013-help.md
+        - name: Active Directory 도메인 mode_RootDomainModeMixed 혼합
+          href: active-directory-domain-is-mixed-mode-rootdomainmodemixed-exchange-2013-help.md
+        - name: 주 DNS 서버 contacted_PrimaryDNSTestFailed 아니어야 합니다.
+          href: the-primary-dns-server-cannot-be-contacted-primarydnstestfailed-exchange-2013-help.md
+        - name: /PrepareDomain_PrepareDomainNotAdmin 실행에 있는 권한이 없습니다.
+          href: insufficient-permissions-to-run-preparedomain-preparedomainnotadmin-exchange-2013-help.md
+        - name: Active Directory 도메인 mode_PrepareDomainModeMixed 혼합
+          href: active-directory-domain-is-mixed-mode-preparedomainmodemixed-exchange-2013-help.md
+        - name: 운영 체제가 디버그 mode_OSCheckedBuild입니다.
+          href: the-operating-system-is-in-debug-mode-oscheckedbuild-exchange-2013-help.md
+        - name: 로그온 한 사용자의 로컬 관리자가 group_NotLocalAdmin 구성원이 아닙니다.
+          href: the-logged-on-user-is-not-a-member-of-the-local-administrators-group-notlocaladmin-exchange-2013-help.md
+        - name: 스키마 마스터 사이트/domain_NotInSchemaMasterSite에 없음
+          href: not-in-schema-master-site-domain-notinschemamastersite-exchange-2013-help.md
+        - name: 스키마 마스터 사이트/domain_NotInSchemaMasterDomain에 없음
+          href: not-in-schema-master-site-domain-notinschemamasterdomain-exchange-2013-help.md
+        - name: Exchange 2010_NoE12ServerWarning에 대 한 Active Directory를 준비한 후 Exchange 2007 역할을 설치할 수 없습니다.
+          href: cannot-install-exchange-2007-roles-after-you-prepare-active-directory-for-exchange-2010-noe12serverwarning-exchange-2013-help.md
+        - name: 설치 수 continue_MSDTCStopped 전에 분산 트랜잭션 코디네이터 서비스를 시작 해야 합니다.
+          href: the-distributed-transaction-coordinator-service-must-be-started-before-setup-can-continue-msdtcstopped-exchange-2013-help.md
+        - name: 메시지는 현재 하나 이상의 queues_MessagesInQueue에 있습니다
+          href: messages-currently-exist-in-one-or-more-queues-messagesinqueue-exchange-2013-help.md
+        - name: 저장소 그룹 드라이브 사양은 missing_MailboxLogDriveDoesNotExist
+          href: storage-group-drive-specification-is-missing-mailboxlogdrivedoesnotexist-exchange-2013-help.md
+        - name: 사서함 데이터베이스 드라이브 사양은 missing_MailboxEDBDriveDoesNotExist
+          href: mailbox-database-drive-specification-is-missing-mailboxedbdrivedoesnotexist-exchange-2013-help.md
+        - name: Windows Process Activation Service-프로세스 모델 구성 요소는 required_LonghornWASProcessModelInstalled
+          href: the-windows-process-activation-service-process-model-component-is-required-longhornwasprocessmodelinstalled-exchange-2013-help.md
+        - name: IIS 7 구성 요소 하지 installed_LonghornIIS7WindowsAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7windowsauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7.NET 확장성 구성 요소는 required_LonghornIIS7NetExt
+          href: iis-7-net-extensibility-component-is-required-longhorniis7netext-exchange-2013-help.md
+        - name: 통합된 메시징 언어 Packs_AdditionalUMLangPackExists를 제거 합니다.
+          href: uninstall-unified-messaging-language-packs-additionalumlangpackexists-exchange-2013-help.md
+        - name: 현재 Directory_ADUpdateRequired 준비에 있는 권한이 없습니다.
+          href: insufficient-permissions-to-prepare-active-directory-adupdaterequired-exchange-2013-help.md
+        - name: 허브 전송 역할을 로컬 site_BridgeheadRoleNotPresentInSite에서 검색 되지 않음
+          href: hub-transport-role-not-detected-in-local-site-bridgeheadrolenotpresentinsite-exchange-2013-help.md
+        - name: 모든 서버 roles_CannotUninstallDelegatedServer를 제거 하려면 있는 권한이 없습니다.
+          href: insufficient-permissions-to-remove-all-server-roles-cannotuninstalldelegatedserver-exchange-2013-help.md
+        - name: 클라이언트 액세스 역할 로컬 site_ClientAccessRoleNotPresentInSite에서 검색 되지 않음
+          href: client-access-role-not-detected-in-local-site-clientaccessrolenotpresentinsite-exchange-2013-help.md
+        - name: 사서함 역할만 클러스터 server_ClusSvcInstalledRoleBlock에 설치할 수 있습니다.
+          href: only-the-mailbox-role-can-be-installed-on-a-cluster-server-clussvcinstalledroleblock-exchange-2013-help.md
+        - name: 읽기 전용 도메인 controller_ComputerRODC에 Exchange를 설치할 수 없습니다.
+          href: setup-cannot-install-exchange-to-a-read-only-domain-controller-computerrodc-exchange-2013-help.md
+        - name: 도메인 컨트롤러를 재정의 Registry_ConfigDCHostNameMismatch에서 설정
+          href: domain-controller-override-is-set-in-the-registry-configdchostnamemismatch-exchange-2013-help.md
+        - name: 현재 Directory_DomainPrepWithoutADUpdate 준비에 있는 권한이 없습니다.
+          href: insufficient-permissions-to-prepare-active-directory-domainprepwithoutadupdate-exchange-2013-help.md
+        - name: 로컬 컴퓨터에는 Exchange Server_ExchangeAlreadyInstalled 이미 실행 중임
+          href: the-local-computer-is-already-running-exchange-server-exchangealreadyinstalled-exchange-2013-help.md
+        - name: 이전 데이터베이스 파일 present_FirstSGFilesExist
+          href: older-database-files-present-firstsgfilesexist-exchange-2013-help.md
+        - name: 하나 이상의 Active Directory Connector 서버 된 found_ADCFound
+          href: one-or-more-active-directory-connector-servers-were-found-adcfound-exchange-2013-help.md
+        - name: 스키마 마스터에는 Windows Server 2003 서비스 팩 1 또는 later_DomainControllerIsOutOfSite 실행 되지 않음
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-domaincontrollerisoutofsite-exchange-2013-help.md
+        - name: 도메인 준비 required_DomainPrepRequired
+          href: domain-preparation-required-domainpreprequired-exchange-2013-help.md
+        - name: 설치 수 continue_EventSystemStopped 전에 COM + 이벤트 시스템 서비스를 시작 해야 합니다.
+          href: the-com-event-system-service-must-be-started-before-setup-can-continue-eventsystemstopped-exchange-2013-help.md
+        - name: IIS가 32 비트 호환성 mode_IIS32BitMode
+          href: iis-is-in-32-bit-compatibility-mode-iis32bitmode-exchange-2013-help.md
+        - name: 액세스 제어 목록 (ACL) 상속이 blocked_InhBlockPublicFolderTree
+          href: access-control-list-acl-inheritance-is-blocked-inhblockpublicfoldertree-exchange-2013-help.md
+        - name: 서버 role_InstallWatermark를 설치 하는 동안 설치 프로그램 오류가 발생 했습니다.
+          href: setup-failure-occurred-while-installing-a-server-role-installwatermark-exchange-2013-help.md
+        - name: 서버 role_InterruptedUninstallNotContinued를 제거 하는 동안 설치 프로그램 오류가 발생 했습니다.
+          href: setup-failure-occurred-while-uninstalling-a-server-role-interrupteduninstallnotcontinued-exchange-2013-help.md
+        - name: Active Directory site_InvalidADSite의 이름을 확인할 수 없음
+          href: cannot-determine-the-name-of-the-active-directory-site-invalidadsite-exchange-2013-help.md
+        - name: 로컬 컴퓨터가 하위 domain_LocalComputerIsDCInChildDomain의 도메인 컨트롤러
+          href: the-local-computer-is-a-domain-controller-of-a-child-domain-localcomputerisdcinchilddomain-exchange-2013-help.md
+        - name: Active Directory 도메인 mode_LocalDomainModeMixed 혼합
+          href: active-directory-domain-is-mixed-mode-localdomainmodemixed-exchange-2013-help.md
+        - name: 로컬 도메인에서 updated_LocalDomainPrep 해야합니다
+          href: the-local-domain-needs-to-be-updated-localdomainprep-exchange-2013-help.md
+        - name: IIS 6 호환성 구성 요소 하지 installed_LonghornIIS6MetabaseNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6metabasenotinstalled-exchange-2013-help.md
+        - name: IIS 6 호환성 구성 요소 하지 installed_LonghornIIS6MgmtConsoleNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6mgmtconsolenotinstalled-exchange-2013-help.md
+        - name: IIS 7 구성 요소 하지 installed_LonghornIIS7BasicAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7basicauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 구성 요소 하지 installed_LonghornIIS7DigestAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7digestauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 구성 요소 하지 installed_LonghornIIS7HttpCompressionDynamicNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressiondynamicnotinstalled-exchange-2013-help.md
+        - name: IIS 7 구성 요소 하지 installed_LonghornIIS7HttpCompressionStaticNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressionstaticnotinstalled-exchange-2013-help.md
+        - name: World Wide Web 게시 서비스를 사용할 수 없거나 missing_W3SVCDisabledOrNotInstalled
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-w3svcdisabledornotinstalled-exchange-2013-help.md
+        - name: OAB 서버 deleted_OffLineABServerDeleted 받은 합니다.
+          href: oab-server-has-been-deleted-offlineabserverdeleted-exchange-2013-help.md
+      - name: 클라이언트에 대한 네트워크 포트 및 Exchange 2013의 메일 흐름
+        href: network-ports-for-clients-and-mail-flow-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2013 서비스 개요
+        href: overview-of-exchange-2013-services-exchange-2013-help.md
+      - name: Exchange 관리 셸에서 기본 개념
+        href: basic-concepts-in-exchange-management-shell-exchange-2013-help.md
+        items:
+        - name: Cmdlet
+          href: cmdlets-exchange-2013-help.md
+        - name: ID
+          href: identity-exchange-2013-help.md
+        - name: Exchange 관리 셸에서 파일 가져오기 및 내보내기
+          href: import-and-export-files-in-the-exchange-management-shell-exchange-2013-help.md
+        - name: 다중값 속성 수정
+          href: modifying-multivalued-properties-exchange-2013-help.md
+        - name: WhatIf, Confirm 및 ValidateOnly 스위치
+          href: whatif-confirm-and-validateonly-switches-exchange-2013-help.md
+        - name: 명령 출력 (영문)
+          href: working-with-command-output-exchange-2013-help.md
+      - name: cmdlet 확장 에이전트
+        href: cmdlet-extension-agents-exchange-2013-help.md
+        items:
+        - name: Cmdlet 확장 에이전트를 관리 합니다.
+          href: manage-cmdlet-extension-agents-exchange-2013-help.md
+      - name: Exchange 2013에 대 한 Exchange 관리 셸 빠른 참조
+        href: exchange-management-shell-quick-reference-for-exchange-2013-exchange-2013-help.md
+      - name: -ContentFilter 매개 변수에 대 한 필터링 할 수 있는 속성
+        href: filterable-properties-for-the-contentfilter-parameter.md
+    - name: Exchange 2013의 다중 테 넌 트
+      href: multi-tenancy-in-exchange-2013-exchange-2013-help.md
+    - name: 일광 절약 시간제 또는 표준 시간대를 변경 하는 경우 Exchange 조직 업데이트
+      href: update-your-exchange-organization-when-daylight-saving-time-or-the-time-zone-changes-exchange-2013-help.md
+  - name: 사용 권한
+    href: permissions-exchange-2013-help.md
+    items:
+    - name: 역할 기반 액세스 제어 이해
+      href: understanding-role-based-access-control-exchange-2013-help.md
+      items:
+      - name: 관리 역할 그룹 이해 (영문)
+        href: understanding-management-role-groups-exchange-2013-help.md
+      - name: 관리 역할 할당 정책 이해 (영문)
+        href: understanding-management-role-assignment-policies-exchange-2013-help.md
+      - name: 관리 역할 이해 (영문)
+        href: understanding-management-roles-exchange-2013-help.md
+      - name: 관리 역할 범위 이해 (영문)
+        href: understanding-management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 관리 역할 범위 필터 이해 (영문)
+          href: understanding-management-role-scope-filters-exchange-2013-help.md
+        - name: 배타적 범위 이해 (영문)
+          href: understanding-exclusive-scopes-exchange-2013-help.md
+      - name: 관리 역할 할당 이해 (영문)
+        href: understanding-management-role-assignments-exchange-2013-help.md
+      - name: 기본 제공 역할 그룹
+        href: built-in-role-groups-exchange-2013-help.md
+        items:
+        - name: 조직 관리
+          href: organization-management-exchange-2013-help.md
+        - name: 보기 전용 조직 관리
+          href: view-only-organization-management-exchange-2013-help.md
+        - name: Recipient Management
+          href: recipient-management-exchange-2013-help.md
+        - name: UM Management
+          href: um-management-exchange-2013-help.md
+        - name: 지원 센터
+          href: help-desk-exchange-2013-help.md
+        - name: Hygiene Management
+          href: hygiene-management-exchange-2013-help.md
+        - name: Compliance Management
+          href: compliance-management-exchange-2013-help.md
+        - name: Records Management
+          href: records-management-exchange-2013-help.md
+        - name: 검색 관리
+          href: discovery-management-exchange-2013-help.md
+        - name: 공용 폴더 관리
+          href: public-folder-management-exchange-2013-help.md
+        - name: Server 관리
+          href: server-management-exchange-2013-help.md
+        - name: 위임 설치
+          href: delegated-setup-exchange-2013-help.md
+      - name: 기본 제공 관리 역할
+        href: built-in-management-roles-exchange-2013-help.md
+        items:
+        - name: Active Directory 권한 역할
+          href: active-directory-permissions-role-exchange-2013-help.md
+        - name: 주소 목록 역할
+          href: address-lists-role-exchange-2013-help.md
+        - name: ApplicationImpersonation 역할
+          href: applicationimpersonation-role-exchange-2013-help.md
+        - name: ArchiveApplication 역할
+          href: archiveapplication-role-exchange-2013-help.md
+        - name: 감사 로그 역할
+          href: audit-logs-role-exchange-2013-help.md
+        - name: Cmdlet 확장 에이전트 역할
+          href: cmdlet-extension-agents-role-exchange-2013-help.md
+        - name: 데이터 손실 방지 역할
+          href: data-loss-prevention-role-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹 역할
+          href: database-availability-groups-role-exchange-2013-help.md
+        - name: 데이터베이스 복사본 역할
+          href: database-copies-role-exchange-2013-help.md
+        - name: 데이터베이스 역할
+          href: databases-role-exchange-2013-help.md
+        - name: 재해 복구 역할
+          href: disaster-recovery-role-exchange-2013-help.md
+        - name: 메일 그룹 역할
+          href: distribution-groups-role-exchange-2013-help.md
+        - name: Edge 구독 역할
+          href: edge-subscriptions-role-exchange-2013-help.md
+        - name: 전자 메일 주소 정책 역할
+          href: e-mail-address-policies-role-exchange-2013-help.md
+        - name: Exchange 커넥터 역할
+          href: exchange-connectors-role-exchange-2013-help.md
+        - name: Exchange 서버 인증서 역할
+          href: exchange-server-certificates-role-exchange-2013-help.md
+        - name: Exchange 서버 역할
+          href: exchange-servers-role-exchange-2013-help.md
+        - name: Exchange 가상 디렉터리 역할
+          href: exchange-virtual-directories-role-exchange-2013-help.md
+        - name: 페더레이션된 공유 역할
+          href: federated-sharing-role-exchange-2013-help.md
+        - name: 정보 권한 관리 역할
+          href: information-rights-management-role-exchange-2013-help.md
+        - name: 저널링 역할
+          href: journaling-role-exchange-2013-help.md
+        - name: 법적 보존 역할
+          href: legal-hold-role-exchange-2013-help.md
+        - name: LegalHoldApplication 역할
+          href: legalholdapplication-role-exchange-2013-help.md
+        - name: 메일 사용 가능 공용 폴더 역할
+          href: mail-enabled-public-folders-role-exchange-2013-help.md
+        - name: Mail Recipient Creation 역할
+          href: mail-recipient-creation-role-exchange-2013-help.md
+        - name: 메일 받는 사람에 게 역할
+          href: mail-recipients-role-exchange-2013-help.md
+        - name: 메일 팁 역할
+          href: mail-tips-role-exchange-2013-help.md
+        - name: Mailbox Import Export 역할
+          href: mailbox-import-export-role-exchange-2013-help.md
+        - name: 사서함 검색 역할
+          href: mailbox-search-role-exchange-2013-help.md
+        - name: MailboxSearchApplication 역할
+          href: mailboxsearchapplication-role-exchange-2013-help.md
+        - name: 메시지 추적 역할
+          href: message-tracking-role-exchange-2013-help.md
+        - name: 마이그레이션 역할
+          href: migration-role-exchange-2013-help.md
+        - name: 역할을 모니터링
+          href: monitoring-role-exchange-2013-help.md
+        - name: 사서함 역할 이동
+          href: move-mailboxes-role-exchange-2013-help.md
+        - name: 사용자 지정 앱의 역할
+          href: my-custom-apps-role-exchange-2013-help.md
+        - name: 내 마켓플레이스 앱 역할
+          href: my-marketplace-apps-role-exchange-2013-help.md
+        - name: MyAddressInformation 역할
+          href: myaddressinformation-role-exchange-2013-help.md
+        - name: MyBaseOptions 역할
+          href: mybaseoptions-role-exchange-2013-help.md
+        - name: MyContactInformation 역할
+          href: mycontactinformation-role-exchange-2013-help.md
+        - name: MyDiagnostics 역할
+          href: mydiagnostics-role-exchange-2013-help.md
+        - name: MyDisplayName 역할
+          href: mydisplayname-role-exchange-2013-help.md
+        - name: MyDistributionGroupMembership 역할
+          href: mydistributiongroupmembership-role-exchange-2013-help.md
+        - name: MyDistributionGroups 역할
+          href: mydistributiongroups-role-exchange-2013-help.md
+        - name: MyMobileInformation 역할
+          href: mymobileinformation-role-exchange-2013-help.md
+        - name: MyName 역할
+          href: myname-role-exchange-2013-help.md
+        - name: MyPersonalInformation 역할
+          href: mypersonalinformation-role-exchange-2013-help.md
+        - name: MyProfileInformation 역할
+          href: myprofileinformation-role-exchange-2013-help.md
+        - name: 내 ReadWriteMailbox 앱 역할
+          href: my-readwritemailbox-apps-role-exchange-2013-help.md
+        - name: MyRetentionPolicies 역할
+          href: myretentionpolicies-role-exchange-2013-help.md
+        - name: MyTeamMailboxes 역할
+          href: myteammailboxes-role-exchange-2013-help.md
+        - name: MyTextMessaging 역할
+          href: mytextmessaging-role-exchange-2013-help.md
+        - name: MyVoiceMail 역할
+          href: myvoicemail-role-exchange-2013-help.md
+        - name: OfficeExtensionApplication 역할
+          href: officeextensionapplication-role-exchange-2013-help.md
+        - name: 조직 사용자 지정 앱 역할
+          href: org-custom-apps-role-exchange-2013-help.md
+        - name: Org 마켓플레이스 앱 역할
+          href: org-marketplace-apps-role-exchange-2013-help.md
+        - name: 조직의 클라이언트 액세스 역할
+          href: organization-client-access-role-exchange-2013-help.md
+        - name: 조직 구성 역할
+          href: organization-configuration-role-exchange-2013-help.md
+        - name: 조직 전송 설정 역할
+          href: organization-transport-settings-role-exchange-2013-help.md
+        - name: POP3 및 IMAP4 프로토콜 역할
+          href: pop3-and-imap4-protocols-role-exchange-2013-help.md
+        - name: 공용 폴더 역할
+          href: public-folders-role-exchange-2013-help.md
+        - name: 수신 커넥터 역할
+          href: receive-connectors-role-exchange-2013-help.md
+        - name: 받는 사람 정책 역할
+          href: recipient-policies-role-exchange-2013-help.md
+        - name: 원격 및 허용 도메인 역할
+          href: remote-and-accepted-domains-role-exchange-2013-help.md
+        - name: 암호 역할을 다시 설정
+          href: reset-password-role-exchange-2013-help.md
+        - name: 보존 관리 역할
+          href: retention-management-role-exchange-2013-help.md
+        - name: 역할 관리 역할
+          href: role-management-role-exchange-2013-help.md
+        - name: 보안 그룹 만들기 및 멤버 자격 역할
+          href: security-group-creation-and-membership-role-exchange-2013-help.md
+        - name: 커넥터 역할을 보내기
+          href: send-connectors-role-exchange-2013-help.md
+        - name: Support Diagnostics 역할
+          href: support-diagnostics-role-exchange-2013-help.md
+        - name: 팀 사서함 역할
+          href: team-mailboxes-role-exchange-2013-help.md
+        - name: TeamMailboxLifecycleApplication 역할
+          href: teammailboxlifecycleapplication-role-exchange-2013-help.md
+        - name: 전송 에이전트 역할
+          href: transport-agents-role-exchange-2013-help.md
+        - name: 전송 방역 역할
+          href: transport-hygiene-role-exchange-2013-help.md
+        - name: 전송 큐 역할
+          href: transport-queues-role-exchange-2013-help.md
+        - name: 전송 규칙 역할
+          href: transport-rules-role-exchange-2013-help.md
+        - name: UM 사서함 역할
+          href: um-mailboxes-role-exchange-2013-help.md
+        - name: UM 음성 안내 역할
+          href: um-prompts-role-exchange-2013-help.md
+        - name: 통합된 메시징 역할
+          href: unified-messaging-role-exchange-2013-help.md
+        - name: 범위가 지정 되지 않은 역할 관리 역할
+          href: unscoped-role-management-role-exchange-2013-help.md
+        - name: 사용자 옵션 역할
+          href: user-options-role-exchange-2013-help.md
+        - name: UserApplication 역할
+          href: userapplication-role-exchange-2013-help.md
+        - name: 보기 전용 감사 로그 역할
+          href: view-only-audit-logs-role-exchange-2013-help.md
+        - name: 보기 전용 구성 역할
+          href: view-only-configuration-role-exchange-2013-help.md
+        - name: 보기 전용 받는 사람에 게 역할
+          href: view-only-recipients-role-exchange-2013-help.md
+        - name: WorkloadManagement 역할
+          href: workloadmanagement-role-exchange-2013-help.md
+    - name: 다중 포리스트 사용 권한을 이해 (영문)
+      href: understanding-multiple-forest-permissions-exchange-2013-help.md
+    - name: 분할 권한 이해
+      href: understanding-split-permissions-exchange-2013-help.md
+    - name: Exchange 2007 및 Exchange 2010 동시 사용 권한이 해
+      href: understanding-permissions-coexistence-with-exchange-2007-and-exchange-2010-exchange-2013-help.md
+    - name: 역할 그룹 관리
+      href: manage-role-groups-exchange-2013-help.md
+    - name: 역할 그룹 구성원 관리
+      href: manage-role-group-members-exchange-2013-help.md
+    - name: 연결 된 역할 그룹 관리
+      href: manage-linked-role-groups-exchange-2013-help.md
+    - name: 역할 할당 정책 관리
+      href: manage-role-assignment-policies-exchange-2013-help.md
+    - name: 사서함에 할당 정책 변경
+      href: change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md
+    - name: 기본 제공 역할 그룹을 미러링 하는 연결 된 역할 그룹 만들기
+      href: create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md
+    - name: 유효 사용 권한 보기
+      href: view-effective-permissions-exchange-2013-help.md
+    - name: 기능 사용 권한
+      href: feature-permissions-exchange-2013-help.md
+      items:
+      - name: 역할 관리 권한
+        href: role-management-permissions-exchange-2013-help.md
+      - name: 메시징 정책 및 규정 준수 권한
+        href: messaging-policy-and-compliance-permissions-exchange-2013-help.md
+      - name: 스팸 방지 및 맬웨어 방지 사용 권한
+        href: anti-spam-and-anti-malware-permissions-exchange-2013-help.md
+      - name: 메일 흐름 사용 권한
+        href: mail-flow-permissions-exchange-2013-help.md
+      - name: 받는 사람에 게 사용 권한
+        href: recipients-permissions-exchange-2013-help.md
+      - name: 이메일 주소 및 주소록 사용 권한
+        href: email-address-and-address-book-permissions-exchange-2013-help.md
+      - name: 공유 및 공동 작업 사용 권한
+        href: sharing-and-collaboration-permissions-exchange-2013-help.md
+      - name: 클라이언트 및 모바일 장치 사용 권한
+        href: clients-and-mobile-devices-permissions-exchange-2013-help.md
+      - name: 통합된 메시징 사용 권한
+        href: unified-messaging-permissions-exchange-2013-help.md
+      - name: 높은 가용성 및 사이트 복원 력 사용 권한
+        href: high-availability-and-site-resilience-permissions-exchange-2013-help.md
+      - name: Exchange 및 셸 인프라 권한
+        href: exchange-and-shell-infrastructure-permissions-exchange-2013-help.md
+      - name: 서버 상태 및 성능 사용 권한
+        href: server-health-and-performance-permissions-exchange-2013-help.md
+    - name: 고급 사용 권한
+      href: advanced-permissions-exchange-2013-help.md
+      items:
+      - name: 관리 역할 및 역할 항목
+        href: management-roles-and-role-entries-exchange-2013-help.md
+        items:
+        - name: 역할 만들기
+          href: create-a-role-exchange-2013-help.md
+        - name: 역할 보기
+          href: view-a-role-exchange-2013-help.md
+        - name: 역할을 제거 합니다.
+          href: remove-a-role-exchange-2013-help.md
+        - name: 역할에 역할 항목 추가
+          href: add-a-role-entry-to-a-role-exchange-2013-help.md
+        - name: 역할 항목 변경
+          href: change-a-role-entry-exchange-2013-help.md
+        - name: 역할 항목 보기
+          href: view-role-entries-exchange-2013-help.md
+        - name: 역할에서 역할 항목을 제거 합니다.
+          href: remove-a-role-entry-from-a-role-exchange-2013-help.md
+        - name: 범위가 지정되지 않은 역할 만들기
+          href: create-an-unscoped-role-exchange-2013-help.md
+        - name: 범위가 지정 되지 않은 최상위 역할의 역할 항목 변경
+          href: change-a-role-entry-on-an-unscoped-top-level-role-exchange-2013-help.md
+        - name: 범위가 지정 되지 않은 최상위 역할을 역할 항목 추가
+          href: add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md
+      - name: 관리 역할 범위
+        href: management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 일반 또는 배타적 범위 만들기
+          href: create-a-regular-or-exclusive-scope-exchange-2013-help.md
+        - name: 역할 범위를 변경 합니다.
+          href: change-a-role-scope-exchange-2013-help.md
+        - name: 역할 범위 보기
+          href: view-role-scopes-exchange-2013-help.md
+        - name: 역할 범위를 제거 합니다.
+          href: remove-a-role-scope-exchange-2013-help.md
+        - name: 데이터베이스 범위를 사용 하 여 자동 사서함 배포 제어
+          href: control-automatic-mailbox-distribution-using-database-scopes-exchange-2013-help.md
+      - name: 관리 역할 할당
+        href: management-role-assignments-exchange-2013-help.md
+        items:
+        - name: 사용자 또는 USG에는 역할을 추가 합니다.
+          href: add-a-role-to-a-user-or-usg-exchange-2013-help.md
+        - name: 역할 할당을 변경
+          href: change-a-role-assignment-exchange-2013-help.md
+        - name: 역할 할당을 보기
+          href: view-role-assignments-exchange-2013-help.md
+        - name: 사용자 또는 USG에서 역할을 제거 합니다.
+          href: remove-a-role-from-a-user-or-usg-exchange-2013-help.md
+        - name: 대리인 역할 할당
+          href: delegate-role-assignments-exchange-2013-help.md
+      - name: 분할 된 사용 권한 관리
+        href: managing-split-permissions-exchange-2013-help.md
+        items:
+        - name: Exchange 2013 분할 된 사용 권한 구성
+          href: configure-exchange-2013-for-split-permissions-exchange-2013-help.md
+        - name: Exchange 2013 공유 사용 권한 구성
+          href: configure-exchange-2013-for-shared-permissions-exchange-2013-help.md
+  - name: 메시징 정책 및 규정 준수
+    href: messaging-policy-and-compliance-exchange-2013-help.md
+    items:
+    - name: 전체에서 Exchange 2013의 보관
+      href: in-place-archiving-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: Exchange 2013에서 원본 위치 보관 관리
+        href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
+      - name: 보관 정책 수정
+        href: modify-archive-policies-exchange-2013-help.md
+      - name: 보관 할당량 원본 위치 보관에 대 한 Exchange 2013 구성
+        href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
+      - name: Lync 대화 및 모임 콘텐츠 Exchange에 보관
+        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+      - name: OAuth 인증을 사용하여 Exchange 하이브리드 배포에서 보관 지원
+        href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+    - name: 원본 위치 유지 및 소송 보존
+      href: in-place-hold-and-litigation-hold-exchange-2013-help.md
+      items:
+      - name: 만들기 또는 In-place Hold 제거
+        href: create-or-remove-an-in-place-hold-exchange-2013-help.md
+      - name: 전체 사서함에 소송 보존으로 설정
+        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+      - name: 모든 사서함을 보류
+        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+      - name: 숨은 참조 및 eDiscovery에 대 한 확장 된 메일 그룹 받는 사람을 보존 합니다.
+        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+    - name: 원본 위치 eDiscovery
+      href: in-place-ediscovery-exchange-2013-help.md
+      items:
+      - name: Exchange eDiscovery 사용 권한 할당
+        href: assign-ediscovery-permissions-in-exchange-exchange-2013-help.md
+      - name: 원본 위치 eDiscovery 검색 만들기
+        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: EDiscovery 검색 결과 검색 사서함으로 복사
+        href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
+      - name: PST 파일로 eDiscovery 검색 결과 내보내기
+        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+      - name: 원본 위치 eDiscovery에 대 한 메시지의 속성 및 검색 연산자
+        href: message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md
+      - name: 검색 사서함 만들기
+        href: create-a-discovery-mailbox-exchange-2013-help.md
+      - name: 시작 하거나 원본 위치 eDiscovery 검색을 중지 합니다.
+        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 원본 위치 eDiscovery 검색 수정
+        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기
+        href: create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md
+      - name: 원본 위치 eDiscovery 검색 제거
+        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 메시지-관리자 도움말에 대 한 검색 및 삭제
+        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+      - name: Exchange에서 검색 사서함의 크기 줄이기
+        href: reduce-the-size-of-a-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: Exchange에서 기본 검색 사서함 삭제 및 다시 만들기
+        href: delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: 검색 시스템 사서함을 다시 만들려면
+        href: re-create-the-discovery-system-mailbox-exchange-2013-help.md
+      - name: OAuth 인증을 사용하여 Exchange 하이브리드 배포에서 eDiscovery 지원
+        href: using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+      - name: SharePoint eDiscovery 센터에 대한 Exchange 구성
+        href: configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md
+      - name: Exchange eDiscovery의 검색할 수 없는 항목
+        href: unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md
+    - name: 메시징 레코드 관리
+      href: messaging-records-management-exchange-2013-help.md
+      items:
+      - name: 메시징 레코드 관리 용어 Exchange 2013
+        href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
+      - name: 보존 태그 및 보존 정책
+        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        items:
+        - name: 기본 보존 정책
+          href: default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md
+        - name: 보존 정책 태그를 지 원하는 기본 폴더
+          href: default-folders-that-support-retention-policy-tags-exchange-2013-help.md
+        - name: 보존 기간 계산 방법
+          href: how-retention-age-is-calculated-exchange-2013-help.md
+        - name: '검사 목록: 보존 정책 배포'
+          href: checklist-deploying-retention-policies-exchange-2013-help.md
+        - name: 메시징 레코드 관리 절차
+          href: messaging-records-management-procedures-exchange-2013-help.md
+          items:
+          - name: 보존 정책 만들기
+            href: create-a-retention-policy-exchange-2013-help.md
+          - name: 보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.
+            href: add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md
+          - name: 사서함에 보존 정책 적용
+            href: apply-a-retention-policy-to-mailboxes-exchange-2013-help.md
+          - name: 관리 되는 폴더 도우미를 구성 합니다.
+            href: configure-the-managed-folder-assistant-exchange-2013-help.md
+          - name: 사서함 보존에 원본 위치 유지
+            href: place-a-mailbox-on-retention-hold-exchange-2013-help.md
+          - name: 보존 태그 내보내기 및 가져오기
+            href: export-and-import-retention-tags-exchange-2013-help.md
+          - name: 차단 하는 Outlook 클라이언트를 구성 합니다.
+            href: configure-outlook-client-blocking-exchange-2013-help.md
+          - name: 관리 되는 폴더에서 마이그레이션
+            href: migrate-from-managed-folders-exchange-2013-help.md
+          - name: 메시징 레코드 관리를 일시 중단 또는 해제
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
+      - name: 모니터링 메시징 레코드 관리
+        href: monitoring-messaging-records-management-exchange-2013-help.md
+        items:
+        - name: 메시징 레코드 관리에 대 한 성능 카운터 보기
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: 메시징 레코드 관리에 대 한 성능 카운터
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: 메시징 레코드 관리 오류 및 이벤트
+          href: messaging-records-management-errors-and-events-exchange-2013-help.md
+    - name: 저널링
+      href: journaling-exchange-2013-help.md
+      items:
+      - name: 저널링 관리
+        href: manage-journaling-exchange-2013-help.md
+      - name: 사용 하지 않거나 음성 메일 및 부재중된 전화 알림의 저널링을 사용 하도록 설정
+        href: disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md
+    - name: 메일 흐름 규칙 (전송 규칙)
+      href: mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 메일 흐름 규칙 조건 및 예외 (조건자)
+        href: mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md
+      - name: 메일 흐름 규칙 동작
+        href: mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md
+      - name: 메일 흐름 규칙을 구성 하기 위한 모범 사례
+        href: best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md
+      - name: 전송 규칙을 사용 하 여 메시지 첨부 파일을 검사 하려면
+        href: use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md
+      - name: 일반적인 첨부 파일 차단 시나리오
+        href: common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md
+      - name: 조직 전체의 법적 고 지 사항, 서명, 바닥글 또는 머리글
+        href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
+      - name: 메일 흐름 또는 전송 규칙 절차
+        href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
+        items:
+        - name: 메일 흐름 규칙 관리
+          href: manage-mail-flow-rules-exchange-2013-help.md
+        - name: 메일 흐름 규칙을 테스트 합니다.
+          href: test-a-mail-flow-rule-exchange-2013-help.md
+        - name: 메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여
+          href: use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md
+        - name: 메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여
+          href: use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md
+        - name: Exchange 2013으로 Filter Pack IFilter 등록
+          href: register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md
+      - name: 메시지 승인 관리
+        href: manage-message-approval-exchange-2013-help.md
+        items:
+        - name: 일반적인 메시지 승인 시나리오
+          href: common-message-approval-scenarios-exchange-2013-help.md
+        - name: 관리 하 고 메시지 승인 문제를 해결합니다
+          href: manage-and-troubleshoot-message-approval-exchange-2013-help.md
+    - name: 데이터 손실 방지
+      href: technical-overview-of-dlp-data-loss-prevention-in-exchange.md
+      items:
+      - name: 메시지를 평가 DLP 규칙을 적용 하는 방법
+        href: how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md
+      - name: 전송 규칙에 중요 한 정보 규칙 통합 (영문)
+        href: integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md
+      - name: 중요 한 정보 형식을 찾습니다.
+        href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
+      - name: DLP 정책 템플릿
+        href: dlp-policy-templates-exchange-2013-help.md
+        items:
+        - name: Exchange에서 제공 하는 DLP 정책 템플릿
+          href: dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md
+        - name: Microsoft 파트너 로부터 정책 서식 파일
+          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+      - name: DLP 절차
+        href: dlp-procedures-exchange-2013-help.md
+        items:
+        - name: DLP 정책 관리
+          href: manage-dlp-policies-exchange-2013-help.md
+        - name: 템플릿에서 DLP 정책 만들기
+          href: how-to-new-dlp-data-loss-prevention-policy-template.md
+        - name: 사용자 지정 DLP 정책 만들기
+          href: create-a-custom-dlp-policy-exchange-2013-help.md
+        - name: 파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면
+          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+        - name: DLP 정책 검색 보고서 보기
+          href: view-dlp-policy-detection-reports-exchange-2013-help.md
+        - name: DLP 정책 감지에 대 한 문제 보고서 만들기
+          href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
+        - name: 자체 DLP 템플릿 및 정보 유형 정의
+          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          items:
+          - name: DLP 정책 템플릿 파일 개발
+            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+          - name: 중요 한 정보 규칙 패키지 개발 (영문)
+            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+          - name: 일치 하는 방법 및 규칙 패키지에 대 한 기술
+            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+          - name: 기본 제공 DLP 중요 한 정보 유형 사용자 지정
+            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+          - name: Exchange에서 DLP 중요 한 정보 유형 내보내기
+            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+      - name: 정책 팁
+        href: technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md
+        items:
+        - name: 정책 팁 관리
+          href: how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md
+      - name: 문서 지문
+        href: overview-of-document-fingerprinting-in-exchange.md
+        items:
+        - name: 문서 지문을 사용 하 여 양식 데이터를 보호 합니다.
+          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+    - name: 정보 권한 관리
+      href: information-rights-management-exchange-2013-help.md
+      items:
+      - name: 전송 보호 규칙
+        href: transport-protection-rules-exchange-2013-help.md
+      - name: Outlook 보호 규칙
+        href: outlook-protection-rules-exchange-2013-help.md
+      - name: 전송 암호 해독
+        href: transport-decryption-exchange-2013-help.md
+      - name: 저널 보고서 암호 해독
+        href: journal-report-decryption-exchange-2013-help.md
+      - name: Outlook Web App에서 정보 권한 관리
+        href: information-rights-management-in-outlook-web-app-exchange-2013-help.md
+      - name: Exchange ActiveSync의 정보 권한 관리
+        href: information-rights-management-in-exchange-activesync-exchange-2013-help.md
+      - name: 정보 권한 관리 로깅
+        href: information-rights-management-logging-exchange-2013-help.md
+      - name: 정보 권한 관리 절차
+        href: information-rights-management-procedures-exchange-2013-help.md
+        items:
+        - name: 내부 메시지에 대 한 IRM을 사용 하지 않도록 설정 하거나 사용
+          href: enable-or-disable-irm-for-internal-messages-exchange-2013-help.md
+        - name: 전송 보호 규칙 만들기
+          href: create-a-transport-protection-rule-exchange-2013-help.md
+        - name: Outlook 보호 규칙 만들기
+          href: create-an-outlook-protection-rule-exchange-2013-help.md
+        - name: Outlook 보호 규칙을 제거 합니다.
+          href: remove-an-outlook-protection-rule-exchange-2013-help.md
+        - name: AD RMS 슈퍼 사용자 그룹에는 페더레이션 사서함을 추가 합니다.
+          href: add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md
+        - name: 사용 하도록 설정 또는 전송 암호 해독을 사용 하지 않도록 설정
+          href: enable-or-disable-transport-decryption-exchange-2013-help.md
+        - name: Exchange 검색 및 원본 위치 eDiscovery에 대 한 IRM 구성
+          href: configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md
+        - name: 저널 보고서 암호 해독을 사용 하지 않도록 설정 하거나 사용
+          href: enable-or-disable-journal-report-decryption-exchange-2013-help.md
+        - name: 클라이언트 액세스 서버에서 정보 권한 관리를 사용 하지 않도록 설정 하거나 사용
+          href: enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md
+        - name: 사용 또는 사용 안함 정보 권한 관리 로깅
+          href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
+    - name: 메시지 서명 및 암호화를 위한 S/MIME
+      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      items:
+      - name: Outlook Web App에 대 한 S/MIME 설정 구성
+        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+      - name: S/MIME 유효성을 검사 하려면 가상 인증서 컬렉션 설정
+        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+      - name: 보내기 / 받기 S/MIME의 서명 및 암호화 된 전자 메일
+        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+    - name: 사서함 감사 로깅
+      href: mailbox-audit-logging-exchange-2013-help.md
+      items:
+      - name: 사서함 감사 로깅 절차
+        href: mailbox-audit-logging-procedures-exchange-2013-help.md
+        items:
+        - name: 사서함 감사 사서함에 대해 로깅을 사용 하지 않도록 설정 하거나 사용
+          href: enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md
+        - name: 프로그램에서 사용자 계정을 사서함 감사 로깅 바이패스
+          href: bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md
+        - name: 사서함에 대 한 사서함 감사 로그를 검색 합니다.
+          href: search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help.md
+        - name: 사서함 감사 로그 검색 만들기
+          href: create-a-mailbox-audit-log-search-exchange-2013-help.md
+    - name: 관리자 감사 로깅
+      href: administrator-audit-logging-exchange-2013-help.md
+      items:
+      - name: 관리자 감사 로그 구조
+        href: administrator-audit-log-structure-exchange-2013-help.md
+      - name: 관리자가 관리 감사 로깅
+        href: manage-administrator-audit-logging-exchange-2013-help.md
+    - name: 감사 보고서를 교환 합니다.
+      href: exchange-auditing-reports-exchange-2013-help.md
+      items:
+      - name: 사서함 감사 로그 내보내기
+        href: export-mailbox-audit-logs-exchange-2013-help.md
+      - name: 비 소유자 사서함 액세스 보고서 실행
+        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+      - name: 사서함 단위 소송 보존 보고서 실행
+        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+      - name: 역할 그룹 변경 내용을 검색 또는 관리자 감사 로그
+        href: search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md
+      - name: 관리자 감사 로그 보기
+        href: view-the-administrator-audit-log-exchange-2013-help.md
+  - name: 스팸 방지 및 맬웨어 방지 보호
+    href: anti-spam-and-anti-malware-protection-exchange-2013-help.md
+    items:
+    - name: 스팸 방지 보호
+      href: anti-spam-protection-exchange-2013-help.md
+      items:
+      - name: Exchange Server 2013의 Exchange Online Protection에서 제공되는 스팸 방지 기능의 이점
+        href: benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help.md
+      - name: 사서함 서버에서 스팸 방지 기능을 사용 하도록 설정
+        href: enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md
+      - name: 보낸 사람 필터링
+        href: sender-filtering-exchange-2013-help.md
+        items:
+        - name: 받는 사람 필터링 관리
+          href: manage-sender-filtering-exchange-2013-help.md
+      - name: 보낸사람 ID
+        href: sender-id-exchange-2013-help.md
+        items:
+        - name: 보낸사람 ID 관리
+          href: manage-sender-id-exchange-2013-help.md
+      - name: 콘텐츠 필터링
+        href: content-filtering-exchange-2013-help.md
+        items:
+        - name: 콘텐츠 필터링 관리
+          href: manage-content-filtering-exchange-2013-help.md
+        - name: 수신 허용 목록 집계
+          href: safelist-aggregation-exchange-2013-help.md
+          items:
+          - name: 수신 허용 목록 집계 관리
+            href: manage-safelist-aggregation-exchange-2013-help.md
+          - name: 콘텐츠 안전한 도메인 데이터를 사용 하 여 필터링 구성
+            href: configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md
+        - name: 스팸 지수 임계값
+          href: spam-confidence-level-threshold-exchange-2013-help.md
+        - name: 사서함에 대해 스팸 방지 설정 구성
+          href: configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md
+      - name: 보낸사람 신뢰도 및 프로토콜 분석 에이전트
+        href: sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md
+        items:
+        - name: 보낸사람 신뢰도 관리 합니다.
+          href: manage-sender-reputation-exchange-2013-help.md
+      - name: Edge 전송 서버에서 연결 필터링
+        href: connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: Edge 전송 서버에서 연결 필터링 관리
+          href: manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: Edge 전송 서버의 받는 사람 필터링
+        href: recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: Edge 전송 서버의 받는 사람 필터링 관리
+          href: manage-recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: Edge 전송 서버에서 첨부 파일 필터링
+        href: attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: Edge 전송 서버에서 첨부 파일 필터링 관리
+          href: manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: 스팸 격리
+        href: spam-quarantine-exchange-2013-help.md
+        items:
+        - name: 스팸 격리 사서함 구성
+          href: configure-a-spam-quarantine-mailbox-exchange-2013-help.md
+        - name: 격리 사서함에서 원래 보낸 사람을 표시하도록 Outlook 구성
+          href: configure-outlook-to-show-the-original-sender-in-the-quarantine-mailbox-exchange-2013-help.md
+        - name: 릴리스 스팸 격리 사서함에서 메시지를 격리
+          href: release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md
+      - name: 스팸 방지 스탬프
+        href: anti-spam-stamps-exchange-2013-help.md
+        items:
+        - name: Outlook에서 스팸 방지 스탬프 보기
+          href: view-anti-spam-stamps-in-outlook-exchange-2013-help.md
+    - name: 맬웨어 방지 보호
+      href: anti-malware-protection-exchange-2013-help.md
+      items:
+      - name: 맬웨어 방지 FAQ
+        href: anti-malware-faq-exchange-2013-help.md
+      - name: 엔진 및 정의 업데이트 다운로드
+        href: download-engine-and-definition-updates-exchange-2013-help.md
+      - name: 맬웨어 방지 정책 구성
+        href: configure-anti-malware-policies-exchange-2013-help.md
+      - name: 다시 검사 메시지를 이미 호스팅되는 필터링 서비스에서 검색 되는 맬웨어
+        href: rescan-messages-already-malware-scanned-by-the-hosted-filtering-service-exchange-2013-help.md
+      - name: 사용 안함 또는 건너뛰기 맬웨어 방지 검사
+        href: disable-or-bypass-anti-malware-scanning-exchange-2013-help.md
+    - name: Exchange 서버 운영 체제의 바이러스 백신 소프트웨어
+      href: anti-virus-software-in-the-operating-system-on-exchange-servers-exchange-2013-help.md
+  - name: 메일 흐름
+    href: mail-flow-exchange-2013-help.md
+    items:
+    - name: 메일 라우팅
+      href: mail-routing-exchange-2013-help.md
+      items:
+      - name: 메일 라우팅에 대 한 Active Directory 사이트를 사용 하 여 계획
+        href: planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help.md
+      - name: Active Directory의 Exchange 메일 라우팅 설정 구성
+        href: configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md
+      - name: Active Directory 사이트간 메일 라우팅
+        href: route-mail-between-active-directory-sites-exchange-2013-help.md
+      - name: 받는 사람 확인
+        href: recipient-resolution-exchange-2013-help.md
+      - name: DNS 쿼리 실패 우편물 종류
+        href: dns-query-failure-sensitivity-exchange-2013-help.md
+      - name: Telnet을 사용 하 여 SMTP 통신 테스트
+        href: use-telnet-to-test-smtp-communication-exchange-2013-help.md
+      - name: 외부 전자 메일 관리자 주소를 구성 합니다.
+        href: configure-the-external-postmaster-address-exchange-2013-help.md
+    - name: 커넥터
+      href: connectors-exchange-2013-help.md
+      items:
+      - name: 송신 커넥터
+        href: send-connectors-exchange-2013-help.md
+        items:
+        - name: 인터넷에 보낸 전자 메일에 대 한 송신 커넥터 만들기
+          href: create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md
+        - name: 스마트 호스트를 통해 아웃 바운드 전자 메일 라우팅에 대 한 송신 커넥터 만들기
+          href: create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md
+        - name: 전자 메일을 보낼와 전송 계층 보안 (TLS) 적용 된 파트너에 송신 커넥터 만들기
+          href: create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md
+        - name: '[Wave15] 크로스 포리스트 송신 커넥터를 구성 합니다.'
+          href: configure-a-cross-forest-send-connector-exchange-2013-help.md
+      - name: 수신 커넥터
+        href: receive-connectors-exchange-2013-help.md
+        items:
+        - name: 수신 커넥터 사용 권한
+          href: receive-connector-permissions-exchange-2013-help.md
+        - name: 수신 커넥터 인증 메커니즘
+          href: receive-connector-authentication-mechanisms-exchange-2013-help.md
+        - name: 수신 커넥터 절차
+          href: receive-connector-procedures-exchange-2013-help.md
+          items:
+          - name: 인터넷에서 전자 메일을 수신 하도록 수신 커넥터 만들기
+            href: create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md
+          - name: 전자 메일을 받도록 파트너에서 보안 수신 커넥터 만들기
+            href: create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help.md
+          - name: 전자 메일을 받도록 하지 Exchange를 실행 하는 시스템에서 수신 커넥터 만들기
+            href: create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help.md
+          - name: 내부 Exchange 서버에서 메시지를 받는 수신 커넥터 만들기
+            href: create-a-receive-connector-to-receive-messages-from-an-internal-exchange-server-exchange-2013-help.md
+          - name: 수신 커넥터의 SMTP 배너 수정
+            href: modify-the-smtp-banner-on-a-receive-connector-exchange-2013-help.md
+      - name: 외부 커넥터
+        href: foreign-connectors-exchange-2013-help.md
+        items:
+        - name: 비 SMTP 팩스 게이트웨이에 메시지 배달에 대 한 외부 커넥터 만들기
+          href: create-a-foreign-connector-to-deliver-messages-to-a-non-smtp-fax-gateway-exchange-2013-help.md
+      - name: 배달 에이전트 및 배달 에이전트 커넥터
+        href: delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md
+      - name: 헤더 방화벽
+        href: header-firewall-exchange-2013-help.md
+    - name: 도메인
+      href: domains-exchange-2013-help.md
+      items:
+      - name: 허용 도메인
+        href: accepted-domains-exchange-2013-help.md
+        items:
+        - name: 신뢰할 수 있는 페이지로 Exchange 조직 내에서 허용된 도메인 구성
+          href: configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help.md
+        - name: 독립 사업부에 대 한 허용된 도메인 구성
+          href: configure-an-accepted-domain-for-an-independent-business-unit-exchange-2013-help.md
+        - name: Exchange 조직 외부에 사서함이 있는 사업부에 대 한 허용된 도메인 구성
+          href: configure-an-accepted-domain-for-a-business-unit-with-mailboxes-outside-your-exchange-organization-exchange-2013-help.md
+        - name: 신뢰할 수 있는 여러 도메인에 대 한 메일을 수락 하도록 Exchange 구성
+          href: configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help.md
+      - name: 원격 도메인
+        href: remote-domains-exchange-2013-help.md
+        items:
+        - name: 원격 도메인 관리
+          href: manage-remote-domains-exchange-2013-help.md
+        - name: 부재중 회신 원격 도메인 구성
+          href: configure-remote-domain-out-of-office-replies-exchange-2013-help.md
+        - name: 자동 회신을 원격 도메인 구성
+          href: configure-remote-domain-automatic-replies-exchange-2013-help.md
+        - name: 원격 도메인 메시지 보고 구성
+          href: configure-remote-domain-message-reporting-exchange-2013-help.md
+        - name: 원격 도메인에 대해 지원되는 문자 집합
+          href: supported-character-sets-for-remote-domains-exchange-2013-help.md
+    - name: 전송 에이전트
+      href: transport-agents-exchange-2013-help.md
+      items:
+      - name: 레거시 전송 에이전트에 대 한 지원을 사용 하도록 설정
+        href: enable-support-for-legacy-transport-agents-exchange-2013-help.md
+      - name: 전송 에이전트를 관리 합니다.
+        href: manage-transport-agents-exchange-2013-help.md
+      - name: 전송 파이프라인에 보기 전송 에이전트
+        href: view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md
+    - name: 전송 고가용성
+      href: transport-high-availability-exchange-2013-help.md
+      items:
+      - name: 섀도 중복성
+        href: shadow-redundancy-exchange-2013-help.md
+      - name: 보안 네트워크
+        href: safety-net-exchange-2013-help.md
+    - name: 전송 로그
+      href: transport-logs-exchange-2013-help.md
+      items:
+      - name: 스팸 방지 에이전트 로깅
+        href: anti-spam-agent-logging-exchange-2013-help.md
+        items:
+        - name: 스팸 방지 에이전트 로깅 구성
+          href: configure-anti-spam-agent-logging-exchange-2013-help.md
+      - name: 연결 로깅
+        href: connectivity-logging-exchange-2013-help.md
+        items:
+        - name: 연결 로깅 구성
+          href: configure-connectivity-logging-exchange-2013-help.md
+      - name: 파이프라인 추적
+        href: pipeline-tracing-exchange-2013-help.md
+        items:
+        - name: 파이프라인 추적 구성
+          href: configure-pipeline-tracing-exchange-2013-help.md
+      - name: 프로토콜 로깅
+        href: protocol-logging-exchange-2013-help.md
+        items:
+        - name: 프로토콜 로깅 구성
+          href: configure-protocol-logging-exchange-2013-help.md
+      - name: 라우팅 테이블 로깅 구성
+        href: configure-routing-table-logging-exchange-2013-help.md
+    - name: 메시지 추적
+      href: message-tracking-exchange-2013-help.md
+      items:
+      - name: 메시지 추적 구성
+        href: configure-message-tracking-exchange-2013-help.md
+      - name: 메시지 추적 로그 검색
+        href: search-message-tracking-logs-exchange-2013-help.md
+    - name: 관리자에 대 한 배달 보고서
+      href: delivery-reports-for-administrators-exchange-2013-help.md
+      items:
+      - name: 배달 보고서로 메시지 추적
+        href: track-messages-with-delivery-reports-exchange-2013-help.md
+    - name: 콘텐츠 변환
+      href: content-conversion-exchange-2013-help.md
+      items:
+      - name: 콘텐츠 전송 인코딩을 구성합니다
+        href: configure-content-transfer-encoding-exchange-2013-help.md
+      - name: 메시지 인코딩 옵션
+        href: message-encoding-options-exchange-2013-help.md
+      - name: TNEF 변환 옵션
+        href: tnef-conversion-options-exchange-2013-help.md
+      - name: 콘텐츠 변환 추적
+        href: content-conversion-tracing-exchange-2013-help.md
+    - name: Exchange 2013의 Dsn 및 Ndr
+      href: dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: DSN 메시지 관리
+        href: manage-dsn-messages-exchange-2013-help.md
+      - name: DSN 메시지 id
+        href: dsn-message-identity-exchange-2013-help.md
+      - name: DSN 메시지 텍스트
+        href: dsn-message-text-exchange-2013-help.md
+      - name: 시스템 메시지에 대 한 지원 되는 언어
+        href: supported-languages-for-system-messages-exchange-2013-help.md
+    - name: 메시지 크기 제한
+      href: message-size-limits-exchange-2013-help.md
+      items:
+      - name: 메시지 제한
+        href: message-throttling-exchange-2013-help.md
+      - name: 역 압력
+        href: back-pressure-exchange-2013-help.md
+    - name: 큐
+      href: queues-exchange-2013-help.md
+      items:
+      - name: 큐 관리
+        href: manage-queues-exchange-2013-help.md
+      - name: Exchange 관리 셸을 사용 하 여 큐를 관리
+        href: use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md
+        items:
+        - name: Get-QueueDigest 구성
+          href: configure-get-queuedigest-exchange-2013-help.md
+      - name: 큐 필터입니다.
+        href: queue-filters-exchange-2013-help.md
+      - name: 큐에서 메시지 관리
+        href: manage-messages-in-queues-exchange-2013-help.md
+      - name: 큐 뷰어
+        href: queue-viewer-exchange-2013-help.md
+        items:
+        - name: 큐 뷰어에서 서버에 연결
+          href: connect-to-a-server-in-queue-viewer-exchange-2013-help.md
+        - name: 큐 뷰어 옵션 설정
+          href: set-queue-viewer-options-exchange-2013-help.md
+        - name: 큐 뷰어에서 큐에 대기 중인된 메시지 속성 보기
+          href: view-queued-message-properties-in-queue-viewer-exchange-2013-help.md
+        - name: 큐 뷰어에서 목록 내보내기
+          href: export-lists-from-queue-viewer-exchange-2013-help.md
+      - name: 메시지 필터
+        href: message-filters-exchange-2013-help.md
+      - name: 큐에서 메시지 내보내기
+        href: export-messages-from-queues-exchange-2013-help.md
+      - name: 메시지 다시 시도, 다시 전송, 및 만료 간격
+        href: message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+        items:
+        - name: 메시지 다시 시도, 다시 전송, 및 만료 간격 구성
+          href: configure-message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+      - name: 우선순위 큐
+        href: priority-queuing-exchange-2013-help.md
+        items:
+        - name: 사용 하도록 설정 하 고 우선순위 큐 구성
+          href: enable-and-configure-priority-queuing-exchange-2013-help.md
+      - name: 큐 데이터베이스의 위치를 변경 합니다.
+        href: change-the-location-of-the-queue-database-exchange-2013-help.md
+    - name: Pickup 디렉터리 및 Replay 디렉터리
+      href: pickup-directory-and-replay-directory-exchange-2013-help.md
+      items:
+      - name: Pickup 디렉터리 및 Replay 디렉터리 구성
+        href: configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md
+    - name: TLS 기능 및 관련 용어
+      href: tls-functionality-and-related-terminology-exchange-2013-help.md
+      items:
+      - name: '시나리오: WAN 최적화 컨트롤러를 지원 하도록 Exchange 구성'
+        href: scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md
+      - name: Active Directory 사이트 간의 TLS를 사용 하지 않도록 설정
+        href: disable-tls-between-active-directory-sites-exchange-2013-help.md
+  - name: 받는 사람
+    href: recipients-exchange-2013-help.md
+    items:
+    - name: 사용자 사서함 만들기
+      href: create-user-mailboxes-exchange-2013-help.md
+    - name: 사용자 사서함 관리
+      href: manage-user-mailboxes-exchange-2013-help.md
+      items:
+      - name: 추가 또는 사서함에 대 한 전자 메일 주소를 제거 합니다.
+        href: add-or-remove-email-addresses-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 전자 메일 전달 구성
+        href: configure-email-forwarding-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 메시지 배달 제한 구성
+        href: configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 메시지 크기 제한 구성
+        href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 저장소 할당량 구성
+        href: configure-storage-quotas-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함으로 변환
+        href: convert-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 Exchange ActiveSync를 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-exchange-activesync-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 MAPI를 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md
+      - name: 사서함에 대 한 Outlook Web App를 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-outlook-web-app-for-a-mailbox-exchange-2013-help.md
+      - name: 사서함에 대 한 단일 항목 복구를 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md
+    - name: 연결 된 사서함 관리
+      href: manage-linked-mailboxes-exchange-2013-help.md
+    - name: 메일 그룹 만들기 및 관리
+      href: create-and-manage-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 메일 그룹 명명 정책을 만들려면
+        href: create-a-distribution-group-naming-policy-exchange-2013-help.md
+      - name: 메일 그룹 명명 정책을 무시합니다
+        href: override-the-distribution-group-naming-policy-exchange-2013-help.md
+    - name: 메일 사용이 가능한 보안 그룹 관리
+      href: manage-mail-enabled-security-groups-exchange-2013-help.md
+    - name: 동적 메일 그룹 관리
+      href: manage-dynamic-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 동적 메일 그룹의 구성원 보기
+        href: view-members-of-a-dynamic-distribution-group-exchange-online-help.md
+    - name: 메일 연락처 관리
+      href: manage-mail-contacts-exchange-2013-help.md
+      items:
+      - name: 메일 연락처에 대 한 전자 메일을 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
+    - name: 메일 사용자 관리
+      href: manage-mail-users-exchange-2013-help.md
+      items:
+      - name: 메일 사용자에 대 한 전자 메일을 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
+    - name: 대화방 사서함 만들기 및 관리
+      href: create-and-manage-room-mailboxes-exchange-2013-help.md
+    - name: 장비 사서함 관리
+      href: manage-equipment-mailboxes-exchange-2013-help.md
+    - name: 연결이 끊어진 사서함
+      href: disconnected-mailboxes-exchange-2013-help.md
+      items:
+      - name: 사용 하지 않거나 사서함 삭제
+        href: disable-or-delete-a-mailbox-exchange-2013-help.md
+      - name: 비활성화 된 사서함에 연결
+        href: connect-a-disabled-mailbox-exchange-2013-help.md
+      - name: 삭제 된 사서함을 복원 또는 연결
+        href: connect-or-restore-a-deleted-mailbox-exchange-2013-help.md
+      - name: 일시 삭제 된 사서함 복원
+        href: restore-a-soft-deleted-mailbox-exchange-2013-help.md
+      - name: 사서함 복원 요청 관리
+        href: manage-mailbox-restore-requests-exchange-2013-help.md
+      - name: 사서함을 영구적으로 삭제
+        href: permanently-delete-a-mailbox-exchange-2013-help.md
+    - name: 사용자 정의 특성
+      href: custom-attributes-exchange-2013-help.md
+    - name: 받는 사람에 대 한 사용 권한 관리
+      href: manage-permissions-for-recipients-exchange-online-help.md
+    - name: Exchange 2013 개체 이름에 대 한 지원 되지않는 문자
+      href: unsupported-characters-for-exchange-2013-object-names-exchange-2013-help.md
+    - name: 자동 사서함 배포
+      href: automatic-mailbox-distribution-exchange-2013-help.md
+  - name: 공동 작업
+    href: collaboration-exchange-2013-help.md
+    items:
+    - name: 사이트 사서함
+      href: site-mailboxes-exchange-2013-help.md
+      items:
+      - name: 사이트 사서함 프로 비전 정책 관리
+        href: manage-site-mailbox-provisioning-policies-exchange-2013-help.md
+    - name: 공용 폴더
+      href: public-folders-exchange-2013-help.md
+      items:
+      - name: 'FAQ: 공용 폴더'
+        href: faq-public-folders-exchange-2013-help.md
+      - name: 공용 폴더의 제한
+        href: limits-for-public-folders-exchange-2013-help.md
+      - name: 공용 폴더를 배포할 때의 고려 사항
+        href: considerations-when-deploying-public-folders-exchange-2013-help.md
+      - name: Mac 용 Outlook 2016와 공용 폴더 액세스 (영문)
+        href: accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md
+      - name: Office 365 그룹에 공용 폴더 마이그레이션
+        href: migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md
+      - name: 공용 폴더 절차
+        href: public-folder-procedures-exchange-2013-help.md
+        items:
+        - name: 새 조직에서 공용 폴더 설정
+          href: set-up-public-folders-in-a-new-organization-exchange-2013-help.md
+        - name: 하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성
+          href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: 하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성
+          href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: 하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성
+          href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: Exchange 2013 서버에서 사용자 사서함이 있는 레거시 공용 폴더 구성
+          href: configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md
+        - name: 마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션
+          href: use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md
+        - name: 마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션
+          href: use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md
+        - name: 마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md
+          items:
+          - name: 공용 폴더 마이그레이션 롤백 Exchange 2013에서 Exchange Online으로
+            href: roll-back-a-public-folder-migration-from-exchange-2013-to-exchange-online-exchange-2013-help.md
+        - name: 마이그레이션 일괄 처리를 사용 하 여 Office 365 그룹에 Exchange 2010 공용 폴더 마이그레이션
+          href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: 마이그레이션 일괄 처리를 사용 하 여 Office 365 그룹에 Exchange 2013 공용 폴더 마이그레이션
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: 공용 폴더 사서함 만들기
+          href: create-a-public-folder-mailbox-exchange-2013-help.md
+        - name: 공용 폴더 만들기
+          href: create-a-public-folder-exchange-2013-help.md
+        - name: 메일 사용이 가능한 또는 공용 폴더 메일-사용 안함
+          href: mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md
+        - name: 공용 폴더 계층 구조 업데이트
+          href: update-the-public-folder-hierarchy-exchange-2013-help.md
+        - name: 공용 폴더를 제거 합니다.
+          href: remove-a-public-folder-exchange-2013-help.md
+        - name: Outlook에서 웹에 즐겨찾기 공용 폴더 사용
+          href: use-favorite-public-folders-in-outlook-on-the-web-exchange-2013-help.md
+        - name: 공용 폴더 사서함을 다른 사서함 데이터베이스로 이동
+          href: move-a-public-folder-mailbox-to-a-different-mailbox-database-exchange-2013-help.md
+        - name: 다른 공용 폴더 사서함에 공용 폴더 이동
+          href: move-a-public-folder-to-a-different-public-folder-mailbox-exchange-2013-help.md
+        - name: 실패 한 이동에서 공용 폴더 및 공용 폴더 사서함 복원
+          href: restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md
+        - name: 공용 폴더 및 공용 폴더 항목에 대 한 통계 보기
+          href: view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md
+    - name: 공유 사서함
+      href: shared-mailboxes-exchange-2013-help.md
+      items:
+      - name: 공유 사서함 만들기
+        href: create-a-shared-mailbox-exchange-2013-help.md
+  - name: 전자 메일 주소 및 주소록
+    href: email-addresses-and-address-books-exchange-2013-help.md
+    items:
+    - name: 주소록 정책
+      href: address-book-policies-exchange-2013-help.md
+      items:
+      - name: '시나리오: 주소록 정책 배포'
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
+      - name: 주소 주소록 정책 절차
+        href: address-book-policy-procedures-exchange-2013-help.md
+        items:
+        - name: 주소 주소록 정책 라우팅 에이전트 설치 및 구성
+          href: install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md
+        - name: 주소록 정책 만들기
+          href: create-an-address-book-policy-exchange-2013-help.md
+        - name: 메일 사용자에 게 주소록 정책 할당
+          href: assign-an-address-book-policy-to-mail-users-exchange-2013-help.md
+        - name: 주소록 정책 설정 변경
+          href: change-the-settings-of-an-address-book-policy-exchange-2013-help.md
+        - name: 주소록 정책 제거
+          href: remove-an-address-book-policy-exchange-2013-help.md
+    - name: 세부 항목 템플릿
+      href: details-templates-exchange-2013-help.md
+      items:
+      - name: 세부 항목 템플릿 사용자 지정
+        href: customize-details-templates-exchange-2013-help.md
+      - name: 세부 정보 서식 파일을 기본 구성 복원
+        href: restore-a-details-template-to-the-default-configuration-exchange-2013-help.md
+    - name: 전자 메일 주소 정책
+      href: email-address-policies-exchange-2013-help.md
+      items:
+      - name: 전자 메일 주소 정책 절차
+        href: email-address-policy-procedures-exchange-2013-help.md
+        items:
+        - name: 전자 메일 주소 정책 만들기
+          href: create-an-email-address-policy-exchange-2013-help.md
+        - name: 받는 사람 필터를 사용 하 여 전자 메일 주소 정책 만들기
+          href: create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md
+        - name: 전자 메일 주소 정책 편집
+          href: edit-an-email-address-policy-exchange-2013-help.md
+        - name: 전자 메일 주소 정책 제거
+          href: remove-an-email-address-policy-exchange-2013-help.md
+    - name: 오프라인 주소록
+      href: offline-address-books-exchange-2013-help.md
+      items:
+      - name: 오프 라인 주소록 절차
+        href: offline-address-book-procedures-exchange-2013-help.md
+        items:
+        - name: 오프 라인 주소록 만들기
+          href: create-an-offline-address-book-exchange-2013-help.md
+        - name: 주소 목록에 추가 하거나 오프 라인 주소록에서 주소 목록을 제거합니다
+          href: add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md
+        - name: 기본 오프 라인 주소록을 변경 합니다.
+          href: change-the-default-offline-address-book-exchange-2013-help.md
+        - name: 오프 라인 주소록 다운로드에 대 한 받는 사람 프로 비전
+          href: provision-recipients-for-offline-address-book-downloads-exchange-2013-help.md
+        - name: 오프 라인 주소록을 제거 합니다.
+          href: remove-an-offline-address-book-exchange-2013-help.md
+        - name: 오프 라인 주소록 업데이트
+          href: update-an-offline-address-book-exchange-2013-help.md
+        - name: 오프 라인 주소록 가상 디렉터리 만들기
+          href: create-an-offline-address-book-virtual-directory-exchange-2013-help.md
+        - name: 오프 라인 주소록 생성 일정이 변경
+          href: change-the-offline-address-book-generation-schedule-exchange-2013-help.md
+        - name: 오프 라인 주소록 배포 속성 구성
+          href: configure-offline-address-book-distribution-properties-exchange-2013-help.md
+    - name: 주소 목록
+      href: address-lists-exchange-2013-help.md
+      items:
+      - name: 주소 목록 절차
+        href: address-list-procedures-exchange-2013-help.md
+        items:
+        - name: 주소 목록 만들기
+          href: create-an-address-list-exchange-2013-help.md
+        - name: 주소 목록 업데이트
+          href: update-an-address-list-exchange-2013-help.md
+        - name: 받는 사람 필터를 사용 하 여 주소 목록 만들기
+          href: create-an-address-list-by-using-recipient-filters-exchange-2013-help.md
+        - name: 주소 목록 이동
+          href: move-an-address-list-exchange-2013-help.md
+        - name: 주소 목록을 제거합니다
+          href: remove-an-address-list-exchange-2013-help.md
+        - name: 전체 주소 목록 만들기
+          href: create-a-global-address-list-exchange-2013-help.md
+        - name: 전체 주소 목록 속성 구성
+          href: configure-global-address-list-properties-exchange-2013-help.md
+        - name: 전체 주소 목록을 제거 합니다.
+          href: remove-a-global-address-list-exchange-2013-help.md
+        - name: 전체 주소 목록 업데이트
+          href: update-a-global-address-list-exchange-2013-help.md
+    - name: 계층 구조 주소록
+      href: hierarchical-address-books-exchange-2013-help.md
+      items:
+      - name: 계층 구조 주소록을 사용 하지 않도록 설정 하거나 사용
+        href: enable-or-disable-hierarchical-address-books-exchange-2013-help.md
+  - name: 공유
+    href: sharing-exchange-2013-help.md
+    items:
+    - name: 페더레이션
+      href: federation-exchange-2013-help.md
+      items:
+      - name: 페더레이션 트러스트에 대한 신뢰할 수 있는 루트 인증 기관
+        href: trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md
+      - name: 페더레이션 프로시저
+        href: federation-procedures-exchange-2013-help.md
+        items:
+        - name: 페더레이션 공유 구성
+          href: configure-federated-sharing-exchange-2013-help.md
+        - name: 페더레이션 트러스트를 구성 합니다.
+          href: configure-a-federation-trust-exchange-2013-help.md
+        - name: 페더레이션 트러스트 관리
+          href: manage-a-federation-trust-exchange-2013-help.md
+        - name: 페더레이션 트러스트 제거
+          href: remove-a-federation-trust-exchange-2013-help.md
+        - name: 페더레이션 인증서를 갱신
+          href: renew-the-federation-certificate-exchange-2013-help.md
+        - name: Exchange 조직에 대 한 페더레이션 공유를 사용 하거나 사용 하지 않도록 설정
+          href: disable-or-re-enable-federated-sharing-for-your-exchange-organization-exchange-2013-help.md
+        - name: Exchange 조직 간의 페더레이션 공유 구성
+          href: configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md
+        - name: Exchange 및 Exchange Online 조직 간의 OAuth 인증 구성
+          href: configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md
+    - name: 조직 관계
+      href: organization-relationships-exchange-2013-help.md
+      items:
+      - name: 조직 관계 만들기
+        href: create-an-organization-relationship-exchange-2013-help.md
+      - name: 조직 관계 수정
+        href: modify-an-organization-relationship-exchange-2013-help.md
+      - name: 조직 관계 제거
+        href: remove-an-organization-relationship-exchange-2013-help.md
+    - name: 공유 정책
+      href: sharing-policies-exchange-2013-help.md
+      items:
+      - name: 공유 정책 만들기
+        href: create-a-sharing-policy-exchange-2013-help.md
+      - name: 사서함에 공유 정책 적용
+        href: apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md
+      - name: 수정, 비활성화 또는 공유 정책 제거
+        href: modify-disable-or-remove-a-sharing-policy-exchange-2013-help.md
+      - name: 인터넷 일정 게시를 사용 하도록 설정
+        href: enable-internet-calendar-publishing-exchange-2013-help.md
+      - name: 인터넷 일정 게시를 사용 하지 않도록 설정
+        href: disable-internet-calendar-publishing-exchange-2013-help.md
+  - name: 클라이언트 및 모바일
+    href: clients-and-mobile-exchange-2013-help.md
+    items:
+    - name: Outlook Anywhere
+      href: outlook-anywhere-exchange-2013-help.md
+      items:
+      - name: 외부에서 Outlook 사용 연결 테스트
+        href: test-outlook-anywhere-connectivity-exchange-2013-help.md
+    - name: MAPI over HTTP
+      href: mapi-over-http-exchange-2013-help.md
+    - name: Exchange ActiveSync
+      href: exchange-activesync-exchange-2013-help.md
+      items:
+      - name: Direct Push
+        href: direct-push-exchange-2013-help.md
+      - name: 모바일 장치 사서함 정책
+        href: mobile-device-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: 추가 또는 모바일 사서함 정책에서 사용자 제거
+          href: add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md
+        - name: 모바일 장치 사서함 정책 만들기 또는 수정
+          href: create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help.md
+        - name: Windows 전화 및 장치에 대 한 모바일 장치 사서함 정책 지원
+          href: supported-mobile-device-mailbox-policies-for-windows-phones-and-devices-exchange-2013-help.md
+      - name: 모바일 장치
+        href: mobile-devices-exchange-2013-help.md
+        items:
+        - name: 원격 장치 지우기
+          href: remote-device-wipe-exchange-2013-help.md
+        - name: 사용자에 대 한 모바일 장치 정보 보기
+          href: view-mobile-device-information-for-users-exchange-2013-help.md
+        - name: 휴대폰 및 태블릿 기능
+          href: mobile-phone-and-tablet-features-exchange-2013-help.md
+        - name: 휴대폰 원격 초기화
+          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+        - name: 전자 메일에 액세스 하려면 휴대폰을 구성 합니다.
+          href: configure-mobile-phones-to-access-email-exchange-2013-help.md
+    - name: POP3 및 IMAP4
+      href: pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md
+      items:
+      - name: 시작 및 POP3 서비스를 중지 합니다.
+        href: start-and-stop-the-pop3-services-exchange-2013-help.md
+      - name: 시작 및 IMAP4 서비스를 중지 합니다.
+        href: start-and-stop-the-imap4-services-exchange-2013-help.md
+      - name: P o p 3를 사용 하도록 설정
+        href: enable-pop3-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2016에서 IMAP4를 사용 하도록 설정
+        href: enable-imap4-in-exchange-2013-exchange-2013-help.md
+      - name: 사용 하도록 설정 하거나 사용자에 대 한 POP3 액세스를 사용 하지 않도록 설정
+        href: enable-or-disable-pop3-access-for-a-user-exchange-2013-help.md
+      - name: 사용 하도록 설정 하거나 사용자에 대 한 IMAP4 액세스를 사용 하지 않도록 설정
+        href: enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md
+      - name: P o p 3에 대 한 연결 제한 설정
+        href: set-connection-limits-for-pop3-exchange-2013-help.md
+      - name: IMAP4에 대 한 연결 제한 설정
+        href: set-connection-limits-for-imap4-exchange-2013-help.md
+      - name: P o p 3에 대 한 연결 시간 제한 설정
+        href: set-connection-time-out-limits-for-pop3-exchange-2013-help.md
+      - name: IMAP4에 대 한 연결 시간 제한 설정
+        href: set-connection-time-out-limits-for-imap4-exchange-2013-help.md
+      - name: P o p 3에 대 한 일정 옵션 구성
+        href: configure-calendar-options-for-pop3-exchange-2013-help.md
+      - name: IMAP4에 대 한 일정 옵션 구성
+        href: configure-calendar-options-for-imap4-exchange-2013-help.md
+      - name: POP3 및 IMAP4 메시지 검색 형식 옵션 구성
+        href: configure-pop3-and-imap4-message-retrieval-format-options-exchange-2013-help.md
+      - name: IP 주소와 POP3 및 IMAP4 액세스를 위한 포트 구성
+        href: configure-ip-addresses-and-ports-for-pop3-and-imap4-access-exchange-2013-help.md
+      - name: Outlook Web App의 최종 사용자가 POP3, IMAP4 및 SMTP 서버 설정을 볼 수 있음
+        href: allow-pop3-imap4-and-smtp-server-settings-to-be-viewed-by-end-users-in-outlook-web-app-exchange-2013-help.md
+      - name: POP3 및 IMAP4 프로토콜 로깅
+        href: protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+        items:
+        - name: POP3 및 IMAP4 프로토콜 로깅 구성
+          href: configure-protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+    - name: Outlook for iOS and Android
+      href: outlook-for-ios-and-android-exchange-2013-help.md
+      items:
+      - name: IOS에 대 한 Outlook 및 Android 하이브리드 현대 인증을 사용 하 여
+        href: using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+      - name: Outlook for iOS and Android
+        href: using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+        items:
+        - name: IOS에 대 한 Outlook 및 기본 인증을 사용 하 여 Android에서 계정 설정
+          href: account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md
+        - name: Passwords and Security in Outlook for iOS and Android for Exchange Server
+          href: passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+        - name: IOS에 대 한 Outlook 및 Exchange 서버에 대 한 Android 장치 관리
+          href: managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+    - name: 클라이언트 프로토콜 관리
+      href: client-protocol-management-exchange-2013-help.md
+      items:
+      - name: 가상 디렉터리 관리
+        href: virtual-directory-management-exchange-2013-help.md
+        items:
+        - name: Exchange ActiveSync 가상 디렉터리 관리 작업
+          href: exchange-activesync-virtual-directory-management-tasks-exchange-2013-help.md
+        - name: Exchange 가상 디렉터리에 대 한 기본 설정
+          href: default-settings-for-exchange-virtual-directories-exchange-2013-help.md
+    - name: Outlook Web App
+      href: outlook-web-app-exchange-2013-help.md
+      items:
+      - name: Outlook Web App 사서함 정책
+        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: Outlook Web App 사서함 정책 절차
+          href: outlook-web-app-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: Outlook Web App 사서함 정책 만들기
+            href: create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md
+          - name: 사서함에는 Outlook Web App 사서함 정책 적용 또는 제거
+            href: apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md
+          - name: Exchange에서 Outlook Web App 사서함 정책 제거
+            href: remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md
+          - name: Outlook Web App 사서함 정책 속성 보기 또는 구성
+            href: view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md
+      - name: Outlook Web App Lync Server와 통합
+        href: integrate-outlook-web-app-with-lync-server-exchange-2013-help.md
+      - name: Outlook Web App 가상 디렉터리 보기 또는 구성
+        href: view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md
+      - name: Outlook Web App URL 단순화
+        href: simplify-the-outlook-web-app-url-exchange-2013-help.md
+      - name: Outlook Web App에 대 한 테마 만들기
+        href: create-a-theme-for-outlook-web-app-exchange-2013-help.md
+      - name: Outlook Web App 로그인, 언어 선택 및 오류 페이지를 사용자 지정
+        href: customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md
+      - name: 장치용 OWA에 대 한 푸시 알림 프록시 구성
+        href: configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md
+      - name: Outlook Web App 및 EAC에서 AD FS 클레임 기반 인증 사용
+        href: using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md
+      - name: Outlook Web App 웹 파트를 사용 하 여
+        href: using-outlook-web-app-web-parts-exchange-2013-help.md
+    - name: MailTips
+      href: mailtips-exchange-2013-help.md
+      items:
+      - name: 사용 또는 사용 안함 메일 설명
+        href: enable-or-disable-mailtips-exchange-2013-help.md
+      - name: 조직에 대 한 큰 대상 그룹 크기를 구성 합니다.
+        href: configure-the-large-audience-size-for-your-organization-exchange-2013-help.md
+      - name: 받는 사람에 대해 사용자 지정 메일 설명 구성
+        href: configure-custom-mailtips-for-recipients-exchange-2013-help.md
+      - name: 조직 관계를 통해 메일 설명
+        href: mailtips-over-organization-relationships-exchange-2013-help.md
+        items:
+        - name: 조직 관계에 대 한 메일 설명 관리
+          href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
+      - name: 그룹 메트릭 및 메일 설명
+        href: group-metrics-and-mailtips-exchange-2013-help.md
+        items:
+        - name: 그룹 메트릭 구성
+          href: configure-group-metrics-exchange-2013-help.md
+    - name: Outlook용 앱
+      href: add-ins-for-outlook-exchange-2013-help.md
+      items:
+      - name: 설치 또는 제거 하는 조직에 대 한 Outlook 용
+        href: install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md
+      - name: Outlook 용 앱에 대 한 사용자 액세스 관리
+        href: manage-user-access-to-add-ins-for-outlook-exchange-online-help.md
+      - name: 관리자 및 설치 하 고 Outlook 용 추가 기능을 관리할 수 있는 사용자 지정
+        href: specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md
+    - name: SSL 오프 로딩 Exchange 2013 구성
+      href: configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
+  - name: 통합 메시징
+    href: unified-messaging-exchange-2013-help.md
+    items:
+    - name: 새 음성 메일 기능
+      href: new-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: 아키텍처 변경 사항
+        href: voice-architecture-changes-exchange-2013-help.md
+      - name: 통합 메시징의 IPv6 지원
+        href: ipv6-support-in-unified-messaging-exchange-2013-help.md
+      - name: 음성 메일 미리 보기 향상 기능
+        href: voice-mail-preview-enhancements-exchange-2013-help.md
+      - name: 통합된 메시징 cmdlet 업데이트
+        href: unified-messaging-cmdlet-updates-exchange-2013-help.md
+    - name: 통합 메시징에 대 한 계획
+      href: planning-for-unified-messaging-exchange-2013-help.md
+    - name: 음성 메일 및 UM 배포
+      href: deploying-voice-mail-and-um-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 UM 배포
+        href: deploy-exchange-2013-um-exchange-2013-help.md
+      - name: '검사 목록: Exchange 2013 UM 배포'
+        href: checklist-deploy-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2010 UM을 Exchange 2013 UM으로 업그레이드
+        href: upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: '검사 목록: Exchange 2010 UM을 Exchange 2013 UM으로 업그레이드'
+        href: checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2007 UM을 Exchange 2013 UM으로 업그레이드
+        href: upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: '검사 목록: Exchange 2007 UM을 Exchange 2013 UM으로 업그레이드'
+        href: checklist-upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2013 UM 및 Lync Server 배포 개요
+        href: deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md
+        items:
+        - name: Lync Server와 함께 작동 하는 UM 구성
+          href: configure-um-to-work-with-lync-server-exchange-2013-help.md
+        - name: '검사 목록: Lync Server와 Exchange 2013 UM 통합'
+          href: checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md
+        - name: Office Communications Server 2007 R2 및 Lync Server와 동시 사용
+          href: coexistence-with-office-communications-server-2007-r2-and-lync-server-exchange-2013-help.md
+      - name: UM에 대 한 인증서를 배포합니다.
+        href: deploying-certificates-for-um-exchange-2013-help.md
+        items:
+        - name: UM 절차에 대 한 인증서를 배포합니다.
+          href: deploying-certificates-for-um-procedures-exchange-2013-help.md
+          items:
+          - name: UM에 대 한 인증서를 만듭니다.
+            href: create-certificates-for-um-exchange-2013-help.md
+          - name: 가져오기 또는 UM에 대 한 인증서를 내보내려면
+            href: import-or-export-certificates-for-um-exchange-2013-help.md
+          - name: UM 및 UM 통화 라우터 서비스에 인증서 할당
+            href: assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md
+    - name: UM 언어, 프롬프트 및 인사말
+      href: um-languages-prompts-and-greetings-exchange-2013-help.md
+      items:
+      - name: 음성 메일 인사말, 알림, 메뉴 및 음성 안내
+        href: voice-mail-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+      - name: UM 언어, 프롬프트 및 인사말 절차
+        href: um-languages-prompts-and-greetings-procedures-exchange-2013-help.md
+        items:
+        - name: UM 언어 팩 설치
+          href: install-a-um-language-pack-exchange-2013-help.md
+        - name: 다이얼 플랜에 기본 언어 설정
+          href: set-the-default-language-on-a-dial-plan-exchange-2013-help.md
+        - name: 자동 전화 교환에 대 한 언어를 선택 합니다.
+          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+        - name: UM 언어팩 제거
+          href: remove-a-um-language-pack-exchange-2013-help.md
+        - name: 가져오기 및 사용자 지정 인사말, 알림, 메뉴 및 음성 안내 내보내기
+          href: import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+        - name: Exchange 2013을 Exchange 2007에서 사용자 지정 음성 안내 가져오기
+          href: import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+        - name: 전화 사용자 인터페이스를 사용 하 여 사용자 지정 프롬프트 기록 사용
+          href: enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md
+    - name: Um 전화 시스템 통합
+      href: telephone-system-integration-with-um-exchange-2013-help.md
+      items:
+      - name: 전화 통신 개념 및 구성 요소
+        href: telephony-concepts-and-components-exchange-2013-help.md
+      - name: PBX 및 IP PBX 구성
+        href: pbx-and-ip-pbx-configurations-exchange-2013-help.md
+      - name: UM 전화 시스템에 연결
+        href: connect-um-to-your-telephone-system-exchange-2013-help.md
+        items:
+        - name: Exchange 2013에 대 한 전화 통신 관리자
+          href: telephony-advisor-for-exchange-2013-exchange-2013-help.md
+        - name: 지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항
+          href: configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md
+        - name: Um VoIP 게이트웨이, IP PBX 또는 세션 테두리 컨트롤러에 연결
+          href: connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md
+        - name: 지원 되는 VoIP 게이트웨이를 UM에 연결
+          href: connect-um-to-a-supported-voip-gateway-exchange-2013-help.md
+        - name: PBX와 통신 하도록 VoIP 게이트웨이 연결 합니다.
+          href: connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md
+        - name: 지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항
+          href: configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md
+    - name: 음성 메일 시스템 전화 네트워크에 연결
+      href: connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md
+      items:
+      - name: UM 다이얼 플랜
+        href: um-dial-plans-exchange-2013-help.md
+        items:
+        - name: 오디오 코덱
+          href: audio-codecs-exchange-2013-help.md
+        - name: 보조 다이얼 플랜
+          href: secondary-dial-plans-exchange-2013-help.md
+        - name: UM 다이얼 플랜 절차
+          href: um-dial-plan-procedures-exchange-2013-help.md
+          items:
+          - name: UM 다이얼 플랜 만들기
+            href: create-a-um-dial-plan-exchange-2013-help.md
+          - name: UM 다이얼 플랜 관리
+            href: manage-a-um-dial-plan-exchange-2013-help.md
+          - name: SIP URI 다이얼 플랜에 사서함 및 클라이언트 액세스 서버를 추가 합니다.
+            href: add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: SIP URI 다이얼 플랜에서 사서함 및 클라이언트 액세스 서버를 제거 합니다.
+            href: remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: 오디오 코덱 변경
+            href: change-the-audio-codec-exchange-2013-help.md
+          - name: 최대 통화 기간 구성
+            href: configure-the-maximum-call-duration-exchange-2013-help.md
+          - name: 최대 녹음/녹화 기간 구성
+            href: configure-the-maximum-recording-duration-exchange-2013-help.md
+          - name: 녹음/녹화 유휴 시간 제한 값을 구성
+            href: configure-the-recording-idle-time-out-value-exchange-2013-help.md
+          - name: VoIP 보안 설정 구성
+            href: configure-the-voip-security-setting-exchange-2013-help.md
+          - name: 유사한 이름을 가진 사용자에 대 한 다이얼 플랜을 구성 합니다.
+            href: configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md
+          - name: UM 다이얼 플랜을 삭제
+            href: delete-a-um-dial-plan-exchange-2013-help.md
+      - name: UM IP 게이트웨이
+        href: um-ip-gateways-exchange-2013-help.md
+        items:
+        - name: UM IP 게이트웨이 절차
+          href: um-ip-gateway-procedures-exchange-2013-help.md
+          items:
+          - name: UM IP 게이트웨이 만들기
+            href: create-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP 게이트웨이 관리
+            href: manage-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP 게이트웨이 사용 하도록 설정
+            href: enable-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP 게이트웨이 사용 하지 않도록 설정
+            href: disable-a-um-ip-gateway-exchange-2013-help.md
+          - name: 정규화 된 도메인 이름 구성
+            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+          - name: IP 주소를 구성 합니다.
+            href: configure-the-ip-address-exchange-2013-help.md
+          - name: 수신 대기 포트를 구성 합니다.
+            href: configure-the-listening-port-exchange-2013-help.md
+          - name: UM IP 게이트웨이 삭제 합니다.
+            href: delete-a-um-ip-gateway-exchange-2013-help.md
+      - name: UM 헌트 그룹
+        href: um-hunt-groups-exchange-2013-help.md
+        items:
+        - name: UM 헌트 그룹 절차
+          href: um-hunt-group-procedures-exchange-2013-help.md
+          items:
+          - name: UM 헌트 그룹 만들기
+            href: create-a-um-hunt-group-exchange-2013-help.md
+          - name: UM 헌트 그룹 보기
+            href: view-a-um-hunt-group-exchange-2013-help.md
+          - name: UM 헌트 그룹 삭제
+            href: delete-a-um-hunt-group-exchange-2013-help.md
+      - name: UM 서비스
+        href: um-services-exchange-2013-help.md
+        items:
+        - name: UM 프로토콜, 포트 및 서비스
+          href: um-protocols-ports-and-services-exchange-2013-help.md
+        - name: UM 서비스 절차
+          href: um-services-procedures-exchange-2013-help.md
+          items:
+          - name: 사서함 서버에서 UM 설정 관리
+            href: manage-um-settings-on-a-mailbox-server-exchange-2013-help.md
+          - name: 클라이언트 액세스 서버에서 UM 설정 관리
+            href: manage-um-settings-on-a-client-access-server-exchange-2013-help.md
+          - name: 허용 또는 사서함 서버에서 전화 응답을 금지.
+            href: allow-or-prevent-call-answering-on-a-mailbox-server-exchange-2013-help.md
+          - name: 허용 하거나 금지 하는 클라이언트 액세스 서버에서 전화 응답
+            href: allow-or-prevent-call-answering-on-a-client-access-server-exchange-2013-help.md
+          - name: 사서함 서버에서 시작 모드를 구성 합니다.
+            href: configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md
+          - name: 클라이언트 액세스 서버에서 시작 모드를 구성 합니다.
+            href: configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md
+          - name: 사서함 서버에서 들어오는 호출의 수를 구성 합니다.
+            href: configure-the-number-of-incoming-calls-on-a-mailbox-server-exchange-2013-help.md
+          - name: Microsoft Exchange 통합 메시징 서비스를 시작 합니다.
+            href: start-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: Microsoft Exchange 통합 메시징 서비스를 중지 합니다.
+            href: stop-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: Microsoft Exchange 통합 메시징 호출 라우터 서비스를 시작 합니다.
+            href: start-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: Microsoft Exchange 통합 메시징 호출 라우터 서비스를 중지 합니다.
+            href: stop-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: 클라이언트 액세스 서버에서 TCP 수신 대기 포트를 설정 합니다.
+            href: set-the-tcp-listening-port-on-a-client-access-server-exchange-2013-help.md
+          - name: 클라이언트 액세스 서버에서 TLS 수신 대기 포트를 설정 합니다.
+            href: set-the-tls-listening-port-on-a-client-access-server-exchange-2013-help.md
+    - name: 자동으로 응답 한 들어오는 호출을 라우팅
+      href: automatically-answer-and-route-incoming-calls-exchange-2013-help.md
+      items:
+      - name: DTMF 인터페이스
+        href: dtmf-interface-exchange-2013-help.md
+      - name: UM 자동 전화 교환 절차
+        href: um-auto-attendant-procedures-exchange-2013-help.md
+        items:
+        - name: UM 자동 전화 교환을 설정합니다
+          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          items:
+          - name: UM 자동 전화 교환 만들기
+            href: create-a-um-auto-attendant-exchange-2013-help.md
+          - name: 자동 전화 교환 내선 번호를 추가 합니다.
+            href: add-an-auto-attendant-extension-number-exchange-2013-help.md
+          - name: 업무 시간을 구성 합니다.
+            href: configure-business-hours-exchange-2013-help.md
+          - name: 휴일 일정을 만들려면
+            href: create-a-holiday-schedule-exchange-2013-help.md
+          - name: 회사 이름 입력
+            href: enter-a-business-name-exchange-2013-help.md
+          - name: 비즈니스 위치를 설정 합니다.
+            href: set-a-business-location-exchange-2013-help.md
+          - name: 표준 시간대를 구성 합니다.
+            href: configure-the-time-zone-exchange-2013-help.md
+          - name: 사용자 지정 된 업무 시간 인사말을 사용 하도록 설정
+            href: enable-a-customized-business-hours-greeting-exchange-2013-help.md
+          - name: 사용자 지정 된 업무 시간 메뉴 음성 안내를 사용 하도록 설정
+            href: enable-a-customized-business-hours-menu-prompt-exchange-2013-help.md
+          - name: 한 사용자 지정 된 업무 시간 외 인사말을 사용 하도록 설정
+            href: enable-a-customized-non-business-hours-greeting-exchange-2013-help.md
+          - name: 사용자 지정 된 업무 시간 외 메뉴 음성 안내를 사용 하도록 설정
+            href: enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help.md
+          - name: 정보 알림을 사용 하도록 설정
+            href: enable-an-informational-announcement-exchange-2013-help.md
+          - name: 메뉴 탐색 만들기
+            href: create-menu-navigation-exchange-2013-help.md
+          - name: 업무 시간 탐색 메뉴 만들기
+            href: create-business-hours-navigation-menus-exchange-2013-help.md
+          - name: 업무 시간 탐색 메뉴 만들기
+            href: create-non-business-hours-navigation-menus-exchange-2013-help.md
+        - name: UM 자동 전화 교환 관리
+          href: manage-a-um-auto-attendant-exchange-2013-help.md
+        - name: DTMF 대체 자동 전화 교환 구성
+          href: configure-a-dtmf-fallback-auto-attendant-exchange-2013-help.md
+        - name: UM 자동 전화 교환을 사용 하도록 설정
+          href: enable-a-um-auto-attendant-exchange-2013-help.md
+        - name: UM 자동 전화 교환을 사용 하지 않도록 설정
+          href: disable-a-um-auto-attendant-exchange-2013-help.md
+        - name: UM 자동 전화 교환 삭제
+          href: delete-a-um-auto-attendant-exchange-2013-help.md
+        - name: 사용 하도록 설정 하거나 자동 음성 인식 기능을 사용 하지 않도록 설정
+          href: enable-or-disable-automatic-speech-recognition-exchange-2013-help.md
+        - name: 활성화 하거나 금지 자동 전화 교환에서 통화를 전송 합니다.
+          href: enable-or-prevent-transferring-calls-from-an-auto-attendant-exchange-2013-help.md
+        - name: 사용 하도록 설정 하거나 사용자에 게 보내는 음성 메시지를 사용 하지 않도록 설정
+          href: enable-or-disable-sending-voice-messages-to-users-exchange-2013-help.md
+        - name: 사용 하도록 설정 하거나 디렉터리 조회를 사용 하지 않도록 설정
+          href: enable-or-disable-directory-lookups-exchange-2013-help.md
+        - name: 연락할 수 있는 사용자 그룹을 구성 합니다.
+          href: configure-the-group-of-users-that-can-be-contacted-exchange-2013-help.md
+        - name: 유사한 이름을 가진 사용자에 대 한 자동 전화 교환을 구성합니다
+          href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
+    - name: 사용자에 대 한 음성 메일 설정
+      href: set-up-voice-mail-for-users-exchange-2013-help.md
+      items:
+      - name: UM 사서함 정책
+        href: um-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: UM 사서함 정책 절차
+          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: UM 사서함 정책 만들기
+            href: create-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM 사서함 정책 관리
+            href: manage-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM 사서함 정책 삭제
+            href: delete-a-um-mailbox-policy-exchange-2013-help.md
+      - name: 사용자에 대 한 음성 메일
+        href: voice-mail-for-users-exchange-2013-help.md
+        items:
+        - name: 음성 메일 사용이 가능한 사용자 절차
+          href: voice-mail-enabled-user-procedures-exchange-2013-help.md
+          items:
+          - name: 음성 메일에 대 한 사용자를 사용 하도록 설정
+            href: enable-a-user-for-voice-mail-exchange-2013-help.md
+          - name: 음성 메일에 대해 사용자를 사용할 때 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
+            href: include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md
+          - name: 사용자에 대 한 음성 메일 설정 관리
+            href: manage-voice-mail-settings-for-a-user-exchange-2013-help.md
+          - name: UM 사서함 정책 할당
+            href: assign-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM 다이얼 플랜을 변경 합니다.
+            href: change-the-um-dial-plan-exchange-2013-help.md
+          - name: 사용자가 UM 사용이 가능 하지 건 전화를 사용 하도록 설정
+            href: enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: 사용자가 UM 사용이 가능 하지 건 전화를 사용 하지 않도록 설정
+            href: disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: 호출자가 음성 메시지를 남길 발신자 ID가 없는 허용
+            href: allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md
+          - name: 음성 메시지를 받을 때 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
+            href: include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md
+          - name: 발신자 ID가 없는 발신자에 게 음성 메시지를 남기지에서 방지
+            href: prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md
+          - name: 사용자에 대 한 음성 메일을 사용 하지 않도록 설정
+            href: disable-voice-mail-for-a-user-exchange-2013-help.md
+          - name: SIP 주소를 변경 합니다.
+            href: change-a-sip-address-exchange-2013-help.md
+          - name: 내선 번호를 변경 합니다.
+            href: change-an-extension-number-exchange-2013-help.md
+          - name: SIP 주소를 추가 합니다.
+            href: add-a-sip-address-exchange-2013-help.md
+          - name: SIP 주소를 제거 합니다.
+            href: remove-a-sip-address-exchange-2013-help.md
+          - name: 내선 번호를 추가 합니다.
+            href: add-an-extension-number-exchange-2013-help.md
+          - name: 내선 번호를 제거 합니다.
+            href: remove-an-extension-number-exchange-2013-help.md
+          - name: E.164 번호 변경
+            href: change-an-e-164-number-exchange-2013-help.md
+          - name: E.164 번호를 추가 합니다.
+            href: add-an-e-164-number-exchange-2013-help.md
+          - name: E.164 번호를 제거 합니다.
+            href: remove-an-e-164-number-exchange-2013-help.md
+    - name: 클라이언트 음성 메일 기능 설정
+      href: set-up-client-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: Outlook Voice Access 설정
+        href: setting-up-outlook-voice-access-exchange-2013-help.md
+        items:
+        - name: Outlook Voice Access 명령
+          href: outlook-voice-access-commands-exchange-2013-help.md
+        - name: Outlook Voice Access를 사용 하 여 메뉴를 탐색
+          href: navigating-menus-with-outlook-voice-access-exchange-2013-help.md
+        - name: 전화에서 재생
+          href: play-on-phone-exchange-2013-help.md
+        - name: Outlook Voice Access 절차
+          href: outlook-voice-access-procedures-exchange-2013-help.md
+          items:
+          - name: 사용 하도록 설정 하거나 사용자에 대 한 Outlook Voice Access를 사용 하지 않도록 설정
+            href: enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md
+          - name: Outlook Voice Access 번호를 구성 합니다.
+            href: configure-an-outlook-voice-access-number-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 일부 기능을 사용 하지 않도록 설정
+            href: disable-selected-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.
+            href: set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.
+            href: set-mailbox-features-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 자동 음성 인식 기능을 사용 하지 않도록 설정 하거나 사용
+            href: enable-or-disable-automatic-speech-recognition-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 정보 알림을 사용 하도록 설정
+            href: enable-an-informational-announcement-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 사용자 지정된 인사말을 사용 하도록 설정
+            href: enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 전화에서 재생을 사용 하지 않도록 설정 하거나 사용
+            href: enable-or-disable-play-on-phone-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: 활성화 또는 비활성화 하는 Outlook Voice Access에서 음성 메시지 보내기
+            href: enable-or-disable-sending-voice-messages-from-outlook-voice-access-exchange-2013-help.md
+          - name: 활성화 하거나 금지 하는 Outlook Voice Access에서 통화를 전송 합니다.
+            href: enable-or-prevent-transferring-calls-from-outlook-voice-access-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자가 문의할 수 있는 사용자 그룹을 구성 합니다.
+            href: configure-the-group-of-users-that-outlook-voice-access-users-can-contact-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자가 검색할 수에 대 한 기본 방식으로 구성
+            href: configure-the-primary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자가 검색할 수에 대 한 보조 방법 구성
+            href: configure-the-secondary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자의 연결이 끊어집니다 전에 로그인 실패 횟수를 구성 합니다.
+            href: configure-the-number-of-sign-in-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자의 연결이 끊어집니다 전에 입력된 실패 횟수를 구성 합니다.
+            href: configure-the-number-of-input-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: Outlook Voice Access 사용자에 대 한 개인 인사말에서 제한을 구성합니다
+            href: configure-the-limit-on-personal-greetings-for-outlook-voice-access-users-exchange-2013-help.md
+      - name: 음성 통화를 착신 전환 하려면 메일 사용자를 허용
+        href: allow-voice-mail-users-to-forward-calls-exchange-2013-help.md
+        items:
+        - name: 프로시저를 호출 하는 착신 전환
+          href: forwarding-calls-procedures-exchange-2013-help.md
+          items:
+          - name: 허용 또는 전화 응답 규칙 만들기 (영문)에서 사용자를 차단
+            href: allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 허용 하거나 사용자가 동일한 UM 사서함 정책에서 전화 응답 규칙 만들기 (영문) 하지 못하도록
+            href: allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 전화 응답 규칙 만들기
+            href: create-a-call-answering-rule-exchange-2013-help.md
+          - name: 보기 및 전화 응답 규칙 관리
+            href: view-and-manage-a-call-answering-rule-exchange-2013-help.md
+          - name: 사용 하도록 설정 하거나 사용자에 대 한 전화 응답 규칙을 사용 하지 않도록 설정
+            href: enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help.md
+          - name: 사용자에 대 한 전화 응답 규칙을 제거 합니다.
+            href: remove-a-call-answering-rule-for-a-user-exchange-2013-help.md
+      - name: 사용자가 전화를 걸 수 있도록
+        href: allow-users-to-make-calls-exchange-2013-help.md
+        items:
+        - name: 전화 걸기 코드, 번호 접두사 및 번호 형식
+          href: dial-codes-number-prefixes-and-number-formats-exchange-2013-help.md
+        - name: 사용자가 통화 절차를 수행 하도록 허용
+          href: allowing-users-to-make-calls-procedures-exchange-2013-help.md
+          items:
+          - name: UM IP 게이트웨이에서 거는 전화를 사용 하도록 설정
+            href: enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정
+            href: disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: 전화걸기 코드를 구성 합니다.
+            href: configure-dial-codes-exchange-2013-help.md
+          - name: 사용자에 대 한 전화걸기 규칙 만들기
+            href: create-dialing-rules-for-users-exchange-2013-help.md
+          - name: 전화걸기 규칙을 사용 하 여 전화 대 한 권한 부여
+            href: authorize-calls-using-dialing-rules-exchange-2013-help.md
+            items:
+            - name: 자동 전화 교환 발신자에 대 한 통화 권한 부여
+              href: authorize-calls-for-auto-attendant-callers-exchange-2013-help.md
+            - name: 사용자에 대 한 호출 다이얼 플랜에 대 한 권한 부여
+              href: authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md
+            - name: 사용자 그룹에 대 한 통화 권한 부여
+              href: authorize-calls-for-a-group-of-users-exchange-2013-help.md
+      - name: 사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용
+        href: allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md
+        items:
+        - name: 음성 메일 미리 보기 advisor
+          href: voice-mail-preview-advisor-exchange-2013-help.md
+        - name: 음성 메일 미리 보기 절차
+          href: voice-mail-preview-procedures-exchange-2013-help.md
+          items:
+          - name: 사용자에 대 한 음성 메일 미리 보기 파트너 서비스를 구성 합니다.
+            href: configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md
+            items:
+            - name: 음성 메일 미리 보기 파트너 주소 설정
+              href: set-the-voice-mail-preview-partner-address-exchange-2013-help.md
+            - name: 음성 메일 미리 보기 파트너 ID를 설정 합니다.
+              href: set-the-voice-mail-preview-partner-id-exchange-2013-help.md
+            - name: 음성 메일 미리 보기 파트너에 대 한 최대 메시지 기간을 설정 합니다.
+              href: set-the-maximum-message-duration-for-a-voice-mail-preview-partner-exchange-2013-help.md
+            - name: 음성 메일 미리 보기 파트너에 대 한 최대 배달 지연 시간을 설정 합니다.
+              href: set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner-exchange-2013-help.md
+          - name: 사용자에 대 한 음성 메일 미리 보기를 사용 하도록 설정
+            href: enable-voice-mail-preview-for-users-exchange-2013-help.md
+          - name: 사용자에 대 한 음성 메일 미리 보기를 사용 하지 않도록 설정
+            href: disable-voice-mail-preview-for-users-exchange-2013-help.md
+      - name: 음성 메일 사용자가 팩스를 받을 수 있도록
+        href: enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md
+        items:
+        - name: Exchange UM에 대 한 팩스 advisor
+          href: fax-advisor-for-exchange-um-exchange-2013-help.md
+        - name: 수신 팩스 설정
+          href: setting-up-incoming-faxing-exchange-2013-help.md
+          items:
+          - name: 절차를 팩스
+            href: faxing-procedures-exchange-2013-help.md
+            items:
+            - name: 팩스 서버 팩스를 허용 하는 URI 파트너를 설정 합니다.
+              href: set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md
+            - name: 팩스 메시지를 받을 때 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
+              href: include-text-with-the-email-message-sent-when-a-fax-message-is-received-exchange-2013-help.md
+            - name: 사용자가 팩스를 받을 동일한 다이얼 플랜의 수 있게 합니다.
+              href: allow-users-in-the-same-dial-plan-to-receive-faxes-exchange-2013-help.md
+            - name: 팩스를 받을에서 동일한 다이얼 플랜에 사용자를 방지
+              href: prevent-users-in-the-same-dial-plan-from-receiving-faxes-exchange-2013-help.md
+            - name: 사용자 그룹에 대 한 팩스를 사용 하도록 설정
+              href: enable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: 사용자 그룹에 대 한 팩스를 사용 하지 않도록 설정
+              href: disable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: 팩스를 받을 수 있도록 설정
+              href: enable-a-user-to-receive-faxes-exchange-2013-help.md
+            - name: 사용자 팩스를 받지 않도록 방지
+              href: prevent-a-user-from-receiving-faxes-exchange-2013-help.md
+      - name: 음성 메일 보호
+        href: protect-voice-mail-exchange-2013-help.md
+        items:
+        - name: 보호 된 음성 메일 절차
+          href: protected-voice-mail-procedures-exchange-2013-help.md
+          items:
+          - name: 인증 된 호출자 로부터 보호 된 음성 메일 구성
+            href: configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md
+          - name: 인증 되지 않은 발신자 로부터 보호 된 음성 메일 구성
+            href: configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md
+          - name: 보호 된 음성 메시지의 멀티미디어 재생을 사용 하지 않도록 설정 하거나 사용
+            href: enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md
+          - name: Windows 권한 관리를 지원 하지 않는 전자 메일 클라이언트에 대해 표시할 텍스트를 지정 합니다.
+            href: specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md
+      - name: 메시지 대기 표시기를 허용 합니다.
+        href: allow-message-waiting-indicator-exchange-2013-help.md
+        items:
+        - name: 메시지 대기 표시기 절차를 허용 합니다.
+          href: allow-message-waiting-indicator-procedures-exchange-2013-help.md
+          items:
+          - name: UM IP 게이트웨이에 메시지 대기 표시기 (MWI)을 허용 합니다.
+            href: allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP 게이트웨이에서 메시지 대기 표시기 (MWI) 방지
+            href: prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: 사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하도록 설정
+            href: enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: 사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하지 않도록 설정
+            href: disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: 사용자에 대 한 부재중된 전화 알림을 사용 하도록 설정
+            href: enable-missed-call-notifications-for-a-user-exchange-2013-help.md
+          - name: 사용자에 대 한 부재중된 전화 알림을 사용 하지 않도록 설정
+            href: disable-missed-call-notifications-for-a-user-exchange-2013-help.md
+    - name: Outlook Voice Access PIN 보안 설정
+      href: set-outlook-voice-access-pin-security-exchange-2013-help.md
+      items:
+      - name: PIN 보안 절차
+        href: pin-security-procedures-exchange-2013-help.md
+        items:
+        - name: Outlook Voice Access PIN 정책 설정
+          href: set-outlook-voice-access-pin-policies-exchange-2013-help.md
+        - name: 음성 메일 PIN 다시 설정
+          href: reset-a-voice-mail-pin-exchange-2013-help.md
+        - name: 음성 메일 PIN 정보를 검색 합니다.
+          href: retrieve-voice-mail-pin-information-exchange-2013-help.md
+        - name: 때 PIN을 다시 설정 하는 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
+          href: include-text-with-the-email-message-sent-when-a-pin-is-reset-exchange-2013-help.md
+        - name: 음성 메일에 대 한 최소 PIN 길이 설정
+          href: set-the-minimum-pin-length-for-voice-mail-exchange-2013-help.md
+        - name: 음성 메일에 대 한 PIN 수명 설정
+          href: set-the-pin-lifetime-for-voice-mail-exchange-2013-help.md
+        - name: 이전 음성 메일 재생 되도록 핀의 수를 설정 합니다.
+          href: set-the-number-of-previous-voice-mail-pins-to-recycle-exchange-2013-help.md
+        - name: 음성 메일에 대 한 공통 PIN 패턴을 사용 하지 않도록 설정
+          href: disable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: 음성 메일에 대 한 공통 PIN 패턴을 사용 하도록 설정
+          href: enable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: 음성 메일 PIN 다시 설정 하기 전에 로그인 실패 횟수 설정
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-pin-is-reset-exchange-2013-help.md
+        - name: 음성 메일 사용자를 잠그기 전에 로그인 실패 횟수 설정
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-user-is-locked-out-exchange-2013-help.md
+        - name: 음성 메일에 대 한 PIN이 필요 없는 로그인을 사용 하도록 설정
+          href: enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help.md
+    - name: 음성 메일 호출에 대 한 보고서 실행된
+      href: run-reports-for-voice-mail-calls-exchange-2013-help.md
+      items:
+      - name: UM 보고서 절차
+        href: um-reports-procedures-exchange-2013-help.md
+        items:
+        - name: 조직에서 음성 메일 호출을 검토 합니다.
+          href: review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md
+        - name: 사용자에 대 한 음성 메일 호출을 검토 합니다.
+          href: review-the-voice-mail-calls-for-a-user-exchange-2013-help.md
+        - name: 조직에서 음성 통화의 오디오 품질을 확인 합니다.
+          href: investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md
+        - name: 사용자에 대 한 음성 통화의 오디오 품질을 확인 합니다.
+          href: investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md
+        - name: 음성 메일 호출 레코드를 해석 합니다.
+          href: interpret-voice-mail-call-records-exchange-2013-help.md
+    - name: 음성 사서함 테스트 및 문제해결
+      href: test-and-troubleshoot-voice-mail-exchange-2013-help.md
+      items:
+      - name: 테스트 및 UM 문제해결 도구와 문제해결
+        href: testing-and-troubleshooting-with-the-um-troubleshooting-tool-exchange-2013-help.md
+        items:
+        - name: Exchange UM 문제해결 도구에 대 한 설명
+          href: learn-about-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: Windows 7 또는 Windows 8에서 Exchange UM 문제 해결 도구 실행
+          href: run-the-exchange-um-troubleshooting-tool-on-windows-7-or-windows-8-exchange-2013-help.md
+        - name: Exchange UM 문제해결 도구를 사용 하 여 자격 증명 설정
+          href: set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: Exchange UM 문제 해결 도구 설치
+          href: install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+      - name: 테스트 및 Test-umconnectivity cmdlet과 함께 문제해결
+        href: testing-and-troubleshooting-with-the-test-umconnectivity-cmdlet-exchange-2013-help.md
+        items:
+        - name: UM 작업 테스트
+          href: test-um-operation-exchange-2013-help.md
+        - name: VoIP 게이트웨이 및 Pbx에 대 한 UM 연결 테스트
+          href: test-um-connectivity-to-voip-gateways-and-pbxs-exchange-2013-help.md
+    - name: UM 및 음성 메일 용어
+      href: um-and-voice-mail-terminology-exchange-2013-help.md
+  - name: 사서함 및 클라이언트 액세스 서버
+    href: mailbox-and-client-access-servers-exchange-2013-help.md
+    items:
+    - name: 사서함 서버
+      href: mailbox-server-exchange-2013-help.md
+      items:
+      - name: 관리되는 저장소
+        href: managed-store-exchange-2013-help.md
+        items:
+        - name: 저장소 제한 관리
+          href: managed-store-limits-exchange-2013-help.md
+      - name: Exchange 2013의 사서함 데이터베이스를 관리 합니다.
+        href: manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 사서함 데이터베이스에 대한 순환 로깅 구성
+          href: configure-circular-logging-for-a-mailbox-database-exchange-2013-help.md
+        - name: Exchange 2013 페이지 비우기 이해
+          href: understanding-exchange-2013-page-zeroing-exchange-2013-help.md
+      - name: Exchange 검색
+        href: exchange-search-exchange-2013-help.md
+        items:
+        - name: Exchange 검색에서 인덱싱하는 파일 형식
+          href: file-formats-indexed-by-exchange-search-exchange-2013-help.md
+        - name: Exchange 검색에서 인덱싱하는 메시지 속성
+          href: message-properties-indexed-by-exchange-search-exchange-2013-help.md
+        - name: Exchange 검색 절차
+          href: exchange-search-procedures-exchange-2013-help.md
+          items:
+          - name: Exchange 검색 사용 또는 사용 안 함
+            href: disable-or-enable-exchange-search-exchange-2013-help.md
+          - name: Exchange 검색 문제 진단
+            href: diagnose-exchange-search-issues-exchange-2013-help.md
+          - name: 검색 카탈로그 다시 시드
+            href: reseed-the-search-catalog-exchange-2013-help.md
+      - name: Exchange 2013 사서함 이동
+        href: mailbox-moves-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 온-프레미스 이동 관리
+          href: manage-on-premises-moves-exchange-2013-help.md
+        - name: Exchange 2010 시스템 사서함을 Exchange 2013으로 이동
+          href: move-the-exchange-2010-system-mailbox-to-exchange-2013-exchange-2013-help.md
+        - name: 크로스 포리스트 이동 요청에 대 한 사서함을 준비
+          href: prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md
+          items:
+          - name: 셸에서 준비 MoveRequest.ps1 스크립트를 사용 하 여 크로스 포리스트 이동에 대 한 준비 사서함
+            href: prepare-mailboxes-for-cross-forest-moves-using-the-prepare-moverequest-ps1-script-in-the-shell-exchange-2013-help.md
+          - name: 예제 코드를 사용 하 여 크로스 포리스트 이동에 대 한 사서함을 준비
+            href: prepare-mailboxes-for-cross-forest-moves-using-sample-code-exchange-2013-help.md
+        - name: 원격 이동에 대 한 MRS 프록시 끝점을 사용 하도록 설정
+          href: enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md
+        - name: 사서함 마이그레이션에 대 한 CSV 파일
+          href: csv-files-for-mailbox-migration-exchange-2013-help.md
+      - name: 사서함 가져오기 및 내보내기 요청
+        href: mailbox-import-and-export-requests-exchange-2013-help.md
+      - name: Recreating arbitration mailboxes
+        href: recreating-arbitration-mailboxes-exchange-2013-help.md
+      - name: 복구 가능한 항목 폴더
+        href: recoverable-items-folder-exchange-2013-help.md
+        items:
+        - name: 복구 가능한 항목 폴더를 정리
+          href: clean-up-the-recoverable-items-folder-exchange-2013-help.md
+        - name: 삭제 된 항목 보존 및 복구 가능한 항목 할당량 구성
+          href: configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md
+        - name: 사용자의 사서함에서 삭제 된 메시지를 복구 합니다.
+          href: recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md
+        - name: 복구 가능한 항목 폴더 통계 가져오기
+          href: get-recoverable-items-folder-statistics-exchange-2013-help.md
+    - name: 클라이언트 액세스 서버
+      href: client-access-server-exchange-2013-help.md
+      items:
+      - name: Exchange 원격 연결 분석기
+        href: exchange-remote-connectivity-analyzer-exchange-2013-help.md
+        items:
+        - name: 모바일 장치 (자동 검사)에서 전자 메일 보내기/받기 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-sending-receiving-email-on-a-mobile-device-automatic-checks-exchange-2013-help.md
+        - name: Office Outlook (자동 검사)에서 전자 메일 보내기/받기 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-sending-receiving-email-in-office-outlook-automatic-checks-exchange-2013-help.md
+        - name: 'Azure: 자동 검사-DNS 레코드와 내 문제를 식별 하는데 도움이'
+          href: azure-help-identify-my-issue-with-automatic-checks-dns-records-exchange-2013-help.md
+        - name: 자동 검사-3 파티 도구 내 관련 문제를 식별 하는 데 도움이
+          href: help-identify-my-issues-with-automatic-checks-3rd-party-tools-exchange-2013-help.md
+        - name: 자동 검사-Active Directory 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-active-directory-exchange-2013-help.md
+        - name: 도움말 Idenfity 내에 문제가 자동 검사-도메인 추가 (영문)
+          href: help-idenfity-my-issue-with-automatic-checks-adding-domains-exchange-2013-help.md
+        - name: 자동 검사-SSO 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-sso-exchange-2013-help.md
+        - name: 자동 검사-할당량 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-quota-exchange-2013-help.md
+        - name: 자동 검사-Office 배포와 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-deploying-office-exchange-2013-help.md
+        - name: 자동 검사-마이그레이션 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-migration-exchange-2013-help.md
+        - name: 자동 검사-디렉터리 동기화와 내 문제를 식별 하는 데 도움이
+          href: help-identify-my-issue-with-automatic-checks-directory-synchronization-exchange-2013-help.md
+      - name: Exchange 2013 클라이언트 액세스 서버 구성
+        href: exchange-2013-client-access-server-configuration-exchange-2013-help.md
+      - name: Autodiscover 서비스
+        href: autodiscover-service-for-exchange-2013.md
+      - name: 부하 분산
+        href: load-balancing-exchange-2013-help.md
+      - name: 부하 분산 된 클라이언트 액세스 서버에 대 한 Kerberos 인증 구성
+        href: configuring-kerberos-authentication-for-load-balanced-client-access-servers-exchange-2013-help.md
+      - name: 셸에서 RollAlternateserviceAccountCredential.ps1 스크립트를 사용 하 여
+        href: using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md
+        items:
+        - name: RollAlternateServiceAccountCredential.ps1 스크립트 문제해결
+          href: troubleshooting-the-rollalternateserviceaccountcredential-ps1-script-exchange-2013-help.md
+      - name: 디지털 인증서 및 SSL
+        href: digital-certificates-and-ssl-exchange-2013-help.md
+        items:
+        - name: 디지털 인증서 요청 만들기
+          href: create-a-digital-certificate-request-exchange-2013-help.md
+        - name: Exchange 2013 인증서 관리 UI
+          href: exchange-2013-certificate-management-ui-exchange-2013-help.md
+      - name: 클라이언트별 메시지 크기 제한 구성
+        href: configure-client-specific-message-size-limits-exchange-2013-help.md
+      - name: Exchange 2013의 가용성 서비스
+        href: availability-service-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 크로스 포리스트 토폴로지에 대 한 가용성 서비스를 구성 합니다.
+          href: configure-the-availability-service-for-cross-forest-topologies-exchange-2013-help.md
+  - name: Edge 전송 서버
+    href: edge-transport-servers-exchange-2013-help.md
+    items:
+    - name: Edge 구독
+      href: edge-subscriptions-exchange-2013-help.md
+      items:
+      - name: EdgeSync 복제 데이터
+        href: edgesync-replication-data-exchange-2013-help.md
+      - name: Edge 구독 자격 증명
+        href: edge-subscription-credentials-exchange-2013-help.md
+      - name: Edge 구독 관리
+        href: manage-edge-subscriptions-exchange-2013-help.md
+      - name: AD LDS 구성 수정
+        href: modify-ad-lds-configuration-exchange-2013-help.md
+      - name: Edge 전송 서버 메일 흐름 수동 구성
+        href: manually-configure-edge-transport-server-mail-flow-exchange-2013-help.md
+      - name: 구독된 Edge 전송 서버를 통한 인터넷 메일 흐름 구성
+        href: configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md
+      - name: EdgeSync를 사용 하지 않고 Edge 전송 서버를 통해 인터넷 메일 흐름 구성
+        href: configure-internet-mail-flow-through-an-edge-transport-server-without-using-edgesync-exchange-2013-help.md
+      - name: Edge 전송 서버 계획
+        href: edge-transport-server-planning-exchange-2013-help.md
+    - name: Edge 전송 서버 복제 된 구성
+      href: edge-transport-server-cloned-configuration-exchange-2013-help.md
+      items:
+      - name: 복제 된 구성을 사용 하 여 Edge 전송 서버 구성
+        href: configure-edge-transport-server-using-cloned-configuration-exchange-2013-help.md
+    - name: Exchange 2010 또는 2007 Edge 전송 서버에서 Exchange 2013 사용
+      href: use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md
+    - name: 주소 Edge 전송 서버에서 다시 쓰기
+      href: address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      items:
+      - name: Edge 전송 서버의 주소 다시 쓰기 관리
+        href: manage-address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      - name: 가져오기 주소 다시 쓰기 항목 Edge 전송 서버에서
+        href: import-address-rewrite-entries-on-edge-transport-servers-exchange-2013-help.md
+  - name: 고가용성 및 사이트 복구
+    href: high-availability-and-site-resilience-exchange-2013-help.md
+    items:
+    - name: 이전 버전에 비해 달라진 고가용성 및 사이트 복구 기능
+      href: changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help.md
+    - name: DAG(데이터베이스 가용성 그룹)
+      href: database-availability-groups-dags-exchange-2013-help.md
+      items:
+      - name: Active Manager
+        href: active-manager-exchange-2013-help.md
+      - name: 데이터 센터 활성화 조정 모드
+        href: datacenter-activation-coordination-mode-exchange-2013-help.md
+      - name: 사서함 데이터베이스 복사본
+        href: mailbox-database-copies-exchange-2013-help.md
+      - name: AutoReseed
+        href: autoreseed-exchange-2013-help.md
+    - name: 고가용성 및 사이트 복원 계획
+      href: planning-for-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 고가용성 및 사이트 복구 배포
+      href: deploying-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 고가용성 및 사이트 복구를 관리합니다.
+      href: managing-high-availability-and-site-resilience-exchange-2013-help.md
+      items:
+      - name: 데이터베이스 가용성 그룹 관리
+        href: managing-database-availability-groups-exchange-2013-help.md
+        items:
+        - name: 데이터베이스 가용성 그룹 만들기
+          href: create-a-database-availability-group-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹에 대한 클러스터 이름 개체 미리 준비
+          href: pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹 속성 구성
+          href: configure-database-availability-group-properties-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹 구성원 관리
+          href: manage-database-availability-group-membership-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹 네트워크를 만들기
+          href: create-a-database-availability-group-network-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹 네트워크 속성 구성
+          href: configure-database-availability-group-network-properties-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹에 대 한 자동 다시 시드를 구성 합니다.
+          href: configure-autoreseed-for-a-database-availability-group-exchange-2013-help.md
+        - name: 데이터베이스 가용성 그룹을 제거 합니다.
+          href: remove-a-database-availability-group-exchange-2013-help.md
+        - name: DAG 미러링 모니터 서버와 Microsoft Azure VM을 사용 하 여
+          href: using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md
+      - name: 사서함 데이터베이스 복사본 관리
+        href: managing-mailbox-database-copies-exchange-2013-help.md
+        items:
+        - name: 사서함 데이터베이스 복사본을 추가 합니다.
+          href: add-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본 속성 구성
+          href: configure-mailbox-database-copy-properties-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본에 대한 사서함 데이터베이스 이동
+          href: move-the-mailbox-database-path-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본에 대 한 정품 인증 정책 구성
+          href: configure-activation-policy-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본 업데이트
+          href: update-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본을 다시 시작 또는 일시 중단
+          href: suspend-or-resume-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본 활성화
+          href: activate-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 지연 된 사서함 데이터베이스 복사본 활성화
+          href: activate-a-lagged-mailbox-database-copy-exchange-2013-help.md
+        - name: 사서함 데이터베이스 복사본을 제거 합니다.
+          href: remove-a-mailbox-database-copy-exchange-2013-help.md
+      - name: 데이터베이스 사용 가능 그룹 모니터링
+        href: monitoring-database-availability-groups-exchange-2013-help.md
+      - name: 전환 및 장애 조치
+        href: switchovers-and-failovers-exchange-2013-help.md
+        items:
+        - name: 데이터 센터 전환
+          href: datacenter-switchovers-exchange-2013-help.md
+        - name: 서버 전환 수행
+          href: perform-a-server-switchover-exchange-2013-help.md
+    - name: 백업, 복원 및 재해 복구
+      href: backup-restore-and-disaster-recovery-exchange-2013-help.md
+      items:
+      - name: Windows Server 백업을 사용하여 Exchange 데이터 백업 및 복원
+        href: using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md
+        items:
+        - name: Windows Server 백업을 사용하여 Exchange 백업
+          href: use-windows-server-backup-to-back-up-exchange-exchange-2013-help.md
+        - name: Windows Server 백업을 사용하여 Exchange 백업 복원
+          href: use-windows-server-backup-to-restore-a-backup-of-exchange-exchange-2013-help.md
+      - name: Exchange Server 복구
+        href: recover-an-exchange-server-exchange-2013-help.md
+      - name: 데이터베이스 가용성 그룹의 구성원 서버를 복구 합니다.
+        href: recover-a-database-availability-group-member-server-exchange-2013-help.md
+      - name: 복구 데이터베이스
+        href: recovery-databases-exchange-2013-help.md
+        items:
+        - name: 복구 데이터베이스 만들기
+          href: create-a-recovery-database-exchange-2013-help.md
+        - name: 복구 데이터베이스를 사용하여 데이터 복원
+          href: restore-data-using-a-recovery-database-exchange-2013-help.md
+      - name: 데이터베이스 이식성
+        href: database-portability-exchange-2013-help.md
+        items:
+        - name: 데이터베이스 이식성을 사용하여 사서함 데이터베이스 이동
+          href: move-a-mailbox-database-using-database-portability-exchange-2013-help.md
+      - name: 발신음 이식성
+        href: dial-tone-portability-exchange-2013-help.md
+        items:
+        - name: 발신음 복구 수행
+          href: perform-a-dial-tone-recovery-exchange-2013-help.md
+    - name: 관리되는 가용성
+      href: managed-availability-exchange-2013-help.md
+      items:
+      - name: 상태 집합 및 서버 상태 관리
+        href: manage-health-sets-and-server-health-exchange-2013-help.md
+      - name: 관리 되는 가용성 재정의 구성
+        href: configure-managed-availability-overrides-exchange-2013-help.md
+  - name: Exchange 2013의 Exchange 관리 센터
+    href: exchange-admin-center-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: 'FAQ: Exchange 관리 센터'
+      href: faq-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 관리 센터에 대 한 액세스를 해제
+      href: turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 관리 센터에 대 한 내부 및 외부 Url 찾기
+      href: find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 관리 센터의 바로 가기 키
+      href: keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+  - name: 서버 상태 및 성능
+    href: server-health-and-performance-exchange-2013-help.md
+    items:
+    - name: Exchange Server 2013 성능 권장 사항
+      href: exchange-server-2013-performance-recommendations-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 크기 조정 및 구성 권장 사항
+        href: exchange-2013-sizing-and-configuration-recommendations-exchange-2013-help.md
+      - name: Exchange 2013 성능 카운터
+        href: exchange-2013-performance-counters-exchange-2013-help.md
+      - name: IIS 로그 및 로그 파서 Studio 보고서
+        href: iis-logs-and-log-parser-studio-reports-exchange-2013-help.md
+    - name: Exchange 작업 관리
+      href: exchange-workload-management-exchange-2013-help.md
+      items:
+      - name: 사용자 제한 특정 사용자에 대 한 설정을 변경 합니다.
+        href: change-user-throttling-settings-for-specific-users-exchange-2013-help.md
+      - name: 사용자 조직에서 모든 사용자에 대 한 설정을 제한 변경
+        href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
+  - name: Exchange 설명서에 대 한
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 장애가 있는 사용자를 위한 내게 필요한 옵션
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: 타사 저작권 표시
+      href: third-party-copyright-notices-exchange-2013-help.md

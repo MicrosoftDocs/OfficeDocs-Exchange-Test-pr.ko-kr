@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**적용 대상:**Exchange Server 2016_
+_<strong>적용 대상:</strong>Exchange Server 2016_
 
-_**마지막으로 수정된 항목:**2016-12-09_
+_<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
-**요약:** 온-프레미스 Exchange Server 2016 사용자가 하이브리드 구성에서 비즈니스용 OneDrive 및 SharePoint Online을 통해 문서 공동 작업을 수행하도록 하는 방법입니다.
+**요약:**  온-프레미스 Exchange Server 2016 사용자가 하이브리드 구성에서 비즈니스용 OneDrive 및 SharePoint Online을 통해 문서 공동 작업을 수행하도록 하는 방법입니다.
 
 최근에 Office 365에서 새로운 첨부 파일 옵션을 사용할 수 있게 되었습니다. Exchange 2016에서 *문서 공동 작업*이라는 이 옵션을 사용하여 온-프레미스 사용자는 비즈니스용 OneDrive에 저장된 첨부 파일을 웹용 Outlook에 직접 통합할 수 있습니다.
 
