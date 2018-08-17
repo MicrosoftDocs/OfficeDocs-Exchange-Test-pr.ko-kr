@@ -51,7 +51,7 @@ Microsoft Exchange Server 2013 사서함의 정보에 액세스하는 데 사용
 <td><p>사용자가 POP3 또는 IMAP4를 사용하는 전자 메일 프로그램을 통해 Exchange 2013 전자 메일에 액세스하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/ko-kr/library/jj150495(v=exchg.150)">Office Web Apps 서버 통합</a></p></td>
+<td><p>Office Web Apps 서버 통합</p></td>
 <td><p>Outlook Web App에 풍부한 첨부 파일 미리 보기 기능을 제공하도록 지원하는 Microsoft Office Web Apps 서버의 통합에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
