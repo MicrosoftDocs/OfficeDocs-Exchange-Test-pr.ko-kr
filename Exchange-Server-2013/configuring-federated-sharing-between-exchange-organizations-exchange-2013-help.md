@@ -87,7 +87,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-12-09_
         
           - <strong>설치 및 구성</strong>   온-프레미스 조직과 Office 365 테넌트 서비스 조직 간에 Active Directory 동기화를 구성합니다.
             
-            자세한 내용을 보려면, 설치 및 업그레이드 Microsoft Online Services 디렉터리 동기화 도구[](https://go.microsoft.com/fwlink/p/?linkid=247303)
+            자세한 내용을 보려면, 설치 및 업그레이드 Microsoft Online Services 디렉터리 동기화 도구[https://go.microsoft.com/fwlink/p/?linkid=247303](https://go.microsoft.com/fwlink/p/?linkid=247303)
     
     4.  <strong>가용성 주소 공간 만들기</strong>
         
@@ -130,7 +130,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-12-09_
         
           - <strong>설치 및 구성</strong>   온-프레미스 조직과 Office 365 테넌트 서비스 조직 간에 Active Directory 동기화를 구성합니다.
             
-            자세한 내용을 보려면, 설치 및 업그레이드 Microsoft Online Services 디렉터리 동기화 도구[](https://go.microsoft.com/fwlink/p/?linkid=247303)
+            자세한 내용을 보려면, 설치 및 업그레이드 Microsoft Online Services 디렉터리 동기화 도구[https://go.microsoft.com/fwlink/p/?LinkId=247303](https://go.microsoft.com/fwlink/p/?linkid=247303)
     
     4.  <strong>Exchange 2003 조직에서 약속 있음/없음 공유를 위한 공용 폴더 구성.</strong>
         

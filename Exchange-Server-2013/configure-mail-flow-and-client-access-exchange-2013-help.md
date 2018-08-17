@@ -462,14 +462,14 @@ SSL 인증서 구성 방법을 포함하여 Exchange Server 2013 메일 흐름 �
 
 4.  변경할 가상 디렉터리를 선택하고 **편집**![편집 아이콘](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "편집 아이콘")을 클릭합니다.
 
-5.  **내부 URL**에서 **https://**와 첫 번째 슬래시(**/** ) 사이의 호스트 이름을 사용할 새 FQDN으로 바꿉니다. 예를 들어 EWS 가상 디렉터리 FQDN을 Ex2013CAS.corp.contoso.com에서 internal.contoso.com으로 변경하려는 경우 내부 URL을 https://Ex2013CAS.corp.contoso.com/ews/exchange.asmx에서 https://internal.contoso.com/ews/exchange.asmx로 변경합니다.
+5.  **내부 URL**에서 <strong>https://</strong>와 첫 번째 슬래시(<strong>/</strong> ) 사이의 호스트 이름을 사용할 새 FQDN으로 바꿉니다. 예를 들어 EWS 가상 디렉터리 FQDN을 Ex2013CAS.corp.contoso.com에서 internal.contoso.com으로 변경하려는 경우 내부 URL을 https://Ex2013CAS.corp.contoso.com/ews/exchange.asmx에서 https://internal.contoso.com/ews/exchange.asmx로 변경합니다.
 
 6.  **저장**을 클릭합니다.
 
 7.  변경할 각 가상 디렉터리에 대해 5-6단계를 반복합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > ECP 및 OWA 가상 디렉터리 내부 URL은 동일해야 합니다.<BR>자동 검색 가상 디렉터리에는 내부 URL을 설정할 수 없습니다.
 
 
