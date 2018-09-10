@@ -25,7 +25,7 @@ _**마지막으로 수정된 항목:** 2013-02-22_
 
   - How do I interpret UM call statistics?
 
-UM 보고와 관련된 추가 작업에 대한 자세한 내용은 [UM 보고서 절차](um-reports-procedures-exchange-2013-help.md)를 참조하십시오.
+UM 보고와 관련된 추가 작업에 대한 자세한 내용은 [UM 보고서 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures)를 참조하십시오.
 
 ## UM에 대한 호출 통계를 가져오려면 어떻게 해야 합니까?
 
@@ -45,7 +45,7 @@ UM 보고와 관련된 추가 작업에 대한 자세한 내용은 [UM 보고서
     
       - **UM IP 게이트웨이**   보고서에 포함되는 데이터를 특정 UM IP 게이트웨이의 호출로만 제한하려면 해당 게이트웨이를 선택합니다. 먼저 UM 다이얼 플랜을 선택하면 선택한 UM 다이얼 플랜과 연결된 UM IP 게이트웨이만 목록에서 사용할 수 있습니다.
 
-3.  보고서의 행에 대 한 오디오 품질에 대 한 자세한 내용은 하려면 행을 선택 하 고 **오디오 품질 세부 정보** 를 클릭 합니다. 오디오 품질을 해석 하는 방법에 대 한 자세한 내용은 [조직에서 음성 통화의 오디오 품질을 확인 합니다.](investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md)을 참조 하십시오.
+3.  보고서의 행에 대 한 오디오 품질에 대 한 자세한 내용은 하려면 행을 선택 하 고 **오디오 품질 세부 정보** 를 클릭 합니다. 오디오 품질을 해석 하는 방법에 대 한 자세한 내용은 [조직에서 음성 통화의 오디오 품질을 확인 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization)을 참조 하십시오.
 
 4.  보고서를 클립보드에 복사하려면 **복사**를 클릭합니다.
 
@@ -55,7 +55,7 @@ UM 보고와 관련된 추가 작업에 대한 자세한 내용은 [UM 보고서
     
     2.  **파일 다운로드** 확인 상자에서 **열기** 또는 **저장**을 클릭합니다.
     
-    내보낸된 파일 um\_cdr\_*YYYY-MM-DD*.csv, 연도, 월, 및 보고서를 실행 하는 일은 *YYYY-MM-DD* 가 지정 됩니다. 자세한 내용은 [음성 메일 호출 레코드를 해석 합니다.](interpret-voice-mail-call-records-exchange-2013-help.md)을 참조 하십시오.
+    내보낸된 파일 um\_cdr\_*YYYY-MM-DD*.csv, 연도, 월, 및 보고서를 실행 하는 일은 *YYYY-MM-DD* 가 지정 됩니다. 자세한 내용은 [음성 메일 호출 레코드를 해석 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records)을 참조 하십시오.
     
 
     > [!NOTE]
@@ -101,7 +101,7 @@ UM 호출 통계 보고서에는 다음 정보가 포함됩니다.
 
 ## 자세한 내용
 
-[조직에서 음성 통화의 오디오 품질을 확인 합니다.](investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md)
+[조직에서 음성 통화의 오디오 품질을 확인 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization)
 
-[음성 메일 호출 레코드를 해석 합니다.](interpret-voice-mail-call-records-exchange-2013-help.md)
+[음성 메일 호출 레코드를 해석 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records)
 

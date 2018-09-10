@@ -25,7 +25,7 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
 
 
 > [!NOTE]
-> 이 문서의 단계를 수행한 후 Mac 사용자를 위한 outlook 2016 레거시 공용 폴더에 액세스할 수 있습니다. 조직의 클라이언트에서에서 Outlook 2016 for Mac을 사용 하는 경우 2016 년 4 월 업데이트를 설치한 있는지 확인 합니다. 그렇지 않은 경우 해당 사용자가 동시 사용 또는 하이브리드 토폴로지에서 공용 폴더에 액세스할 수 없습니다. 자세한 내용은 <A href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Mac 용 Outlook 2016와 공용 폴더 액세스 (영문)</A>을 참조 하십시오.
+> 이 문서의 단계를 수행한 후 Mac 사용자를 위한 outlook 2016 레거시 공용 폴더에 액세스할 수 있습니다. 조직의 클라이언트에서에서 Outlook 2016 for Mac을 사용 하는 경우 2016 년 4 월 업데이트를 설치한 있는지 확인 합니다. 그렇지 않은 경우 해당 사용자가 동시 사용 또는 하이브리드 토폴로지에서 공용 폴더에 액세스할 수 없습니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac">Mac 용 Outlook 2016와 공용 폴더 액세스 (영문)</A>을 참조 하십시오.
 
 
 
@@ -75,7 +75,7 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
 
 이 절차의 마지막 단계에서는 레거시 온-프레미스 공용 폴더에 대한 액세스를 허용하도록 사용자 사서함을 구성합니다.
 
-Exchange Server 2013 온-프레미스 사용자가 레거시 공용 폴더에 액세스하도록 허용합니다. 이렇게 하려면 [Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)에서 만든 모든 프록시 공용 폴더 사서함을 가리킵니다. CU5 이상 업데이트가 설치된 Exchange 2013 서버에서 다음 명령을 실행합니다.
+Exchange Server 2013 온-프레미스 사용자가 레거시 공용 폴더에 액세스하도록 허용합니다. 이렇게 하려면 [Step 2: Make remote public folders discoverable](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)에서 만든 모든 프록시 공용 폴더 사서함을 가리킵니다. CU5 이상 업데이트가 설치된 Exchange 2013 서버에서 다음 명령을 실행합니다.
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 

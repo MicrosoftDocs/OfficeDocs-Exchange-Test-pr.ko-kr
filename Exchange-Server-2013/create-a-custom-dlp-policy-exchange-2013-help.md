@@ -59,7 +59,7 @@ _**마지막으로 수정된 항목:** 2016-03-18_
     
 
     > [!IMPORTANT]
-    > 화살표 대신 <STRONG>추가</STRONG><IMG title="아이콘 추가" alt="아이콘 추가" src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif"> 아이콘을 클릭 하는 경우에 서식 파일을 기반으로 새 정책을 만들어집니다. 서식 파일을 사용 하는 방법에 대 한 자세한 내용은 <A href="how-to-new-dlp-data-loss-prevention-policy-template.md">템플릿에서 DLP 정책 만들기</A>을 참조 하십시오.
+    > 화살표 대신 <STRONG>추가</STRONG><IMG title="아이콘 추가" alt="아이콘 추가" src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif"> 아이콘을 클릭 하는 경우에 서식 파일을 기반으로 새 정책을 만들어집니다. 서식 파일을 사용 하는 방법에 대 한 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template">템플릿에서 DLP 정책 만들기</A>을 참조 하십시오.
 
 
 
@@ -93,11 +93,11 @@ DLP 정책 템플릿은 한 가지 유형의 하는데 도움이 되는 Microsof
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) Exchange 2013
 
 [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\)) Exchange Online
 
-[전송 규칙에 중요 한 정보 규칙 통합 (영문)](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[전송 규칙에 중요 한 정보 규칙 통합 (영문)](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 

@@ -69,7 +69,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 2.  온-프레미스를 설치한 경우 또는 하이브리드 배포를 다운로드 하 고 적절 한 UM 언어팩을 설치 합니다. 다운로드 하 고 언어팩 설치 다이얼 플랜 기본 언어를 구성 하지 않습니다.
 
-3.  음성 메일 미리 보기에 사용 되는 언어와 다이얼 플랜을 구성 합니다. 자세한 내용은 [다이얼 플랜에 기본 언어 설정](set-the-default-language-on-a-dial-plan-exchange-2013-help.md)을 참조 하십시오.
+3.  음성 메일 미리 보기에 사용 되는 언어와 다이얼 플랜을 구성 합니다. 자세한 내용은 [다이얼 플랜에 기본 언어 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)을 참조 하십시오.
 
 음성 메일 미리 보기 지원 되는 언어의 텍스트를 표시 하는 방법 전송 된 음성 메시지의 종류에 따라 달라 집니다. 다음과 같은 두가지 유형이 있습니다.
 
@@ -79,7 +79,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - **Outlook Voice Access 사용자가를 보내는 경우 음성 메시지**
     
-    Outlook Voice Access 사용자가 보낸 메시지에 대 한 음성 메일 미리 보기에 사용 되는 언어는 음성 메일 관리자에 의해 제어 됩니다. 따라서, 음성 메일 미리 보기 텍스트 음성 메일 시스템으로 사용 되는 같은 언어에 적용 됩니다. 그러나 음성 메일 미리 보기에 대 한 지원 하지 않는 언어 말하기 발신자 Outlook Voice Access를 사용 하 여 메시지를 남길, 있으면 음성 메일 미리 보기 텍스트가 없는 메시지와 함께 포함 됩니다. Outlook 음성 액세스 하는 방법에 대 한 자세한 내용은, [Outlook Voice Access 설정](setting-up-outlook-voice-access-exchange-2013-help.md)를 참조 하십시오.
+    Outlook Voice Access 사용자가 보낸 메시지에 대 한 음성 메일 미리 보기에 사용 되는 언어는 음성 메일 관리자에 의해 제어 됩니다. 따라서, 음성 메일 미리 보기 텍스트 음성 메일 시스템으로 사용 되는 같은 언어에 적용 됩니다. 그러나 음성 메일 미리 보기에 대 한 지원 하지 않는 언어 말하기 발신자 Outlook Voice Access를 사용 하 여 메시지를 남길, 있으면 음성 메일 미리 보기 텍스트가 없는 메시지와 함께 포함 됩니다. Outlook 음성 액세스 하는 방법에 대 한 자세한 내용은, [Outlook Voice Access 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)를 참조 하십시오.
 
 ## UM을는 음성 메일 미리 보기를 정확 하지 않을 때 인식?
 

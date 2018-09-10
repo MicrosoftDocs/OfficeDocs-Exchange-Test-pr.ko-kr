@@ -19,15 +19,15 @@ _**마지막으로 수정된 항목:** 2014-11-16_
 
 OAB(오프라인 주소록)는 다운로드된 주소 목록 모음의 복사본이므로 Microsoft Outlook 사용자는 서버에서 연결이 끊긴 동안에도 주소록에 액세스할 수 있습니다. Microsoft Exchange에서는 새 OAB 파일을 생성한 다음 압축하여 로컬 공유에 저장합니다. 오프라인으로 작업하는 사용자가 사용할 수 있는 주소 목록을 결정할 수 있으며 주소록 배포 방법을 구성할 수도 있습니다.
 
-주소 목록에 대한 자세한 내용은 [주소 목록](address-lists-exchange-2013-help.md)를 참조하십시오.
+주소 목록에 대한 자세한 내용은 [주소 목록](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/address-lists)를 참조하십시오.
 
 
 > [!IMPORTANT]
-> OAB 데이터는 사서함 도우미인 Microsoft Exchange OABGen 서비스에서 생성합니다. 보안 설명자를 사용하여 사용자가 Active Directory의 특정 받는 사람을 볼 수 없게 된 경우에도 OAB를 다운로드한 사용자는 그러한 숨겨진 받는 사람을 볼 수 있습니다. 따라서 받는 사람을 주소 목록에서 숨기려면 <A href="https://technet.microsoft.com/ko-kr/library/aa998596(v=exchg.150)">Set-PublicFolder</A>, <A href="https://technet.microsoft.com/ko-kr/library/aa995950(v=exchg.150)">Set-MailContact</A>, <A href="https://technet.microsoft.com/ko-kr/library/aa995971(v=exchg.150)">Set-MailUser</A>, <A href="https://technet.microsoft.com/ko-kr/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>, <A href="https://technet.microsoft.com/ko-kr/library/bb123981(v=exchg.150)">Set-Mailbox</A> 및 <A href="https://technet.microsoft.com/ko-kr/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> cmdlet에서 <EM>HiddenFromAddressListsEnabled</EM> 매개 변수를 설정해야 합니다. 또는 숨겨진 받는 사람이 들어 있지 않은 새로운 기본 OAB를 만들 수도 있습니다. OAB에서 주소 목록을 추가 또는 제거하는 방법에 대한 자세한 내용은 <A href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">주소 목록에 추가 하거나 오프 라인 주소록에서 주소 목록을 제거합니다</A> 항목을 참조하십시오.
+> OAB 데이터는 사서함 도우미인 Microsoft Exchange OABGen 서비스에서 생성합니다. 보안 설명자를 사용하여 사용자가 Active Directory의 특정 받는 사람을 볼 수 없게 된 경우에도 OAB를 다운로드한 사용자는 그러한 숨겨진 받는 사람을 볼 수 있습니다. 따라서 받는 사람을 주소 목록에서 숨기려면 <A href="https://technet.microsoft.com/ko-kr/library/aa998596(v=exchg.150)">Set-PublicFolder</A>, <A href="https://technet.microsoft.com/ko-kr/library/aa995950(v=exchg.150)">Set-MailContact</A>, <A href="https://technet.microsoft.com/ko-kr/library/aa995971(v=exchg.150)">Set-MailUser</A>, <A href="https://technet.microsoft.com/ko-kr/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>, <A href="https://technet.microsoft.com/ko-kr/library/bb123981(v=exchg.150)">Set-Mailbox</A> 및 <A href="https://technet.microsoft.com/ko-kr/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> cmdlet에서 <EM>HiddenFromAddressListsEnabled</EM> 매개 변수를 설정해야 합니다. 또는 숨겨진 받는 사람이 들어 있지 않은 새로운 기본 OAB를 만들 수도 있습니다. OAB에서 주소 목록을 추가 또는 제거하는 방법에 대한 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/add-or-remove-an-address-list">주소 목록에 추가 하거나 오프 라인 주소록에서 주소 목록을 제거합니다</A> 항목을 참조하십시오.
 
 
 
-OAB와 관련된 관리 작업에 대한 자세한 내용은 [오프 라인 주소록 절차](offline-address-book-procedures-exchange-2013-help.md) 항목을 참조하십시오.
+OAB와 관련된 관리 작업에 대한 자세한 내용은 [오프 라인 주소록 절차](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/offline-address-book-procedures) 항목을 참조하십시오.
 
 **목차**
 
@@ -75,7 +75,7 @@ Outlook 2013, Outlook 2010, Outlook 2007 및 OAB 버전 4 사용 클라이언트
 
   - **OAB 배포**   클라이언트가 OAB 배포 요청을 시작하면 해당 요청은 클라이언트 액세스 서버를 통해 전달됩니다. 클라이언트 액세스 서버는 OAB 파일을 호스트하는 사서함 서버로 이 요청을 라우팅합니다. OAB 파일은 사서함 서버에서 클라이언트로 직접 배포됩니다.
 
-  - **OAB 가상 디렉터리** OAB 가상 디렉터리는 웹 기반 배포 방법에 사용되는 배포 지점입니다. Exchange가 설치될 때 기본적으로 IIS(인터넷 정보 서비스)의 기본 내부 웹 사이트에 **OAB**라는 새 가상 디렉터리가 만들어집니다. 조직의 방화벽 외부에서 Outlook에 연결하는 클라이언트 쪽 사용자가 있는 경우에는 외부 웹 사이트를 추가할 수 있습니다. 또는 셸에서 **New-OABVirtualDirectory** cmdlet을 실행하는 경우 로컬 Exchange 클라이언트 액세스 서버의 기본 IIS 웹 사이트에 새 가상 디렉터리 OAB가 만들어집니다. 자세한 내용은 [오프 라인 주소록 가상 디렉터리 만들기](create-an-offline-address-book-virtual-directory-exchange-2013-help.md) 항목을 참조하십시오
+  - **OAB 가상 디렉터리** OAB 가상 디렉터리는 웹 기반 배포 방법에 사용되는 배포 지점입니다. Exchange가 설치될 때 기본적으로 IIS(인터넷 정보 서비스)의 기본 내부 웹 사이트에 **OAB**라는 새 가상 디렉터리가 만들어집니다. 조직의 방화벽 외부에서 Outlook에 연결하는 클라이언트 쪽 사용자가 있는 경우에는 외부 웹 사이트를 추가할 수 있습니다. 또는 셸에서 **New-OABVirtualDirectory** cmdlet을 실행하는 경우 로컬 Exchange 클라이언트 액세스 서버의 기본 IIS 웹 사이트에 새 가상 디렉터리 OAB가 만들어집니다. 자세한 내용은 [오프 라인 주소록 가상 디렉터리 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/create-virtual-directory) 항목을 참조하십시오
 
   - **자동 검색 서비스**   Outlook 2013, Outlook 2010, Outlook 2007 및 일부 모바일 장치에서 사용할 수 있는 기능으로, Exchange에 액세스할 수 있도록 클라이언트를 자동으로 구성합니다. 이 서비스는 클라이언트 액세스 서버에서 실행되며 특정 클라이언트 연결에 대한 올바른 OAB URL을 반환합니다.
 

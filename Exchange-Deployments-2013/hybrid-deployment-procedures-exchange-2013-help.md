@@ -25,9 +25,9 @@ _<strong>마지막으로 수정된 항목:</strong>2017-06-14_
 
 [하이브리드 배포에서 온-프레미스 및 Exchange Online 조직 간의 사서함 이동](move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md)
 
-[하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)
 
-[하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
 [하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
 

@@ -95,7 +95,7 @@ Exchange 검색을 통해 인덱싱되는 파일 형식에 대한 자세한 내�
 
 [검색 관리](discovery-management-exchange-2013-help.md) RBAC 역할 그룹에 추가한 사용자만 원본 위치 eDiscovery 검색을 수행할 수 있습니다. 이 역할 그룹은 사용자가 원본 위치 eDiscovery 검색을 수행할 수 있게 해주는 [사서함 검색 역할](mailbox-search-role-exchange-2013-help.md) 관리 역할과 사용자가 사서함에 원본 위치 유지 또는 소송 보존을 적용할 수 있게 해 주는 [법적 보존 역할](legal-hold-role-exchange-2013-help.md) 관리 역할 등 두 관리 역할로 구성됩니다.
 
-원본 위치 eDiscovery 관련 작업을 수행하는 권한은 기본적으로 어떤 사용자나 Exchange 관리자에게도 할당되지 않습니다. 조직 관리 역할 그룹에 속한 Exchange 관리자는 검색 관리 역할 그룹에 사용자를 추가하고 사용자 지정 역할 그룹을 만들어 검색 관리자 범위를 일부 사용자로 좁힐 수 있습니다. 검색 관리 역할 그룹에 사용자를 추가하는 방법에 대한 자세한 내용은 [Exchange eDiscovery 사용 권한 할당](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)를 참조하십시오.
+원본 위치 eDiscovery 관련 작업을 수행하는 권한은 기본적으로 어떤 사용자나 Exchange 관리자에게도 할당되지 않습니다. 조직 관리 역할 그룹에 속한 Exchange 관리자는 검색 관리 역할 그룹에 사용자를 추가하고 사용자 지정 역할 그룹을 만들어 검색 관리자 범위를 일부 사용자로 좁힐 수 있습니다. 검색 관리 역할 그룹에 사용자를 추가하는 방법에 대한 자세한 내용은 [Exchange eDiscovery 사용 권한 할당](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)를 참조하십시오.
 
 
 > [!IMPORTANT]
@@ -103,7 +103,7 @@ Exchange 검색을 통해 인덱싱되는 파일 형식에 대한 자세한 내�
 
 
 
-기본적으로 사용하도록 설정되는 RBAC 역할 변경 감사는 검색 관리 역할 그룹 할당을 추적하기 위해 적정 레코드가 유지되도록 합니다. 관리자 역할 그룹 보고서를 사용하여 관리자 역할 그룹에 대한 변경 내용을 검색할 수 있습니다. 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)을 참조하세요.
+기본적으로 사용하도록 설정되는 RBAC 역할 변경 감사는 검색 관리 역할 그룹 할당을 추적하기 위해 적정 레코드가 유지되도록 합니다. 관리자 역할 그룹 보고서를 사용하여 관리자 역할 그룹에 대한 변경 내용을 검색할 수 있습니다. 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)을 참조하세요.
 
 맨 위로 이동
 
@@ -111,7 +111,7 @@ Exchange 검색을 통해 인덱싱되는 파일 형식에 대한 자세한 내�
 
 사용자 지정 관리 범위를 사용하여 특정 사람이나 그룹이 원본 위치 eDiscovery를 사용하여 Exchange 2013 또는 Exchange Online 조직에서 사서함 하위 집합을 검색하도록 할 수 있습니다. 예를 들어 검색 관리자가 특정 위치나 부서의 사용자 사서함만 검색하도록 할 수 있습니다. 이 작업을 위해 받는 사람 필터를 사용하여 검색할 수 있는 사서함을 제어하는 사용자 지정 관리 범위를 만들면 됩니다. 받는 사람 필터 범위는 필터를 사용하여 받는 사람 유형 또는 기타 받는 사람 속성에 따라 특정 받는 사람을 대상으로 지정합니다.
 
-원본 위치 eDiscovery의 경우 사용자 지정 범위에 대해 받는 사람 필터를 만드는 데 사용할 수 있는 사용자 사서함에 대한 유일한 속성은 메일 그룹 구성원입니다. *CustomAttributeN*, *Department*, *PostalCode* 등의 다른 속성을 사용하는 경우 사용자 지정 범위에 할당된 역할 그룹의 구성원이 실행하는 검색은 실패합니다. 자세한 내용은 [원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기](create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md)를 참조하세요.
+원본 위치 eDiscovery의 경우 사용자 지정 범위에 대해 받는 사람 필터를 만드는 데 사용할 수 있는 사용자 사서함에 대한 유일한 속성은 메일 그룹 구성원입니다. *CustomAttributeN*, *Department*, *PostalCode* 등의 다른 속성을 사용하는 경우 사용자 지정 범위에 할당된 역할 그룹의 구성원이 실행하는 검색은 실패합니다. 자세한 내용은 [원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope)를 참조하세요.
 
 ## SharePoint Server 2013 및 SharePoint Online과 통합
 
@@ -300,7 +300,7 @@ EAC의 **원본 위치 eDiscovery 및 유지** 마법사를 사용하면 원본 
 
 ## 원본 위치 eDiscovery 및 원본 위치 유지
 
-eDiscovery 요청의 일부로서 소송이나 조사가 완결될 때까지 사서함 콘텐츠를 보존해야 할 수도 있습니다. 사서함 사용자 또는 프로세스에 의해 삭제 또는 수정된 메시지도 보존해야 합니다. Exchange 2013에서는 원본 위치 유지에 의해 이루어집니다. 자세한 내용은 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)를 참조하십시오.
+eDiscovery 요청의 일부로서 소송이나 조사가 완결될 때까지 사서함 콘텐츠를 보존해야 할 수도 있습니다. 사서함 사용자 또는 프로세스에 의해 삭제 또는 수정된 메시지도 보존해야 합니다. Exchange 2013에서는 원본 위치 유지에 의해 이루어집니다. 자세한 내용은 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)를 참조하십시오.
 
 Exchange 2013에서는 새로운 **원본 위치 eDiscovery 및 유지** 마법사를 사용하여 eDiscovery에 필요할 때까지 또는 기타 비즈니스 요구 사항을 충족하기 위해 필요한 항목을 검색하고 보존할 수 있습니다. 원본 위치 eDiscovery와 원본 위치 유지에 동일한 검색을 사용하는 경우 다음 사항을 고려해야 합니다.
 
@@ -324,7 +324,7 @@ Exchange 2013에서는 새로운 **원본 위치 eDiscovery 및 유지** 마법�
     
 
     > [!IMPORTANT]
-    > 모든 권한 사서함 권한이 있는 사용자는 사서함에 계속 액세스할 수 있습니다. 다른 사용자가 액세스할 수 없도록 하려면 사서함에서 "모든 권한" 권한을 제거해야 합니다. 사서함에서 "모든 권한" 사서함 권한을 제거하는 방법에 대한 자세한 내용은 <A href="manage-permissions-for-recipients-exchange-online-help.md">받는 사람에 대 한 사용 권한 관리</A>를 참조하십시오.
+    > 모든 권한 사서함 권한이 있는 사용자는 사서함에 계속 액세스할 수 있습니다. 다른 사용자가 액세스할 수 없도록 하려면 사서함에서 "모든 권한" 권한을 제거해야 합니다. 사서함에서 "모든 권한" 사서함 권한을 제거하는 방법에 대한 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">받는 사람에 대 한 사용 권한 관리</A>를 참조하십시오.
 
 
 
@@ -436,7 +436,7 @@ Exchange Server 2013에서 요구 사항에 맞게 해당 매개 변수의 기�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange eDiscovery 사용 권한 할당</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Exchange eDiscovery 사용 권한 할당</a></p></td>
 <td><p>EAC에서 원본 위치 eDiscovery를 사용하여 Exchange 사서함을 검색하는 권한을 사용자에게 제공하는 방법을 설명합니다. 사용자를 검색 관리 역할 그룹에 추가해도 해당 사용자가 SharePoint 2013 및 SharePoint Online에서 eDiscovery 센터를 사용하여 Exchange 사서함을 검색할 수 있습니다.</p></td>
 </tr>
 <tr class="even">
@@ -472,7 +472,7 @@ Exchange Server 2013에서 요구 사항에 맞게 해당 매개 변수의 기�
 <td><p>eDiscovery 검색의 결과를 PST 파일로 내보내는 방법을 설명합니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md">원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope">원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기</a></p></td>
 <td><p>사용자 지정 관리 범위를 사용하여 검색 관리자가 검색할 수 있는 사서함을 제한하는 방법을 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -488,7 +488,7 @@ Exchange Server 2013에서 요구 사항에 맞게 해당 매개 변수의 기�
 <td><p>50GB보다 큰 검색 사서함의 크기를 줄이려면 이 프로세스를 사용합니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md">Exchange에서 기본 검색 사서함 삭제 및 다시 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox">Exchange에서 기본 검색 사서함 삭제 및 다시 만들기</a></p></td>
 <td><p>기본 검색 사서함을 삭제한 후 다시 만든 다음 사용 권한을 할당하는 방법을 알아봅니다. 이 사서함이 50GB 제한을 초과하며 검색 결과가 필요하지 않은 경우에는 이 절차를 사용합니다.</p></td>
 </tr>
 <tr class="odd">

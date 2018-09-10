@@ -45,7 +45,7 @@ VoIP 게이트웨이, IP PBX, SIP 사용 가능 PBX 또는 SBC를 클라이언�
 
 ## 2단계: UM 다이얼 플랜 만들기 및 구성
 
-필요한 서버를 설치했으면 먼저 UM 다이얼 플랜을 만들어야 합니다. UM 다이얼 플랜은 단일 또는 여러 UM IP 게이트웨이에 연결하여 전화 통신 네트워크에 연결할 수 있도록 하는 구성 설정을 포함합니다. UM IP 게이트웨이와 UM 헌트 그룹은 UM 다이얼 플랜에 바로 연결되며 이 두 항목 역시 필요한 요소입니다. 자세한 내용은 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)를 참조하십시오.
+필요한 서버를 설치했으면 먼저 UM 다이얼 플랜을 만들어야 합니다. UM 다이얼 플랜은 단일 또는 여러 UM IP 게이트웨이에 연결하여 전화 통신 네트워크에 연결할 수 있도록 하는 구성 설정을 포함합니다. UM IP 게이트웨이와 UM 헌트 그룹은 UM 다이얼 플랜에 바로 연결되며 이 두 항목 역시 필요한 요소입니다. 자세한 내용은 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)를 참조하십시오.
 
 UM 다이얼 플랜은 사용자의 내선 전화 번호에서 UM 사용 가능 사서함으로의 링크를 설정합니다. UM 다이얼 플랜을 만들 때 다이얼 플랜에 대한 내선 번호 자릿수, URI(Uniform Resource Identifier) 유형 및 VoIP 보안 설정을 구성할 수 있습니다.
 
@@ -65,13 +65,13 @@ Exchange 통합 메시징은 다양한 VoIP 게이트웨이 공급업체뿐 아�
 
 VoIP 게이트웨이에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP 게이트웨이 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
-  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [Um VoIP 게이트웨이, IP PBX 또는 세션 테두리 컨트롤러에 연결](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)
 
-자세한 내용은 [음성 메일 시스템 전화 네트워크에 연결](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)을 참조하십시오.
+자세한 내용은 [음성 메일 시스템 전화 네트워크에 연결](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)을 참조하십시오.
 
 ## 4단계: 새 UM 헌트 그룹 만들기(필요한 경우)
 

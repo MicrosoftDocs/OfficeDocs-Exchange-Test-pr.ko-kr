@@ -127,7 +127,7 @@ EAC를 사용 하는 DLP 정책을 영구적으로 제거할 수 있습니다. �
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[정책 팁](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 

@@ -47,7 +47,7 @@ _**마지막으로 수정된 항목:** 2017-07-25_
 
   - **통합 메시징 전문가** UM 전문가 Exchange 엔지니어링 팀에 의해 수행 된 Exchange 통합 메시징에 대 한 기술 교육 제공 받은 시스템 통합자입니다. 을 레거시 음성 메일 시스템에서 통합 메시징에 원활 하 게 전환을 보장 하기 위해 Microsoft 모든 고객 참여할 UM 전문가 것이 좋습니다. 연락처 정보를 [Microsoft Exchange Server 2013 통합 메시징 (UM) 전문가](http://go.microsoft.com/fwlink/p/?linkid=262708) 또는 [통합 메시징에 대 한 Microsoft 적절치](https://go.microsoft.com/fwlink/p/?linkid=261951)를 참고 하십시오.
 
-  - **구성 참고 사항 지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx**   이러한 구성 참고 설정과 네트워크에 있는 경우 통합 메시징 서버와 VoIP 게이트웨이, IP Pbx와 통신 하도록 Pbx를 구성 하는 경우에 매우 유용 하는 기타 정보를 포함 합니다. 자세한 내용은 [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)을 참조 하십시오.
+  - **구성 참고 사항 지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx**   이러한 구성 참고 설정과 네트워크에 있는 경우 통합 메시징 서버와 VoIP 게이트웨이, IP Pbx와 통신 하도록 Pbx를 구성 하는 경우에 매우 유용 하는 기타 정보를 포함 합니다. 자세한 내용은 [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)을 참조 하십시오.
 
   - **지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항**   이러한 구성 참고 설정과 세션 테두리 컨트롤러 (Sbc) 서버와 통신 하는 통합 메시징 하이브리드 및 Exchange Online UM 배포를 구성 하는 경우 매우 유용 하는 기타 정보를 포함 합니다. 자세한 내용은 [지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)을 참조 하십시오.
     
@@ -91,7 +91,7 @@ VoIP 게이트웨이, IP Pbx 및 고급 VoIP 게이트웨이 용 [Microsoft 통�
 
 지원 되는 VoIP 게이트웨이, IP Pbx, Pbx 및 Sbc를 구성 하는 방법에 대 한 자세한 내용은, 다음 리소스 중 하나를 참조 합니다.
 
-  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)
 

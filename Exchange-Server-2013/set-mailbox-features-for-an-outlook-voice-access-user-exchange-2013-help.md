@@ -37,11 +37,11 @@ UM 사용자와 관련된 추가 관리 작업에 대한 자세한 내용은 [Ou
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [통합된 메시징 사용 권한](unified-messaging-permissions-exchange-2013-help.md)의 "UM 사서함" 항목
 
-  - 이러한 절차를 수행하기 전에 기존의 Exchange 받는 사람이 통합 메시징과 음성 메일을 사용할 수 있는지 확인합니다. 자세한 단계는 [음성 메일에 대 한 사용자를 사용 하도록 설정](enable-a-user-for-voice-mail-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 기존의 Exchange 받는 사람이 통합 메시징과 음성 메일을 사용할 수 있는지 확인합니다. 자세한 단계는 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)을 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)을 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](create-a-um-mailbox-policy-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)을 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -59,6 +59,6 @@ UM 사용자와 관련된 추가 관리 작업에 대한 자세한 내용은 [Ou
 
 
 > [!NOTE]
-> 사용자에 대한 TUI 설정은 UM 사서함 정책에서도 제공됩니다. UM 사서함 정책에서 TUI 설정을 수정하면 해당 UM 사서함 정책과 연결된 모든 사용자가 영향을 받습니다. UM 사서함 정책에서 TUI 설정을 수정하는 방법에 대한 자세한 내용은 <A href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.</A>을 참조하십시오.
+> 사용자에 대한 TUI 설정은 UM 사서함 정책에서도 제공됩니다. UM 사서함 정책에서 TUI 설정을 수정하면 해당 UM 사서함 정책과 연결된 모든 사용자가 영향을 받습니다. UM 사서함 정책에서 TUI 설정을 수정하는 방법에 대한 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-users">Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.</A>을 참조하십시오.
 
 

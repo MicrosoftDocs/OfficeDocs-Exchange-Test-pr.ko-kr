@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**마지막으로 수정된 항목:** 2013-04-16_
 
-[UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)
+[UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)
 
 [UM 다이얼 플랜 관리](manage-a-um-dial-plan-exchange-2013-help.md)
 
@@ -27,15 +27,15 @@ _**마지막으로 수정된 항목:** 2013-04-16_
 
 [오디오 코덱 변경](change-the-audio-codec-exchange-2013-help.md)
 
-[최대 통화 기간 구성](configure-the-maximum-call-duration-exchange-2013-help.md)
+[최대 통화 기간 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration)
 
 [최대 녹음/녹화 기간 구성](configure-the-maximum-recording-duration-exchange-2013-help.md)
 
-[녹음/녹화 유휴 시간 제한 값을 구성](configure-the-recording-idle-time-out-value-exchange-2013-help.md)
+[녹음/녹화 유휴 시간 제한 값을 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out)
 
-[VoIP 보안 설정 구성](configure-the-voip-security-setting-exchange-2013-help.md)
+[VoIP 보안 설정 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)
 
-[유사한 이름을 가진 사용자에 대 한 다이얼 플랜을 구성 합니다.](configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md)
+[유사한 이름을 가진 사용자에 대 한 다이얼 플랜을 구성 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names)
 
 [UM 다이얼 플랜을 삭제](delete-a-um-dial-plan-exchange-2013-help.md)
 

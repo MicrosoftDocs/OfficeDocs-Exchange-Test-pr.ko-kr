@@ -168,7 +168,7 @@ Exchange Server 2013 에서 메일 흐름 규칙에 대 한 자세한 내용은 
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>해당 없음</p></td>
-<td><p>보낸 사람이 데이터 손실 방지 (DLP) 정책 무시 하도록 선택한 메시지입니다. DLP 정책에 대 한 자세한 내용은 <a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">데이터 손실 방지</a>을 참조 하십시오.</p></td>
+<td><p>보낸 사람이 데이터 손실 방지 (DLP) 정책 무시 하도록 선택한 메시지입니다. DLP 정책에 대 한 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">데이터 손실 방지</a>을 참조 하십시오.</p></td>
 <td><p>Exchange 2013 이상</p></td>
 </tr>
 <tr class="odd">

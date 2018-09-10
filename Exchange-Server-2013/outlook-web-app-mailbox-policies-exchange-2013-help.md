@@ -45,11 +45,11 @@ Outlook Web App 가상 디렉터리를 구성하여 Outlook Web App 기능을 �
 
 
 
-사서함 정책 만들기 또는 제거에 대한 자세한 내용은 [Outlook Web App 사서함 정책 만들기](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md) 및 [Exchange에서 Outlook Web App 사서함 정책 제거](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md) 항목을 참조하십시오.
+사서함 정책 만들기 또는 제거에 대한 자세한 내용은 [Outlook Web App 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) 및 [Exchange에서 Outlook Web App 사서함 정책 제거](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy) 항목을 참조하십시오.
 
 ## Outlook Web App 사서함 정책 구성
 
-기본 Outlook Web App 사서함 정책의 모든 옵션은 기본적으로 사용하도록 설정됩니다. Outlook Web App 사서함 정책에 대한 자세한 내용은 [Outlook Web App 사서함 정책 속성 보기 또는 구성](view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md) 항목을 참조하십시오.
+기본 Outlook Web App 사서함 정책의 모든 옵션은 기본적으로 사용하도록 설정됩니다. Outlook Web App 사서함 정책에 대한 자세한 내용은 [Outlook Web App 사서함 정책 속성 보기 또는 구성](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) 항목을 참조하십시오.
 
 ## Outlook Web App 사서함 정책 적용
 
@@ -57,5 +57,5 @@ Outlook Web App 가상 디렉터리를 구성하여 Outlook Web App 기능을 �
 
 Outlook Web App 사서함 정책이 사서함에 적용되어 있지 않으면 가상 디렉터리에 정의된 설정이 적용됩니다.
 
-EAC(Exchange 관리 센터)를 사용하여 기존 사서함을 수정하거나 셸 및 [Set-CASMailbox](https://technet.microsoft.com/ko-kr/library/bb125264\(v=exchg.150\)) cmdlet를 사용하여 사서함 정책을 적용하여 Outlook Web App 사서함 정책을 사서함에 적용할 수 있습니다. 자세한 내용은 [사서함에는 Outlook Web App 사서함 정책 적용 또는 제거](apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md) 항목을 참조하십시오.
+EAC(Exchange 관리 센터)를 사용하여 기존 사서함을 수정하거나 셸 및 [Set-CASMailbox](https://technet.microsoft.com/ko-kr/library/bb125264\(v=exchg.150\)) cmdlet를 사용하여 사서함 정책을 적용하여 Outlook Web App 사서함 정책을 사서함에 적용할 수 있습니다. 자세한 내용은 [사서함에는 Outlook Web App 사서함 정책 적용 또는 제거](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/apply-or-remove-outlook-web-app-mailbox-policy) 항목을 참조하십시오.
 

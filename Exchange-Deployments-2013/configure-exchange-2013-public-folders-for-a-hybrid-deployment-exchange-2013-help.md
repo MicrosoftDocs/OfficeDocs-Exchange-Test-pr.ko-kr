@@ -23,7 +23,7 @@ _<strong>마지막으로 수정된 항목:</strong>2016-12-09_
 
 
 > [!NOTE]
-> Exchange 2010 또는 Exchange 2007 공용 폴더를 사용 하는 경우 <A href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성</A>를 참조 하십시오.
+> Exchange 2010 또는 Exchange 2007 공용 폴더를 사용 하는 경우 <A href="https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성</A>를 참조 하십시오.
 
 
 

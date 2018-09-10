@@ -17,9 +17,9 @@ _**적용 대상:** Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2009-11-03_
 
-[메시징 레코드 관리에 대 한 성능 카운터 보기](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[메시징 레코드 관리에 대 한 성능 카운터 보기](view-performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-[메시징 레코드 관리에 대 한 성능 카운터](performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[메시징 레코드 관리에 대 한 성능 카운터](performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 [메시징 레코드 관리 오류 및 이벤트](messaging-records-management-errors-and-events-exchange-2013-help.md)
 

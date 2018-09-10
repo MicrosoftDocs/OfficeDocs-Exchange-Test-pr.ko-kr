@@ -173,7 +173,7 @@ Edge 전송 서버의 전송 서비스 구성 요소는 사서함 서버의 전�
 <td><p>전송 로그는 메시지가 전송 파이프라인을 통해 흐를 때 메시지에 발생하는 일을 기록합니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-message-approval-exchange-2013-help.md">메시지 승인 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">메시지 승인 관리</a></p></td>
 <td><p>중재된 전송을 위해서는 특정 받는 사람에 보내는 메시지에 대한 승인이 필요합니다.</p></td>
 </tr>
 <tr class="even">

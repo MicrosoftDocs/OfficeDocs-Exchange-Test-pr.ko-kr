@@ -64,11 +64,11 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">주소 목록</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/address-lists">주소 목록</a></p></td>
 <td><p>최종 사용자가 쉽게 액세스할 수 있도록 받는 사람을 구성하는 방법으로 주소 목록 및 GAL에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">주소록 정책</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies">주소록 정책</a></p></td>
 <td><p>가상 조직별로 주소 목록과 GAL을 구분하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <td><p>받는 사람이 더 잘 검색될 수 있도록 하는 프록시 전자 메일 주소에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchical-address-books-exchange-2013-help.md">계층 구조 주소록</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/address-books/hierarchical-address-books/hierarchical-address-books">계층 구조 주소록</a></p></td>
 <td><p>조직의 고유한 비즈니스 구조에 맞도록 GAL과 주소 목록을 사용자 지정하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">

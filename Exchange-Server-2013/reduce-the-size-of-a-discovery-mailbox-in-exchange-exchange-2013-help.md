@@ -53,7 +53,7 @@ Exchange Server 2013 및 Exchange Online 을 원본 위치 eDiscovery 검색 결
 
   - 50GB 제한을 초과하는 검색 사서함의 검색 결과 일부 또는 전체를 보관할지를 결정합니다. 이 항목의 단계에 따라 검색 결과를 다른 검색 사서함으로 복사하여 보존합니다. 특정 eDiscovery 검색 결과를 보존할 필요가 없는 경우 3단계에 설명된 대로 검색을 삭제할 수 있습니다. 검색을 삭제하면 검색 사서함에서 검색 결과가 삭제됩니다.
 
-  - 50GB 제한을 초과하는 검색 사서함의 일부 검색 결과가 필요 없는 경우 삭제해도 됩니다. Exchange 조직이 프로비저닝되었을 때 만들어진 기본 검색 사서함의 경우 다시 만들 수 있습니다 자세한 내용은 [Exchange에서 기본 검색 사서함 삭제 및 다시 만들기](delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md)를 참조하세요.
+  - 50GB 제한을 초과하는 검색 사서함의 일부 검색 결과가 필요 없는 경우 삭제해도 됩니다. Exchange 조직이 프로비저닝되었을 때 만들어진 기본 검색 사서함의 경우 다시 만들 수 있습니다 자세한 내용은 [Exchange에서 기본 검색 사서함 삭제 및 다시 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox)를 참조하세요.
 
   - 현재 진행되는 법률 소송의 경우에는 선택한 eDiscovery 검색 결과를 .pst 파일로 내보낼 수 있습니다. 이렇게 하면 특정 검색의 결과가 그대로 보존됩니다. 검색 결과를 포함하는 .pst 파일 외에, 검색 결과에서 반환된 각 메시지의 항목을 포함하는 검색 결과 로그(.csv 파일 형식)도 내보내집니다. 이 파일의 각 항목은 메시지가 위치한 원본 사서함을 식별합니다. 자세한 내용은 [PST 파일로 eDiscovery 검색 결과 내보내기](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)를 참조하세요.
     

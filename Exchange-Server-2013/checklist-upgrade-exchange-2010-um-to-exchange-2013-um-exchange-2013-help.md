@@ -25,7 +25,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - [Um 전화 시스템 통합](telephone-system-integration-with-um-exchange-2013-help.md)
 
-  - [음성 메일 시스템 전화 네트워크에 연결](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)
+  - [음성 메일 시스템 전화 네트워크에 연결](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
 Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 대한 단계별 지침은 [Exchange 2007 UM을 Exchange 2013 UM으로 업그레이드](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md)를 참조하세요.
 
@@ -110,14 +110,14 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <tr class="odd">
 <td><p></p></td>
 <td><p>기존 UM 다이얼 플랜을 만들거나 구성합니다.</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 만들기</a></p>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">UM 다이얼 플랜 만들기</a></p>
 <p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>기존 UM IP 게이트웨이를 만들거나 구성합니다.</p></td>
-<td><p><a href="create-a-um-ip-gateway-exchange-2013-help.md">UM IP 게이트웨이 만들기</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">UM IP 게이트웨이 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">UM IP 게이트웨이 만들기</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">UM IP 게이트웨이 관리</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -127,14 +127,14 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 자동 전화 교환을 만들거나 구성합니다.</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환 만들기</a></p>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 자동 전화 교환 만들기</a></p>
 <p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환 관리</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM 사서함 정책을 만들거나 구성합니다.</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">UM 사서함 정책 만들기</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">UM 사서함 정책 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">UM 사서함 정책 만들기</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">UM 사서함 정책 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -144,13 +144,13 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <tr class="odd">
 <td><p></p></td>
 <td><p>새 사용자가 UM을 사용하도록 설정하거나 기존 UM 사용 가능 사용자의 설정을 구성합니다.</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">음성 메일에 대 한 사용자를 사용 하도록 설정</a></p>
-<p><a href="manage-voice-mail-settings-for-a-user-exchange-2013-help.md">사용자에 대 한 음성 메일 설정 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">음성 메일에 대 한 사용자를 사용 하도록 설정</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings">사용자에 대 한 음성 메일 설정 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Exchange 2013 클라이언트 액세스 서버로 들어오는 모든 수신 전화를 전송하도록 VoIP 게이트웨이, IP PBX 및 SIP 사용 가능 PBX를 구성합니다.</p></td>
-<td><p><a href="configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md">지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">Um VoIP 게이트웨이, IP PBX 또는 세션 테두리 컨트롤러에 연결</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">Um VoIP 게이트웨이, IP PBX 또는 세션 테두리 컨트롤러에 연결</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

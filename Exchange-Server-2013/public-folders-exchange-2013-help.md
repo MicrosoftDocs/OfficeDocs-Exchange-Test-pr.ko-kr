@@ -87,7 +87,7 @@ Exchange 2013의 공용 폴더는 사서함 인프라를 사용하여 사서함 
 
   - Exchange 관리 셸에서 **\*-Mailbox** cmdlet 집합을 사용합니다. 공용 폴더 사서함을 지원하도록 다음 매개 변수가 [New-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997663\(v=exchg.150\)) cmdlet에 추가되었습니다.
     
-      - *PublicFolder*   이 매개 변수는 **New-Mailbox** cmdlet과 함께 사용되어 공용 폴더 사서함을 만듭니다. 공용 폴더 사서함을 만들면 사서함 유형이 `PublicFolder`인 새 사서함이 만들어집니다. 자세한 내용은 [공용 폴더 사서함 만들기](create-a-public-folder-mailbox-exchange-2013-help.md)를 참조하십시오.
+      - *PublicFolder*   이 매개 변수는 **New-Mailbox** cmdlet과 함께 사용되어 공용 폴더 사서함을 만듭니다. 공용 폴더 사서함을 만들면 사서함 유형이 `PublicFolder`인 새 사서함이 만들어집니다. 자세한 내용은 [공용 폴더 사서함 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)를 참조하십시오.
     
       - *HoldForMigration*   이 매개 변수는 이전 버전의 Exchange 2013에서 공용 폴더를 마이그레이션한 경우에만 사용됩니다. 자세한 내용은 이 항목의 뒷부분에 있는 Migrate Public folders from previous versions을 참조하십시오.
     
@@ -143,7 +143,7 @@ Exchange 2013의 공용 폴더는 사서함 인프라를 사용하여 사서함 
 
 이전 버전의 Exchange Online으로 Exchange Server 또는 이전 버전의 Exchange 2013을 Exchange 서버에서 공용 폴더를 마이그레이션할 수 있습니다. 또한 Exchange Online으로 Exchange 2013 공용 폴더를 마이그레이션할 수 있습니다.
 
-Exchange 2013을 설치 하기 전에 조직에서 Exchange 2010 SP3 또는 Exchange 2007 SP3 RU10 공용 폴더가 이미 있으면 해당 공용 폴더 Exchange 2013으로 마이그레이션해야 합니다. 이 작업을 수행 하려면 **PublicFolderMigrationRequst** cmdlet를 사용 합니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)을 참조 하십시오. 조직에 Exchange Online으로 이동 하는 경우에 공용 폴더를 클라우드로 마이그레이션할 수 있으며 동시에 업그레이드 수 있습니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md) 및 [마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)를 참조 하십시오.
+Exchange 2013을 설치 하기 전에 조직에서 Exchange 2010 SP3 또는 Exchange 2007 SP3 RU10 공용 폴더가 이미 있으면 해당 공용 폴더 Exchange 2013으로 마이그레이션해야 합니다. 이 작업을 수행 하려면 **PublicFolderMigrationRequst** cmdlet를 사용 합니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)을 참조 하십시오. 조직에 Exchange Online으로 이동 하는 경우에 공용 폴더를 클라우드로 마이그레이션할 수 있으며 동시에 업그레이드 수 있습니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md) 및 [마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)를 참조 하십시오.
 
 공용 폴더가 저장되는 방식의 변경 사항으로 인해 레거시 Exchange 사서함에서 Exchange 2013 서버나 Exchange Online의 공용 폴더 계층 구조에 액세스할 수 없습니다. 하지만 Exchange 2013 서버나 Exchange Online의 사용자 사서함은 레거시 공용 폴더에 연결할 수 있습니다. Exchange 2013 공용 폴더 및 레거시 공용 폴더는 동시에 Exchange 조직에 있을 수 없습니다. 즉 버전 간 공존할 수 없습니다. 공용 폴더를 Exchange Server 2013이나 Exchange Online으로 마이그레이션하는 작업은 현재 일회성 단독형 프로세스입니다.
 

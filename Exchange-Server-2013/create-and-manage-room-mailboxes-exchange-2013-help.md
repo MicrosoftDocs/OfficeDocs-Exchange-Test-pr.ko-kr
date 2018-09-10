@@ -21,7 +21,7 @@ _**마지막으로 수정된 항목:** 2017-02-02_
 
 대화방 사서함은 회의실, 강당, 또는 교육 회의실 등의 실제 위치에 할당 된 리소스 사서함입니다. 대화방 사서함에서 관리자를 만든 후 사용자는 모임 요청에서 대화방 사서함을 포함 하 여 대화방 쉽게 예약할 수 있습니다. 자세한 내용은 [받는 사람](recipients-exchange-2013-help.md)를 체크아웃 합니다.
 
-다른 유형의 리소스 사서함에 대 한 정보를 [장비 사서함 관리](manage-equipment-mailboxes-exchange-2013-help.md)을 확인 합니다.
+다른 유형의 리소스 사서함에 대 한 정보를 [장비 사서함 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)을 확인 합니다.
 
 ## 무슨 작업을 하고 싶으십니까?
 
@@ -159,7 +159,7 @@ _**마지막으로 수정된 항목:** 2017-02-02_
 
   - **회사**   대화방이 연결된 회사(적용 가능한 경우)를 지정하는 데 이 상자를 사용합니다. Department 속성과 마찬가지로 이 속성을 사용하여 동적 메일 그룹과 주소 목록에 대한 받는 사람 조건을 만들 수 있습니다.
 
-  - **주소록 정책**   대화방 사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 방 목록 및 일련의 주소 목록이 들어 있습니다. 자세한 내용은 [주소록 정책](address-book-policies-exchange-2013-help.md)를 참조하십시오.
+  - **주소록 정책**   대화방 사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 방 목록 및 일련의 주소 목록이 들어 있습니다. 자세한 내용은 [주소록 정책](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies)를 참조하십시오.
     
     드롭다운 목록에서 이 사서함에 연결할 정책을 선택합니다.
 

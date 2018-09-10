@@ -43,5 +43,5 @@ Exchange 하이브리드 또는 Exchange Online 배포에 대 한 관리자 인 
 
   - [Microsoft Exchange Server에 대 한 지원](https://go.microsoft.com/fwlink/p/?linkid=283967)   여러 버전의 Exchange에 대 한 지원 리소스에 대 한이 페이지를 체크아웃 합니다.
 
-  - [장애가 있는 사용자를 위한 내게 필요한 옵션](accessibility-for-people-with-disabilities-exchange-2013-help.md)   이 항목에서는 장애인이 Microsoft Exchange를 보다 편리하게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 중요한 정보를 제공합니다.
+  - [장애가 있는 사용자를 위한 내게 필요한 옵션](https://docs.microsoft.com/ko-kr/exchange/about-exchange-documentation/accessibility)   이 항목에서는 장애인이 Microsoft Exchange를 보다 편리하게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 중요한 정보를 제공합니다.
 

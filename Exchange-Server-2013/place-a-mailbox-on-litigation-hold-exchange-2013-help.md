@@ -39,7 +39,7 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
   - 복구 가능한 항목 폴더에 대 한 할당량 Exchange Online 자동으로 사서함 소송 보존에 배치 하면 100GB로 증가 되었습니다. 이 폴더의 기본 크기는 30 GB입니다.
 
-  - 삭제 된 항목을 유지 하 고도 보존이 제거 될 때까지 수정 된 항목의 원래 버전을 유지 하는 소송 보존 합니다. 필요에 따라 지정 된 기간 동안 사서함 항목을 보존 하는 보존 기간을 지정할 수 있습니다. 보류 기간 기간을 지정 하면 메시지를 받은 또는 사서함 항목을 만들 날짜부터 계산 됩니다. 만들려는 원본 위치 유지를 사용 하 여, 사용자 지정 된 조건을 충족 하는 항목을 유지 하려면 *쿼리 기반* 보존 합니다. 자세한 내용은 [만들기 또는 In-place Hold 제거](create-or-remove-an-in-place-hold-exchange-2013-help.md)를 참조 합니다.
+  - 삭제 된 항목을 유지 하 고도 보존이 제거 될 때까지 수정 된 항목의 원래 버전을 유지 하는 소송 보존 합니다. 필요에 따라 지정 된 기간 동안 사서함 항목을 보존 하는 보존 기간을 지정할 수 있습니다. 보류 기간 기간을 지정 하면 메시지를 받은 또는 사서함 항목을 만들 날짜부터 계산 됩니다. 만들려는 원본 위치 유지를 사용 하 여, 사용자 지정 된 조건을 충족 하는 항목을 유지 하려면 *쿼리 기반* 보존 합니다. 자세한 내용은 [만들기 또는 In-place Hold 제거](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds)를 참조 합니다.
 
   - 셸을 사용 하 여 Exchange Online 사서함을 보류 하, Exchange Online PowerShell을 사용 해야 합니다. 자세한 내용은 [원격 PowerShell을 사용하여 Exchange Online에 연결](https://technet.microsoft.com/ko-kr/library/jj984289\(v=exchg.150\))을 참조 하십시오.
 

@@ -29,5 +29,5 @@ Microsoft Office Communications Server 2007 R2 또는 Microsoft Lync Server를 �
 
   - [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)   지원되는 VoIP 게이트웨이, IP PBX 및 PBX에 대해 알아봅니다.
 
-  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)  VoIP 게이트웨이, IP PBX 및 PBX를 설정하는 방법에 대해 알아봅니다.
+  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)  VoIP 게이트웨이, IP PBX 및 PBX를 설정하는 방법에 대해 알아봅니다.
 

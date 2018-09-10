@@ -27,11 +27,11 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
 
   - Exchange 2010 또는 Exchange 2013 조직에는 다음 요구 사항을 만족 하는지 확인 합니다.
     
-      - UM 다이얼 플랜이 만들어졌습니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)를 참조하십시오.
+      - UM 다이얼 플랜이 만들어졌습니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)를 참조하십시오.
     
-      - UM 사서함 정책이 만들어졌습니다. 자세한 단계는 [UM 사서함 정책 만들기](create-a-um-mailbox-policy-exchange-2013-help.md)를 참조하십시오.
+      - UM 사서함 정책이 만들어졌습니다. 자세한 단계는 [UM 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)를 참조하십시오.
     
-      - UM IP 게이트웨이가 만들어졌습니다. 자세한 단계는 [UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md)를 참조하십시오.
+      - UM IP 게이트웨이가 만들어졌습니다. 자세한 단계는 [UM IP 게이트웨이 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)를 참조하십시오.
     
       - Exchange 2010 UM 서버를 UM 다이얼 플랜에 추가 되었습니다. Exchange 2013 Lync server를 사용 하는 경우 SIP URI 다이얼 플랜에 모든 클라이언트 액세스 서버와 사서함 서버를 추가 합니다. 자세한 단계는 [다이얼 플랜에 UM 서버 추가](https://go.microsoft.com/fwlink/p/?linkid=313051) 또는 [SIP URI 다이얼 플랜에 사서함 및 클라이언트 액세스 서버를 추가 합니다.](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)를 참조 하십시오.
 

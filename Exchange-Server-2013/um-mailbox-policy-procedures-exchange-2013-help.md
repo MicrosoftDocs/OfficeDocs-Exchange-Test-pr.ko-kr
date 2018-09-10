@@ -17,9 +17,9 @@ _**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**마지막으로 수정된 항목:** 2013-05-03_
 
-[UM 사서함 정책 만들기](create-a-um-mailbox-policy-exchange-2013-help.md)
+[UM 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)
 
-[UM 사서함 정책 관리](manage-a-um-mailbox-policy-exchange-2013-help.md)
+[UM 사서함 정책 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-[UM 사서함 정책 삭제](delete-a-um-mailbox-policy-exchange-2013-help.md)
+[UM 사서함 정책 삭제](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/delete-um-mailbox-policy)
 

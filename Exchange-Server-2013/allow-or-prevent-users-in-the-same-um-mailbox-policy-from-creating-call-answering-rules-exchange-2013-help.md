@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2013-02-22_
 
 전화 응답 규칙을 구성 하는 UM (통합 메시징) 사서함 정책과 사용 하 여 연관 된 사용자를 허용 하거나에서 작업을 금지 수 있습니다. UM 다이얼 플랜에서 전화 응답 규칙을 구성 하는 옵션을 비활성화 하는 경우에 전화 응답 규칙 기능 UM 사서함 정책에 연결 된 UM 사용이 가능한 사용자에 게 사용할 수 없습니다. 기본 설정은 사용 됩니다.
 
-사용자의 착신 전환 허용과 관련된 추가 관리 작업에 대한 자세한 내용은 [프로시저를 호출 하는 착신 전환](forwarding-calls-procedures-exchange-2013-help.md)를 참조하십시오.
+사용자의 착신 전환 허용과 관련된 추가 관리 작업에 대한 자세한 내용은 [프로시저를 호출 하는 착신 전환](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/forwarding-calls-procedures)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -27,9 +27,9 @@ _**마지막으로 수정된 항목:** 2013-02-22_
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [통합된 메시징 사용 권한](unified-messaging-permissions-exchange-2013-help.md)의 "UM 사서함 정책" 항목
 
-  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)을 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](create-a-um-mailbox-policy-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)을 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 

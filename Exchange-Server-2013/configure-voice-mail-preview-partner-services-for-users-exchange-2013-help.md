@@ -33,9 +33,9 @@ UM 사서함 정책에 관련된 추가 관리 작업에 대한 자세한 내용
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [통합된 메시징 사용 권한](unified-messaging-permissions-exchange-2013-help.md)의 "UM 사서함 정책" 항목
 
-  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)를 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)를 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](create-a-um-mailbox-policy-exchange-2013-help.md)를 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 사서함 정책을 만들었는지 확인합니다. 자세한 단계는 [UM 사서함 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)를 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -49,7 +49,7 @@ UM 사서함 정책에 관련된 추가 관리 작업에 대한 자세한 내용
 
 ## 1단계: 파트너 서비스에 등록
 
-인증 된 파트너 및 등록 하는 방법에 대 한 자세한 내용은 목록이 찾으려고 [음성 메일 미리 보기 advisor](voice-mail-preview-advisor-exchange-2013-help.md) 를 참조 하거나 [Microsoft 적절치](https://go.microsoft.com/fwlink/p/?linkid=281966) 웹사이트를 참조 합니다. 등록 된 계정이 후 파트너 id와 SMTP 주소 음성 메시지를 전달를 사용 하 여 음성 메일 미리 보기 파트너를 제공 합니다.
+인증 된 파트너 및 등록 하는 방법에 대 한 자세한 내용은 목록이 찾으려고 [음성 메일 미리 보기 advisor](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor) 를 참조 하거나 [Microsoft 적절치](https://go.microsoft.com/fwlink/p/?linkid=281966) 웹사이트를 참조 합니다. 등록 된 계정이 후 파트너 id와 SMTP 주소 음성 메시지를 전달를 사용 하 여 음성 메일 미리 보기 파트너를 제공 합니다.
 
 2단계에서는 1단계에서 얻은 파트너 ID 및 SMTP 주소를 필수 UM 사서함 정책에 적용합니다.
 
@@ -80,5 +80,5 @@ UM 다이얼 플랜에서 UM 사용 가능 사용자 중 일부에 대해서만 
 
   - [Set-UMMailbox](https://technet.microsoft.com/ko-kr/library/bb124893\(v=exchg.150\))
 
-음성 메일 미리 보기 파트너 프로그램에 대한 자세한 내용은 [음성 메일 미리 보기 advisor](voice-mail-preview-advisor-exchange-2013-help.md)를 참조하십시오.
+음성 메일 미리 보기 파트너 프로그램에 대한 자세한 내용은 [음성 메일 미리 보기 advisor](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor)를 참조하십시오.
 

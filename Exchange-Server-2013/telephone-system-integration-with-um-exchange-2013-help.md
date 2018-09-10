@@ -49,7 +49,7 @@ UM은 VoIP 게이트웨이의 기능을 사용하여 ISDN 및 QSIG와 같은 TDM
 
   - [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
-  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)
 

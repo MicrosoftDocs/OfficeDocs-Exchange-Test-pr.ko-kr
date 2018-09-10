@@ -23,5 +23,5 @@ _**마지막으로 수정된 항목:** 2012-10-13_
 
 ## 사용자에 대 한 음성 메일 설정
 
-UM에 대 한 사용자를 활성화 하기 전에 사용 하 여 다이얼 플랜의 종류를 고려해 야, 사용할 하 고 어떤 PIN 정책, Outlook Voice Access 및 기타 기능을 결정 하는 내선 번호 사용자에 대 한 액세스를 허용 합니다. 자세한 내용은 [사용자에 대 한 음성 메일](voice-mail-for-users-exchange-2013-help.md)를 참조 합니다.
+UM에 대 한 사용자를 활성화 하기 전에 사용 하 여 다이얼 플랜의 종류를 고려해 야, 사용할 하 고 어떤 PIN 정책, Outlook Voice Access 및 기타 기능을 결정 하는 내선 번호 사용자에 대 한 액세스를 허용 합니다. 자세한 내용은 [사용자에 대 한 음성 메일](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)를 참조 합니다.
 

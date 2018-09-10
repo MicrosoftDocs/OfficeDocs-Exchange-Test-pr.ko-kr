@@ -47,7 +47,7 @@ Exchange Server 2013에서는 공용 폴더가 기존 데이터베이스 아키�
 <tr class="odd">
 <td><p>공용 폴더 사서함의 총 수</p></td>
 <td><p>100</p></td>
-<td><p>공용 폴더 사서함을 100개보다 많이 만들 수는 있지만 100개를 초과하는 사서함은 지원되지 않습니다. <a href="create-a-public-folder-mailbox-exchange-2013-help.md">공용 폴더 사서함 만들기</a></p></td>
+<td><p>공용 폴더 사서함을 100개보다 많이 만들 수는 있지만 100개를 초과하는 사서함은 지원되지 않습니다. <a href="https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox">공용 폴더 사서함 만들기</a></p></td>
 </tr>
 <tr class="even">
 <td><p>계층 구조의 총 공용 폴더 수</p></td>

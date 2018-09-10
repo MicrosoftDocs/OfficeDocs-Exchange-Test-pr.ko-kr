@@ -19,7 +19,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
 
 <strong>요약:</strong>  Office 365 그룹에 Exchange 2010 공용 폴더를 이동 하는 방법입니다.
 
-*마이그레이션 일괄 처리*라고 하는 프로세스를 통해 Office 365 그룹에 Exchange 2010 공용 폴더의 일부 또는 전부를 이동할 수 있습니다. 그룹은 공용 폴더에 비해 특정 이점을 제공 하는 Microsoft에서 제공 하는 새로운 공동 작업입니다. [Office 365 그룹에 공용 폴더 마이그레이션](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md) 공용 폴더 및 그룹 및 조직 수 또는 그룹에 전환에서 혜택을 받는 하지 이유 이유 간의 차이점에 대 한 개요를 참조 하십시오.
+*마이그레이션 일괄 처리*라고 하는 프로세스를 통해 Office 365 그룹에 Exchange 2010 공용 폴더의 일부 또는 전부를 이동할 수 있습니다. 그룹은 공용 폴더에 비해 특정 이점을 제공 하는 Microsoft에서 제공 하는 새로운 공동 작업입니다. [Office 365 그룹에 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) 공용 폴더 및 그룹 및 조직 수 또는 그룹에 전환에서 혜택을 받는 하지 이유 이유 간의 차이점에 대 한 개요를 참조 하십시오.
 
 이 문서는 Exchange 2010 공용 폴더의 실제 일괄 처리 마이그레이션을 수행 하기 위한 단계별 절차를 포함 합니다.
 

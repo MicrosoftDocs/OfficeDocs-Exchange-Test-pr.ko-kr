@@ -269,7 +269,7 @@ S:TRA=ETRP|ruleId=C27D21EECA0311E0BCB896154924019B|LoadW=200|LoadC=100|ExecW=550
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [DLP 정책 감지에 대 한 문제 보고서 만들기](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

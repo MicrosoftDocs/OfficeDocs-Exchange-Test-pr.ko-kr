@@ -17,11 +17,11 @@ _**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**마지막으로 수정된 항목:** 2013-01-30_
 
-[인증 된 호출자 로부터 보호 된 음성 메일 구성](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
+[인증 된 호출자 로부터 보호 된 음성 메일 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-authenticated-callers)
 
-[인증 되지 않은 발신자 로부터 보호 된 음성 메일 구성](configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md)
+[인증 되지 않은 발신자 로부터 보호 된 음성 메일 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-unauthenticated-callers)
 
-[보호 된 음성 메시지의 멀티미디어 재생을 사용 하지 않도록 설정 하거나 사용](enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md)
+[보호 된 음성 메시지의 멀티미디어 재생을 사용 하지 않도록 설정 하거나 사용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-multimedia-playback)
 
-[Windows 권한 관리를 지원 하지 않는 전자 메일 클라이언트에 대해 표시할 텍스트를 지정 합니다.](specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md)
+[Windows 권한 관리를 지원 하지 않는 전자 메일 클라이언트에 대해 표시할 텍스트를 지정 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management)
 

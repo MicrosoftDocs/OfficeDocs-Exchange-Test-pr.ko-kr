@@ -31,7 +31,7 @@ Exchange 2013 에서는 다음과 같은 기본 구성 요소 및 기능을 활�
 
   - **주소록 정책 (Abp)**   Exchange 2010 s p 2에에서 도입 된, Abp Exchange 2013 에서 주소 목록에 대 한 사용자 액세스를 제어 하, 전체 주소 목록, gal (전체) 사용되며이 오프 라인 주소록이 (Oab) Exchange 조직에 합니다. Abp 다중 테 넌 트 조직 구조를 따라 이러한 리소스의 논리적 그룹을 만들려면 하 고 개별 사용자에 게 할당할 수 있는 단일, 가상 개체에 이러한 다른 Active Directory 개체를 그룹화 합니다. Exchange 2013 에서 ABP 기능은 된 Exchange 2010 s p 2에서에서와 비슷합니다.
     
-    에 대 한 자세한 Abp Exchange 2013 에서 [주소록 정책](address-book-policies-exchange-2013-help.md)를 참조 하십시오.
+    에 대 한 자세한 Abp Exchange 2013 에서 [주소록 정책](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies)를 참조 하십시오.
 
   - **관리 솔루션 호스팅**   Exchange 2013 를 사용 하 여 호스팅된 Exchange 솔루션을 제공 하는 일부 관리자가 사용자 지정 된 호스팅 관리 방식을 사용 하 여 이점을 얻을 수 있습니다. Exchange 관리 센터 (EAC)의 일부 제한 사항으로 인해 Microsoft는 호스팅된 Exchange 2013 조직에 대해 승인 된 프레임 워크와 지침을 준수 하는 컨트롤 패널 및 자동화 솔루션 개발에이 지원 하기 위해 타사 공급 업체와 함께 작동 합니다. 호스팅된 Exchange 솔루션을 구성 하는 조직에서는 호스팅된 조직 같은 상황에서는 필요를 관리 하는 이러한 도구를 활용 하는 것이 좋습니다.
     

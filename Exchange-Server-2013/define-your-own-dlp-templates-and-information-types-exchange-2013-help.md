@@ -49,7 +49,7 @@ Microsoft Exchange의 DLP는 조직별 정책을 중요한 정보에 적용하�
 
 2.  사용자 지정 템플릿을 가져옵니다. 자세한 내용은 [파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)를 참조하세요.
 
-3.  사용자 지정 템플릿을 기반으로 하는 DLP 정책을 만듭니다. 자세한 내용은 [템플릿에서 DLP 정책 만들기](how-to-new-dlp-data-loss-prevention-policy-template.md)를 참조하세요.
+3.  사용자 지정 템플릿을 기반으로 하는 DLP 정책을 만듭니다. 자세한 내용은 [템플릿에서 DLP 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)를 참조하세요.
 
 4.  1~2단계를 반복하여 사용자 지정 템플릿을 업데이트합니다.
 
@@ -83,7 +83,7 @@ XML 파일에 해당하는 분류 규칙 패키지로 자체 중요한 정보 �
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

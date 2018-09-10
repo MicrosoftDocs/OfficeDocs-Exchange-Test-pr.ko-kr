@@ -37,11 +37,11 @@ UM(통합 메시징) 통화 보고서는 UM으로 전달되거나 UM에서 건 �
 
   - [조직에서 음성 메일 호출을 검토 합니다.](review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md)   UM 호출 통계 보고서를 사용하면 UM의 가용성과 오디오 품질을 모니터링하고 용량 계획을 위해 사용량을 추적할 수 있습니다.
 
-  - [사용자에 대 한 음성 메일 호출을 검토 합니다.](review-the-voice-mail-calls-for-a-user-exchange-2013-help.md)   사용자 호출 로그를 사용하면 지난 90일 동안 특정 사용자의 호출에 대한 자세한 정보를 확인할 수 있습니다.
+  - [사용자에 대 한 음성 메일 호출을 검토 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user)   사용자 호출 로그를 사용하면 지난 90일 동안 특정 사용자의 호출에 대한 자세한 정보를 확인할 수 있습니다.
 
-  - [조직에서 음성 통화의 오디오 품질을 확인 합니다.](investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md)   조직에서 UM 호출의 오디오 품질에 문제가 있는 경우 UM 호출 통계 보고서의 오디오 품질 정보를 사용하여 문제의 원인을 파악할 수 있습니다.
+  - [조직에서 음성 통화의 오디오 품질을 확인 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization)   조직에서 UM 호출의 오디오 품질에 문제가 있는 경우 UM 호출 통계 보고서의 오디오 품질 정보를 사용하여 문제의 원인을 파악할 수 있습니다.
 
-  - [사용자에 대 한 음성 통화의 오디오 품질을 확인 합니다.](investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md)   UM 호출의 오디오 품질에 문제가 있는 경우 사용자 호출 로그의 오디오 품질 정보를 사용하여 문제의 원인을 파악할 수 있습니다.
+  - [사용자에 대 한 음성 통화의 오디오 품질을 확인 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user)   UM 호출의 오디오 품질에 문제가 있는 경우 사용자 호출 로그의 오디오 품질 정보를 사용하여 문제의 원인을 파악할 수 있습니다.
 
-  - [음성 메일 호출 레코드를 해석 합니다.](interpret-voice-mail-call-records-exchange-2013-help.md)   자세한 데이터를 내보내 오디오 품질이나 거부된 호출과 관련된 문제를 진단하고 UM 서비스에 대한 감사나 보고서용으로 정보를 제공할 수 있습니다.
+  - [음성 메일 호출 레코드를 해석 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records)   자세한 데이터를 내보내 오디오 품질이나 거부된 호출과 관련된 문제를 진단하고 UM 서비스에 대한 감사나 보고서용으로 정보를 제공할 수 있습니다.
 
