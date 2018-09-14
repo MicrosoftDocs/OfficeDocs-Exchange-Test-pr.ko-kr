@@ -17,11 +17,11 @@ _**적용 대상:** Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2012-10-11_
 
-[주소록 정책 만들기](create-an-address-book-policy-exchange-2013-help.md)
+[주소록 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
-[메일 사용자에 게 주소록 정책 할당](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
+[메일 사용자에 게 주소록 정책 할당](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
 
-[주소록 정책 설정 변경](change-the-settings-of-an-address-book-policy-exchange-2013-help.md)
+[주소록 정책 설정 변경](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[주소록 정책 제거](remove-an-address-book-policy-exchange-2013-help.md)
+[주소록 정책 제거](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/remove-an-address-book-policy)
 

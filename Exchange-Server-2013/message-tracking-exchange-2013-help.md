@@ -77,7 +77,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
 
   - **MSGTRK**   Transport Service와 연관된 로그입니다.
 
-  - **MSGTRKMA**   중재된 전송에서 사용하는 승인 및 거부와 연관된 로그입니다. 자세한 내용은 [메시지 승인 관리](manage-message-approval-exchange-2013-help.md)을 참조하십시오.
+  - **MSGTRKMA**   중재된 전송에서 사용하는 승인 및 거부와 연관된 로그입니다. 자세한 내용은 [메시지 승인 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval)을 참조하십시오.
 
   - **MSGTRKMD**   사서함 전송 배달 서비스에 의해 사서함으로 배달되는 메시지와 연관된 로그입니다.
 
@@ -343,7 +343,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
 </tr>
 <tr class="even">
 <td><p><strong>INITMESSAGECREATED</strong></p></td>
-<td><p>중재된 받는 사람에게 보낸 메시지가 승인을 위해 중재 사서함으로 전송되었습니다. 자세한 내용은 <a href="manage-message-approval-exchange-2013-help.md">메시지 승인 관리</a>을 참조하십시오.</p></td>
+<td><p>중재된 받는 사람에게 보낸 메시지가 승인을 위해 중재 사서함으로 전송되었습니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">메시지 승인 관리</a>을 참조하십시오.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LOAD</strong></p></td>
@@ -351,7 +351,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
 </tr>
 <tr class="even">
 <td><p><strong>MODERATIONEXPIRE</strong></p></td>
-<td><p>중재된 받는 사람에 대한 중재자가 메시지를 승인하거나 거부하지 않아 메시지가 만료되었습니다. 중재된 받는 사람에 대한 자세한 내용은 <a href="manage-message-approval-exchange-2013-help.md">메시지 승인 관리</a>을 참조하십시오.</p></td>
+<td><p>중재된 받는 사람에 대한 중재자가 메시지를 승인하거나 거부하지 않아 메시지가 만료되었습니다. 중재된 받는 사람에 대한 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">메시지 승인 관리</a>을 참조하십시오.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MODERATORAPPROVE</strong></p></td>
@@ -478,7 +478,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
 </tr>
 <tr class="odd">
 <td><p><strong>APPROVAL</strong></p></td>
-<td><p>이벤트 원본이 중재된 받는 사람에게 사용되는 승인 프레임워크입니다. 자세한 내용은 <a href="manage-message-approval-exchange-2013-help.md">메시지 승인 관리</a>을 참조하십시오.</p></td>
+<td><p>이벤트 원본이 중재된 받는 사람에게 사용되는 승인 프레임워크입니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">메시지 승인 관리</a>을 참조하십시오.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BOOTLOADER</strong></p></td>

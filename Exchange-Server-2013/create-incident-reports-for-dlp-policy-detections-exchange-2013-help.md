@@ -139,5 +139,5 @@ Exchange Server 2013 DLP 정책 규칙 집합 내에서 문제 보고서 생성 
 
 [DLP 정책 검색 보고서 보기](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2013-04-19_
 
 
 > [!IMPORTANT]
-> 자동 전화 교환에서 업무 시간을 구성해야 합니다. 자세한 내용은 <A href="configure-business-hours-exchange-2013-help.md">업무 시간을 구성 합니다.</A>을 참조하십시오.
+> 자동 전화 교환에서 업무 시간을 구성해야 합니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-business-hours">업무 시간을 구성 합니다.</A>을 참조하십시오.
 
 
 
@@ -35,9 +35,9 @@ _**마지막으로 수정된 항목:** 2013-04-19_
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [통합된 메시징 사용 권한](unified-messaging-permissions-exchange-2013-help.md)의 "UM 자동 전화 교환" 항목
 
-  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)을 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 자동 전화 교환을 만들었는지 확인합니다. 자세한 단계는 [UM 자동 전화 교환 만들기](create-a-um-auto-attendant-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 자동 전화 교환을 만들었는지 확인합니다. 자세한 단계는 [UM 자동 전화 교환 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant)을 참조하십시오.
 
   - 메뉴 음성 안내에 사용할 .wav 또는 .wma 파일을 만듭니다.
 

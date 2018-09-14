@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 이 항목에서는 오프 라인 주소록 (OAB)를 제거 하는 방법에 설명 합니다.
 
-OAB와 관련된 추가 관리 작업에 대한 자세한 내용은 [오프 라인 주소록 절차](offline-address-book-procedures-exchange-2013-help.md)를 참조하십시오.
+OAB와 관련된 추가 관리 작업에 대한 자세한 내용은 [오프 라인 주소록 절차](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/offline-address-book-procedures)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -29,7 +29,7 @@ OAB와 관련된 추가 관리 작업에 대한 자세한 내용은 [오프 라�
 
   - Exchange Online에서는 기본적으로 주소 목록 역할이 어떤 역할 그룹에도 할당되지 않습니다. 주소 목록 역할이 필요한 cmdlet을 사용하려면 역할 그룹에 이 역할을 추가해야 합니다. 자세한 내용은 [역할 그룹 관리](manage-role-groups-exchange-2013-help.md) 항목의 "역할 그룹에 역할 추가" 섹션을 참조하세요.
 
-  - 사용자에 게 또는 사서함 데이터베이스에 연결 된 OAB를 제거한 후 해당 사용자에 대 한 새 OAB를 할당할 때까지 받는 기본 OAB를 다운로드 합니다. 기본 OAB를 제거 하는 경우에 기본 OAB로 다른 OAB를 할당 해야 합니다. 기본 OAB를 변경 하는 방법에 대 한 자세한 내용은 [기본 오프 라인 주소록을 변경 합니다.](change-the-default-offline-address-book-exchange-2013-help.md)합니다.
+  - 사용자에 게 또는 사서함 데이터베이스에 연결 된 OAB를 제거한 후 해당 사용자에 대 한 새 OAB를 할당할 때까지 받는 기본 OAB를 다운로드 합니다. 기본 OAB를 제거 하는 경우에 기본 OAB로 다른 OAB를 할당 해야 합니다. 기본 OAB를 변경 하는 방법에 대 한 자세한 내용은 [기본 오프 라인 주소록을 변경 합니다.](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/change-default-offline-address-book)합니다.
 
   - 이 절차를 수행하는 데 EAC(Exchange 관리 센터)를 사용할 수 없습니다. 셸을 사용해야 합니다.
 

@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2015-04-08_
 
-메일 그룹 및 동적 메일 그룹의 크기 정보를 제공하는 메일 설명은 그룹 메트릭 데이터를 사용합니다. 그룹 메트릭 데이터는 지정된 사서함 서버에서 생성됩니다. 그룹 메트릭에 대한 자세한 내용은 [그룹 메트릭 및 메일 설명](group-metrics-and-mailtips-exchange-2013-help.md)를 참조하십시오.
+메일 그룹 및 동적 메일 그룹의 크기 정보를 제공하는 메일 설명은 그룹 메트릭 데이터를 사용합니다. 그룹 메트릭 데이터는 지정된 사서함 서버에서 생성됩니다. 그룹 메트릭에 대한 자세한 내용은 [그룹 메트릭 및 메일 설명](group-metrics-and-https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips)를 참조하십시오.
 
 사서함 서버에 대해 그룹 메트릭 생성을 사용하거나 사용하지 않도록 설정할 수 있습니다.
 
@@ -27,7 +27,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [받는 사람에 게 사용 권한](recipients-permissions-exchange-2013-help.md)의 "그룹 메트릭" 항목
 
-  - 그룹 메트릭 데이터는 메일 설명에만 사용됩니다. 조직에서 그룹 메트릭 메일 설명이 사용하도록 설정되었는지 확인합니다. 자세한 단계는 [조직 관계에 대 한 메일 설명 관리](manage-mailtips-for-organization-relationships-exchange-2013-help.md)을 참조하십시오.
+  - 그룹 메트릭 데이터는 메일 설명에만 사용됩니다. 조직에서 그룹 메트릭 메일 설명이 사용하도록 설정되었는지 확인합니다. 자세한 단계는 [조직 관계에 대 한 메일 설명 관리](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships)을 참조하십시오.
 
   - 이 절차는 셸을 사용해야 수행할 수 있습니다.
 

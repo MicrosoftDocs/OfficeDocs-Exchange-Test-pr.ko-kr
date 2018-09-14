@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 항목의 성능 카운터는 Microsoft Exchange Server 2010용 MRM(메시징 레코드 관리)을 구현하면서 관리되는 폴더 도우미를 모니터링합니다. 관리되는 폴더 도우미를 실행하는 데에는 리소스가 많이 사용되기 때문에 서버가 추가 부하를 견딜 수 있는 경우에만 실행해야 합니다. 관리되는 폴더 도우미가 실행 중일 때 서버 성능도 모니터링해야 합니다. 이 항목에 나열된 성능 카운터와 함께 디스크 성능, CPU 사용 등의 항목을 모니터링하는 추가 성능 카운터를 모니터링할 수도 있습니다.
 
-MRM을 실행하는 컴퓨터 모니터링에 대한 자세한 내용은 [모니터링 메시징 레코드 관리](monitoring-messaging-records-management-exchange-2013-help.md)을 참조하십시오.
+MRM을 실행하는 컴퓨터 모니터링에 대한 자세한 내용은 [모니터링 메시징 레코드 관리](monitoring-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)을 참조하십시오.
 
 ## MRM에 대한 성능 카운터
 

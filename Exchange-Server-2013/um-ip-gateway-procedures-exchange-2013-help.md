@@ -17,19 +17,19 @@ _**적용 대상:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 _**마지막으로 수정된 항목:** 2013-05-03_
 
-[UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP 게이트웨이 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
-[UM IP 게이트웨이 관리](manage-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP 게이트웨이 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
-[UM IP 게이트웨이 사용 하도록 설정](enable-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP 게이트웨이 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway)
 
-[UM IP 게이트웨이 사용 하지 않도록 설정](disable-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP 게이트웨이 사용 하지 않도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway)
 
 [정규화 된 도메인 이름 구성](configure-a-fully-qualified-domain-name-exchange-2013-help.md)
 
 [IP 주소를 구성 합니다.](configure-the-ip-address-exchange-2013-help.md)
 
-[수신 대기 포트를 구성 합니다.](configure-the-listening-port-exchange-2013-help.md)
+[수신 대기 포트를 구성 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port)
 
-[UM IP 게이트웨이 삭제 합니다.](delete-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP 게이트웨이 삭제 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway)
 

@@ -63,7 +63,7 @@ Microsoft Exchange Server 2013 사서함의 정보에 액세스하는 데 사용
 <td><p>웹 브라우저를 통해 사용자에게 Exchange 2013 사서함에 대한 액세스를 제공하는 Outlook Web App에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="mailtips-exchange-2013-help.md">MailTips</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a></p></td>
 <td><p>사용자가 메시지를 작성할 때 표시되는 정보성 메시지인 메일 설명에 대해 알아봅니다.</p></td>
 </tr>
 </tbody>

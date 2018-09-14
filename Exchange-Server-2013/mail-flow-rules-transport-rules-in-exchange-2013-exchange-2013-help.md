@@ -25,19 +25,19 @@ Exchange Online 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Onlin
 
 메일 흐름 규칙을 관리 하 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸 를 사용할 수 있습니다. 전송 규칙을 관리 하는 방법에 대 한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조 하십시오.
 
-각 규칙에 대해 규칙을 적용하거나, 규칙을 테스트하거나, 규칙을 테스트하고 보낸 사람에게 알릴 수 있는 옵션이 제공됩니다. 테스트 옵션에 대한 자세한 내용은 [메일 흐름 규칙을 테스트 합니다.](test-a-mail-flow-rule-exchange-2013-help.md) 및 [정책 팁](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)을 참조하세요.
+각 규칙에 대해 규칙을 적용하거나, 규칙을 테스트하거나, 규칙을 테스트하고 보낸 사람에게 알릴 수 있는 옵션이 제공됩니다. 테스트 옵션에 대한 자세한 내용은 [메일 흐름 규칙을 테스트 합니다.](test-a-mail-flow-rule-exchange-2013-help.md) 및 [정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)을 참조하세요.
 
 메일 흐름 규칙을 사용해서 특정 메시징 정책을 실행하려면 다음 항목을 참조하세요.
 
   - [전송 규칙을 사용 하 여 메시지 첨부 파일을 검사 하려면](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [일반적인 첨부 파일 차단 시나리오](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [일반적인 첨부 파일 차단 시나리오](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [조직 전체의 법적 고 지 사항, 서명, 바닥글 또는 머리글](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
   - [일반적인 메시지 승인 시나리오](common-message-approval-scenarios-exchange-2013-help.md)
 
@@ -137,7 +137,7 @@ Exchange Online 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Onlin
 <td><p><strong>모드</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>규칙이 메시지 처리를 즉시 시작하도록 할지 여부 또는 메시지의 배달에 영향을 주지 않고 규칙을 테스트할지 여부를 지정할 수 있습니다(데이터 손실 방지 또는 DLP 정책 팁 사용 또는 사용 안 함).</p>
-<p>정책 팁은 Outlook 또는 웹에서 Outlook에서 메시지를 작성하는 사람에게 가능한 정책 위반에 대한 정보를 제공하는 간단한 메모를 표시합니다. 자세한 내용은 <a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">정책 팁</a>을 참조하세요.</p>
+<p>정책 팁은 Outlook 또는 웹에서 Outlook에서 메시지를 작성하는 사람에게 가능한 정책 위반에 대한 정보를 제공하는 간단한 메모를 표시합니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips">정책 팁</a>을 참조하세요.</p>
 <p>모드에 대한 자세한 내용은 <a href="test-a-mail-flow-rule-exchange-2013-help.md">메일 흐름 규칙을 테스트 합니다.</a>를 참조하세요.</p></td>
 </tr>
 <tr class="odd">

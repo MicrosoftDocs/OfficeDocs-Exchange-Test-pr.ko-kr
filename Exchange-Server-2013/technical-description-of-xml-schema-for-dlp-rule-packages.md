@@ -624,7 +624,7 @@ CL선호도= 1 – \[(1 – CL증거 1) X (1 – CL증거 2) X (1 – CL증거 2
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

@@ -31,11 +31,11 @@ _**마지막으로 수정된 항목:** 2017-12-20_
 
   - 모두 검색 하 여 사용자의 사서함에서 메시지를 삭제 하려면 다음 관리 역할을 할당 해야 합니다.
     
-      - **사서함 검색**   이 역할을 통해 사용자는 조직의 여러 사서함에 있는 메시지를 검색할 수 있습니다. 관리자에게는 기본적으로 이 역할이 할당되지 않습니다. 사서함을 검색할 수 있도록 이 역할을 자신에게 할당하려면 자신을 검색 관리 역할 그룹의 구성원으로 추가합니다. [Exchange eDiscovery 사용 권한 할당](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)를 참조하세요.
+      - **사서함 검색**   이 역할을 통해 사용자는 조직의 여러 사서함에 있는 메시지를 검색할 수 있습니다. 관리자에게는 기본적으로 이 역할이 할당되지 않습니다. 사서함을 검색할 수 있도록 이 역할을 자신에게 할당하려면 자신을 검색 관리 역할 그룹의 구성원으로 추가합니다. [Exchange eDiscovery 사용 권한 할당](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)를 참조하세요.
     
       - **사서함 가져오기 내보내기**   이 역할을 사용 하면 사용자의 사서함에서 메시지를 삭제할 수 있습니다. 기본적으로이 역할은 모든 역할 그룹에 할당 되지 않습니다. 사용자의 사서함에서 메시지를 삭제 하려면 조직 관리 역할 그룹에는 사서함 가져오기 내보내기 역할을 추가할 수 있습니다. 자세한 내용은 [역할 그룹 관리](manage-role-groups-exchange-2013-help.md) 의 "역할을 역할 그룹에 게 추가" 섹션을 참조 하십시오.
 
-  - 메시지를 삭제 하려는 사서함 단일 항목 복구를 사용할 수 있으면 먼저 기능을 비활성화 해야 합니다. 자세한 내용은 [사서함에 대 한 단일 항목 복구를 사용 하지 않도록 설정 하거나 사용](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)을 참조 하십시오.
+  - 메시지를 삭제 하려는 사서함 단일 항목 복구를 사용할 수 있으면 먼저 기능을 비활성화 해야 합니다. 자세한 내용은 [사서함에 대 한 단일 항목 복구를 사용 하지 않도록 설정 하거나 사용](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)을 참조 하십시오.
 
   - 메시지를 삭제 하려는 사서함은 보류 상태로 변경 하는 경우에 레코드 관리 또는 보류를 제거 하 고 사서함 콘텐츠를 삭제 하기 전에 법률 부서를 확인 하는 것이 좋습니다. 승인을 얻으려면 항목 [복구 가능한 항목 폴더를 정리](clean-up-the-recoverable-items-folder-exchange-2013-help.md)에 나열 된 단계를 수행 합니다.
 

@@ -39,7 +39,7 @@ Exchange 2013에서는 SharePoint 2013을 통해 페더레이션 검색 API를 �
 
   - [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
 
-  - [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [SharePoint 2013에서 Configure eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

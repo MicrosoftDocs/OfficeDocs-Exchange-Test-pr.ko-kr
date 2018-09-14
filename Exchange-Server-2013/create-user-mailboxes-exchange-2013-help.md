@@ -115,7 +115,7 @@ _**마지막으로 수정된 항목:** 2013-04-12_
         
         자세한 내용은 [전체에서 Exchange 2013의 보관](in-place-archiving-in-exchange-2013-exchange-2013-help.md)을 참조하십시오.
     
-      - **주소록 정책**   사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 대화방 목록 및 일련의 주소 목록이 들어 있습니다. 사서함 사용자에게 할당되면 ABP는 할당된 사용자에게 Outlook 및 Outlook Web App의 사용자 지정된 GAL에 대한 액세스 권한을 제공합니다. 자세한 내용은 [주소록 정책](address-book-policies-exchange-2013-help.md)을 참조하십시오.
+      - **주소록 정책**   사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 대화방 목록 및 일련의 주소 목록이 들어 있습니다. 사서함 사용자에게 할당되면 ABP는 할당된 사용자에게 Outlook 및 Outlook Web App의 사용자 지정된 GAL에 대한 액세스 권한을 제공합니다. 자세한 내용은 [주소록 정책](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies)을 참조하십시오.
         
         드롭다운 목록에서 이 사서함에 연결할 정책을 선택합니다.
 
@@ -193,7 +193,7 @@ _**마지막으로 수정된 항목:** 2013-04-12_
         
         자세한 내용은 [전체에서 Exchange 2013의 보관](in-place-archiving-in-exchange-2013-exchange-2013-help.md)을 참조하십시오.
     
-      - **주소록 정책**   사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 방 목록 및 일련의 주소 목록이 들어 있습니다. 사서함 사용자에게 할당되면 ABP는 할당된 사용자에게 Outlook 및 Outlook Web App의 사용자 지정된 GAL에 대한 액세스 권한을 제공합니다. 자세한 내용은 [주소록 정책](address-book-policies-exchange-2013-help.md)을 참조하십시오.
+      - **주소록 정책**   사서함에 대한 ABP(주소록 정책)를 지정하려면 이 옵션을 사용합니다. ABP에는 GAL(전체 주소 목록), OAB(오프라인 주소록), 방 목록 및 일련의 주소 목록이 들어 있습니다. 사서함 사용자에게 할당되면 ABP는 할당된 사용자에게 Outlook 및 Outlook Web App의 사용자 지정된 GAL에 대한 액세스 권한을 제공합니다. 자세한 내용은 [주소록 정책](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies)을 참조하십시오.
         
         드롭다운 목록에서 이 사서함에 연결할 정책을 선택합니다.
 

@@ -117,7 +117,7 @@ Exchange 관리 센터 (EAC)에서 특정 메일 그룹으로 메시지 승인 �
 
 ## 예제 5: 중요 한 정보를 포함 하는 메시지를 전달 합니다.
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)(DLP) 기능을 설치한 경우에 여러 종류의 중요 한 정보는 미리 정의 된 합니다. DLP와 메시지 조건 중요 한 정보를 포함 하는 것이 표시 됩니다. DLP가 있는지 여부는 조직에 고유한 중요 한 정보를 특정 패턴을 식별 하는 조건을 만들 수 있습니다.
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)(DLP) 기능을 설치한 경우에 여러 종류의 중요 한 정보는 미리 정의 된 합니다. DLP와 메시지 조건 중요 한 정보를 포함 하는 것이 표시 됩니다. DLP가 있는지 여부는 조직에 고유한 중요 한 정보를 특정 패턴을 식별 하는 조건을 만들 수 있습니다.
 
 중요 한 정보가 포함 된 메시지의 승인이 필요한 여기서 예는 다음과 같습니다. 이 예제에서는 신용 카드 번호를 포함 하는 메시지에는 승인을 받아야 합니다.
 
@@ -126,5 +126,5 @@ Exchange 관리 센터 (EAC)에서 특정 메일 그룹으로 메시지 승인 �
 ## 참고 항목
 
 
-[메시지 승인 관리](manage-message-approval-exchange-2013-help.md)
+[메시지 승인 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval)
 

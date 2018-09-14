@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2017-01-18_
 
 
 
-조직의 모든 사서함 데이터를 특정 기간에 대 한 유지할지 필요할 수 있습니다. 이 요구 사항을 충족 하기 위해 소송 보존 또는 원본 위치 유지를 사용할 수 있습니다. 원본 위치 유지 또는 소송 보존으로 설정 된 사서함을 삽입 한 후 복구 가능한 항목 폴더에서 사서함 항목을 수정 하는 또는 영구적으로 삭제 하는 유지 됩니다. 자세한 내용은 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)을 참조 하십시오.
+조직의 모든 사서함 데이터를 특정 기간에 대 한 유지할지 필요할 수 있습니다. 이 요구 사항을 충족 하기 위해 소송 보존 또는 원본 위치 유지를 사용할 수 있습니다. 원본 위치 유지 또는 소송 보존으로 설정 된 사서함을 삽입 한 후 복구 가능한 항목 폴더에서 사서함 항목을 수정 하는 또는 영구적으로 삭제 하는 유지 됩니다. 자세한 내용은 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)을 참조 하십시오.
 
 조직의 모든 사서함을 소송 보존 또는 원본 위치 유지 상태로 두기 전에 다음을 고려하세요.
 
@@ -111,7 +111,7 @@ _**마지막으로 수정된 항목:** 2017-01-18_
 
 ## 모든 사서함을 원본 위치 유지 상태로 설정
 
-EAC를 사용하여 최대 500개의 사서함을 선택하고 보류할 수 있습니다. 자세한 내용은 [만들기 또는 In-place Hold 제거](create-or-remove-an-in-place-hold-exchange-2013-help.md)을 참조하세요.
+EAC를 사용하여 최대 500개의 사서함을 선택하고 보류할 수 있습니다. 자세한 내용은 [만들기 또는 In-place Hold 제거](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds)을 참조하세요.
 
 
 > [!TIP]

@@ -25,13 +25,13 @@ Exchange Online 에서 사용자의 사서함에 IM 대화와 같은 Lync Online
 
 
 > [!NOTE]
-> Lync 항목을 제외 하는 원본 위치 유지를 구성할 수도 있습니다. 예, 조직 다른 콘텐츠 형식 보다 시간이 더 짧은 기간에 대 한 인스턴트 메시지 및 음성 메일 항목을 보존 하 선호 될 수 있습니다. 이 유형의 보존 정책을 구현 하려면 오랜 시간 (예: 7 년)에 대 한 콘텐츠를 보존 하 고이 보류에서 Lync 항목을 제외 하는 원본 위치 유지을 만듭니다. 그런 다음 사용 하 여 만듭니다 다른 원본 위치 유지 Lync 항목만 유지 하는 짧은 대기 기간입니다. 콘텐츠를 보존 하는 기간을 지정할 수 있습니다. 특정 기간으로 보류 만들기 (영문) 하는 방법에 대 한 자세한 내용은 <A href="in-place-hold-and-litigation-hold-exchange-2013-help.md">원본 위치 유지 및 소송 보존</A>을 참조 하십시오.
+> Lync 항목을 제외 하는 원본 위치 유지를 구성할 수도 있습니다. 예, 조직 다른 콘텐츠 형식 보다 시간이 더 짧은 기간에 대 한 인스턴트 메시지 및 음성 메일 항목을 보존 하 선호 될 수 있습니다. 이 유형의 보존 정책을 구현 하려면 오랜 시간 (예: 7 년)에 대 한 콘텐츠를 보존 하 고이 보류에서 Lync 항목을 제외 하는 원본 위치 유지을 만듭니다. 그런 다음 사용 하 여 만듭니다 다른 원본 위치 유지 Lync 항목만 유지 하는 짧은 대기 기간입니다. 콘텐츠를 보존 하는 기간을 지정할 수 있습니다. 특정 기간으로 보류 만들기 (영문) 하는 방법에 대 한 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds">원본 위치 유지 및 소송 보존</A>을 참조 하십시오.
 
 
 
 보류에서 사용자를 배치 하기 위한 단계별 지침은 다음 항목을 참조 합니다.
 
-  - [만들기 또는 In-place Hold 제거](create-or-remove-an-in-place-hold-exchange-2013-help.md)
+  - [만들기 또는 In-place Hold 제거](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds)
 
   - [전체 사서함에 소송 보존으로 설정](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)
 

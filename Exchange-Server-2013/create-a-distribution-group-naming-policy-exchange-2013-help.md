@@ -67,7 +67,7 @@ _**마지막으로 수정된 항목:** 2012-11-01_
 
   - 그룹 이름은 공백 없이 만들어집니다. 텍스트 문자열, 특성 및 그룹 이름 사이에 밑줄 문자(\_)나 다른 자리 표시자를 사용하는 것이 좋습니다.
 
-  - 메일 그룹을 만들고 편집할 때 Windows PowerShell을 사용하여 그룹 명명 정책을 재정의할 수 있습니다. 자세한 내용은 [메일 그룹 명명 정책을 무시합니다](override-the-distribution-group-naming-policy-exchange-2013-help.md)를 참조하십시오.
+  - 메일 그룹을 만들고 편집할 때 Windows PowerShell을 사용하여 그룹 명명 정책을 재정의할 수 있습니다. 자세한 내용은 [메일 그룹 명명 정책을 무시합니다](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy)를 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 

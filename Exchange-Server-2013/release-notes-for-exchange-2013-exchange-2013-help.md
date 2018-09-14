@@ -107,7 +107,7 @@ Exchange 2013 설치 방법에 대한 자세한 내용은 [계획 및 배포](pl
     
     Exchange 2013 CU6부터 외부 보낸 사람이 메일 사용이 가능한 공용 폴더에 메일을 보내려면 **익명** 사용자가 적어도 **항목 만들기** 권한을 부여해야 합니다. 메일 사용이 가능한 공용 폴더를 설정했지만 아직 해당 작업을 완료하지 않은 경우 외부 보낸 사람은 배달 실패 알림을 받게 되며 메시지가 메일 사용이 가능한 공용 폴더로 배달되지 않습니다.
     
-    셸 또는 Outlook을 사용하여 익명 사용자의 사용 권한을 설정할 수 있습니다. 익명 사용자에 사용 권한을 설정하는 방법에 대한 자세한 내용은 [메일 사용이 가능한 또는 공용 폴더 메일-사용 안함](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)를 참조하세요.
+    셸 또는 Outlook을 사용하여 익명 사용자의 사용 권한을 설정할 수 있습니다. 익명 사용자에 사용 권한을 설정하는 방법에 대한 자세한 내용은 [메일 사용이 가능한 또는 공용 폴더 메일-사용 안함](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)를 참조하세요.
 
   - 레거시 Exchange 서버에서 Exchange 2013으로 마이그레이션할 수 있는 공용 폴더의 최대 수는 500,000개입니다. 공용 폴더 마이그레이션에 대한 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)을 참조하세요.
 

@@ -51,7 +51,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <li><p>모든 메시지를 같은 기간 동안 보존해야 하는가?</p></li>
 </ul>
 <p>Exchange 2013에는 조직의 전자 메일 수명 주기 정책을 구현할 수 있게 해 주는 MRM 기능이 포함되어 있습니다. MRM을 사용하면 모든 메시지에 일관된 보존 설정을 적용하고, 사용자 지정 보존 정책을 사용하여 사서함에 대한 기준 보존 설정을 적용하고, 필요한 경우 사용자가 직접 메시지를 분류하여 지정한 기간 동안 보존하도록 허용할 수 있습니다.</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">메시징 레코드 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management">메시징 레코드 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p>원본 보관</p></td>
@@ -61,7 +61,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="odd">
 <td><p>원본 유지</p></td>
 <td><p>소송 가능성이 존재하는 경우 조직은 해당 사례와 관련된 전자 메일을 비롯한 ESI(전자적으로 저장된 정보)를 보존해야 합니다. 원본 위치 유지 기능을 사용하면 쿼리 매개 변수와 일치하는 메시지를 검색하여 보존할 수 있습니다. 이렇게 하면 메시지가 삭제, 수정, 위조되지 않으며 무기한으로 또는 지정한 기간 동안 메시지를 보존할 수 있습니다.</p></td>
-<td><p><a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">원본 위치 유지 및 소송 보존</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds">원본 위치 유지 및 소송 보존</a></p></td>
 </tr>
 <tr class="even">
 <td><p>원본 eDiscovery</p></td>
@@ -81,7 +81,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="odd">
 <td><p>DLP(데이터 손실 방지)</p></td>
 <td><p>DLP 기능을 사용하면 중요한 데이터를 보호하고 사용자에게 정책 및 규정에 대해 알려 줄 수 있습니다. 사용자가 실수로 중요한 정보를 권한이 없는 사용자에게 보내지 못하도록 방지할 수도 있습니다. DLP 정책을 구성할 때 수많은 관련 파일 형식이 포함된 메시징 시스템의 콘텐츠를 분석하여 중요한 데이터를 식별하고 보호할 수 있습니다. Exchange 2013에 제공된 DLP 정책 템플릿은 PII 및 PCI-DSS(Payment Card Industry Data Security Standard)와 같은 규정 표준에 기반을 두고 있습니다. DLP는 확장 가능하므로 조직에 중요한 다른 정책을 포함할 수 있습니다. 또한 새 정책 팁 기능을 사용하면 중요한 데이터가 전송되기 전에 사용자에게 정책 위반에 대해 알려 줄 수 있습니다.</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">데이터 손실 방지</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">데이터 손실 방지</a></p></td>
 </tr>
 <tr class="even">
 <td><p>IRM(정보 권한 관리)</p></td>
@@ -97,7 +97,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <td><p>사서함 감사 로깅</p></td>
 <td><p>사서함에 HBI(높은 업무상의 영향) 정보 및 PII가 포함될 수 있으므로 조직의 사서함에 로그온하는 사람과 수행되는 작업을 추적하는 것이 중요합니다. 사서함 소유자(위임 사용자라고 함)가 아닌 사용자의 사서함 액세스를 추적하는 것이 특히 중요합니다. 사서함 감사 로깅을 사용하면 사서함 소유자, 대리인(전체 사서함 액세스 권한이 있는 관리자 포함) 및 관리자의 사서함 액세스를 로깅할 수 있습니다.</p></td>
 <td><p><a href="mailbox-audit-logging-exchange-2013-help.md">사서함 감사 로깅</a></p>
-<p><a href="exchange-auditing-reports-exchange-2013-help.md">감사 보고서를 교환 합니다.</a></p></td>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports">감사 보고서를 교환 합니다.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>관리자 감사 로깅</p></td>

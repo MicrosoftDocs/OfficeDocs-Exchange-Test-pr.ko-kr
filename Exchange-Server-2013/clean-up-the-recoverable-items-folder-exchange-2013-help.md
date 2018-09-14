@@ -27,7 +27,7 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
   - 사서함 원본 위치 유지 또는 소송 보존에 배치 또는 단일 항목 복구를 사용 하는 경우에 보존이 제거 또는 단일 항목 복구를 사용 하지 않도록 설정 될 때까지 사서함 데이터를 보존 하는 것이 중요 합니다. 이 경우의 복구 가능한 항목 폴더를 정리 하는 더 자세한 단계를 수행 해야 합니다.
 
-원본 위치 유지 및 소송 보존으로 설정 하는 방법에 대 한 자세한 내용은, [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)를 참조 하십시오. 단일 항목 복구 하는 방법에 대 한 자세한 내용은, [복구 가능한 항목 폴더](recoverable-items-folder-exchange-2013-help.md)에서 "단일 항목 복구"를 참조 하십시오.
+원본 위치 유지 및 소송 보존으로 설정 하는 방법에 대 한 자세한 내용은, [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)를 참조 하십시오. 단일 항목 복구 하는 방법에 대 한 자세한 내용은, [복구 가능한 항목 폴더](recoverable-items-folder-exchange-2013-help.md)에서 "단일 항목 복구"를 참조 하십시오.
 
 복구 가능한 항목 폴더에 대 한 자세한 내용은, [복구 가능한 항목 폴더](recoverable-items-folder-exchange-2013-help.md)를 참조 하십시오.
 
@@ -37,7 +37,7 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
   - 검색 하 여 사용자의 사서함에서 메시지를 삭제 하려면 **Search-Mailbox** cmdlet을 사용 하려면 다음 관리 역할을 할당 해야 합니다.
     
-      - **사서함 검색**   이 역할을 통해 사용자는 조직의 여러 사서함에 있는 메시지를 검색할 수 있습니다. 관리자에게는 기본적으로 이 역할이 할당되지 않습니다. 사서함을 검색할 수 있도록 이 역할을 자신에게 할당하려면 자신을 검색 관리 역할 그룹의 구성원으로 추가합니다. [Exchange eDiscovery 사용 권한 할당](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)를 참조하세요.
+      - **사서함 검색**   이 역할을 통해 사용자는 조직의 여러 사서함에 있는 메시지를 검색할 수 있습니다. 관리자에게는 기본적으로 이 역할이 할당되지 않습니다. 사서함을 검색할 수 있도록 이 역할을 자신에게 할당하려면 자신을 검색 관리 역할 그룹의 구성원으로 추가합니다. [Exchange eDiscovery 사용 권한 할당](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)를 참조하세요.
     
       - **사서함 가져오기 내보내기**   이 역할을 사용 하면 사용자의 사서함에서 메시지를 삭제할 수 있습니다. 기본적으로이 역할은 모든 역할 그룹에 할당 되지 않습니다. 사용자의 사서함에서 메시지를 삭제 하려면 조직 관리 역할 그룹에는 사서함 가져오기 내보내기 역할을 추가할 수 있습니다. 자세한 내용은 [역할 그룹 관리](manage-role-groups-exchange-2013-help.md) 의 "역할을 역할 그룹에 게 추가" 섹션을 참조 하십시오.
 

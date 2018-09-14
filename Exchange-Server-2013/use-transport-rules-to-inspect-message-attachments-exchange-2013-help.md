@@ -29,7 +29,7 @@ _**마지막으로 수정된 항목:** 2015-03-27_
 
   - 사용자가 보낸 메시지와 일치하는 전송 규칙이 있는 경우 해당 사용자에게 알려 주는 알림 만들기
 
-  - 첨부 파일을 포함 하는 모든 메시지를 차단 합니다. 예제를 보려면 [일반적인 첨부 파일 차단 시나리오](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)를 참조 하십시오.
+  - 첨부 파일을 포함 하는 모든 메시지를 차단 합니다. 예제를 보려면 [일반적인 첨부 파일 차단 시나리오](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)를 참조 하십시오.
 
 Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규칙**으로 이동하여 전송 규칙을 만들 수 있습니다. 이 절차를 수행하려면 먼저 사용 권한을 할당 받아야 합니다. 새 규칙 만들기를 시작한 후에 **기타 옵션** \> **다음의 경우 이 규칙 적용**에서 **모든 첨부 파일**을 클릭하여 첨부 파일 관련 조건의 전체 목록을 표시할 수 있습니다. 첨부 파일 관련 옵션은 다음 다이어그램에 나와 있습니다.
 
@@ -312,11 +312,11 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
   - 암호 번호가 보호된 파일에 들어 있지 않은 메일에 대해 수행할 작업을 정의합니다.
 
-DLP 정책 및 첨부 파일 관리 조건은 비즈니스 요구를 전송 규칙 조건, 예외 및 작업으로 정의하여 이러한 비즈니스 요구를 적용하는 데 도움이 될 수 있습니다. 중요한 정보 조사를 DLP 정책에 포함하면 메시지 첨부 파일에서 해당 정보만 조사됩니다. 그렇지만 크기 또는 파일 형식과 같은 첨부 파일 관련 조건은 이 항목에 표시된 조건을 추가해야만 포함됩니다. DLP는 모든 Exchange 버전에서 사용할 수 있습니다. 자세한 내용은 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)를 참조하세요.
+DLP 정책 및 첨부 파일 관리 조건은 비즈니스 요구를 전송 규칙 조건, 예외 및 작업으로 정의하여 이러한 비즈니스 요구를 적용하는 데 도움이 될 수 있습니다. 중요한 정보 조사를 DLP 정책에 포함하면 메시지 첨부 파일에서 해당 정보만 조사됩니다. 그렇지만 크기 또는 파일 형식과 같은 첨부 파일 관련 조건은 이 항목에 표시된 조건을 추가해야만 포함됩니다. DLP는 모든 Exchange 버전에서 사용할 수 있습니다. 자세한 내용은 [데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)를 참조하세요.
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

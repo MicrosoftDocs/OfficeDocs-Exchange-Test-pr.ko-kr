@@ -181,7 +181,7 @@ MFA(관리되는 폴더 도우미)는 사서함 서버에서 실행되는 많은
 
   - 보존 상태인 사서함 항목은 보존 상태가 제거 될때까지 관리 되는 폴더 도우미에 의해 처리 되지 않습니다.
 
-  - 사서함이 원본 위치 유지 또는 소송 보존으로 지정될 경우 만료 항목은 받은 편지함에서 제거되지만 사서함이 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)에서 제거될 때까지 복구 가능한 항목 폴더에 보존됩니다.
+  - 사서함이 원본 위치 유지 또는 소송 보존으로 지정될 경우 만료 항목은 받은 편지함에서 제거되지만 사서함이 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)에서 제거될 때까지 복구 가능한 항목 폴더에 보존됩니다.
 
   - 하이브리드 배포에서는 온-프레미스 조직 및 Exchange Online 조직 둘 다에서 항목이 일관되게 이동 및 만료되도록 두 조직에 동일한 보존 태그 및 보존 정책이 존재해야 합니다. 자세한 내용은 [보존 태그 내보내기 및 가져오기](export-and-import-retention-tags-exchange-2013-help.md)를 참조하세요.
 

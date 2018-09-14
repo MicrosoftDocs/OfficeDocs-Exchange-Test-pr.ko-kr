@@ -23,9 +23,9 @@ Microsoft Exchange Server 2013에서는 전송 규칙의 몇 가지 기능이 �
 
 Exchange 2013의 DLP(데이터 손실 방지)는 조직이 중요한 데이터의 의도하지 않은 공개를 줄이는 데 도움이 될 수 있습니다. DLP 정책을 함께 제공하여 적용하는 규칙을 만들 수 있도록 전송 규칙이 업데이트되었습니다. 전송 규칙의 DLP 지원에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-[전송 규칙에 중요 한 정보 규칙 통합 (영문)](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[전송 규칙에 중요 한 정보 규칙 통합 (영문)](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## 새 조건자 및 작업
 

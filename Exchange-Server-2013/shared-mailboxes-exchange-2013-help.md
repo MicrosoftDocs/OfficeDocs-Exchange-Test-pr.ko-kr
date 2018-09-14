@@ -51,5 +51,5 @@ Microsoft Exchange Server 2013을 사용 하는 이유에서 Exchange 공유 사
 
 ## 공유 사서함 변환
 
-이전 버전의 Exchange에서는 일반 사서함을 위임 사서함으로 사용할 수 있었습니다. 사서함을 위임한 경우에는 셸을 사용하여 이러한 위임 사서함을 공유 사서함으로 변환할 수 있습니다. 자세한 내용은 [사서함으로 변환](convert-a-mailbox-exchange-2013-help.md)을 참조하십시오.
+이전 버전의 Exchange에서는 일반 사서함을 위임 사서함으로 사용할 수 있었습니다. 사서함을 위임한 경우에는 셸을 사용하여 이러한 위임 사서함을 공유 사서함으로 변환할 수 있습니다. 자세한 내용은 [사서함으로 변환](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox)을 참조하십시오.
 

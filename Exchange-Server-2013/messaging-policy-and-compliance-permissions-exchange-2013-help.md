@@ -114,7 +114,7 @@ View-Only Management 역할 그룹이 할당된 사용자는 다음 표에 있�
 <td><p><a href="discovery-management-exchange-2013-help.md">검색 관리</a></p>
 
 > [!NOTE]
-> 기본적으로 Discovery Management 역할 그룹에는 구성원이 없습니다. 관리자를 포함한 사용자에게 사서함을 검색하는 데 필요한 권한이 없습니다. 자세한 내용은 <A href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange eDiscovery 사용 권한 할당</A>를 참조하십시오.
+> 기본적으로 Discovery Management 역할 그룹에는 구성원이 없습니다. 관리자를 포함한 사용자에게 사서함을 검색하는 데 필요한 권한이 없습니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Exchange eDiscovery 사용 권한 할당</A>를 참조하십시오.
 
 
 </td>

@@ -218,9 +218,9 @@ UM 사서함 정책을 만들어 일련의 공용 UM 정책 설정을 UM 사용 
 
 UM 사서함 정책에서 MWI 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [UM 사서함 정책 관리](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [UM 사서함 정책 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-  - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하도록 설정](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
   - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하지 않도록 설정](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
 
@@ -228,7 +228,7 @@ UM 사서함 정책에서 MWI 설정을 관리하는 방법에 대한 자세한 
 
 ## UM IP 게이트웨이 및 MWI
 
-UM IP 게이트웨이에서 MWI를 사용하지 않도록 설정하면 UM IP 게이트웨이로 표시되는 VoIP 게이트웨이나 IP PBX에 연결된 모든 사용자가 MWI 알림을 사용할 수 없게 됩니다. 따라서 UM 다이얼 플랜에 연결된 단일 UM IP 게이트웨이에서 MWI를 사용하지 않도록 설정하면 하나 또는 여러 UM 다이얼 플랜이나 UM 사서함 정책과 연관된 모든 UM 사용 가능 사용자가 MWI 알림을 사용할 수 없게 됩니다. UM 사용 가능 사용자 그룹에 대해 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하는 방법을 포함하여 UM 사서함 정책에 대한 자세한 내용은 [UM 사서함 정책 관리](manage-a-um-mailbox-policy-exchange-2013-help.md)를 참조하십시오.
+UM IP 게이트웨이에서 MWI를 사용하지 않도록 설정하면 UM IP 게이트웨이로 표시되는 VoIP 게이트웨이나 IP PBX에 연결된 모든 사용자가 MWI 알림을 사용할 수 없게 됩니다. 따라서 UM 다이얼 플랜에 연결된 단일 UM IP 게이트웨이에서 MWI를 사용하지 않도록 설정하면 하나 또는 여러 UM 다이얼 플랜이나 UM 사서함 정책과 연관된 모든 UM 사용 가능 사용자가 MWI 알림을 사용할 수 없게 됩니다. UM 사용 가능 사용자 그룹에 대해 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하는 방법을 포함하여 UM 사서함 정책에 대한 자세한 내용은 [UM 사서함 정책 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)를 참조하십시오.
 
 다음 표에 표시된 대로 EAC를 사용하거나 셸에서 **Set-UMMailboxPolicy** cmdlet을 사용하여 MWI 설정을 구성할 수 있습니다.
 
@@ -260,11 +260,11 @@ UM IP 게이트웨이에서 MWI를 사용하지 않도록 설정하면 UM IP 게
 
 MWI 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [UM IP 게이트웨이 관리](manage-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP 게이트웨이 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
-  - [UM IP 게이트웨이에 메시지 대기 표시기 (MWI)을 허용 합니다.](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP 게이트웨이에 메시지 대기 표시기 (MWI)을 허용 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
 
-  - [UM IP 게이트웨이에서 메시지 대기 표시기 (MWI) 방지](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP 게이트웨이에서 메시지 대기 표시기 (MWI) 방지](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
   - [Set-UMIPGateway](https://technet.microsoft.com/ko-kr/library/aa996577\(v=exchg.150\))
 
@@ -307,7 +307,7 @@ MWI 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을
 
 사용자 사서함에서 문자 메시지 알림 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [사용자에 대 한 음성 메일 설정 관리](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+  - [사용자에 대 한 음성 메일 설정 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
   - [Set-UMMailbox](https://technet.microsoft.com/ko-kr/library/bb124893\(v=exchg.150\))
 
@@ -341,7 +341,7 @@ MWI 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을
 
 문자 메시지 알림 설정을 관리하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [UM 사서함 정책 관리](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [UM 사서함 정책 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))
 

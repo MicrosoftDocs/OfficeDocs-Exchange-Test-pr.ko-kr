@@ -31,7 +31,7 @@ Exchange 메일 흐름 규칙로 알려져 전송 규칙을 만들면 때마다 
 
   - **정책 설명이 없는 테스트**    문제 보고서의 작업을 함께이 모드를 사용 하 고 때마다 전자 메일 규칙과 일치 하는 전자 메일 메시지를 받을 수 있습니다.
 
-  - **정책 설명이 있는 테스트**    이 모드는 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md) (DLP) 일부 Exchange Online 및 Exchange Online Protection (EOP)에서 제공 되는 사용 중인 경우에 사용할 수만 구독 계획 합니다. 이 모드와 메시지는 메시지를 보내고 있기 일치 하는 정책을 하지만 없는 메일 흐름 동작이 수행 됩니다 때 발신자에 게 설정 됩니다.
+  - **정책 설명이 있는 테스트**    이 모드는 [데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) (DLP) 일부 Exchange Online 및 Exchange Online Protection (EOP)에서 제공 되는 사용 중인 경우에 사용할 수만 구독 계획 합니다. 이 모드와 메시지는 메시지를 보내고 있기 일치 하는 정책을 하지만 없는 메일 흐름 동작이 수행 됩니다 때 발신자에 게 설정 됩니다.
 
 문제 보고서 작업을 포함 하는 경우 일치 하는 규칙 때 볼 수 있는 다음과 같습니다.
 

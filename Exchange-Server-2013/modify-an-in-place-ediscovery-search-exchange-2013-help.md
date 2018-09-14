@@ -51,7 +51,7 @@ _**마지막으로 수정된 항목:** 2014-08-27_
         
 
         > [!IMPORTANT]
-        > 대기 Exchange 2013 사서함 서버의 모든 사서함을 보류 <STRONG>모든 사서함을 검색</STRONG> 옵션을 사용할 수 없습니다. In-place Hold를 만들려면 <STRONG>지정 사서함 검색을</STRONG> 선택 해야 합니다. 자세한 내용은 <A href="create-or-remove-an-in-place-hold-exchange-2013-help.md">만들기 또는 In-place Hold 제거</A>을 참조 하십시오.
+        > 대기 Exchange 2013 사서함 서버의 모든 사서함을 보류 <STRONG>모든 사서함을 검색</STRONG> 옵션을 사용할 수 없습니다. In-place Hold를 만들려면 <STRONG>지정 사서함 검색을</STRONG> 선택 해야 합니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds">만들기 또는 In-place Hold 제거</A>을 참조 하십시오.
 
     
       - **검색 쿼리** 페이지에서 다음 필드를 수정 합니다.

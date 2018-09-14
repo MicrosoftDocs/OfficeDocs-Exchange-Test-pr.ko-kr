@@ -44,7 +44,7 @@ _**마지막으로 수정된 항목:** 2014-02-24_
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [공유 및 공동 작업 사용 권한](sharing-and-collaboration-permissions-exchange-2013-help.md) 항목의 "공용 폴더" 항목
 
-  - 먼저 공용 폴더 사서함을 만들지 않으면 공용 폴더를 만들 수 없습니다. 공용 폴더 사서함을 만드는 방법에 대한 자세한 내용은 [공용 폴더 사서함 만들기](create-a-public-folder-mailbox-exchange-2013-help.md)를 참조하십시오.
+  - 먼저 공용 폴더 사서함을 만들지 않으면 공용 폴더를 만들 수 없습니다. 공용 폴더 사서함을 만드는 방법에 대한 자세한 내용은 [공용 폴더 사서함 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)를 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 

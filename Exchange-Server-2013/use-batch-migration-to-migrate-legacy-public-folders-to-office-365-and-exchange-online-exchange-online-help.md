@@ -568,19 +568,19 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
 
 2.  단계 중 2 단계에 따라 3 단계:.csv 파일 생성 공용 폴더와 사서함 매핑 파일을 만듭니다. 이 파일은 Exchange Online의 공용 폴더 사서함의 올바른 수를 계산 하는데 사용 됩니다.
 
-3.  매핑 파일을 기준으로 필요한 공용 폴더 사서함을 만듭니다. 자세한 내용은 [공용 폴더 사서함 만들기](create-a-public-folder-mailbox-exchange-2013-help.md)를 참조하세요.
+3.  매핑 파일을 기준으로 필요한 공용 폴더 사서함을 만듭니다. 자세한 내용은 [공용 폴더 사서함 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)를 참조하세요.
 
 4.  New-PublicFolder cmdlet을 사용하여 각 공용 폴더 사서함의 최상위 공용 폴더를 만듭니다(*Mailbox* 매개 변수 사용).
 
 5.  Outlook을 사용하여 PST 파일을 내보내거나 가져옵니다.
 
-6.  EAC를 사용하여 공용 폴더에 사용 권한을 설정합니다. 자세한 내용은 [새 조직에서 공용 폴더 설정](set-up-public-folders-in-a-new-organization-exchange-2013-help.md) 항목의 [Step 3: Assign permissions to the public folder](set-up-public-folders-in-a-new-organization-exchange-2013-help.md)을 참조하세요.
+6.  EAC를 사용하여 공용 폴더에 사용 권한을 설정합니다. 자세한 내용은 [새 조직에서 공용 폴더 설정](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-public-folders) 항목의 [Step 3: Assign permissions to the public folder](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-public-folders)을 참조하세요.
 
 > [!CAUTION]
 > PST 마이그레이션을 이미 시작했는데 기본 사서함이 가득 찬 문제가 발생하는 경우에는 두 가지 옵션을 통해 PST 마이그레이션을 복구할 수 있습니다.
 > <ol>
 > <li><p>자동 분할 기능이 기본 사서함에서 데이터를 이동할 때까지 기다립니다. 데이터가 이동되려면 최대 2주가 걸릴 수 있습니다. 그러나 자동 분할이 완료될 때까지 완전히 채워진 공용 폴더 사서함의 모든 공용 폴더는 새 콘텐츠를 받을 수 없습니다.</p></li>
-> <li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">공용 폴더 사서함 만들기</a>를 수행한 다음 <em>Mailbox</em> 매개 변수를 포함한 <strong>New-PublicFolder</strong> cmdlet을 사용하여 보조 공용 폴더 사서함에 나머지 공용 폴더를 만듭니다. 이 예에서는 보조 공용 폴더 사서함에 PF201이라는 새 공용 폴더를 만듭니다.</p>
+> <li><p><a href="https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox">공용 폴더 사서함 만들기</a>를 수행한 다음 <em>Mailbox</em> 매개 변수를 포함한 <strong>New-PublicFolder</strong> cmdlet을 사용하여 보조 공용 폴더 사서함에 나머지 공용 폴더를 만듭니다. 이 예에서는 보조 공용 폴더 사서함에 PF201이라는 새 공용 폴더를 만듭니다.</p>
 > <pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
 > </ol>
 

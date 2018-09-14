@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2017-01-17_
 
 
 
-[원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)를 사용하면 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md) 상태인 사용자의 수정된 항목 원본 버전과 지운 편지함을 비롯한 모든 사서함 콘텐츠를 검색할 수 있습니다.
+[원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)를 사용하면 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds) 상태인 사용자의 수정된 항목 원본 버전과 지운 편지함을 비롯한 모든 사서함 콘텐츠를 검색할 수 있습니다.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -63,7 +63,7 @@ _**마지막으로 수정된 항목:** 2017-01-17_
     
 
     > [!IMPORTANT]
-    > <STRONG>모든 사서함 검색</STRONG> 옵션을 사용하여 모든 사서함을 보류 상태로 설정할 수는 없습니다. 원본 위치 유지를 만들려면 <STRONG>검색할 사서함 지정</STRONG>을 선택해야 합니다. 자세한 내용은 <A href="create-or-remove-an-in-place-hold-exchange-2013-help.md">만들기 또는 In-place Hold 제거</A>를 참조하십시오.
+    > <STRONG>모든 사서함 검색</STRONG> 옵션을 사용하여 모든 사서함을 보류 상태로 설정할 수는 없습니다. 원본 위치 유지를 만들려면 <STRONG>검색할 사서함 지정</STRONG>을 선택해야 합니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds">만들기 또는 In-place Hold 제거</A>를 참조하십시오.
 
 
 

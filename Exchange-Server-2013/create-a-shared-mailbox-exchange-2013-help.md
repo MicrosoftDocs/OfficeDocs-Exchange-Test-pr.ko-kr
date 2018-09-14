@@ -84,7 +84,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 
 > [!NOTE]
-> 이 예에서는 MarketingSG 보안 그룹을 이미 만들었고 해당 보안 그룹이 메일을 사용할 수 있는 것으로 가정합니다. <A href="manage-mail-enabled-security-groups-exchange-2013-help.md">메일 사용이 가능한 보안 그룹 관리</A>를 참조하세요.
+> 이 예에서는 MarketingSG 보안 그룹을 이미 만들었고 해당 보안 그룹이 메일을 사용할 수 있는 것으로 가정합니다. <A href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">메일 사용이 가능한 보안 그룹 관리</A>를 참조하세요.
 
 
 

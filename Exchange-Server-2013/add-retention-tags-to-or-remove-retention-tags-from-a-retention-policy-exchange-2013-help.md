@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Online, Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2015-03-02_
 
-보존 정책을 만들 때 또는 그 후 언제든지 보존 정책에 보존 태그를 추가할 수 있습니다. 보존 태그를 동시에 추가하는 방법을 비롯하여 보존 정책을 만드는 방법에 대한 자세한 내용은 [보존 정책 만들기](create-a-retention-policy-exchange-2013-help.md)를 참조하십시오.
+보존 정책을 만들 때 또는 그 후 언제든지 보존 정책에 보존 태그를 추가할 수 있습니다. 보존 태그를 동시에 추가하는 방법을 비롯하여 보존 정책을 만드는 방법에 대한 자세한 내용은 [보존 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)를 참조하십시오.
 
 보존 정책에는 다음과 같은 보존 태그가 포함될 수 있습니다.
 

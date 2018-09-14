@@ -154,13 +154,13 @@ Exchange 2013 SP1에서는 이제 Outlook Web App을 통한 S/MIME 기반 메시
 
 ## 데스크톱 및 모바일 버전 Outlook Web App에서 제공되는 DLP 정책 설명
 
-DLP(데이터 손실 방지) [정책 팁](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)은 Outlook의 보낸 사람이 중요한 정보를 보내려고 할 때 표시되는 정보 알림입니다. Exchange 2013 SP1에서는 이 기능이 확장되어 데스크톱 버전 Outlook Web App 및 모바일 버전(장치용 OWA)에 모두 적용됩니다. Outlook에 대해 정책 설명이 포함된 기존 DLP 정책이 설정되어 있으면 해당 기능이 작동함을 확인할 수 있습니다. Outlook에 대한 정책 설명이 정책에 이미 포함되어 있으면 다른 항목을 설정할 필요가 없습니다. 정책 설명을 직접 활용해 보세요.
+DLP(데이터 손실 방지) [정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)은 Outlook의 보낸 사람이 중요한 정보를 보내려고 할 때 표시되는 정보 알림입니다. Exchange 2013 SP1에서는 이 기능이 확장되어 데스크톱 버전 Outlook Web App 및 모바일 버전(장치용 OWA)에 모두 적용됩니다. Outlook에 대해 정책 설명이 포함된 기존 DLP 정책이 설정되어 있으면 해당 기능이 작동함을 확인할 수 있습니다. Outlook에 대한 정책 설명이 정책에 이미 포함되어 있으면 다른 항목을 설정할 필요가 없습니다. 정책 설명을 직접 활용해 보세요.
 
-현재 정책 설명을 사용하고 있지 않은 경우 사용을 시작하려면 [템플릿에서 DLP 정책 만들기](how-to-new-dlp-data-loss-prevention-policy-template.md)를 수행한 다음 정책을 편집하고 **정책 설명과 함께 보낸 사람에게 알림** 작업을 추가하여 정책 설명을 추가합니다.
+현재 정책 설명을 사용하고 있지 않은 경우 사용을 시작하려면 [템플릿에서 DLP 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)를 수행한 다음 정책을 편집하고 **정책 설명과 함께 보낸 사람에게 알림** 작업을 추가하여 정책 설명을 추가합니다.
 
 ## 문서 지문 기준 DLP 분류
 
-Exchange에서 DLP의 핵심 요소는 세밀한 콘텐츠 분석입니다. [문서 지문](overview-of-document-fingerprinting-in-exchange.md)에서는 이 기능이 확장되어 조직에서 사용되는 중요한 정보를 포함할 수 있는 표준 양식을 식별할 수 있습니다. 예를 들어 빈 직원 정보 양식을 기준으로 지문을 만든 다음 중요한 콘텐츠가 입력된 모든 직원 정보 양식을 검색할 수 있습니다.
+Exchange에서 DLP의 핵심 요소는 세밀한 콘텐츠 분석입니다. [문서 지문](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)에서는 이 기능이 확장되어 조직에서 사용되는 중요한 정보를 포함할 수 있는 표준 양식을 식별할 수 있습니다. 예를 들어 빈 직원 정보 양식을 기준으로 지문을 만든 다음 중요한 콘텐츠가 입력된 모든 직원 정보 양식을 검색할 수 있습니다.
 
 ## 새로운 지역에 대한 DLP 중요 정보 형식
 

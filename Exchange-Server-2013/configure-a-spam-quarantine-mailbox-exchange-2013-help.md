@@ -59,7 +59,7 @@ _**마지막으로 수정된 항목:** 2013-02-19_
 
   - **전용 사서함 및 사용자 계정 만들기**   이 스팸 격리 사서함에 대한 전용 사서함과 Active Directory 사용자 계정을 만드는 것이 좋습니다. 자세한 내용은 [사용자 사서함 만들기](create-user-mailboxes-exchange-2013-help.md)를 참조하십시오.
     
-    조직의 규정 준수 정책과 요구 사항에 따라 메시징 레코드 관리, 사서함 할당량, 위임 권한 등과 같은 받는 사람 정책을 적용할 수 있습니다. 자세한 내용은 [메시징 레코드 관리](messaging-records-management-exchange-2013-help.md)를 참조하십시오.
+    조직의 규정 준수 정책과 요구 사항에 따라 메시징 레코드 관리, 사서함 할당량, 위임 권한 등과 같은 받는 사람 정책을 적용할 수 있습니다. 자세한 내용은 [메시징 레코드 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)를 참조하십시오.
     
 
     > [!NOTE]

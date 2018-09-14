@@ -29,9 +29,9 @@ UM 자동 전화 교환과 관련된 추가 관리 작업에 대한 자세한 �
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [통합된 메시징 사용 권한](unified-messaging-permissions-exchange-2013-help.md)의 "UM 자동 전화 교환" 항목
 
-  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md)을 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 다이얼 플랜을 만들었는지 확인합니다. 자세한 단계는 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)을 참조하십시오.
 
-  - 이러한 절차를 수행하기 전에 UM 자동 전화 교환을 만들었는지 확인합니다. 자세한 단계는 [UM 자동 전화 교환 만들기](create-a-um-auto-attendant-exchange-2013-help.md)를 참조하십시오.
+  - 이러한 절차를 수행하기 전에 UM 자동 전화 교환을 만들었는지 확인합니다. 자세한 단계는 [UM 자동 전화 교환 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant)를 참조하십시오.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -264,7 +264,7 @@ UM 자동 전화 교환과 관련된 추가 관리 작업에 대한 자세한 �
         
         국내 전화 걸기 규칙 그룹을 추가하려면 먼저 UM 자동 전화 교환에 연결된 다이얼 플랜에서 적절한 국내 전화 걸기 규칙 그룹을 만든 다음 적절한 전화 걸기 규칙 그룹을 추가해야 합니다.
         
-        국내 전화 걸기 규칙 그룹은 통합 메시징이 국가 또는 지역 내의 전화 번호에 대한 액세스 허용 또는 제한을 설정하는 데 사용할 수 있습니다. 이 기능은 자동 전화 교환에 전화를 거는 모든 사용자에게 적용됩니다. 외부로 전화 걸기에 대한 자세한 내용은 [사용자가 전화를 걸 수 있도록](allow-users-to-make-calls-exchange-2013-help.md)을 참조하십시오.
+        국내 전화 걸기 규칙 그룹은 통합 메시징이 국가 또는 지역 내의 전화 번호에 대한 액세스 허용 또는 제한을 설정하는 데 사용할 수 있습니다. 이 기능은 자동 전화 교환에 전화를 거는 모든 사용자에게 적용됩니다. 외부로 전화 걸기에 대한 자세한 내용은 [사용자가 전화를 걸 수 있도록](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls)을 참조하십시오.
     
       - **허용된 국제 전화 걸기 규칙 그룹**   이 섹션을 사용하여 허용된 국제 전화 걸기 규칙 그룹을 추가하거나 제거할 수 있습니다. 국제 전화 걸기 규칙 그룹은 기본적으로 UM 자동 교환에 구성되지 않습니다.
         
@@ -272,7 +272,7 @@ UM 자동 전화 교환과 관련된 추가 관리 작업에 대한 자세한 �
         
         국제 전화 걸기 규칙 그룹을 추가하려면 먼저 UM 자동 전화 교환과 연결된 다이얼 플랜에 적절한 국제 전화 걸기 규칙 그룹을 만들어야 합니다. 다이얼 플랜에서 필요한 전화 걸기 규칙 그룹을 만든 후 UM 자동 전화 교환의 허용된 전화 걸기 규칙 그룹 목록에 해당 전화 걸기 규칙 그룹을 추가해야 합니다.
         
-        국제 전화 걸기 규칙 그룹은 통합 메시징이 국가 또는 지역 외의 전화 번호에 대한 액세스 허용 또는 제한을 설정하는 데 사용할 수 있습니다. 이 기능은 자동 전화 교환에 전화를 거는 모든 사용자에게 적용됩니다. 외부로 전화 걸기에 대한 자세한 내용은 [사용자가 전화를 걸 수 있도록](allow-users-to-make-calls-exchange-2013-help.md)을 참조하십시오.
+        국제 전화 걸기 규칙 그룹은 통합 메시징이 국가 또는 지역 외의 전화 번호에 대한 액세스 허용 또는 제한을 설정하는 데 사용할 수 있습니다. 이 기능은 자동 전화 교환에 전화를 거는 모든 사용자에게 적용됩니다. 외부로 전화 걸기에 대한 자세한 내용은 [사용자가 전화를 걸 수 있도록](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls)을 참조하십시오.
 
 10. **확인**을 클릭하여 새 메뉴 탐색을 만듭니다.
 

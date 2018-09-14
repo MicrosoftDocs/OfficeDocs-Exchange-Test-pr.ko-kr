@@ -27,7 +27,7 @@ _**마지막으로 수정된 항목:** 2014-06-01_
 
   - 임시 보관함 폴더에서 받는 사람의 주소가 이미 입력된 메시지 열기
 
-기본 제공 메일 설명을 사용할 수도 있고 모든 유형의 받는 사람에 대해 사용자 지정 메일 설명을 만들 수도 있습니다. 기본 제공 메일 설명에 대한 자세한 내용은 [MailTips](mailtips-exchange-2013-help.md)을 참조하십시오.
+기본 제공 메일 설명을 사용할 수도 있고 모든 유형의 받는 사람에 대해 사용자 지정 메일 설명을 만들 수도 있습니다. 기본 제공 메일 설명에 대한 자세한 내용은 [MailTips](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips)을 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 

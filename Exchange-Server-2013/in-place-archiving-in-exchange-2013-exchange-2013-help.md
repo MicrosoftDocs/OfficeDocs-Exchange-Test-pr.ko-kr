@@ -279,7 +279,7 @@ Exchange 2013 설치 프로그램은 <strong>기본 MRM 정책</strong>이라는
 
 
 
-  - <strong>원본 위치 유지 및 소송 보존</strong>   사서함에 대해 원본 위치 유지 또는 소송 보존을 사용할 경우 기본 사서함과 보관 사서함 모두에 적용됩니다. 원본 위치 유지 및 소송 보존에 대한 자세한 내용은 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)를 참조하십시오.
+  - <strong>원본 위치 유지 및 소송 보존</strong>   사서함에 대해 원본 위치 유지 또는 소송 보존을 사용할 경우 기본 사서함과 보관 사서함 모두에 적용됩니다. 원본 위치 유지 및 소송 보존에 대한 자세한 내용은 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)를 참조하십시오.
 
   - <strong>복구할 수 있는 항목 폴더   </strong>보관 사서함에는 복구할 수 있는 항목 폴더가 포함되어 있으며 기본 사서함과 동일한 복구할 수 있는 항목 폴더 할당량이 적용됩니다. 복구 가능한 항목에 대한 자세한 내용은 [복구 가능한 항목 폴더](recoverable-items-folder-exchange-2013-help.md)를 참조하십시오.
 

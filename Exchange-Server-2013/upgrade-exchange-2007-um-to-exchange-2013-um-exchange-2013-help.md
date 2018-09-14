@@ -214,7 +214,7 @@ SIP 보안 또는 보안 다이얼 플랜을 사용하는 경우 Exchange 2013 �
 
 기존 Exchange 2007 배포에 따라 새 UM 다이얼 플랜을 만들거나 기존 다이얼 플랜을 구성해야 할 수 있습니다. UM 다이얼 플랜은 공통 사용자 내선 번호를 공유하는 기존 또는 SIP 사용 가능 PBX(Private Branch eXchange), IP PBX 또는 SIP 사용 가능 PBX의 집합을 나타냅니다. 한 다이얼 플랜 내의 일반 또는 SIP 사용 가능 PBX나 IP PBX에서 호스트되는 모든 사용자의 내선 번호 자릿수는 동일합니다. 사용자는 내선 번호에 특별한 번호를 추가하거나 전체 전화 번호를 입력하지 않고도 서로의 내선 번호로 전화를 걸 수 있습니다.
 
-UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고유하게 보장하는 데 사용됩니다. 일부 전화 통신 네트워크에서는 IP PBX, 기존 PBX 또는 SIP 사용 가능 PBX가 여러 대 있습니다. 이러한 전화 통신 네트워크에서는 동일한 전화 내선 번호를 갖는 두 명의 사용자가 존재할 수 있습니다. UM 다이얼 플랜은 이러한 경우의 문제를 해결해 줍니다. 두 명의 사용자를 두 UM 다이얼 플랜에 따로 추가하면 내선 번호가 고유하게 지정됩니다. 자세한 내용은 [UM 다이얼 플랜](um-dial-plans-exchange-2013-help.md)을 참조하십시오.
+UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고유하게 보장하는 데 사용됩니다. 일부 전화 통신 네트워크에서는 IP PBX, 기존 PBX 또는 SIP 사용 가능 PBX가 여러 대 있습니다. 이러한 전화 통신 네트워크에서는 동일한 전화 내선 번호를 갖는 두 명의 사용자가 존재할 수 있습니다. UM 다이얼 플랜은 이러한 경우의 문제를 해결해 줍니다. 두 명의 사용자를 두 UM 다이얼 플랜에 따로 추가하면 내선 번호가 고유하게 지정됩니다. 자세한 내용은 [UM 다이얼 플랜](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)을 참조하십시오.
 
 필요한 경우 EAC를 사용하여 UM 다이얼 플랜을 만들 수 있습니다.
 
@@ -302,7 +302,7 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 기존 Exchange 2007 배포에 따라 새 UM 헌트 그룹을 만들어야 할 수 있습니다. 전화 통신 헌트 그룹을 사용하면 단일 번호로 걸려 온 전화 통화를 여러 내선 번호 또는 전화 번호로 분배할 수 있습니다. 통합 메시징에서 UM 헌트 그룹이란 전화 통신 헌트 그룹을 논리적으로 나타낸 것으로, UM IP 게이트웨이를 UM 다이얼 플랜에 연결합니다.
 
-각 IP PBX 또는 PBX 헌트 그룹에 대해 UM 헌트 그룹이 하나 이상 있어야 합니다. 다음 절차를 완료하면 기본적으로 UM 헌트 그룹 한 개가 만들어집니다. IP PBX 또는 PBX 헌트 그룹이 둘 이상 있는 경우 추가 UM 헌트 그룹을 만들어야 합니다. UM 헌트 그룹에 대한 자세한 내용은 [UM 헌트 그룹](um-hunt-groups-exchange-2013-help.md)을 참조하십시오.
+각 IP PBX 또는 PBX 헌트 그룹에 대해 UM 헌트 그룹이 하나 이상 있어야 합니다. 다음 절차를 완료하면 기본적으로 UM 헌트 그룹 한 개가 만들어집니다. IP PBX 또는 PBX 헌트 그룹이 둘 이상 있는 경우 추가 UM 헌트 그룹을 만들어야 합니다. UM 헌트 그룹에 대한 자세한 내용은 [UM 헌트 그룹](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)을 참조하십시오.
 
 필요한 경우 EAC를 사용하여 UM 헌트 그룹을 만들 수 있습니다.
 
@@ -332,7 +332,7 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 ## 9단계: UM 자동 전화 교환 만들기 또는 구성
 
-기존 Exchange 2007 배포에 따라 새 UM 자동 전화 교환을 만들어야 할 수 있습니다. UM 자동 전화 교환을 사용하여 음성 메뉴 시스템을 만들 수 있으며, 이 시스템을 통해 외부 발신자 및 내부 발신자가 UM 자동 전화 교환 메뉴 시스템을 사용하여 원하는 사람을 찾고 조직 내의 회사 사용자나 부서로 전화를 걸거나 연결할 수 있습니다. 자세한 내용은 [자동으로 응답 한 들어오는 호출을 라우팅](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)을 참조하십시오.
+기존 Exchange 2007 배포에 따라 새 UM 자동 전화 교환을 만들어야 할 수 있습니다. UM 자동 전화 교환을 사용하여 음성 메뉴 시스템을 만들 수 있으며, 이 시스템을 통해 외부 발신자 및 내부 발신자가 UM 자동 전화 교환 메뉴 시스템을 사용하여 원하는 사람을 찾고 조직 내의 회사 사용자나 부서로 전화를 걸거나 연결할 수 있습니다. 자세한 내용은 [자동으로 응답 한 들어오는 호출을 라우팅](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)을 참조하십시오.
 
 소규모 배포에서는 발신자가 사용자에게 음성 메일만 남길 수 있도록 UM을 배포할 수도 있습니다. 이러한 배포에서는 자동 전화 교환을 만들 필요가 없습니다. 그러나 대부분의 경우 자동 전화 교환을 사용하면 외부 발신자가 조직에 전화를 걸 때 유용합니다.
 
@@ -374,7 +374,7 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 ## 10단계: UM 사서함 정책 만들기 또는 구성
 
-기존 Exchange 2007 배포에 따라 새 UM 사서함 정책을 만들거나 기존 UM 사서함 정책을 구성해야 할 수 있습니다. UM 사서함 정책은 통합 메시징을 사용자가 사용할 수 있도록 설정하는 데 필요합니다. 각 UM 사용 가능 사용자의 사서함은 단일 UM 사서함 정책에 연결되어야 합니다. 하나의 UM 사서함 정책을 만든 후에 하나 이상의 UM 사용 가능 사서함을 해당 UM 사서함 정책에 연결합니다. 이렇게 하면 해당 UM 사서함 정책에 연결된 UM 사용 가능 사용자에 대해 PIN의 최소 자릿수 또는 최대 로그온 시도 횟수와 같은 PIN 보안 설정을 제어할 수 있습니다. 자세한 내용은 [UM 사서함 정책](um-mailbox-policies-exchange-2013-help.md)을 참조하십시오.
+기존 Exchange 2007 배포에 따라 새 UM 사서함 정책을 만들거나 기존 UM 사서함 정책을 구성해야 할 수 있습니다. UM 사서함 정책은 통합 메시징을 사용자가 사용할 수 있도록 설정하는 데 필요합니다. 각 UM 사용 가능 사용자의 사서함은 단일 UM 사서함 정책에 연결되어야 합니다. 하나의 UM 사서함 정책을 만든 후에 하나 이상의 UM 사용 가능 사서함을 해당 UM 사서함 정책에 연결합니다. 이렇게 하면 해당 UM 사서함 정책에 연결된 UM 사용 가능 사용자에 대해 PIN의 최소 자릿수 또는 최대 로그온 시도 횟수와 같은 PIN 보안 설정을 제어할 수 있습니다. 자세한 내용은 [UM 사서함 정책](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)을 참조하십시오.
 
 필요한 경우 EAC를 사용하여 UM 사서함 정책을 만들 수 있습니다.
 
@@ -414,7 +414,7 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 ## 11단계: 기존 UM 사용 가능 사서함을 Exchange 2013으로 이동
 
-Exchange 2007 통합 메시징에서 조직의 사용자가 음성 메일을 사용하도록 설정하고 나면 사용자가 UM 기능을 사용할 수 있도록 UM 속성의 기본 집합이 사용자에게 적용됩니다. 자세한 내용은 [사용자에 대 한 음성 메일](voice-mail-for-users-exchange-2013-help.md)을 참조하십시오.
+Exchange 2007 통합 메시징에서 조직의 사용자가 음성 메일을 사용하도록 설정하고 나면 사용자가 UM 기능을 사용할 수 있도록 UM 속성의 기본 집합이 사용자에게 적용됩니다. 자세한 내용은 [사용자에 대 한 음성 메일](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)을 참조하십시오.
 
 업그레이드 프로세스 동안 Exchange 2007 사서함 서버 및 Exchange 2013 사서함 서버 둘 다에서 일정 기간 동안 UM 사용 가능 사서함이 포함됩니다. 그러나 모든 UM 사용 가능 사용자를 Exchange 2013 사서함 서버로 이동하려면 Exchange 2013 서버의 셸에서 <strong>New-MoveRequest</strong> cmdlet을 사용하거나 EAC를 사용하여 모든 속성과 설정(사용자의 PIN 포함)을 보존해야 합니다.
 
@@ -442,9 +442,9 @@ EAC를 사용하여 Exchange 2007 사서함을 Exchange 2013 사서함 서버로
 
 ## 12단계: 새 사용자가 UM을 사용하도록 설정하거나 기존 UM 사용 가능 사용자의 설정 구성
 
-사용자가 통합 메시징을 사용할 수 있으려면 사서함이 있어야 합니다. 그러나 사서함이 있는 사용자는 기본적으로 UM을 사용하도록 설정되지 않습니다. 사용자가 UM을 사용할 수 있으면 해당 사용자에 대한 UM 속성과 음성 메일 기능을 관리, 수정 및 구성할 수 있습니다. EAC 또는 셸을 사용하여 사용자가 UM을 사용하도록 설정할 수 있습니다. 자세한 내용은 [사용자에 대 한 음성 메일](voice-mail-for-users-exchange-2013-help.md)을 참조하십시오.
+사용자가 통합 메시징을 사용할 수 있으려면 사서함이 있어야 합니다. 그러나 사서함이 있는 사용자는 기본적으로 UM을 사용하도록 설정되지 않습니다. 사용자가 UM을 사용할 수 있으면 해당 사용자에 대한 UM 속성과 음성 메일 기능을 관리, 수정 및 구성할 수 있습니다. EAC 또는 셸을 사용하여 사용자가 UM을 사용하도록 설정할 수 있습니다. 자세한 내용은 [사용자에 대 한 음성 메일](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)을 참조하십시오.
 
-사용자가 UM을 사용하도록 설정할 때는 음성 메일이 사용자의 사서함에 전송될 때 UM에서 사용할 내선 번호를 최소 하나 이상 정의해야 합니다. 그래야 사용자가 Outlook Voice Access를 사용할 수 있습니다. 사용자가 UM을 사용하도록 설정한 후에는 EAC에서 보조 내선 번호를 사용자 사서함에 추가하거나, 사용자 사서함에 EUM(Exchange 통합 메시징) 프록시 주소를 구성하여 내선 번호를 수정 또는 제거하거나, 사용자에 대한 추가/보조 내선 번호를 추가 또는 제거할 수 있습니다. 내선 번호, E.164 번호 또는 SIP 주소를 추가, 수정 또는 제거하려면 [음성 메일 사용이 가능한 사용자 절차](voice-mail-enabled-user-procedures-exchange-2013-help.md)를 참조하십시오.
+사용자가 UM을 사용하도록 설정할 때는 음성 메일이 사용자의 사서함에 전송될 때 UM에서 사용할 내선 번호를 최소 하나 이상 정의해야 합니다. 그래야 사용자가 Outlook Voice Access를 사용할 수 있습니다. 사용자가 UM을 사용하도록 설정한 후에는 EAC에서 보조 내선 번호를 사용자 사서함에 추가하거나, 사용자 사서함에 EUM(Exchange 통합 메시징) 프록시 주소를 구성하여 내선 번호를 수정 또는 제거하거나, 사용자에 대한 추가/보조 내선 번호를 추가 또는 제거할 수 있습니다. 내선 번호, E.164 번호 또는 SIP 주소를 추가, 수정 또는 제거하려면 [음성 메일 사용이 가능한 사용자 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)를 참조하십시오.
 
 EAC를 통해 사용자가 통합 메시징을 사용하도록 설정하려면 다음을 수행합니다.
 
@@ -520,7 +520,7 @@ Exchange 2013 UM으로 업그레이드하는 과정의 마지막 단계는 VoIP 
 
   -  [UM 서비스](um-services-exchange-2013-help.md)
 
-  -  [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   -  [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 

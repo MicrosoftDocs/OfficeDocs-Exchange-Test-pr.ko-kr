@@ -23,7 +23,7 @@ Microsoft Lync Server와 Exchange UM(통합 메시징)을 통합하는 경우 �
     
 
     > [!IMPORTANT]
-    > ExchUcUtil.ps1 스크립트는 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
+    > ExchUcUtil.ps1 스크립트는 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
 
 
 
@@ -59,7 +59,7 @@ Microsoft Lync Server와 같은 토폴로지에 있는 조직의 Exchange Server
 
 
 > [!IMPORTANT]
-> ExchUcUtil.ps1 스크립트는 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
+> ExchUcUtil.ps1 스크립트는 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
 
 
 

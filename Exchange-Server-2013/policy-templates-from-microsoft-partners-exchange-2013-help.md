@@ -23,7 +23,7 @@ DLP(데이터 손실 방지) 기능은 중요한 정보의 여러 범주를 식�
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

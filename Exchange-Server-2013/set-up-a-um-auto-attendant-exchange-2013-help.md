@@ -114,7 +114,7 @@ EAC(Exchange 관리 센터)에서 UM 자동 전화 교환을 설정하고 관리
 
 12. 자동 전화 교환 설정, 인사말 및 메뉴 탐색을 계획하고 녹음된 인사말, 메뉴 탐색 음성 안내 및 메뉴 탐색 응답이 포함된 오디오 파일을 만든 후에는 자동 전화 교환을 만들고 구성할 수 있습니다. 방법은 다음과 같습니다.
     
-      - [UM 자동 전화 교환 만들기](create-a-um-auto-attendant-exchange-2013-help.md)
+      - [UM 자동 전화 교환 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant)
     
       - [UM 자동 전화 교환 관리](manage-a-um-auto-attendant-exchange-2013-help.md)
 

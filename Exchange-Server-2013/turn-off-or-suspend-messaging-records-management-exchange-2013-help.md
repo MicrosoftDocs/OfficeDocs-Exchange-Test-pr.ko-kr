@@ -45,9 +45,9 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 사서함을 보존 상태로 두어 MRM을 일시적으로 해제할 수 있습니다(예: 사용자가 휴가를 떠나는 경우). 그러면 보존을 사용하지 않도록 설정할 때까지 사서함의 보존 정책의 처리가 일시 중단됩니다. 이는 원본 위치 유지나 소송 보존에 사서함을 배치하는 것과는 다릅니다.
 
-사서함을 보존 상태로 두는 방법에 대한 자세한 내용은 [사서함 보존에 원본 위치 유지](place-a-mailbox-on-retention-hold-exchange-2013-help.md)를 참조하십시오.
+사서함을 보존 상태로 두는 방법에 대한 자세한 내용은 [사서함 보존에 원본 위치 유지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)를 참조하십시오.
 
-원본 위치 유지 및 소송 보존에 대한 자세한 내용은 [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)를 참조하십시오.
+원본 위치 유지 및 소송 보존에 대한 자세한 내용은 [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)를 참조하십시오.
 
 ## 사서함에서 보존 태그 제거
 

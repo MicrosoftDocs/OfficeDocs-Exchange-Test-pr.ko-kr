@@ -25,11 +25,11 @@ EAC 또는 셸을 사용하면 메시지가 받는 사람에게 개별적으로 
 
   - [사용자 사서함 관리](manage-user-mailboxes-exchange-2013-help.md)
 
-  - [메일 그룹 만들기 및 관리](create-and-manage-distribution-groups-exchange-2013-help.md)
+  - [메일 그룹 만들기 및 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 
-  - [동적 메일 그룹 관리](manage-dynamic-distribution-groups-exchange-2013-help.md)
+  - [동적 메일 그룹 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)
 
-  - [메일 사용자 관리](manage-mail-users-exchange-2013-help.md)
+  - [메일 사용자 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-users)
 
   - [메일 연락처 관리](manage-mail-contacts-exchange-2013-help.md)
 

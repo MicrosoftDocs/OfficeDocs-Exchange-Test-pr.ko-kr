@@ -141,11 +141,11 @@ cmdlet이 기록될 때마다 감사 로그 항목이 만들어집니다. 감사
 </tr>
 <tr class="even">
 <td><p><code>CmdletParameters</code></p></td>
-<td><p>이 필드에는 <code>CmdletName</code> 필드의 cmdlet이 실행될 때 지정된 매개 변수가 포함되어 있습니다. 또한 이 매개 변수로 지정된 값(있는 경우)은 이 필드에 저장되지만 기본 출력에서 표시되지 않습니다. 이 필드의 추가 정보에 액세스하는 방법에 대한 자세한 내용은 <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">역할 그룹 변경 내용을 검색 또는 관리자 감사 로그</a>을 참조하십시오.</p></td>
+<td><p>이 필드에는 <code>CmdletName</code> 필드의 cmdlet이 실행될 때 지정된 매개 변수가 포함되어 있습니다. 또한 이 매개 변수로 지정된 값(있는 경우)은 이 필드에 저장되지만 기본 출력에서 표시되지 않습니다. 이 필드의 추가 정보에 액세스하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">역할 그룹 변경 내용을 검색 또는 관리자 감사 로그</a>을 참조하십시오.</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
-<td><p>이 필드에는 <code>ObjectModified</code> 필드의 개체에서 수정한 속성이 포함되어 있습니다. 또한 저장된 속성의 이전 값 및 새 값은 이 필드에 저장되지만 기본 출력에서 표시되지 않습니다. 이 필드의 추가 정보에 액세스하는 방법에 대한 자세한 내용은 <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">역할 그룹 변경 내용을 검색 또는 관리자 감사 로그</a>을 참조하십시오.</p>
+<td><p>이 필드에는 <code>ObjectModified</code> 필드의 개체에서 수정한 속성이 포함되어 있습니다. 또한 저장된 속성의 이전 값 및 새 값은 이 필드에 저장되지만 기본 출력에서 표시되지 않습니다. 이 필드의 추가 정보에 액세스하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">역할 그룹 변경 내용을 검색 또는 관리자 감사 로그</a>을 참조하십시오.</p>
 
 > [!IMPORTANT]
 > 이 필드는 <STRONG>Set-AdminAuditLogConfig</STRONG> cmdlet의 <EM>LogLevel</EM> 매개 변수가 <CODE>Verbose</CODE>로 설정된 경우에만 채워집니다.
@@ -199,9 +199,9 @@ EAC의 **감사** 페이지에는 다양한 유형의 준수 및 관리 구성 �
 
   - **관리자 감사 로그**   이 보고서를 사용하면 지정된 시간대 내에 기록된 감사 로그 항목을 XML 파일로 내보낸 다음 이 파일을 지정된 받는 사람에게 전자 메일로 보낼 수 있습니다. XML 파일의 콘텐츠에 대한 자세한 내용은 [관리자 감사 로그 구조](administrator-audit-log-structure-exchange-2013-help.md)를 참조하십시오.
 
-이러한 보고서를 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)을 참조하십시오.
+이러한 보고서를 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)을 참조하십시오.
 
-**감사** 페이지에 포함된 다른 보고서에 대한 자세한 내용은 [감사 보고서를 교환 합니다.](exchange-auditing-reports-exchange-2013-help.md)를 참조하십시오.
+**감사** 페이지에 포함된 다른 보고서에 대한 자세한 내용은 [감사 보고서를 교환 합니다.](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)를 참조하십시오.
 
 ## Search-AdminAuditLog cmdlet
 
@@ -223,7 +223,7 @@ EAC의 **감사** 페이지에는 다양한 유형의 준수 및 관리 구성 �
 
 각 감사 로그 항목에는 Audit Log Contents의 표에 설명된 정보가 포함되어 있습니다. 기본적으로 지정한 조건과 일치하는 처음 1,000개의 로그 항목이 반환됩니다. 하지만 이 기본값을 무시하고 *ResultSize* 매개 변수를 사용하여 더 많거나 적은 수의 항목을 반환할 수 있습니다. *ResultSize* 매개 변수로 `Unlimited` 값을 지정하여 조건과 일치하는 모든 로그 항목을 반환할 수 있습니다.
 
-**Search-AdminAuditLog** cmdlet을 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)을 참조하십시오.
+**Search-AdminAuditLog** cmdlet을 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)을 참조하십시오.
 
 ## New-AdminAuditLogSearch cmdlet
 
@@ -239,7 +239,7 @@ EAC의 **감사** 페이지에는 다양한 유형의 준수 및 관리 구성 �
 
 
 
-**New-AdminAuditLogSearch** cmdlet을 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)을 참조하십시오.
+**New-AdminAuditLogSearch** cmdlet을 사용하는 방법에 대한 자세한 내용은 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)을 참조하십시오.
 
 맨 위로 이동
 
@@ -257,7 +257,7 @@ EAC의 **감사** 페이지에는 다양한 유형의 준수 및 관리 구성 �
 
 EAC **감사** 페이지, **Search-AdminAuditLog** 또는 **New-AdminAuditLogSearch** cmdlet을 사용하여 다른 로그 항목과 동일한 방식으로 수동 감사 로그 항목을 검색할 수 있습니다.
 
-수동 감사 로그 항목에서 **Write-AdminAuditLog** cmdlet의 *Comment* 매개 변수 콘텐츠를 보려면 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)을 참조하십시오.
+수동 감사 로그 항목에서 **Write-AdminAuditLog** cmdlet의 *Comment* 매개 변수 콘텐츠를 보려면 [역할 그룹 변경 내용을 검색 또는 관리자 감사 로그](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)을 참조하십시오.
 
 ## Active Directory 복제
 

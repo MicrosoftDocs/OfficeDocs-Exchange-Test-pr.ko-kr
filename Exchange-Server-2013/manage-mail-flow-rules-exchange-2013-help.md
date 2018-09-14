@@ -31,15 +31,15 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - [전송 규칙을 사용 하 여 메시지 첨부 파일을 검사 하려면](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [일반적인 첨부 파일 차단 시나리오](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [일반적인 첨부 파일 차단 시나리오](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
-  - [메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
   - [일반적인 메시지 승인 시나리오](common-message-approval-scenarios-exchange-2013-help.md)
 
-  - [메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [메일 흐름 규칙을 구성 하기 위한 모범 사례](best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md)
+  - [메일 흐름 규칙을 구성 하기 위한 모범 사례](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)
 
   - [메일 흐름 규칙을 사용 하 여 Office 365의 메시지 첨부 파일을 검사 하려면](https://technet.microsoft.com/ko-kr/library/jj919236\(v=exchg.150\))
 
@@ -132,7 +132,7 @@ EAC를 사용 하면 처음부터 또는 서식 파일을 복사 하는 기존 �
         
           - **적용**   규칙이 켜지고 메시지 처리가 즉시 시작됩니다. 규칙에 대한 모든 동작이 수행됩니다.
         
-          - **정책 설명을 포함하여 테스트**   이 옵션을 선택하면 규칙이 설정되고 모든 정책 설명 동작(**정책 설명과 함께 보낸 사람에게 알림**)이 전송되지만 메시지 배달과 관련된 동작은 수행되지 않습니다. 이 모드를 사용하려면 DLP(데이터 손실 방지)가 필요합니다. 자세한 내용은 [정책 팁](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)을 참조하세요.
+          - **정책 설명을 포함하여 테스트**   이 옵션을 선택하면 규칙이 설정되고 모든 정책 설명 동작(**정책 설명과 함께 보낸 사람에게 알림**)이 전송되지만 메시지 배달과 관련된 동작은 수행되지 않습니다. 이 모드를 사용하려면 DLP(데이터 손실 방지)가 필요합니다. 자세한 내용은 [정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)을 참조하세요.
         
           - **정책 설명 없이 테스트**   문제 보고서 생성 동작만 적용되며 메시지 배달과 관련된 동작은 수행되지 않습니다.
 

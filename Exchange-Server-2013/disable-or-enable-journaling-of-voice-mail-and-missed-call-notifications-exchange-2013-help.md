@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 Microsoft Exchange Server 2013에서는 Exchange 조직의 받는 사람이나 보낸 사람과 주고받는 전자 메일 메시지를 저널링하기 위해 저널 규칙을 만들 때 UM(통합 메시징) 서비스에서 생성된 음성 메일과 부재 중 전화 알림이 포함됩니다. 이 항목의 절차에 따라 전체 조직에 대해 이 기능을 설정하거나 해제할 수 있습니다.
 
-저널링과 관련된 다른 관리 작업에 대한 자세한 내용은 [저널링 관리](manage-journaling-exchange-2013-help.md)를 참조하십시오.
+저널링과 관련된 다른 관리 작업에 대한 자세한 내용은 [저널링 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/journaling/manage-journaling)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -53,5 +53,5 @@ Microsoft Exchange Server 2013에서는 Exchange 조직의 받는 사람이나 �
 
 [저널링](journaling-exchange-2013-help.md)
 
-[저널링 관리](manage-journaling-exchange-2013-help.md)
+[저널링 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/journaling/manage-journaling)
 

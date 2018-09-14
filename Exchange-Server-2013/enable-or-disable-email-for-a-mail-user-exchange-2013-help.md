@@ -27,7 +27,7 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 
 
-메일 사용자와 관련된 추가 관리 작업에 대한 자세한 내용은 [메일 사용자 관리](manage-mail-users-exchange-2013-help.md)를 참조하십시오.
+메일 사용자와 관련된 추가 관리 작업에 대한 자세한 내용은 [메일 사용자 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-users)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 

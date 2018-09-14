@@ -99,7 +99,7 @@ Exchange 2013 및 Exchange Online의 MRM은 *보존 태그*와 *보존 정책*�
 <tr class="even">
 <td><p>RPT(보존 정책 태그)</p></td>
 <td><p>기본 폴더에 자동으로</p>
-<p>기본 폴더는 모든 사서함에서 자동으로 만들어지는 폴더입니다. 예를 들면 다음과 같습니다. <strong>받은 편지함</strong>, <strong>지운 편지함</strong> 및 <strong>보낸 편지함</strong><a href="default-folders-that-support-retention-policy-tags-exchange-2013-help.md">보존 정책 태그를 지 원하는 기본 폴더</a>에서 지원되는 기본 폴더 목록을 참조하세요.</p></td>
+<p>기본 폴더는 모든 사서함에서 자동으로 만들어지는 폴더입니다. 예를 들면 다음과 같습니다. <strong>받은 편지함</strong>, <strong>지운 편지함</strong> 및 <strong>보낸 편지함</strong><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/default-folders">보존 정책 태그를 지 원하는 기본 폴더</a>에서 지원되는 기본 폴더 목록을 참조하세요.</p></td>
 <td><p>관리자</p></td>
 <td><ul>
 <li><p>삭제 및 복구 허용</p></li>
@@ -207,7 +207,7 @@ Exchange 2013 및 Exchange Online의 MRM은 *보존 태그*와 *보존 정책*�
 <li><p>영구적으로 삭제한 메시지는 복구할 수 없습니다.</p></li>
 </ul></td>
 <td><ul>
-<li><p>사서함에 <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">원본 위치 유지 및 소송 보존</a> 소송 보존이 적용되면 항목은 보류 매개 변수에 따라 복구할 수 있는 항목 폴더에 보존됩니다. <a href="in-place-ediscovery-exchange-2013-help.md">원본 위치 eDiscovery</a>에서는 이러한 항목이 여전히 검색 결과에 반환됩니다.</p>
+<li><p>사서함에 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds">원본 위치 유지 및 소송 보존</a> 소송 보존이 적용되면 항목은 보류 매개 변수에 따라 복구할 수 있는 항목 폴더에 보존됩니다. <a href="in-place-ediscovery-exchange-2013-help.md">원본 위치 eDiscovery</a>에서는 이러한 항목이 여전히 검색 결과에 반환됩니다.</p>
 <p></p></li>
 </ul></td>
 </tr>
@@ -228,7 +228,7 @@ Exchange 2013 및 Exchange Online의 MRM은 *보존 태그*와 *보존 정책*�
 
 
 
-보존 태그를 만드는 방법에 대한 자세한 내용은 [보존 정책 만들기](create-a-retention-policy-exchange-2013-help.md)를 참조하십시오.
+보존 태그를 만드는 방법에 대한 자세한 내용은 [보존 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)를 참조하십시오.
 
 맨 위로 이동
 
@@ -305,7 +305,7 @@ Exchange 설치 프로그램에서는 보존 정책 **기본 MRM 정책**을 만
 
 보존 기간 또는 보존 작업을 변경하여 기본 MRM 정책에 포함된 태그를 수정하거나, 태그를 사용하지 않도록 설정하거나, 정책에서 태그를 추가하거나 제거하여 정책을 수정할 수 있습니다. 다음번에 관리되는 폴더 도우미가 처리할 때 사서함에 업데이트된 정책이 적용됩니다.
 
-정책에 연결된 보존 태그 목록을 비롯한 자세한 내용을 보려면 [Exchange Online 및 Exchange 서버에서 기본 보존 정책](default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md)을 참조하세요.
+정책에 연결된 보존 태그 목록을 비롯한 자세한 내용을 보려면 [Exchange Online 및 Exchange 서버에서 기본 보존 정책](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/default-retention-policy)을 참조하세요.
 
 맨 위로 이동
 
@@ -373,7 +373,7 @@ Exchange 설치 프로그램에서는 보존 정책 **기본 MRM 정책**을 만
 
 조직에서 MRM을 구현한 적이 없고 사용자가 해당 기능을 잘 모르는 경우 MRM 배포 초기 *웜업 및 학습* 단계 동안 보존을 사용할 수도 있습니다. 사용자가 태그를 지정하기 전에 항목이 이동하거나 삭제될 위험 없이 보존 정책을 만들어 배포하고 사용자에게 해당 정책에 대한 교육을 시킬 수 있습니다. 웜업 및 교육 기간이 종료되기 며칠 전에 사용자에게 웜업 마감 날짜를 알려야 합니다. 마감 후에는 사용자 사서함에서 보존을 제거하여 관리되는 폴더 도우미가 사서함 항목을 처리하고 지정된 보존 작업을 수행하도록 할 수 있습니다.
 
-사서함을 보존 상태로 두는 방법에 대한 자세한 내용은 [사서함 보존에 원본 위치 유지](place-a-mailbox-on-retention-hold-exchange-2013-help.md)를 참조하십시오.
+사서함을 보존 상태로 두는 방법에 대한 자세한 내용은 [사서함 보존에 원본 위치 유지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)를 참조하십시오.
 
 맨 위로 이동
 
