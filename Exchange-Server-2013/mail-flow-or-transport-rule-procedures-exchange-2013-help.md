@@ -27,7 +27,7 @@ _**마지막으로 수정된 항목:** 2015-04-13_
 
 [Exchange 2013으로 Filter Pack IFilter 등록](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md)   이러한 파일 형식을 검색 하는 첨부 파일에 적용 되는 전송 규칙 수 있도록 첨부 파일에 대 한 추가 파일 형식을 등록 하는 데 도움이 되는 정보입니다.
 
-[메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)   만들기, 보기, 수정, 사용 하도록 설정, 해제 또는 전송 규칙을 제거 하는데 도움이 되는 정보 및 가져오기 (영문) 및 전송 규칙 컬렉션 내보내기 (영문) 하는 방법에 대 한 정보입니다.
+[메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)   만들기, 보기, 수정, 사용 하도록 설정, 해제 또는 전송 규칙을 제거 하는데 도움이 되는 정보 및 가져오기 (영문) 및 전송 규칙 컬렉션 내보내기 (영문) 하는 방법에 대 한 정보입니다.
 
 [메일 흐름 규칙을 구성 하기 위한 모범 사례](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   일반적인 구성 오류를 방지하는 데 유용한 정보
 

@@ -99,7 +99,7 @@ Lync Server에 대 한 완료 되어야 하는 작업을 수행 하는 방법에
 <tr class="even">
 <td><p></p></td>
 <td><p>Outlook Voice Access 번호 및 기타 설정을 구성합니다.</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">UM 다이얼 플랜 관리</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -120,7 +120,7 @@ Lync Server에 대 한 완료 되어야 하는 작업을 수행 하는 방법에
 <tr class="even">
 <td><p></p></td>
 <td><p>각 UM 자동 전화 교환을 설치 및 구성합니다.</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환을 설정합니다</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">UM 자동 전화 교환을 설정합니다</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>

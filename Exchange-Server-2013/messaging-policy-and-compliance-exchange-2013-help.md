@@ -66,7 +66,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 <tr class="even">
 <td><p>원본 eDiscovery</p></td>
 <td><p>원본 위치 eDiscovery를 사용하면 Exchange 조직 간에 사서함 데이터를 검색할 수 있으며 검색 결과를 미리 보고 검색 사서함에 복사할 수 있습니다.</p></td>
-<td><p><a href="in-place-ediscovery-exchange-2013-help.md">원본 위치 eDiscovery</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">원본 위치 eDiscovery</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>저널링</p></td>

@@ -503,7 +503,7 @@ Exchange 검색에서는 전자 메일 메시지의 보낸 사람, 받는 사람
 
 **인덱싱되는 속성에 대한 참고 사항**:
 
-  - Outlook Web App `property:value` 쌍, `from:bsuneja@cotoso.com`등의 예: 검색 클라이언트에 의해 AQS 쿼리에서 **쿼리 가능 속성** 을 사용할 수 있습니다. 앞의 표에 나열 된 쿼리 가능 속성의 하위 집합 검색 쿼리에서 원본 위치 eDiscovery에 대 한 사용할 수도 있습니다. 이러한 속성의 목록이 [원본 위치 eDiscovery에 대 한 메시지의 속성 및 검색 연산자](message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md)을 참조 하십시오.
+  - Outlook Web App `property:value` 쌍, `from:bsuneja@cotoso.com`등의 예: 검색 클라이언트에 의해 AQS 쿼리에서 **쿼리 가능 속성** 을 사용할 수 있습니다. 앞의 표에 나열 된 쿼리 가능 속성의 하위 집합 검색 쿼리에서 원본 위치 eDiscovery에 대 한 사용할 수도 있습니다. 이러한 속성의 목록이 [원본 위치 eDiscovery에 대 한 메시지의 속성 및 검색 연산자](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators)을 참조 하십시오.
 
   - **검색 가능 속성**은 `property:value` 쌍에서는 지정할 수 없는 속성이지만 키워드 검색에서는 검색 가능 속성에서 값이 발견되는 경우 해당 값을 반환합니다. 예를 들어 `body:Contoso`를 사용하여 메시지 본문에서만 `contoso` 문자열을 검색할 수는 없습니다. 그러나 해당 문자열을 검색하면 검색 가능 속성에서 해당 속성이 발견되는 모든 항목이 반환됩니다.
 

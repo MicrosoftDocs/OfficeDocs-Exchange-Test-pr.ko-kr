@@ -223,11 +223,11 @@ IRM 보호를 지원하는 시나리오는 다음 표에 설명되어 있습니�
 
   - **저널 보고서 암호 해독**   규정 또는 비즈니스 요구 사항을 충족하기 위해 조직에서는 저널링을 사용하여 메시징 콘텐츠를 유지할 수 있습니다. 저널링 에이전트는 저널링 대상인 메시지에 대한 저널 보고서를 만들고 메시지에 대한 메타데이터를 보고서에 포함합니다. 원본 메시지는 저널 보고서에 첨부됩니다. 저널 보고서의 메시지가 IRM으로 보호되지 않은 경우 저널 보고서 암호 해독은 메시지의 일반 텍스트 사본을 저널 보고서에 첨부합니다. 자세한 내용은 [저널 보고서 암호 해독](journal-report-decryption-exchange-2013-help.md)를 참조하십시오.
 
-  - **Exchange Search를 위한 IRM 암호 해독**   Exchange Search를 위한 IRM 암호 해독을 사용하면 Exchange Search는 IRM으로 보호된 메시지의 콘텐츠를 인덱싱할 수 있습니다. 검색 관리자가 원본 위치 eDiscovery 검색을 수행하는 경우 IRM으로 보호되는 인덱싱된 메시지가 검색 결과에 반환됩니다. 자세한 내용은 [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 항목을 참조하십시오.
+  - **Exchange Search를 위한 IRM 암호 해독**   Exchange Search를 위한 IRM 암호 해독을 사용하면 Exchange Search는 IRM으로 보호된 메시지의 콘텐츠를 인덱싱할 수 있습니다. 검색 관리자가 원본 위치 eDiscovery 검색을 수행하는 경우 IRM으로 보호되는 인덱싱된 메시지가 검색 결과에 반환됩니다. 자세한 내용은 [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 항목을 참조하십시오.
     
 
     > [!NOTE]
-    > Exchange 2010 s p 1에서에서 그리고 나중에 검색 관리 역할 그룹의 구성원 검색에서 반환 하 고 검색 사서함에 있는 IRM으로 보호 된 메시지에 액세스할 수 있습니다. 이 기능을 활성화 하려면 <A href="https://technet.microsoft.com/ko-kr/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> cmdlet과 함께 <EM>EDiscoverySuperUserEnabled</EM> 매개 변수를 사용 합니다. 자세한 내용은 <A href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">Exchange 검색 및 원본 위치 eDiscovery에 대 한 IRM 구성</A>을 참조 하십시오.
+    > Exchange 2010 s p 1에서에서 그리고 나중에 검색 관리 역할 그룹의 구성원 검색에서 반환 하 고 검색 사서함에 있는 IRM으로 보호 된 메시지에 액세스할 수 있습니다. 이 기능을 활성화 하려면 <A href="https://technet.microsoft.com/ko-kr/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> cmdlet과 함께 <EM>EDiscoverySuperUserEnabled</EM> 매개 변수를 사용 합니다. 자세한 내용은 <A href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Exchange 검색 및 원본 위치 eDiscovery에 대 한 IRM 구성</A>을 참조 하십시오.
 
 
 

@@ -59,7 +59,7 @@ Microsoft에서 정의한 특정 XML 스키마 정의를 준수하는 Exchange�
 
   -  [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
     
   -  [정책 및 규정 준수 Cmdlet](https://technet.microsoft.com/ko-kr/library/dd298082\(v=exchg.150\))
 

@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 검색 관리 관리 역할 그룹은 Microsoft Exchange Server 2013의 RBAC(역할 기반 액세스 제어) 권한 모델을 구성하는 몇 가지 기본 제공 역할 그룹 중 하나입니다. 역할 그룹에는 지정된 작업 집합을 수행하기 위해 필요한 사용 권한을 포함하는 관리 역할이 하나 이상 할당됩니다. 역할 그룹 구성원은 역할 그룹에 할당된 관리 역할에 액세스할 수 있습니다. 역할 그룹에 대한 자세한 내용은 [관리 역할 그룹 이해 (영문)](understanding-management-role-groups-exchange-2013-help.md)를 참조하세요.
 
-검색 관리 역할 그룹의 구성원인 사용자나 관리자는 Exchange 조직의 사서함에서 특정 기준을 충족하는 데이터를 검색할 수 있으며, 사서함에 대해 소송 보존을 구성할 수도 있습니다. 자세한 내용은 [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)를 참조하십시오.
+검색 관리 역할 그룹의 구성원인 사용자나 관리자는 Exchange 조직의 사서함에서 특정 기준을 충족하는 데이터를 검색할 수 있으며, 사서함에 대해 소송 보존을 구성할 수도 있습니다. 자세한 내용은 [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)를 참조하십시오.
 
 
 > [!IMPORTANT]

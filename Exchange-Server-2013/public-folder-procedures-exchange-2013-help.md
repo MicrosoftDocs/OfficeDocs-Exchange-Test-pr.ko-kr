@@ -27,19 +27,19 @@ _**마지막으로 수정된 항목:** 2017-08-02_
 
 [하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
-[하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders)
 
 [Exchange 2013 서버에서 사용자 사서함이 있는 레거시 공용 폴더 구성](configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md)
 
 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)
 
-[마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)
+[마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
 
 [마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)
 
 [공용 폴더 사서함 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)
 
-[공용 폴더 만들기](create-a-public-folder-exchange-2013-help.md)
+[공용 폴더 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder)
 
 [메일 사용이 가능한 또는 공용 폴더 메일-사용 안함](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)
 

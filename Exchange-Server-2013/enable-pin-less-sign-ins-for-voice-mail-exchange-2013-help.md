@@ -39,7 +39,7 @@ PIN 없는 로그인을 사용하도록 설정하려면 UM 사서함 정책에�
 
   - 이 절차는 셸을 사용해야 수행할 수 있습니다. 온-프레미스 Exchange 조직에서 Exchange 관리 셸을 여는 방법을 확인하려면 organization, see [셸을 엽니다.](https://technet.microsoft.com/ko-kr/library/dd638134\(v=exchg.150\))을 참조하세요. Windows PowerShell을 사용하여 Exchange Online에 연결하는 방법을 알아보려면 [Exchange Online PowerShell에 연결](https://go.microsoft.com/fwlink/p/?linkid=396554)을 참조하세요.
 
-UM 사서함 정책과 관련된 추가 작업에 대한 자세한 내용은 [UM 사서함 정책 절차](um-mailbox-policy-procedures-exchange-2013-help.md)를 참조하십시오.
+UM 사서함 정책과 관련된 추가 작업에 대한 자세한 내용은 [UM 사서함 정책 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)를 참조하십시오.
 
 UM 사서함과 관련된 추가 작업에 대한 자세한 내용은 [음성 메일 사용이 가능한 사용자 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)를 참조하십시오.
 

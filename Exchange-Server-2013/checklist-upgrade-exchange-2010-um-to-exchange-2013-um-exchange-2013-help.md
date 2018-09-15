@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - [통합 메시징에 대 한 계획](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [Um 전화 시스템 통합](telephone-system-integration-with-um-exchange-2013-help.md)
+  - [Um 전화 시스템 통합](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
   - [음성 메일 시스템 전화 네트워크에 연결](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
@@ -111,7 +111,7 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <td><p></p></td>
 <td><p>기존 UM 다이얼 플랜을 만들거나 구성합니다.</p></td>
 <td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">UM 다이얼 플랜 만들기</a></p>
-<p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 관리</a></p></td>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">UM 다이얼 플랜 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -122,13 +122,13 @@ Exchange 2007 UM에서 Exchange 2013 UM으로 업그레이드하는 방법에 �
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM 헌트 그룹을 만듭니다.</p></td>
-<td><p><a href="create-a-um-hunt-group-exchange-2013-help.md">UM 헌트 그룹 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">UM 헌트 그룹 만들기</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 자동 전화 교환을 만들거나 구성합니다.</p></td>
 <td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 자동 전화 교환 만들기</a></p>
-<p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환 관리</a></p></td>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">UM 자동 전화 교환 관리</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

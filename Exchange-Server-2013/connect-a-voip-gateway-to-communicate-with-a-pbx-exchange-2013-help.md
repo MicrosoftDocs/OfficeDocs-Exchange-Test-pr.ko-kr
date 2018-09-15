@@ -25,7 +25,7 @@ VoIP 게이트웨이를 구성할 때는 VoIP 게이트웨이 장치가 아날�
 
 Exchange TechCenter의 다음 제안 리소스에서는 VoIP 게이트웨이와 PBX를 올바르게 구성하는 데 유용한 정보를 제공합니다.
 
-  - **지원되는 VoIP 게이트웨이, IP PBX 및 PBX 문서**   [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)에는 VoIP 게이트웨이 및 PBX를 구성할 때 사용할 수 있는 구성 파일과 설정 정보가 있습니다.
+  - **지원되는 VoIP 게이트웨이, IP PBX 및 PBX 문서**   [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)에는 VoIP 게이트웨이 및 PBX를 구성할 때 사용할 수 있는 구성 파일과 설정 정보가 있습니다.
 
   - **구성 및 기술 참고 사항**   [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)에는 VoIP 게이트웨이 및 PBX를 구성할 때 사용할 수 있는 구성 파일과 설정 정보가 있습니다.
 

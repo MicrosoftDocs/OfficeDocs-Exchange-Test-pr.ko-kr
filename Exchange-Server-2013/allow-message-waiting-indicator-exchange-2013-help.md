@@ -185,7 +185,7 @@ MWI는 UM 구성 요소인 UM 사서함 정책과 UM IP 게이트웨이의 설�
 
 ## UM 사서함 정책 및 MWI
 
-UM 사서함 정책을 만들어 일련의 공용 UM 정책 설정을 UM 사용 가능 사서함 모음에 적용할 수 있습니다. 예를 들어, UM 사서함 정책을 사용하여 PIN 정책 설정, 전화 걸기 제한 및 MWI 알림 설정을 적용할 수 있습니다. UM 사서함 정책에서 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하면 해당 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에 대해 MWI를 사용하거나 사용할 수 없게 됩니다. MWI 설정은 UM 다이얼 플랜과 연결된 사용자 하위 집합에도 적용됩니다. UM 사용 가능 사용자 그룹에 대해 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하는 방법을 포함하여 UM 사서함 정책에 대한 자세한 내용은 [UM 사서함 정책 절차](um-mailbox-policy-procedures-exchange-2013-help.md)를 참조하십시오.
+UM 사서함 정책을 만들어 일련의 공용 UM 정책 설정을 UM 사용 가능 사서함 모음에 적용할 수 있습니다. 예를 들어, UM 사서함 정책을 사용하여 PIN 정책 설정, 전화 걸기 제한 및 MWI 알림 설정을 적용할 수 있습니다. UM 사서함 정책에서 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하면 해당 UM 사서함 정책과 연결된 모든 UM 사용 가능 사용자에 대해 MWI를 사용하거나 사용할 수 없게 됩니다. MWI 설정은 UM 다이얼 플랜과 연결된 사용자 하위 집합에도 적용됩니다. UM 사용 가능 사용자 그룹에 대해 MWI를 사용하도록 설정하거나 사용하지 않도록 설정하는 방법을 포함하여 UM 사서함 정책에 대한 자세한 내용은 [UM 사서함 정책 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)를 참조하십시오.
 
 다음 표에 표시된 대로 EAC를 사용하거나 셸에서 **Set-UMMailboxPolicy** cmdlet을 사용하여 MWI 설정을 구성할 수 있습니다.
 
@@ -222,7 +222,7 @@ UM 사서함 정책에서 MWI 설정을 관리하는 방법에 대한 자세한 
 
   - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
-  - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하지 않도록 설정](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하지 않도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))
 

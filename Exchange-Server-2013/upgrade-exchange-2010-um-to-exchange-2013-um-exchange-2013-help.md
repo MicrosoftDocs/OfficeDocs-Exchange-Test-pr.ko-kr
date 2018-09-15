@@ -294,7 +294,7 @@ Exchange 2010 통합 메시징을 배포할 때는 UM이 수신 전화 응답하
 
 UM IP 게이트웨이는 실제 VoIP(Voice over IP) 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX를 나타냅니다. 음성 사서함 사용자가 수신 전화에 응답하고 발신 전화를 보내는 데 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX를 사용하려면 디렉터리 서비스에서 UM IP 게이트웨이를 만들어야 합니다.
 
-UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX와 UM 다이얼 플랜 간의 연결이 설정됩니다. 여러 UM 헌트 그룹을 만들면 단일 UM IP 게이트웨이를 여러 UM 다이얼 플랜과 연결할 수 있습니다. 자세한 내용은 [UM IP 게이트웨이](um-ip-gateways-exchange-2013-help.md)를 참조하십시오.
+UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, IP PBX 또는 SIP 사용 가능 PBX와 UM 다이얼 플랜 간의 연결이 설정됩니다. 여러 UM 헌트 그룹을 만들면 단일 UM IP 게이트웨이를 여러 UM 다이얼 플랜과 연결할 수 있습니다. 자세한 내용은 [UM IP 게이트웨이](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)를 참조하십시오.
 
 필요한 경우 다음과 같이 EAC를 사용하여 UM IP 게이트웨이를 만들 수 있습니다.
 
@@ -552,7 +552,7 @@ Exchange 2013 UM으로 업그레이드하는 과정의 마지막 단계는 VoIP 
 
   -  [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
 ## 15단계: Exchange 2010 통합 메시징 서버에서 전화 응답을 사용하지 않도록 설정
 

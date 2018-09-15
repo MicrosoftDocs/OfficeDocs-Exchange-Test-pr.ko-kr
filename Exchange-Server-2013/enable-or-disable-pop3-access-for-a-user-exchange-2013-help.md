@@ -25,7 +25,7 @@ _**마지막으로 수정된 항목:** 2014-01-06_
 
 
 
-사용자 사서함을 관리하는 방법에 대한 자세한 내용은 [사용자 사서함 관리](manage-user-mailboxes-exchange-2013-help.md)를 참조하십시오.
+사용자 사서함을 관리하는 방법에 대한 자세한 내용은 [사용자 사서함 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)를 참조하십시오.
 
 POP3 및 IMAP4에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)를 참조하십시오.
 

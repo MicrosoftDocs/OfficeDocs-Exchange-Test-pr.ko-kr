@@ -188,7 +188,7 @@ Microsoft Lync Server에 대 한 자세한 내용은, [Microsoft Lync Server](ht
 
 5.  SIP URI 다이얼 플랜에 추가한 클라이언트 액세스 및 사서함 서버에서 시작 모드 및 TLS 수신 포트는 이중으로 설정한 다음 각 사서함 서버의 MicrosoftExchange 통합 메시징 서비스 및 각 클라이언트 서버의 MicrosoftExchange 통합 메시징 호출 라우터 서비스를 다시 시작합니다.
 
-6.  UM 자동 전화 교환을 만들고 구성합니다. 자세한 내용은 [UM 자동 전화 교환을 설정합니다](set-up-a-um-auto-attendant-exchange-2013-help.md) 항목을 참조하십시오.
+6.  UM 자동 전화 교환을 만들고 구성합니다. 자세한 내용은 [UM 자동 전화 교환을 설정합니다](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant) 항목을 참조하십시오.
 
 7.  사용자가 음성 메일을 사용할 수 있도록 설정할 때 Enterprise Voice를 사용할 사용자에 대한 SIP 주소를 만듭니다. 대부분의 경우 이 SIP 주소는 사용자가 Enterprise Voice를 사용할 수 있도록 설정할 때 사용하는 SIP 주소와 동일합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail) 항목을 참조하십시오.
     

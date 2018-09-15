@@ -27,7 +27,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 
 
-전송 규칙과 관련된 추가 관리 작업에 대한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하십시오.
+전송 규칙과 관련된 추가 관리 작업에 대한 자세한 내용은 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -139,7 +139,7 @@ Office 2010 Filter Pack 배포는 두 가지 주요 단계로 구성됩니다.
 
 Microsoft Office 2010 Filter Pack IFilter를 성공적으로 등록했는지 확인하려면 다음 작업을 수행하십시오.
 
-1.  다음 속성을 사용하여 전송 규칙을 만듭니다. 전송 규칙을 만드는 방법에 대한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하십시오.
+1.  다음 속성을 사용하여 전송 규칙을 만듭니다. 전송 규칙을 만드는 방법에 대한 자세한 내용은 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하십시오.
     
       - 보낸 사람이 다음과 같음: 내 사서함
     

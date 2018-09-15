@@ -25,9 +25,9 @@ _**마지막으로 수정된 항목:** 2014-02-24_
 
   - 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. [메시징 정책 및 규정 준수 권한](messaging-policy-and-compliance-permissions-exchange-2013-help.md)의 "원본 위치 eDiscovery" 항목.
 
-  - EDiscovery 검색에 검색 결과 복사할 수는 있지만 전에 EAC 또는 셸을 사용 하 여 만들어야 합니다. 자세한 내용은 [원본 위치 eDiscovery 검색 만들기](create-an-in-place-ediscovery-search-exchange-2013-help.md)를 참조 합니다.
+  - EDiscovery 검색에 검색 결과 복사할 수는 있지만 전에 EAC 또는 셸을 사용 하 여 만들어야 합니다. 자세한 내용은 [원본 위치 eDiscovery 검색 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)를 참조 합니다.
 
-  - Exchange 2013 설치 프로그램 **사서함 검색** 검색 결과 복사 하려면 이라는 검색 사서함을 만듭니다. 사서함에 대 한 검색 검색 Exchange Online 에서 기본적으로도 생성 됩니다. 추가 검색 사서함을 만들 수 있습니다. 자세한 내용은 [검색 사서함 만들기](create-a-discovery-mailbox-exchange-2013-help.md)를 참조 합니다.
+  - Exchange 2013 설치 프로그램 **사서함 검색** 검색 결과 복사 하려면 이라는 검색 사서함을 만듭니다. 사서함에 대 한 검색 검색 Exchange Online 에서 기본적으로도 생성 됩니다. 추가 검색 사서함을 만들 수 있습니다. 자세한 내용은 [검색 사서함 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)를 참조 합니다.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -71,7 +71,7 @@ _**마지막으로 수정된 항목:** 2014-02-24_
 
 **New-MailboxSearch** cmdlet을 사용 하 여 원본 위치 eDiscovery 검색 만들기, 후 *TargetMailbox* 매개 변수에서 지정한 검색 사서함으로 메시지를 복사 하는 검색을 시작 해야 합니다. 셸을 사용 하 여 eDiscovery 검색 만들기 (영문) 하는 방법에 대 한 정보를 참조 하십시오.
 
-  - [셸을 사용하여 원본 위치 eDiscovery 검색 만들기](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [셸을 사용하여 원본 위치 eDiscovery 검색 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
   - [New-MailboxSearch](https://technet.microsoft.com/ko-kr/library/dd298064\(v=exchg.150\))
 
@@ -94,7 +94,7 @@ _**마지막으로 수정된 항목:** 2014-02-24_
   ```
 ## 검색 결과 복사 하는 방법에 대 한 자세한 내용
 
-  - 검색 사서함으로 검색 결과 복사한 후에 PST 파일에 해당 검색 결과 내보낼 수 있습니다. 자세한 내용은 [PST 파일로 eDiscovery 검색 결과 내보내기](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)을 참조 하십시오.
+  - 검색 사서함으로 검색 결과 복사한 후에 PST 파일에 해당 검색 결과 내보낼 수 있습니다. 자세한 내용은 [PST 파일로 eDiscovery 검색 결과 내보내기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/export-search-results)을 참조 하십시오.
 
   - 검색할 수 없는 항목에 대 한 자세한 내용은 [Exchange eDiscovery의 검색할 수 없는 항목](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)을 참조 하십시오.
 
@@ -106,5 +106,5 @@ _**마지막으로 수정된 항목:** 2014-02-24_
     
       - **검색 결과 미리 보기**   이 옵션을 통해를 보려면 검색 사서함에 복사 하는 대신 검색에서 반환 된 검색 결과 미리 볼 수 있습니다. 이 통해 신속 하 게 검색 결과 관련 된 있는지 여부를 결정할 수 있습니다. 결과 미리 보고 한 후에 검색 결과 범위를 좁힐 하 고 검색을 다시 실행 하 여 검색 쿼리를 수정할 수 있습니다. 항목 미리 보기 페이지에서 실제 검색 결과의 버전을 읽기 전용으로 설정 되므로 수 없는 이동, 편집, 삭제 또는 미리 보기 페이지에서 음성 메일로 착신 전환.
     
-    자세한 내용은 [Estimate 또는 검색 결과 미리 보기를](create-an-in-place-ediscovery-search-exchange-2013-help.md)참조 하십시오.
+    자세한 내용은 [Estimate 또는 검색 결과 미리 보기를](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)참조 하십시오.
 

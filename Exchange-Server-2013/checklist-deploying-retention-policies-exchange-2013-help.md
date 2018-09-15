@@ -21,7 +21,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - [메시징 레코드 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-  - [보존 태그 및 보존 정책](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [보존 태그 및 보존 정책](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## 보존 정책 배포 검사 목록
 
@@ -63,7 +63,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>보존 정책에 보존 태그를 추가합니다.</p></td>
-<td><p><a href="add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md">보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags">보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>

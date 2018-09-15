@@ -116,7 +116,7 @@ Exchange에서는 주소의 이름 부분이 315자를 넘으면 전체 전자 �
 </tr>
 <tr class="odd">
 <td><p>MailContact</p></td>
-<td><p>전자 메일 주소가 있는 연락처 개체. 보통 메일 연락처는 Exchange 조직 외부에 있는 받는 사람에 대해 사용됩니다. 또한 크로스 포리스트 Exchange 환경에도 사용됩니다. 자세한 내용은 <a href="manage-mail-contacts-exchange-2013-help.md">메일 연락처 관리</a>를 참조하십시오.</p></td>
+<td><p>전자 메일 주소가 있는 연락처 개체. 보통 메일 연락처는 Exchange 조직 외부에 있는 받는 사람에 대해 사용됩니다. 또한 크로스 포리스트 Exchange 환경에도 사용됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts">메일 연락처 관리</a>를 참조하십시오.</p></td>
 </tr>
 <tr class="even">
 <td><p>MailPublicFolder</p></td>
