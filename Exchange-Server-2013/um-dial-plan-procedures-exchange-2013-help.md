@@ -19,17 +19,17 @@ _**마지막으로 수정된 항목:** 2013-04-16_
 
 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)
 
-[UM 다이얼 플랜 관리](manage-a-um-dial-plan-exchange-2013-help.md)
+[UM 다이얼 플랜 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan)
 
 [SIP URI 다이얼 플랜에 사서함 및 클라이언트 액세스 서버를 추가 합니다.](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)
 
 [SIP URI 다이얼 플랜에서 사서함 및 클라이언트 액세스 서버를 제거 합니다.](remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md)
 
-[오디오 코덱 변경](change-the-audio-codec-exchange-2013-help.md)
+[오디오 코덱 변경](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec)
 
 [최대 통화 기간 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration)
 
-[최대 녹음/녹화 기간 구성](configure-the-maximum-recording-duration-exchange-2013-help.md)
+[최대 녹음/녹화 기간 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration)
 
 [녹음/녹화 유휴 시간 제한 값을 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out)
 
@@ -37,5 +37,5 @@ _**마지막으로 수정된 항목:** 2013-04-16_
 
 [유사한 이름을 가진 사용자에 대 한 다이얼 플랜을 구성 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names)
 
-[UM 다이얼 플랜을 삭제](delete-a-um-dial-plan-exchange-2013-help.md)
+[UM 다이얼 플랜을 삭제](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan)
 

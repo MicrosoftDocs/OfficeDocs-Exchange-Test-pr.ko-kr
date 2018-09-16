@@ -59,17 +59,17 @@ IP PBX 구성
 
 주요 전화 시스템도 더욱 복잡 한 시간에 따른 이루어지고 VoIP 게이트웨이 추가 하는 경우 통합 메시징과 함께 작동 수 있습니다. 그러나 일부 덜 복잡 한 시스템 지원 되는 VoIP 게이트웨이 사용 하는 경우에 작동 하지 않습니다.
 
-  - **PBX:**  레거시 PBX는 통화를 전환 하는 전화 통신 장치는 전화 통신 또는 회로 전환 네트워크에 있습니다. 레거시 PBX는 PBX는 네트워크 어댑터 없고 IP 패킷을 전달할 수 없습니다. IP 패킷을 전달할 수 없으므로 이러한, 때문에 일부 기업과 조직은 대체 레거시 Pbx IP Pbx와. Pbx 통합 메시징에서 지원 목록이 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+  - **PBX:**  레거시 PBX는 통화를 전환 하는 전화 통신 장치는 전화 통신 또는 회로 전환 네트워크에 있습니다. 레거시 PBX는 PBX는 네트워크 어댑터 없고 IP 패킷을 전달할 수 없습니다. IP 패킷을 전달할 수 없으므로 이러한, 때문에 일부 기업과 조직은 대체 레거시 Pbx IP Pbx와. Pbx 통합 메시징에서 지원 목록이 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
     
     Pbx는 대부분의 중간 규모 및 대규모-크기의 회사에서 사용 됩니다. PBX에는 사용자 또는 PBX에 외부 것으로 간주 하는 전화 통화를 높이기 위한 외부 회선의 특정 번호를 공유 하려면 PBX의 구독자 수 있습니다. PBX는 전용된 외부 전화 회선 비즈니스에서의 각 사용자를 부여 보다 훨씬 저렴 솔루션입니다. 전화, 팩스, 모뎀 및 다른 많은 통신 장치 외에도 PBX에 연결 될 수 있습니다.
     
     조직 내에 설치 된 일반적으로 하 고 있는 전화 출장 및 전화 회사 간의 통화를 연결 하는 PBX 장비입니다. 외부 회선, 트렁크 줄으로도 알려져의 제한 된 수는 통화 요청 및 수신 외부 비즈니스에 PSTN와 같은 외부 소스에서 일반적으로 사용할 수 있습니다.
     
-    레거시 PBX가 통합 메시징을 함께 사용할 수 있도록 지원 되는 VoIP 게이트웨이 배포 해야 합니다. 지원 되는 VoIP 게이트웨이 목록이 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+    레거시 PBX가 통합 메시징을 함께 사용할 수 있도록 지원 되는 VoIP 게이트웨이 배포 해야 합니다. 지원 되는 VoIP 게이트웨이 목록이 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
 
   - **IP PBX:**  IP PBX는 IP 프로토콜을 지 원하는 네트워크 어댑터가 있는 PBX입니다. 일반적으로 조직이 나 회사 전화 회사 사무실에 배치 되는 대신에 있는 장비를 전환 하는 전화의 경우 IP Pbx의 두가지 유형이 있습니다: 기존 IP Pbx 및 IP Pbx 하이브리드 합니다. 기존 IP Pbx 및 하이브리드 IP Pbx 모두 패킷을에서 VoIP 기반 전화 음성 대화를 보내는 IP 프로토콜을 지원 합니다. 그러나 IP Pbx 하이브리드도 전통적인 아날로그 및 디지털 전화를 연결 합니다.
     
-    IP Pbx는 관리자는 인터넷 브라우저 또는 다른 IP 기반 도구를 사용 하 여 IP PBX 서비스를 보다 쉽게 구성할 수 있으므로 자주 레거시 Pbx 보다 관리 하기 쉽습니다. 또한 없음 추가 된 배선, 케이블 또는 패치 패널을 설치할 필요 합니다. IP PBX와 IP 기반 전화는 단순히 전화를 분리 하 고 새 위치 연결 하 여 이동할 수 있습니다. 이 레거시 PBX 공급 업체 로부터 전화를 이동 하는 데 필요한 비용이 많이 드는 서비스 호출을 피할 수 있습니다. 또한, IP PBX를 소유 하는 조직에서는 유지 관리 하 고 별도 회로 전환 하 고 패킷 전환 네트워크를 관리 하는 데 필요한 추가 인프라 비용이 발생 필요가 없습니다. 통합 메시징에 대 한 지원 되는 IP Pbx의 목록, [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+    IP Pbx는 관리자는 인터넷 브라우저 또는 다른 IP 기반 도구를 사용 하 여 IP PBX 서비스를 보다 쉽게 구성할 수 있으므로 자주 레거시 Pbx 보다 관리 하기 쉽습니다. 또한 없음 추가 된 배선, 케이블 또는 패치 패널을 설치할 필요 합니다. IP PBX와 IP 기반 전화는 단순히 전화를 분리 하 고 새 위치 연결 하 여 이동할 수 있습니다. 이 레거시 PBX 공급 업체 로부터 전화를 이동 하는 데 필요한 비용이 많이 드는 서비스 호출을 피할 수 있습니다. 또한, IP PBX를 소유 하는 조직에서는 유지 관리 하 고 별도 회로 전환 하 고 패킷 전환 네트워크를 관리 하는 데 필요한 추가 인프라 비용이 발생 필요가 없습니다. 통합 메시징에 대 한 지원 되는 IP Pbx의 목록, [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
     
     맨 위로 이동
 
@@ -107,7 +107,7 @@ IP PBX 구성
 
 PBX를 올바르게 구성 하 여 얼마나 많은 채널 또는 외부 발신자와 얼마나 많은 채널을 통해 들어오는 호출을 수신 하도록 구성 하려는 선이나 발신자에 게 조직 내에서 발생 하는 호출에 사용할 줄을 제어할 수 있습니다. 채널 또는 줄의 번호를 구성 다른 용무 중 신호를 방지 하 고 채널 또는 통화 센터 등의 응용 프로그램에 할당 된 줄의 수를 구성할 수 있습니다. 필요한 임대 회선 줄어들기 때문에 채널 또는 조직에서 줄을 관리 하기 위한 비용 효율적인 메서드는 올바르게 PBX를 구성 합니다.
 
-PBX는 사용자가 자신의 개별 전화번호 또는 내선 번호를 가질 수 있도록 특정 전화 건된 전화번호를 특정 전화를 라우팅할 수 있습니다. 이 직접 안쪽으로 전화를 걸 번호 라고 합니다. 사용자에 대 한 전화번호는 전화를 걸 전화 회사는 DID 번호를 전화를 건 번호 식별 서비스 (DNIS)를 사용 하 여 PBX에 보냅니다. 전화 회사 DNIS를 사용 하 여 보낼 수, 때문에 대 한 호출을 라우팅할 운영자가 개입에 대 한 않아도가 됩니다. PBX에 잘못 된 발신자가 전화를 건 번호에 라우팅에 대 한 호출에 대 한 정보가 있습니다. Pbx 통합 메시징에서 지원 목록이 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+PBX는 사용자가 자신의 개별 전화번호 또는 내선 번호를 가질 수 있도록 특정 전화 건된 전화번호를 특정 전화를 라우팅할 수 있습니다. 이 직접 안쪽으로 전화를 걸 번호 라고 합니다. 사용자에 대 한 전화번호는 전화를 걸 전화 회사는 DID 번호를 전화를 건 번호 식별 서비스 (DNIS)를 사용 하 여 PBX에 보냅니다. 전화 회사 DNIS를 사용 하 여 보낼 수, 때문에 대 한 호출을 라우팅할 운영자가 개입에 대 한 않아도가 됩니다. PBX에 잘못 된 발신자가 전화를 건 번호에 라우팅에 대 한 호출에 대 한 정보가 있습니다. Pbx 통합 메시징에서 지원 목록이 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
 
 맨 위로 이동
 
@@ -135,11 +135,11 @@ PBX는 사용자가 자신의 개별 전화번호 또는 내선 번호를 가질
 
 단일 또는 여러 아날로그 또는 디지털 Pbx가 포함 된 전화 통신 환경에서 VoIP 게이트웨이 데이터 네트워크에 있는 IP 기반 프로토콜에 전화 통신 네트워크에 있는 회로 기반 프로토콜을 변환 하는 PBX와 Exchange 2013 클라이언트 액세스 및 사서함 서버 사이 필요 합니다. VoIP 게이트웨이 하는 방법에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
 
-  - [UM IP 게이트웨이](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 게이트웨이](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [PBX와 통신 하도록 VoIP 게이트웨이 연결 합니다.](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)
 
-통합 메시징에 대 한 지원 되는 VoIP 게이트웨이 목록이 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+통합 메시징에 대 한 지원 되는 VoIP 게이트웨이 목록이 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
 
 맨 위로 이동
 
@@ -147,7 +147,7 @@ PBX는 사용자가 자신의 개별 전화번호 또는 내선 번호를 가질
 
 IP PBX는 이더넷 또는 패킷 전환 LAN을 사용 하 여 전화를 연결할 IP 프로토콜을 지 원하는 PBX입니다. IP 또는 데이터 패킷을에서 음성 대화를 보냅니다. IP PBX는 여러 인터페이스 있을 수 있습니다. 이러한 데이터 네트워크에 대 한 인터페이스 및 전화 통신 또는 회로 전환 네트워크에 대 한 연결을 허용 하는 다른 인터페이스를 포함 합니다.
 
-실시간 인터넷 프로토콜의 개발을 성공적으로 데이터 네트워크를 통해 음성 및 팩스 메시지를 보낼 수 있게 되었습니다. 이러한 실시간 인터넷 프로토콜 포함 통합 메시징과 함께 사용 되는 VoIP 프로토콜: 프로토콜 SIP (Session Initiation)을 통해 전송 제어 프로토콜 (TCP) 음성 메시징에 대 한 합니다. 이러한 프로토콜을 성공적으로 데이터 네트워크를 통해 음성 및 팩스 메시지를 보낼 수 수행 했습니다. 실시간 VoIP 프로토콜은 배달 순서와 데이터 패킷의 타이밍 유지 관리 및 제어 될 수 있도록 패킷 전환 또는 데이터 네트워크를 통해 음성 메시지를 보낼 필요 합니다. 이러한 프로토콜 사용 되지 않은 경우 유지 관리 하 고 배달 및 데이터 패킷의 타이밍을 제어 하는 사용자의 음성 나눌 수는 및 사운드 일관 되지 나 이미지가 왜곡 나타날 수 있습니다. 통합 메시징에 대 한 지원 되는 IP Pbx의 목록, [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+실시간 인터넷 프로토콜의 개발을 성공적으로 데이터 네트워크를 통해 음성 및 팩스 메시지를 보낼 수 있게 되었습니다. 이러한 실시간 인터넷 프로토콜 포함 통합 메시징과 함께 사용 되는 VoIP 프로토콜: 프로토콜 SIP (Session Initiation)을 통해 전송 제어 프로토콜 (TCP) 음성 메시징에 대 한 합니다. 이러한 프로토콜을 성공적으로 데이터 네트워크를 통해 음성 및 팩스 메시지를 보낼 수 수행 했습니다. 실시간 VoIP 프로토콜은 배달 순서와 데이터 패킷의 타이밍 유지 관리 및 제어 될 수 있도록 패킷 전환 또는 데이터 네트워크를 통해 음성 메시지를 보낼 필요 합니다. 이러한 프로토콜 사용 되지 않은 경우 유지 관리 하 고 배달 및 데이터 패킷의 타이밍을 제어 하는 사용자의 음성 나눌 수는 및 사운드 일관 되지 나 이미지가 왜곡 나타날 수 있습니다. 통합 메시징에 대 한 지원 되는 IP Pbx의 목록, [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
 
 
 > [!NOTE]
@@ -185,7 +185,7 @@ IP PBX 데이터 네트워크에 이미 연결 수 및 VoIP 프로토콜 패킷 
 
   - 통화에 사용 되는 선 또는 포트 번호
 
-  - 전화 통신, 신호 정보 설정, 제어, 네트워크에서 끝점 간에 정보를 교환 하는데 사용 됩니다 하 고 종료를 호출 합니다. VoIP 게이트웨이 및 IP Pbx에서 사용 하는 여러 신호 메서드는 통합 메시징에서 지원 됩니다. 사용 되는 신호 메서드에 사용 되는 장치 종류 및 전화 회사에서 사용 되는 신호 메서드의 형식에 따라 다릅니다. 가장 중요 한 비율은 VoIP 게이트웨이 또는 IP PBX 전화 회사에 연결 되는 장치를 보내고 받은 호출자에 의해 호출 또는 호출 업체의 정보를 사용 하도록 설정 하는 신호 메서드 중 하나 이상이 지원 해야 합니다. 지원 되는 VoIP 게이트웨이에 대 한 구성 정보를 신호 하는 방법에 대 한 자세한 내용은 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
+  - 전화 통신, 신호 정보 설정, 제어, 네트워크에서 끝점 간에 정보를 교환 하는데 사용 됩니다 하 고 종료를 호출 합니다. VoIP 게이트웨이 및 IP Pbx에서 사용 하는 여러 신호 메서드는 통합 메시징에서 지원 됩니다. 사용 되는 신호 메서드에 사용 되는 장치 종류 및 전화 회사에서 사용 되는 신호 메서드의 형식에 따라 다릅니다. 가장 중요 한 비율은 VoIP 게이트웨이 또는 IP PBX 전화 회사에 연결 되는 장치를 보내고 받은 호출자에 의해 호출 또는 호출 업체의 정보를 사용 하도록 설정 하는 신호 메서드 중 하나 이상이 지원 해야 합니다. 지원 되는 VoIP 게이트웨이에 대 한 구성 정보를 신호 하는 방법에 대 한 자세한 내용은 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)을 참조 하십시오.
 
 다른 신호 방법을 사용할 수 있지만 가장 많이 사용 되는 두 신호 메서드는 다음과 같습니다.
 

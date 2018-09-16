@@ -267,7 +267,7 @@ ABP를 사용하고 있고 서로 다른 가상 조직의 사용자가 서로의
 
   - CustomAttributeX 특성은 조직의 사용자 지정을 위해 명시적으로 예약되어 있으며 조직 관리자만 제어할 수 있습니다.
 
-조직을 나눌 때 구현해야 할 또 다른 모범 사례는 메일 그룹 및 동적 메일 그룹의 이름에 회사 식별자를 사용하는 것입니다. Exchange에는 그룹 명명 정책 기능이 있습니다. 이 기능은 메일 그룹의 Company, StateorProvince, Title 및 CustomAttribute1~CustomAttribute15 작성자를 포함하여 메일 그룹을 만드는 사용자의 여러 특성을 기반으로 메일 그룹의 이름에 접두사나 접미사를 자동으로 추가합니다. 그룹 명명 정책은 사용자가 고유한 메일 그룹을 만들 수 있도록 허용하는 경우 특히 중요합니다. 자세한 내용은 [메일 그룹 명명 정책을 만들려면](create-a-distribution-group-naming-policy-exchange-2013-help.md)를 참조하십시오.
+조직을 나눌 때 구현해야 할 또 다른 모범 사례는 메일 그룹 및 동적 메일 그룹의 이름에 회사 식별자를 사용하는 것입니다. Exchange에는 그룹 명명 정책 기능이 있습니다. 이 기능은 메일 그룹의 Company, StateorProvince, Title 및 CustomAttribute1~CustomAttribute15 작성자를 포함하여 메일 그룹을 만드는 사용자의 여러 특성을 기반으로 메일 그룹의 이름에 접두사나 접미사를 자동으로 추가합니다. 그룹 명명 정책은 사용자가 고유한 메일 그룹을 만들 수 있도록 허용하는 경우 특히 중요합니다. 자세한 내용은 [메일 그룹 명명 정책을 만들려면](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)를 참조하십시오.
 
 동적 메일 그룹에는 그룹 명명 정책이 적용되지 않으므로 수동으로 동적 메일 그룹을 나누고 명령 정책을 적용해야 합니다.
 
@@ -311,7 +311,7 @@ OAB를 만드는 경우 New- 또는 Set-OfflineAddressBook의 *AddressLists* 매
 
     New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
-자세한 내용은 [오프 라인 주소록 만들기](create-an-offline-address-book-exchange-2013-help.md)를 참조하십시오.
+자세한 내용은 [오프 라인 주소록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/create-offline-address-book)를 참조하십시오.
 
 ## 4단계: ABP 만들기
 

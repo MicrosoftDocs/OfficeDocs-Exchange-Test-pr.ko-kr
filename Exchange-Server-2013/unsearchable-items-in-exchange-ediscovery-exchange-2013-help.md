@@ -63,9 +63,9 @@ eDiscovery 검색을 정상적으로 수행하려면 조직에서 검색할 수 
 
 검색할 수 없는 항목을 검색 결과에 포함하는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-  - [원본 위치 eDiscovery 검색 만들기](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [원본 위치 eDiscovery 검색 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [PST 파일로 eDiscovery 검색 결과 내보내기](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)
+  - [PST 파일로 eDiscovery 검색 결과 내보내기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [SharePoint: eDiscovery 콘텐츠 내보내기 및 보고서를 만들](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

@@ -33,7 +33,7 @@ Exchange UM(통합 메시징)을 사용하면 조직 내 사용자에게 음성 
 > 호스트 또는 하이브리드 환경에 Exchange UM을 배포하는 경우 SBC(Session Border Controller)를 배포해야 합니다. SBC는 전화 통신 네트워크에 연결하거나 조직에 발신음을 제공하기 위해 UM을 사용하지 않습니다. 그러나 공용 또는 사설 WAN을 통해 IP 프로토콜을 사용하여 온-프레미스 UM 배포를 데이터 센터에 연결합니다.
 
 
-**전화 통신 게이트웨이** 올바른 VoIP 게이트웨이, IP PBX 또는 SBC를 선택하는 일은 전화 통신 네트워크와 UM을 통합할 때 첫 번째 단계에 불과합니다. 이러한 장치를 UM과 함께 작동하도록 구성하고, 필요한 클라이언트 액세스 및 사서함 서버를 배포하고, 모든 필요한 UM 구성 요소를 만들고 구성해야 합니다. 이러한 구성 요소를 통해 회로 기반 프로토콜 네트워크를 IP 데이터 네트워크에 연결하고 조직의 사용자가 음성 메일을 사용하도록 설정할 수 있습니다. 자세한 내용은 [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)를 참조하십시오.
+**전화 통신 게이트웨이** 올바른 VoIP 게이트웨이, IP PBX 또는 SBC를 선택하는 일은 전화 통신 네트워크와 UM을 통합할 때 첫 번째 단계에 불과합니다. 이러한 장치를 UM과 함께 작동하도록 구성하고, 필요한 클라이언트 액세스 및 사서함 서버를 배포하고, 모든 필요한 UM 구성 요소를 만들고 구성해야 합니다. 이러한 구성 요소를 통해 회로 기반 프로토콜 네트워크를 IP 데이터 네트워크에 연결하고 조직의 사용자가 음성 메일을 사용하도록 설정할 수 있습니다. 자세한 내용은 [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)를 참조하십시오.
 
 **Microsoft Lync Server**   통합 메시징은 Microsoft Lync Server를 사용하여 음성 메시징, 인스턴트 메시징, 향상된 현재 상태, 오디오/비디오 회의 및 전자 메일을 익숙하고 통합된 통신 환경으로 결합할 수 있습니다. UM과 Lync Server를 통합하면 다음과 같은 이점이 있습니다.
 

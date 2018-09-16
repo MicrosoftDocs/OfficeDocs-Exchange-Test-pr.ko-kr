@@ -107,7 +107,7 @@ Exchange 2013에는 최종 사용자에게 자주 사용하는 권한을 제공�
 <tbody>
 <tr class="odd">
 <td><p>사서함</p></td>
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">사용자 사서함 관리</a></p>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">사용자 사서함 관리</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">사서함에 할당 정책 변경</a></p></td>
 </tr>
 <tr class="even">

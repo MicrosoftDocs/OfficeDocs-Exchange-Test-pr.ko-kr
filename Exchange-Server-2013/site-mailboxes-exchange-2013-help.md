@@ -97,7 +97,7 @@ SharePoint에서 수명 주기 응용 프로그램이 사이트 사서함을 닫
 
 ## 규정 준수
 
-SharePoint의 eDiscovery Console을 사용하면 사용자 사서함 또는 사이트 사서함에 대해 키워드 검색을 수행할 수 있으므로 사이트 사서함이 원본 위치 eDiscovery 범위의 일부가 될 수 있습니다. 또한 사이트 사서함을 법적 보유 상태로 설정할 수 있습니다. 자세한 내용은 [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)를 참조하십시오.
+SharePoint의 eDiscovery Console을 사용하면 사용자 사서함 또는 사이트 사서함에 대해 키워드 검색을 수행할 수 있으므로 사이트 사서함이 원본 위치 eDiscovery 범위의 일부가 될 수 있습니다. 또한 사이트 사서함을 법적 보유 상태로 설정할 수 있습니다. 자세한 내용은 [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)를 참조하십시오.
 
 
 > [!NOTE]

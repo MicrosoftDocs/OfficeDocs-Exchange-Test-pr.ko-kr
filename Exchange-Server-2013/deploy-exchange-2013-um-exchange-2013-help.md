@@ -33,7 +33,7 @@ Post-deployment tasks for Unified Messaging
 
   - [UM 다이얼 플랜](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
-  - [UM IP 게이트웨이](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 게이트웨이](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [UM 서비스](um-services-exchange-2013-help.md)
 
@@ -324,7 +324,7 @@ AD RMS(Active Directory Rights Management Services)를 사용하여 조직의 �
 
   - [음성 통화를 착신 전환 하려면 메일 사용자를 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 
-  - [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
   - [음성 메일 사용자가 팩스를 받을 수 있도록](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
 Microsoft Exchange Server 2013, Exchange 검색 IRM으로 보호 된 메시지를 인덱싱할 수 있도록 정보 권한 관리 (IRM)를 구성할 수 있습니다.
 
-검색 관리 역할 그룹의 구성원 [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md) 검색을 수행 하는 경우 IRM으로 보호 된 메시지 검색 결과에 반환 되며 검색에 지정 된 검색 사서함으로 복사 됩니다. 또한, 검색 관리 역할 그룹의 구성원 검색 검색의 결과 검색 사서함으로 복사 된 IRM으로 보호 된 메시지에 액세스 하려면 Outlook Web App 를 사용할 수 있습니다.
+검색 관리 역할 그룹의 구성원 [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 검색을 수행 하는 경우 IRM으로 보호 된 메시지 검색 결과에 반환 되며 검색에 지정 된 검색 사서함으로 복사 됩니다. 또한, 검색 관리 역할 그룹의 구성원 검색 검색의 결과 검색 사서함으로 복사 된 IRM으로 보호 된 메시지에 액세스 하려면 Outlook Web App 를 사용할 수 있습니다.
 
 
 > [!NOTE]

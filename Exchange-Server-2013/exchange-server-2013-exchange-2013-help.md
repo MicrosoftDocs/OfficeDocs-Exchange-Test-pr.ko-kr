@@ -92,7 +92,7 @@ Exchange 2013의 도움말 내용은 다음과 같은 최상위 범주로 구성
 
   - [서버 상태 및 성능](server-health-and-performance-exchange-2013-help.md)
 
-  - [Exchange 설명서에 대 한](about-exchange-documentation-exchange-2013-help.md)
+  - [Exchange 설명서에 대 한](https://docs.microsoft.com/ko-kr/exchange/about-exchange-documentation)
 
 
 > [!NOTE]

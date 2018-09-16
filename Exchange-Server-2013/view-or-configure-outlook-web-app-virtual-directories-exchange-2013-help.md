@@ -104,7 +104,7 @@ EAC를 사용하여 Outlook Web App 가상 디렉터리의 속성을 보는 경�
     
 
     > [!NOTE]
-    > 개별 사용자에 대한 기능 설정은 가상 디렉터리 설정을 재정의합니다. <STRONG>Set-CASMailbox</STRONG> cmdlet을 사용하거나 Outlook Web App&nbsp;사서함 정책을 사용하여 개별 사용자의 조각화 설정을 변경할 수 있습니다. 자세한 내용은 <A href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App 사서함 정책</A>을 참조하십시오.
+    > 개별 사용자에 대한 기능 설정은 가상 디렉터리 설정을 재정의합니다. <STRONG>Set-CASMailbox</STRONG> cmdlet을 사용하거나 Outlook Web App&nbsp;사서함 정책을 사용하여 개별 사용자의 조각화 설정을 변경할 수 있습니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies">Outlook Web App 사서함 정책</A>을 참조하십시오.
 
     
     확인란을 사용하여 기능을 사용하거나 사용하지 않도록 설정합니다. 기본적으로 가장 일반적인 기능이 표시됩니다. 사용하거나 사용하지 않도록 설정할 수 있는 모든 기능을 보려면 **기타 옵션**을 클릭합니다.

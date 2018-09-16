@@ -124,7 +124,7 @@ SIP 주소 또는 UM 사용이 가능한 사용자에 대 한 E.164 번호를 �
 
   - [SIP 주소를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
-  - [E.164 번호를 추가 합니다.](add-an-e-164-number-exchange-2013-help.md)
+  - [E.164 번호를 추가 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number)
 
   - [E.164 번호 변경](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 

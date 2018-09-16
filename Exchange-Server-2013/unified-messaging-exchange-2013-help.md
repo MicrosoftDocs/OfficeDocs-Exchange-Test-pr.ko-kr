@@ -255,7 +255,7 @@ Windows PowerShell 기술을 기반으로 하는 Exchange 관리 셸은 관리 �
 <td><p>UM 언어 팩 및 언어 설정에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">Um 전화 시스템 통합</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">Um 전화 시스템 통합</a></p></td>
 <td><p>전화 통신 네트워크를 UM과 통합하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
@@ -283,7 +283,7 @@ Windows PowerShell 기술을 기반으로 하는 Exchange 관리 셸은 관리 �
 <td><p>UM을 사용하여 음성 메시지를 보호하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">음성 메일 호출에 대 한 보고서 실행된</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">음성 메일 호출에 대 한 보고서 실행된</a></p></td>
 <td><p>UM 통화 보고서에 대해 알아봅니다.</p></td>
 </tr>
 </tbody>

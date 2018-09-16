@@ -134,7 +134,7 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
 연결된 사서함을 만든 후에 EAC(Exchange 관리 센터)나 Exchange 관리 셸을 사용하여 필요한 사항을 변경하고 추가 속성을 설정할 수 있습니다.
 
-여러 연결된 사서함의 속성을 동시에 변경할 수도 있습니다. 자세한 내용은 [사용자 사서함 관리](manage-user-mailboxes-exchange-2013-help.md) 항목의 "사용자 사서함 대량 편집" 섹션을 참조하십시오.
+여러 연결된 사서함의 속성을 동시에 변경할 수도 있습니다. 자세한 내용은 [사용자 사서함 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) 항목의 "사용자 사서함 대량 편집" 섹션을 참조하십시오.
 
 
 > [!IMPORTANT]

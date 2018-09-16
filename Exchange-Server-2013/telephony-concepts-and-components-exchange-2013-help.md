@@ -179,5 +179,5 @@ IP PBX 및 PBX 구성 하는 방법에 대 한 자세한 내용은 [PBX 및 IP P
 
 [UM 프로토콜, 포트 및 서비스](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+[Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 

@@ -220,7 +220,7 @@ Exchange 2013 및 Exchange Online 검색 관리자 원본 위치 eDiscovery와 �
 
 원본 위치 eDiscovery, 원본 위치 유지 및 소송 보존으로 설정 하는 방법에 대 한 자세한 내용은 다음 항목을 참조 합니다.
 
-  - [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
+  - [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)
 

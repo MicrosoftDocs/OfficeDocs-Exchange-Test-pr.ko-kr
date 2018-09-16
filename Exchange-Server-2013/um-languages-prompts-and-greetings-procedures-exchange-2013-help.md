@@ -21,7 +21,7 @@ _**마지막으로 수정된 항목:** 2013-04-17_
 
 [다이얼 플랜에 기본 언어 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[자동 전화 교환에 대 한 언어를 선택 합니다.](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[자동 전화 교환에 대 한 언어를 선택 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language)
 
 [UM 언어팩 제거](remove-a-um-language-pack-exchange-2013-help.md)
 

@@ -19,7 +19,7 @@ _**마지막으로 수정된 항목:** 2012-10-14_
 
 [보존 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
-[보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
+[보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags)
 
 [사서함에 보존 정책 적용](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 

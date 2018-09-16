@@ -23,9 +23,9 @@ _**마지막으로 수정된 항목:** 2017-04-28_
 
 Exchange Online 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\))을 참조 하십시오. Exchange Online Protection 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Online Protection의 메일 흐름 규칙(전송 규칙)](https://technet.microsoft.com/ko-kr/library/dn271424\(v=exchg.150\)) 을 참조 하십시오.
 
-메일 흐름 규칙을 관리 하 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸 를 사용할 수 있습니다. 전송 규칙을 관리 하는 방법에 대 한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조 하십시오.
+메일 흐름 규칙을 관리 하 Exchange 관리 센터 (EAC) 또는 Exchange 관리 셸 를 사용할 수 있습니다. 전송 규칙을 관리 하는 방법에 대 한 자세한 내용은 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조 하십시오.
 
-각 규칙에 대해 규칙을 적용하거나, 규칙을 테스트하거나, 규칙을 테스트하고 보낸 사람에게 알릴 수 있는 옵션이 제공됩니다. 테스트 옵션에 대한 자세한 내용은 [메일 흐름 규칙을 테스트 합니다.](test-a-mail-flow-rule-exchange-2013-help.md) 및 [정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)을 참조하세요.
+각 규칙에 대해 규칙을 적용하거나, 규칙을 테스트하거나, 규칙을 테스트하고 보낸 사람에게 알릴 수 있는 옵션이 제공됩니다. 테스트 옵션에 대한 자세한 내용은 [메일 흐름 규칙을 테스트 합니다.](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) 및 [정책 팁](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips)을 참조하세요.
 
 메일 흐름 규칙을 사용해서 특정 메시징 정책을 실행하려면 다음 항목을 참조하세요.
 
@@ -39,7 +39,7 @@ Exchange Online 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Onlin
 
   - [메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [일반적인 메시지 승인 시나리오](common-message-approval-scenarios-exchange-2013-help.md)
+  - [일반적인 메시지 승인 시나리오](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## 메일 흐름 규칙 구성 요소
 
@@ -131,14 +131,14 @@ Exchange Online 에서 메일 흐름 규칙에 대 한 정보를 [Exchange Onlin
 <td><p>메시지에 규칙이 적용되는 순서를 나타냅니다. 기본 우선 순위는 규칙을 만들 때를 기준으로 합니다(이전 규칙은 새로운 규칙보다 우선 순위가 높고, 우선 순위가 높은 규칙은 우선 순위가 낮은 규칙보다 먼저 처리됨).</p>
 <p>규칙을 규칙 목록에서 위 또는 아래로 이동하여 EAC에서 규칙 우선 순위를 변경합니다. PowerShell에서 우선 순위 번호를 설정합니다(0이 가장 높은 우선 순위임).</p>
 <p>예를 들어 신용 카드 번호가 포함된 메시지는 거부하는 규칙과 승인을 요구하는 또 다른 규칙이 있을 때 거부 규칙이 먼저 적용되도록 한 다음 다른 규칙이 적용되지 않도록 할 수 있습니다.</p>
-<p>자세한 내용은 <a href="manage-mail-flow-rules-exchange-2013-help.md">메일 흐름 규칙의 우선 순위 설정</a>을 참조하세요.</p></td>
+<p>자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">메일 흐름 규칙의 우선 순위 설정</a>을 참조하세요.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>모드</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>규칙이 메시지 처리를 즉시 시작하도록 할지 여부 또는 메시지의 배달에 영향을 주지 않고 규칙을 테스트할지 여부를 지정할 수 있습니다(데이터 손실 방지 또는 DLP 정책 팁 사용 또는 사용 안 함).</p>
 <p>정책 팁은 Outlook 또는 웹에서 Outlook에서 메시지를 작성하는 사람에게 가능한 정책 위반에 대한 정보를 제공하는 간단한 메모를 표시합니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips">정책 팁</a>을 참조하세요.</p>
-<p>모드에 대한 자세한 내용은 <a href="test-a-mail-flow-rule-exchange-2013-help.md">메일 흐름 규칙을 테스트 합니다.</a>를 참조하세요.</p></td>
+<p>모드에 대한 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">메일 흐름 규칙을 테스트 합니다.</a>를 참조하세요.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>다음 날짜에 이 규칙 활성화</strong></p>
@@ -259,7 +259,7 @@ Exchange 2013에서는 이러한 캐시 간격과 기타 확장 그룹 캐시 �
 
   - 각 사서함 서버 반복 해 서 Active Directory 그룹의 구성원을 확인 하는 쿼리를 방지 하기 위해 확장 된 메일 그룹을 캐시 합니다. 기본적으로 확장 된 그룹 캐시의 항목에는 4 시간 마다 만료 됩니다. 따라서 그룹의 구성원 자격의 변경 확장 된 그룹 캐시 업데이트 될 때까지 메일 흐름 규칙에 의해 검색 되지 않습니다. 사서함 서버에서 캐시의 업데이트를 즉시 수행 하도록 Microsoft Exchange 전송 서비스 다시 시작 합니다. 캐시를 강제로 업데이트 하려는 각 사서함 서버에서 서비스를 다시 시작 해야 합니다.
 
-메일 흐름 규칙 만들기 및 Edge 전송 서버에서 구성 하는 서버에서 로컬 인스턴스의 AD LDS에 저장 됩니다. 메일 흐름 규칙의 자동화 된 복제 없음 Edge 전송 서버에서 발생합니다. Edge 전송 서버에 대 한 규칙 로컬 서버를 통과 하는 메시지에만 적용 됩니다. 여러 Edge 전송 서버에서 메일 흐름 규칙의 동일한 집합을 적용 해야하는 경우 Edge 전송 서버 구성을 복제 수 또는 내보내기 및 메일 흐름 규칙을 가져옵니다. 자세한 내용은 [Edge 전송 서버 복제 된 구성](edge-transport-server-cloned-configuration-exchange-2013-help.md) 및 [가져오기 또는 내보내기 메일 흐름 규칙 컬렉션](manage-mail-flow-rules-exchange-2013-help.md)을 참조 하십시오.
+메일 흐름 규칙 만들기 및 Edge 전송 서버에서 구성 하는 서버에서 로컬 인스턴스의 AD LDS에 저장 됩니다. 메일 흐름 규칙의 자동화 된 복제 없음 Edge 전송 서버에서 발생합니다. Edge 전송 서버에 대 한 규칙 로컬 서버를 통과 하는 메시지에만 적용 됩니다. 여러 Edge 전송 서버에서 메일 흐름 규칙의 동일한 집합을 적용 해야하는 경우 Edge 전송 서버 구성을 복제 수 또는 내보내기 및 메일 흐름 규칙을 가져옵니다. 자세한 내용은 [Edge 전송 서버 복제 된 구성](edge-transport-server-cloned-configuration-exchange-2013-help.md) 및 [가져오기 또는 내보내기 메일 흐름 규칙 컬렉션](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)을 참조 하십시오.
 
 사서함 서버 또는 Edge 전송 서버에서 전송 서비스에서 수정 된 메일 흐름 규칙을 발견 하면 때마다 이벤트 (이벤트 ID 4002 사서함 서버의 및 Edge 전송 서버에서 이벤트 ID 16028) 이벤트 뷰어에서 응용 프로그램 로그에 기록 됩니다.
 
@@ -285,7 +285,7 @@ Exchange 2013 에 공통 되는 혼합된 환경 시나리오는
 
 ## 자세한 내용
 
-[메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
+[메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [전송 규칙 조건 (조건자)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 

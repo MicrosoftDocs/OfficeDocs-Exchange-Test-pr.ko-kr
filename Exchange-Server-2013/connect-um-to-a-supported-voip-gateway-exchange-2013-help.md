@@ -81,5 +81,5 @@ UM 헌트 그룹은 PBX 및 IP PBX에서 사용되는 헌트 그룹을 미러링
 
 UM IP 게이트웨이를 만드는 방법에 따라 새 UM 헌트 그룹을 하나 또는 여러 개 만들어야 할 수 있습니다. UM IP 게이트웨이를 만들 때 UM IP 게이트웨이를 다이얼 플랜과 연결하지 않으면 기본적으로 단일 UM 헌트 그룹이 만들어집니다. UM IP 게이트웨이를 만들 때 UM IP 게이트웨이를 UM 다이얼 플랜에 연결하면 모든 수신 전화가 UM IP 게이트웨이를 통해 전송되고 클라이언트 액세스 서버 및 사서함 서버는 이러한 수신 전화를 수락합니다. UM IP 게이트웨이를 만들 때 UM IP 게이트웨이를 UM 다이얼 플랜에 연결하지 않은 경우에는 수신 전화가 UM IP 게이트웨이에서 다이얼 플랜으로 전달될 수 있도록 올바른 파일럿 식별자를 사용하여 UM 헌트 그룹을 만들어야 합니다.
 
-Outlook Voice Access 및 자동 전화 교환 번호를 여러 개 사용하고 UM IP 게이트웨이를 다이얼 플랜에 연결한 경우에는 기본적으로 만들어진 UM 헌트 그룹을 삭제하고 여러 UM 헌트 그룹을 만들어야 합니다. UM 헌트 그룹을 만드는 방법에 대한 자세한 내용은 [UM 헌트 그룹 만들기](create-a-um-hunt-group-exchange-2013-help.md)를 참조하십시오.
+Outlook Voice Access 및 자동 전화 교환 번호를 여러 개 사용하고 UM IP 게이트웨이를 다이얼 플랜에 연결한 경우에는 기본적으로 만들어진 UM 헌트 그룹을 삭제하고 여러 UM 헌트 그룹을 만들어야 합니다. UM 헌트 그룹을 만드는 방법에 대한 자세한 내용은 [UM 헌트 그룹 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group)를 참조하십시오.
 

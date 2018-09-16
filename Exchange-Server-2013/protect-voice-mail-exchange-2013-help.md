@@ -293,7 +293,7 @@ EAC를 사용하거나 셸의 **Set-UMMailboxPolicy** cmdlet을 사용하여 보
 </table>
 
 
-보호된 음성 메일 설정을 관리하는 방법에 대한 자세한 내용은 [보호 된 음성 메일 절차](protected-voice-mail-procedures-exchange-2013-help.md) 또는 [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))를 참조하십시오.
+보호된 음성 메일 설정을 관리하는 방법에 대한 자세한 내용은 [보호 된 음성 메일 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) 또는 [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))를 참조하십시오.
 
 맨 위로 이동
 

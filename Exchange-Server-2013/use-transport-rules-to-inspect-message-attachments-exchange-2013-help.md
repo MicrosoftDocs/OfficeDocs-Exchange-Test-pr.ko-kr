@@ -35,11 +35,11 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
 ![첨부 파일 관련 규칙을 선택하기 위한 대화 상자](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "첨부 파일 관련 규칙을 선택하기 위한 대화 상자")
 
-선택 가능한 전체 조건 및 작업을 비롯한 전송 규칙에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)을 참조하세요. EOP(Exchange Online Protection) 및 하이브리드 고객은 [EOP 구성을 위한 모범 사례](https://technet.microsoft.com/ko-kr/library/jj723164\(v=exchg.150\))에서 제공되는 전송 규칙 모범 사례를 활용할 수 있습니다. 규칙을 만들 준비가 되었으면 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하세요.
+선택 가능한 전체 조건 및 작업을 비롯한 전송 규칙에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)을 참조하세요. EOP(Exchange Online Protection) 및 하이브리드 고객은 [EOP 구성을 위한 모범 사례](https://technet.microsoft.com/ko-kr/library/jj723164\(v=exchg.150\))에서 제공되는 전송 규칙 모범 사례를 활용할 수 있습니다. 규칙을 만들 준비가 되었으면 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하세요.
 
 ## 첨부 파일 내의 콘텐츠 조사
 
-다음 표의 전송 규칙 조건을 사용하여 메시지 첨부 파일의 내용을 검사할 수 있습니다. 이러한 조건의 경우 첨부 파일의 처음 150KB만 조사됩니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)에서 규칙 만들기 또는 변경에 대해 자세히 알아보세요.
+다음 표의 전송 규칙 조건을 사용하여 메시지 첨부 파일의 내용을 검사할 수 있습니다. 이러한 조건의 경우 첨부 파일의 처음 150KB만 조사됩니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)에서 규칙 만들기 또는 변경에 대해 자세히 알아보세요.
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
 ## 첨부 파일의 파일 속성 조사
 
-다음 전송 규칙 조건은 메시지에 첨부된 파일의 속성을 조사합니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. 전송 규칙 컨텍스트 내에서 검사할 수 있는 실행 코드가 있는 지원되는 파일 형식 목록이 여기에 나와 있습니다. 규칙 만들기 또는 변경에 대한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하세요.
+다음 전송 규칙 조건은 메시지에 첨부된 파일의 속성을 조사합니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. 전송 규칙 컨텍스트 내에서 검사할 수 있는 실행 코드가 있는 지원되는 파일 형식 목록이 여기에 나와 있습니다. 규칙 만들기 또는 변경에 대한 자세한 내용은 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하세요.
 
 
 <table>

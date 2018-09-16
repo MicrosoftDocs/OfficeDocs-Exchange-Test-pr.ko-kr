@@ -25,7 +25,7 @@ Microsoft Exchange Server 2013 및 Exchange Online에서 Exchange 검색에는 �
 
 
 
-Exchange 검색 및 종속 기능(예: [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md))을 관리하거나 사용할 때는 인덱싱하지 않도록 설정되거나 인덱싱할 수 없는 콘텐츠를 포함하는 파일 형식과 검색할 수 없는 항목 간의 차이점을 고려하십시오.
+Exchange 검색 및 종속 기능(예: [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery))을 관리하거나 사용할 때는 인덱싱하지 않도록 설정되거나 인덱싱할 수 없는 콘텐츠를 포함하는 파일 형식과 검색할 수 없는 항목 간의 차이점을 고려하십시오.
 
   - **검색할 수 없는 항목**   Exchange 검색이 어떠한 이유로 특정 파일 형식을 인덱싱할 수 없는 경우(예: 필터가 설치되지 않은 경우) 이러한 파일 형식에 대한 검색이 실패합니다. 이러한 첨부 파일을 포함하는 메시지는 *부분적으로 인덱싱됨*으로 표시됩니다. 검색할 수 없는 항목은 [Get-FailedContentIndexDocuments](https://technet.microsoft.com/ko-kr/library/dd351154\(v=exchg.150\)) cmdlet을 사용하면 검색할 수 있습니다. 원본 위치 eDiscovery 검색 결과를 검색 사서함에 복사하거나 PST 파일로 검색 결과를 내보낼 때는 검색할 수 없는 항목을 포함할 수 있습니다. 자세한 내용은 [Exchange eDiscovery의 검색할 수 없는 항목](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)을 참조하세요.
 

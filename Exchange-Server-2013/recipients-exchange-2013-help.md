@@ -339,7 +339,7 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>Exchange 관리 센터나 Exchange 관리 셸을 사용하여 사용자 사서함을 만드는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">사용자 사서함 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">사용자 사서함 관리</a></p></td>
 <td><p>사용자 사서함을 만들고, 사서함 속성을 변경하고, 여러 사서함의 선택된 속성을 대량으로 편집하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -359,7 +359,7 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>동적 메일 그룹을 만들고 사용자 지정 특성 및 기타 속성을 사용하여 그룹 구성원을 확인하는 등의 동적 메일 그룹 속성을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">메일 연락처 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts">메일 연락처 관리</a></p></td>
 <td><p>메일 연락처를 만들고 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
@@ -367,7 +367,7 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>메일 사용자를 만들고 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">대화방 사서함 만들기 및 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-room-mailboxes">대화방 사서함 만들기 및 관리</a></p></td>
 <td><p>대화방 사서함을 만들고 되풀이 모임을 사용하도록 설정하고 예약 옵션을 구성하는 등의 대화방 사서함 속성을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
