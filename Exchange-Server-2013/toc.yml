@@ -1465,7 +1465,7 @@
         - name: 오프 라인 주소록 다운로드에 대 한 받는 사람 프로 비전
           href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/provision-recipients
         - name: 오프 라인 주소록을 제거 합니다.
-          href: remove-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/remove-offline-address-book
         - name: 오프 라인 주소록 업데이트
           href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/update-offline-address-book
         - name: 오프 라인 주소록 가상 디렉터리 만들기
