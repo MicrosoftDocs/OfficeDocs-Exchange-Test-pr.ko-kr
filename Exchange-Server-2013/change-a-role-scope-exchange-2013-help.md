@@ -51,11 +51,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 범위의 이름을 변경하려면 다음 구문을 사용합니다.
 
-    Set-ManagementScope <current scope name> -Name <new scope name>
+```powershell
+Set-ManagementScope <current scope name> -Name <new scope name>
+```
 
 이 예에서는 Seattle Servers 범위를 Seattle Exchange Servers로 변경합니다.
 
-    Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```powershell
+Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd297996\(v=exchg.150\))를 참조하십시오.
 
@@ -63,11 +67,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 범위에서 받는 사람 필터를 변경하려면 다음 구문을 사용합니다.
 
-    Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```powershell
+Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```
 
 이 예에서는 **Company** 속성이 contoso로 설정된 모든 받는 사람 개체가 일치하도록 받는 사람 필터를 변경합니다.
 
-    Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```powershell
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd297996\(v=exchg.150\))를 참조하십시오.
 
@@ -77,11 +85,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 범위에서 OU 루트를 변경하려면 다음 구문을 사용합니다.
 
-    Set-ManagementScope <scope name> -RecipientRoot <OU>
+```powershell
+Set-ManagementScope <scope name> -RecipientRoot <OU>
+```
 
 이 예에서는 OU 루트를 contoso.com 도메인 아래의 North America/Sales Sales Users OU로 변경합니다.
 
-    Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```powershell
+Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd297996\(v=exchg.150\))를 참조하십시오.
 
@@ -89,7 +101,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 범위의 서버 필터를 변경하려면 다음 구문을 사용합니다.
 
-    Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```powershell
+Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```
 
 이 예에서는 **ServerSite** 속성이 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'으로 설정된 모든 서버 개체와 일치하도록 서버 필터를 변경합니다.
 
@@ -115,7 +129,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 범위에서 데이터베이스 필터를 변경하려면 다음 구문을 사용합니다.
 
-    Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```powershell
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```
 
 이 예에서는 **Name** 속성에 "Executive" 문자열이 포함된 모든 데이터베이스 개체와 일치하도록 데이터베이스 필터를 변경합니다.
 

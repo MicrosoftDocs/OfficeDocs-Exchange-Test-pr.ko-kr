@@ -124,7 +124,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 이 예에서는 Tony Smith의 사서함에 대해 보관함을 사용하도록 설정합니다.
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 이 예에서는 DB01 데이터베이스에서 온-프레미스 또는 클라우드 기반 보관함이 사용하도록 설정되어 있지 않고 이름이 DiscoverySearchMailbox로 시작하지 않는 사서함을 검색합니다. 결과를 <strong>Enable-Mailbox</strong> cmdlet으로 파이프하여 사서함 데이터베이스 DB01의 모든 사서함에 대한 보관함을 사용하도록 설정합니다.
 
@@ -174,7 +176,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 이 예에서는 Chris Ashton의 사서함에 대해 보관함을 사용하지 않도록 설정합니다. 사서함을 사용하지 않도록 설정하지는 않습니다.
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997210\(v=exchg.150\))를 참조하십시오.
 

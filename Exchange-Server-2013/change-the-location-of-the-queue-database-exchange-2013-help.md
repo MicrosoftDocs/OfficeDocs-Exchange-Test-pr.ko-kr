@@ -93,7 +93,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 2.  명령 프롬프트 창에서 다음 명령을 실행 하 여 EdgeTransport.exe.config 파일을 메모장에서에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  `<appSettings>` 섹션에서 다음 키를 수정 합니다.
     
@@ -137,7 +139,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 2.  명령 프롬프트 창에서 다음 명령을 실행 하 여 EdgeTransport.exe.config 파일을 메모장에서에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  `<appSettings>` 섹션에서 다음 키를 수정 합니다.
     
@@ -153,7 +157,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 5.  다음 명령을 실행 하 여 Microsoft Exchange Transport service를 중지 합니다.
     
-        net stop MSExchangeTransport
+    ```powershell
+net stop MSExchangeTransport
+```
 
 6.  원래 위치에서 Mail.que 및 Trn.chk 기존 데이터베이스 파일을 새 위치로 이동 합니다.
 
@@ -161,7 +167,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 8.  다음 명령을 실행 하 여 Microsoft Exchange Transport service를 시작 합니다.
     
-        net start MSExchangeTransport
+    ```powershell
+net start MSExchangeTransport
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

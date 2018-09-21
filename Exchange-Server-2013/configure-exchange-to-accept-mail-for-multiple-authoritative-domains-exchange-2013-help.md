@@ -133,11 +133,15 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
 
 업데이트된 전자 메일 주소 정책을 받는 사람에게 적용하려면 다음 구문을 사용합니다.
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 예를 들어 "Default Policy"라는 업데이트된 전자 메일 주소 정책을 적용하려면 다음 명령을 실행합니다.
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## 필터링된 받는 사람 집합의 기존 기본 전자 메일 주소 바꾸기
 
@@ -197,7 +201,9 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
 
 해당하는 받는 사람에게 새 전자 메일 주소 정책을 적용하려면 다음 명령을 실행합니다.
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 

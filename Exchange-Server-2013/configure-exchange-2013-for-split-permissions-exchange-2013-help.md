@@ -97,7 +97,9 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
     
     1.  Exchange 2013 설치 미디어에서 다음 명령을 실행하여 Active Directory 사용 권한 분할을 사용하지 않도록 설정합니다.
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
     
     2.  조직에서 Exchange 2013 서버를 다시 시작하거나 Active Directory 액세스 토큰이 모든 Exchange 2013 서버에 복제되기를 기다립니다.
         
@@ -125,11 +127,15 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
     
     3.  다음 명령을 사용하여 새 역할 그룹에 구성원을 추가합니다.
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+```
     
     4.  역할 그룹 구성원만 구성원을 추가 또는 제거할 수 있도록 새 역할 그룹에서 위임 목록을 바꿉니다.
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+```
         
 
         > [!IMPORTANT]
@@ -142,7 +148,9 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
     
     6.  다음 명령을 사용하여 유지하고자 하는 새 역할 그룹이나 다른 역할 그룹, USG 또는 직접 할당과 관련되지 않은 Mail Recipient Creation 역할에 대한 일반 및 위임 역할 할당을 모두 제거합니다.
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+```
         
 
         > [!NOTE]
@@ -222,7 +230,9 @@ Exchange 관리자 및 서버는 기존 Active Directory 보안 주체의 Exchan
 
 1.  Windows 명령 셸에서 Exchange 2013 설치 미디어로부터 다음 명령을 실행하여 Active Directory 사용 권한 분할을 사용하도록 설정합니다.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+```
 
 2.  조직에 여러 Active Directory 도메인이 있으면 Exchange 서버 또는 개체가 포함된 하위 도메인 각각에서 `setup.exe /PrepareDomain`를 실행하거나 모든 도메인에서 Active Directory 서버가 있는 사이트로부터 `setup.exe /PrepareAllDomains`를 실행해야 합니다.
 

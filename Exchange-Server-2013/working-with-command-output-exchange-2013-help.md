@@ -212,11 +212,15 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
 
 **Out-Host** cmdlet은 파이프라인의 끝에 나타나지 않는 기본 cmdlet입니다. 모든 형식 지정 적용되면 **Out-Host** cmdlet은 최종 출력을 콘솔 창으로 보내 표시합니다. **Out-Host** cmdlet은 기본 출력이므로 명시적으로 호출할 필요가 없습니다. 명령의 마지막 cmdlet으로 **Out-File** cmdlet을 호출하여 콘솔 창으로 출력 보내기를 다시 정의할 수 있습니다. 그러면 다음 예에서와 같이 **Out-File** cmdlet은 명령에서 지정한 파일에 출력을 씁니다.
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 이 예에서 **Out-File** cmdlet은 **Get-ChildItem | Format-Wide -Column 4** 명령으로 표시되는 정보를 `OutputFile.txt`라는 파일에 씁니다. 또한 리디렉션 연산자인 오른쪽 꺾쇠 괄호(`>`)를 사용하여 파이프라인 출력을 파일로 리디렉션할 수 있습니다. 원본 파일을 바꾸지 않고 명령의 파이프라인 출력을 기존 파일에 추가하려면 다음 예에서와 같이 오른쪽 이중 꺾쇠 괄호(`>>`)를 사용합니다.
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 이 예에서는 형식 지정을 위해 **Get-Childitem** cmdlet의 출력을 **Format-Wide** cmdlet으로 파이프한 다음 `OutputFile.txt` 파일의 끝에 씁니다. `OutputFile.txt` 파일이 없는 경우 오른쪽 이중 꺾쇠 괄호(`>>`)를 사용하여 파일을 만듭니다.
 
@@ -249,7 +253,9 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
 
 `Out-Ie` 스크립트는 받은 데이터가 올바른 HTML임을 가정합니다. HTML로 보려는 데이터를 변환하려면 명령 결과를 **ConvertTo-Html** cmdlet으로 파이프해야 합니다. 그런 다음 명령 결과를 `Out-Ie` 스크립트로 파이프할 수 있습니다. 다음 예는 Internet Explorer 창에서 디렉터리 목록을 보는 방법을 보여 줍니다.
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 데이터를 필터링하는 방법
 

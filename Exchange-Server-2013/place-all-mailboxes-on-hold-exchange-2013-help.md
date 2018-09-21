@@ -134,7 +134,9 @@ EAC를 사용하여 최대 500개의 사서함을 선택하고 보류할 수 있
     ```
 
     ```
-    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```powershell
+Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```
     ```
 
     ```
@@ -146,7 +148,9 @@ EAC를 사용하여 최대 500개의 사서함을 선택하고 보류할 수 있
     ```
 
     ```
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
     ```
     
     포함 하거나 사서함을 제외 하는 필터에 다른 사용자 사서함 속성을 사용할 수 있습니다. 자세한 내용은 [필터링 할 수 있는 속성에-Filter 매개 변수](https://technet.microsoft.com/ko-kr/library/bb738155\(v=exchg.150\))를 참조 합니다.

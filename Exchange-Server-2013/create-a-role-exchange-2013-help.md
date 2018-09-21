@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013 의 관리 역할에 대 한 자세한 내용은 
 
 다음 구문을 사용하여 새 역할을 만듭니다.
 
-    New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```powershell
+New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```
 
 시애틀 편지 병합 받는 사람 역할에 편지 병합 받는 사람 역할 및 해당 관리 역할 항목을 복사 하는이 예제입니다.
 
-    New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```powershell
+New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd298073\(v=exchg.150\))를 참조하십시오.
 

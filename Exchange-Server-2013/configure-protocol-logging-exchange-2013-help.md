@@ -89,7 +89,9 @@ EAC를 사용해 프로토콜 로그 설정이 구성되었는지 확인하려�
 
 이 예에서는 Contoso.com에서 Connection이라는 수신 커넥터에 대해 프로토콜 로깅을 사용하도록 설정합니다.
 
-    Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```powershell
+Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -97,7 +99,9 @@ EAC를 사용해 프로토콜 로그 설정이 구성되었는지 확인하려�
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```command line
+<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -109,7 +113,9 @@ EAC를 사용해 프로토콜 로그 설정이 구성되었는지 확인하려�
 
 이 예에서는 Mailbox01이라는 사서함 서버의 전송 서비스에 있는 조직 내 송신 커넥터에서 프로토콜 로깅을 사용하도록 설정합니다.
 
-    Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -125,11 +131,15 @@ EAC를 사용해 프로토콜 로그 설정이 구성되었는지 확인하려�
 
 사서함 서버의 사서함 전송 서비스에 있는 보이지 않는 암시적 사서함 배달 송신 커넥터에서 프로토콜 로깅을 사용하거나 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버의 사서함 전송 서비스에 있는 사서함 배달 수신 커넥터에서 프로토콜 로깅을 사용하도록 설정합니다.
 
-    Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

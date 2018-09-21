@@ -51,7 +51,9 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 DAG1이라는 DAG를 제거합니다.
 
-    Remove-DatabaseAvailabilityGroup -Identity DAG1
+```powershell
+Remove-DatabaseAvailabilityGroup -Identity DAG1
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -61,7 +63,9 @@ DAG가 성공적으로 제거되었는지 확인하려면 다음 중 하나를 �
 
   - 셸에서 다음 명령을 실행하여 DAG가 여전히 존재하는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroup <DAGName>
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName>
+```
     
     DAG가 성공적으로 삭제된 경우 위의 명령을 실행하면 개체를 찾을 수 없다는 오류 메시지가 나타납니다.
 

@@ -71,7 +71,9 @@ DAG 네트워크가 성공적으로 만들어졌는지 확인하려면 다음 �
 
   - 셸에서 다음 명령을 실행하여 DAG 네트워크가 만들어졌는지 확인하고 DAG 네트워크 구성 정보를 표시합니다.
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 자세한 내용
 

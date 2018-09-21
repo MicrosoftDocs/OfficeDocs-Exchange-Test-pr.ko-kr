@@ -61,7 +61,9 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 1.  명령 프롬프트 창에서 다음 명령을 실행하여 EdgeTransport.exe.config 파일을 메모장에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` 섹션에서 다음 키 중 한 개 또는 두 개 모두 추가합니다.
     
@@ -81,11 +83,15 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 5.  Exchange 관리 셸에서 *QueueDiagnosticsAggregationInterval* 매개 변수의 값을 변경하려면 다음 구문을 사용합니다.
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+```
     
     예를 들어 값을 30초로 설정하려면 다음 명령을 실행합니다.
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+```
 
 ## 작동 여부를 확인하는 방법
 

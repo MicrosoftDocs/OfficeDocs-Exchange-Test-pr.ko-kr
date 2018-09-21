@@ -77,7 +77,9 @@ Active Directory에서 *포리스트*는 디렉터리 서비스의 바깥쪽 경
 
 이 예에서는 셸에서 Enable-CrossForestConnector.ps1 스크립트를 사용하여 포리스트 간 토폴로지에서 사용할 송신 커넥터에 대해 사용 권한을 설정합니다.
 
-    .\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```powershell
+.\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

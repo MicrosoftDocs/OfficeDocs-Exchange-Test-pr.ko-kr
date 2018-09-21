@@ -53,11 +53,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2014-06-23_
 
 이 예에서는 서버 MBX1에 대해 서버 전환을 수행합니다. 시스템은 MBX1의 각 활성 데이터베이스에 가장 적합한 사서함 서버를 자동으로 선택합니다.
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 이 예에서는 사서함 서버 MBX4에 대해 서버 전환을 수행합니다. 명령이 완료되면 MBX5는 이전에 MBX4에서 활성화된 데이터베이스의 활성 복사본을 호스트합니다.
 
-    Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```powershell
+Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/ko-kr/library/dd298068\(v=exchg.150\))를 참조하십시오.
 

@@ -265,5 +265,7 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 클라이언트 액세스 서버에 트래픽을 수신 하기 전에 ASA 자격 증명을 업데이트 해야 합니다. 이미 올바르게 구성 된 모든 클라이언트 액세스 서버에서 공유 ASA 자격 증명을 복사 합니다. 예, 하는 경우 서버 A 현재 작업 ASA 자격 증명을가지고 및 서버 B 방금 추가한 배열에 하는데 사용할 수는 스크립트 (암호를 포함 하 여) 자격 증명을 복사 서버 A에서에서 서버 b 서버 B를 눌렀는지 하는 경우에 유용 하거나 암호를 마지막으로 출시 때 배열의 구성원 아직 합니다.
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

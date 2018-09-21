@@ -53,7 +53,9 @@ _**마지막으로 수정된 항목:** 2015-01-04_
 
 이 예에서는 페더레이션 트러스트를 제거합니다.
 
-    Remove-FederationTrust
+```powershell
+Remove-FederationTrust
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd351153\(v=exchg.150\))를 참조하십시오.
 
@@ -65,7 +67,9 @@ _**마지막으로 수정된 항목:** 2015-01-04_
 
   - 셀에서 다음 명령을 실행하여 Exchange 조직에 대해 페더레이션 트러스트 정보가 반환되지 않았는지 확인합니다.
     
-        Get-FederationTrust
+    ```powershell
+Get-FederationTrust
+```
     
     구문과 매개 변수에 대한 자세한 내용은 [Get-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd351262\(v=exchg.150\))를 참조하십시오.
 

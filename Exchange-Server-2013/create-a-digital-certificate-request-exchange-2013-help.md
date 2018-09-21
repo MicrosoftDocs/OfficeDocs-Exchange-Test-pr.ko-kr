@@ -68,7 +68,9 @@ Exchange Server 2013 EAC 또는 셸을 사용 하 여 인증서를 관리할 수
   ```
   
   ```
-    $reqfile | out-file c:\certreq.txt
+```powershell
+$reqfile | out-file c:\certreq.txt
+```
   ```
 
 ## 작동 여부는 어떻게 확인합니까?

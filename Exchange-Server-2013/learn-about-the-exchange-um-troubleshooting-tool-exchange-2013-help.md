@@ -191,7 +191,9 @@ UM 문제 해결 도구는 크로스-프레미스 배포의 구성 문제를 해
 
 다음 예에서는 게이트웨이 모드를 사용하여 Office Communications Server 2007 R2 또는 Lync Server가 포함되지 않은 환경의 통화 흐름을 테스트합니다. 이 예에서는 VoIP 게이트웨이, PBX 및 IP PBX, 통합 메시징 구성 요소 등의 전화 통신 장비를 테스트합니다. 또한 VoIP(Voice over IP) 보안 모드를 보안되지 않음으로 설정하고, IP 주소 10.1.1.1을 다음 홉으로 사용하며, 전환 정보에 내선 번호를 포함합니다.
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 맨 위로 이동
 

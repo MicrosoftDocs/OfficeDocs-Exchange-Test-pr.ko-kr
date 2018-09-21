@@ -70,7 +70,9 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 
 이 예에서는 데이터베이스 복사본이 있는 DAG의 모든 원본 서버의 사서함 서버 MBX1에서 데이터베이스 복사본 DB1에 대한 콘텐츠 인덱스 카탈로그를 다시 시드합니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd335201\(v=exchg.150\))를 참조하십시오.
 
@@ -78,7 +80,9 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 
 이 예에서는 데이터베이스 복사본이 있는 사서함 서버 MBX2에서 사서함 서버 MBX1의 데이터베이스 복사본 DB1에 대한 콘텐츠 인덱스 카탈로그를 다시 시드합니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Update-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd335201\(v=exchg.150\))를 참조하십시오.
 
@@ -89,11 +93,15 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 1.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 중지합니다.
     
     ```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
+```
     ```
 
     ```
-    Stop-Service HostControllerService
+```powershell
+Stop-Service HostControllerService
+```
     ```
 
 2.  Exchange 콘텐츠 인덱스 카탈로그가 포함된 폴더를 삭제하거나 이동하거나 이름을 바꿉니다. 이 폴더의 이름은 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`입니다. 예를 들어 폴더 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`의 이름을 바꿀 수 있습니다.
@@ -107,11 +115,15 @@ Exchange 검색과 관련된 다른 관리 작업에 대한 자세한 내용은 
 3.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 다시 시작합니다.
     
     ```
-    Start-Service MSExchangeFastSearch
+```powershell
+Start-Service MSExchangeFastSearch
+```
     ```
 
     ```
-    Start-Service HostControllerService
+```powershell
+Start-Service HostControllerService
+```
     ```
     
     이러한 서비스를 다시 시작하면 Exchange Search가 콘텐츠 인덱스 카탈로그를 다시 작성합니다.

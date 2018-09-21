@@ -53,7 +53,9 @@ ASA 자격 증명을 설정 하는 경우 다음이 지침 사항에 유의 해�
     
     **Import-Module** cmdlet을 사용 하 여 Active Directory 모듈을 가져올 수 있습니다.
     
-        Import-Module ActiveDirectory
+    ```powershell
+Import-Module ActiveDirectory
+```
 
 2.  이 cmdlet 구문을 사용 하 여 새 Active Directory 컴퓨터 계정을 만들려면 **New-ADComputer** cmdlet을 사용 합니다.
     
@@ -71,7 +73,9 @@ ASA 자격 증명을 설정 하는 경우 다음이 지침 사항에 유의 해�
     
     **예제:** 
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+```
     
     다음 암호를 사용 하는 *EXCH2013ASA* 계정의 이름이 고 특성을 수정할 수는 10 진수 값이 28, *msDS-SupportedEncryptionTypes* : r c 4 HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96 합니다.
 
@@ -296,11 +300,15 @@ SPN 아직 연결 되지 않은 포리스트의 계정과 사용 하 여 setspn 
 
 2.  명령 프롬프트에 다음 명령을 입력합니다.
     
-        setspn -F -Q <SPN>
+    ```powershell
+setspn -F -Q <SPN>
+```
     
     ASA 자격 증명으로 연결 하려는 \< SPN \> SPN입니다. 예를 들어:
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+setspn -F -Q http/mail.corp.tailspintoys.com
+```
     
     이 명령은 아무것도 반환 해야 합니다. 무언가 반환 하는 경우 다른 계정이 이미 SPN와 연결 합니다. ASA 자격 증명으로 연결 하려는 각 SPN에 대 한 후에이 단계를 반복 합니다.
 
@@ -310,11 +318,15 @@ ASA 자격 증명 SPN setspn 명령을 사용 하 여 연결
 
 2.  명령 프롬프트에 다음 명령을 입력합니다.
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+setspn -S <SPN> <Account>$
+```
     
     여기서 \< SPN \> ASA 자격 증명 연결할 SPN 이며 \< 계정 \> ASA 자격 증명을 연관 된 계정입니다. 예를 들어:
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+```
     
     ASA 자격 증명으로 연결 하려는 각 SPN에 대 한 후이 명령을 실행 합니다.
 
@@ -324,11 +336,15 @@ Setspn 명령을 사용 하 여 ASA 자격 증명을 가진 Spn을 연결 확인
 
 2.  명령 프롬프트에 다음 명령을 입력합니다.
     
-        setspn -L <Account>$
+    ```powershell
+setspn -L <Account>$
+```
     
     여기서 \< 계정이 \> ASA 자격 증명을 연관 된 계정입니다. 예를 들어:
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+setspn -L tailspin\EXCH2013ASA$
+```
     
     이 명령은 한번 실행 해야 합니다.
 
@@ -390,7 +406,9 @@ ASA 자격 증명을 제거 하려면
 
 1.  Exchange 2013 서버에서 Exchange 관리 셸을 열고 다음 명령을 실행 합니다.
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+```
 
 2.  이 작업을 즉시 수행 하지 않아도 있지만 결국를 다시 시작 해야 모든 클라이언트 컴퓨터는 컴퓨터에서 Kerberos 티켓 캐시의 선택을 취소 합니다.
 

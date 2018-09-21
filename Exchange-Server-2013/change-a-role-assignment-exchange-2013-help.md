@@ -51,15 +51,21 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 역할 할당을 사용하도록 설정하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```
 
 역할 할당을 사용하지 않도록 설정하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```
 
 이 예에서는 Help Desk Assignment 역할 할당을 사용하지 않도록 설정합니다.
 
-    Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```powershell
+Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335173\(v=exchg.150\)) 항목을 참조하십시오.
 
@@ -83,7 +89,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 이 예에서는 John의 Assignment 역할 할당에 미리 정의된 범위를 MyDistributionGroups로 변경합니다.
 
-    Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```powershell
+Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335173\(v=exchg.150\)) 항목을 참조하십시오.
 
@@ -109,7 +117,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 새 구성 범위를 지정하거나 기존 범위를 바꾸려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 이 예에서는 구성 범위를 추가하거나 Redmond Servers로 변경합니다.
 
@@ -125,11 +135,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 새 구성 범위를 지정하거나 기존 범위를 바꾸려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 이 예에서는 구성 범위를 추가하거나 Redmond Databases로 변경합니다.
 
-    Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```powershell
+Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```
 
 역할 할당에 적용된 것과 동일한 구성 범위를 유지하지만 범위의 데이터베이스 필터 또는 데이터베이스 목록을 변경하려는 경우 구성 범위 자체를 변경해야 합니다. 범위를 변경하는 방법에 대한 자세한 내용은 [역할 범위를 변경 합니다.](change-a-role-scope-exchange-2013-help.md) 항목을 참조하십시오.
 
@@ -141,7 +155,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 역할 할당의 새 OU를 변경하거나 추가하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```
 
 이 예에서는 contoso.com 도메인의 Engineering\\Users OU를 Engineering Help Desk 역할 할당에 추가합니다.
 

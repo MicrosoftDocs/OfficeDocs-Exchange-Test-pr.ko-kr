@@ -314,7 +314,9 @@ Exchange 2013에서는 **Get-QueueDigest**라는 새 큐 cmdlet이 추가됩니�
 
 이 예에서는 Mailbox01,Mailbox02 및 Mailbox03이라는 Exchange 2013 사서함 서버의 비어 있지 않은 모든 외부 큐를 반환합니다.
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 맨 위로 이동
 

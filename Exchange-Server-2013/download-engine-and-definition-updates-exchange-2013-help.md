@@ -87,7 +87,9 @@ Microsoft 맬웨어 방지 엔진 및 정의 (서명) 업데이트에 수동으�
 
 1.  다음 명령을 실행합니다.
     
-        Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+    ```powershell
+Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+```
 
 2.  **Get-ProxySettings** 및 **Set-ProxySettings** cmdlet을 사용 하 여 보기 및 맬웨어 방지 업데이트를 다운로드 하는데 사용 되는 프록시 서버 설정을 구성 합니다. **Set-ProxySettings** cmdlet에는 다음 구문을 사용합니다.
     
@@ -95,7 +97,9 @@ Microsoft 맬웨어 방지 엔진 및 정의 (서명) 업데이트에 수동으�
     
     예, TCP 포트 80에서 172.17.17.10 주소에 프록시 서버를 사용 하 여 맬웨어 방지 업데이트를 구성 하려면 다음 명령을 실행 합니다.
     
-        Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+    ```powershell
+Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+```
     
     프록시 서버 설정을 확인 하려면 **Get-ProxySettings** cmdlet을 실행 합니다.
 

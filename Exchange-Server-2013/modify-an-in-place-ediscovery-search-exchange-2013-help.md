@@ -78,7 +78,9 @@ _**마지막으로 수정된 항목:** 2014-08-27_
 
 원본 위치 eDiscovery 검색 DG ProjectManagers 메일 그룹의 구성원에 게 속한 사서함을 검색 하려면 검색 Project Contoso를 수정 하는이 예제입니다.
 
-    Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```powershell
+Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

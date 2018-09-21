@@ -93,7 +93,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-03-26_
 
 4.  마이그레이션 기능을 <strong>PAW</strong> Office 365 테 넌 트를 사용 하도록 설정 해야 합니다. 이 확인 하려면 Exchange Online PowerShell에서 다음 명령을 실행 합니다.
     
-        Get-MigrationConfig
+    ```powershell
+Get-MigrationConfig
+```
     
     <strong>기능</strong> 에서 출력 <strong>PAW</strong>, 다음 기능을 사용 하도록 목록과를 계속 받을 수 있습니다 하는 경우 *3 단계:.csv 파일 Crete*합니다.
     
@@ -109,7 +111,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-03-26_
 
   - <strong>TargetGroupMailbox</strong>합니다. Office 365에서 대상 그룹의 SMTP 주소입니다. 기본 SMTP 주소를 참조 하려면 다음 명령을 실행할 수 있습니다.
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 예제.csv의 경우:
 
@@ -136,7 +140,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-03-26_
     
     2.  위의 1 단계에서에서 적어둔 Exchange 2013 환경의 MRS 프록시 서버 정보를 사용 하 고 변수 `$Source_RemoteServer`으로 해당 값을 전달 합니다.
         
-            $Source_RemoteServer = "<MRS proxy endpoint>"
+        ```powershell
+$Source_RemoteServer = "<MRS proxy endpoint>"
+```
 
 3.  Exchange Online PowerShell 마이그레이션 끝점을 만들려면 다음 명령을 실행 합니다.
     
@@ -158,7 +164,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-03-26_
 
 5.  Exchange Online PowerShell 에서 다음 명령을 실행 하 여 마이그레이션을 시작 합니다. Note이 단계는 4 단계에서 위의 일괄 처리를 만드는 동안 `-AutoStart` 매개 변수는 사용 되지 않았습니다 하는 경우에 필요 합니다.
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 마이그레이션 일괄 처리를 Exchange Online PowerShell 에서 `New-MigrationBatch` cmdlet을 사용 하 여 만들 필요가 하는 동안 마이그레이션 진행 상황을 볼 하 고 Exchange 관리 센터 에서 관리할 수 있습니다. 또한 [Get-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219164\(v=exchg.150\)) 및 [Get-MigrationUser](https://technet.microsoft.com/ko-kr/library/jj218702\(v=exchg.150\)) cmdlet을 실행 하 여 마이그레이션의 진행률을 볼 수 있습니다. `New-MigrationBatch` cmdlet은 각 Office 365 그룹 사서함에 대 한 마이그레이션 사용자를 시작 하 고 사서함 마이그레이션 페이지를 사용 하 여 이러한 요청의 상태를 볼 수 있습니다.
 
@@ -220,7 +228,9 @@ Office 365 그룹에는 대부분의 공용 폴더의 데이터는 마이그레�
 
 수행한 후 공용 폴더 읽기 전용, 마이그레이션을 다시 수행 해야 합니다. 데이터의 마지막 증분 복사본에 대 한 필요한입니다. 마이그레이션을 다시을 실행 하려면 먼저 다음 명령을 실행 하 여 수행할 수 있는 기존 일괄 처리를 제거 해야 합니다.
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 다음에 다음 명령을 실행 하 여 같은.csv 파일이 포함 된 새 일괄 처리를 만듭니다. 이 명령 합니다.
 
@@ -236,7 +246,9 @@ Office 365 그룹에는 대부분의 공용 폴더의 데이터는 마이그레�
 
 새 일괄 처리를 만든 후에 Exchange Online PowerShell 에서 다음 명령을 실행 하 여 마이그레이션을 시작 합니다. 이 단계는 `-AutoStart` 매개 변수는 이전 명령에서 사용 되지 않은 경우에 필요한만 note 합니다.
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 (사용 하면 일괄 처리 상태가 <strong>완료 됨</strong> )이이 단계를 완료 한 후 Office 365 그룹에 모든 데이터를 복사 된 있는지 확인 합니다. 이때 그룹 환경에 만족할 제공 마이그레이션된 공용 폴더를 Exchange 2013 환경에서에서 삭제를 시작할 수 있습니다.
 

@@ -97,7 +97,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  새 역할 그룹을 만든 후, 다음 구문을 사용하여 역할 그룹에 구성원을 추가하고 새 역할 그룹을 다른 사용자에게 위임할 수 있는 사용자를 지정합니다.
     
@@ -116,7 +118,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  다음 구문을 사용하여 사용자 지정 범위의 새 역할 그룹을 만듭니다.
     
@@ -137,7 +141,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  다음 구문을 사용하여 사용자 지정 범위의 새 역할 그룹을 만듭니다.
     
@@ -220,11 +226,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 
 역할 그룹에 범위 없는 역할을 할당하려면 다음 구문을 사용합니다. 역할 할당 이름은 지정하지 않은 경우 자동으로 만들어집니다.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 이 예에서는 Seattle Compliance 역할 그룹에 Transport Rules 관리 역할을 할당합니다.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -450,7 +460,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 1.  역할 그룹에서 모든 역할 할당 이름을 찾으려면 다음 명령을 사용합니다. <strong>Format-List</strong> cmdlet으로 관리 역할 할당을 파이프하면 할당의 전체 이름을 볼 수 있습니다.
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+```
 
 2.  변경할 역할 할당의 이름을 찾습니다. 역할 할당의 이름은 다음 단계에서 사용합니다.
 
@@ -506,7 +518,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 1.  다음 명령을 사용하여 역할 그룹을 변수에 저장합니다.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  다음 명령을 사용하여 변수에 저장된 역할 그룹에 대리인을 추가합니다.
     
@@ -522,7 +536,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 4.  다음 명령을 사용하여 새 대리인 목록을 실제 역할 그룹에 적용합니다.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 이 예에서는 조직 관리 역할 그룹의 대리인으로서 사용자 David Strome을 추가합니다.
 
@@ -538,7 +554,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 1.  다음 명령을 사용하여 역할 그룹을 변수에 저장합니다.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  다음 명령을 사용하여 변수에 저장된 역할 그룹에서 대리인을 제거합니다.
     
@@ -554,7 +572,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 4.  다음 명령을 사용하여 새 대리인 목록을 실제 역할 그룹에 적용합니다.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 이 예에서는 조직 관리 역할 그룹의 대리인으로서 사용자 David Strome을 제거합니다.
 
@@ -570,7 +590,9 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+Get-RoleGroup <role group name> | Format-List ManagedBy
+```
 
 2.  *ManagedBy* 속성에 나열된 대리자에 역할 그룹을 관리할 수 있는 대리자만 포함되어 있는지 확인합니다.
 

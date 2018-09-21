@@ -253,7 +253,9 @@ Exchange 2010에서는 지연된 복사본에 페이지 패치를 사용할 수 
 
 지연된 복사본 재생 동작은 기본적으로 사용하지 않도록 설정되어 있으며 다음 명령을 실행하면 이를 사용하도록 설정할 수 있습니다.
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 재생 동작을 사용하도록 설정한 후 복사본 수가 3개 미만이면 재생이 발생합니다. 다음 DWORD 레지스트리 값을 수정하면 기본값 3을 변경할 수 있습니다.
 

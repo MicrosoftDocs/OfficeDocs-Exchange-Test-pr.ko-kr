@@ -49,11 +49,15 @@ Microsoft Exchange 통합 메시징 통화 라우터 서비스를 실행 중인 
 
 이 예에서는 모든 SIP(Session Initiation Protocol) 다이얼 플랜에서 이름이 `MyClientAccessServer`인 클라이언트 액세스 서버를 제거합니다.
 
-    Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```
 
 이 예에서는 이름이 `MyClientAccessServer`인 클라이언트 액세스 서버를 SIP 다이얼 플랜 `MySIPDialPlan`에 추가하고 들어오는 음성 통화의 최대 개수를 설정합니다.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```
 
 이 예에서는 이름이 `MyClientAccessServer`인 클라이언트 액세스 서버에서 SIP TCP 수신 포트를 5077로 설정하고 시작 모드를 이중 모드로 설정합니다.
 
@@ -63,9 +67,13 @@ Microsoft Exchange 통합 메시징 통화 라우터 서비스를 실행 중인 
 
 다음 예에서는 모든 클라이언트 액세스 서버의 목록을 표시합니다.
 
-    Get-UMCallRouterSettings
+```powershell
+Get-UMCallRouterSettings
+```
 
 이 예에서는 클라이언트 액세스 서버의 속성을 서식 있는 목록으로 표시합니다.
 
-    Get-UMCallRouterSettings | Format-List
+```powershell
+Get-UMCallRouterSettings | Format-List
+```
 

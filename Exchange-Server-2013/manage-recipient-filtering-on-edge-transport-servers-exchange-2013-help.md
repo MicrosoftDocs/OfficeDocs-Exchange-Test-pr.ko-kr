@@ -37,7 +37,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
   - **Set-AcceptedDomain** cmdlet의 *AddressBookEnabled* 매개 변수는 허용 도메인의 받는 사람에 대한 받는 사람 필터링을 사용하거나 사용하지 않도록 설정합니다. 기본적으로 받는 사람 필터링은 신뢰할 수 있는 도메인에 대해 사용되도록 설정되고, 내부 릴레이 도메인 및 외부 릴레이 도메인에 대해 사용되지 않도록 설정됩니다. 조직의 허용 도메인에 대한 *AddressBookEnabled* 매개 변수의 상태를 보려면 다음 명령을 실행합니다.
     
-        Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```powershell
+Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+```
 
   - 이 항목의 절차를 사용하여 받는 사람 필터링을 사용되지 않게 설정하면 필터링 기능이 사용되지 않지만 기본 받는 사람 필터 에이전트는 사용됩니다.
 
@@ -55,11 +57,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 받는 사람 필터링을 사용하지 않으려면 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -Enabled $false
+```powershell
+Set-RecipientFilterConfig -Enabled $false
+```
 
 받는 사람 필터링을 사용하려면 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -Enabled $true
+```powershell
+Set-RecipientFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -73,7 +79,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-RecipientFilterConfig | Format-List Enabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List Enabled
+```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -81,11 +89,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```
 
 이 예에서는 받는 사람 차단 목록을 사용하도록 설정합니다.
 
-    Set-RecipientFilterConfig -BlockListEnabled $true
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -93,7 +105,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List BlockListEnabled
+```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -101,11 +115,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```
 
 이 예에서는 valuesmark@contoso.com 및 kim@contoso.com을 사용하여 받는 사람 차단 목록을 구성합니다.
 
-    Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
@@ -121,7 +139,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```powershell
+Get-RecipientFilterConfig | Format-List BlockedRecipients
+```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -129,11 +149,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```
 
 조직에 없는 받는 사람에게 보내는 메시지를 차단하려면 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -141,7 +165,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```powershell
+Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 

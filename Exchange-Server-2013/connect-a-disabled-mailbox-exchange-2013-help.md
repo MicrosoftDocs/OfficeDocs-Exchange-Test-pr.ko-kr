@@ -85,7 +85,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
 
 이 예에서는 사용자 사서함을 연결합니다. *Identity* 매개 변수는 Exchange 데이터베이스에 있는 연결이 끊어진 사서함을 지정합니다. *User* 매개 변수는 사서함을 다시 연결할 Active Directory 사용자 계정을 지정합니다.
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 이 예에서는 연결된 사서함을 연결합니다. *Identity* 매개 변수는 Exchange 데이터베이스에 있는 연결이 끊어진 사서함을 지정합니다. *LinkedMasterAccount* 매개 변수는 사서함을 다시 연결할 계정 포리스트의 Active Directory 사용자 계정을 지정합니다. *Alias* 매개 변수는 다시 연결된 사서함의 별칭, 즉 전자 메일 주소에서 @ 기호의 왼쪽 부분을 지정합니다.
 
@@ -113,7 +115,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 속성의 **UserMailbox** 값은 사용자 계정과 사서함이 연결되었음을 나타냅니다. **Get-Mailbox** cmdlet을 실행하여 사서함이 있는지 확인할 수도 있습니다.
 

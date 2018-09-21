@@ -141,7 +141,9 @@ Active Directory 사용 권한 분할을 공유 사용 권한으로 전환하려
 
 1.  Windows 명령 셸에서 Exchange 2013 설치 미디어로부터 다음 명령을 실행하여 Active Directory 사용 권한 분할을 사용하지 않도록 설정합니다.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
 
 2.  Exchange 관리 셸에서 다음 명령을 실행하여 Mail Recipient Creation 역할과 Security Group Creation and Management 역할 및 조직 관리와 Recipient Management 역할 그룹 사이에 일반 역할 할당을 추가합니다.
     

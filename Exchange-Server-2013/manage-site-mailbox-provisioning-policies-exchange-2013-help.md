@@ -59,17 +59,23 @@ _**마지막으로 수정된 항목:** 2013-02-21_
 
 이 예에서는 조직에 있는 모든 사이트 사서함 프로비전 정책에 대한 자세한 정보를 반환합니다.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 이 예에서는 조직의 모든 정책을 반환하지만 어떤 정책이 기본 정책인지 식별하는 `IsDefault` 정보만 표시합니다.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 기존 사이트 사서함 프로비전 정책 변경
 
 이 예에서는 Default라는 사이트 사서함 프로비전 정책을 사이트 사서함에서 최대 크기 25MB까지의 전자 메일 메시지를 수신할 수 있도록 변경합니다. Exchange를 설치하면 이름이 **Default**인 프로비전 정책이 만들어집니다.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 이 예에서는 경고 할당량을 9.5GB로 변경하고 보내기 및 받기 금지 할당량을 10GB로 변경합니다.
 
@@ -103,7 +109,9 @@ _**마지막으로 수정된 항목:** 2013-02-21_
 
 이 예에서는 Exchange 설치 중에 만들어진 기본 사이트 사서함 정책을 삭제합니다.
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 
 > [!IMPORTANT]

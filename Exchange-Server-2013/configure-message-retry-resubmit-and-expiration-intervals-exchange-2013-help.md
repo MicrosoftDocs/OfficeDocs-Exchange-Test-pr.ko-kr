@@ -43,7 +43,9 @@ Microsoft Exchange Server 2013에서는 사서함 서버 및 Edge 전송 서버�
 
 1.  사서함 서버나 Edge 전송 서버의 명령 프롬프트 창에서 다음 명령을 실행하여 메모장에서 EdgeTransport.exe.config 파일을 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` 섹션에서 다음 키를 찾습니다.
     
@@ -145,11 +147,15 @@ Microsoft Exchange Server 2013에서는 사서함 서버 및 Edge 전송 서버�
 
 다음 구문을 사용하여 메시지 다시 시도 간격을 설정할 수 있습니다.
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 이 예에서는 mailbox01 사서함 서버의 20 분으로 메시지 다시 시도 간격을 변경 합니다.
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## 지연 DSN 시간 제한 설정 구성
 
@@ -173,11 +179,15 @@ EAC 또는 셸을 사용하여 지연 DSN 알림 시간 제한 간격을 구성�
 
 다음 구문을 사용하여 메시지 다시 시도 간격을 설정할 수 있습니다.
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버에서 지연 DSN 메시지 알림 시간 제한 간격을 6시간으로 바꿉니다.
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## 셸을 사용하여 외부 또는 내부 메시지 보낸 사람에게 지연 DSN 알림 보내기를 사용하거나 사용하지 않도록 설정
 
@@ -187,11 +197,15 @@ EAC 또는 셸을 사용하여 지연 DSN 알림 시간 제한 간격을 구성�
 
 이 예에서는 외부 보낸 사람에게 지연 DSN 알림 메시지를 보내지 않도록 차단합니다.
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 이 예에서는 내부 보낸 사람에게 지연 DSN 알림 메시지를 보내지 않도록 차단합니다.
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## 메시지 만료 시간 제한 간격 구성
 
@@ -207,9 +221,13 @@ EAC 또는 셸을 사용하여 지연 DSN 알림 시간 제한 간격을 구성�
 
 메시지 만료 시간 제한 간격을 구성하려면 다음 구문을 사용합니다.
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 이 예에서는 Mailbox01이라는 Exchange 서버에서 메시지 만료 시간 제한 간격을 4일로 바꿉니다.
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

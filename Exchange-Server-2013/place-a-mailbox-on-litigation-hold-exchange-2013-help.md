@@ -71,7 +71,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 이 예제에서는 소송 보존으로 설정 하는에서 사서함 bsuneja@contoso.com를 배치합니다. 사서함의 항목은 무기한 또는 보존이 제거 될 때까지 유지 됩니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```
 
 
 > [!NOTE]
@@ -83,7 +85,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 이 예에서는 사서함 bsuneja@contoso.com 소송 보존에 배치 하 고 2555 일 (약 7 년)에 대 한 항목을 유지 합니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 ## 셸을 사용 하 여 지정 된 기간 동안 소송 보존으로 설정 하는에서 모든 사서함을 보류
 
@@ -103,7 +107,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 소송 보존으로 설정에서 사서함 bsuneja@contoso.com를 제거 하는이 예제입니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```
 
 맨위로 돌아가기
 
@@ -154,7 +160,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
     ```
 
     ```
-    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```powershell
+Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```
     ```
 
     ```
@@ -166,7 +174,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
     ```
 
     ```
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
     ```
     
     포함 하거나 사서함을 제외 하는 필터에 다른 사용자 사서함 속성을 사용할 수 있습니다. 자세한 내용은 [필터링 할 수 있는 속성에-Filter 매개 변수](https://technet.microsoft.com/ko-kr/library/bb738155\(v=exchg.150\))를 참조 합니다.

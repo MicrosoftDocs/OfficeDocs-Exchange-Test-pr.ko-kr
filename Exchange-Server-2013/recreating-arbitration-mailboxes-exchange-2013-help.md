@@ -97,11 +97,15 @@ Exchange 2013 *중재 사서함*라고 하는 5 개의 시스템 사서함 함�
 
 1.  모든 중재 사서함 누락 된 경우 다음 명령을 실행 합니다.
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 관리 셸 다음을 실행 합니다.
     
-        Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+```
 
 ## Microsoft Exchange 길잡이 승인 사서함을 다시 만들려면
 
@@ -109,7 +113,9 @@ SystemMailbox {1f05a927-9350-4efe-a823-5529c2d64109} 중재 사서함 다시 만
 
 1.  모든 중재 사서함 누락 된 경우 다음 명령을 실행 합니다.
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 관리 셸 다음을 실행 합니다.
     
@@ -121,15 +127,21 @@ SystemMailbox {1f05a927-9350-4efe-a823-5529c2d64109} 중재 사서함 다시 만
 
 1.  모든 중재 사서함 누락 된 경우 다음 명령을 실행 합니다.
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 관리 셸 다음을 실행 합니다.
     
-        Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+```
 
 3.  Exchange 관리 셸 다음 명령을 실행 하 여 유지 기능 (msExchCapabilityIdentifiers)를 설정 합니다.
     
-        Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```powershell
+Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+```
 
 ## Microsoft Exchange 검색 시스템 사서함을 다시 만들려면
 
@@ -137,7 +149,9 @@ SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9} 중재 사서함 다시 만
 
 1.  다음 명령을 실행합니다.
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 ## Oab에 대 한 Microsoft Exchange 조직의 사서함을 다시 만들려면
 
@@ -145,11 +159,15 @@ SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c} 중재 사서함 다시 만
 
 1.  모든 중재 사서함 누락 된 경우 다음 명령을 실행 합니다.
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 관리 셸 다음을 실행 합니다.
     
-        Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+```
 
 3.  Exchange 관리 셸 다음 명령을 실행 하 여 유지 기능 (msExchCapabilityIdentifiers)를 설정 합니다.
     
@@ -163,7 +181,9 @@ SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c} 중재 사서함 다시 만
 
 성공적으로 다시를 만들었다고 중재 사서함을 확인 하려면 시스템 사서함을 검색 하려면 *Arbitration* 스위치와 함께 **Get-Mailbox** cmdlet을 사용 합니다.
 
-    Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```powershell
+Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```
 
 이름 또는 위의 테이블에서 표시 이름을 사용 하거나 해당 적절 한 시스템 사서함을 다시 만들어졌는지 확인 하려면 명령의 결과 보기
 

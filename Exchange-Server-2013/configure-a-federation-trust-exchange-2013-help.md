@@ -63,7 +63,9 @@ _**마지막으로 수정된 항목:** 2017-07-26_
     
     모든 Exchange 조직에서는 페더레이션 트러스트에 대 한 Azure AD 인증 시스템의 비즈니스 인스턴스를 사용 하는 것이 좋습니다. 두 Exchange 조직 간의 페더레이션 공유를 구성 하기 전에 모든 기존 페더레이션 트러스트에 대 한 각 Exchange 조직을 사용 하는 Azure AD 인증 시스템 인스턴스를 확인 해야 합니다. 기존 페더레이션 트러스트에 대 한 Exchange 조직을 사용 하는 Azure AD 인증 시스템 인스턴스를 확인 하려면 다음 셸 명령을 실행 합니다.
     
-        Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```powershell
+Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+```
     
     비즈니스 인스턴스는 *TokenIssuerURIs* 매개 변수에 대해 `<uri:federation:MicrosoftOnline>`의 값을 반환합니다.
     
@@ -137,11 +139,15 @@ _**마지막으로 수정된 항목:** 2017-07-26_
 
 4.  페더레이션 트러스트에 대해 구성할 수 있는 모든 도메인에 대 한 필요한 TXT 레코드 도메인 소유권 증명을 반환 하려면 다음이 구문을 사용 합니다.
     
-        Get-FederatedDomainProof -DomainName <domain>
+    ```powershell
+Get-FederatedDomainProof -DomainName <domain>
+```
     
     이 예에서는 contoso.com 기본 공유 도메인에 대 한 필요한 TXT 레코드 도메인 소유권 증명을 반환 합니다.
     
-        Get-FederatedDomainProof -DomainName contoso.com
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com
+```
     
     **참고**:
     
@@ -153,7 +159,9 @@ _**마지막으로 수정된 항목:** 2017-07-26_
 
 6.  Azure AD 에서 메타 데이터 및 인증서를 검색 하려면이 명령을 실행 합니다.
     
-        Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```powershell
+Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+```
 
 7.  3 단계에서에서 만든 페더레이션 트러스트에 대 한 기본 공유 도메인을 구성 하려면 다음이 구문을 사용 합니다. 지정 된 도메인의 페더레이션 트러스트에 대 한 조직 식별자 (OrgID)를 구성 하려면 사용 됩니다. OrgID 하는 방법에 대 한 자세한 내용은 [페더레이션 조직 식별자](federation-exchange-2013-help.md)를 참조 하십시오.
     
@@ -165,11 +173,15 @@ _**마지막으로 수정된 항목:** 2017-07-26_
 
 8.  다른 도메인에는 페더레이션 트러스트를 추가 하려면 다음이 구문을 사용 합니다.
     
-        Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```powershell
+Add-FederatedDomain -DomainName <AdditionalDomain>
+```
     
     이 예제는 sales.contoso.com 도메인의 전자 메일 주소를 가진 사용자가 페더레이션된 공유 기능을 필요로 하기 때문에 페더레이션된 트러스트에 하위 도메인 sales.contoso.com을 추가 합니다.
     
-        Add-FederatedDomain -DomainName sales.contoso.com
+    ```powershell
+Add-FederatedDomain -DomainName sales.contoso.com
+```
     
     기억 모든 도메인 또는 하위 도메인 페더레이션 트러스트에 추가 하는 TXT 레코드 도메인 소유권 증명 필요
 
@@ -183,11 +195,15 @@ _**마지막으로 수정된 항목:** 2017-07-26_
 
 1.  페더레이션 트러스트 정보를 확인하려면 다음 셸 명령을 실행합니다.
     
-        Get-FederationTrust | Format-List
+    ```powershell
+Get-FederationTrust | Format-List
+```
 
 2.  기본 공유 도메인 *\<PrimarySharedDomain\>* 바꿉니다 하 고 조직에서 페더레이션 정보를 검색할 수 있는지 확인 하려면 다음 셸 명령을 실행 합니다.
     
-        Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```powershell
+Get-FederationInformation -DomainName <PrimarySharedDomain>
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd351262\(v=exchg.150\)) 및 [Get-FederationInformation](https://technet.microsoft.com/ko-kr/library/dd351221\(v=exchg.150\))을 참조하십시오.
 

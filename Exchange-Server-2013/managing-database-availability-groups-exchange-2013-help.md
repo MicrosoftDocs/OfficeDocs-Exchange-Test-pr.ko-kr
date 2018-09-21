@@ -421,7 +421,9 @@ DAG 네트워크에 복제 트래픽을 또는 MAPI 트래픽에 사용 되는 �
 
 Exchange 2010에서는 많은 시나리오에서 DAG 네트워크를 수동으로 구성해야 했습니다. Exchange 2013에서는 기본적으로 DAG 네트워크가 시스템에 의해 자동으로 구성됩니다. DAG 네트워크를 만들거나 수정하려면 먼저 다음 명령을 실행하여 수동 DAG 네트워크 제어를 사용하도록 설정해야 합니다.
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```
 
 수동 DAG 네트워크 구성을 설정한 후 셸에서 **New-DatabaseAvailabilityGroupNetwork** cmdlet을 사용하여 DAG 네트워크를 만들 수 있습니다. DAG 네트워크를 만드는 방법에 대한 자세한 단계는 [데이터베이스 가용성 그룹 네트워크를 만들기](create-a-database-availability-group-network-exchange-2013-help.md)를 참조하십시오.
 
@@ -529,7 +531,9 @@ Exchange 2010에서는 많은 시나리오에서 DAG 네트워크를 수동으�
 
 ReplicationDagNetwork01을 전용 복제 네트워크로 구성을 완료하려면 다음 명령을 실행하여 MapiDagNetwork에 대한 복제를 사용하지 않도록 설정합니다.
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```
 
 MapiDagNetwork에 대해 복제를 사용하지 않도록 설정하면 Microsoft Exchange 복제 서비스는 연속 복제를 위해 ReplicationDagNetwork01을 사용합니다. ReplicationDagNetwork01에 장애가 발생하는 경우 Microsoft Exchange 복제 서비스는 연속 복제를 위해 MapiDagNetwork를 다시 사용합니다. 시스템은 고가용성을 유지하기 위해 의도적으로 이를 수행합니다.
 
@@ -659,7 +663,9 @@ DAG의 구성원인 사서함 서버는 다음 섹션의 설명과 같이 구성
 
 `GoodAvailability`의 *AutoDatabaseMountDial* 설정을 갖는 사서함 서버 구성 예는 다음과 같습니다.
 
-    Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```powershell
+Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```
 
 ## 데이터베이스 복사본 자동 활성화 정책
 
@@ -675,7 +681,9 @@ DAG의 구성원인 사서함 서버는 다음 섹션의 설명과 같이 구성
 
 `Blocked`의 *DatabaseCopyAutoActivationPolicy* 설정을 갖는 사서함 서버 구성 예는 다음과 같습니다.
 
-    Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 ## 최대 활성 데이터베이스
 
@@ -687,7 +695,9 @@ DAG의 구성원인 사서함 서버는 다음 섹션의 설명과 같이 구성
 
 다음은 최대 20개의 활성 데이터베이스를 지원하는 사서함 서버 구성 예입니다.
 
-    Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```powershell
+Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```
 
 맨 위로 이동
 

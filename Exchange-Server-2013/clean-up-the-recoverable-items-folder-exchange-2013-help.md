@@ -104,7 +104,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 4.  현재 관리 되는 폴더 도우미가 작업 주기 구성을 검색 합니다. 나중에 대 한 설정을 확인 해야 합니다.
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+```
 
 5.  이 절차의 기간에 대 한 변경 된 내용이 없습니다를 사서함 데이터를 설정할 수 있는지 확인 하는 사서함에 대 한 클라이언트 액세스를 사용 하지 않도록 설정 합니다.
     
@@ -116,7 +118,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 7.  관리 되는 폴더 도우미가 사서함 서버에서을 사용 하지 않도록 설정 합니다.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+```
     
 
     > [!IMPORTANT]
@@ -126,7 +130,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 8.  단일 항목 복구를 사용 하지 않도록 설정 하 고 소송 보존으로 설정에서 사서함을 제거 합니다.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+```
     
 
     > [!IMPORTANT]
@@ -150,7 +156,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 10. 사서함을 소송 보존에 배치 명 하는 경우 단일 항목 복구가 사용 이전, 이러한 기능을 다시 사용 합니다.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+```
     
 
     > [!IMPORTANT]
@@ -180,7 +188,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 12. 4 단계에서에서 적어둔 값으로 다시 작업 주기를 설정 하 여 관리 되는 폴더 도우미를 사용 합니다. 1 일 작업 주기를 설정 하는이 예제입니다.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 13. 클라이언트 액세스를 사용 하도록 설정 합니다.
     

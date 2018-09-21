@@ -61,11 +61,15 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 이 예에서는 Ben Smith의 사서함에 대해 사서함 감사 로깅을 사용하도록 설정합니다.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```
 
 이 예에서는 Ben Smith의 사서함에 대해 사서함 감사 로깅을 사용하지 않도록 설정합니다.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -75,15 +79,21 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 이 예에서는 위임된 사용자가 Ben Smith의 사서함에 대해 수행한 `SendAs` 또는 `SendOnBehalf` 작업이 기록되도록 지정합니다.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```
 
 이 예에서는 관리자가 Ben Smith의 사서함에 대해 수행한 `MessageBind` 및 `FolderBind` 작업이 기록되도록 지정합니다.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```
 
 이 예에서는 사서함 소유자가 Ben Smith의 사서함에 대해 수행한 `HardDelete` 작업이 기록되도록 지정합니다.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 

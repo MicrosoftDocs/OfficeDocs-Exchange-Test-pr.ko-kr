@@ -45,11 +45,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 다음 구문을 사용하여 역할에서 전체 관리 역할 항목을 제거할 수 있습니다.
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 이 예에서는 Seattle Server Administrators 역할에서 **Enable-MailUser** cmdlet을 제거합니다.
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351187\(v=exchg.150\))를 참조하십시오.
 

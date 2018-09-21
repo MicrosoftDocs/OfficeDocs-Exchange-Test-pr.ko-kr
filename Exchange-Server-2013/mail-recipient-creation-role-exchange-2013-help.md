@@ -45,7 +45,9 @@ RBAC 및 Active Directory 사용 권한 분할에 대한 자세한 내용은 [�
 
 이 역할에 할당된 역할 그룹, 사용자 또는 USG를 보려면 다음 명령을 사용합니다.
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## 일반 및 위임 역할 할당
 

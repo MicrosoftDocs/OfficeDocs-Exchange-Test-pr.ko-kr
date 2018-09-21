@@ -65,21 +65,29 @@ _**마지막으로 수정된 항목:** 2012-11-02_
 
 이 예에서는 서버 MBX1에서 호스트되는 데이터베이스 DB1의 복사본에 대해 연속 복제를 일시 중단합니다. 선택적인 설명도 지정되었습니다.
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```
 
 이 예에서는 서버 MBX2에서 호스트되는 데이터베이스 DB2의 복사본에 대해 활성화를 일시 중단합니다.
 
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```
 
 ## 셸을 사용하여 사서함 데이터베이스 복사 다시 시작
 
 이 예에서는 서버 MBX1에서 데이터베이스 DB1의 복사본을 다시 시작합니다.
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 이 예에서는 복제만을 위해 서버 MBX2에서 데이터베이스 DB2의 복사본을 다시 시작합니다.
 
-    Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -89,5 +97,7 @@ _**마지막으로 수정된 항목:** 2012-11-02_
 
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 상태 정보를 표시합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 

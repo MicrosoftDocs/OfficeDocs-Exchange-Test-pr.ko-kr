@@ -47,7 +47,9 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
     
     Exchange 2007의 경우 다음 명령을 실행합니다.
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+```
     
 
     > [!NOTE]
@@ -62,12 +64,16 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
     ```
 
     ```
-    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```powershell
+Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```
     ```
 
 4.  Exchange 2010의 경우 자동 검색에서 프록시 공용 폴더 사서함을 반환하도록 설정합니다. Exchange 2007의 경우에는 이 단계를 수행할 필요가 없습니다.
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+```
 
 5.  조직의 모든 공용 폴더 서버에 대해 위의 단계를 반복합니다.
 

@@ -59,7 +59,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
   - 셸에서 다음 명령을 실행 하는 데이터베이스 Mailbox01 서버에서이 만들어졌는지 확인 합니다.
     
-        Get-MailboxDatabase -Server "Mailbox01"
+    ```powershell
+Get-MailboxDatabase -Server "Mailbox01"
+```
 
 ## 사서함 데이터베이스 속성
 
@@ -149,7 +151,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
   - 셸에서 사서함 데이터베이스 속성을 검색 하려면 다음 명령을 실행 합니다.
     
-        Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```powershell
+Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+```
 
 ## 사서함 데이터베이스 이동
 
@@ -181,7 +185,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
   - 셸에서 모든 사서함 데이터베이스에 대 한 사서함 데이터베이스 속성을 검색 하려면 다음 명령을 실행 합니다.
     
-        Get-MailboxDatabase -IncludePreExchange2013
+    ```powershell
+Get-MailboxDatabase -IncludePreExchange2013
+```
 
 ## 사서함 데이터베이스를 분리 합니다.
 
@@ -213,7 +219,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
 1.  MyDatabase 사서함 데이터베이스를 제거 하려면 다음 명령을 실행 합니다.
     
-        Remove-MailboxDatabase -Identity "MyDatabase"
+    ```powershell
+Remove-MailboxDatabase -Identity "MyDatabase"
+```
 
 2.  작업을 수행 하 시겠습니까 하 여부 하는 방법에 대 한 메시지가 나타나면 **Y** 를 입력 합니다.
 

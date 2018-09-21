@@ -69,7 +69,9 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 이 예에서는 MAIL01 사서함 서버에서 웹 프록시 URL을 구성합니다.
 
-    Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```powershell
+Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ExchangeServer](https://technet.microsoft.com/ko-kr/library/bb123716\(v=exchg.150\))를 참조하십시오.
 
@@ -77,7 +79,9 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 웹 프록시 URL이 구성되었는지 확인하려면 다음 셸 명령을 실행하고 *InternetWebProxy* 매개 변수 정보를 확인합니다.
 
-    Get-ExchangeServer | format-list
+```powershell
+Get-ExchangeServer | format-list
+```
 
 ## 2단계: 셸을 사용하여 게시 가상 디렉터리를 사용하도록 설정
 
@@ -99,7 +103,9 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 게시 가상 디렉터리를 사용하도록 설정되었는지 확인하려면 다음 셀 명령을 실행하고 *ExternalURL* 매개 변수 정보를 확인합니다.
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 ## 3 단계: 만들기 또는 인터넷 일정 게시를 위한 공유 정책 구성
 
@@ -147,11 +153,15 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 이 예에서는 인터넷 공유 정책을 사용자 사서함에 추가합니다.
 
-    Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```
 
 이 예에서는 인터넷 공유 정책을 조직 단위(OU)에 추가합니다.
 
-    Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd298186\(v=exchg.150\)) 및 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))을 참조하십시오.
 
@@ -159,7 +169,9 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 공유 정책이 만들어졌는지 확인하려면 다음 셸 명령을 실행하여 공유 정책 정보를 확인합니다.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 ## 옵션 2: 기본 공유 인터넷 일정 게시에 대 한 정책 구성
 
@@ -199,5 +211,7 @@ Microsoft Exchange Server 2013 조직의 사용자는 Exchange를 사용하지 �
 
 기본 공유 정책이 업데이트되었는지 확인하려면 다음 셸 명령을 실행하여 공유 정책 정보를 확인합니다.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 

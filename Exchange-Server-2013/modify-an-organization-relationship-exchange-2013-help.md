@@ -91,7 +91,9 @@ _**마지막으로 수정된 항목:** 2015-01-01_
 
   - 이 예에서는 조직 관계 Contoso를 사용하지 않도록 설정합니다.
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+Set-OrganizationRelationship -Identity Contoso -Enabled $false
+```
 
   - 이 예에서는 조직 관계 WoodgroveBank에 대해 일정 약속 있음/없음 정보 액세스를 허용하고 액세스 수준을 `AvailabilityOnly`(약속 있음/없음 일정 정보(시간만))로 설정합니다.
     
@@ -103,7 +105,9 @@ _**마지막으로 수정된 항목:** 2015-01-01_
 
 조직 관계가 성공적으로 업데이트되었는지 확인하려면 다음 셸 명령을 실행하여 조직 관계 정보를 확인합니다.
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

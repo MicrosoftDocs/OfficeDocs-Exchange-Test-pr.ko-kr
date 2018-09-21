@@ -41,11 +41,15 @@ _**마지막으로 수정된 항목:** 2012-10-02_
 
 제거 하려는 역할 할당의 이름을 알고 있는 경우에 다음 구문을 사용 합니다.
 
-    Remove-ManagementRoleAssignment <assignment name>
+```powershell
+Remove-ManagementRoleAssignment <assignment name>
+```
 
 예, "계층 2 Help Desk 배정" 역할 할당을 제거 하려면 다음 명령을 사용 합니다.
 
-    Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```powershell
+Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```
 
 역할 할당의 이름을 모르는 경우에 다음 구문을 사용할 수 있습니다.
 

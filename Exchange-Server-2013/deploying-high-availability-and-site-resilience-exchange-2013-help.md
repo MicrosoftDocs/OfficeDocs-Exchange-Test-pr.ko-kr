@@ -138,11 +138,15 @@ Microsoft Exchange Server 2013에서는 *증분 배포*로 알려진 개념을 �
 
 MBX1과 MBX2의 복제 네트워크 어댑터에 대한 라우팅을 구성하기 위해 각 서버에서 다음 명령을 실행했습니다.
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 MBX3과 MBX4의 복제 네트워크 어댑터에 대한 라우팅을 구성하기 위해 각 서버에서 다음 명령을 실행했습니다.
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 다음 추가 네트워크 설정도 구성했습니다.
 
@@ -189,7 +193,9 @@ MBX3과 MBX4의 복제 네트워크 어댑터에 대한 라우팅을 구성하�
 
 이 명령은 각 사서함 서버를 한 번에 하나씩 DAG에 추가합니다. 또한 각 사서함 서버에 Windows 장애 조치(failover) 클러스터링 구성 요소도 설치하고(아직 설치하지 않은 경우), 장애 조치(failover) 클러스터를 만들고, 새로 만든 클러스터에 각 사서함 서버를 가입시킵니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 이 명령은 DAG에 대해 DAC 모드를 사용하도록 설정합니다.
 

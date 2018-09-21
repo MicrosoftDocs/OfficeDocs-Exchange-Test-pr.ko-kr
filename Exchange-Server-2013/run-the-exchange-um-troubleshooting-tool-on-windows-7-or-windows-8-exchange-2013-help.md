@@ -77,13 +77,17 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
 
 4.  UM 문제 해결 도구를 Windows Vista, Windows 7 또는 Windows 8에서 실행하는 경우 Windows PowerShell 명령 프롬프트에서 다음을 실행합니다.
     
-        Set-ExecutionPolicy RemoteSigned
+    ```powershell
+Set-ExecutionPolicy RemoteSigned
+```
 
 5.  **시작** 메뉴에서 **Microsoft Exchange 2010 UM 문제 해결 도구**를 엽니다.
 
 6.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창의 프롬프트에 다음을 입력하고 Enter 키를 누릅니다.
     
-        $cred=Get-Credential
+    ```powershell
+$cred=Get-Credential
+```
 
 7.  **Windows PowerShell 자격 증명 요청** 창에서 도메인\\사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
 

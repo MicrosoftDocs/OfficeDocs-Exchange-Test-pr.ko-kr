@@ -43,7 +43,9 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 1.  명령 프롬프트 창에서 다음 명령을 실행하여 EdgeTransport.exe.config 응용 프로그램 구성 파일을 메모장에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` 섹션의 다음 키를 찾습니다.
     
@@ -61,7 +63,9 @@ _**마지막으로 수정된 항목:** 2014-12-16_
     
     사서함 서버의 전송 서비스에서 우선 순위 큐를 사용하도록 설정하려면 다음 값을 사용합니다.
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+<add key="PriorityQueuingEnabled" value="true" />
+```
     
     나머지 우선 순위 큐 값을 구성하거나 기본값으로 유지합니다.
 

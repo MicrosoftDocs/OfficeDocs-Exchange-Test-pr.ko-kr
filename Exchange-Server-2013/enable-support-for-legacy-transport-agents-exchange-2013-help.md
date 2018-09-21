@@ -112,11 +112,15 @@ Microsoft Exchange Server 2013에서는 Microsoft .NET Framework 버전 4.0을 �
 
 1.  명령 프롬프트 창을 열고 레거시 전송 에이전트 지원을 구성하려는 Exchange 2013 서버에서 다음 명령을 실행하여 메모장으로 해당 응용 프로그램 구성 파일을 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+```
     
     예를 들어 사서함 서버의 EdgeTransport.exe.config 파일을 열려면 다음 명령을 실행합니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  파일 끝에서 *\</configuration\>* 키를 찾고 다음 키를 *\</configuration\>* 키 앞에 붙여 넣습니다.
     

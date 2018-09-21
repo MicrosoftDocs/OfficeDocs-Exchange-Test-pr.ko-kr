@@ -73,7 +73,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  주소 다시 쓰기 인바운드 에이전트 및 주소 다시 쓰기 아웃바운드 에이전트의 **Enabled** 속성 값이 구성한 값인지 확인합니다.
 
@@ -81,15 +83,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 모든 주소 다시 쓰기 항목의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 주소 다시 쓰기 항목의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 다음 예에서는 주소 다시 쓰기 항목 Rewrite Contoso.com to Northwindtraders.com의 세부 정보가 표시됩니다.
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## 셸을 사용하여 주소 다시 쓰기 항목 만들기
 
@@ -171,7 +179,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 예에서는 "Northwind Traders to Contoso"라는 단일 도메인 주소 다시 쓰기 항목의 내부 주소 값을 변경합니다.
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 여러 하위 도메인의 받는 사람에 대해 주소 다시 쓰기 항목 수정
 
@@ -209,11 +219,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 단일 주소 다시 쓰기 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 다음 예에서는 "Contoso.com to Northwindtraders.com" 주소 다시 쓰기 항목을 제거합니다.
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 여러 주소 다시 쓰기 항목을 제거하려면 다음 구문을 사용합니다.
 
@@ -221,7 +235,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 예에서는 모든 주소 다시 쓰기 항목을 제거합니다.
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 다음 예에서는 이름에 "to contoso.com"이라는 텍스트가 포함된 주소 다시 쓰기 항목 제거를 시뮬레이트합니다. *WhatIf* 스위치를 사용하면 변경 내용을 커밋하지 않고 결과를 미리 볼 수 있습니다.
 

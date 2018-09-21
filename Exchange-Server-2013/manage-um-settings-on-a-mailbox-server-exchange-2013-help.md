@@ -51,7 +51,9 @@ Microsoft Exchange 통합 메시징 서비스를 실행 중인 사서함 서버�
 
 이 예에서는 모든 SIP(Session Initiation Protocol) 다이얼 플랜에서 `MyMailboxServer`라는 사서함 서버를 제거합니다.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans $null
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans $null
+```
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버를 UM SIP 다이얼 플랜 `MySIPDialPlanName`에 추가하고 수신 음성 통화의 최대 개수를 설정합니다.
 
@@ -65,9 +67,13 @@ Microsoft Exchange 통합 메시징 서비스를 실행 중인 사서함 서버�
 
 다음 예에서는 모든 사서함 서버의 목록을 표시합니다.
 
-    Get-UMService
+```powershell
+Get-UMService
+```
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버의 속성을 서식 있는 목록으로 표시합니다.
 
-    Get-UMService -Identity MyMailboxServer | Format-List
+```powershell
+Get-UMService -Identity MyMailboxServer | Format-List
+```
 

@@ -43,7 +43,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 이 명령 예를 실행하면 셸에서 다음 텍스트가 반환됩니다.
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm 스위치
 
@@ -71,7 +73,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 *Confirm* 스위치를 명령에 수동으로 적용하려면 다음 예에서와 같이 명령의 끝에 *Confirm* 스위치를 포함하십시오.
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 이 명령 예를 실행하면 셸에서 다음 확인 메시지가 반환됩니다.
 
@@ -97,7 +101,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 셸의 기본 동작을 무시하고 이 스위치가 자동으로 적용되는 cmdlet에 대해 확인 메시지를 표시하지 않으려면 다음 예에서와 같이 값이 `$False`인 *Confirm* 스위치를 포함할 수 있습니다.
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 이 경우 확인 메시지가 표시되지 않습니다.
 

@@ -142,7 +142,9 @@ Exchange 2013에서 파일을 내보내기 위한 구문은 원격 Exchange 2013
 
 셸은 **FileData** 속성에 저장된 데이터를 로컬 컴퓨터에 저장하려고 한다는 것을 알아야 합니다. 이렇게 하려면 다음 구문을 사용합니다.
 
-    <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }
+```command line
+<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+```
 
 예를 들어 다음 명령은 가상의 **Export-SomeData** cmdlet에 의해 만들어진 개체의 **FileData** 속성에 저장된 데이터를 내보냅니다. 내보낸 데이터는 로컬 컴퓨터에 지정한 파일(이 경우에는 MyData.dat)에 저장됩니다.
 
@@ -152,7 +154,9 @@ Exchange 2013에서 파일을 내보내기 위한 구문은 원격 Exchange 2013
 
 
 
-    Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```powershell
+Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```
 
 명령을 실행할 때 다음과 같은 작업이 수행됩니다.
 

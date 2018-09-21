@@ -61,7 +61,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 Exchange 2013 조직에 대 한 전송 암호 해독을 설정 하는이 예제입니다. 암호를 해독할 수 없는 메시지는 거부 하 고 보낸 사람에 게 NDR이 반환 됩니다.
 
-    Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\))를 참조하십시오.
 
@@ -69,7 +71,9 @@ Exchange 2013 조직에 대 한 전송 암호 해독을 설정 하는이 예제�
 
 이 예에서는 Exchange 2013 조직에 대 한 전송 암호 해독 사용 하지 않도록 설정 합니다.
 
-    Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\))를 참조하십시오.
 

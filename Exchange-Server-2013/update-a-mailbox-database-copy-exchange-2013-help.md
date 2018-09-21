@@ -97,45 +97,63 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-11-02_
 
 이 예에서는 MBX1에 있는 데이터베이스 DB1의 복사본을 시드하는 방법을 보여줍니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 이 예에서는 MBX2를 시드의 원본 사서함 서버로 사용하여 MBX1에 있는 데이터베이스 DB1의 복사본을 시드하는 방법을 보여줍니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 이 예에서는 콘텐츠 인덱스 카탈로그를 시드하지 않고 MBX1에 있는 데이터베이스 DB1의 복사본을 시드하는 방법을 보여줍니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 이 예에서는 데이터베이스 파일을 시드하지 않고 MBX1에 있는 데이터베이스 DB1 복사본의 콘텐츠 인덱스 카탈로그를 시드하는 방법을 보여줍니다.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## 수동으로 오프라인 데이터베이스 복사
 
 1.  데이터베이스에서 순환 로깅을 사용하도록 설정되어 있을 경우 단계를 진행하기 전에 이 설정을 사용하지 않도록 변경합니다. 다음 예에 나오는 대로, [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\)) cmdlet을 사용하여 사서함 데이터베이스에 대한 순환 로깅을 사용하지 않도록 설정할 수 있습니다.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+```
 
 2.  데이터베이스를 분리합니다. 다음 예에 나오는 대로, [Dismount-Database](https://technet.microsoft.com/ko-kr/library/bb124936\(v=exchg.150\)) cmdlet을 사용할 수 있습니다.
     
-        Dismount-Database DB1 -Confirm $false
+    ```powershell
+Dismount-Database DB1 -Confirm $false
+```
 
 3.  데이터베이스 파일(데이터베이스 파일 및 모든 로그 파일)을 외부 디스크 드라이브 또는 네트워크 공유와 같은 다른 위치에 수동으로 복사합니다.
 
 4.  데이터베이스를 탑재합니다. 다음 예에 나오는 대로, [Mount-Database](https://technet.microsoft.com/ko-kr/library/aa998871\(v=exchg.150\)) cmdlet을 사용할 수 있습니다.
     
-        Mount-Database DB1
+    ```powershell
+Mount-Database DB1
+```
 
 5.  복사본을 호스트할 서버에서 외부 드라이브 또는 네트워크 공유의 데이터베이스 파일을 활성 데이터베이스 복사본과 동일한 경로에 복사합니다. 예를 들어 활성 복사본 데이터베이스 경로가 D:\\DB1\\DB1.edb이고 로그 파일 경로가 D:\\DB1인 경우, 복사본을 호스트하는 서버의 D:\\DB1에 데이터베이스 파일을 복사합니다.
 
 6.  다음 예에 나오는 대로, [Add-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd298105\(v=exchg.150\)) cmdlet을 *SeedingPostponed* 매개 변수와 함께 사용하여 사서함 데이터베이스 복사본을 추가합니다.
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+```
 
 7.  데이터베이스에 순환 로깅이 사용하도록 설정된 경우 다음 예에 나오는 대로, [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\)) cmdlet을 사용하여 다시 사용하도록 설정합니다.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -145,7 +163,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-11-02_
 
   - 셸에서 다음 명령을 실행하여 사서함 데이터베이스 복사본이 성공적으로 시드되어 있고 정상 상태인지 확인합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     상태 및 콘텐츠 인덱스 상태가 모두 정상이어야 합니다.
 

@@ -63,7 +63,9 @@ _**마지막으로 수정된 항목:** 2017-11-15_
 
 1.  디렉터리에서 Exchange 설치 경로에 **스크립트** 하위 디렉터리를 변경 하려면이 Exchange 관리 셸 명령을 실행 합니다.
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+Cd $Env:ExchangeInstallPath\Scripts
+```
 
 2.  Export-RetentionTags.ps1 스크립트를 실행하여 보존 태그를 .xml 파일로 내보냅니다.
     
@@ -72,7 +74,9 @@ _**마지막으로 수정된 항목:** 2017-11-15_
     > 가져오기 (영문) 또는 보존 태그 및 보존 정책 Exchange Online 로 내보내기 하는 경우에 Exchange Online 에 Windows PowerShell 세션을 연결 해야 합니다. 자세한 내용은 <A href="https://technet.microsoft.com/ko-kr/library/jj984289(v=exchg.150)">원격 PowerShell을 사용하여 Exchange Online에 연결</A>를 참조 합니다.
 
     
-        .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+.\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -86,7 +90,9 @@ _**마지막으로 수정된 항목:** 2017-11-15_
 
 1.  디렉터리에서 Exchange 설치 경로에 **스크립트** 하위 디렉터리를 변경 하려면이 Exchange 관리 셸 명령을 실행 합니다.
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+Cd $Env:ExchangeInstallPath\Scripts
+```
 
 2.  Import-RetentionTags.ps1 스크립트를 실행하여 이전에 내보낸 XML 파일에서 보존 태그를 가져옵니다.
     
@@ -100,7 +106,9 @@ _**마지막으로 수정된 항목:** 2017-11-15_
     > Exchange Online 에 대해이 스크립트를 실행할 때에 신뢰할 수 없는 게시자를에서 소프트웨어를 실행 하려면 확인 하 라는 메시지가 표시 될 수 있습니다. 게시자의 이름을 <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE>나타나는지 확인 하 고 스크립트를 한 번 실행할 수 있도록 하려면 <STRONG>R</STRONG> 또는 <STRONG>A</STRONG> 항상 실행을 클릭 합니다.
 
     
-        .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+.\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

@@ -139,7 +139,9 @@ Exchange 2013 관리에 대한 자세한 내용은 [Exchange 2013의 Exchange �
     > UAC(사용자 액세스 제어)를 사용하도록 설정한 경우 관리자 권한 명령 프롬프트에서 <CODE>Setup.exe</CODE>를 실행해야 합니다.
 
     
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+```
 
 자세한 내용은 [무인 모드로 Exchange 2013 설치](install-exchange-2013-using-unattended-mode-exchange-2013-help.md)를 참조하십시오.
 

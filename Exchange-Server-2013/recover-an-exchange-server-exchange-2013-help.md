@@ -74,7 +74,9 @@ Microsoft Exchange Server 2013의 **Setup /m:RecoverServer** 스위치를 사용
 
 6.  Exchange 2013 설치 파일로 이동한 후 다음 명령을 실행합니다.
     
-        Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+```
 
 7.  설치가 완료되고 복구한 서버를 프로덕션에 배치하기 전, 이전에 서버에 있었던 모든 사용자 지정 설정을 다시 구성한 다음 서버를 다시 시작합니다.
 

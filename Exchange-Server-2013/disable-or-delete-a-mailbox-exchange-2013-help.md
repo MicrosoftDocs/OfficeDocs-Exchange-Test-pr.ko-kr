@@ -133,7 +133,9 @@ Exchange Online으로 사서함 삭제 해야하는 경우 [Exchange Online의 �
 
 다음 명령을 사용 하 여 사용자 사서함, 연결 된 사서함, 리소스 사서함 및 공유 사서함을 사용 하지 않도록 설정 합니다.
 
-    Disable-Mailbox <identity>
+```powershell
+Disable-Mailbox <identity>
+```
 
 이 명령을 실행 하면 사서함을 사용 하지 않도록 설정 하려면 확인을 요청 하는 메시지가 표시 됩니다.
 
@@ -173,7 +175,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 속성에 대 한 값이 있는 메모는 `User`, `UserMailbox`하는 대신 활성화 된 사서함이 있는 사용자에 대 한 값입니다. 이 확인 하는 사서함을 사용 하지 않도록 설정 하지만 사용자 계정이 그대로 유지 됩니다.
 
@@ -197,7 +201,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
 사용자 사서함, 연결 된 사서함, 리소스 사서함 및 공유 사서함을 삭제 하려면 다음 명령을 사용 합니다.
 
-    Remove-Mailbox <identity>
+```powershell
+Remove-Mailbox <identity>
+```
 
 이 명령을 실행 하면 사서함 및 해당 Active Directory 사용자 계정을 제거 하려면 확인을 요청 하는 메시지가 표시 됩니다.
 
@@ -239,7 +245,9 @@ Remove-Mailbox corpprint
 
 2.  Active Directory 사용자 계정이 삭제 되었는지 확인 하려면 다음 명령을 실행 합니다.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     명령은은 계정이 삭제 되었는지 확인 (영문), 해당 사용자를 찾을 수 없는 되었다는 오류를 반환 합니다.
 

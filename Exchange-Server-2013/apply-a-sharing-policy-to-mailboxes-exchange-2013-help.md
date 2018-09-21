@@ -63,11 +63,15 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
 이 예제는 사용자 Barbara의 단일 사서함에 Contoso 공유 정책을 적용합니다.
 
-    Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```powershell
+Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```
 
 이 예에서는 Marketing 부서의 모든 사용자 사서함이 Contoso Marketing 공유 정책을 사용하도록 지정합니다.
 
-    Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```powershell
+Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```
 
 이 예에서는 공유 Contoso 공유 정책이 적용된 모든 사서함을 반환하고 사용자를 별칭과 전자 메일 주소만 표시하는 테이블로 정렬합니다.
 
@@ -83,7 +87,9 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
   - 다음 셸 명령을 실행하여 공유 정책이 사용자 사서함에 할당되었는지 확인합니다. 올바른 공유 정책이 *SharingPolicy* 매개 변수에 표시되는지 확인합니다.
     
-        Get-Mailbox <user name> | format-list
+    ```powershell
+Get-Mailbox <user name> | format-list
+```
 
 
 > [!TIP]

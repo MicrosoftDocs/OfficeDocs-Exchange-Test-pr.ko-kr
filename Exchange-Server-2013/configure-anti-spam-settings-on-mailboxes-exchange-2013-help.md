@@ -55,7 +55,9 @@ _**마지막으로 수정된 항목:** 2016-11-17_
 
 이 예에서는 모든 스팸 방지 필터를 무시하고 정크 메일 폴더 SCL 임계값 5를 충족하거나 초과하는 메시지를 Microsoft Outlook의 정크 메일 폴더로 배달하도록 Jeff Phillips라는 사용자의 사서함을 구성합니다.
 
-    Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```powershell
+Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -91,11 +93,15 @@ _**마지막으로 수정된 항목:** 2016-11-17_
 
 다음 명령을 실행합니다.
 
-    Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```
 
 이 예에서는 조직의 정크 메일 임계값을 5로 설정합니다.
 
-    Set-OrganizationConfig -SCLJunkThreshold 5
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold 5
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -103,7 +109,9 @@ _**마지막으로 수정된 항목:** 2016-11-17_
 
 1.  다음 명령을 실행합니다.
     
-        Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```powershell
+Get-OrganizationConfig | Format-List SCLJunkThreshold
+```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 

@@ -111,11 +111,15 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
     
       - 원래 원본 폴더 구조의 스냅숏을 하려면 다음 명령을 실행 합니다.
         
-            Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+```
     
       - 항목 수, 크기 및 소유자와 같은 공용 폴더 통계에 대 한 스냅숏을 하려면 다음 명령을 실행 합니다.
         
-            Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```powershell
+Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+```
     
       - 하 여 사용 권한의 스냅숏을 다음 명령을 실행 합니다.
         
@@ -135,19 +139,25 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
     
     3.  공용 폴더가 반환되면 다음 명령을 실행하여 이름을 바꿀 수 있습니다.
         
-            Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```powershell
+Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+```
 
 3.  다음과 같은 성공적인 마이그레이션의 이전 레코드를 있지 않은지 확인 합니다.
     
     1.  다음 예에서는 공용 폴더 마이그레이션 상태를 확인합니다.
         
-            Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```powershell
+Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+```
         
         이전 성공적인 마이그레이션이 되었으면, *PublicFoldersLockedforMigration* 또는 *PublicFolderMigrationComplete* 속성의 값은 `$true`합니다. `$false`에 값을 설정 하려면 3b 단계에서에서 명령을 사용 합니다. 값 `$true`로설정하면 마이그레이션 요청이 실패 합니다.
     
     2.  *PublicFoldersLockedforMigration* 또는 *PublicFolderMigrationComplete* 속성의 상태가 `$true`인 경우 다음 명령을 실행하여 값을 `$false`로 설정합니다.
         
-            Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```powershell
+Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+```
     
     > [!CAUTION]
     > 이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.
@@ -186,7 +196,9 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
     
     다음 예제에서는 기존 공용 폴더 직렬 마이그레이션 요청을 모두 제거합니다.
     
-        Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```powershell
+Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+```
     
     다음 예제에서는 기존 일괄 마이그레이션 요청을 모두 검색 합니다.
     
@@ -194,7 +206,9 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
     
     다음 예제에서는 기존 공용 폴더 일괄 마이그레이션 요청을 모두 제거합니다.
     
-        $batch | Remove-MigrationBatch -Confirm:$false
+    ```powershell
+$batch | Remove-MigrationBatch -Confirm:$false
+```
 
 2.  없는 공용 폴더 또는 공용 폴더 사서함이 Exchange 2013 서버에 존재 하는지 확인 합니다.
     
@@ -204,7 +218,9 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
     
     2.  이 명령은 모든 공용 폴더 사서함을 반환 하지 않았으므로, 하는 경우를 계속 받을 3 단계:.csv 파일 생성합니다. 명령은 모든 공용 폴더를 반환 하는 경우에 공용 폴더가 있는지 확인 하려면 다음 명령을 실행 합니다.
         
-            Get-PublicFolder
+        ```powershell
+Get-PublicFolder
+```
     
     3.  공용 폴더가 있으면 다음 PowerShell 명령을 사용하여해당 폴더를 제거를 실행 합니다. 공용 폴더에 있던 모든 정보를 저장 하면 있는지 확인 하십시오.
         
@@ -218,7 +234,9 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
         ```
 
         ```
-        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```powershell
+Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+```
         ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하세요.
@@ -302,7 +320,9 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 3.  다음 명령을 사용 하 여 마이그레이션을 시작 합니다.
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
 
 **Exchange 2010 공용 폴더 마이그레이션**
 
@@ -314,7 +334,9 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 2.  다음 명령을 사용 하 여 마이그레이션을 시작 합니다.
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
     
     또는
     
@@ -354,7 +376,9 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 레거시 Exchange 서버에서 다음 명령을 실행하여 마이그레이션 완료를 위해 레거시 공용 폴더를 잠급니다.
 
-    Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```
 
 
 > [!NOTE]
@@ -370,11 +394,15 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 먼저, Exchange 2013 배포 형식을 **원격** 으로 변경 하려면 다음 cmdlet를 실행 합니다.
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote
+```
 
 이 작업이 끝나면 다음 명령을 실행하여 공용 폴더 마이그레이션을 완료할 수 있습니다.
 
-    Complete-MigrationBatch PublicFolderMigration
+```powershell
+Complete-MigrationBatch PublicFolderMigration
+```
 
 또는 EAC에서 **이 마이그레이션 일괄 처리 완료**를 클릭하여 마이그레이션을 완료할 수 있습니다.
 
@@ -400,7 +428,9 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 3.  문제를 실행 하는 경우이 항목의 뒷부분에 마이그레이션 롤백 을 참조 합니다. 수 있는 적절 한 및 예상한 대로 작동 하는 공용 폴더 콘텐츠 및 계층 구조를 하는 경우에 다른 모든 사용자에 대 한 공용 폴더의 잠금을 해제 하려면 다음 명령을 실행 합니다.
     
-        Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```powershell
+Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+```
     
 
     > [!IMPORTANT]
@@ -410,11 +440,15 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 4.  레거시 Exchange 서버에서 다음 명령을 실행하여 공용 폴더 마이그레이션이 완료되었음을 나타냅니다.
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+```
 
 5.  마이그레이션이 완료 되는 확인 한 후 다음 명령을 실행 합니다.
     
-        Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Local
+```
 
 6.  마지막으로, 외부의 보낸 사람이 마이그레이션된 메일 사용이 가능한 공용 폴더에 메일을 보낼 수를 원하는 경우 **익명** 사용자 최소한의 **항목 만들기** 에 게 권한을 부여 해야 합니다. 이렇게 하지 않으면 외부 보낸 사람이 배달 실패 알림의 받을 하 고 마이그레이션된 메일 사용이 가능한 공용 폴더에 메시지를 배달 하지 않습니다.
     
@@ -426,7 +460,9 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 1.  다음 명령을 실행하여 새 폴더 구조의 스냅숏을 만듭니다.
     
-        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+```
 
 2.  다음 명령을 실행하여 항목 수, 크기 및 소유자와 같은 공용 폴더 통계에 대한 스냅숏을 만듭니다.
     
@@ -454,16 +490,22 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 
 1.  레거시 Exchange 서버에서 다음 명령을 실행하여 레거시 Exchange 공용 폴더의 잠금을 해제합니다. 이 프로세스를 수행하는 데 몇 시간이 걸릴 수 있습니다.
     
-        Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+```
 
 2.  Exchange 2013 서버에서 공용 폴더 사서함을 제거 하려면 다음 명령을 실행 합니다.
     
     ```
     Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+```powershell
+Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+```
     ```
 
 3.  레거시 Exchange 서버에서 다음 명령을 실행하여 `PublicFolderMigrationComplete` 플래그를 `$false`로 설정합니다.
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+```
 

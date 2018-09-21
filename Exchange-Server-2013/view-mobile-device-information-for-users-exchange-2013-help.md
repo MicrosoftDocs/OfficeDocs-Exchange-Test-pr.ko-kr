@@ -51,5 +51,7 @@ EAC에는 현재 사용자 사서함과 동기화되고 있는 모바일 장치�
 
 1.  다음 명령을 실행합니다.
     
-        Get-MobileDevice -Mailbox useralias
+    ```powershell
+Get-MobileDevice -Mailbox useralias
+```
 

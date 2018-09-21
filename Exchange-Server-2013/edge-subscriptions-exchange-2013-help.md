@@ -127,7 +127,9 @@ ESRA 계정 및 이러한 계정을 사용하여 안전한 EdgeSync 동기화 �
 
 이 예에서는 Edge 구독 파일을 내보냅니다.
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 
 > [!NOTE]  

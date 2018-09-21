@@ -55,7 +55,9 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 서브넷 10.0.0.0 및 서브넷 마스크 255.0.0.0을 DAG1이라는 DAG의 MapiDagNetwork 네트워크에 추가합니다.
 
-    Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -63,7 +65,9 @@ DAG 네트워크가 성공적으로 구성되었는지 확인하려면 다음을
 
   - 셸에서 다음 명령을 실행하여 DAG 네트워크 구성 설정을 표시하고 DAG 네트워크가 성공적으로 구성되었는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 자세한 내용
 

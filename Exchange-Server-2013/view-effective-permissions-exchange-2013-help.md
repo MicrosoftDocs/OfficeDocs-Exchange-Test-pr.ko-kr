@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013에서 사용 권한은 관리 역할 그룹에 �
 
 관리 역할을 통해 사용 권한이 부여된 모든 사용자를 나열하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 이 예에서는 Mail Recipients 역할을 통해 사용 권한이 부여된 모든 사용자를 나열합니다.
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 목록에 반환되는 속성을 변경하거나 목록을 쉼표로 분리된 값(.csv) 파일로 내보내려면 이 항목의 후반부에 나오는 Use the Shell to customize output and display it를 참조하십시오.
 
@@ -85,7 +89,9 @@ Microsoft Exchange Server 2013에서 사용 권한은 관리 역할 그룹에 �
 
 이 예에서는 사용자 Kim Akers에게 사용 권한을 부여하는 모든 역할 할당을 찾습니다.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+```
 
 목록에서 반환되는 속성을 변경하거나 목록을 CSV 파일로 내보내려면 이 항목 뒷부분의 Use the Shell to customize output and display it를 참조하십시오.
 

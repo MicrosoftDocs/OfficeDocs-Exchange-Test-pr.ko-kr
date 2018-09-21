@@ -45,7 +45,9 @@ MRM(메시징 레코드 관리)과 관련된 추가 관리 작업에 대한 자�
 
 이 예에서는 구성의 관리 되는 폴더 도우미가 1 일 내에서 모든 사서함을 처리 합니다.
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-MailboxServer](https://technet.microsoft.com/ko-kr/library/aa998651\(v=exchg.150\))를 참조하십시오.
 
@@ -61,7 +63,9 @@ MRM(메시징 레코드 관리)과 관련된 추가 관리 작업에 대한 자�
 
 이 트리거하는이 예제는 관리 되는 폴더 도우미가 즉시 Morris Cornejo 사서함을 처리 합니다.
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Start-ManagedFolderAssistant](https://technet.microsoft.com/ko-kr/library/aa998864\(v=exchg.150\))를 참조 하십시오.
 

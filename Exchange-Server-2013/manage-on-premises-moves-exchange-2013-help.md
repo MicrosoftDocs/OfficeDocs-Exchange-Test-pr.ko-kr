@@ -51,7 +51,9 @@ _**마지막으로 수정된 항목:** 2013-02-25_
 
 이 예에서는 *WhatIf* 스위치를 사용하여 Tony Smith의 사서함을 새로운 데이터베이스 DB01로 이동할 준비가 되었는지 여부와 명령 내에 오류가 있는지 여부를 테스트합니다. *WhatIf* 스위치를 사용하면 사서함에 대해 확인 작업이 수행됩니다. 사서함 이동 준비가 되지 않았으면 오류가 발생합니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -81,7 +83,9 @@ _**마지막으로 수정된 항목:** 2013-02-25_
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -123,7 +127,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -145,7 +151,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 이 예에서는 Tony Smith의 기본 사서함만 DB01로 이동합니다. 보관 데이터는 이동되지 않습니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))를 참조하십시오.
 
@@ -157,7 +165,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -188,7 +198,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -206,7 +218,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
 이 예에서는 Tony Smith의 보관 사서함만 DB03으로 이동합니다. 기본 사서함은 이동되지 않습니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -216,7 +230,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -234,7 +250,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -264,7 +282,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 

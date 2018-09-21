@@ -59,7 +59,9 @@ SMTP를 기본 전송 메커니즘으로 사용하지 않는 팩스 게이트웨
 
 외부 커넥터가 만들어졌는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-ForeignConnector | Format-List Name
+```powershell
+Get-ForeignConnector | Format-List Name
+```
 
 만든 외부 커넥터의 이름이 나타나는지 확인합니다.
 
@@ -71,13 +73,17 @@ Drop 디렉터리로 사용할 디렉터리를 로컬 파일 시스템에 만듭
 
 1.  다음 스크립트를 실행하여 외부 커넥터의 Drop 디렉터리를 지정합니다(*DropDirectory* 매개 변수 값을 환경에서 사용하는 해당 경로로 변경).
     
-        Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```powershell
+Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 Drop 디렉터리가 설정되었는지 확인하려면 다음 cmdlet 스크립트를 실행하여 *DropDirectory* 매개 변수의 값을 확인합니다.
 
-    Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```powershell
+Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```
 
 외부 커넥터를 만들고 Drop 디렉터리를 지정했으면 만든 외부 커넥터가 있는 사서함 서버에서 메시지를 보내 파일이 Drop 디렉터리로 배달되는지 확인할 수 있습니다.
 
@@ -91,7 +97,9 @@ Pickup 디렉터리를 구성하기 위한 자세한 지침은 [Pickup 디렉터
 
 Pickup 디렉터리가 설정되었는지 확인하려면 다음 명령을 실행하여 *PickupDirectoryPath* 매개 변수의 값을 확인합니다.
 
-    Get-TransportService | Format-List PickupDirectoryPath
+```powershell
+Get-TransportService | Format-List PickupDirectoryPath
+```
 
 ## 4단계: 셸을 사용하여 사서함 서버에 있는 전송 서비스의 Replay 디렉터리 구성
 
@@ -103,7 +111,9 @@ Pickup 디렉터리를 구성하기 위한 자세한 지침은 [Pickup 디렉터
 
 Replay 디렉터리가 설정되었는지 확인하려면 다음 명령을 실행하여 *ReplayDirectoryPath* 매개 변수의 값을 확인합니다.
 
-    Get-TransportService | Format-List ReplayDirectoryPath
+```powershell
+Get-TransportService | Format-List ReplayDirectoryPath
+```
 
 ## 자세한 내용
 

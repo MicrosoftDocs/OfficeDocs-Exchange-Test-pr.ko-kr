@@ -119,7 +119,9 @@ Exchange 버전 15.01.0225.042를 실행 하는 모든 서버에 대 한 `Storag
 
 전역 재정의가 정상적으로 작성되었는지 확인하려면 **Get-GlobalMonitoringOverride** cmdlet을 사용하여 전역 재정의 목록을 확인합니다.
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 재정의가 목록에 표시될 것입니다.
 
@@ -137,7 +139,9 @@ Exchange 버전 15.01.0225.042를 실행 하는 모든 서버에 대 한 `Storag
 
 전역 재정의가 정상적으로 제거되었는지 확인하려면 **Get-GlobalMonitoringOverride** cmdlet을 사용하여 전역 재정의 목록을 확인합니다.
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 제거된 재정의가 목록에 표시되지 않게 됩니다.
 

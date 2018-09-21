@@ -120,5 +120,7 @@ EAC를 사용하여 단일 사용자의 모바일 장치 사서함 정책을 변
 
 2.  셸에서 다음 명령을 실행합니다.
     
-        Get-CASMailbox -Identity tony@contoso.com
+    ```powershell
+Get-CASMailbox -Identity tony@contoso.com
+```
 

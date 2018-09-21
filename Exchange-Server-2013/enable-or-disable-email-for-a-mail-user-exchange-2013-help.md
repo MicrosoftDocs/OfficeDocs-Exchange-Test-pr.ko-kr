@@ -65,7 +65,9 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 이 예에서는 메일 사용자 Yan Li가 전자 메일을 사용할 수 없도록 설정합니다.
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-MailUser](https://technet.microsoft.com/ko-kr/library/aa998578\(v=exchg.150\))를 참조하십시오.
 
@@ -79,13 +81,17 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 3.  셸에서 다음 명령을 실행합니다.
     
-        Get-MailUser
+    ```powershell
+Get-MailUser
+```
     
     이 cmdlet은 메일 사용이 가능한 사용자만 반환하므로 전자 메일을 사용할 수 없도록 설정한 메일 사용자는 결과에 반환되지 않습니다.
 
 4.  셸에서 다음 명령을 실행합니다.
     
-        Get-User
+    ```powershell
+Get-User
+```
     
     이 cmdlet은 모든 Active Directory 사용자 개체를 반환하므로 전자 메일을 사용할 수 없도록 설정한 메일 사용자가 결과에 반환됩니다.
 
@@ -97,7 +103,9 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 이 예에서는 사용자 Sanjay Shah가 메일 사용이 가능하도록 설정합니다. 이를 위해서는 외부 전자 메일 주소를 제공해야 합니다.
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 셸 및 CSV 파일을 사용하여 여러 사용자에 대해 메일 사용이 가능하도록 설정
 
@@ -161,5 +169,7 @@ Active Directory 사용자가 메일 사용이 가능하도록 성공적으로 �
 
   - 셸에서 다음 명령을 실행하여 새 메일 사용자에 대한 정보를 표시합니다.
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

@@ -87,7 +87,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 서버 필터 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 이 예에서는 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD(Active Directory) 사이트 내의 모든 서버를 포함하는 범위를 만듭니다.
 
@@ -101,11 +103,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 서버 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 이 예에서는 MBX1, MBX3 및 MBX5에만 적용되는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -123,7 +129,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 데이터베이스 제한 필터를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 이 예에서는 데이터베이스의 **Name** 속성에 "경영진"이라는 문자열이 있는 모든 데이터베이스를 포함하는 범위를 만듭니다.
 
@@ -143,11 +151,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 데이터베이스 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 이 예에서는 데이터베이스 Database 1, Database 2 및 Database 3에만 적용되는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 

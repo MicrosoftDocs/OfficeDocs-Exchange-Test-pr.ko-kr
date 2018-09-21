@@ -87,11 +87,15 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 이 예에서는 Mailbox01이라는 사서함 서버의 메시지 추적 로그에서 메시지 제목 기록을 사용하지 않도록 설정합니다.
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버에서 메시지 추적을 사용하지 않도록 설정합니다.
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

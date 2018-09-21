@@ -314,7 +314,9 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 Ken Kwok 사서함에서 관리되는 폴더 사서함 정책 및 모든 관리되는 폴더를 제거합니다. 메시지가 있는 관리되는 폴더는 제거되지 않습니다.
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 4단계: 사용자 사서함에 보존 정책 적용
 
@@ -328,7 +330,9 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 새로 만든 보존 정책 RP-Corp를 사서함 사용자 Ken Kwok에 적용합니다.
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -346,5 +350,7 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
     
     이 명령은 April Stewart의 사서함에 실제로 적용된 보존 태그를 검색합니다.
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+Get-RetentionPolicyTag -Mailbox astewart
+```
 

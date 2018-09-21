@@ -49,11 +49,15 @@ _**마지막으로 수정된 항목:** 2012-10-08_
 
 사서함에 할당된 할당 정책을 변경하려면 다음 구문을 사용합니다.
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 이 예에서는 Brian 사서함의 할당 정책을 Unified Messaging Users로 설정합니다.
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## 셸을 사용하여 특정 할당 정책이 할당된 사서함 그룹의 할당 정책 변경
 

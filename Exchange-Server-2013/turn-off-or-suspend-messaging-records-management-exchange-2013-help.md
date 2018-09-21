@@ -71,7 +71,9 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 이 셸의 예에서는 사서함 jpeoples에서 보존 정책을 제거합니다.
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 이 셸의 예에서는 Exchange 조직의 모든 사서함에서 보존 정책을 제거합니다.
 
@@ -111,7 +113,9 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 이 명령에서는 Exchange 조직의 Corp-Users 보존 정책을 제거합니다.
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 

@@ -109,7 +109,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
   - 이 예에서는 외부 페더레이션 도메인 contoso.com에 대한 공유 정책 Contoso를 만듭니다. 이 정책을 사용하여 contoso.com 도메인의 사용자가 사용자의 자세한 일정 약속 있음/없음 정보를 볼 수 있습니다. 기본적으로 이 정책은 사용할 수 있습니다.
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+```
 
   - 이 예에서는 두 가지 다른 페더레이션된 도메인(contoso.com 및 woodgrovebank.com)에 대해 다른 공유 작업을 각 도메인에 구성한 공유 정책 ContosoWoodgrove를 만듭니다. 정책은 사용하지 않도록 설정되어 있습니다.
     
@@ -119,7 +121,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
     
     1.  MAIL01의 웹 프록시 URL을 설정합니다.
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+```
     
     2.  CAS01에서 게시 가상 디렉터리를 사용하도록 설정합니다.
         
@@ -141,7 +145,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 공유 정책이 만들어졌는지 확인하려면 다음 셸 명령을 실행하여 공유 정책 정보를 확인합니다.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 
 > [!TIP]

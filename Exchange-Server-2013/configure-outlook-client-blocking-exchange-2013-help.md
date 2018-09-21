@@ -156,11 +156,15 @@ MRM 기능 OutlookOutlook 2010 보다 이전 버전을 실행 하는 전자 메�
 
 이 예제에서는 11.8010.8036 이전의 모든 Outlook 버전을 차단합니다.
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```
 
 Outlook 의 버전에 의해 차단 되는 사서함에 대 한 액세스를 복원 하는이 예제입니다.
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-CASMailbox](https://technet.microsoft.com/ko-kr/library/bb125264\(v=exchg.150\))를 참조하십시오.
 

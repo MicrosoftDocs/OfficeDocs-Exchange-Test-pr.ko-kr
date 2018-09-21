@@ -57,11 +57,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 **Get-ManagementRoleAssignment** cmdlet의 결과를 **Format-List** cmdlet으로 파이프하여 역할 할당의 세부 정보를 볼 수 있습니다. 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment <assignment name> | Format-List
+```powershell
+Get-ManagementRoleAssignment <assignment name> | Format-List
+```
 
 이 예에서는 Help Desk Assignment 역할 할당의 세부 정보를 검색합니다.
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -69,11 +73,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 관리 역할 그룹, 역할 또는 역할 할당 정책이나 사용자 또는 USG(유니버설 보안 그룹)에 연결된 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```
 
 이 예에서는 Server Management 역할 그룹에 연결된 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -83,11 +91,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 지정한 역할에 연결된 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -Role <role name>
+```powershell
+Get-ManagementRoleAssignment -Role <role name>
+```
 
 이 예에서는 Mail Recipients 역할에 연결된 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients"
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -99,7 +111,9 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이 예에서는 미리 정의된 Organization 범위를 사용하는 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -107,7 +121,9 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 범위가 특정 OU(조직 구성 단위)로 지정된 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```
 
 이 예에서는 범위가 contoso.com 도메인의 North America\\Engineering\\Users OU로 지정된 역할 할당을 모두 검색합니다.
 
@@ -131,11 +147,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이 예에서는 Vancouver Recipients 받는 사람 범위를 사용하는 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```powershell
+Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```
 
 이 예에서는 Seattle AD Site 배타적 구성 범위를 사용하는 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```powershell
+Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -143,15 +163,21 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 배타적 또는 일반 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```
 
 예를 들어 배타적 범위 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-ManagementRoleAssignment -Exclusive $True
+```powershell
+Get-ManagementRoleAssignment -Exclusive $True
+```
 
 이 예에서는 배타적 범위 없이 일반 범위 목록을 검색합니다.
 
-    Get-ManagementRoleAssignment -Exclusive $False
+```powershell
+Get-ManagementRoleAssignment -Exclusive $False
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -161,7 +187,9 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이 예에서는 받는 사람 Brian을 수정할 수 있는 역할 할당 목록을 검색합니다.
 
-    Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```powershell
+Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```
 
 *WritableRecipient* 및 *WritableServer* 매개 변수를 *RoleAssignee* 매개 변수, *GetEffectiveUsers* 스위치 등의 다른 매개 변수와 함께 사용하여 쿼리를 구체화하고 역할 그룹이나 USG를 확장할 수 있습니다. 이 예에서는 EX02 서버를 수정할 수 있고 Server Management 역할 그룹이 할당된 사용자를 모두 검색합니다.
 
@@ -173,11 +201,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 할당에서 사용 권한을 받는 사용자 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```
 
 이 예에서는 Help Desk Assignment 역할 할당의 사용자 목록을 검색합니다.
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```
 
 **Get-ManagementRoleAssignment** cmdlet에 *GetEffectiveUsers* 스위치와 여러 다른 매개 변수를 함께 사용하여 역할 할당이 할당된 역할 그룹과 USG를 확장할 수도 있습니다. *GetEffectiveUsers* 스위치를 다른 매개 변수와 함께 사용하는 방법의 예는 이 항목의 앞부분에 있는 "특정 받는 사람 또는 서버를 수정할 수 있는 사람 보기"를 참조하십시오.
 
@@ -187,11 +219,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 사용하거나 사용하지 않도록 설정된 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -Enabled < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Enabled < $True | $False >
+```
 
 이 예에서는 사용하지 않도록 설정된 역할 할당 목록을 검색합니다.
 
-    Get-ManagementRoleAssignment -Enabled $False
+```powershell
+Get-ManagementRoleAssignment -Enabled $False
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 

@@ -53,11 +53,15 @@ _**마지막으로 수정된 항목:** 2012-11-02_
 
 이 예에서는 정품 인증을 위해 서버 MBX2에서 데이터베이스 DB1의 복사본을 차단합니다.
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```
 
 이 예에서는 정품 인증을 위해 서버 MBX2에서 데이터베이스 DB1의 복사본을 다시 시작합니다.
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)) 또는 [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd335220\(v=exchg.150\))를 참조하십시오.
 
@@ -65,15 +69,21 @@ _**마지막으로 수정된 항목:** 2012-11-02_
 
 이 예에서는 정품 인증을 위해 MBX2 서버에서 데이터베이스 복사본을 차단된 상태로 구성합니다.
 
-    Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 이 예에서는 사이트 외부 정품 인증을 위해 MBX3 서버에서 데이터베이스 복사본을 차단된 상태로 구성합니다.
 
-    Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```powershell
+Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```
 
 이 예에서는 정품 인증을 위해 MBX4 서버에서 데이터베이스 복사본을 차단 해제된 상태로 구성합니다.
 
-    Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```powershell
+Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)), [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd335220\(v=exchg.150\)) 또는 [Set-MailboxServer](https://technet.microsoft.com/ko-kr/library/aa998651\(v=exchg.150\))을 참조하십시오.
 
@@ -83,9 +93,13 @@ _**마지막으로 수정된 항목:** 2012-11-02_
 
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 정품 인증 설정을 확인합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+```
 
   - 셸에서 다음 명령을 실행하여 DAG 구성원에 대한 정품 인증 설정을 확인합니다.
     
-        Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```powershell
+Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+```
 

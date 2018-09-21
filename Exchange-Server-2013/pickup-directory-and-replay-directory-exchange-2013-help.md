@@ -160,7 +160,9 @@ Replay 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
 
   - **X-Sender**   이 X-헤더는 일반적인 SMTP 메시지의 `From` 메시지 헤더 필드 요구 사항을 대체합니다. 하나의 전자 메일 주소가 포함된 `X-Sender` 필드 한 개가 있어야 합니다. 받는 사람의 전자 메일 클라이언트가 `From` 메시지 헤더 필드의 값을 메시지의 보낸 사람으로 표시하지만 Replay 디렉터리는 `From` 메시지 헤더 필드가 있는 경우 이를 무시합니다. 다른 매개 변수는 일반적으로 다음 예에 표시된 것처럼 `X-Sender` 필드에 있습니다.
     
-        X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```powershell
+X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+```
     
 
     > [!NOTE]
@@ -170,7 +172,9 @@ Replay 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
 
   - **X-Receiver**   이 X-헤더는 일반적인 SMTP 메시지의 `To` 메시지 헤더 필드 요구 사항을 대체합니다. 하나의 전자 메일 주소가 포함된 `X-Receiver` 필드가 적어도 한 개는 있어야 합니다. 여러 `X-Receiver` 필드가 여러 받는 사람에 대해 허용됩니다. 받는 사람의 전자 메일 클라이언트가 `To` 메시지 헤더 필드의 값을 메시지의 받는 사람으로 표시하지만 Replay 디렉터리는 `To` 메시지 헤더 필드가 있는 경우 이를 무시합니다. 다음 예와 같이 `X-Receiver` 필드에 다른 옵션 매개 변수가 있을 수 있습니다.
     
-        X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     
 
     > [!NOTE]
@@ -194,7 +198,9 @@ Replay 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
 
 이 예에서는 Replay 디렉터리에 허용되는 형식을 사용하는 일반 문자 메시지를 보여줍니다.
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
     Subject: Optional message subject
     
@@ -202,7 +208,9 @@ Replay 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
 
 MIME 콘텐츠도 Replay 디렉터리 메시지 파일에서 지원됩니다. MIME는 7비트 ASCII 텍스트, HTML 및 기타 멀티미디어 콘텐츠로 나타낼 수 없는 언어를 포함하여 광범위한 메시지 콘텐츠를 정의합니다. MIME에 대한 자세한 정보와 해당 요구 사항은 이 항목에서 다루지 않습니다. 이 예에서는 Replay 디렉터리에 허용되는 형식을 사용하는 간단한 MIME 메시지를 보여줍니다.
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
     To: mary@contoso.com
     From: bob@fabrikam.com

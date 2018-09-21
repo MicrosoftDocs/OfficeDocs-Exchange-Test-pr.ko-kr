@@ -76,7 +76,9 @@ IRM(정보 권한 관리) 관련 추가 관리 작업에 대한 자세한 내용
 
   - 전송 보호 규칙을 만들려면 AD RMS 배포에 기존 RMS 템플릿이 있어야 합니다. 다음은 AD RMS 클러스터에서 사용 가능한 템플릿을 검색하는 예입니다.
     
-        Get-RMSTemplate | format-list
+    ```powershell
+Get-RMSTemplate | format-list
+```
     
     구문과 매개 변수에 대한 자세한 내용은 [Get-RMSTemplate](https://technet.microsoft.com/ko-kr/library/dd297960\(v=exchg.150\))를 참조하십시오.
 

@@ -67,11 +67,15 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 범위가 지정되지 않은 최상위 역할에는 상위 역할이 없습니다. 상위가 없는 역할을 만들려면 *UnscopedTopLevel* 스위치를 지정해야 합니다. 다음 구문을 사용하여 새 역할을 만듭니다.
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 이 예제에서는 IT 스크립트의 범위가 지정되지 않은 최상위 역할을 만듭니다.
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 역할을 만든 후 스크립트나 비 Exchange cmdlet을 추가할 때까지는 역할이 비어 있습니다.
 
@@ -159,7 +163,9 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 이 예에서는 IT Global Scripts 역할과 해당 관리 역할 항목을 Diagnostic IT Scripts 역할에 복사합니다.
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd298073\(v=exchg.150\))를 참조하십시오.
 

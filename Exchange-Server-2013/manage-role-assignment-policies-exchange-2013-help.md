@@ -61,7 +61,9 @@ _**마지막으로 수정된 항목:** 2012-10-09_
 
 사서함에 수동으로 할당할 수 있는 명시적 할당 정책을 만들려면 다음 구문을 사용합니다.
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```
 
 이 예에서는 명시적 할당 정책 Limited Mailbox Configuration을 만들고 여기에 `MyBaseOptions`, `MyAddressInformation` 및 `MyDisplayName` 역할을 할당합니다.
 
@@ -73,7 +75,9 @@ _**마지막으로 수정된 항목:** 2012-10-09_
 
 새 사서함에 할당할 기본 할당 정책을 만들려면 다음 구문을 사용합니다.
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```
 
 이 예에서는 기본 할당 정책 Limited Mailbox Configuration을 만들고 여기에 `MyBaseOptions`, `MyAddressInformation` 및 `MyDisplayName` 역할을 할당합니다.
 
@@ -103,11 +107,15 @@ _**마지막으로 수정된 항목:** 2012-10-09_
 
 할당 정책을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-RoleAssignmentPolicy <role assignment policy>
+```powershell
+Remove-RoleAssignmentPolicy <role assignment policy>
+```
 
 이 예에서는 New York Temporary Users 할당 정책을 제거합니다.
 
-    Remove-RoleAssignmentPolicy "New York Temporary Users"
+```powershell
+Remove-RoleAssignmentPolicy "New York Temporary Users"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638190\(v=exchg.150\))를 참조하십시오.
 
@@ -135,15 +143,21 @@ EAC에서 할당 정책 및 자신에 게 할당 된 역할의 목록을 볼 수
 
 조직에 있는 모든 할당 정책의 목록을 반환하려면 다음 명령을 사용합니다.
 
-    Get-RoleAssignmentPolicy
+```powershell
+Get-RoleAssignmentPolicy
+```
 
 조직에 있는 모든 할당 정책에 대해 특정 속성의 목록을 반환하고 싶은 경우에는 결과를 **Format-Table** cmdlet으로 파이프하고 결과 목록에 표시할 속성을 지정합니다. 다음 구문을 사용합니다.
 
-    Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```powershell
+Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```
 
 이 예는 조직에 있는 모든 할당 정책의 목록을 반환하며 **Name** 및 **IsDefault** 속성을 포함합니다.
 
-    Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```powershell
+Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 또는 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638195\(v=exchg.150\))를 참조하십시오.
 
@@ -159,11 +173,15 @@ EAC에서 할당 정책 및 자신에 게 할당 된 역할의 목록을 볼 수
 
 특정 할당 정책의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```powershell
+Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```
 
 이 예에서는 Redmond Users - no Text Messaging 할당 정책에 대한 세부 정보를 봅니다.
 
-    Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```powershell
+Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 또는 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638195\(v=exchg.150\))를 참조하십시오.
 
@@ -179,7 +197,9 @@ EAC에서 할당 정책 및 자신에 게 할당 된 역할의 목록을 볼 수
 
 이 예에서는 기본 할당 정책이 반환됩니다.
 
-    Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+```powershell
+Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 또는 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638195\(v=exchg.150\))를 참조하십시오.
 
@@ -195,11 +215,15 @@ EAC에서 할당 정책 및 자신에 게 할당 된 역할의 목록을 볼 수
 
 다음 구문을 사용합니다.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```
 
 이 예에서는 Vancouver End Users 정책이 할당된 모든 사서함을 찾습니다.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 또는 [Get-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638195\(v=exchg.150\))를 참조하십시오.
 
@@ -217,11 +241,15 @@ EAC에서 할당 정책 및 자신에 게 할당 된 역할의 목록을 볼 수
 
 기본 할당 정책을 변경하려면 다음 구문을 사용합니다.
 
-    Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```powershell
+Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```
 
 이 예에서는 Vancouver End Users 할당 정책을 기본 할당 정책으로 설정합니다.
 
-    Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```powershell
+Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```
 
 
 > [!IMPORTANT]

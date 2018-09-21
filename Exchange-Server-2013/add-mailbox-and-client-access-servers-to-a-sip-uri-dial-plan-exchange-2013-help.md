@@ -87,7 +87,9 @@ Microsoft Lync Server를 배포하는 경우 아웃바운드 통화가 정상적
 
 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버를 `MySIPDialPlan`이라는 SIP URI 다이얼 플랜에 추가합니다. 또한 시작 모드를 이중 모드로 설정하여 클라이언트 액세스 서버가 TCP 및 TLS 요청을 수락할 수 있도록 합니다.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버를 `MySIPDialPlan` 및 `MySIPDialPlan2`라는 두 SIP 다이얼 플랜에 추가하고 서버가 IPv4 및 IPv6 주소를 모두 사용하도록 허용합니다.
 

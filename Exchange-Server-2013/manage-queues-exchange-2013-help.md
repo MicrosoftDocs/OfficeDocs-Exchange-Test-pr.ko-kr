@@ -55,11 +55,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 Exchange 2013 사서함 서버 Mailbox01에서 비어 있지 않은 모든 큐에 대한 기본 정보를 표시합니다.
 
-    Get-Queue -Server Mailbox01 -Exclude Empty
+```powershell
+Get-Queue -Server Mailbox01 -Exclude Empty
+```
 
 이 예에서는 명령이 실행되는 사서함 서버에서 포함된 메시지 수가 100개를 초과하는 모든 큐에 대한 자세한 정보를 표시합니다.
 
-    Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```powershell
+Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```
 
 ## 셸을 사용하여 여러 Exchange 서버에 대한 큐 요약 정보 보기
 
@@ -77,11 +81,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 FirstSite라는 Active Directory 사이트의 모든 Exchange 2013 사서함 서버에서 메시지 수가 100개를 초과하는 큐에 대한 요약 정보를 표시합니다.
 
-    Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```powershell
+Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```
 
 이 예에서는 DAG01이라는 DAG(데이터베이스 사용 가능 그룹)의 모든 Exchange 2013 사서함 서버에서 큐 상태 값이 **Retry**인 큐에 대한 요약 정보를 표시합니다.
 
-    Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```powershell
+Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```
 
 ## 큐 다시 시작
 
@@ -115,11 +123,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 로컬 서버에서 상태가 Suspended인 모든 큐를 다시 시작합니다.
 
-    Resume-Queue -Filter {Status -eq "Suspended"}
+```powershell
+Resume-Queue -Filter {Status -eq "Suspended"}
+```
 
 이 예에서는 Mailbox01 서버에서 contoso.com이라는 일시 중단된 배달 큐를 다시 시작합니다.
 
-    Resume-Queue -Identity Mailbox01\contoso.com
+```powershell
+Resume-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -161,11 +173,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 로컬 서버에서 상태가 다시 시도인 모든 큐를 다시 시도합니다.
 
-    Retry-Queue -Filter {status -eq "retry"}
+```powershell
+Retry-Queue -Filter {status -eq "retry"}
+```
 
 이 예에서는 Mailbox01 서버에서 `Retry` 상태인 contoso.com이라는 큐를 다시 시도합니다.
 
-    Retry-Queue -Identity Mailbox01\contoso.com
+```powershell
+Retry-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -193,11 +209,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 Mailbox01 서버에서 상태가 다시 시도인 모든 배달 큐에 있는 모든 메시지를 다시 전송합니다.
 
-    Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```powershell
+Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```
 
 이 예에서는 Mailbox01 서버의 연결할 수 없는 큐에 있는 모든 메시지를 다시 전송합니다.
 
-    Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```powershell
+Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```
 
 ## 포이즌 메시지 큐의 메시지 다시 전송
 
@@ -227,15 +247,21 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 1.  다음 명령을 실행하여 메시지 ID를 확인합니다.
     
-        Get-Message -Queue Poison | Format-Table Identity
+    ```powershell
+Get-Message -Queue Poison | Format-Table Identity
+```
 
 2.  이전 단계의 메시지 ID를 사용하여 다음 명령을 실행합니다.
     
-        Resume-Message <PoisonMessageIdentity>
+    ```powershell
+Resume-Message <PoisonMessageIdentity>
+```
     
     이 예에서는 포이즌 메시지 큐에서 메시지 ID 값이 222인 메시지를 다시 시작합니다.
     
-        Resume-Message 222
+    ```powershell
+Resume-Message 222
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -271,11 +297,15 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 이 예에서는 로컬 서버에서 메시지 수가 1,000개 이상이고 상태가 다시 시도인 모든 큐를 일시 중단합니다.
 
-    Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```powershell
+Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```
 
 이 예에서는 Mailbox01 서버에서 contoso.com이라는 큐를 일시 중단합니다.
 
-    Suspend-Queue -Identity Mailbox01\contoso.com
+```powershell
+Suspend-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

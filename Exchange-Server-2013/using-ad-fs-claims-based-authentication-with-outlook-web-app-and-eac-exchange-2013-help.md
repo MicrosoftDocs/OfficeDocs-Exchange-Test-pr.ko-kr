@@ -430,7 +430,9 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 다음 Windows PowerShell cmdlet은 위의 단계와 동일한 작업을 수행합니다.
 
-    Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```powershell
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```
 
 ## 5 단계-웹 응용 프로그램 프록시 역할 서비스 (선택 사항) 구성
 
@@ -563,7 +565,9 @@ Exchange 가상 디렉터리 변경을 비롯하여 필수 단계를 모두 완�
 
   - Windows PowerShell 사용:
     
-        Restart-Service W3SVC,WAS -noforce
+    ```powershell
+Restart-Service W3SVC,WAS -noforce
+```
 
   - 명령줄 사용: **시작** 및 **실행**을 차례로 클릭하고 `IISReset /noforce`를 입력한 다음 **확인**을 클릭합니다.
 

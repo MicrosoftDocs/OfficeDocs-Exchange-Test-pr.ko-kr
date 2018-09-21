@@ -61,7 +61,9 @@ _**마지막으로 수정된 항목:** 2012-11-06_
 
 이 예에서는 사서함 서버 MBX1에서 사서함 데이터베이스 DB1의 복사본을 제거합니다.
 
-    Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```powershell
+Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -71,7 +73,9 @@ _**마지막으로 수정된 항목:** 2012-11-06_
 
   - 셸에서 다음 명령을 실행하여 복사본이 제거되었는지 확인합니다.
     
-        Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```powershell
+Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+```
     
     제거된 수동 복사본이 더 이상 나열되지 않습니다.
 

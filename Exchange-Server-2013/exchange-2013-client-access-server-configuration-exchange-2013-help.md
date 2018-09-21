@@ -74,11 +74,15 @@ Exchange 2013에 대해 가상 디렉터리를 구성하려면 다음 명령을 
     Outlook Web App 가상 디렉터리를 설정한 후 명령 프롬프트에서 다음 명령을 실행합니다.
     
       ```
-      Net stop IISAdmin /y
+  ```powershell
+Net stop IISAdmin /y
+```
       ```
 
       ```
-      Net start W3SVC
+  ```powershell
+Net start W3SVC
+```
       ```
 
 2.  외부 EAC 액세스를 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.

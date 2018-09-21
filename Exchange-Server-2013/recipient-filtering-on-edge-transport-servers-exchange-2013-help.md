@@ -69,7 +69,9 @@ Multiple namespaces
 
 SMTP가 `550 5.1.1 User unknown` 오류를 반환하기 전의 지연 시간을 구성하려면 **Set-ReceiveConnector** cmdlet에 *TarpitInterval* 매개 변수를 사용하여 타피팅 간격을 설정합니다. 구문은 다음과 같습니다.
 
-    Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```powershell
+Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```
 
 기본값은 `00:00:05` 또는 5초입니다. Edge 전송 서버의 기본 수신 커넥터는 `Default internal receive connector <server name>`입니다.
 

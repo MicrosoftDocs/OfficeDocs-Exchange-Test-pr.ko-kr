@@ -63,7 +63,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 이 범위에 포함되어야 하는 사서함 데이터베이스의 정적 목록을 정의하려는 경우에는 데이터베이스 목록을 사용합니다. 데이터베이스 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 이 예에서는 데이터베이스 Database 1, Database 2 및 Database 3에만 적용되는 범위를 만듭니다.
 
@@ -79,7 +81,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 데이터베이스 필터 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 이 예에서는 데이터베이스의 **Name** 속성에 "ACCT"라는 문자열이 있는 모든 데이터베이스를 포함하는 범위를 만듭니다.
 

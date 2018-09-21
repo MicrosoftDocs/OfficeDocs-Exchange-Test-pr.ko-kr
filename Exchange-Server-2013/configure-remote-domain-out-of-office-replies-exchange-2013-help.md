@@ -41,9 +41,13 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 이 예에서는 Contoso라는 원격 도메인에 대한 부재 중 메시지를 사용하지 않도록 설정합니다.
 
-    Set-RemoteDomain Contoso -AllowedOOFType None
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType None
+```
 
 이 예에서는 외부 부재 중 메시지만 허용하도록 합니다.
 
-    Set-RemoteDomain Contoso -AllowedOOFType External
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType External
+```
 

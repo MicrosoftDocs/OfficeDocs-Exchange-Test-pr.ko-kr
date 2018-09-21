@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위에 대한 자세한 내�
 
 특정 범위의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementScope <scope name> | Format-List
+```powershell
+Get-ManagementScope <scope name> | Format-List
+```
 
 이 예에서는 Seattle Servers 범위의 세부 정보를 검색합니다.
 
-    Get-ManagementScope "Seattle Servers" | Format-List
+```powershell
+Get-ManagementScope "Seattle Servers" | Format-List
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd298180\(v=exchg.150\))를 참조하십시오.
 
@@ -65,7 +69,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위에 대한 자세한 내�
 
 이 예에서는 조직의 범위 목록을 검색합니다.
 
-    Get-ManagementScope
+```powershell
+Get-ManagementScope
+```
 
 이 cmdlet은 배타적 범위와 일반 범위를 모두 검색합니다. 배타적 범위나 일반 범위만 반환하려면 이 항목의 뒷부분에 있는 "배타적 범위 또는 일반 범위만 모두 표시"를 참조하십시오.
 
@@ -77,7 +83,9 @@ Microsoft Exchange Server 2013의 관리 역할 범위에 대한 자세한 내�
 
 이 예에서는 분리된 범위 목록을 검색합니다.
 
-    Get-ManagementScope -Orphan
+```powershell
+Get-ManagementScope -Orphan
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd298180\(v=exchg.150\))를 참조하십시오.
 
@@ -85,15 +93,21 @@ Microsoft Exchange Server 2013의 관리 역할 범위에 대한 자세한 내�
 
 기본적으로 **Get-ManagementScope** cmdlet은 배타적 범위와 일반 범위가 모두 포함된 범위 목록을 반환합니다. 배타적 범위나 일반 범위만 반환하려는 경우 다음 구문을 사용합니다.
 
-    Get-ManagementScope -Exclusive < $true | $false >
+```powershell
+Get-ManagementScope -Exclusive < $true | $false >
+```
 
 이 예에서는 배타적 범위만 반환합니다.
 
-    Get-ManagementScope -Exclusive $true
+```powershell
+Get-ManagementScope -Exclusive $true
+```
 
 이 예에서는 일반 범위 목록만 반환합니다.
 
-    Get-ManagementScope -Exclusive $false
+```powershell
+Get-ManagementScope -Exclusive $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd298180\(v=exchg.150\))를 참조하십시오.
 

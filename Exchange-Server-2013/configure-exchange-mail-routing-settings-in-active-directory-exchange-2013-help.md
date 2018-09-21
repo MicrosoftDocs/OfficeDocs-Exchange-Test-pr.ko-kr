@@ -49,11 +49,15 @@ Active Directory 사이트 링크에 Exchange 관련 비용을 설정하려면 �
 
 이 예에서는 IPSiteLinkAB라는 IP 사이트 링크에 Exchange 관련 비용 10을 설정합니다.
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```
 
 이 예에서는 IPSiteLinkAB라는 IP 사이트 링크에서 Exchange 비용을 지웁니다.
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -61,7 +65,9 @@ Active Directory 사이트 링크에 Exchange 비용이 성공적으로 설정�
 
 1.  다음 명령을 실행합니다.
     
-        Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```powershell
+Get-AdSiteLink | Format-List Name,ExchangeCost
+```
 
 2.  Active Directory 사이트 링크에 Exchange 비용이 구성되어 있는지 확인합니다.
 
@@ -71,15 +77,21 @@ Active Directory 사이트 링크에 Exchange 비용이 성공적으로 설정�
 
 Active Directory 사이트를 허브 사이트로 구성하려면 다음 명령을 실행합니다.
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 이 예에서는 Site A라는 Active Directory 사이트를 허브 사이트로 구성합니다.
 
-    Set-AdSite "Site A" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Site A" -HubSiteEnabled $true
+```
 
 이 예에서는 Site B라는 Active Directory 사이트에서 허브 사이트 특성을 제거합니다.
 
-    Set-AdSite "Site B" -HubSiteEnabled $false
+```powershell
+Set-AdSite "Site B" -HubSiteEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -87,7 +99,9 @@ Active Directory 사이트가 허브 사이트로 성공적으로 구성되었�
 
 1.  다음 명령을 실행합니다.
     
-        Get-AdSite | Format-List Name,HubSiteEnabled
+    ```powershell
+Get-AdSite | Format-List Name,HubSiteEnabled
+```
 
 2.  Active Directory 사이트의 *HubSiteEnabled* 값이 `True`인지 확인합니다.
 

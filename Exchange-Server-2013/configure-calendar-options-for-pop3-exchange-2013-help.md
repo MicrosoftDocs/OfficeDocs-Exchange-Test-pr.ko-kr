@@ -39,7 +39,9 @@ POP3에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop3
 
 이 예에서는 POP3 사용자가 일정 정보 교환을 위한 표준인 iCalendar 표준을 사용할 수 있도록 설정합니다.
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 이 예에서는 POP3 사용자가 내부 서버의 일정 정보에 액세스할 수 있도록 설정합니다.
 
@@ -47,11 +49,15 @@ POP3에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop3
 
 이 예에서는 POP3 사용자에게 외부 서버의 인터넷에서 일정 정보에 액세스하도록 허용합니다.
 
-    Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 이 예에서는 POP3 사용자가 직접 Outlook Web App URL을 사용하여 일정 정보에 액세스할 수 있도록 설정합니다. `Custom`을 사용할 경우 *OWAServerUrl* 매개 변수를 사용하여 Outlook Web App URL을 지정해야 합니다.
 
-    Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 POP3에 대한 일정 옵션을 지정한 후에는 POP3 서비스를 다시 시작해야 합니다. POP3 서비스를 다시 시작하는 방법에 대한 자세한 내용은 [시작 및 POP3 서비스를 중지 합니다.](start-and-stop-the-pop3-services-exchange-2013-help.md) 항목을 참조하십시오.
 
@@ -63,7 +69,9 @@ POP3에 대한 일정 옵션을 지정한 후에는 POP3 서비스를 다시 시
 
 셸에서 다음 명령을 실행합니다.
 
-    Get-PopSettings | format-list
+```powershell
+Get-PopSettings | format-list
+```
 
 일정 설정이 올바른지 확인합니다.
 

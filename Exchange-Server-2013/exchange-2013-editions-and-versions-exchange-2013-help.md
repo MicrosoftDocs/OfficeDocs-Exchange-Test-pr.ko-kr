@@ -37,7 +37,9 @@ Exchange 2013 버전 목록 및 최신 버전의 Exchange 2013을 다운로드�
 
 실행 중인 Exchange 2013 버전의 빌드 번호를 보려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
 
-    Get-ExchangeServer | fl name,edition,admindisplayversion
+```powershell
+Get-ExchangeServer | fl name,edition,admindisplayversion
+```
 
 ## Exchange 2013 라이선스 유형
 

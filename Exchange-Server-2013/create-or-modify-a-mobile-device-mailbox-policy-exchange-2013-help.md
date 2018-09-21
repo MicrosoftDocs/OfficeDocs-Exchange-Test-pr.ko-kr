@@ -129,5 +129,7 @@ EAC를 사용하여 모바일 장치 사서함 정책을 편집할 수 있습니
 
 2.  셸에서 다음 명령을 실행합니다.
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+```
 

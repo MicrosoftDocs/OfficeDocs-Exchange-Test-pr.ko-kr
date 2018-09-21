@@ -101,7 +101,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
 이 예에서는 사용자 사서함을 연결합니다. *Identity* 매개 변수는 MBXDB01이라는 사서함 데이터베이스에 보관된 삭제된 사서함의 표시 이름을 지정합니다. *User* 매개 변수는 사서함을 연결할 Active Directory 사용자 계정을 지정합니다.
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 
 > [!NOTE]
@@ -143,7 +145,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* 속성의 **UserMailbox** 값은 사용자 계정과 사서함이 연결되었음을 나타냅니다. **Get-Mailbox \<identity\>** 명령을 실행하여 사서함이 연결되었는지 확인할 수도 있습니다.
 
@@ -183,7 +187,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
 1.  다음 cmdlet를 실행 하 여 Active Directory 포리스트 및 도메인 컨트롤러의 정규화 된 도메인 이름을 (FQDN)을 가져옵니다.
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+Get-OrganizationConfig | fl OriginatingServer
+```
 
 2.  1 단계에서 반환 되는 정보를 사용 하 고 삭제 된 공용 폴더 사서함에 포함 된 사서함 데이터베이스의 이름 또는 GUID에 대 한 공용 폴더 사서함의 GUID에 대 한 Deleted Objects 컨테이너 Active Directory에서 검색 합니다.
     

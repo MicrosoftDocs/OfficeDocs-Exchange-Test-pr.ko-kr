@@ -67,7 +67,9 @@ Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하
 
 2.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  조직 관리 역할 그룹에 할당된 모든 역할을 변수에 저장합니다.
     
@@ -93,7 +95,9 @@ Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하
 
 이 예에서는 앞의 값을 사용하여 조직 관리 역할 그룹을 연결된 역할 그룹으로 다시 만듭니다.
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     $OrgMgmt  = Get-RoleGroup "Organization Management"
     New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
     Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
@@ -107,11 +111,15 @@ Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하
 
 2.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다. 이 과정은 한 번만 수행하면 됩니다.
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  다음 cmdlet을 사용하여 역할 그룹 목록을 검색합니다.
     
-        Get-RoleGroup
+    ```powershell
+Get-RoleGroup
+```
 
 4.  조직 관리 역할 그룹이 아닌 각 역할 그룹에 대해 다음 작업을 수행합니다.
     
@@ -132,8 +140,12 @@ Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하
 
 이 예에서는 앞의 값을 사용하여 Recipient Management 및 서버 관리 역할 그룹을 연결된 역할 그룹으로 다시 만듭니다.
 
-    $ForeignCredential = Get-Credential
-    Get-RoleGroup
+```powershell
+$ForeignCredential = Get-Credential
+```
+```powershell
+Get-RoleGroup
+```
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     $RoleGroup = Get-RoleGroup "Server Management"

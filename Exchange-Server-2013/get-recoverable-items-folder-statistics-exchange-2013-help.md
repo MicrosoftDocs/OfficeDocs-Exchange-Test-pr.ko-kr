@@ -47,7 +47,9 @@ _**마지막으로 수정된 항목:** 2015-01-22_
 
 이 예제에서는 Soumya Singhi 복구 가능한 항목 폴더에 대 한 폴더 통계를 가져오고 목록 형식으로 출력을 표시 합니다.
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 이 예제에서는 Soumya Singhi 복구 가능한 항목 폴더에 대 한 폴더 통계를 가져오고 폴더 및 표 형식에서 폴더 크기의 폴더 이름, 폴더 경로, 항목 수를 표시 하는 합니다.
 

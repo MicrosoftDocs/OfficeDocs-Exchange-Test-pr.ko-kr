@@ -127,7 +127,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 8.  **DATA**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+354 Start mail input; end with <CLRF>.<CLRF>
+```
 
 9.  **Subject: Test from Contoso**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -137,11 +139,15 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 12. Enter 키를 누르고 마침표(**.**)를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+250 2.6.0 <GUID> Queued mail for delivery
+```
 
 13. 대상 SMTP 서버와의 연결을 끊으려면 **QUIT**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+221 2.0.0 Service closing transmission channel
+```
 
 14. 텔넷 세션을 닫으려면 **quit**를 입력한 다음 Enter 키를 누릅니다.
 

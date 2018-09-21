@@ -61,11 +61,15 @@ P o p 3에 대 한 연결 시간 제한 설정 했을 때 하면, 설정 적용 
 
 이 예에서는 인증된 유휴 연결에 대한 연결 시간 제한을 설정합니다.
 
-    Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 이 예에서는 인증되지 않은 유휴 연결에 대한 연결 시간 제한을 설정합니다.
 
-    Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 P o p 3에 대 한 연결 시간 제한 설정 했을 때 하면, 설정 적용 하려면에 대 한 POP3 서비스를 다시 시작 해야 합니다. POP3 서비스를 다시 시작 하는 방법에 대 한 정보를 [시작 및 POP3 서비스를 중지 합니다.](start-and-stop-the-pop3-services-exchange-2013-help.md)을 참조 하십시오.
 
@@ -89,7 +93,9 @@ P o p 3에 대 한 연결 시간 제한 설정 했을 때 하면, 설정 적용 
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  연결 설정이 올바른지 확인합니다.
 

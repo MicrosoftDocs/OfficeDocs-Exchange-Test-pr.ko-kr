@@ -57,11 +57,15 @@ Edge 전송 서버 구성 정보는 AD LDS(Active Directory Lightweight Directo
 
 2.  원본 서버에 있는 파일로 원본 서버 구성 데이터를 내보내려면 다음 구문을 사용합니다.
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+```
     
     예를 들어 원본 서버 구성 데이터를 C:\\CloneConfigData.xml 파일로 내보내려면 다음 명령을 실행합니다.
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 

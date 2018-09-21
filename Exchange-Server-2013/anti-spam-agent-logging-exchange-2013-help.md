@@ -268,7 +268,9 @@ Exchange 사용 하 여 순환 로깅을 제한 파일 크기 및 제어 하는 
 
 **Get-AntiSpamFilteringReport.ps1** 스크립트는 `%ExchangeInstallPath%Scripts`에 있습니다. 셸에서 Scripts 폴더에서 스크립트를 실행 해야 합니다. 셸에서 위치 Scripts 폴더를 변경 하려면 다음 명령을 실행 합니다.
 
-    Cd $env:ExchangeInstallPath\Scripts
+```powershell
+Cd $env:ExchangeInstallPath\Scripts
+```
 
 스크립트 폴더에 스크립트를 실행 하려면 다음 구문을 사용 합니다.
 
@@ -276,7 +278,9 @@ Exchange 사용 하 여 순환 로깅을 제한 파일 크기 및 제어 하는 
 
 스크립트를 사용 하는 방법에 대 한 자세한 내용은, 다음 명령을 실행 합니다.
 
-    Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```powershell
+Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```
 
 맨 위로 이동
 

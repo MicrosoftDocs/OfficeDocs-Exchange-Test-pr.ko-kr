@@ -47,15 +47,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 첨부 파일 필터링을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Disable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Disable-TransportAgent "Attachment Filtering Agent"
+```
 
 첨부 파일 필터링을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Enable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Enable-TransportAgent "Attachment Filtering Agent"
+```
 
 첨부 파일 필터링을 사용하거나 사용하지 않도록 설정한 후 다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작합니다.
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -63,7 +69,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-TransportAgent "Attachment Filtering Agent"
+    ```powershell
+Get-TransportAgent "Attachment Filtering Agent"
+```
 
 2.  **Enabled**의 값이 `True`이면 첨부 파일 필터링이 사용하도록 설정된 것이고 값이 `False`이면 첨부 파일 필터링이 사용하지 않도록 설정된 것입니다.
 
@@ -71,19 +79,27 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 첨부 파일 필터링 항목은 조직에 유입되지 않도록 할 메시지 첨부 파일을 정의합니다. 첨부 파일 필터링 에이전트에서 사용하는 첨부 파일 필터링 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-AttachmentFilterEntry | Format-Table
+```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 특정 MIME 콘텐츠 형식 항목을 보려면 다음 구문을 사용합니다.
 
-    Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```powershell
+Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```
 
 예를 들어 JPEG 이미지에 대한 콘텐츠 형식 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-AttachmentFilteringEntry ContentType:image/jpeg
+```powershell
+Get-AttachmentFilteringEntry ContentType:image/jpeg
+```
 
 특정 파일 이름 또는 파일 이름 확장명 항목을 보려면 다음 구문을 사용합니다.
 
-    Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```powershell
+Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```
 
 예를 들어 JPEG 첨부 파일의 파일 이름 확장명 항목을 보려면 다음 명령을 실행합니다.
 
@@ -93,15 +109,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필터링 항목을 추가하려면 다음 구문을 사용합니다.
 
-    Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```
 
 다음 예에서는 JPEG 이미지를 필터링하는 MIME 콘텐츠 형식 항목을 추가합니다.
 
-    Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```
 
 파일 이름 또는 파일 이름 확장명으로 첨부 파일을 필터링하는 첨부 파일 필터링 항목을 추가하려면 다음 구문을 사용합니다.
 
-    Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```
 
 다음 예에서는 파일 이름 확장명이 .jpg인 첨부 파일을 필터링합니다.
 
@@ -113,7 +135,9 @@ MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필�
 
 1.  다음 명령을 실행하여 필터링 항목이 있는지 확인합니다.
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 2.  금지된 첨부 파일이 포함된 테스트 메시지를 외부 사서함에서 내부 받는 사람에게 보낸 다음 해당 메시지가 거부, 제거 또는 삭제되는지 확인합니다.
 
@@ -121,15 +145,21 @@ MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필�
 
 MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필터링 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-AttachmentFilterEntry ContentType:<ContentType>
+```powershell
+Remove-AttachmentFilterEntry ContentType:<ContentType>
+```
 
 다음 예에서는 JPEG 이미지에 대한 MIME 콘텐츠 형식 항목을 제거합니다.
 
-    Remove-AttachmentFilterEntry ContentType:image/jpeg
+```powershell
+Remove-AttachmentFilterEntry ContentType:image/jpeg
+```
 
 파일 이름 또는 파일 이름 확장명으로 첨부 파일을 필터링하는 첨부 파일 필터링 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```powershell
+Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```
 
 다음 예에서는 .jpg 파일 이름 확장명에 대한 파일 이름 항목을 제거합니다.
 
@@ -141,7 +171,9 @@ MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필�
 
 1.  다음 명령을 실행하여 필터링 항목이 제거되었는지 확인합니다.
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 2.  허용된 첨부 파일이 포함된 테스트 메시지를 외부 사서함에서 내부 받는 사람에게 보낸 다음 해당 메시지가 첨부 파일과 함께 정상적으로 배달되었는지 확인합니다.
 
@@ -149,7 +181,9 @@ MIME 콘텐츠 형식으로 첨부 파일을 필터링하는 첨부 파일 필�
 
 금지된 첨부 파일이 메시지에서 검색될 때 사용되는 첨부 파일 필터링 작업을 보려면 다음 명령을 실행합니다.
 
-    Get-AttachmentFilterListConfig
+```powershell
+Get-AttachmentFilterListConfig
+```
 
 ## 셸을 사용하여 첨부 파일 필터링 작업 구성
 

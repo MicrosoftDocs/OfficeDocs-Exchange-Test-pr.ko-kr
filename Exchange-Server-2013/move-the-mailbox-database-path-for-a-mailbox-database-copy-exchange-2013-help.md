@@ -55,7 +55,9 @@ _**마지막으로 수정된 항목:** 2014-05-07_
 
 2.  데이터베이스에서 순환 로깅을 사용하도록 설정되어 있을 경우 단계를 진행하기 전에 이 설정을 해제합니다. 다음 예에 나오는 대로, [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\)) cmdlet을 사용하여 사서함 데이터베이스에 대한 순환 로깅을 사용하지 않도록 설정할 수 있습니다.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+```
 
 3.  이동할 데이터베이스의 사서함 데이터베이스 복사본을 모두 제거합니다. 자세한 단계는 [사서함 데이터베이스 복사본을 제거 합니다.](remove-a-mailbox-database-copy-exchange-2013-help.md)를 참조하십시오. 모든 복사본을 제거한 후 이들 복사본을 다른 위치로 이동하여 데이터베이스 복사본이 제거되는 각 서버로부터 데이터베이스 및 트랜잭션 로그 파일을 보존합니다. 이 파일을 보존하는 이유는 데이터베이스 복사본을 다시 추가한 후 다시 시드할 필요가 없도록 하기 위해서입니다.
 
@@ -80,11 +82,15 @@ _**마지막으로 수정된 항목:** 2014-05-07_
 
 9.  필요에 따라 다음 예에 나오는 대로, [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\)) cmdlet을 사용하여 순환 로깅을 사용하도록 설정합니다.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+```
 
 10. 다음 예에 나오는 대로, [Set-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd298104\(v=exchg.150\)) cmdlet을 사용하여 이전에 재생 지연 시간 및 자르기 지연 시간에 설정했던 값을 다시 구성합니다.
     
-        Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```powershell
+Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+```
 
 11. 각 복사본을 추가할 때 다음 복사본을 추가하기 전에 해당 복사본의 상태를 확인하는 것이 좋습니다. 다음과 같은 방법으로 상태를 확인할 수 있습니다.
     
@@ -114,7 +120,9 @@ _**마지막으로 수정된 항목:** 2014-05-07_
 
   - 셸에서 다음 명령을 실행하여 사서함 데이터베이스 복사본이 작성되어 있고 정상 상태인지 확인합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     상태 및 콘텐츠 인덱스 상태가 모두 정상이어야 합니다.
 

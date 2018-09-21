@@ -45,15 +45,21 @@ UM 문제해결과 관련 된 추가 관리 작업에 대 한 [UM 서비스 절�
 
 이 예에서는 TCP 포트 5060에서 들어오는 SIP 요청을 수신 대기하는 UM IP 게이트웨이의 기능을 테스트합니다.
 
-    Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```powershell
+Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```
 
 이 예에서는 보안된 상호 TLS 연결 대신 보안되지 않은 TCP 연결을 사용하여 전화 56780번으로 `MyUMIPGateway`라는 UM IP 게이트웨이를 통해 호출을 실행하는 로컬 사서함 서버의 기능을 테스트합니다.
 
-    Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```powershell
+Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```
 
 이 예는 SIP URI를 사용하여 다이얼 플랜의 Outlook Voice Access 번호를 테스트하며, Lync Server가 포함된 환경에서 사용할 수 있습니다.
 
-    Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```powershell
+Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```
 
 
 > [!NOTE]

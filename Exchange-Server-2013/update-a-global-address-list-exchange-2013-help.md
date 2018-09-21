@@ -49,7 +49,9 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 
 
-    Update-GlobalAddressList -Identity "Fourth Coffee"
+```powershell
+Update-GlobalAddressList -Identity "Fourth Coffee"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Update-GlobalAddressList](https://technet.microsoft.com/ko-kr/library/aa998806\(v=exchg.150\))를 참조하십시오.
 

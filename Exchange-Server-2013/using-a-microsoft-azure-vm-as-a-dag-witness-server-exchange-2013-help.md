@@ -329,7 +329,9 @@ Azure 관리 포털에서 가상 네트워크 대시보드를 확인 하 여 연
 
 2.  대화 dag 미러링 모니터 서버를 구성 하려면 다음 명령을 실행 합니다.
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+```
 
 자세한 내용은 다음 항목을 참조 하십시오.
 
@@ -349,11 +351,15 @@ Azure 관리 포털에서 가상 네트워크 대시보드를 확인 하 여 연
 
 2.  DAG 노드 수가 짝수인 경우 파일 공유 미러링 모니터 서버가 구성 됩니다. 다음 명령을 실행 하 여 클러스터 속성에서 설정 파일 공유 감시의 유효성을 검사 합니다. *SharePath* 매개 변수 값은 파일 서버를 가리키도록 하 고 올바른 경로 표시 해야 합니다.
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+```
 
 3.  다음으로, 다음 명령을 실행 하 여 "파일 공유 감시" 클러스터 리소스의 상태를 확인 합니다. 클러스터 리소스의 *State***Online**를표시 되어야 합니다.
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+Get-ClusterResource -Cluster MBX1
+```
 
 4.  마지막으로, 공유 성공적으로 만들어졌는지 파일 서버에서 파일 탐색기의 폴더와 서버 관리자에서 공유를 검토 하 여 확인 합니다.
 

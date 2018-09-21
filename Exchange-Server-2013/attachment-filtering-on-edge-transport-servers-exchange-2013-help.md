@@ -29,7 +29,9 @@ Microsoft Exchange Server 2013에서는 Edge 전송 서버에서 첨부 파일 �
     
     첨부 파일 필터링에서 검색할 수 있는 파일 이름 확장명 및 콘텐츠 형식의 전체 목록을 보려면 Edge 전송 서버에서 다음 명령을 실행합니다.
     
-        Get-AttachmentFilterEntry | Format-List
+    ```powershell
+Get-AttachmentFilterEntry | Format-List
+```
 
 찾을 파일을 정의한 후에는 해당 첨부 파일이 포함된 메시지에 대해 수행할 작업을 구성할 수 있습니다. 각 첨부 파일 유형에 대해 서로 다른 작업을 지정할 수는 없습니다. 즉, 첨부 파일 필터와 일치하는 모든 메시지에 대해 다음 작업 중 하나를 구성합니다.
 

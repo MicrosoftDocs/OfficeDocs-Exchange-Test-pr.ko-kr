@@ -65,11 +65,15 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 이 예에서는 NDR을 보내지 않고 제목이 "Win Big"인 메시지를 큐에서 제거합니다.
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 이 예에서는 Mailbox01이라는 서버의 연결할 수 없는 큐에서 메시지 ID가 3인 메시지를 제거하고 NDR을 보냅니다.
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -107,7 +111,9 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 메시지를 다시 시작하려면 다음 구문을 사용합니다.
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 이 예에서는 Contoso.com 도메인에 있는 보낸 사람이 전송한 모든 메시지를 다시 시작합니다.
 
@@ -115,7 +121,9 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 이 예에서는 서버 Hub01의 연결할 수 없는 큐에서 메시지 ID가 3인 메시지를 다시 시작합니다.
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 포이즌 메시지 큐에서 메시지를 다시 전송하려면 다음 단계를 수행합니다.
 
@@ -149,7 +157,9 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 메시지를 일시 중단하려면 다음 구문을 사용합니다.
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 이 예에서는 큐에서 보낸 사람 도메인이 contoso.com인 모든 메시지를 일시 중단합니다.
 
@@ -157,7 +167,9 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 이 예에서는 Mailbox01이라는 서버의 연결할 수 없는 큐에서 메시지 ID가 3인 메시지를 일시 중단합니다.
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

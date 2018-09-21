@@ -115,7 +115,9 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 이 예에서는 보존 기간으로 2년 6개월을 지정합니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-AdminAuditLogConfig](https://technet.microsoft.com/ko-kr/library/dd298169\(v=exchg.150\))를 참조하십시오.
 
@@ -125,11 +127,15 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 이 명령은 **Test** cmdlet의 로깅을 사용하도록 설정합니다.
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 이 명령은 **Test** cmdlet의 로깅을 사용하지 않도록 설정합니다.
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-AdminAuditLogConfig](https://technet.microsoft.com/ko-kr/library/dd298169\(v=exchg.150\))를 참조하십시오.
 
@@ -137,17 +143,23 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 관리자 감사 로깅을 사용하지 않도록 설정하려면 다음 명령을 사용합니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## 관리자 감사 로깅 사용
 
 관리자 감사 로깅을 사용하도록 설정하려면 다음 명령을 사용합니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## 관리자 감사 로깅 설정 보기
 
 조직에 대해 구성한 관리자 감사 로깅 설정을 보려면 다음 명령을 사용합니다.
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

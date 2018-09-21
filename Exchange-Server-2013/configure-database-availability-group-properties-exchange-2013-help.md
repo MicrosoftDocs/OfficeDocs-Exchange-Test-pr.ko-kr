@@ -75,7 +75,9 @@ EAC 또는 셸을 사용하여 DAG에 사용되는 DAG IP 주소 구성, 미러�
 
 이 예에서는 DAG DAG1에 대한 감시 디렉터리를 C:\\DAG1DIR로 설정합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```
 
 이 예에서는 DAG DAG1에 대해 CAS3의 대체 미러링 모니터 서버와 C:\\DAGFileShareWitnesses\\DAG1.contoso.com의 대체 감시 디렉터리를 미리 구성합니다.
 
@@ -83,23 +85,33 @@ EAC 또는 셸을 사용하여 DAG에 사용되는 DAG IP 주소 구성, 미러�
 
 이 예에서는 DAG1이라는 DAG에서 DHCP(Dynamic Host Configuration Protocol)를 사용하여 IP 주소를 가져오도록 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```
 
 이 예에서는 DAG DAG1에서 고정 IP 주소 10.0.0.8을 사용하도록 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 이 예에서는 여러 개의 고정 IP 주소를 사용하여 다중 서브넷 DAG DAG1을 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```
 
 이 예에서는 DAC 모드에 대해 DAG DAG1을 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 이 예에서는 DAG1이라는 DAG의 복제 포트를 63132로 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```
 
 
 > [!NOTE]
@@ -113,7 +125,9 @@ DAG가 성공적으로 구성되었는지 확인하려면 다음을 수행하십
 
   - 셸에서 다음 명령을 실행하여 DAG 구성 설정을 표시하고 DAG가 구성되었는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+```
 
 ## 자세한 내용
 

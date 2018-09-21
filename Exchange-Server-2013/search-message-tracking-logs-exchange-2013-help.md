@@ -63,7 +63,9 @@ Exchange 관리 셸의 <strong>Get-MessageTrackingLog</strong> cmdlet을 사용�
 
 서버에서 최근 메시지 추적 로그 항목 1,000개를 보려면 다음 명령을 실행합니다.
 
-    Get-MessageTrackingLog
+```powershell
+Get-MessageTrackingLog
+```
 
 이 예제에서는 메시지 보낸 사람이 pat@contoso.com인 모든 <strong>FAIL</strong> 이벤트에 대해 로컬 서버의 메시지 추적 로그에서 2013년 3월 28일 오전 8시에서 2013년 3월 28일 오후 5시 사이의 모든 항목을 검색합니다.
 

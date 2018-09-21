@@ -41,11 +41,15 @@ Microsoft Exchange Server 2013에서는 Exchange 조직의 받는 사람이나 �
 
 이 예에서는 *VoicemailJournalingEnabled* 매개 변수를 `$false`로 설정하여 음성 메일과 부재 중 전화 알림의 저널링을 사용하지 않도록 설정합니다.
 
-    Set-TransportConfig -VoicemailJournalingEnabled $false
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $false
+```
 
 이 예에서는 이 매개 변수를 `$true`로 설정하여 음성 메일과 부재 중 전화 알림의 저널링을 사용하도록 설정합니다.
 
-    Set-TransportConfig -VoicemailJournalingEnabled $true
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-TransportConfig](https://technet.microsoft.com/ko-kr/library/bb124151\(v=exchg.150\))를 참조하십시오.
 

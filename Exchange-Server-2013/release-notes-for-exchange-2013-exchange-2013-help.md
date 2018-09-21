@@ -131,7 +131,9 @@ Exchange 2013 설치 방법에 대한 자세한 내용은 [계획 및 배포](pl
     
     2.  다음 명령을 실행합니다.
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+```
     
     3.  일반적인 전송 에이전트 관리 작업을 수행합니다.
     

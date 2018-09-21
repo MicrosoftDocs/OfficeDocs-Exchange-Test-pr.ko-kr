@@ -89,7 +89,9 @@ _**마지막으로 수정된 항목:** 2016-11-16_
 
 공용 폴더 이동 요청이 정상적으로 수행되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 상태가 `Completed`이면 이동 요청이 정상적으로 수행된 것입니다.
 

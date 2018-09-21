@@ -94,7 +94,9 @@ GAL 동기화가 가능하도록 하려면 메일 사용 가능 사용자, 연�
 
 이 예에서는 가용성 구성 개체에 조직 차원의 계정을 설정하여 대상 포리스트에서 약속 있음/없음 정보 액세스 수준을 구성합니다.
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 이 예에서는 원본 포리스트의 가용성 주소 공간 구성 개체를 추가합니다.
 

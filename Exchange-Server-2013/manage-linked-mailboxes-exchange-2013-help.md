@@ -128,7 +128,9 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
   - 셸에서 다음 명령을 실행하여 새 연결된 사서함에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+```
 
 ## 연결된 사서함 속성 변경
 
@@ -398,5 +400,7 @@ _**마지막으로 수정된 항목:** 2012-11-27_
     
     연결된 마스터 계정이 변경된 위 예에서는 다음 명령을 실행하여 새 값을 확인합니다.
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+```
 

@@ -53,21 +53,29 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 연결 필터링을 사용하지 않으려면 다음 명령을 실행합니다.
 
-    Disable-TransportAgent "Connection Filtering Agent"
+```powershell
+Disable-TransportAgent "Connection Filtering Agent"
+```
 
 연결 필터링을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Enable-TransportAgent "Connection Filtering Agent"
+```powershell
+Enable-TransportAgent "Connection Filtering Agent"
+```
 
 변경 내용을 적용하려면 다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작해야 합니다.
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 연결 필터링이 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```powershell
+Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```
 
 ## IP 차단 목록 절차
 
@@ -85,17 +93,23 @@ IP 차단 목록의 구성을 확인하려면 다음 명령을 실행합니다.
 
 IP 차단 목록을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPBlockListConfig -Enabled $false
+```powershell
+Set-IPBlockListConfig -Enabled $false
+```
 
 IP 차단 목록을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPBlockListConfig -Enabled $true
+```powershell
+Set-IPBlockListConfig -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록이 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListConfig | Format-List Enabled
+```powershell
+Get-IPBlockListConfig | Format-List Enabled
+```
 
 ## 셸을 사용하여 IP 차단 목록 구성
 
@@ -125,17 +139,23 @@ IP 차단 목록을 올바르게 구성했는지 확인하려면 다음 명령�
 
 모든 IP 차단 목록 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 각 IP 차단 목록 항목은 정수 값으로 식별됩니다. IP 차단 목록과 IP 허용 목록에 항목을 추가하면 정수 ID가 오름차순으로 할당됩니다.
 
 특정 IP 차단 목록 항목을 보려면 다음 구문을 사용합니다.
 
-    Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 예를 들어 IP 주소 192.168.1.13이 포함된 IP 차단 목록 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]
@@ -151,33 +171,45 @@ IP 차단 목록 항목을 추가하려면 다음 구문을 사용합니다.
 
 다음 예에서는 IP 주소 범위 192.168.1.10~192.168.1.15에 대해 IP 차단 목록 항목을 추가하고 2014년 7월 4일 오후 3시에 만료되도록 IP 차단 목록 항목을 구성합니다.
 
-    Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록 항목을 올바르게 추가했는지 확인하려면 다음 명령을 실행하여 새 IP 차단 목록 항목이 표시되는지 확인합니다.
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## 셸을 사용하여 IP 차단 목록 항목 제거
 
 IP 차단 목록 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-IPBlockListEntry <IdentityInteger>
+```powershell
+Remove-IPBlockListEntry <IdentityInteger>
+```
 
 다음 예에서는 *Identity* 값이 3인 IP 차단 목록 항목을 제거합니다.
 
-    Remove-IPBlockListEntry 3
+```powershell
+Remove-IPBlockListEntry 3
+```
 
 다음 예에서는 *Identity* 정수 값을 사용하지 않고 IP 주소 192.168.1.12가 포함된 IP 차단 목록 항목을 제거합니다. IP 차단 목록 항목은 개별 IP 주소 또는 IP 주소 범위일 수 있습니다.
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록 항목을 올바르게 제거했는지 확인하려면 다음 명령을 실행하여 제거한 IP 차단 목록 항목이 사라졌는지 확인합니다.
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## IP 차단 목록 공급자 절차
 
@@ -195,17 +227,23 @@ IP 차단 목록 항목을 올바르게 제거했는지 확인하려면 다음 �
 
 모든 IP 차단 목록 공급자를 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPBlockListProvidersConfig -Enabled $false
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $false
+```
 
 모든 IP 차단 목록 공급자를 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPBlockListProvidersConfig -Enabled $true
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 모든 IP 차단 목록이 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPBlockListProvidersConfig | Format-List Enabled
+```
 
 ## 셸을 사용하여 모든 IP 차단 목록 공급자 구성
 
@@ -235,11 +273,15 @@ IP 차단 목록 항목을 올바르게 제거했는지 확인하려면 다음 �
 
 모든 IP 차단 목록 공급자의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 특정 공급자의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 다음 예에서는 Contoso IP Block List Provider라는 공급자의 세부 정보를 표시합니다.
 
@@ -273,27 +315,37 @@ IP 차단 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
 IP 차단 목록 공급자를 올바르게 추가했는지 확인하려면 다음 명령을 실행하여 새 IP 차단 목록 공급자가 표시되는지 확인합니다.
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자를 사용하거나 사용하지 않도록 설정
 
 특정 IP 차단 목록 공급자를 사용하거나 사용하지 않도록 설정하려면 다음 구문을 사용합니다.
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```
 
 다음 예에서는 Contoso IP Block List Provider라는 공급자를 사용하지 않도록 설정합니다.
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```
 
 다음 예에서는 Contoso IP Block List Provider라는 공급자를 사용하도록 설정합니다.
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록 공급자가 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자 구성
 
@@ -305,7 +357,9 @@ IP 차단 목록 공급자가 사용하거나 사용하지 않도록 설정되�
 
 예를 들어 Contoso IP Block List Provider라는 공급자의 기존 상태 코드 목록에 IP 주소 상태 코드 127.0.0.1을 추가하려면 다음 명령을 실행합니다.
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 자세한 내용은 [Set-IPBlockListProvider](https://technet.microsoft.com/ko-kr/library/bb124979\(v=exchg.150\))를 참조하세요.
 
@@ -313,33 +367,45 @@ IP 차단 목록 공급자가 사용하거나 사용하지 않도록 설정되�
 
 IP 차단 목록 공급자를 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자 테스트
 
 IP 차단 목록 공급자를 테스트하려면 다음 구문을 사용합니다.
 
-    Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 다음 예에서는 IP 주소 192.168.1.1을 조회하여 Contoso IP Block List Provider라는 공급자를 테스트합니다.
 
-    Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자 제거
 
 IP 차단 목록 공급자를 제거하려면 다음 구문을 사용합니다.
 
-    Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 다음 예에서는 Contoso IP Block List Provider라는 IP 차단 목록 공급자를 제거합니다.
 
-    Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```powershell
+Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록 공급자를 올바르게 제거했는지 확인하려면 다음 명령을 실행하여 제거한 IP 차단 목록 공급자가 사라졌는지 확인합니다.
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## IP 허용 목록 절차
 
@@ -357,17 +423,23 @@ IP 허용 목록의 구성을 확인하려면 다음 명령을 실행합니다.
 
 IP 허용 목록을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPAllowListConfig -Enabled $false
+```powershell
+Set-IPAllowListConfig -Enabled $false
+```
 
 IP 허용 목록을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPAllowListConfig -Enabled $true
+```powershell
+Set-IPAllowListConfig -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 허용 목록이 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListConfig | Format-List Enabled
+```powershell
+Get-IPAllowListConfig | Format-List Enabled
+```
 
 ## 셸을 사용하여 IP 허용 목록 구성
 
@@ -377,7 +449,9 @@ IP 허용 목록을 구성하려면 다음 구문을 사용합니다.
 
 다음 예에서는 내부 및 외부 메일 서버에서 들어오는 연결을 필터링하도록 IP 허용 목록을 구성합니다. 기본적으로 외부 메일 서버의 연결만 필터링됩니다(*ExternalMailEnabled*가 `$true`로 설정되고, *InternalMailEnabled*가 `$false`로 설정됨). 인증되지 않은 연결과 외부 파트너의 인증된 연결은 외부 연결로 간주됩니다.
 
-    Set-IPAllowListConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListConfig -InternalMailEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -389,17 +463,23 @@ IP 허용 목록을 올바르게 구성했는지 확인하려면 다음 명령�
 
 모든 IP 허용 목록 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 각 IP 허용 목록 항목은 정수 값으로 식별됩니다. IP 차단 목록과 IP 허용 목록에 항목을 추가하면 정수 ID가 오름차순으로 할당됩니다.
 
 특정 IP 허용 목록 항목을 보려면 다음 구문을 사용합니다.
 
-    Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 예를 들어 IP 주소 192.168.1.13이 포함된 IP 허용 목록 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]
@@ -415,33 +495,45 @@ IP 허용 목록 항목을 추가하려면 다음 구문을 사용합니다.
 
 다음 예에서는 IP 주소 범위 192.168.1.10~192.168.1.15에 대해 IP 허용 목록 항목을 추가하고 2014년 7월 4일 오후 3시에 만료되도록 IP 허용 목록 항목을 구성합니다.
 
-    Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 허용 목록 항목을 올바르게 추가했는지 확인하려면 다음 명령을 실행하여 새 IP 허용 목록 항목이 표시되는지 확인합니다.
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## 셸을 사용하여 IP 허용 목록 항목 제거
 
 IP 허용 목록 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-IPAllowListEntry <IdentityInteger>
+```powershell
+Remove-IPAllowListEntry <IdentityInteger>
+```
 
 다음 예에서는 *Identity* 값이 3인 IP 허용 목록 항목을 제거합니다.
 
-    Remove-IPAllowListEntry 3
+```powershell
+Remove-IPAllowListEntry 3
+```
 
 다음 예에서는 *Identity* 정수 값을 사용하지 않고 IP 주소 192.168.1.12가 포함된 IP 허용 목록 항목을 제거합니다. IP 허용 목록 항목은 개별 IP 주소 또는 IP 주소 범위일 수 있습니다.
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 허용 목록 항목을 올바르게 제거했는지 확인하려면 다음 명령을 실행하여 제거한 IP 허용 목록 항목이 사라졌는지 확인합니다.
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## IP 허용 목록 공급자 절차
 
@@ -459,17 +551,23 @@ IP 허용 목록 항목을 올바르게 제거했는지 확인하려면 다음 �
 
 모든 IP 허용 목록 공급자를 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPAllowListProvidersConfig -Enabled $false
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $false
+```
 
 모든 IP 허용 목록 공급자를 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-IPAllowListProvidersConfig -Enabled $true
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 모든 IP 허용 목록이 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## 셸을 사용하여 모든 IP 허용 목록 공급자 구성
 
@@ -479,7 +577,9 @@ IP 허용 목록 항목을 올바르게 제거했는지 확인하려면 다음 �
 
 다음 예에서는 내부 및 외부 메일 서버에서 들어오는 연결을 필터링하도록 모든 IP 허용 목록 공급자를 구성합니다. 기본적으로 외부 메일 서버의 연결만 필터링됩니다(*ExternalMailEnabled*가 `$true`로 설정되고, *InternalMailEnabled*가 `$false`로 설정됨). 인증되지 않은 연결과 외부 파트너의 인증된 연결은 외부 연결로 간주됩니다.
 
-    Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```
 
 자세한 내용은 [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/ko-kr/library/aa998543\(v=exchg.150\))를 참조하세요.
 
@@ -493,11 +593,15 @@ IP 허용 목록 항목을 올바르게 제거했는지 확인하려면 다음 �
 
 모든 IP 허용 목록 공급자의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 특정 공급자의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 다음 예에서는 Contoso IP Allow List Provider라는 공급자의 세부 정보를 표시합니다.
 
@@ -531,27 +635,37 @@ IP 허용 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
 IP 허용 목록 공급자를 올바르게 추가했는지 확인하려면 다음 명령을 실행하여 새 IP 허용 목록 공급자가 표시되는지 확인합니다.
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자를 사용하거나 사용하지 않도록 설정
 
 특정 IP 허용 목록 공급자를 사용하거나 사용하지 않도록 설정하려면 다음 구문을 사용합니다.
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```
 
 다음 예에서는 Contoso IP Allow List Provider라는 공급자를 사용하지 않도록 설정합니다.
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```
 
 다음 예에서는 Contoso IP Allow List Provider라는 공급자를 사용하도록 설정합니다.
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 허용 목록 공급자가 사용하거나 사용하지 않도록 설정되었는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자 구성
 
@@ -563,7 +677,9 @@ IP 허용 목록 공급자가 사용하거나 사용하지 않도록 설정되�
 
 예를 들어 Contoso IP Allow List Provider라는 공급자의 기존 상태 코드 목록에 IP 주소 상태 코드 127.0.0.1을 추가하려면 다음 명령을 실행합니다.
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 자세한 내용은 [Set-IPBlockListProvider](https://technet.microsoft.com/ko-kr/library/bb124979\(v=exchg.150\))를 참조하세요.
 
@@ -571,31 +687,43 @@ IP 허용 목록 공급자가 사용하거나 사용하지 않도록 설정되�
 
 IP 허용 목록 공급자를 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자 테스트
 
 IP 허용 목록 공급자를 테스트하려면 다음 구문을 사용합니다.
 
-    Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 다음 예에서는 IP 주소 192.168.1.1을 조회하여 Contoso IP Allow List Provider라는 공급자를 테스트합니다.
 
-    Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자 제거
 
 IP 허용 목록 공급자를 제거하려면 다음 구문을 사용합니다.
 
-    Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 다음 예에서는 Contoso IP Allow List Provider라는 IP 허용 목록 공급자를 제거합니다.
 
-    Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```powershell
+Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 허용 목록 공급자를 올바르게 제거했는지 확인하려면 다음 명령을 실행하여 제거한 IP 허용 목록 공급자가 사라졌는지 확인합니다.
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 

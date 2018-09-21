@@ -79,7 +79,9 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 Exchange 2013을 실행 중인 서버의 상태 집합을 보려면 다음 명령을 실행합니다.
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 상태 집합에 대한 프로브, 모니터 및 응답자 보기
 

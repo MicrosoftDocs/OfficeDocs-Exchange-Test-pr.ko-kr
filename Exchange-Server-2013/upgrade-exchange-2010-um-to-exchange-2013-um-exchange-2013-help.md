@@ -59,7 +59,9 @@ Setup.exe 명령을 사용 하 여 또는 [Exchange Server 2013 UM 언어팩](ht
 
 이 예에서는 setup.exe를 사용하여 일본어(ja-JP) UM 언어 팩을 설치합니다.
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 2단계: UM 사용자 지정 인사말, 알림, 메뉴 및 음성 안내에 사용되는 Exchange 2010 시스템 사서함을 Exchange 2013으로 이동
 
@@ -69,11 +71,15 @@ Setup.exe 명령을 사용 하 여 또는 [Exchange Server 2013 UM 언어팩](ht
 
 이 명령은 모든 시스템 사서함 목록을 반환합니다.
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 이 명령은 시스템 사서함 및 시스템 사서함의 개별 속성이나 설정 목록을 반환합니다.
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 이 시스템 사서함을 사용하여 데이터베이스의 다른 사서함과 함께 사용자 지정 인사말, 알림, 메뉴 및 음성 안내를 백업하고 복원할 수 있습니다. 이렇게 하면 필요한 리소스의 양을 줄일 수 있습니다. 사용자 지정 인사말, 알림, 메뉴 및 음성 안내를 시스템 사서함에 저장하면 과거에 발생 가능했던 불일치 현상이 없어집니다. 사서함 이동에 대한 자세한 내용은 [Exchange 2013 사서함 이동](mailbox-moves-in-exchange-2013-exchange-2013-help.md)을 참조하십시오.
 
@@ -212,7 +218,9 @@ SIP 보안 또는 보안 다이얼 플랜을 사용하는 경우 Exchange 2013 �
 
 셸에서 다음 명령을 실행하여 Exchange 2013 클라이언트 액세스 서버에서 UM 시작 모드를 구성합니다.
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 6단계: 모든 Exchange 2013 사서함 서버에서 UM 시작 모드 구성
 
@@ -272,7 +280,9 @@ UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고�
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 다이얼 플랜을 만들 수 있습니다.
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 필요한 경우 다음과 같이 EAC를 사용하여 기존 UM 다이얼 플랜을 구성할 수 있습니다.
 
@@ -316,7 +326,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 다음 명령을 실행하여 UM IP 게이트웨이를 만들 수 있습니다.
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 EAC를 사용하여 기존 UM IP 게이트웨이를 구성하려면 다음을 수행합니다.
 
@@ -430,7 +442,9 @@ EAC를 사용하여 기존 UM IP 게이트웨이를 구성하려면 다음을 �
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 사서함 정책을 만들 수 있습니다.
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 필요한 경우 EAC를 사용하여 기존 UM 사서함 정책을 구성할 수 있습니다.
 
@@ -468,7 +482,9 @@ EAC를 사용하여 Exchange 2010 사서함을 Exchange 2013 사서함 서버로
 
 셸을 사용하여 Exchange 2010 사서함을 Exchange 2013 사서함 서버로 이동하려면 다음 명령을 실행합니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 13단계: 새 사용자가 UM을 사용하도록 설정하거나 기존 UM 사용 가능 사용자의 설정 구성
 
@@ -574,7 +590,9 @@ Exchange 관리 콘솔을 사용하여 Exchange 2010 UM 서버에서 통합 메�
 
 셸을 사용하여 Exchange 2010 UM 서버에서 통합 메시징을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 
 > [!TIP]  
@@ -609,11 +627,15 @@ Exchange 관리 콘솔을 사용하여 다이얼 플랜에서 Exchange 2010 UM �
 
 이 예에는 SipDP1, SipDP2, SipDP3의 3개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyUMServer`라는 UM 서버를 SipDP3 다이얼 플랜에서 제거합니다.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 이 예에는 SipDP1 및 SipDP2의 2개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyUMServer`라는 UM 서버를 SipDP2 다이얼 플랜에서 제거합니다.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 
 > [!TIP]  

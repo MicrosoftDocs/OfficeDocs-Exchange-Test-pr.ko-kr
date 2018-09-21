@@ -87,7 +87,9 @@ Exchange 2013을 사용할 수 있게 조직을 준비하는 첫 번째 단계�
 
 3.  다음 명령을 실행하여 스키마를 확장합니다.
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+```
 
 설치 프로그램이 스키마 확장을 끝내면 Active Directory가 모든 도메인 컨트롤러로 변경 내용을 복제하는 동안 기다려야 합니다. 복제가 어떻게 진행되는지 확인하려면 `repadmin` 도구를 사용할 수 있습니다. `Repadmin`은 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2의 Active Directory 도메인 서비스 도구 기능에 포함됩니다. 이 도구의 사용 방법에 대한 자세한 내용은 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)을 참조하세요.
 
@@ -149,7 +151,9 @@ Active Directory 포리스트의 모든 도메인을 준비하기 전에 다음�
 
 2.  다음 명령을 실행합니다.
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
 
 ## 준비할 Active Directory 도메인 선택
 

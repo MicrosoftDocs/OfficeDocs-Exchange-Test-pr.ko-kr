@@ -53,7 +53,9 @@ _**마지막으로 수정된 항목:** 2017-03-27_
 
 다음 셸 명령을 실행하면 완료 전에(소스를 잠그기 전에) 델타 동기화를 강제로 수행할 수 있습니다.
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/ko-kr/library/jj218689\(v=exchg.150\))를 참조하십시오.
 
@@ -103,7 +105,9 @@ Outlook Web App은 지원 되지만 일부 제한 된 합니다. 추가 하 고 
 
 다음 명령을 실행합니다.
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-OrganizationConfig](https://technet.microsoft.com/ko-kr/library/aa997571\(v=exchg.150\))를 참조하세요.
 
@@ -111,7 +115,9 @@ Outlook Web App은 지원 되지만 일부 제한 된 합니다. 추가 하 고 
 
 다음 명령을 실행하여 첫 번째 마스터 계층 구조 공용 폴더 사서함과 두 번째 계층 구조 사서함을 만듭니다.
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
 자세한 내용은 [공용 폴더 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder)를 참조하세요.
 
@@ -147,7 +153,9 @@ Exchange 2013에서 공용 폴더 사용 권한은 RBAC(역할 기반 액세스 
 
 Exchange 2007 및 Exchange 2010에서는 특정 공용 폴더에 대한 액세스 권한을 가진 사용자를 지정할 수 있었습니다. Exchange 2013에서는 사용자별로 기본 공용 폴더 사서함을 설정할 수 있습니다. 이렇게 하려면 *DefaultPublicFolderMailbox* 매개 변수를 사용하여 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) cmdlet을 실행합니다.
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## 마스터 계층 구조가 중단되면 사용자에게 어떤 영향이 미칩니까?
 

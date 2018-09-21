@@ -139,7 +139,9 @@ EAC를 사용하여 Outlook Web App 가상 디렉터리의 속성을 보는 경�
 
 이 예에서는 Outlook Web App 조직에 클라이언트 액세스 서버 역할이 설치되어 있는 모든 컴퓨터에서 모든 IIS(인터넷 정보 서비스) 웹 사이트에 있는 모든 Exchange 가상 디렉터리의 속성을 볼 수 있습니다.
 
-    Get-OWAVirtualDirectory
+```powershell
+Get-OWAVirtualDirectory
+```
 
 이 예에서는 로컬 Outlook Web App 서버에서 기본 IIS 웹 사이트에 있는 Exchange 가상 디렉터리의 속성을 볼 수 있습니다.
 
@@ -147,11 +149,15 @@ EAC를 사용하여 Outlook Web App 가상 디렉터리의 속성을 보는 경�
 
 이 예에서는 특정 Outlook Web App 서버에서 IIS 웹 사이트에 있는 모든 Exchange 가상 디렉터리의 속성을 볼 수 있습니다.
 
-    Get-OWAVirtualDirectory -server <Exchange Server Name>
+```powershell
+Get-OWAVirtualDirectory -server <Exchange Server Name>
+```
 
 이 예에서는 Outlook Web App 조직의 모든 클라이언트 액세스 서버에서 모든 IIS 웹 사이트에 있는 각 Exchange 가상 디렉터리의 속성 값을 볼 수 있습니다.
 
-    Get-OWAVirtualDirectory | format-list
+```powershell
+Get-OWAVirtualDirectory | format-list
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/aa998588\(v=exchg.150\))를 참조하십시오.
 

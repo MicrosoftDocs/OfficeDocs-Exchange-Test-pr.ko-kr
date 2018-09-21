@@ -67,7 +67,9 @@ UM 언어와 관련된 추가 작업에 대한 자세한 내용은 [UM 언어, �
 
 이 예제에서는 설치 일본어 (JA-JP) UM 사서함 서버에서 D:\\Exchange\\UMLanguagePacks 폴더로 다운로드 된 하는 언어 팩 합니다.
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 이 예제에서는 설치 스페인어 (멕시코) (ES-MX) 및 독일어 (DE-DE) UM 사서함 서버에 있는 D:\\Exchange\\UMLanguagePacks 폴더에 다운로드 한 언어팩 합니다.
 

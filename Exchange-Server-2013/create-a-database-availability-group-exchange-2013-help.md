@@ -86,11 +86,15 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 미러링 모니터 서버 FILESRV1과 로컬 디렉터리 C:\\DAG1을 사용하도록 구성된 DAG인 DAG1을 만듭니다. 또한 DAG1은 DAG의 IP 주소에 DHCP를 사용하도록 구성됩니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```
 
 이 예에서는 DAG2라는 DAG를 만듭니다. 시스템은 사서함 서버 역할을 DAG의 미러링 모니터 서버로 포함되지 않는 로컬 Active Directory 사이트의 클라이언트 액세스 서버를 자동으로 선택합니다. 이 예에서는 모든 DAG 구성원에 동일한 서브넷의 MAPI 네트워크가 포함되므로 DAG2에는 고정 IP 주소 하나가 할당됩니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 이 예에서는 DAG3이라는 DAG를 만듭니다. DAG3은 미러링 모니터 서버 MBX2와 로컬 디렉터리 C:\\DAG3을 사용하도록 구성됩니다. DAG 구성원이 MAPI 네트워크에서 서로 다른 서브넷에 있으므로 DAG3에는 여러 개의 고정 IP 주소가 할당됩니다.
 
@@ -98,7 +102,9 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 DHCP를 사용하도록 구성된 DAG DAG4를 만듭니다. 또한 시스템에서 미러링 모니터 서버를 자동으로 선택하며 기본 감시 디렉터리가 만들어집니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG4
+```
 
 이 예에서는 관리 액세스 포인트가 포함되지 않은 DAG인 DAG5를 만듭니다. 이 방법은 Windows Server 2012 R2 DAG의 경우에만 유효합니다. 또한 MBX4를 DAG의 미러링 모니터 서버로 사용하고 기본 감시 디렉터리를 만듭니다.
 
@@ -112,7 +118,9 @@ DAG가 성공적으로 만들어졌는지 확인하려면 다음 중 하나를 �
 
   - 셸에서 다음 명령을 실행하여 DAG가 만들어졌는지, DAG 속성 정보가 표시되는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+```
 
 ## 자세한 내용
 

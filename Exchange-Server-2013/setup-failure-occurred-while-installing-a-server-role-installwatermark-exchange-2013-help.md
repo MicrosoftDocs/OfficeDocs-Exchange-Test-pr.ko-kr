@@ -33,7 +33,9 @@ Exchange 2007 설치 프로그램에서는 실패 한 서버 역할 설치를 �
 
 2.  다음 명령을 실행합니다.
     
-        Setup /roles:<Failed Server Role>
+    ```powershell
+Setup /roles:<Failed Server Role>
+```
     
     하나 이상의 쉼표로 구분 된 목록에서 다음 역할에서이 옵션을 선택 합니다.
     

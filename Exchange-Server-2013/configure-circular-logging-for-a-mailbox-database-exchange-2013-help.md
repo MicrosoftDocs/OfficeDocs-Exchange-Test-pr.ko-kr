@@ -49,11 +49,15 @@ _**마지막으로 수정된 항목:** 2014-06-24_
 
 이 예제에서는 데이터베이스 DB1에 대한 순환 로깅을 사용하도록 설정합니다.
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```
 
 이 예제에서는 데이터베이스 DB1에 대한 순환 로깅을 사용하지 않도록 설정합니다.
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```
 
 구성할 수 있는 사서함 데이터베이스 매개 변수에 대한 자세한 내용은 [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\))를 참조하세요.
 

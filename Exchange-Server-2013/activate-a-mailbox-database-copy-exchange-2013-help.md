@@ -51,31 +51,45 @@ _**마지막으로 수정된 항목:** 2012-11-01_
 
 이 예제에서는 활성화 하 고 새 활성 사서함 데이터베이스 m b x 3에서 DB4 호스트 된 데이터베이스의 복사본을 탑재 합니다. 이 명령은 DB4 새 활성 사서함 데이터베이스를 만들고 m b x 3에서 데이터베이스 탑재 다이얼 설정이 무시 하지 않습니다.
 
-    Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```
 
 사서함 서버 m b x 1 DB2 데이터베이스의 전환을 수행 하는이 예제입니다. 명령이 완료 되 면 m b x 1 d b 2의 활성 복사본을 호스트 합니다. *MountDialOverride* 매개 변수는 `None`로설정하면 때문에 m b x 1에서 자체 정의 된 데이터베이스 자동 탑재 다이얼 설정을 사용 하 여 데이터베이스를 탑재 합니다.
 
-    Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```
 
 사서함 서버 m b x 3 데이터베이스 d b 1의 전환을 수행 하는이 예제입니다. 명령이 완료 되 면 m b x 3 d b 1의 활성 복사본을 호스트 합니다. M b x 3 자동 데이터베이스 탑재를 사용 하 여 데이터베이스를 탑재 *MountDialOverride* 매개 변수는 `Good Availability`의 값으로 지정 되어 있으므로 *GoodAvailability*의 설정을 전화 접속 합니다.
 
-    Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```
 
 이 예에서는 데이터베이스 DB3을 사서함 서버 MBX4로 전환합니다. 명령을 완료하면 MBX4가 DB3의 활성 복사본을 호스트합니다. *MountDialOverride* 매개 변수를 지정하지 않았으므로 MBX4는 *Lossless*의 데이터베이스 자동 탑재 다이얼 설정을 사용하여 데이터베이스를 탑재합니다.
 
-    Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```powershell
+Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```
 
 이 예에서는 사서함 서버 MBX1에 대해 서버 전환을 수행합니다. MBX1의 모든 활성 사서함 데이터베이스 복사본이 MBX1의 양호한 활성 데이터베이스 복사본을 사용하여 하나 이상의 다른 사서함 서버에서 활성화됩니다.
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 사서함 서버 MBX5 DB4 데이터베이스의 전환을 수행 하는이 예제입니다. 이 예제에서는 MBX5에 데이터베이스 복사본에는 6 보다 큰 재생 큐 있습니다. 결과적으로, MBX5에 데이터베이스 복사본을 활성화 하려면 *SkipLagChecks* 매개 변수를 지정 합니다.
 
-    Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```powershell
+Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```
 
 사서함 서버 MBX6 DB5 데이터베이스의 전환을 수행 하는이 예제입니다. 이 예제에서는 MBX6에 데이터베이스 복사본에는 failed *ContentIndexState* 있습니다. 결과적으로, MBX6에 데이터베이스 복사본을 활성화 하려면 *SkipClientExperienceChecks* 매개 변수를 지정 합니다.
 
-    Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```powershell
+Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -85,7 +99,9 @@ _**마지막으로 수정된 항목:** 2012-11-01_
 
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 상태 정보를 표시합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 
 ## 자세한 내용
 

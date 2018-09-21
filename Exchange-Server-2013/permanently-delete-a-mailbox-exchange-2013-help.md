@@ -59,7 +59,9 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
 활성 사서함과 관련된 된 Active Directory 사용자 계정 영구적으로 삭제 하려면 다음 명령을 실행 합니다.
 
-    Remove-Mailbox -Identity <identity> -Permanent $true
+```powershell
+Remove-Mailbox -Identity <identity> -Permanent $true
+```
 
 
 > [!NOTE]
@@ -79,7 +81,9 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
 3.  Exchange 사서함 데이터베이스에서 사서함을 제거 된 성공적으로 확인 하려면 다음 명령을 실행 합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+    ```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
     
     사서함을 성공적으로 제거 하는 경우 명령은 모든 결과가 반환 되지 않습니다. 사서함 삭제 되지 않은 경우 명령은 사서함에 대 한 정보를 반환 합니다.
 
@@ -109,7 +113,9 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
 이 예에서는 일시 삭제 된 사서함 Dan 점프에 대 한 사서함 데이터베이스 m b d 01에서에서 영구적으로 삭제합니다.
 
-    Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```
 
 이 예에서는 사서함 데이터베이스 MBD01에서 일시 삭제된 모든 사서함을 영구적으로 삭제합니다.
 
@@ -121,7 +127,9 @@ _**마지막으로 수정된 항목:** 2012-11-16_
 
 연결이 끊긴된 사서함을 영구적으로 삭제 했을 때 하 고 Exchange 사서함 데이터베이스에서 성공적으로 제거 된를 확인 하려면 다음 명령을 실행 합니다.
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
 
 사서함을 성공적으로 제거 하는 경우 명령은 모든 결과가 반환 되지 않습니다. 사서함 삭제 되지 않은 경우 명령은 사서함에 대 한 정보를 반환 합니다.
 

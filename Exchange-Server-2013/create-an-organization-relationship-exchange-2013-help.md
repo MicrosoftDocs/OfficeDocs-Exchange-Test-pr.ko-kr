@@ -113,7 +113,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 조직 관계가 만들어졌는지 추가로 확인하려면 다음 셸 명령을 실행하여 조직 관계 정보를 검토합니다.
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

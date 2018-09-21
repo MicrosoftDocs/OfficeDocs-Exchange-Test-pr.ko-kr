@@ -49,11 +49,15 @@ Microsoft Exchange Server 2013에서는 SMTP 트래픽을 압축하는 WOC(WAN �
 
 다운그레이드된 Exchange Server 인증을 사용하도록 사서함 서버의 전송 서비스를 구성하려면 다음 명령을 실행합니다.
 
-    Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```
 
 이 예에서는 Mailbox01이라는 서버에서 구성을 이와 같이 변경합니다.
 
-    Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```
 
 ## 2단계: 대상 Active Directory 사이트에 대해 사서함 서버에서 전용 수신 커넥터 만들기
 
@@ -85,39 +89,53 @@ Microsoft Exchange Server 2013에서는 SMTP 트래픽을 압축하는 WOC(WAN �
 
 <!-- end list -->
 
-    New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```powershell
+New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```
 
 ## 3단계: 셸을 사용하여 전용 수신 커넥터에 대해 TLS를 사용하지 않도록 설정
 
 수신 커넥터에 대해 TLS를 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버에서 WAN이라는 수신 커넥터에 대해 TLS를 사용하지 않도록 설정합니다.
 
-    Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```
 
 ## 4단계: 셸을 사용하여 Active Directory 사이트를 허브 사이트로 지정
 
 Active Directory 사이트를 허브 사이트로 지정하려면 다음 명령을 실행합니다.
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 암호화되지 않은 트래픽에 참가하는 사서함 서버가 포함된 각 Active Directory 사이트에서 이 절차를 한 번씩 수행해야 합니다.
 
 이 예에서는 Central Office Site 1이라는 Active Directory 사이트를 허브 사이트로 구성합니다.
 
-    Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```
 
 ## 5단계: 셸을 사용하여 WAN 연결을 통과하는 최저 비용 라우팅 경로 구성
 
 Active Directory에서 IP 사이트 링크 비용을 구성하는 방법에 따라 이 단계를 수행하지 않아도 될 수 있습니다. WOC 장치가 배포된 네트워크 링크가 최저 비용 라우팅 경로에 있는지 확인해야 합니다. Active Directory 사이트 링크 비용 및 Exchange 관련 사이트 링크 비용을 확인하려면 다음 명령을 실행합니다.
 
-    Get-AdSiteLink
+```powershell
+Get-AdSiteLink
+```
 
 WOC 장치가 배포된 네트워크 링크가 최저 비용 라우팅 경로에 있지 않으면 메시지가 올바르게 라우팅되도록 Exchange 관련 비용을 특정 IP 사이트 링크에 할당해야 합니다. 이 특정 문제에 대한 자세한 내용은 [시나리오: WAN 최적화 컨트롤러를 지원 하도록 Exchange 구성](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md)의 "Exchange 관련 Active Directory 사이트 링크 비용 구성" 섹션을 참조하십시오.
 
 이 예에서는 Branch Office 2-Branch Office 1이라는 IP 사이트 링크에 대해 Exchange 관련 비용을 15로 구성합니다.
 
-    Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```powershell
+Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```
 

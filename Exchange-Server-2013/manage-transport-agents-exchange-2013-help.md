@@ -53,13 +53,17 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  클라이언트 액세스 서버에서 Windows PowerShell을 열고 다음 명령을 실행 합니다.
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+```
 
 2.  명령을 실행 하 여 설명한 것 처럼, 명령에 다음 값을 추가 하지만: `-TransportService FrontEnd`합니다.
     
     예, 클라이언트 액세스 서버의 프런트엔드 전송 서비스에 전송 에이전트를 보려면 다음 명령을 실행 합니다.
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+Get-TransportAgent -TransportService FrontEnd
+```
 
 ## 셸을 사용 하 여 전송 에이전트를 설치 하려면
 
@@ -85,11 +89,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 사용 하도록 설정 하려면 다음 구문을 사용 합니다.
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 사서함 서버의 전송 서비스에서 Contoso 전송 에이전트 라는 전송 에이전트를 설정 하는이 예제입니다.
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -99,11 +107,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 사용 하지 않도록 설정 하려면 다음 구문을 사용 하십시오.
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 이 예에서는 사서함 서버의 전송 서비스에서 Fabirkam 전송 에이전트 라는 전송 에이전트를 비활성화 합니다.
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -113,15 +125,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트의 요약 목록을 보려면 다음 명령을 실행 합니다.
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 특정 전송 에이전트의 자세한 구성을 보려면 다음 명령을 실행 합니다.
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 이 예에서는 전송 규칙 에이전트 라는 전송 에이전트의 자세한 구성을 제공 합니다.
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## 셸을 사용 하 여 전송 에이전트의 우선순위를 구성 하려면
 
@@ -129,11 +147,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 기존 전송 에이전트의 우선순위를 수정 하려면 다음 명령을 실행 합니다.
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 사서함 서버의 전송 서비스에서 Contoso 전송 에이전트 라는 기존 전송 에이전트에 대 한 3의 우선순위 에이전트 값을 설정 하는이 예제입니다.
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -145,11 +167,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 제거 하려면 다음 명령을 실행 합니다.
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 이 예에서는 사서함 서버의 전송 서비스에서 Fabrikam 전송 에이전트 라는 전송 에이전트를 제거 합니다.
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

@@ -65,11 +65,15 @@ POP3 및 IMAP4에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 I
 
 이 예제에서는 사용자 John Smith에 대해 POP3를 사용하도록 설정합니다.
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```
 
 이 예제에서는 사용자 John Smith에 대해 POP3를 사용하지 않도록 설정합니다.
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

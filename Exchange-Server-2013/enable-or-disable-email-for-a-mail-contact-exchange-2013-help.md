@@ -59,7 +59,9 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 이 예에서는 메일 연락처 Neil Black에 대한 전자 메일을 사용하지 않도록 설정합니다.
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-MailContact](https://technet.microsoft.com/ko-kr/library/aa997465\(v=exchg.150\))를 참조하십시오.
 
@@ -73,13 +75,17 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 3.  셸에서 다음 명령을 실행합니다.
     
-        Get-MailContact
+    ```powershell
+Get-MailContact
+```
     
     이 cmdlet은 메일 사용 가능한 연락처만 반환하므로 전자 메일을 사용하지 않도록 설정한 연락처는 결과에 반환되지 않습니다.
 
 4.  셸에서 다음 명령을 실행합니다.
     
-        Get-Contact
+    ```powershell
+Get-Contact
+```
     
     이 cmdlet은 모든 Active Directory 연락처 개체를 반환하므로 전자 메일을 사용하지 않도록 설정한 연락처가 결과에 반환됩니다.
 
@@ -91,7 +97,9 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 이 예에서는 연락처 Rene Valdes를 메일 사용 가능한 상태로 설정합니다. 외부 전자 메일 주소를 제공해야 합니다.
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 셸 및 CSV 파일을 사용하여 여러 개의 연락처를 메일 사용 가능 상태로 설정
 
@@ -141,5 +149,7 @@ Active Directory 연락처가 성공적으로 메일 사용 가능한 상태로 
 
   - 셸에서 다음 명령을 실행하여 새 메일 연락처에 대한 정보를 표시합니다.
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

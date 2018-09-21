@@ -59,7 +59,9 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
 
 2.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창의 프롬프트에 다음을 입력하고 Enter 키를 누릅니다.
     
-        $cred=Get-Credential
+    ```powershell
+$cred=Get-Credential
+```
 
 3.  **Windows PowerShell 자격 증명 요청** 창에서 도메인\\사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
 

@@ -47,11 +47,15 @@ Exchange 관리 셸을 사용하여 Microsoft Exchange Server 2013 사서함 서
 
 셸을 사용하여 Exchange 서버의 전송 파이프라인에 있는 전송 에이전트 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-TransportPipeline | Format-List
+```powershell
+Get-TransportPipeline | Format-List
+```
 
 C:\\My Documents\\Transport Agents.txt 텍스트 파일로 결과를 내보내려면 다음 명령을 실행합니다.
 
-    Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```powershell
+Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

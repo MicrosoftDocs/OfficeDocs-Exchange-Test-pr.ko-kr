@@ -77,7 +77,9 @@ _**마지막으로 수정된 항목:** 2014-02-24_
 
 예는 지정 된 검색 사서함으로 검색 결과 복사 하려면 *Fabrikam 조사* 라는 eDiscovery 검색을 시작 하려면 다음 명령을 실행 하는 것입니다.
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 검색 결과 예상 하려면 *EstimateOnly* 스위치를 사용 하는 경우 검색 결과 복사 하기 전에 스위치를 제거 해야 합니다. 검색 결과를 복사할 대상 검색 사서함을 지정 해야 합니다. 예는 예측 전용 검색 다음 명령을 사용 하 여 만든 가정해보십시오.
 

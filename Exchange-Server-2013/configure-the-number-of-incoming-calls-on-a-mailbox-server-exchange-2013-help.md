@@ -53,5 +53,7 @@ Microsoft Exchange 통합 메시징 서비스를 실행 중인 사서함 서버�
 
 이 예에서는 `MyMailboxServer1`이라는 사서함 서버에서 허용할 수 있는 수신 음성 통화, Outlook Voice Access 및 팩스 호출 수를 50으로 설정합니다.
 
-    Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```powershell
+Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```
 

@@ -73,7 +73,9 @@ OU에 있는 모든 받는 사람에 대해 전자 메일 주소 정책을 만�
 
 OU에 있는 받는 사람이 부서 또는 위치와 같이 필터링 기준으로 사용할 수 있는 일반 속성을 공유하지 않을 경우에는 이 예와 같이 사용자 지정 특성 중 하나에 일반 값을 넣을 수 있습니다.
 
-    Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```powershell
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```
 
 이제 다음 예와 같이 *CustomAttribute1* 속성이 SalesOU인 모든 받는 사람에 대해 전자 메일 주소 정책을 만들 수 있습니다.
 
@@ -97,7 +99,9 @@ OU에 있는 받는 사람이 부서 또는 위치와 같이 필터링 기준으
 
 이 예에서 Kweku의 사서함의 *ExtensionCustomAttribute1*은 그가 교육 강좌 MATH307, ECON202 및 ENGL300에 등록했음을 반영하여 업데이트됩니다.
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```
 
 다음으로 MATH307에 등록한 모든 학생의 동적 배포 그룹이 *RecipientFilter* 매개 변수를 사용하여 생성됩니다. 여기서 *ExtensionCustomAttribute1*은 MATH307입니다. *ExtentionCustomAttributes* 매개 변수를 사용할 때는 `-like` 연산자 대신 `-eq` 연산자를 사용할 수 있습니다.
 
@@ -105,5 +109,7 @@ OU에 있는 받는 사람이 부서 또는 위치와 같이 필터링 기준으
 
 이 예에서 Kweku의 *ExtensionCustomAttribute1* 값은 강좌 ENGL210을 추가하고 강좌 ECON202를 제거했음을 반영하여 업데이트됩니다.
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```
 

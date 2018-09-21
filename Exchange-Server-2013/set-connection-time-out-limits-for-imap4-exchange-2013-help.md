@@ -61,11 +61,15 @@ IMAP4에 대해 연결 시간 제한을 설정한 후에는 IMAP4 서비스를 �
 
 이 예에서는 인증된 유휴 연결에 대한 연결 시간 제한을 설정합니다.
 
-    Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 이 예에서는 인증되지 않은 유휴 연결에 대한 연결 시간 제한을 설정합니다.
 
-    Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 IMAP4에 대해 연결 시간 제한을 설정한 후에는 IMAP4 서비스를 다시 시작해야 설정이 적용됩니다. IMAP4 서비스를 다시 시작하는 방법에 대한 자세한 내용은 [시작 및 IMAP4 서비스를 중지 합니다.](start-and-stop-the-imap4-services-exchange-2013-help.md)를 참조하십시오.
 
@@ -89,7 +93,9 @@ IMAP4에 대해 연결 시간 제한을 설정한 후에는 IMAP4 서비스를 �
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  설정이 올바른지 확인합니다.
 

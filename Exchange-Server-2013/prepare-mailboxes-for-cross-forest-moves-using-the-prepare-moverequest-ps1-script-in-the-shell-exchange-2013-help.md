@@ -187,7 +187,9 @@ Microsoft Exchange 2013 사서함 이동 및 **New-MoveRequest** 및 **New-Migra
 
 1.  다음 명령을 실행합니다.
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *RemoteForestCredential* 매개 변수로 전달합니다.
     
@@ -211,7 +213,9 @@ Cindy@contoso.com
 
 1.  다음 명령을 실행하여 원격 포리스트 자격 증명을 가져옵니다.
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *RemoteForestCredential* 매개 변수로 전달합니다.
     
