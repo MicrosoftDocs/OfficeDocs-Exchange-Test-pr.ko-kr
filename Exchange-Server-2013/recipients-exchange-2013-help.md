@@ -275,7 +275,7 @@ Exchange에서는 다음과 같은 유형의 메일 그룹을 지원합니다.
 
   - 받는 사람 컨테이너
 
-위에서 나열된 것 이외의 받는 사람 속성을 기준으로 조건을 지정할 수도 있습니다. 이렇게 하려면 셸을 사용하여 동적 메일 그룹에 대한 사용자 지정 쿼리를 만들어야 합니다. 사용자 지정 받는 사람 필터가 있는 동적 메일 그룹의 필터 및 조건 설정은 셸을 통해서만 관리할 수 있습니다. 사용자 지정 쿼리를 사용하여 동적 메일 그룹을 만드는 방법의 예는 [동적 메일 그룹 관리](manage-dynamic-distribution-groups-exchange-2013-help.md)을 참조하십시오.
+위에서 나열된 것 이외의 받는 사람 속성을 기준으로 조건을 지정할 수도 있습니다. 이렇게 하려면 셸을 사용하여 동적 메일 그룹에 대한 사용자 지정 쿼리를 만들어야 합니다. 사용자 지정 받는 사람 필터가 있는 동적 메일 그룹의 필터 및 조건 설정은 셸을 통해서만 관리할 수 있습니다. 사용자 지정 쿼리를 사용하여 동적 메일 그룹을 만드는 방법의 예는 [동적 메일 그룹 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)을 참조하십시오.
 
 ## 메일 연락처
 
@@ -339,7 +339,7 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>Exchange 관리 센터나 Exchange 관리 셸을 사용하여 사용자 사서함을 만드는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">사용자 사서함 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">사용자 사서함 관리</a></p></td>
 <td><p>사용자 사서함을 만들고, 사서함 속성을 변경하고, 여러 사서함의 선택된 속성을 대량으로 편집하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -347,31 +347,31 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>연결된 사서함에 대한 요구 사항, 연결된 사서함을 만들고 마스터 계정에 연결하는 방법 및 연결된 사서함 속성을 변경하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-and-manage-distribution-groups-exchange-2013-help.md">메일 그룹 만들기 및 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">메일 그룹 만들기 및 관리</a></p></td>
 <td><p>메일 그룹을 만들고 관리하는 방법과 조직의 그룹 명명 정책을 만드는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">메일 사용이 가능한 보안 그룹 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">메일 사용이 가능한 보안 그룹 관리</a></p></td>
 <td><p>메일 사용 가능 보안 그룹을 만들고 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-dynamic-distribution-groups-exchange-2013-help.md">동적 메일 그룹 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">동적 메일 그룹 관리</a></p></td>
 <td><p>동적 메일 그룹을 만들고 사용자 지정 특성 및 기타 속성을 사용하여 그룹 구성원을 확인하는 등의 동적 메일 그룹 속성을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">메일 연락처 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts">메일 연락처 관리</a></p></td>
 <td><p>메일 연락처를 만들고 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-mail-users-exchange-2013-help.md">메일 사용자 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-users">메일 사용자 관리</a></p></td>
 <td><p>메일 사용자를 만들고 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">대화방 사서함 만들기 및 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-room-mailboxes">대화방 사서함 만들기 및 관리</a></p></td>
 <td><p>대화방 사서함을 만들고 되풀이 모임을 사용하도록 설정하고 예약 옵션을 구성하는 등의 대화방 사서함 속성을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-equipment-mailboxes-exchange-2013-help.md">장비 사서함 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">장비 사서함 관리</a></p></td>
 <td><p>장비 사서함을 만들고, 예약 옵션을 구성하고, 기타 사서함 속성을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -387,7 +387,7 @@ Microsoft Exchange 받는 사람은 사서함, 메일 사용자 또는 메일 �
 <td><p>명령과 함께 미리 만든 필터나 사용자 지정 필터를 사용하여 받는 사람 집합을 필터링하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-permissions-for-recipients-exchange-online-help.md">받는 사람에 대 한 사용 권한 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">받는 사람에 대 한 사용 권한 관리</a></p></td>
 <td><p>EAC 또는 셸을 사용하여 사용자 및 그룹에 사용 권한을 할당하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">

@@ -110,25 +110,25 @@ Enterprise Voice에 대 한 Microsoft Lync Server를 사용 하는 경우 통합
 
 추가, 제거 또는 확장을 변경 하는 방법에 대 한 자세한 내용은 다음 중 하나를 참조 하십시오.
 
-  - [내선 번호를 변경 합니다.](change-an-extension-number-exchange-2013-help.md)
+  - [내선 번호를 변경 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number)
 
-  - [내선 번호를 추가 합니다.](add-an-extension-number-exchange-2013-help.md)
+  - [내선 번호를 추가 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
-  - [내선 번호를 제거 합니다.](remove-an-extension-number-exchange-2013-help.md)
+  - [내선 번호를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number)
 
 SIP 주소 또는 UM 사용이 가능한 사용자에 대 한 E.164 번호를 변경 해야하는 경우 표시 됩니다.
 
-  - [SIP 주소를 추가 합니다.](add-a-sip-address-exchange-2013-help.md)
+  - [SIP 주소를 추가 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address)
 
-  - [SIP 주소를 변경 합니다.](change-a-sip-address-exchange-2013-help.md)
+  - [SIP 주소를 변경 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address)
 
-  - [SIP 주소를 제거 합니다.](remove-a-sip-address-exchange-2013-help.md)
+  - [SIP 주소를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
-  - [E.164 번호를 추가 합니다.](add-an-e-164-number-exchange-2013-help.md)
+  - [E.164 번호를 추가 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number)
 
-  - [E.164 번호 변경](change-an-e-164-number-exchange-2013-help.md)
+  - [E.164 번호 변경](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 
-  - [E.164 번호를 제거 합니다.](remove-an-e-164-number-exchange-2013-help.md)
+  - [E.164 번호를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number)
 
 ## 전화 응답
 

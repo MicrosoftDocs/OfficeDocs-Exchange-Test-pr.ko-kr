@@ -175,7 +175,7 @@ Microsoft RMS(Rights Management) 커넥터는 클라우드 기반 Microsoft RMS 
 
 이 기능에 대한 자세한 내용은
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Rights Management 커넥터](https://go.microsoft.com/fwlink/p/?linkid=330432)를 참조하세요.
 
@@ -239,9 +239,9 @@ IRM(정보 권한 관리)은 RSA에 2048비트 키와 SHA-1에 256비트 키를 
 
 Exchange 2013에서는 감사 기능이 다음과 같이 개선되었습니다.
 
-  - **감사 보고서**   EAC에 포함된 감사 기능을 통해 보고서를 실행하거나 사서함 감사 로그 및 관리자 감사 로그의 항목을 내보낼 수 있습니다. 사서함 소유자 이외의 사용자가 사서함에 액세스할 때마다 사서함 감사 로그가 기록됩니다. 따라서 사서함에 액세스한 사용자와 해당 사용자가 수행한 작업을 확인하는 데 도움이 됩니다. 관리자 감사 로그에는 관리자가 수행한 작업이 Exchange 관리 셸 cmdlet을 기반으로 기록됩니다. 따라서 구성 문제를 해결하거나 보안 또는 준수 관련 문제의 원인을 파악하는 데 도움이 됩니다. 자세한 내용은 [감사 보고서를 교환 합니다.](exchange-auditing-reports-exchange-2013-help.md)을 참조하십시오.
+  - **감사 보고서**   EAC에 포함된 감사 기능을 통해 보고서를 실행하거나 사서함 감사 로그 및 관리자 감사 로그의 항목을 내보낼 수 있습니다. 사서함 소유자 이외의 사용자가 사서함에 액세스할 때마다 사서함 감사 로그가 기록됩니다. 따라서 사서함에 액세스한 사용자와 해당 사용자가 수행한 작업을 확인하는 데 도움이 됩니다. 관리자 감사 로그에는 관리자가 수행한 작업이 Exchange 관리 셸 cmdlet을 기반으로 기록됩니다. 따라서 구성 문제를 해결하거나 보안 또는 준수 관련 문제의 원인을 파악하는 데 도움이 됩니다. 자세한 내용은 [감사 보고서를 교환 합니다.](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)을 참조하십시오.
 
-  - **관리자 감사 로그 보기** 전자 메일 메시지로 받는 경우 최대 24시간이 걸릴 수 있는 관리자 감사 로그를 내보내는 대신 EAC에서 관리자 감사 로그 항목을 볼 수 있습니다. 이렇게 하려면 **준수 관리** \> **감사**로 이동하여 **관리자 감사 로그 보기**를 클릭합니다. 여러 페이지에 항목이 1,000개까지 표시됩니다. 날짜 범위를 좁히려면 검색 범위를 지정하면 됩니다. 자세한 내용은 [관리자 감사 로그 보기](view-the-administrator-audit-log-exchange-2013-help.md)를 참조하세요.
+  - **관리자 감사 로그 보기** 전자 메일 메시지로 받는 경우 최대 24시간이 걸릴 수 있는 관리자 감사 로그를 내보내는 대신 EAC에서 관리자 감사 로그 항목을 볼 수 있습니다. 이렇게 하려면 **준수 관리** \> **감사**로 이동하여 **관리자 감사 로그 보기**를 클릭합니다. 여러 페이지에 항목이 1,000개까지 표시됩니다. 날짜 범위를 좁히려면 검색 범위를 지정하면 됩니다. 자세한 내용은 [관리자 감사 로그 보기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)를 참조하세요.
 
 ## 맬웨어 방지 보호 기능
 
@@ -269,7 +269,7 @@ Exchange 2013의 기본 제공 맬웨어 필터링 기능은 네트워크에서 
 
   - **그룹 명명 정책**   이제 관리자가 EAC를 사용하여 *그룹 명명 정책*을 만들 수 있으므로, 조직의 사용자가 만드는 메일 그룹의 이름을 표준화하고 관리할 수 있습니다. 메일 그룹을 만들 때 메일 그룹 이름에 특정 접두사와 접미사를 추가하도록 요구할 수 있으며 특정 단어를 사용하지 못하도록 차단할 수도 있습니다. 이 기능을 통해 그룹 이름에 적절하지 않은 단어를 사용할 가능성을 최소화할 수 있습니다.
     
-    자세한 내용은 [메일 그룹 명명 정책을 만들려면](create-a-distribution-group-naming-policy-exchange-2013-help.md)를 참조하십시오.
+    자세한 내용은 [메일 그룹 명명 정책을 만들려면](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)를 참조하십시오.
 
   - **메시지 추적**   관리자는 EAC를 사용하여 조직의 사용자가 보내거나 받는 전자 메일 메시지의 배달 정보를 추적할 수도 있습니다. 사서함을 선택한 후 다른 사용자가 주고받은 메시지를 검색하기만 하면 됩니다. 제목 줄에서 특정 단어를 검색하여 검색 범위를 좁힐 수 있습니다. 그 결과로 생성되는 배달 보고서는 전체 배달 과정에서 메시지를 추적하여 해당 메시지가 배달되었는지, 배달 보류 중인지 또는 배달되지 않았는지를 명시합니다.
     

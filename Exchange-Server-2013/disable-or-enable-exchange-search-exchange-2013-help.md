@@ -21,7 +21,7 @@ _**마지막으로 수정된 항목:** 2014-05-07_
 
 
 > [!WARNING]
-> Exchange 검색을 사용하지 않도록 설정하면 사용자가 온라인 모드 또는 Windows Mobile 장치에서 Outlook을 사용하여 수행하는 전체 텍스트 검색의 기능과 성능에 영향을 미칩니다.<BR><A href="in-place-ediscovery-exchange-2013-help.md">원본 위치 eDiscovery</A> 또한 Exchange 검색을 사용합니다. 사서함 데이터베이스 또는 사서함 서버에 대해 Exchange 검색을 사용하지 않도록 설정하는 경우 원본 위치 eDiscovery 검색은 데이터베이스 또는 서버에서 메시지를 반환하지 않습니다.
+> Exchange 검색을 사용하지 않도록 설정하면 사용자가 온라인 모드 또는 Windows Mobile 장치에서 Outlook을 사용하여 수행하는 전체 텍스트 검색의 기능과 성능에 영향을 미칩니다.<BR><A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">원본 위치 eDiscovery</A> 또한 Exchange 검색을 사용합니다. 사서함 데이터베이스 또는 사서함 서버에 대해 Exchange 검색을 사용하지 않도록 설정하는 경우 원본 위치 eDiscovery 검색은 데이터베이스 또는 서버에서 메시지를 반환하지 않습니다.
 
 
 

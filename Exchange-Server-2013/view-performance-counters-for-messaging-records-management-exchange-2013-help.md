@@ -19,9 +19,9 @@ _**마지막으로 수정된 항목:** 2009-12-09_
 
 선택 하 고 메시징 레코드 관리 (MRM)에 대 한 성능 카운터를 보려면 Windows 안정성 및 성능 모니터 (Perfmon.exe)를 사용할 수 있습니다. 성능 카운터를 사용 하 여 모니터링할 수 있습니다는 관리 되는 폴더 도우미가 리소스 사용량이 MRM 프로세스를 실행 하는 동안.
 
-MRM에 대 한 성능 카운터의 목록, [메시징 레코드 관리에 대 한 성능 카운터](performance-counters-for-messaging-records-management-exchange-2013-help.md)을 참조 하십시오.
+MRM에 대 한 성능 카운터의 목록, [메시징 레코드 관리에 대 한 성능 카운터](performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)을 참조 하십시오.
 
-모니터링 MRM과 관련 된 다른 작업을 찾고 있습니까? [모니터링 메시징 레코드 관리](monitoring-messaging-records-management-exchange-2013-help.md)확인할 수 있습니다.
+모니터링 MRM과 관련 된 다른 작업을 찾고 있습니까? [모니터링 메시징 레코드 관리](monitoring-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)확인할 수 있습니다.
 
 ## Windows 안정성 및 성능 모니터를 사용 하 여 MRM에 대 한 성능 카운터를 보려면
 

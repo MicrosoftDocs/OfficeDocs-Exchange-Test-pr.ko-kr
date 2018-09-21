@@ -17,13 +17,13 @@ _**적용 대상:** Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2012-10-14_
 
-[보존 정책 만들기](create-a-retention-policy-exchange-2013-help.md)
+[보존 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
-[보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
+[보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags)
 
-[사서함에 보존 정책 적용](apply-a-retention-policy-to-mailboxes-exchange-2013-help.md)
+[사서함에 보존 정책 적용](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 
 [관리 되는 폴더 도우미를 구성 합니다.](configure-the-managed-folder-assistant-exchange-2013-help.md)
 
-[사서함 보존에 원본 위치 유지](place-a-mailbox-on-retention-hold-exchange-2013-help.md)
+[사서함 보존에 원본 위치 유지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
 

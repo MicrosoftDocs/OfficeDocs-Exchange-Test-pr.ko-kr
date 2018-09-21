@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Online, Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2014-09-11_
 
-조직에서 양식을 사용하여 중요한 정보를 수집하는 경우 사용자가 외부 연락처에게 해당 양식을 전자 메일로 보내려고 시도할 수 있으며, 그러면 보안 위험이 발생합니다. Exchange의 DLP(데이터 손실 방지) 기능을 사용하면 [문서 지문](overview-of-document-fingerprinting-in-exchange.md)을 통해 해당 정보를 보호할 수 있습니다. 문서 지문을 사용하려면 지적 재산 문서, 정부 양식 또는 조직에서 사용하는 기타 표준 양식과 같은 빈 양식을 업로드하기만 하면 됩니다. 그런 다음 생성된 문서 지문을 DLP 정책 또는 전송 규칙에 추가합니다. 이 작업을 수행하는 방법은 다음과 같습니다.
+조직에서 양식을 사용하여 중요한 정보를 수집하는 경우 사용자가 외부 연락처에게 해당 양식을 전자 메일로 보내려고 시도할 수 있으며, 그러면 보안 위험이 발생합니다. Exchange의 DLP(데이터 손실 방지) 기능을 사용하면 [문서 지문](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)을 통해 해당 정보를 보호할 수 있습니다. 문서 지문을 사용하려면 지적 재산 문서, 정부 양식 또는 조직에서 사용하는 기타 표준 양식과 같은 빈 양식을 업로드하기만 하면 됩니다. 그런 다음 생성된 문서 지문을 DLP 정책 또는 전송 규칙에 추가합니다. 이 작업을 수행하는 방법은 다음과 같습니다.
 
 > [!VIDEO https://www.microsoft.com/ko-kr/videoplayer/embed/0f803e16-397a-4b83-8a85-06cd4264aaca]
 
@@ -43,7 +43,7 @@ _**마지막으로 수정된 항목:** 2014-09-11_
 
 ![강조 표시된 "다음의 경우 이 규칙 적용" 조건 강조](images/Dn635175.9355a513-a790-48eb-a61b-575ba2ecdfa6(EXCHG.150).png "강조 표시된 \"다음의 경우 이 규칙 적용\" 조건 강조")
 
-DLP 정책에 규칙을 추가하는 방법에 대한 자세한 내용은 [DLP 정책 관리](manage-dlp-policies-exchange-2013-help.md)의 "DLP 정책 변경" 섹션을 참조하세요. 전송 규칙을 수정하는 방법에 대한 자세한 내용은 [전송 규칙에 중요 한 정보 규칙 통합 (영문)](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)을 참조하세요. 새 정책을 만들려면 [템플릿에서 DLP 정책 만들기](how-to-new-dlp-data-loss-prevention-policy-template.md)를 참조하세요.
+DLP 정책에 규칙을 추가하는 방법에 대한 자세한 내용은 [DLP 정책 관리](manage-dlp-policies-exchange-2013-help.md)의 "DLP 정책 변경" 섹션을 참조하세요. 전송 규칙을 수정하는 방법에 대한 자세한 내용은 [전송 규칙에 중요 한 정보 규칙 통합 (영문)](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)을 참조하세요. 새 정책을 만들려면 [템플릿에서 DLP 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)를 참조하세요.
 
 ## 셸을 사용하여 문서 지문을 기반으로 분류 규칙 패키지 만들기
 
@@ -76,9 +76,9 @@ C:\\My Documents\\Contoso Customer Information Form.docx 파일의 문서 지문
 
 ## 자세한 내용
 
-[문서 지문](overview-of-document-fingerprinting-in-exchange.md)
+[문서 지문](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)
 
 [DLP 정책 관리](manage-dlp-policies-exchange-2013-help.md)
 
-[전송 규칙에 중요 한 정보 규칙 통합 (영문)](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[전송 규칙에 중요 한 정보 규칙 통합 (영문)](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 

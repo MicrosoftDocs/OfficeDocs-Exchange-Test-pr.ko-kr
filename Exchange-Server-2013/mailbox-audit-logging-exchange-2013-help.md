@@ -29,7 +29,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 기본적으로 사서함 감사 로그 항목은 사서함에 90일 동안 보존된 다음 삭제됩니다. [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) cmdlet과 함께 *AuditLogAgeLimit* 매개 변수를 사용하여 이 보존 기간을 수정할 수 있습니다. 사서함이 원본 위치 유지 또는 소송 보존 상태인 경우 감사 로그 항목은 사서함의 감사 로그 보존 기간에 도달할 때까지만 보존됩니다. 감사 로그 항목을 더 오랫동안 보존하려면 *AuditLogAgeLimit* 매개 변수의 값을 변경하여 보존 기간을 늘려야 합니다. 보존 기간에 도달하기 전에 감사 로그 항목을 내보낼 수도 있습니다. 자세한 내용은
 
-  - [사서함 감사 로그 내보내기](export-mailbox-audit-logs-exchange-2013-help.md)
+  - [사서함 감사 로그 내보내기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
   - [사서함 감사 로그 검색 만들기](create-a-mailbox-audit-log-search-exchange-2013-help.md)
 
@@ -159,9 +159,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - **EAC(Exchange 관리 센터)에서 감사 보고서 사용**   EAC의 **감사** 탭을 사용하여 비소유자 사서함 액세스 보고서를 실행하거나 사서함 감사 로그에서 항목을 내보낼 수 있습니다. 자세한 내용은
     
-      - [비 소유자 사서함 액세스 보고서 실행](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [비 소유자 사서함 액세스 보고서 실행](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
-      - [사서함 감사 로그 내보내기](export-mailbox-audit-logs-exchange-2013-help.md)를 참조하세요.
+      - [사서함 감사 로그 내보내기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)를 참조하세요.
 
 ## 사서함 감사 로그 항목
 
@@ -336,7 +336,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - **관리자의 사서함 액세스**   다음 시나리오에서는 관리자만 사서함에 액세스한다고 간주합니다.
     
-      - [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)를 사용하여 사서함을 검색합니다.
+      - [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)를 사용하여 사서함을 검색합니다.
     
       - [New-MailboxExportRequest](https://technet.microsoft.com/ko-kr/library/ff607299\(v=exchg.150\)) cmdlet을 사용하여 사서함을 내보냅니다.
     

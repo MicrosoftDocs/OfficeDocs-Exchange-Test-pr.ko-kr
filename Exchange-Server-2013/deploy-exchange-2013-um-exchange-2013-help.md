@@ -31,19 +31,19 @@ Post-deployment tasks for Unified Messaging
 
 통합 메시징을 배포하기 전에 다음 항목의 개념을 숙지하는 것이 좋습니다.
 
-  - [UM 다이얼 플랜](um-dial-plans-exchange-2013-help.md)
+  - [UM 다이얼 플랜](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
-  - [UM IP 게이트웨이](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP 게이트웨이](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [UM 서비스](um-services-exchange-2013-help.md)
 
-  - [UM 헌트 그룹](um-hunt-groups-exchange-2013-help.md)
+  - [UM 헌트 그룹](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)
 
-  - [자동으로 응답 한 들어오는 호출을 라우팅](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)
+  - [자동으로 응답 한 들어오는 호출을 라우팅](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
-  - [UM 사서함 정책](um-mailbox-policies-exchange-2013-help.md)
+  - [UM 사서함 정책](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)
 
-  - [사용자에 대 한 음성 메일](voice-mail-for-users-exchange-2013-help.md)
+  - [사용자에 대 한 음성 메일](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)
 
 ## 통합 메시징 배포
 
@@ -194,7 +194,7 @@ UM IP 게이트웨이는 VoIP 게이트웨이 하드웨어 장치 또는 IP PBX 
 
 UM IP 게이트웨이를 만들어 UM 다이얼 플랜에 연결하면 기본 UM 헌트 그룹이 만들어집니다. 만든 UM IP 게이트웨이의 수에 따라 또 하나의 UM 헌트 그룹을 동일한 UM IP 게이트웨이 또는 다른 UM IP 게이트웨이에 연결할 수 있습니다.
 
-UM 헌트 그룹을 만들면 UM 다이얼 플랜 내에 지정된 모든 사서함 서버가 VoIP 게이트웨이와 통신하도록 설정합니다. 자세한 내용은 [UM 헌트 그룹](um-hunt-groups-exchange-2013-help.md)을 참조하십시오.
+UM 헌트 그룹을 만들면 UM 다이얼 플랜 내에 지정된 모든 사서함 서버가 VoIP 게이트웨이와 통신하도록 설정합니다. 자세한 내용은 [UM 헌트 그룹](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)을 참조하십시오.
 
 ## UM 헌트 그룹 만들기
 
@@ -290,7 +290,7 @@ UM 다이얼 플랜을 만들 때마다 UM 사서함 정책도 만들어집니�
 
 ## 사용자가 음성 메일을 사용할 수 있도록 설정
 
-VoIP 게이트웨이 또는 IP PBX를 배포하고, 클라이언트 액세스 서버 및 사서함 서버를 설치하고, 통합 메시징에 필요한 구성 요소를 만든 후에는 사용자가 통합 메시징을 사용할 수 있도록 설정해야 합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](enable-a-user-for-voice-mail-exchange-2013-help.md)을 참조하십시오.
+VoIP 게이트웨이 또는 IP PBX를 배포하고, 클라이언트 액세스 서버 및 사서함 서버를 설치하고, 통합 메시징에 필요한 구성 요소를 만든 후에는 사용자가 통합 메시징을 사용할 수 있도록 설정해야 합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)을 참조하십시오.
 
 ## 음성 메일 보호
 
@@ -306,25 +306,25 @@ AD RMS(Active Directory Rights Management Services)를 사용하여 조직의 �
 
   - 조직의 VoIP 게이트웨이, IP PBX, 클라이언트 액세스 서버 및 사서함 서버에 필요한 인증서를 가져옵니다.
 
-  - UM 다이얼 플랜에서 VoIP 보안을 구성합니다. 자세한 내용은 [VoIP 보안 설정 구성](configure-the-voip-security-setting-exchange-2013-help.md)을 참조하십시오.
+  - UM 다이얼 플랜에서 VoIP 보안을 구성합니다. 자세한 내용은 [VoIP 보안 설정 구성](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)을 참조하십시오.
 
   - 클라이언트 액세스 서버 및 사서함 서버에서 시작 모드를 구성합니다. 자세한 내용은 [사서함 서버에서 시작 모드를 구성 합니다.](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md) 및 [클라이언트 액세스 서버에서 시작 모드를 구성 합니다.](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)을 참조하십시오.
 
-  - UM IP 게이트웨이가 포트 5061에서 수신하도록 구성합니다. 자세한 내용은 [수신 대기 포트를 구성 합니다.](configure-the-listening-port-exchange-2013-help.md)을 참조하십시오.
+  - UM IP 게이트웨이가 포트 5061에서 수신하도록 구성합니다. 자세한 내용은 [수신 대기 포트를 구성 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port)을 참조하십시오.
 
 ## UM 사용 가능 사용자에 대한 PIN 정책
 
-통합 메시징에서 PIN 정책은 UM 사서함 정책에 정의 및 구성되어 있습니다. 사용자가 통합 메시징을 사용할 수 있도록 설정한 경우 사용자를 기존 UM 사서함 정책에 연결합니다. UM 사서함 정책에 구성되어 있는 UM PIN 정책은 조직의 보안 요구 사항에 기반해야 합니다. UM 사용 가능 사용자에 대한 PIN 설정을 구성하는 방법에 대한 자세한 내용은 [Outlook Voice Access PIN 보안 설정](set-outlook-voice-access-pin-security-exchange-2013-help.md)을 참조하십시오.
+통합 메시징에서 PIN 정책은 UM 사서함 정책에 정의 및 구성되어 있습니다. 사용자가 통합 메시징을 사용할 수 있도록 설정한 경우 사용자를 기존 UM 사서함 정책에 연결합니다. UM 사서함 정책에 구성되어 있는 UM PIN 정책은 조직의 보안 요구 사항에 기반해야 합니다. UM 사용 가능 사용자에 대한 PIN 설정을 구성하는 방법에 대한 자세한 내용은 [Outlook Voice Access PIN 보안 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security)을 참조하십시오.
 
 ## 클라이언트 음성 메일 기능 설정
 
 서버 및 필요한 UM 구성 요소를 배포한 후 선택적으로 몇 가지 음성 메일 관련 기능을 구성할 수 있습니다. 자세한 내용은 다음 항목을 참조하십시오.
 
-  - [Outlook Voice Access 설정](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [Outlook Voice Access 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
-  - [음성 통화를 착신 전환 하려면 메일 사용자를 허용](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
+  - [음성 통화를 착신 전환 하려면 메일 사용자를 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 
-  - [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
   - [음성 메일 사용자가 팩스를 받을 수 있도록](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

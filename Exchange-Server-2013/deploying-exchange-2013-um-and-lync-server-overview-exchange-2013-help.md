@@ -59,7 +59,7 @@ For more information
     
 
     > [!IMPORTANT]
-    > ExchUcUtil.ps1 스크립트는 Lync 통합 시 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
+    > ExchUcUtil.ps1 스크립트는 Lync 통합 시 UM IP 게이트웨이를 하나 이상 만듭니다. 스크립트가 만들어진 한 게이트웨이를 제외한 모든 UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정해야 합니다. 또한 스크립트를 실행하기 전에 만들어진 UM IP 게이트웨이에서도 발신 전화를 사용하지 않도록 설정합니다. UM IP 게이트웨이에서 발신 전화를 사용하지 않도록 설정하려면 <A href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways">UM IP 게이트웨이에서 거는 전화를 사용 하지 않도록 설정</A>을 참조하세요.
 
 
 
@@ -134,7 +134,7 @@ Microsoft Lync Server에 대 한 자세한 내용은, [Microsoft Lync Server](ht
 
 다음 단계를 수행하여 통합 메시징이 Lync Server의 Enterprise Voice 기능과 함께 작동하도록 구성해야 합니다.
 
-1.  각각 해당하는 Lync Server 위치 프로필에 매핑되는 하나 이상의 통합 메시징 SIP URI 다이얼 플랜을 만듭니다. 각 Exchange UM 다이얼 플랜에 대해 Enterprise Voice 위치 프로필이 만들어져야 합니다. **Get-UMDialPlan** cmdlet을 사용하여 SIP URI 다이얼 플랜의 FQDN을 가져올 수 있습니다. SIP URI 다이얼 플랜을 만드는 방법에 대한 자세한 내용은 [UM 다이얼 플랜 만들기](create-a-um-dial-plan-exchange-2013-help.md) 항목을 참조하십시오.
+1.  각각 해당하는 Lync Server 위치 프로필에 매핑되는 하나 이상의 통합 메시징 SIP URI 다이얼 플랜을 만듭니다. 각 Exchange UM 다이얼 플랜에 대해 Enterprise Voice 위치 프로필이 만들어져야 합니다. **Get-UMDialPlan** cmdlet을 사용하여 SIP URI 다이얼 플랜의 FQDN을 가져올 수 있습니다. SIP URI 다이얼 플랜을 만드는 방법에 대한 자세한 내용은 [UM 다이얼 플랜 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan) 항목을 참조하십시오.
     
 
     > [!IMPORTANT]
@@ -188,9 +188,9 @@ Microsoft Lync Server에 대 한 자세한 내용은, [Microsoft Lync Server](ht
 
 5.  SIP URI 다이얼 플랜에 추가한 클라이언트 액세스 및 사서함 서버에서 시작 모드 및 TLS 수신 포트는 이중으로 설정한 다음 각 사서함 서버의 MicrosoftExchange 통합 메시징 서비스 및 각 클라이언트 서버의 MicrosoftExchange 통합 메시징 호출 라우터 서비스를 다시 시작합니다.
 
-6.  UM 자동 전화 교환을 만들고 구성합니다. 자세한 내용은 [UM 자동 전화 교환을 설정합니다](set-up-a-um-auto-attendant-exchange-2013-help.md) 항목을 참조하십시오.
+6.  UM 자동 전화 교환을 만들고 구성합니다. 자세한 내용은 [UM 자동 전화 교환을 설정합니다](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant) 항목을 참조하십시오.
 
-7.  사용자가 음성 메일을 사용할 수 있도록 설정할 때 Enterprise Voice를 사용할 사용자에 대한 SIP 주소를 만듭니다. 대부분의 경우 이 SIP 주소는 사용자가 Enterprise Voice를 사용할 수 있도록 설정할 때 사용하는 SIP 주소와 동일합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](enable-a-user-for-voice-mail-exchange-2013-help.md) 항목을 참조하십시오.
+7.  사용자가 음성 메일을 사용할 수 있도록 설정할 때 Enterprise Voice를 사용할 사용자에 대한 SIP 주소를 만듭니다. 대부분의 경우 이 SIP 주소는 사용자가 Enterprise Voice를 사용할 수 있도록 설정할 때 사용하는 SIP 주소와 동일합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail) 항목을 참조하십시오.
     
 
     > [!IMPORTANT]
@@ -202,11 +202,11 @@ Microsoft Lync Server에 대 한 자세한 내용은, [Microsoft Lync Server](ht
     
       - Lync Server 읽을 수 있는 권한을 Exchange UM Active Directory 구성 요소, 특히 이전 작업에서 만든 SIP URI 다이얼 플랜을 부여 합니다. Active Directory 에서 사용 권한을 구성 하는 방법에 대 한 자세한 내용은, [사용 권한을 적용할 하려면 ADSI 편집을 사용 하는 방법](https://go.microsoft.com/fwlink/p/?linkid=82751)을 참조 하십시오.
     
-      - 각 Lync Server 풀이나 Enterprise Voice를 사용하도록 설정할 사용자를 호스트하고 Lync Server Standard Edition을 실행하는 각 서버에 대해 UM IP 게이트웨이를 만듭니다. 자세한 내용은 [UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md) 항목을 참조하십시오.
+      - 각 Lync Server 풀이나 Enterprise Voice를 사용하도록 설정할 사용자를 호스트하고 Lync Server Standard Edition을 실행하는 각 서버에 대해 UM IP 게이트웨이를 만듭니다. 자세한 내용은 [UM IP 게이트웨이 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway) 항목을 참조하십시오.
     
       - 각 UM IP 게이트웨이에 대해 Exchange UM 헌트 그룹을 만듭니다. 헌트 그룹 파일럿 식별자는 해당하는 UM IP 게이트웨이와 연관된 다이얼 플랜의 이름이 됩니다. 헌트 그룹은 UM IP 게이트웨이에서 사용되는 UM SIP 다이얼 플랜을 지정해야 합니다.
 
-9.  사용자가 음성 메일을 사용할 수 있도록 설정합니다. 이때 사용자의 유효한 SIP 주소를 입력하고 사용자를 SIP 다이얼 플랜에 연결해야 합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](enable-a-user-for-voice-mail-exchange-2013-help.md) 항목을 참조하십시오.
+9.  사용자가 음성 메일을 사용할 수 있도록 설정합니다. 이때 사용자의 유효한 SIP 주소를 입력하고 사용자를 SIP 다이얼 플랜에 연결해야 합니다. 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail) 항목을 참조하십시오.
 
 또한 다음 작업을 수행하여 Lync Server가 통합 메시징과 함께 작동하도록 구성해야 합니다.
 

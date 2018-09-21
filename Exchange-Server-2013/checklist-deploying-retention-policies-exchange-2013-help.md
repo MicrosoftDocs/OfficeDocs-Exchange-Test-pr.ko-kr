@@ -19,9 +19,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 이 검사 목록을 사용하여 Microsoft Exchange Server 2013 조직에서 보존 정책을 배포합니다. 이 검사 목록으로 작업을 시작하기 전에 다음 항목의 개념을 익혀야 합니다.
 
-  - [메시징 레코드 관리](messaging-records-management-exchange-2013-help.md)
+  - [메시징 레코드 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-  - [보존 태그 및 보존 정책](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [보존 태그 및 보존 정책](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## 보존 정책 배포 검사 목록
 
@@ -43,7 +43,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>여러 사용자 집합에 대한 MRM(메시징 레코드 관리) 요구 사항을 평가합니다.</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">메시징 레코드 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management">메시징 레코드 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -53,27 +53,27 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <tr class="odd">
 <td><p> </p></td>
 <td><p>보존 태그를 만듭니다.</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">보존 정책 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">보존 정책 만들기</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>보존 정책을 만듭니다.</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">보존 정책 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">보존 정책 만들기</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>보존 정책에 보존 태그를 추가합니다.</p></td>
-<td><p><a href="add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md">보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags">보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>사서함을 보존 상태로 둡니다.</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">사서함 보존에 원본 위치 유지</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">사서함 보존에 원본 위치 유지</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>테스트를 위해 단일 사서함에 보존 정책을 적용합니다.</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">사서함에 보존 정책 적용</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">사서함에 보존 정책 적용</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -88,7 +88,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>추가 사서함에 보존 정책을 적용합니다.</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">사서함에 보존 정책 적용</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">사서함에 보존 정책 적용</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -98,7 +98,7 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>마감되면 사서함에서 보존 상태를 제거합니다.</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">사서함 보존에 원본 위치 유지</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">사서함 보존에 원본 위치 유지</a></p></td>
 </tr>
 </tbody>
 </table>

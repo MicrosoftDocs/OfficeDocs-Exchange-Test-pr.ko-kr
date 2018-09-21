@@ -60,7 +60,7 @@ Exchange 2013 서버에서 이 단계를 수행합니다. 이러한 절차를 �
 
 ## 3단계: 검색 관리 역할 그룹에 권한 있는 사용자 추가
 
-SharePoint 2013을 사용하여 eDiscovery 검색을 수행해야 하는 사용자를 Exchange 2013의 검색 관리 역할 그룹에 추가합니다. 자세한 내용은 [Exchange eDiscovery 사용 권한 할당](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)를 참조하십시오.
+SharePoint 2013을 사용하여 eDiscovery 검색을 수행해야 하는 사용자를 Exchange 2013의 검색 관리 역할 그룹에 추가합니다. 자세한 내용은 [Exchange eDiscovery 사용 권한 할당](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)를 참조하십시오.
 
 
 > [!WARNING]

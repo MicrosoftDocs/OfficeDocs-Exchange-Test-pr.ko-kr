@@ -41,15 +41,15 @@ Receiving faxes
 
 ## Outlook Voice Access
 
-Exchange UM에서 UM 사용 가능 사용자는 UM 다이얼 플랜에 구성된 내부 또는 외부 전화 번호로 전화를 걸어 사서함에 액세스하고 Outlook Voice Access 메뉴 시스템을 사용할 수 있습니다. UM 사용 가능 사용자는 이 메뉴를 사용하여 전자 메일 읽기, 음성 메시지 듣기, Outlook 일정 조작, 개인 연락처에 대한 액세스뿐 아니라 Outlook Voice Access PIN 구성 또는 음성 메일 인사말 녹음 등의 작업을 수행할 수 있습니다. 자세한 내용은 [Outlook Voice Access 설정](setting-up-outlook-voice-access-exchange-2013-help.md)을 참조하십시오.
+Exchange UM에서 UM 사용 가능 사용자는 UM 다이얼 플랜에 구성된 내부 또는 외부 전화 번호로 전화를 걸어 사서함에 액세스하고 Outlook Voice Access 메뉴 시스템을 사용할 수 있습니다. UM 사용 가능 사용자는 이 메뉴를 사용하여 전자 메일 읽기, 음성 메시지 듣기, Outlook 일정 조작, 개인 연락처에 대한 액세스뿐 아니라 Outlook Voice Access PIN 구성 또는 음성 메일 인사말 녹음 등의 작업을 수행할 수 있습니다. 자세한 내용은 [Outlook Voice Access 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)을 참조하십시오.
 
 ## 착신 전환
 
-UM 사용 가능 사용자는 Outlook 또는 Outlook Web App를 사용하여 전화 응답 규칙을 만들고 구성할 수 있습니다. 전화 응답 규칙을 사용하면 사용자가 수신 전화 처리 방법을 제어할 수 있습니다. 규칙은 받은 편지함 규칙이 받는 전자 메일 메시지에 적용되는 것과 유사하게 수신 전화에 적용되며, 다른 음성 설정과 함께 사용자의 사서함에 저장됩니다. UM 사용 가능한 각각의 사서함에 최대 9개의 전화 응답 규칙을 설정할 수 있습니다. 이러한 규칙은 사서함 규칙과는 별개이며 사용자의 받은 편지함 규칙 저장소 할당량 일부를 차지하지 않습니다. 자세한 내용은 [음성 통화를 착신 전환 하려면 메일 사용자를 허용](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)을 참조하십시오.
+UM 사용 가능 사용자는 Outlook 또는 Outlook Web App를 사용하여 전화 응답 규칙을 만들고 구성할 수 있습니다. 전화 응답 규칙을 사용하면 사용자가 수신 전화 처리 방법을 제어할 수 있습니다. 규칙은 받은 편지함 규칙이 받는 전자 메일 메시지에 적용되는 것과 유사하게 수신 전화에 적용되며, 다른 음성 설정과 함께 사용자의 사서함에 저장됩니다. UM 사용 가능한 각각의 사서함에 최대 9개의 전화 응답 규칙을 설정할 수 있습니다. 이러한 규칙은 사서함 규칙과는 별개이며 사용자의 받은 편지함 규칙 저장소 할당량 일부를 차지하지 않습니다. 자세한 내용은 [음성 통화를 착신 전환 하려면 메일 사용자를 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)을 참조하십시오.
 
 ## 음성 사서함 미리 보기
 
-음성 메일 미리 보기는 UM 음성 메일 시스템에서 음성 메일 메시지를 받는 사용자가 사용할 수 있는 기능입니다. 음성 메일 미리 보기는 오디오 녹음을 텍스트 버전으로 제공하여 음성 메일 환경을 향상합니다. 자세한 내용은 [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)을 참조하십시오.
+음성 메일 미리 보기는 UM 음성 메일 시스템에서 음성 메일 메시지를 받는 사용자가 사용할 수 있는 기능입니다. 음성 메일 미리 보기는 오디오 녹음을 텍스트 버전으로 제공하여 음성 메일 환경을 향상합니다. 자세한 내용은 [사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)을 참조하십시오.
 
 ## 팩스 수신
 

@@ -263,9 +263,9 @@ XML에서 신용 카드 번호 규칙 정의 찾은 했으므로 요구 사항�
 
 ## 자세한 내용
 
-  - [메시지를 평가 DLP 규칙을 적용 하는 방법](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [메시지를 평가 DLP 규칙을 적용 하는 방법](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application)
 
-  - [사용자 지정 DLP 정책 만들기](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [사용자 지정 DLP 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [Exchange의 중요 한 정보 유형 찾아보십시오](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

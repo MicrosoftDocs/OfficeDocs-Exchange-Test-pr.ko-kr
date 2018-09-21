@@ -21,17 +21,17 @@ _**마지막으로 수정된 항목:** 2012-10-12_
 
 [주소 목록 업데이트](update-an-address-list-exchange-2013-help.md)
 
-[받는 사람 필터를 사용 하 여 주소 목록 만들기](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)
+[받는 사람 필터를 사용 하 여 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
 
 [주소 목록 이동](move-an-address-list-exchange-2013-help.md)
 
 [주소 목록을 제거합니다](remove-an-address-list-exchange-2013-help.md)
 
-[전체 주소 목록 만들기](create-a-global-address-list-exchange-2013-help.md)
+[전체 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/create-global-address-list)
 
-[전체 주소 목록 속성 구성](configure-global-address-list-properties-exchange-2013-help.md)
+[전체 주소 목록 속성 구성](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/configure-global-address-list-properties)
 
-[전체 주소 목록을 제거 합니다.](remove-a-global-address-list-exchange-2013-help.md)
+[전체 주소 목록을 제거 합니다.](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/remove-a-global-address-list)
 
 [전체 주소 목록 업데이트](update-a-global-address-list-exchange-2013-help.md)
 

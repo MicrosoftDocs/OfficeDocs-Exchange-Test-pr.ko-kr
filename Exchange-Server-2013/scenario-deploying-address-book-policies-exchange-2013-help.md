@@ -205,7 +205,7 @@ Contoso 및 Humungous Insurance ABP는 다음과 같은 주소 목록, 전체 �
 
   - 글로벌 카탈로그 서버에서 Exchange 2010 클라이언트 액세스 서버 역할을 실행하지 마십시오. 그렇게 하면 Microsoft Exchange 주소록 서비스 대신 Active Directory가 NSPI(Name Service Provider Interface)에 사용됩니다. 글로벌 카탈로그 서버에서는 Exchange 2013 서버 역할을 실행할 수 있고 ABP도 정상적으로 작동하지만, 도메인 컨트롤러에 Exchange를 설치하는 것은 권장되지 않습니다.
 
-  - HAB(계층 구조 주소록)와 ABP는 동시에 사용할 수 없습니다. 자세한 내용은 [계층 구조 주소록](hierarchical-address-books-exchange-2013-help.md)를 참조하십시오.
+  - HAB(계층 구조 주소록)와 ABP는 동시에 사용할 수 없습니다. 자세한 내용은 [계층 구조 주소록](https://docs.microsoft.com/ko-kr/exchange/address-books/hierarchical-address-books/hierarchical-address-books)를 참조하십시오.
 
   - 사용자가 할당한 ABP는 사용자 고유의 GAL에 있어야 합니다.
 
@@ -267,7 +267,7 @@ ABP를 사용하고 있고 서로 다른 가상 조직의 사용자가 서로의
 
   - CustomAttributeX 특성은 조직의 사용자 지정을 위해 명시적으로 예약되어 있으며 조직 관리자만 제어할 수 있습니다.
 
-조직을 나눌 때 구현해야 할 또 다른 모범 사례는 메일 그룹 및 동적 메일 그룹의 이름에 회사 식별자를 사용하는 것입니다. Exchange에는 그룹 명명 정책 기능이 있습니다. 이 기능은 메일 그룹의 Company, StateorProvince, Title 및 CustomAttribute1~CustomAttribute15 작성자를 포함하여 메일 그룹을 만드는 사용자의 여러 특성을 기반으로 메일 그룹의 이름에 접두사나 접미사를 자동으로 추가합니다. 그룹 명명 정책은 사용자가 고유한 메일 그룹을 만들 수 있도록 허용하는 경우 특히 중요합니다. 자세한 내용은 [메일 그룹 명명 정책을 만들려면](create-a-distribution-group-naming-policy-exchange-2013-help.md)를 참조하십시오.
+조직을 나눌 때 구현해야 할 또 다른 모범 사례는 메일 그룹 및 동적 메일 그룹의 이름에 회사 식별자를 사용하는 것입니다. Exchange에는 그룹 명명 정책 기능이 있습니다. 이 기능은 메일 그룹의 Company, StateorProvince, Title 및 CustomAttribute1~CustomAttribute15 작성자를 포함하여 메일 그룹을 만드는 사용자의 여러 특성을 기반으로 메일 그룹의 이름에 접두사나 접미사를 자동으로 추가합니다. 그룹 명명 정책은 사용자가 고유한 메일 그룹을 만들 수 있도록 허용하는 경우 특히 중요합니다. 자세한 내용은 [메일 그룹 명명 정책을 만들려면](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)를 참조하십시오.
 
 동적 메일 그룹에는 그룹 명명 정책이 적용되지 않으므로 수동으로 동적 메일 그룹을 나누고 명령 정책을 적용해야 합니다.
 
@@ -289,7 +289,7 @@ ABP를 만들 때 사용자의 Outlook 또는 Outlook Web App에 주소 목록�
 
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
 
-받는 사람 필터를 사용한 주소 목록 만들기에 대한 자세한 내용은 [받는 사람 필터를 사용 하 여 주소 목록 만들기](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)를 참조하십시오.
+받는 사람 필터를 사용한 주소 목록 만들기에 대한 자세한 내용은 [받는 사람 필터를 사용 하 여 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)를 참조하십시오.
 
 ABP를 만들려면 대화방 주소 목록을 제공해야 합니다. 조직에 대화방 또는 장비 사서함 같은 리소스 사서함이 없는 경우에는 빈 대화방 주소 목록을 만드는 것이 좋습니다. 다음 예에서는 조직에 대화방 사서함이 없으므로 빈 대화방 주소 목록을 만듭니다.
 
@@ -303,7 +303,7 @@ ABP에 사용되는 전체 주소 목록은 주소 목록의 부분 집합이어
 
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
 
-자세한 내용은 [전체 주소 목록 만들기](create-a-global-address-list-exchange-2013-help.md)를 참조하십시오.
+자세한 내용은 [전체 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/create-global-address-list)를 참조하십시오.
 
 OAB를 만드는 경우 New- 또는 Set-OfflineAddressBook의 *AddressLists* 매개 변수를 제공할 때 적절한 GAL을 포함하여 항목이 예기치 않게 누락되지 않도록 할 수 있습니다. 기본적으로 사용자에게 표시되는 항목 집합을 사용자 지정하고 New/Set-OfflineAddressBook의 AddressLists에 AddressLists 목록을 지정하여 OAB의 다운로드 크기를 줄일 수 있습니다. 하지만 사용자가 OAB에서 전체 GAL 항목 집합을 볼 수 있게 하려면 AddressLists에 GAL을 포함해야 합니다.
 
@@ -311,7 +311,7 @@ OAB를 만드는 경우 New- 또는 Set-OfflineAddressBook의 *AddressLists* 매
 
     New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
-자세한 내용은 [오프 라인 주소록 만들기](create-an-offline-address-book-exchange-2013-help.md)를 참조하십시오.
+자세한 내용은 [오프 라인 주소록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/create-offline-address-book)를 참조하십시오.
 
 ## 4단계: ABP 만들기
 
@@ -319,7 +319,7 @@ OAB를 만드는 경우 New- 또는 Set-OfflineAddressBook의 *AddressLists* 매
 
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 
-자세한 내용은 [주소록 정책 만들기](create-an-address-book-policy-exchange-2013-help.md)를 참조하십시오.
+자세한 내용은 [주소록 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/create-an-address-book-policy)를 참조하십시오.
 
 ## 5단계: 사서함에 ABP 할당
 
@@ -329,5 +329,5 @@ OAB를 만드는 경우 New- 또는 Set-OfflineAddressBook의 *AddressLists* 매
 
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
 
-자세한 내용은 [메일 사용자에 게 주소록 정책 할당](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)을 참조하십시오.
+자세한 내용은 [메일 사용자에 게 주소록 정책 할당](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)을 참조하십시오.
 

@@ -61,7 +61,7 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 메일 그룹을 만들어 AD RMS 클러스터의 Super Users 그룹으로 구성한 경우에는 Exchange 2013 페더레이션 사서함을 해당 그룹의 구성원으로 추가할 수 있습니다. Super Users 그룹을 구성하지 않은 경우에는 메일 그룹과 함께 구성원인 페더레이션 사서함을 만들어야 합니다.
 
-1.  AD RMS Super Users 그룹으로만 사용할 메일 그룹을 만듭니다. 자세한 내용은 [메일 그룹 만들기 및 관리](create-and-manage-distribution-groups-exchange-2013-help.md)를 참조하십시오.
+1.  AD RMS Super Users 그룹으로만 사용할 메일 그룹을 만듭니다. 자세한 내용은 [메일 그룹 만들기 및 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)를 참조하십시오.
 
 2.  사용자 <strong>FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042</strong>를 새 메일 그룹에 추가합니다. 페더레이션 사서함은 시스템 사서함이므로 EAC에서 볼 수 없습니다. 사용자를 메일 그룹에 추가하려면 셸에서 [Add-DistributionGroupMember](https://technet.microsoft.com/ko-kr/library/bb124340\(v=exchg.150\)) cmdlet을 사용해야 합니다.
     

@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2017-03-27_
 
 ## 공용 폴더 마이그레이션에 대한 FAQ
 
-이 섹션에서는 공용 폴더 마이그레이션에 대 한 질문과 대답 합니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)또는 [마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)를 참조 하십시오.
+이 섹션에서는 공용 폴더 마이그레이션에 대 한 질문과 대답 합니다. 자세한 내용은 [마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)또는 [마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)를 참조 하십시오.
 
 ## 지원 되는 공용 폴더 마이그레이션 시나리오는 무엇입니까?
 
@@ -113,7 +113,7 @@ Outlook Web App은 지원 되지만 일부 제한 된 합니다. 추가 하 고 
 
     New-Mailbox -PublicFolder -Name <name of public folder>
 
-자세한 내용은 [공용 폴더 만들기](create-a-public-folder-exchange-2013-help.md)를 참조하세요.
+자세한 내용은 [공용 폴더 만들기](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder)를 참조하세요.
 
 ## 이전 버전의 Exchange에서는 각 사서함 데이터베이스마다 공용 폴더 데이터베이스를 지정하는 옵션이 있었습니다. 이 기능은 Exchange 2013에서 어떤 방식으로 작동합니까?
 

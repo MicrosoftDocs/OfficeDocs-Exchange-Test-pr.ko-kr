@@ -399,9 +399,9 @@ Exchange에서는 다음 목록의 우선 순위를 사용하여 Exchange 조직
 
 [Exchange Online의 원격 도메인](https://technet.microsoft.com/ko-kr/library/jj966211\(v=exchg.150\))
 
-[메일 사용자 관리](manage-mail-users-exchange-2013-help.md)
+[메일 사용자 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[메일 연락처 관리](manage-mail-contacts-exchange-2013-help.md)
+[메일 연락처 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [Outlook의 메시지 형식 변경](https://go.microsoft.com/fwlink/p/?linkid=397890)
 

@@ -61,7 +61,7 @@ Exchange Online 또는 Exchange Online Protection 의 메일 흐름 규칙의 �
 <p><strong>승인을 위해 메시지 음성 메일로 착신 전환</strong> &gt; <strong>이러한 사람에 게</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>승인 요청에서 래핑된 첨부 파일로 지정 된 중재자에 게 메시지를 전달 합니다. 자세한 내용은 <a href="common-message-approval-scenarios-exchange-2013-help.md">일반적인 메시지 승인 시나리오</a>을 참조 하십시오. 메일 그룹을 사용 하 여 중재자 수는 없습니다.</p></td>
+<td><p>승인 요청에서 래핑된 첨부 파일로 지정 된 중재자에 게 메시지를 전달 합니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">일반적인 메시지 승인 시나리오</a>을 참조 하십시오. 메일 그룹을 사용 하 여 중재자 수는 없습니다.</p></td>
 <td><p>Exchange 2010 이상</p></td>
 </tr>
 <tr class="even">
@@ -632,7 +632,7 @@ Exchange Online 또는 Exchange Online Protection 의 메일 흐름 규칙의 �
 
 ## 자세한 내용
 
-[메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
+[메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

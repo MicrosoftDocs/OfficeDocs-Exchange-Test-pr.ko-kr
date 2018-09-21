@@ -29,7 +29,7 @@ _**마지막으로 수정된 항목:** 2015-07-07_
 
 저장소 할당량은 일반적으로 데이터베이스당 별로 구성 됩니다. 즉, 해당 데이터베이스에 있는 모든 사서함에 사서함 데이터베이스에 대해 구성 된 할당량을 적용 합니다. 데이터베이스 당 사서함 설정을 관리 하는 방법에 대 한 자세한 내용은 [Exchange 2013의 사서함 데이터베이스를 관리 합니다.](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)을 참조 하십시오.
 
-이 항목에서는 사서함 데이터베이스의 저장소 설정을 사용 하는 대신 특정 사서함에 대 한 저장소 설정을 사용자 지정 하는 방법을 보여줍니다. 사용자 사서함에 관련 된 추가 관리 작업을 [사용자 사서함 관리](manage-user-mailboxes-exchange-2013-help.md)을 참조 하십시오.
+이 항목에서는 사서함 데이터베이스의 저장소 설정을 사용 하는 대신 특정 사서함에 대 한 저장소 설정을 사용자 지정 하는 방법을 보여줍니다. 사용자 사서함에 관련 된 추가 관리 작업을 [사용자 사서함 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)을 참조 하십시오.
 
 ## 시작하기 전에 알아야 할 내용
 

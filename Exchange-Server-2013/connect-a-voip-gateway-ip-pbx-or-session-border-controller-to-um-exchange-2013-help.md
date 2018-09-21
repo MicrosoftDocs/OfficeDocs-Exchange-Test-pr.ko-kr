@@ -41,15 +41,15 @@ PBX에 연결 하는 VoIP 게이트웨이 인터페이스 아날로그 있으면
 
 다음은 VoIP 게이트웨이, IP Pbx 및 Sbc를 올바르게 구성 하는데 도움이 되는 정보를 제공 하는 Exchange TechCenter에서 발견 된 자원의 목록입니다.
 
-  - **지원 되는 IP 게이트웨이, IP PBX 및 PBX 설명서** [Exchange 2013에 대 한 전화 통신 관리자](telephony-advisor-for-exchange-2013-exchange-2013-help.md) 구성 파일 및 VoIP 게이트웨이, IP Pbx, Pbx 및 Sbc를 구성할 때 사용할 수 있는 설치 정보를 포함 합니다.   
+  - **지원 되는 IP 게이트웨이, IP PBX 및 PBX 설명서** [Exchange 2013에 대 한 전화 통신 관리자](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) 구성 파일 및 VoIP 게이트웨이, IP Pbx, Pbx 및 Sbc를 구성할 때 사용할 수 있는 설치 정보를 포함 합니다.   
 
-  - **구성 및 기술 정보** [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md) 구성 파일 및 VoIP 게이트웨이, IP Pbx 및 Pbx를 구성 하는 경우 사용할 수 있는 설치 정보를 포함 합니다.   
+  - **구성 및 기술 정보** [지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) 구성 파일 및 VoIP 게이트웨이, IP Pbx 및 Pbx를 구성 하는 경우 사용할 수 있는 설치 정보를 포함 합니다.   
 
-  - **Exchange UM online에 대 한 구성 참고 사항** [지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md) 구성 파일 및 Sbc를 구성할 때 사용할 수 있는 설치 정보를 포함 합니다.   
+  - **Exchange UM online에 대 한 구성 참고 사항** [지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) 구성 파일 및 Sbc를 구성할 때 사용할 수 있는 설치 정보를 포함 합니다.   
 
 통합된 메시징 전문가 전화 통신 및 IP 기반 네트워크 장치 구성에 도움이 될 수 있습니다. 통합 메시징 전문가 레거시에서 통합 메시징에 원활 하 게 전환 방법이 또는 타사 음성 메일 시스템 또는 계획 및 Exchange 통합 메시징이 있는 새 음성 메일 시스템을 배포할 수 있는지 확인 하는 데 도움이 됩니다. 새 음성 메일 시스템 배포 또는 업그레이드 하는 레거시 하나에는 VoIP 게이트웨이, IP Pbx, Pbx 및 통합 메시징에 대 한 중요 한 지식이 필요 합니다. 통합 메시징 전문가 게 문의 하는 방법에 대 한 자세한 내용은 [Microsoft Exchange Server 2013 통합 메시징 (UM) 전문가](http://go.microsoft.com/fwlink/p/?linkid=262708) 또는 [Microsoft 적절치](https://go.microsoft.com/fwlink/p/?linkid=261951)에서 인증 된 UM 파트너를 참조 하십시오.
 
-VoIP 게이트웨이, IP PBX 또는 SBC IP 인터페이스를 구성한 후에 만들기 하 고 배포한 각 장치를 나타내려면 UM IP 게이트웨이 구성 해야 합니다. UM IP 게이트웨이를 만드는 방법에 대 한 자세한 내용은 [UM IP 게이트웨이 만들기](create-a-um-ip-gateway-exchange-2013-help.md)을 참조 하십시오.
+VoIP 게이트웨이, IP PBX 또는 SBC IP 인터페이스를 구성한 후에 만들기 하 고 배포한 각 장치를 나타내려면 UM IP 게이트웨이 구성 해야 합니다. UM IP 게이트웨이를 만드는 방법에 대 한 자세한 내용은 [UM IP 게이트웨이 만들기](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)을 참조 하십시오.
 
 UM IP 게이트웨이 만든 후에 연결 된 UM IP 게이트웨이, 클라이언트 액세스 및 사서함 서버는 VoIP 게이트웨이, IP PBX 또는 응답 인지 확인 하는 SBC 옵션 SIP 요청을 보냅니다. VoIP 게이트웨이, IP PBX 또는 SBC 응답 하지 않으면 사서함 서버 요청이 실패 하는 ID 1088 되었다는와 이벤트를 기록 합니다. 이 문제를 해결 하려면 VoIP 게이트웨이, IP PBX 또는 SBC가 사용 가능 하 고 온라인 하 고 통합 메시징 구성이 올바른지 확인 합니다.
 

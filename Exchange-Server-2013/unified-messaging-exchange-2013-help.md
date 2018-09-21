@@ -255,19 +255,19 @@ Windows PowerShell 기술을 기반으로 하는 Exchange 관리 셸은 관리 �
 <td><p>UM 언어 팩 및 언어 설정에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">Um 전화 시스템 통합</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">Um 전화 시스템 통합</a></p></td>
 <td><p>전화 통신 네트워크를 UM과 통합하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md">음성 메일 시스템 전화 네트워크에 연결</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">음성 메일 시스템 전화 네트워크에 연결</a></p></td>
 <td><p>UM 구성 요소를 사용하고 전화 통신 네트워크를 Exchange UM에 연결하도록 구성하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="automatically-answer-and-route-incoming-calls-exchange-2013-help.md">자동으로 응답 한 들어오는 호출을 라우팅</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">자동으로 응답 한 들어오는 호출을 라우팅</a></p></td>
 <td><p>UM 자동 전화 교환을 만들고 탐색 메뉴, 인사말, 업무 시간 및 업무 시간 외 시간 설정을 관리하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-voice-mail-for-users-exchange-2013-help.md">사용자에 대 한 음성 메일 설정</a></p></td>
+<td><p><a href="set-up-https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">사용자에 대 한 음성 메일 설정</a></p></td>
 <td><p>UM 사서함 정책을 만들고 관리하는 방법 및 사용자가 UM을 사용하도록 설정하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -275,7 +275,7 @@ Windows PowerShell 기술을 기반으로 하는 Exchange 관리 셸은 관리 �
 <td><p>사용자의 음성 메일 메시지 액세스 및 관리가 가능하도록 클라이언트 기능을 설정하는 방법을 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">Outlook Voice Access PIN 보안 설정</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">Outlook Voice Access PIN 보안 설정</a></p></td>
 <td><p>Outlook Voice Access 사용자에 대한 PIN 요구 사항을 설정하는 방법을 알아봅니다.</p></td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Windows PowerShell 기술을 기반으로 하는 Exchange 관리 셸은 관리 �
 <td><p>UM을 사용하여 음성 메시지를 보호하는 방법에 대해 알아봅니다.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">음성 메일 호출에 대 한 보고서 실행된</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">음성 메일 호출에 대 한 보고서 실행된</a></p></td>
 <td><p>UM 통화 보고서에 대해 알아봅니다.</p></td>
 </tr>
 </tbody>

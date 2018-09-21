@@ -168,7 +168,7 @@ Exchange 2013 백업 미디어를 사용 하 여 사서함 데이터베이스를
 </table>
 
 
-Exchange 2013 단일 항목 복구는 새 사서함 또는 Exchange 의 이전 버전에서 이동할 사서함에 대 한 기본적으로 사용 하도록 설정 되지 않습니다. 사서함에 대 한 단일 항목 복구를 사용 하도록 설정 하 고 다음을 구성 하거나 삭제 된 항목 보존 기간을 수정 하려면 Exchange 관리 셸을 사용 해야 합니다. 단일 항목 복구를 수행 하는 방법에 대 한 자세한 내용은, [사용자의 사서함에서 삭제 된 메시지를 복구 합니다.](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)을 참조 하십시오.
+Exchange 2013 단일 항목 복구는 새 사서함 또는 Exchange 의 이전 버전에서 이동할 사서함에 대 한 기본적으로 사용 하도록 설정 되지 않습니다. 사서함에 대 한 단일 항목 복구를 사용 하도록 설정 하 고 다음을 구성 하거나 삭제 된 항목 보존 기간을 수정 하려면 Exchange 관리 셸을 사용 해야 합니다. 단일 항목 복구를 수행 하는 방법에 대 한 자세한 내용은, [사용자의 사서함에서 삭제 된 메시지를 복구 합니다.](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)을 참조 하십시오.
 
 맨 위로 이동
 
@@ -220,9 +220,9 @@ Exchange 2013 및 Exchange Online 검색 관리자 원본 위치 eDiscovery와 �
 
 원본 위치 eDiscovery, 원본 위치 유지 및 소송 보존으로 설정 하는 방법에 대 한 자세한 내용은 다음 항목을 참조 합니다.
 
-  - [원본 위치 eDiscovery](in-place-ediscovery-exchange-2013-help.md)
+  - [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [원본 위치 유지 및 소송 보존](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [원본 위치 유지 및 소송 보존](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 맨 위로 이동
 

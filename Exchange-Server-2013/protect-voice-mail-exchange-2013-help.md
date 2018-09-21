@@ -243,7 +243,7 @@ Exchange 서버를 설정한 후에 IRM 배포의 끝-테스트를 수행 하려
 
 ## UM 사서함 정책
 
-UM 사용이 가능한 사서함의 컬렉션에 PIN 정책 설정, 전화를 걸 제한과 보호 된 음성 메일 설정 등의 UM 정책 설정 집합이 적용 하는 통합 메시징 사서함 정책을 만들 수 있습니다. UM 사서함 정책에 대 한 자세한 내용은, [UM 사서함 정책 관리](manage-a-um-mailbox-policy-exchange-2013-help.md)를 참조 하십시오.
+UM 사용이 가능한 사서함의 컬렉션에 PIN 정책 설정, 전화를 걸 제한과 보호 된 음성 메일 설정 등의 UM 정책 설정 집합이 적용 하는 통합 메시징 사서함 정책을 만들 수 있습니다. UM 사서함 정책에 대 한 자세한 내용은, [UM 사서함 정책 관리](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)를 참조 하십시오.
 
 EAC를 사용하거나 셸의 **Set-UMMailboxPolicy** cmdlet을 사용하여 보호된 음성 메일 옵션을 구성할 수 있습니다. 다음 표는 보호된 음성 메일에 대해 구성할 수 있는 설정을 보여줍니다.
 
@@ -293,7 +293,7 @@ EAC를 사용하거나 셸의 **Set-UMMailboxPolicy** cmdlet을 사용하여 보
 </table>
 
 
-보호된 음성 메일 설정을 관리하는 방법에 대한 자세한 내용은 [보호 된 음성 메일 절차](protected-voice-mail-procedures-exchange-2013-help.md) 또는 [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))를 참조하십시오.
+보호된 음성 메일 설정을 관리하는 방법에 대한 자세한 내용은 [보호 된 음성 메일 절차](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) 또는 [Set-UMMailboxPolicy](https://technet.microsoft.com/ko-kr/library/bb124903\(v=exchg.150\))를 참조하십시오.
 
 맨 위로 이동
 

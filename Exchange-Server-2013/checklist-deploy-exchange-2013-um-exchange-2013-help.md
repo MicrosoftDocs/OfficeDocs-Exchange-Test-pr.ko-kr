@@ -84,12 +84,12 @@ UM 및 Microsoft Lync Server를 배포하는 방법에 대한 단계별 지침�
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>조직에 필요한 수의 다이얼 플랜을 만듭니다.</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">UM 다이얼 플랜 만들기</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>다이얼 플랜 보안 설정을 구성합니다.</p></td>
-<td><p><a href="configure-the-voip-security-setting-exchange-2013-help.md">VoIP 보안 설정 구성</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">VoIP 보안 설정 구성</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -105,24 +105,24 @@ UM 및 Microsoft Lync Server를 배포하는 방법에 대한 단계별 지침�
 <tr class="odd">
 <td><p></p></td>
 <td><p>Outlook Voice Access 번호 및 기타 설정을 구성합니다.</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM 다이얼 플랜 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">UM 다이얼 플랜 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>통합 메시징의 아웃바운드 전화 걸기를 구성합니다.</p></td>
-<td><p><a href="authorize-calls-using-dialing-rules-exchange-2013-help.md">전화걸기 규칙을 사용 하 여 전화 대 한 권한 부여</a></p>
-<p><a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">사용자에 대 한 호출 다이얼 플랜에 대 한 권한 부여</a></p>
-<p><a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">사용자 그룹에 대 한 통화 권한 부여</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">전화걸기 규칙을 사용 하 여 전화 대 한 권한 부여</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">사용자에 대 한 호출 다이얼 플랜에 대 한 권한 부여</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">사용자 그룹에 대 한 통화 권한 부여</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>필요한 수의 자동 전화 교환을 만듭니다.</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환 만들기</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 자동 전화 교환 만들기</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>각 UM 자동 전화 교환을 설치 및 구성합니다.</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">UM 자동 전화 교환을 설정합니다</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">UM 자동 전화 교환을 설정합니다</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>
@@ -140,13 +140,13 @@ UM 및 Microsoft Lync Server를 배포하는 방법에 대한 단계별 지침�
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>UM 사서함 정책을 만들거나 기본 UM 사서함 정책을 구성합니다.</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">UM 사서함 정책 만들기</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">UM 사서함 정책 관리</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">UM 사서함 정책 만들기</a></p>
+<p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">UM 사서함 정책 관리</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>내선 번호 및 E.164 번호(필요한 경우)로 사용자가 통합 메시징을 사용하도록 설정합니다.</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">음성 메일에 대 한 사용자를 사용 하도록 설정</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">음성 메일에 대 한 사용자를 사용 하도록 설정</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

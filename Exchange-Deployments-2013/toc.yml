@@ -1,4 +1,4 @@
-- name: Exchange Server 2013 하이브리드 배포
+﻿- name: Exchange Server 2013 하이브리드 배포
   href: exchange-server-hybrid-deployments-exchange-2013-help.md
   items:
   - name: 하이브리드 구성 마법사
@@ -41,9 +41,9 @@
     - name: 하이브리드 배포에서 온-프레미스 및 Exchange Online 조직 간의 사서함 이동
       href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
     - name: 하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성
-      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders
     - name: 하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성
-      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders
     - name: 하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성
       href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
     - name: 하이브리드 배포에서 사용 권한을 위임 된 사서함을 지원 하도록 Exchange 구성
@@ -88,6 +88,6 @@
     href: about-exchange-documentation-exchange-2013-help.md
     items:
     - name: 장애가 있는 사용자를 위한 내게 필요한 옵션
-      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/about-exchange-documentation/accessibility
     - name: 타사 저작권 표시
       href: third-party-copyright-notices-exchange-2013-help.md

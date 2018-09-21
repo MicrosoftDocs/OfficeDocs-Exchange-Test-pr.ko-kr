@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Online, Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2015-03-09_
 
-이 개요 문서에서는 DLP(데이터 손실 방지) 정책 템플릿 파일에 대한 XML 스키마 정의의 구성 요소에 대해 설명하고 XML 형식의 정책 파일 예를 제공합니다. 이 문서는 시작하기 전에 전반적인 DLP 아키텍처와 규칙 개발 프로세스를 이해하는 데 도움이 됩니다. 자세한 내용은 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md) 및 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md) 항목을 참조하십시오.
+이 개요 문서에서는 DLP(데이터 손실 방지) 정책 템플릿 파일에 대한 XML 스키마 정의의 구성 요소에 대해 설명하고 XML 형식의 정책 파일 예를 제공합니다. 이 문서는 시작하기 전에 전반적인 DLP 아키텍처와 규칙 개발 프로세스를 이해하는 데 도움이 됩니다. 자세한 내용은 [데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) 및 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md) 항목을 참조하십시오.
 
 데이터 손실 방지 솔루션을 쉽게 적용하고 관리할 수 있도록 Microsoft Exchange Server 2013에는 DLP 정책이라고 하는 개념 모델과 정책 템플릿이 도입되었습니다. DLP 정책 템플릿은 의도한 DLP 정책에 대한 예비 디자인을 제공합니다. DLP 정책 템플릿이 유용한 템플릿이 되기 위해서는 규정이나 비즈니스 요구 사항과 같은 구체적인 정책 목표를 충족하는 데 필요한 모든 지시문과 데이터 개체를 포함해야 합니다. DLP 정책 템플릿은 환경에 따라 달라지지 않습니다. DLP 정책 템플릿은 단순히 정책에 대한 정의 또는 모델이며 제품 구성의 일부로 제공하거나 독립 소프트웨어 공급업체 또는 파트너가 공급할 수 있습니다. 반면 DLP 정책은 템플릿이 런타임에 인스턴스화된 것으로, 배포 환경마다 고유합니다. 전송 규칙을 사용하여 기존 메시징 정책 프레임워크에 다양한 DLP 정책을 통합할 수 있습니다. 전송 규칙은 DLP 솔루션의 다양한 기능을 적용하고 표현하는 데 부족함이 없을 만큼 유연합니다.
 
@@ -315,7 +315,7 @@ New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToSco
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [자체 DLP 템플릿 및 정보 유형 정의](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

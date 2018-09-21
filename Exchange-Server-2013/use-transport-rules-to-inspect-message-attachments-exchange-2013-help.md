@@ -29,17 +29,17 @@ _**마지막으로 수정된 항목:** 2015-03-27_
 
   - 사용자가 보낸 메시지와 일치하는 전송 규칙이 있는 경우 해당 사용자에게 알려 주는 알림 만들기
 
-  - 첨부 파일을 포함 하는 모든 메시지를 차단 합니다. 예제를 보려면 [일반적인 첨부 파일 차단 시나리오](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)를 참조 하십시오.
+  - 첨부 파일을 포함 하는 모든 메시지를 차단 합니다. 예제를 보려면 [일반적인 첨부 파일 차단 시나리오](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)를 참조 하십시오.
 
 Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규칙**으로 이동하여 전송 규칙을 만들 수 있습니다. 이 절차를 수행하려면 먼저 사용 권한을 할당 받아야 합니다. 새 규칙 만들기를 시작한 후에 **기타 옵션** \> **다음의 경우 이 규칙 적용**에서 **모든 첨부 파일**을 클릭하여 첨부 파일 관련 조건의 전체 목록을 표시할 수 있습니다. 첨부 파일 관련 옵션은 다음 다이어그램에 나와 있습니다.
 
 ![첨부 파일 관련 규칙을 선택하기 위한 대화 상자](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "첨부 파일 관련 규칙을 선택하기 위한 대화 상자")
 
-선택 가능한 전체 조건 및 작업을 비롯한 전송 규칙에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)을 참조하세요. EOP(Exchange Online Protection) 및 하이브리드 고객은 [EOP 구성을 위한 모범 사례](https://technet.microsoft.com/ko-kr/library/jj723164\(v=exchg.150\))에서 제공되는 전송 규칙 모범 사례를 활용할 수 있습니다. 규칙을 만들 준비가 되었으면 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하세요.
+선택 가능한 전체 조건 및 작업을 비롯한 전송 규칙에 대한 자세한 내용은 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)을 참조하세요. EOP(Exchange Online Protection) 및 하이브리드 고객은 [EOP 구성을 위한 모범 사례](https://technet.microsoft.com/ko-kr/library/jj723164\(v=exchg.150\))에서 제공되는 전송 규칙 모범 사례를 활용할 수 있습니다. 규칙을 만들 준비가 되었으면 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하세요.
 
 ## 첨부 파일 내의 콘텐츠 조사
 
-다음 표의 전송 규칙 조건을 사용하여 메시지 첨부 파일의 내용을 검사할 수 있습니다. 이러한 조건의 경우 첨부 파일의 처음 150KB만 조사됩니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)에서 규칙 만들기 또는 변경에 대해 자세히 알아보세요.
+다음 표의 전송 규칙 조건을 사용하여 메시지 첨부 파일의 내용을 검사할 수 있습니다. 이러한 조건의 경우 첨부 파일의 처음 150KB만 조사됩니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)에서 규칙 만들기 또는 변경에 대해 자세히 알아보세요.
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
 ## 첨부 파일의 파일 속성 조사
 
-다음 전송 규칙 조건은 메시지에 첨부된 파일의 속성을 조사합니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. 전송 규칙 컨텍스트 내에서 검사할 수 있는 실행 코드가 있는 지원되는 파일 형식 목록이 여기에 나와 있습니다. 규칙 만들기 또는 변경에 대한 자세한 내용은 [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)를 참조하세요.
+다음 전송 규칙 조건은 메시지에 첨부된 파일의 속성을 조사합니다. 메시지 조사 시 이러한 조건을 사용하려면 전송 규칙에 해당 조건을 추가해야 합니다. 전송 규칙 컨텍스트 내에서 검사할 수 있는 실행 코드가 있는 지원되는 파일 형식 목록이 여기에 나와 있습니다. 규칙 만들기 또는 변경에 대한 자세한 내용은 [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)를 참조하세요.
 
 
 <table>
@@ -312,11 +312,11 @@ Exchange 관리자는 **Exchange 관리 센터** \> **메일 흐름** \> **규�
 
   - 암호 번호가 보호된 파일에 들어 있지 않은 메일에 대해 수행할 작업을 정의합니다.
 
-DLP 정책 및 첨부 파일 관리 조건은 비즈니스 요구를 전송 규칙 조건, 예외 및 작업으로 정의하여 이러한 비즈니스 요구를 적용하는 데 도움이 될 수 있습니다. 중요한 정보 조사를 DLP 정책에 포함하면 메시지 첨부 파일에서 해당 정보만 조사됩니다. 그렇지만 크기 또는 파일 형식과 같은 첨부 파일 관련 조건은 이 항목에 표시된 조건을 추가해야만 포함됩니다. DLP는 모든 Exchange 버전에서 사용할 수 있습니다. 자세한 내용은 [데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)를 참조하세요.
+DLP 정책 및 첨부 파일 관리 조건은 비즈니스 요구를 전송 규칙 조건, 예외 및 작업으로 정의하여 이러한 비즈니스 요구를 적용하는 데 도움이 될 수 있습니다. 중요한 정보 조사를 DLP 정책에 포함하면 메시지 첨부 파일에서 해당 정보만 조사됩니다. 그렇지만 크기 또는 파일 형식과 같은 첨부 파일 관련 조건은 이 항목에 표시된 조건을 추가해야만 포함됩니다. DLP는 모든 Exchange 버전에서 사용할 수 있습니다. 자세한 내용은 [데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)를 참조하세요.
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [메일 흐름 또는 전송 규칙](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

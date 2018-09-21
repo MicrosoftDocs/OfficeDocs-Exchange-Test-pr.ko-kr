@@ -29,7 +29,7 @@ _**마지막으로 수정된 항목:** 2013-11-01_
 
 [사용 하도록 설정 또는 전송 암호 해독을 사용 하지 않도록 설정](enable-or-disable-transport-decryption-exchange-2013-help.md)
 
-[Exchange 검색 및 원본 위치 eDiscovery에 대 한 IRM 구성](configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md)
+[Exchange 검색 및 원본 위치 eDiscovery에 대 한 IRM 구성](configure-irm-for-exchange-search-and-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
 [저널 보고서 암호 해독을 사용 하지 않도록 설정 하거나 사용](enable-or-disable-journal-report-decryption-exchange-2013-help.md)
 

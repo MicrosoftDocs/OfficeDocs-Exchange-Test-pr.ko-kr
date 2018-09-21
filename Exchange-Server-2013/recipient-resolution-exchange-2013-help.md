@@ -104,7 +104,7 @@ Exchange에서는 주소의 이름 부분이 315자를 넘으면 전체 전자 �
 </tr>
 <tr class="even">
 <td><p>DynamicDistributionGroup</p></td>
-<td><p>Active Directory 클래스 <strong>msExchDynamicDistributionList</strong>가 있는 개체. 자세한 내용은 <a href="manage-dynamic-distribution-groups-exchange-2013-help.md">동적 메일 그룹 관리</a>를 참조하십시오.</p></td>
+<td><p>Active Directory 클래스 <strong>msExchDynamicDistributionList</strong>가 있는 개체. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">동적 메일 그룹 관리</a>를 참조하십시오.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mailbox</p></td>
@@ -112,11 +112,11 @@ Exchange에서는 주소의 이름 부분이 315자를 넘으면 전체 전자 �
 </tr>
 <tr class="even">
 <td><p>MailUser</p></td>
-<td><p>전자 메일 주소에 정의된 <em>Database</em> 매개 변수가 없는 사용자 개체. 자세한 내용은 <a href="manage-mail-users-exchange-2013-help.md">메일 사용자 관리</a>를 참조하십시오.</p></td>
+<td><p>전자 메일 주소에 정의된 <em>Database</em> 매개 변수가 없는 사용자 개체. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-users">메일 사용자 관리</a>를 참조하십시오.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MailContact</p></td>
-<td><p>전자 메일 주소가 있는 연락처 개체. 보통 메일 연락처는 Exchange 조직 외부에 있는 받는 사람에 대해 사용됩니다. 또한 크로스 포리스트 Exchange 환경에도 사용됩니다. 자세한 내용은 <a href="manage-mail-contacts-exchange-2013-help.md">메일 연락처 관리</a>를 참조하십시오.</p></td>
+<td><p>전자 메일 주소가 있는 연락처 개체. 보통 메일 연락처는 Exchange 조직 외부에 있는 받는 사람에 대해 사용됩니다. 또한 크로스 포리스트 Exchange 환경에도 사용됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts">메일 연락처 관리</a>를 참조하십시오.</p></td>
 </tr>
 <tr class="even">
 <td><p>MailPublicFolder</p></td>

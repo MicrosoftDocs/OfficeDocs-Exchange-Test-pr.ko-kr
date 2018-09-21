@@ -17,7 +17,7 @@ _**적용 대상:** Exchange Server 2013_
 
 _**마지막으로 수정된 항목:** 2015-04-07_
 
-Microsoft Exchange Server 2013에서 MRM(메시징 레코드 관리)은 보존 태그 및 보존 정책을 사용하여 수행됩니다. 보존 정책은 사서함에 적용할 수 있는 보존 태그의 그룹입니다. 자세한 내용은 [보존 태그 및 보존 정책](retention-tags-and-retention-policies-exchange-2013-help.md)을 참조하십시오. Exchange Server 2007에 도입된 MRM 기술인 관리되는 폴더는 지원되지 않습니다.
+Microsoft Exchange Server 2013에서 MRM(메시징 레코드 관리)은 보존 태그 및 보존 정책을 사용하여 수행됩니다. 보존 정책은 사서함에 적용할 수 있는 보존 태그의 그룹입니다. 자세한 내용은 [보존 태그 및 보존 정책](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)을 참조하십시오. Exchange Server 2007에 도입된 MRM 기술인 관리되는 폴더는 지원되지 않습니다.
 
 관리되는 폴더 사서함 정책이 적용된 사서함을 마이그레이션하여 보존 정책을 사용할 수 있습니다. 이렇게 하려면 사용자의 관리되는 폴더 사서함 정책에 연결된 관리되는 폴더에 해당하는 보존 태그를 만들어야 합니다.
 
@@ -29,7 +29,7 @@ Microsoft Exchange Server 2013에서 MRM(메시징 레코드 관리)은 보존 �
 
 
 > [!TIP]
-> 사서함을 보존 설정하여 보존 정책이나 관리되는 폴더 사서함 정책의 처리를 중단할 수 있습니다. 사서함을 보존 설정하면 마이그레이션 시나리오에서 새 정책 설정이 테스트 사서함이나 소량의 프로덕션 사서함에서 테스트될 때까지 이 메시지가 삭제되거나 옮겨지는 것을 방지하는 데 도움이 됩니다. 자세한 내용은 <A href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">사서함 보존에 원본 위치 유지</A>를 참조하십시오.
+> 사서함을 보존 설정하여 보존 정책이나 관리되는 폴더 사서함 정책의 처리를 중단할 수 있습니다. 사서함을 보존 설정하면 마이그레이션 시나리오에서 새 정책 설정이 테스트 사서함이나 소량의 프로덕션 사서함에서 테스트될 때까지 이 메시지가 삭제되거나 옮겨지는 것을 방지하는 데 도움이 됩니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">사서함 보존에 원본 위치 유지</A>를 참조하십시오.
 
 
 
@@ -276,7 +276,7 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 
 > [!NOTE]
-> EAC를 사용하여 수동으로 보존 태그를 만들 수도 있습니다(관리되는 폴더의 설정을 기반으로 하지 않음). 자세한 내용은 <A href="create-a-retention-policy-exchange-2013-help.md">보존 정책 만들기</A>를 참조하십시오.
+> EAC를 사용하여 수동으로 보존 태그를 만들 수도 있습니다(관리되는 폴더의 설정을 기반으로 하지 않음). 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">보존 정책 만들기</A>를 참조하십시오.
 
 
 
@@ -298,7 +298,7 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 
 > [!NOTE]
-> EAC를 사용하여 보존 정책을 만들고 보존 태그를 정책에 추가할 수도 있습니다. 자세한 내용은 <A href="create-a-retention-policy-exchange-2013-help.md">보존 정책 만들기</A>를 참조하십시오.
+> EAC를 사용하여 보존 정책을 만들고 보존 태그를 정책에 추가할 수도 있습니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">보존 정책 만들기</A>를 참조하십시오.
 
 
 
@@ -322,7 +322,7 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 
 > [!NOTE]
-> EAC를 사용하여 보존 정책을 사용자에게 적용할 수도 있습니다. 자세한 내용은 <A href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">사서함에 보존 정책 적용</A>을 참조하십시오.
+> EAC를 사용하여 보존 정책을 사용자에게 적용할 수도 있습니다. 자세한 내용은 <A href="https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">사서함에 보존 정책 적용</A>을 참조하십시오.
 
 
 

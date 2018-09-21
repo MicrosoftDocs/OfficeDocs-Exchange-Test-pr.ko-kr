@@ -23,7 +23,7 @@ _**마지막으로 수정된 항목:** 2012-10-16_
 
   - 조직 외부에 있는 구성원 수
 
-그룹 메트릭 데이터는 Microsoft Exchange Server 2013에서 메일 설명을 지원하는 데 사용됩니다. 메일 설명은 보낸 사람이 메시지를 작성할 때 표시되는 정보 메시지입니다. Exchange 2013에서 사용 가능한 메일 설명의 전체 목록을 포함하여 메일 설명에 대한 자세한 내용은 [MailTips](mailtips-exchange-2013-help.md) 항목을 참조하십시오.
+그룹 메트릭 데이터는 Microsoft Exchange Server 2013에서 메일 설명을 지원하는 데 사용됩니다. 메일 설명은 보낸 사람이 메시지를 작성할 때 표시되는 정보 메시지입니다. Exchange 2013에서 사용 가능한 메일 설명의 전체 목록을 포함하여 메일 설명에 대한 자세한 내용은 [MailTips](https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips) 항목을 참조하십시오.
 
 그룹 메트릭 데이터는 다음과 같은 메일 설명에 사용됩니다.
 

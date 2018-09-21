@@ -19,9 +19,9 @@ _**마지막으로 수정된 항목:** 2013-04-17_
 
 [UM 언어 팩 설치](install-a-um-language-pack-exchange-2013-help.md)
 
-[다이얼 플랜에 기본 언어 설정](set-the-default-language-on-a-dial-plan-exchange-2013-help.md)
+[다이얼 플랜에 기본 언어 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[자동 전화 교환에 대 한 언어를 선택 합니다.](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[자동 전화 교환에 대 한 언어를 선택 합니다.](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language)
 
 [UM 언어팩 제거](remove-a-um-language-pack-exchange-2013-help.md)
 
@@ -29,5 +29,5 @@ _**마지막으로 수정된 항목:** 2013-04-17_
 
 [Exchange 2013을 Exchange 2007에서 사용자 지정 음성 안내 가져오기](import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)
 
-[전화 사용자 인터페이스를 사용 하 여 사용자 지정 프롬프트 기록 사용](enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md)
+[전화 사용자 인터페이스를 사용 하 여 사용자 지정 프롬프트 기록 사용](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
 

@@ -59,7 +59,7 @@ Microsoft에서 정의한 특정 XML 스키마 정의를 준수하는 Exchange�
 
   -  [Exchange Online에서 흐름 규칙 (전송 규칙) 메일](https://technet.microsoft.com/ko-kr/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  [메일 흐름 규칙 관리](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [메일 흐름 규칙 관리](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
     
   -  [정책 및 규정 준수 Cmdlet](https://technet.microsoft.com/ko-kr/library/dd298082\(v=exchg.150\))
 
@@ -67,11 +67,11 @@ Microsoft에서 정의한 특정 XML 스키마 정의를 준수하는 Exchange�
 
 Microsoft에서는 매우 다양한 DLP 정책을 제공하고 있습니다. 이러한 DLP 정책을 사용하면 가장 쉽게 유연하면서도 구현하기 쉬운 DLP 솔루션을 시작할 수 있습니다. 언제든 제공된 정책을 시작점으로 사용하여 이를 요구 사항에 맞도록 사용자 지정할 수 있습니다. 시작하려면 다음 정보를 참조하십시오.
 
-  - [Exchange에서 제공 하는 DLP 정책 템플릿](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
+  - [Exchange에서 제공 하는 DLP 정책 템플릿](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/dlp-policy-templates)
 
-  - [템플릿에서 DLP 정책 만들기](how-to-new-dlp-data-loss-prevention-policy-template.md)
+  - [템플릿에서 DLP 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 ## 자세한 내용
 
-[데이터 손실 방지](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[데이터 손실 방지](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

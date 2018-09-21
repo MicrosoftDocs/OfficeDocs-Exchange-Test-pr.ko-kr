@@ -21,11 +21,11 @@ _<strong>마지막으로 수정된 항목:</strong>2016-12-15_
 
 하이브리드 배포에서 Exchange Online, 온-프레미스, 또는 둘 모두에 사용자 수 하 고 공용 폴더는 하거나 Exchange Online 또는 온-프레미스. 경우에 따라 온라인 사용자가 Exchange Server 2013 온-프레미스 환경에서 공용 폴더에 액세스 해야 합니다. 마찬가지로, Exchange 2013 사용자가 Office 365 또는 Exchange Online에 공용 폴더에 액세스 해야 합니다.
 
-이 문서에서는 Exchange 2013 온-프레미스 환경에서 사용자가 Exchange Online/Office 365 공용 폴더에 액세스할 수 있도록 하는 방법에 설명 합니다. Exchange Online/Office 365 사용자가 온-프레미스 Exchange 2013 공용 폴더에 액세스할 수 있도록 [하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)를 참조 하십시오.
+이 문서에서는 Exchange 2013 온-프레미스 환경에서 사용자가 Exchange Online/Office 365 공용 폴더에 액세스할 수 있도록 하는 방법에 설명 합니다. Exchange Online/Office 365 사용자가 온-프레미스 Exchange 2013 공용 폴더에 액세스할 수 있도록 [하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)를 참조 하십시오.
 
 
 > [!NOTE]
-> Exchange 2010 또는 Exchange 2007 공용 폴더를 사용 하는 경우 <A href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성</A>를 참조 하십시오.
+> Exchange 2010 또는 Exchange 2007 공용 폴더를 사용 하는 경우 <A href="https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">하이브리드 배포용으로 레거시 온-프레미스 공용 폴더 구성</A>를 참조 하십시오.
 
 
 
