@@ -756,14 +756,14 @@
           - name: 관리 되는 폴더에서 마이그레이션
             href: migrate-from-managed-folders-exchange-2013-help.md
           - name: 메시징 레코드 관리를 일시 중단 또는 해제
-            href: turn-off-or-suspend-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
       - name: 모니터링 메시징 레코드 관리
-        href: monitoring-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+        href: monitoring-messaging-records-management-exchange-2013-help.md
         items:
         - name: 메시징 레코드 관리에 대 한 성능 카운터 보기
-          href: view-performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: 메시징 레코드 관리에 대 한 성능 카운터
-          href: performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: 메시징 레코드 관리 오류 및 이벤트
           href: messaging-records-management-errors-and-events-exchange-2013-help.md
     - name: 저널링
@@ -1415,7 +1415,7 @@
       href: https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: '시나리오: 주소록 정책 배포'
-        href: scenario-deploying-https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
       - name: 주소 주소록 정책 절차
         href: address-book-policy-procedures-exchange-2013-help.md
         items:
@@ -1688,7 +1688,7 @@
       href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: 사용 또는 사용 안함 메일 설명
-        href: enable-or-disable-https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: 조직에 대 한 큰 대상 그룹 크기를 구성 합니다.
         href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 받는 사람에 대해 사용자 지정 메일 설명 구성
@@ -1699,7 +1699,7 @@
         - name: 조직 관계에 대 한 메일 설명 관리
           href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: 그룹 메트릭 및 메일 설명
-        href: group-metrics-and-https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: 그룹 메트릭 구성
           href: configure-group-metrics-exchange-2013-help.md
@@ -1977,7 +1977,7 @@
         - name: 유사한 이름을 가진 사용자에 대 한 자동 전화 교환을 구성합니다
           href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
     - name: 사용자에 대 한 음성 메일 설정
-      href: set-up-https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
+      href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail
       items:
       - name: UM 사서함 정책
         href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
