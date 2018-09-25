@@ -47,7 +47,9 @@ ABP와 관련된 추가 관리 작업에 대한 자세한 내용은 [주소 주�
 
 다음 명령을 실행하여 ABP 라우팅 에이전트를 설치합니다. 정확히 아래 명령과 구문을 사용해야 합니다.
 
-    Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```powershell
+Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```
 
 변경 내용을 적용하려면 전송 서비스를 다시 시작해야 한다는 경고가 표시되지만, 2단계를 먼저 수행하면 전송 서비스를 한 번만 다시 시작하면 됩니다.
 
@@ -72,14 +74,14 @@ Enable-TransportAgent "ABP Routing Agent"
 1.  다음 명령을 실행하여 전송 서비스를 다시 시작합니다.
     
     ```powershell
-Restart-Service MSExchangeTransport
-```
+    Restart-Service MSExchangeTransport
+    ```
 
 2.  서비스를 다시 시작한 후 다음 cmdlet을 실행하여 ABP 라우팅 에이전트가 설치되었으며 사용하도록 설정되었는지 확인합니다.
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
     
     목록에 ABP 라우팅 에이전트가 표시되면 에이전트가 올바르게 설치된 것입니다.
 

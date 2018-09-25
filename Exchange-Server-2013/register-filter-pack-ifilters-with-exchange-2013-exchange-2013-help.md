@@ -78,8 +78,8 @@ Office 2010 Filter Pack 배포는 두 가지 주요 단계로 구성됩니다.
 3.  레지스트리 편집기를 시작하여 다음 레지스트리 하위 키를 찾습니다.
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 4.  **CLSID**에서 OneNote 파일에 대한 하위 키를 다음과 같이 추가합니다.
     
@@ -108,8 +108,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 6.  레지스트리 키
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 7.  **필터**에서 .one 확장명에 대한 하위 키를 다음과 같이 추가합니다.
     
@@ -182,8 +182,8 @@ Microsoft Office 2010 Filter Pack IFilter를 성공적으로 등록했는지 확
 2.  레지스트리 편집기를 시작하여 다음 하위 키를 찾습니다.
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 3.  **CLSID**에서 PDF 파일에 대한 하위 키를 다음과 같이 추가합니다.
     
@@ -201,8 +201,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 4.  레지스트리 키
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 5.  **필터**에서 .pdf 확장명에 대한 하위 키를 다음과 같이 추가합니다.
     

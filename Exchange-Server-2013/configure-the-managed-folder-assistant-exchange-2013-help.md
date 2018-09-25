@@ -57,7 +57,9 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 
 이 명령은 조직에서 모든 사서함 서버를 검색 하 고 표 형식에서 각 서버에서의 관리 되는 폴더 도우미의 작업 사이클을 새로 속성을 출력 합니다. *Auto* 스위치는 열 너비에 맞게 자동으로 사용 됩니다.
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```powershell
+Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```
 
 ## 셸을 사용 하 여 관리 되는 폴더 도우미를 시작 하려면
 

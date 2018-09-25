@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# 데이터베이스 사용 가능 그룹 모니터링
-
- 
+# 데이터베이스 사용 가능 그룹 모니터링 
 
 _**적용 대상:** Exchange Server 2013_
 
@@ -369,13 +367,17 @@ Exchange 2013에는 CollectOverMetrics.ps1이라는 스크립트가 있고 이�
 
 다음 예에서는 DAG DAG1에서 DB\*(와일드카드 문자 포함)가 일치하는 모든 데이터베이스의 메트릭을 수집합니다. 메트릭이 수집되면 HTML 보고서가 생성되고 표시됩니다.
 
+```powershell
     CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+```
 
 다음 예에서는 요약 HTML 보고서가 필터링될 수 있는 방법을 나타냅니다. 첫 번째 방법은 데이터베이스 이름의 목록을 가져오는 *Database* 매개 변수를 사용하는 것입니다. 요약 보고서에는 이들 데이터베이스에 대한 데이터만이 포함됩니다. 다음 두 예에서는 *ReportFilter* 옵션을 사용합니다. 마지막 예에서는 모든 기본 데이터베이스를 필터링합니다.
 
+```powershell
     CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
     CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
     CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+```
 
 ## CollectReplicationMetrics.ps1 스크립트
 
@@ -462,5 +464,6 @@ CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:
 
 다음 예에서는 CounterData\*와 일치하는 모든 파일에서 데이터를 읽은 다음 요약 보고서를 생성합니다.
 
-    CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
-
+```powershell
+CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
+```

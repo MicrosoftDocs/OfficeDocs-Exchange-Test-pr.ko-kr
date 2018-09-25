@@ -964,7 +964,9 @@ Exchange 2013 여러 미리 정의 된 상대 쓰기 관리 역할의 범위를 
 
 데이터베이스 범위 Microsoft Exchange 2010 서비스 팩 1 (SP1)에서 처음으로 도입 하 고 계속 Exchange 2013 에서 지원 됩니다. 버전 Exchange 2010 SP1 하기 전에 Exchange 받는 사람 범위 및 서버 구성 범위를 지원 합니다. Exchange 2010 SP1 또는 이상 서버에 새 데이터베이스 범위를 만들 때 다음과 같은 경고가 표시 됩니다.
 
-    WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```powershell
+WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```
 
 데이터베이스 범위를 만들 때만 Exchange 2010 s p 1을 실행 하는 서버에 연결 하는 사용자에 게 적용 되 이상입니다. 사전Exchange 2010 SP1 서버에 연결 하는 사용자는 자신에 게 적용 되는 데이터베이스 범위와 관련 된 모든 역할 할당을이 없습니다. 즉, 이러한 역할 할당에서 제공 하는 사용 권한을 모두 서버 사전Exchange 2010 s p 1에 연결할 때 사용자에 게 부여 되지 않습니다. 데이터베이스 범위 없습니다 수, 제거, 수정, 만들거나 사전Exchange 2010 SP1 서버에서 볼 합니다.
 

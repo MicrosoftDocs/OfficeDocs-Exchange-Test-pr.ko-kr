@@ -64,12 +64,14 @@ _**마지막으로 수정된 항목:** 2012-10-09_
 1.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  다음 구문을 사용하여 연결된 역할 그룹을 만듭니다.
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```
 
 3.  외부 Active Directory 포리스트에 있는 컴퓨터에서 Active Directory 사용자 및 컴퓨터를 사용하여 외부 USG에 대해 구성원을 추가하거나 제거합니다.
 
@@ -87,9 +89,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
-
 ## 셸을 사용하여 사용자 지정 관리 범위로 연결된 역할 그룹 만들기
 
 사용자 지정 받는 사람 관리 범위, 사용자 지정 구성 관리 범위 또는 둘 다를 지정하여 연결된 역할 그룹을 만들 수 있습니다. 연결된 역할 그룹을 만들고 사용자 지정 범위로 연결된 역할 그룹에 관리 역할을 할당하려면 다음을 수행합니다.
@@ -97,13 +98,13 @@ $ForeignCredential = Get-Credential
 1.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
-
+    $ForeignCredential = Get-Credential
+    ```
 2.  다음 구문을 사용하여 연결된 역할 그룹을 만듭니다.
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -CustomConfigWriteScope <name of configuration scope> -CustomRecipientWriteScope <name of recipient scope> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
-
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -CustomConfigWriteScope <name of configuration scope> -CustomRecipientWriteScope <name of recipient scope> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```
 3.  외부 Active Directory 포리스트에 있는 컴퓨터에서 Active Directory 사용자 및 컴퓨터를 사용하여 외부 USG에 대해 구성원을 추가하거나 제거합니다.
 
 이 예에서는 다음을 수행합니다.
@@ -120,9 +121,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
-
 관리 범위에 대한 자세한 내용은 [관리 역할 범위 이해 (영문)](understanding-management-role-scopes-exchange-2013-help.md)를 참조하십시오.
 
 ## 셸을 사용하여 OU 범위로 연결된 역할 그룹 만들기
@@ -132,13 +132,14 @@ OU 받는 사람 범위를 사용하는 연결된 역할 그룹을 만들 수 �
 1.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  다음 구문을 사용하여 연결된 역할 그룹을 만듭니다.
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
-
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
+    ```
 3.  외부 Active Directory 포리스트에 있는 컴퓨터에서 Active Directory 사용자 및 컴퓨터를 사용하여 외부 USG에 대해 구성원을 추가하거나 제거합니다.
 
 이 예에서는 다음을 수행합니다.
@@ -155,9 +156,8 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
 ```
-    New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
-
 관리 범위에 대한 자세한 내용은 [관리 역할 범위 이해 (영문)](understanding-management-role-scopes-exchange-2013-help.md)를 참조하십시오.
 
 ## 연결 된 역할 그룹에 있는 외부 USG를 변경 합니다.
@@ -169,13 +169,14 @@ $ForeignCredential = Get-Credential
 1.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  다음 구문을 사용 하 여 기존 연결 된 역할 그룹에 있는 외부 USG를 변경 합니다.
     
-        Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential 
-
+    ```powershell
+    Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential
+    ```
 이 예에서는 다음을 수행합니다.
 
   - users.contoso.com 외부 Active Directory 포리스트의 자격 증명을 검색합니다. 이 자격 증명은 외부 포리스트의 DC01.users.contoso.com 도메인 컨트롤러에 연결하는 데 사용됩니다.
@@ -186,6 +187,5 @@ $ForeignCredential = Get-Credential
 
 ```powershell
 $ForeignCredential = Get-Credential
+Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
 ```
-    Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
-

@@ -88,7 +88,7 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -112,18 +112,20 @@ Exchange 2003에서 직접 공용 폴더를 마이그레이션할 수 없습니�
       - 원래 원본 폴더 구조의 스냅숏을 하려면 다음 명령을 실행 합니다.
         
         ```powershell
-Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
-```
+        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```
     
       - 항목 수, 크기 및 소유자와 같은 공용 폴더 통계에 대 한 스냅숏을 하려면 다음 명령을 실행 합니다.
         
         ```powershell
-Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
-```
+        Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```
     
       - 하 여 사용 권한의 스냅숏을 다음 명령을 실행 합니다.
         
-            Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+        ```powershell
+        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+        ```
     
     마이그레이션이 완료된 후 비교를 위해 이전 명령의 정보를 저장합니다.
 
@@ -131,33 +133,37 @@ Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xm
     
     1.  Exchange 2010에서 이름에 백슬래시가 있는 공용 폴더를 찾으려면 다음 명령을 실행합니다.
         
-            Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
+        ```powershell
+        Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
+        ```
     
     2.  Exchange 2007에서 이름에 백슬래시가 있는 공용 폴더를 찾으려면 다음 명령을 실행합니다.
         
-            Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
+        ```powershell
+        Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
+        ```
     
     3.  공용 폴더가 반환되면 다음 명령을 실행하여 이름을 바꿀 수 있습니다.
         
         ```powershell
-Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
-```
+        Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```
 
 3.  다음과 같은 성공적인 마이그레이션의 이전 레코드를 있지 않은지 확인 합니다.
     
     1.  다음 예에서는 공용 폴더 마이그레이션 상태를 확인합니다.
         
         ```powershell
-Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
-```
+        Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```
         
         이전 성공적인 마이그레이션이 되었으면, *PublicFoldersLockedforMigration* 또는 *PublicFolderMigrationComplete* 속성의 값은 `$true`합니다. `$false`에 값을 설정 하려면 3b 단계에서에서 명령을 사용 합니다. 값 `$true`로설정하면 마이그레이션 요청이 실패 합니다.
     
     2.  *PublicFoldersLockedforMigration* 또는 *PublicFolderMigrationComplete* 속성의 상태가 `$true`인 경우 다음 명령을 실행하여 값을 `$false`로 설정합니다.
         
         ```powershell
-Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
-```
+        Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```
     
     > [!CAUTION]
     > 이러한 속성을 다시 설정한 후 새로운 설정을 감지 하는 Exchange에 대 한 대기 해야 합니다. 이 완료 하려면 두 시간까지 걸릴 수 있습니다.
@@ -192,52 +198,56 @@ Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigr
     
     다음 예제에서는 기존 직렬 마이그레이션 요청을 모두 검색 합니다.
     
-        Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    ```powershell
+    Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    ```
     
     다음 예제에서는 기존 공용 폴더 직렬 마이그레이션 요청을 모두 제거합니다.
     
     ```powershell
-Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-```
+    Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```
     
     다음 예제에서는 기존 일괄 마이그레이션 요청을 모두 검색 합니다.
     
-        $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    ```powershell
+    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    ```
     
     다음 예제에서는 기존 공용 폴더 일괄 마이그레이션 요청을 모두 제거합니다.
     
     ```powershell
-$batch | Remove-MigrationBatch -Confirm:$false
-```
+    $batch | Remove-MigrationBatch -Confirm:$false
+    ```
 
 2.  없는 공용 폴더 또는 공용 폴더 사서함이 Exchange 2013 서버에 존재 하는지 확인 합니다.
     
     1.  공용 폴더 사서함이 있는지 확인 하려면 다음 명령을 실행 합니다.
         
-            Get-Mailbox -PublicFolder 
+        ```powershell
+        Get-Mailbox -PublicFolder 
+        ```
     
     2.  이 명령은 모든 공용 폴더 사서함을 반환 하지 않았으므로, 하는 경우를 계속 받을 3 단계:.csv 파일 생성합니다. 명령은 모든 공용 폴더를 반환 하는 경우에 공용 폴더가 있는지 확인 하려면 다음 명령을 실행 합니다.
         
         ```powershell
-Get-PublicFolder
-```
+        Get-PublicFolder
+        ```
     
     3.  공용 폴더가 있으면 다음 PowerShell 명령을 사용하여해당 폴더를 제거를 실행 합니다. 공용 폴더에 있던 모든 정보를 저장 하면 있는지 확인 하십시오.
         
 
-        > [!NOTE]
+        > [!NOTE]  
         > 공용 폴더에 포함 된 정보를 모두 제거 하면 영구적으로 삭제 됩니다.
-
         
-        ```
+        ```powershell
         Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
 
+        ```powershell
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
-    ```powershell
-Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-```
-        ```
+    
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하세요.
 
@@ -263,7 +273,9 @@ Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
 
 1.  레거시 Exchange 서버에서 폴더 이름-폴더 크기 매핑 파일을 만드는 `Export-PublicFolderStatistics.ps1` 스크립트를 실행 합니다. 이 스크립트는 로컬 관리자가 실행 해야 합니다. 파일 두 열이 포함 되어: **FolderName** 및 **FolderSize** 합니다. 바이트에서 **FolderSize** 열에 대 한 값을 표시 됩니다. 예: **\\PublicFolder01,10000** 합니다.
     
-        .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    ```powershell
+    .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    ```
     
       - *FQDN of source server*는 공용 폴더 계층이 호스트되는 사서함 서버의 정규화된 도메인 이름과 같습니다.
     
@@ -272,11 +284,12 @@ Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
 2.  공용 폴더와 사서함 매핑 파일을 만들려면 `PublicFolderToMailboxMapGenerator.ps1` 스크립트를 실행 합니다. 이 파일은 Exchange 2013 사서함 서버에서 공용 폴더 사서함의 올바른 수를 계산 하는데 사용 됩니다.
     
 
-    > [!NOTE] 
+    > [!NOTE]   
     > **\\** 백슬래시를 포함 하는 공용 폴더의 이름, 공용 폴더의 상위 공용 폴더에 만들어집니다. .Csv 파일을 검토 하 고 백슬래시를 포함 하는 이름을 편집 하는 것이 좋습니다.
 
-    
-        .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    ```powershell
+    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    ```
     
       - *Maximum mailbox size in bytes* 새 공용 폴더 사서함에 설정할 최대 크기를 같습니다. 이 설정을 지정 하는 경우에 공용 폴더 사서함이 커질 공간을 있도록 확장을 허용 해야 합니다.
     
@@ -288,7 +301,9 @@ Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
 
 1.  대상 공용 폴더 사서함을 만들려면 다음 명령을 실행합니다. 이 스크립트를 실행하면 이전에 3단계에서 PublicFoldertoMailboxMapGenerator.ps1 스크립트를 실행하여 생성한 .csv 파일에 각 사서함의 대상 사서함이 만들어집니다.
     
+       ```powershell
         .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
+       ```
     
     *Mapping.csv*는 3단계에서 PublicFoldertoMailboxMapGenerator.ps1 스크립트에 의해 생성된 파일입니다. 공용 폴더 계층 구조를 검색하는 예상 동시 사용자 연결 수가 일반적으로 조직의 전체 사용자 수보다 작습니다.
 
@@ -300,43 +315,45 @@ Exchange 2007 공용 폴더 마이그레이션에 대 한 단계는 Exchange 201
 > [!TIP]
 > 일괄 마이그레이션 요청 적절 한 cmdlet을 사용 하 여 만든 후에 Exchange 2007 또는 Exchange 2010에서 마이그레이션, 있는지 여부를 있습니다는 요청을 보려면 하 고 수 EAC에서이 관리 합니다.
 
-
-
 **Exchange 2007 공용 폴더 마이그레이션**
 
 1.  예: OWAScratchPad 및 스키마 루트 폴더 하위 트리 레거시 시스템 공용 폴더 Exchange 2007 Exchange 2013에서 인식할 수 없습니다 고 따라서 "불량" 항목으로 취급 됩니다. 이렇게 하면 마이그레이션이 실패 합니다. 마이그레이션 요청의 일부로 `BadItemLimit` 매개 변수에 대 한 값을 지정 해야 합니다. 이 값이 있는 공용 폴더 데이터베이스의 수에 따라 달라 집니다. 다음 명령을 포함 하 고 마이그레이션 요청에 대 한 `BadItemLimit` 계산 얼마나 많은 공용 폴더 데이터베이스를 결정 합니다.
     
-    ```
+    ```powershell
     $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
     ```
 
-    ```
+    ```powershell
     $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
     ```
 
 2.  Exchange 2013 서버에서 다음 명령을 실행 합니다.
     
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```powershell
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```
 
 3.  다음 명령을 사용 하 여 마이그레이션을 시작 합니다.
     
     ```powershell
-Start-MigrationBatch PFMigration
-```
+    Start-MigrationBatch PFMigration
+    ```
 
 **Exchange 2010 공용 폴더 마이그레이션**
 
 1.  Exchange 2013 서버에서 다음 명령을 실행 합니다.
     
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
+    ```powershell
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
+    ```
     
     `NotificationEmails` 매개 변수는 선택 사항입니다.
 
 2.  다음 명령을 사용 하 여 마이그레이션을 시작 합니다.
     
     ```powershell
-Start-MigrationBatch PFMigration
-```
+    Start-MigrationBatch PFMigration
+    ```
     
     또는
     
@@ -380,11 +397,8 @@ Start-MigrationBatch PFMigration
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-
 > [!NOTE]
 > 어떤 이유로 든 마이그레이션 일괄 처리에 대 한 파일 레거시 서버에서 사용 하는 (<STRONG>PublicFolderMigrationComplete</STRONG> 디스플레이 <STRONG>False</STRONG> ) 마무리 하지 않는, 정보 저장소 (IS)를 다시 시작 합니다.
-
-
 
 구문과 매개 변수 정보에 대한 자세한 내용은 [Set-OrganizationConfig](https://technet.microsoft.com/ko-kr/library/aa997443\(v=exchg.150\))를 참조하십시오.
 

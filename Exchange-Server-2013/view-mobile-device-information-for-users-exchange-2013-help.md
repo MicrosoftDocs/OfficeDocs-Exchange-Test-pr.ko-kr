@@ -30,7 +30,7 @@ _**마지막으로 수정된 항목:** 2012-11-29_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 
@@ -52,6 +52,5 @@ EAC에는 현재 사용자 사서함과 동기화되고 있는 모바일 장치�
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-MobileDevice -Mailbox useralias
-```
-
+    Get-MobileDevice -Mailbox useralias
+    ```

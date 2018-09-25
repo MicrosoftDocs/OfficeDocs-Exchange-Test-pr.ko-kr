@@ -556,6 +556,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
 
 이 예는 chris@contoso.com 사용자가 michelle@contoso.com 사용자에게 테스트 메시지를 보내는 경우 생성되는 메시지 추적 로그 항목의 압축된 예입니다. 두 사용자의 사서함은 같은 서버에 있습니다.
 
+  ```powershell
     EventId    Source      Sender            Recipients             MessageSubject
     -------    ------      ------            ----------             --------------
     NOTIFYMAPI STOREDRIVER                   {}
@@ -566,6 +567,7 @@ Exchange 2013에서는 모든 메시지 추적 구성 작업에 **Set-TransportS
     AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
     SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
     DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+  ```
 
 맨 위로 이동
 

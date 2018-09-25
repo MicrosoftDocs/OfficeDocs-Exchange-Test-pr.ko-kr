@@ -98,8 +98,8 @@ RBAC 사용 권한 분할을 구성하려면 다음을 수행합니다.
     1.  Exchange 2013 설치 미디어에서 다음 명령을 실행하여 Active Directory 사용 권한 분할을 사용하지 않도록 설정합니다.
         
         ```powershell
-setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
-```
+        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```
     
     2.  조직에서 Exchange 2013 서버를 다시 시작하거나 Active Directory 액세스 토큰이 모든 Exchange 2013 서버에 복제되기를 기다립니다.
         
@@ -107,14 +107,13 @@ setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
         > [!NOTE]
         > 조직에서 Exchange 2010 서버를 포함 하는 경우 이러한 서버를 다시 시작 해야할 수도 있습니다.
 
-
-
 2.  Exchange 관리 셸에서 다음을 수행합니다.
     
     1.  Active Directory 관리자의 역할 그룹을 만듭니다. 이 명령은 역할 그룹을 만드는 것 외에도 새 역할 그룹과 Mail Recipient Creation 역할 및 Security Group Creation and Membership 역할 사이에 일반 역할 할당을 만듭니다.
         
-            New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
-        
+        ```powershell
+        New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
+        ```
 
         > [!NOTE]
         > 이 역할 그룹의 구성원이 역할 할당을 만들 수 있게 하려면 Role Management 역할을 포함합니다. 지금은 이 역할을 추가할 필요가 없습니다. 하지만 Mail Recipient Creation 역할이나 Security Group Creation and Membership 역할을 다른 역할 담당자에게 할당하려는 경우에는 이 새 역할 그룹에 Role Management 역할을 할당해야 합니다. 다음 단계에서는 Active Directory 관리자 역할 그룹을 이러한 역할을 위임할 수 있는 유일한 역할 그룹으로 구성합니다.
@@ -122,57 +121,64 @@ setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
     
     2.  다음 명령을 사용하여 새 역할 그룹과 Mail Recipient Creation 역할 및 Security Group Creation and Membership 역할 사이의 위임 역할 할당을 만듭니다.
         
-            New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
-            New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```powershell
+        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
+        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```
     
     3.  다음 명령을 사용하여 새 역할 그룹에 구성원을 추가합니다.
         
         ```powershell
-Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
-```
+        Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```
     
     4.  역할 그룹 구성원만 구성원을 추가 또는 제거할 수 있도록 새 역할 그룹에서 위임 목록을 바꿉니다.
         
         ```powershell
-Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
-```
-        
+        Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```      
 
-        > [!IMPORTANT]
+        > [!IMPORTANT]  
         > 조직 관리 역할 그룹 구성원이나 직접 또는 다른 역할 그룹이나 USG를 통해 역할 관리 역할이 할당된 사용자는 이 위임 보안 검사를 무시할 수 있습니다. Exchange 관리자가 새 역할 그룹에 자신을 추가하지 못하게 하려면 Role Management 역할과 Exchange 관리자 사이의 모든 역할 할당을 제거하고 관리자를 다른 역할 그룹에 할당해야 합니다.
 
     
     5.  다음 명령을 사용하여 Mail Recipient Creation 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 <strong>Name</strong>, <strong>Role</strong> 및 <strong>RoleAssigneeName</strong> 속성을 표시합니다.
-        
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+
+        ```powershell        
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     6.  다음 명령을 사용하여 유지하고자 하는 새 역할 그룹이나 다른 역할 그룹, USG 또는 직접 할당과 관련되지 않은 Mail Recipient Creation 역할에 대한 일반 및 위임 역할 할당을 모두 제거합니다.
         
         ```powershell
-Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
-```
-        
+        Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```       
 
         > [!NOTE]
         > Active Directory 관리자 역할 그룹이 아닌 역할 담당자에게서 Mail Recipient Creation 역할에 대한 모든 일반 및 위임 역할 할당을 제거하려면 다음 명령을 사용합니다. <EM>WhatIf</EM> 스위치를 사용하면 제거될 역할 할당을 볼 수 있습니다. <EM>WhatIf</EM> 스위치를 제거하고 명령을 다시 실행하면 역할 할당이 제거됩니다.
 
-        
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
     
     7.  다음 명령을 사용하여 Security Group Creation and Membership 역할에 대한 일반 및 위임 역할 할당을 모두 찾습니다. 이 명령은 <strong>Name</strong>, <strong>Role</strong> 및 <strong>RoleAssigneeName</strong> 속성을 표시합니다.
         
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     8.  다음 명령을 사용하여 유지하고자 하는 새 역할 그룹이나 다른 역할 그룹, USG 또는 직접 할당과 관련되지 않은 Security Group Creation and Membership 역할에 대한 일반 및 위임 역할 할당을 모두 제거합니다.
         
-            Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
-        
+        ```powershell
+        Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
+        ```       
 
-        > [!NOTE]
+        > [!NOTE]  
         > 이 예에서와 같이, 위 참고와 동일한 명령을 사용하여 Active Directory 관리자 역할 그룹이 아닌 모든 역할 담당자에게서 Security Group Creation and Membership 역할에 대한 일반 및 위임 할당을 모두 제거할 수 있습니다.
 
-        
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
@@ -221,7 +227,7 @@ Exchange 2013 조직을 Active Directory 사용 권한 분할에 맞게 구성�
 Exchange 관리자 및 서버는 기존 Active Directory 보안 주체의 Exchange 특성만 관리할 수 있습니다. 하지만 전송 규칙 및 통합 메시징 다이얼 플랜과 같은 Exchange 관련 개체를 만들고 관리할 수 있습니다.
 
 
-> [!WARNING]
+> [!WARNING]  
 > Active Directory 사용 권한 분할을 사용하도록 설정하면 Exchange 관리자 및 서버는 더 이상 Active Directory에 보안 주체를 만들 수 없으며 메일 그룹 구성원도 관리할 수 없습니다. 이러한 작업은 필요한 Active Directory 사용 권한을 갖춘 Active Directory 관리 도구를 사용하여 수행해야 합니다. 이 변경을 수행하기 전에 Exchange 2013 및 RBAC 사용 권한 모델과 통합되는 관리 프로세스 및 타사 응용 프로그램에 미치는 영향을 이해해야 합니다.<BR>자세한 내용은 <A href="understanding-split-permissions-exchange-2013-help.md">분할 권한 이해</A>의 "Active Directory 사용 권한 분할" 섹션을 참조하십시오.
 
 
@@ -231,8 +237,8 @@ Exchange 관리자 및 서버는 기존 Active Directory 보안 주체의 Exchan
 1.  Windows 명령 셸에서 Exchange 2013 설치 미디어로부터 다음 명령을 실행하여 Active Directory 사용 권한 분할을 사용하도록 설정합니다.
     
     ```powershell
-setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
-```
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```
 
 2.  조직에 여러 Active Directory 도메인이 있으면 Exchange 서버 또는 개체가 포함된 하위 도메인 각각에서 `setup.exe /PrepareDomain`를 실행하거나 모든 도메인에서 Active Directory 서버가 있는 사이트로부터 `setup.exe /PrepareAllDomains`를 실행해야 합니다.
 

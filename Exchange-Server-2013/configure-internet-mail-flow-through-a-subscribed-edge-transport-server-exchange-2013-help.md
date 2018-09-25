@@ -47,35 +47,38 @@ Edge 전송 서버를 Active Directory 사이트에 구독하지 않으려는 �
 
 1.  Edge 전송 서버에서 다음 구문을 사용하여 Edge 구독 파일을 만듭니다.
     
-        New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```powershell
+    New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```
     
     다음 예에서는 C:\\My Documents 폴더에 Edge 구독 파일 EdgeSubscriptionInfo.xml을 만듭니다. *Force* 매개 변수를 사용하는 경우 사용하지 않도록 설정할 명령을 확인하라는 메시지와 Edge 전송 서버에서 구성 데이터를 덮어쓴다는 경고가 표시되지 않습니다.
     
     ```powershell
-New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
-```
+    New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```
 
 2.  작성된 Edge 구독 파일을 Edge 전송 서버를 구독하려는 Active Directory 사이트의 사서함 서버에 복사합니다.
 
 3.  사서함 서버에서 Edge 구독 파일을 가져오려면 다음 구문을 사용합니다.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```
     
     이 예에서는 D:\\Data 폴더에서 Edge 구독 파일 EdgeSubscriptionInfo.xml을 가져오며 Edge 전송 서버를 Active Directory 사이트 "Default-First-Site-Name"에 구독합니다.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
-    
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```   
 
     > [!NOTE]
     > <EM>CreateInternetSendConnector</EM> 또는 <EM>CreateInboundSendConnector</EM> 매개 변수를 사용하여 필수 커넥터 중 하나 또는 두 커넥터가 모두 자동으로 만들어지지 않도록 설정할 수 있습니다. 자세한 내용은 <A href="edge-subscriptions-exchange-2013-help.md">Edge 구독</A>를 참조하세요.
 
-
-
 4.  사서함 서버에서 다음 명령을 실행하여 첫 번째 EdgeSync 동기화를 시작합니다.
     
     ```powershell
-Start-EdgeSynchronization
-```
+    Start-EdgeSynchronization
+    ```
 
 5.  작업이 완료되면 Edge 전송 서버와 사서함 서버에서 모두 Edge 구독 파일을 삭제하는 것이 좋습니다. Edge 구독 파일에는 LDAP 통신 프로세스 중에 사용되는 자격 증명에 대한 정보가 포함되어 있습니다.
 

@@ -52,7 +52,7 @@ DAG를 만드는 경우 Active Directory에 지정된 이름으로 DAG를 나타
 DAG는 데이터베이스가 활성 상태와 수동 상태 간에 변경되거나 탑재 상태와 분리 상태 간에 변경되는 경우와 같이 빠르게 변경될 수 있는 데이터를 저장하기 위해 클러스터 하트비트, 클러스터 네트워크 및 클러스터 데이터베이스와 같은 Windows 장애 조치(failover) 클러스터링의 일부 기술을 사용합니다. DAG는 Windows 장애 조치(failover) 클러스터링을 사용하므로 Exchange 2013 R2 Enterprise 또는 Datacenter 운영 체제, Windows Server 2012 Standard 또는 Datacenter 운영 체제 또는 Windows Server 2012 R2 Standard 또는 Datacenter 운영 체제를 실행하는 Windows Server 2008 사서함 서버에서만 DAG를 만들 수 있습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > DAG에서 만들어 사용하는 장애 조치(failover) 클러스터는 해당 DAG 전용으로 사용해야 합니다. 해당 클러스터를 기타 고가용성 솔루션이나 다른 용도로 사용할 수 없습니다. 예를 들어, 장애 조치(failover) 클러스터를 다른 응용 프로그램이나 서비스를 클러스터링하는 데 사용할 수 없습니다. DAG 이외의 목적으로 DAG의 기본 장애 조치(failover) 클러스터를 사용하는 것은 지원되지 않습니다.
 
 
@@ -74,7 +74,7 @@ DAG를 만들 경우 Active Directory 포리스트 내에서 고유한 DAG 이�
 미러링 모니터 서버로 사용되는 서버가 무엇인지에 상관없이, 의도한 미러링 모니터 서버에서 Windows 방화벽이 활성화된 경우 파일 및 프린터 공유에 대해 Windows 방화벽 예외를 활성화해야 합니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]   
 > 지정한 미러링 모니터 서버는 Exchange 2013 또는 Exchange 2010 서버 없으면 Exchange 신뢰할 수 있는 하위 시스템 유니버설 보안 그룹 (USG) DAG를 만들기 전에 미러링 모니터 서버에서 로컬 Administrators 그룹에 추가 해야 합니다. 이러한 보안 권한을 해당 Exchange 수 있는 디렉터리를 만들고 필요에 따라 미러링 모니터 서버에서 공유할 수 있도록 필요 합니다.<BR>미러링 모니터 서버는 SMB 포트 445를 사용합니다.
 
 
@@ -82,7 +82,7 @@ DAG를 만들 경우 Active Directory 포리스트 내에서 고유한 DAG 이�
 미러링 모니터 서버 또는 감시 디렉터리는 모두 내결함성을 갖출 필요가 없으며 중복성 또는 고가용성 형식을 사용하지 않아도 됩니다. 미러링 모니터 서버의 경우 클러스터된 파일 서버와 기타 복구 양식을 사용하지 않아도 됩니다. 여기에는 다양한 원인이 있습니다. DAG 규모가 큰 경우(예: 6명 이상) 오류가 여러 개 있어야 미러링 모니터 서버가 필요합니다. 구성원이 6명인 DAG는 쿼럼을 손실하지 않고 최대 2개의 Voter 오류를 감당할 수 있으므로 3 Voter가 실패하면 미러링 모니터 서버가 쿼럼을 유지 관리해야 합니다. 또한 현재 미러링 모니터 서버에 영향을 미치는 오류가 발생하는 경우(예: 하드웨어 오류로 인해 미러링 모니터 서버 손실) [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/ko-kr/library/dd297934\(v=exchg.150\)) cmdlet을 사용하여 쿼럼이 있는 경우 새 미러링 모니터 서버와 감시 디렉터리를 구성합니다.
 
 
-> [!NOTE]
+> [!NOTE]   
 > 미러링 모니터 서버에서 저장소가 손실되었거나 사용자가 감시 디렉터리 또는 공유 권한을 변경한 경우 <STRONG>Set-DatabaseAvailabilityGroup</STRONG> cmdlet을 사용하여 원래 위치에 미러링 모니터 서버와 감시 디렉터리를 구성할 수도 있습니다.
 
 
@@ -161,10 +161,8 @@ DAG를 만들 경우 다음과 같은 옵션 및 동작의 조합을 사용할 �
 DAG가 구성되면 처음에는 노드 과반수 쿼럼 모델이 사용됩니다. 두 번째 사서함 서버가 DAG에 추가되면 쿼럼은 자동으로 노드 및 파일 공유 과반수 쿼럼 모델로 변경됩니다. 이러한 변경이 발생하면 DAG의 클러스터는 쿼럼을 유지 관리하기 위해 미러링 모니터 서버를 사용하기 시작합니다. 감시 디렉터리가 없는 경우 Exchange에서 자동으로 감시 디렉터리를 만들고, 공유하고, 이 공유에 DAG CNO 컴퓨터 계정에 대한 모든 권한을 프로비전합니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > DFS(분산 파일 시스템) 네임스페이스의 일부인 파일 공유는 사용할 수 없습니다.
-
-
 
 DAG가 만들어지기 전에 Windows 방화벽이 미러링 모니터 서버에서 활성화되면 DAG의 생성을 방해할 수 있습니다. Exchange는 Windows WMI(Windows Management Instrumentation)를 사용하여 미러링 모니터 서버에 디렉터리 및 파일 공유를 만듭니다. Windows 방화벽이 미러링 모니터 서버에서 활성화되고 WMI에 방화벽 예외가 구성되어 있지 않으면 **New-DatabaseAvailabilityGroup** cmdlet은 오류로 인해 실패합니다. 미러링 모니터 서버를 지정할 때 감시 디렉터리를 지정하지 않을 경우 다음 오류 메시지를 수신합니다.
 
@@ -226,7 +224,7 @@ DAG가 만들어진 후 서버가 추가되기 전에 미러링 모니터 서버
 DAG를 만들고 난 후 EAC에서 데이터베이스 가용성 그룹 관리 마법사를 사용하거나, 셸에서 **Add-DatabaseAvailabilityGroupServer** 또는 **Remove-DatabaseAvailabilityGroupServer** cmdlet을 사용하여 서버를 DAG 서버에 추가하거나 DAG 서버에서 제거할 수 있습니다. DAG 구성원을 관리하는 방법에 대한 자세한 단계는 [데이터베이스 가용성 그룹 구성원 관리](manage-database-availability-group-membership-exchange-2013-help.md)를 참조하십시오.
 
 
-> [!NOTE]
+> [!NOTE]  
 > DAG의 구성원인 각 사서함 서버는 DAG에 사용되는 기본 클러스터의 노드이기도 합니다. 그 결과로 사서함 서버는 한 번에 한 개의 DAG 구성원일 수 있습니다.
 
 
@@ -631,7 +629,9 @@ MapiDagNetwork에 대해 복제를 사용하지 않도록 설정하면 Microsoft
 
 기본적으로 DAG는 기본 클러스터에서 사용하기 위해 감지되고 구성된 모든 네트워크의 검색을 수행합니다. 이 네트워크에는 하나 이상의 DAG 구성원에 대한 iSCSI(인터넷 SCSI) 저장소 사용의 결과로 사용 중인 iSCSI 네트워크가 포함되어 있습니다. 최적의 방법으로 iSCSI 저장소는 전용 네트워크 및 네트워크 어댑터를 사용해야 합니다. 이러한 네트워크는 DAG 또는 클러스터에서 관리되지 않고 DAG 네트워크(MAPI 또는 복제)로 사용되지 않아야 합니다. 대신 이러한 네트워크를 DAG에서 사용하지 않도록 수동으로 설정하여 iSCSI 저장소 트래픽 전용으로 설정할 수 있습니다. iSCSI 네트워크가 DAG 네트워크로 감지되고 사용되지 않도록 설정하려면 다음 예외 같이 [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/ko-kr/library/dd298008\(v=exchg.150\)) cmdlet을 사용하여 DAG가 현재 감지되는 iSCSI 네트워크를 무시하도록 구성합니다.
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 또한 이 명령은 클러스터에서 네트워크를 사용하지 않도록 설정합니다. iSCSI 네트워크가 계속해서 DAG 네트워크로 나타나지만 위의 명령을 실행한 후에는 MAPI 또는 복제 트래픽에 iSCSI 네트워크가 사용되지 않습니다.
 

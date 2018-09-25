@@ -131,7 +131,9 @@ EAC를 사용하여 Outlook Web App 가상 디렉터리의 속성을 보는 경�
 
 이 예에서는 Contoso 서버의 기본 Outlook Web App 가상 디렉터리에서 폼 기반 인증을 사용하도록 설정합니다.
 
-    set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```powershell
+set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/bb123515\(v=exchg.150\))를 참조하십시오.
 
@@ -145,7 +147,9 @@ Get-OWAVirtualDirectory
 
 이 예에서는 로컬 Outlook Web App 서버에서 기본 IIS 웹 사이트에 있는 Exchange 가상 디렉터리의 속성을 볼 수 있습니다.
 
-    Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```powershell
+Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```
 
 이 예에서는 특정 Outlook Web App 서버에서 IIS 웹 사이트에 있는 모든 Exchange 가상 디렉터리의 속성을 볼 수 있습니다.
 

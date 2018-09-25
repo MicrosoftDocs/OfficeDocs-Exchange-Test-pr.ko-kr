@@ -73,25 +73,25 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
 
 3.  Windows PowerShell 명령 프롬프트에서 UM 문제 해결 도구가 설치된 폴더로 이동하여 다음을 실행합니다.
     
-        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
-
+    ```powershell
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 4.  UM 문제 해결 도구를 Windows Vista, Windows 7 또는 Windows 8에서 실행하는 경우 Windows PowerShell 명령 프롬프트에서 다음을 실행합니다.
     
     ```powershell
-Set-ExecutionPolicy RemoteSigned
-```
-
+    Set-ExecutionPolicy RemoteSigned
+    ```
 5.  **시작** 메뉴에서 **Microsoft Exchange 2010 UM 문제 해결 도구**를 엽니다.
 
 6.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창의 프롬프트에 다음을 입력하고 Enter 키를 누릅니다.
     
     ```powershell
-$cred=Get-Credential
-```
-
+    $cred=Get-Credential
+    ```
 7.  **Windows PowerShell 자격 증명 요청** 창에서 도메인\\사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
 
 8.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창에서 호출 흐름 테스트에 필요한 cmdlet 매개 변수를 지정합니다. 예를 들면 다음과 같습니다.
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```

@@ -103,5 +103,7 @@ Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 
 이 예에서는 Ben Smith의 사서함 설정을 검색하고 감사 로그 기간 제한을 비롯한 지정된 감사 설정을 **Format-List** cmdlet에 파이프합니다.
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+```powershell
+Get-Mailbox "Ben Smith" | Format-List *audit*
+```
 

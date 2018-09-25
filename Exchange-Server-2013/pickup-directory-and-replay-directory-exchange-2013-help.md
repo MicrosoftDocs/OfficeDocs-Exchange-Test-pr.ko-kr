@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Pickup 디렉터리 및 Replay 디렉터리
-
- 
+# Pickup 디렉터리 및 Replay 디렉터리 
 
 _**적용 대상:** Exchange Server 2013_
 
@@ -87,14 +85,17 @@ Pickup 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
 
 이 예에서는 Pickup 디렉터리에 허용되는 형식을 사용하는 일반 문자 메시지를 보여줍니다.
 
+  ```powershell  
     To: mary@contoso.com
     From: bob@fabrikam.com
     Subject: Message subject
     
     This is the body of the message.
+  ```
 
 MIME 콘텐츠도 Pickup 디렉터리 메시지 파일에서 지원됩니다. MIME는 7비트 ASCII 텍스트, HTML 및 기타 멀티미디어 콘텐츠로 나타낼 수 없는 언어를 포함하여 광범위한 메시지 콘텐츠를 정의합니다. MIME에 대한 자세한 정보와 해당 요구 사항은 이 항목에서 다루지 않습니다. 이 예에서는 Pickup 디렉터리에 허용되는 형식을 사용하는 간단한 MIME 메시지를 보여줍니다.
 
+  ```powershell
     To: mary@contoso.com
     From: bob@fabrikam.com
     Subject: Message subject
@@ -109,6 +110,7 @@ MIME 콘텐츠도 Pickup 디렉터리 메시지 파일에서 지원됩니다. MI
     </TABLE>
 
     </BODY></HTML>
+  ```
 
 맨 위로 이동
 
@@ -123,14 +125,16 @@ Pickup 디렉터리는 메시지 헤더에서 다음 메시지 헤더 필드를 
   - `Bcc`
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 메시지 헤더의 옵션인 <CODE>Bcc</CODE> 메시지 헤더 필드에 있는 모든 전자 메일 주소는 올바르게 처리됩니다. <CODE>Bcc</CODE> 받는 사람을 볼 수 없는 메시지 봉투 받는 사람으로 올린 후 메시지 헤더에서 제거하여 해당 받는 사람의 ID를 보호합니다. 메시지에 <CODE>Bcc</CODE> 받는 사람만 있는 경우 <STRONG>Undisclosed Recipients</STRONG>의 값이 메시지 헤더의 <CODE>To</CODE> 필드에 추가됩니다.
 
 
 
 Pickup 디렉터리는 메시지 전송 프로세스의 일부로 자체 `Received` 헤더 필드를 메시지에 추가합니다. `Received` 헤더 필드는 다음과 같은 형식으로 적용됩니다.
 
-    Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+  ```powershell
+  Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+  ```
 
 Pickup 디렉터리는 다음 메시지 헤더 필드가 누락되거나 잘못된 경우 해당 필드를 수정합니다.
 
@@ -161,25 +165,22 @@ Replay 디렉터리로 복사된 메시지 파일을 배달하기 위해 충족�
   - **X-Sender**   이 X-헤더는 일반적인 SMTP 메시지의 `From` 메시지 헤더 필드 요구 사항을 대체합니다. 하나의 전자 메일 주소가 포함된 `X-Sender` 필드 한 개가 있어야 합니다. 받는 사람의 전자 메일 클라이언트가 `From` 메시지 헤더 필드의 값을 메시지의 보낸 사람으로 표시하지만 Replay 디렉터리는 `From` 메시지 헤더 필드가 있는 경우 이를 무시합니다. 다른 매개 변수는 일반적으로 다음 예에 표시된 것처럼 `X-Sender` 필드에 있습니다.
     
     ```powershell
-X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
-```
-    
+    X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```    
 
     > [!NOTE]
     > 이러한 매개 변수는 보내는 서버에서 일반적으로 생성되는 메시지 봉투 값입니다. 내보낸 메시지 파일에서 이와 유사한 매개 변수를 볼 수 있습니다.<BR><CODE>RET</CODE>는 메시지를 배달할 수 없는 경우 보낸 사람에게 전체 메시지를 반환할지, 헤더만 반환할지 지정합니다. <CODE>RET</CODE>는 <CODE>HDRS</CODE> 또는 <CODE>FULL</CODE>을 값으로 가질 수 있습니다. <CODE>ENVID</CODE>는 메시지 봉투 식별자입니다. <CODE>BODY</CODE>는 메시지의 텍스트 인코딩을 지정합니다. <CODE>auth</CODE>는 RFC 2554에 설명된 대로 메시징 서버에 대한 인증 메커니즘을 지정합니다.
 
 
-
   - **X-Receiver**   이 X-헤더는 일반적인 SMTP 메시지의 `To` 메시지 헤더 필드 요구 사항을 대체합니다. 하나의 전자 메일 주소가 포함된 `X-Receiver` 필드가 적어도 한 개는 있어야 합니다. 여러 `X-Receiver` 필드가 여러 받는 사람에 대해 허용됩니다. 받는 사람의 전자 메일 클라이언트가 `To` 메시지 헤더 필드의 값을 메시지의 받는 사람으로 표시하지만 Replay 디렉터리는 `To` 메시지 헤더 필드가 있는 경우 이를 무시합니다. 다음 예와 같이 `X-Receiver` 필드에 다른 옵션 매개 변수가 있을 수 있습니다.
     
     ```powershell
-X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-```
+    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```
     
 
-    > [!NOTE]
+    > [!NOTE]   
     > 이러한 매개 변수는 보내는 서버에서 일반적으로 생성되는 메시지 봉투 값입니다. 내보낸 메시지 파일에서 이와 유사한 매개 변수를 볼 수 있습니다. 이러한 매개 변수는 RFC 1891에 설명된 것처럼 DSN(배달 상태 알림) 메시지와 관련되어 있습니다.<BR><CODE>NOTIFY</CODE>는 <CODE>NEVER</CODE>, <CODE>DELAY</CODE> 또는 <CODE>FAILURE</CODE>를 값으로 가질 수 있습니다. <CODE>ORcpt</CODE>는 메시지의 원래 받는 사람을 보존합니다.
-
 
 
 다음 목록에 설명되어 있는 X-Header는 Replay 디렉터리의 메시지 파일에 대한 선택 사항입니다.
@@ -200,32 +201,30 @@ X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
 
 ```powershell
 X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-```
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
-    Subject: Optional message subject
+X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
+Subject: Optional message subject
     
-    This is the body of the message.
-
+This is the body of the message.
+```
 MIME 콘텐츠도 Replay 디렉터리 메시지 파일에서 지원됩니다. MIME는 7비트 ASCII 텍스트, HTML 및 기타 멀티미디어 콘텐츠로 나타낼 수 없는 언어를 포함하여 광범위한 메시지 콘텐츠를 정의합니다. MIME에 대한 자세한 정보와 해당 요구 사항은 이 항목에서 다루지 않습니다. 이 예에서는 Replay 디렉터리에 허용되는 형식을 사용하는 간단한 MIME 메시지를 보여줍니다.
 
 ```powershell
 X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-```
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Optional message subject
-    MIME-Version: 1.0
-    Content-Type: text/html; charset="iso-8859-1"
-    Content-Transfer-Encoding: 7bit
-    
-    <HTML><BODY>
-    <TABLE>
-    <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
-    <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
-    </TABLE>
+X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
+To: mary@contoso.com
+From: bob@fabrikam.com
+Subject: Optional message subject
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+<HTML><BODY>
+<TABLE>
+<TR><TD>cell 1</TD><TD>cell 2</TD></TR>
+<TR><TD>cell 3</TD><TD>cell 4</TD></TR>
+</TABLE>
 
-    </BODY></HTML>
+</BODY></HTML>
+```
 
 맨 위로 이동
 
@@ -235,8 +234,9 @@ Replay 디렉터리는 메시지 파일에서 `Bcc` 메시지 헤더 필드를 �
 
 Replay 디렉터리는 메시지 전송 프로세스의 일부로 자체 `Received` 메시지 헤더 필드를 메시지에 추가합니다. Received 메시지 헤더 필드는 다음과 같은 형식으로 적용됩니다.
 
-    Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
-
+  ```powershell
+  Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
+  ```
 Replay 디렉터리는 메시지 헤더에서 다음 메시지 헤더 필드를 수정합니다.
 
   - **Message-Id**   이 메시지 헤더 필드가 누락되거나 비어 있으면 Replay 디렉터리는 *\<GUID\>*@*\<기본 도메인\>* 형식을 사용하여 Message-ID 메시지 헤더 필드를 추가합니다.

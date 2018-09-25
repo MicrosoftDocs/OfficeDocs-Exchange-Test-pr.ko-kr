@@ -47,7 +47,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 수신 허용 - 보낸 사람 및 수신 거부의 최대 개수를 구성하려면 다음 명령을 실행합니다.
 
-    Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```powershell
+Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```
 
 이 예에서는 수신 허용 - 보낸 사람 최대 2,000개, 수신 거부 최대 200개가 되도록 사서함 john@contoso.com을 구성합니다.
 
@@ -61,7 +63,9 @@ Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
 
 1.  다음 명령을 실행합니다.
     
-        Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```powershell
+    Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```
 
 2.  표시된 값이 구성한 값과 일치하는지 확인합니다.
 
@@ -86,14 +90,14 @@ Update-Safelist john@contoso.com -Type SafeSenders
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  출력에서 *Enabled* 매개 변수가 `True`로 표시되는 경우 콘텐츠 필터링을 사용하는 것입니다. 그렇지 않은 경우 다음 명령을 실행하여 Exchange 서버에서 콘텐츠 필터링 및 콘텐츠 필터 에이전트를 사용하도록 설정합니다.
     
     ```powershell
-Set-ContentFilterConfig -Enabled $true
-```
+    Set-ContentFilterConfig -Enabled $true
+    ```
 
 ## 2단계: (선택 사항) ADSI 편집을 사용하여 수신 허용 목록 집계 데이터가 Edge 전송 서버로 복제되었는지 확인합니다.
 

@@ -29,12 +29,14 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 스팸 방지 보고서는 전자 메일 메시지에 적용된 스팸 방지 필터 결과가 요약되어 있는 보고서입니다. 콘텐츠 필터 에이전트는 이 스탬프를 다음과 같이 X-헤더 형식으로 메시지 봉투에 적용합니다.
 
-    X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```powershell
+X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance
+``` 
 
 다음 표에서는 스팸 방지 보고서에 나타날 수 있는 필터 정보에 대해 설명합니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 스팸 방지 보고서에는 특정 메시지에 적용된 필터에 대한 정보만 표시됩니다. 스팸 방지 보고서에 일반적으로 다음 표에 나열된 모든 정보가 포함되지는 않습니다. 예를 들어, 다음과 같은 스팸 방지 보고서를 받을 수 있습니다. <CODE>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</CODE>.
 
 
@@ -66,7 +68,10 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 <li><p><strong>PermError</strong>   레코드 형식 오류와 같은 잘못된 DNS 레코드입니다.</p></li>
 </ul>
 <p>보낸 사람 ID 스탬프는 다음과 같이 메시지 봉투에 X-헤더로 표시됩니다.</p>
-<pre><code>X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SenderIdResult:<status>
+```
 <p>보낸 사람 ID에 대한 자세한 내용은 <a href="sender-id-exchange-2013-help.md">보낸사람 ID</a> 항목을 참조하십시오.</p></td>
 </tr>
 <tr class="even">

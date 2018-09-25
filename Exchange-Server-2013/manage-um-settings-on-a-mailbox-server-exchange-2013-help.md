@@ -57,11 +57,14 @@ Set-UMService -Identity MyMailboxServer -DialPlans $null
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버를 UM SIP 다이얼 플랜 `MySIPDialPlanName`에 추가하고 수신 음성 통화의 최대 개수를 설정합니다.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
-
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+```
 이 예에서는 `MyUMServer`라는 사서함 서버에서 시작 모드를 이중 모드로 설정합니다.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```
 
 ## 셸을 사용하여 사서함 서버 속성 보기
 
