@@ -75,5 +75,7 @@ Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 
 이 예에서는 EXCH01 서버에 모든 IRM 로깅 속성을 검색 합니다.
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```powershell
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```
 

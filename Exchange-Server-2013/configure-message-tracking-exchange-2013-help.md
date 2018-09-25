@@ -106,7 +106,8 @@ Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
-
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```
 2.  표시된 값이 구성한 값인지 확인합니다.
 

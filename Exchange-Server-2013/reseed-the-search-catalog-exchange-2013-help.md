@@ -92,47 +92,34 @@ Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
 
 1.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 중지합니다.
     
-    ```
 ```powershell
 Stop-Service MSExchangeFastSearch
 ```
-    ```
-
-    ```
 ```powershell
 Stop-Service HostControllerService
 ```
-    ```
+2.  Exchange 콘텐츠 인덱스 카탈로그가 포함된 폴더를 삭제하거나 이동하거나 이름을 바꿉니다. 이 폴더의 이름은 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`입니다. 예를 들어 폴더 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`의 이름을 바꿀 수 있습니다.    
 
-2.  Exchange 콘텐츠 인덱스 카탈로그가 포함된 폴더를 삭제하거나 이동하거나 이름을 바꿉니다. 이 폴더의 이름은 `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`입니다. 예를 들어 폴더 `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`의 이름을 바꿀 수 있습니다.
-    
-
-    > [!NOTE]
+    > [!NOTE]   
     > 이 폴더를 삭제하면 추가 디스크 공간을 사용할 수 있게 됩니다. 또한 문제 해결을 위해 폴더 이름을 바꾸거나 이동하여 보관할 수도 있습니다.
-
 
 
 3.  다음 명령을 실행하여 Microsoft Exchange Search 및 Microsoft Exchange Search Host Controller 서비스를 다시 시작합니다.
     
-    ```
 ```powershell
 Start-Service MSExchangeFastSearch
 ```
-    ```
-
-    ```
 ```powershell
 Start-Service HostControllerService
 ```
-    ```
-    
-    이러한 서비스를 다시 시작하면 Exchange Search가 콘텐츠 인덱스 카탈로그를 다시 작성합니다.
+이러한 서비스를 다시 시작하면 Exchange Search가 콘텐츠 인덱스 카탈로그를 다시 작성합니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 
 Exchange Search에서 콘텐츠 인덱스 카탈로그를 다시 시드하려면 다소 시간이 걸릴 수 있습니다. 다음 명령을 실행하여 다시 시드 프로세스의 상태를 표시합니다.
 
-    Get-MailboxDatabaseCopyStatus | FL Name,*Index*
-
+```powershell
+Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```
 검색 카탈로그의 다시 시드가 진행 중이면 *ContentIndexState* 속성의 값은 **Crawling**입니다. 다시 시드가 완료되면 이 값은 **Healthy**로 바뀝니다.
 

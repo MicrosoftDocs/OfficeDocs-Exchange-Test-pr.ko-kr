@@ -113,23 +113,25 @@ Microsoft Exchange Server 2013에서는 Microsoft .NET Framework 버전 4.0을 �
 1.  명령 프롬프트 창을 열고 레거시 전송 에이전트 지원을 구성하려는 Exchange 2013 서버에서 다음 명령을 실행하여 메모장으로 해당 응용 프로그램 구성 파일을 엽니다.
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
-```
+    Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```
     
     예를 들어 사서함 서버의 EdgeTransport.exe.config 파일을 열려면 다음 명령을 실행합니다.
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  파일 끝에서 *\</configuration\>* 키를 찾고 다음 키를 *\</configuration\>* 키 앞에 붙여 넣습니다.
     
+    ```powershell
         <startup useLegacyV2RuntimeActivationPolicy="true">
            <supportedRuntime version="v4.0" />
            <supportedRuntime version="v3.5" />
            <supportedRuntime version="v3.0" />
            <supportedRuntime version="v2.0" />
         </startup>
+    ```
 
 3.  작업을 마치면 응용 프로그램 구성 파일을 저장하고 닫습니다.
 
@@ -137,11 +139,15 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 5.  다음 명령을 실행하여 연결된 Windows 서비스를 다시 시작합니다.
     
-        net stop <service> && net start <service>
+    ```powershell
+    net stop <service> && net start <service>
+    ```
     
     예를 들어 EdgeTransport.exe.config 파일을 수정한 경우 다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작해야 합니다.
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 6.  다른 수정된 응용 프로그램 구성 파일과 연결된 서비스를 다시 시작하려면 5단계를 반복합니다.
 
@@ -149,5 +155,6 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 이 절차는 레거시 전송 에이전트가 성공적으로 설치된 경우에 효과가 있습니다. 이 항목의 절차를 수행하지 않고 레거시 전송 에이전트를 설치하려고 하면 다음과 유사한 오류가 수신됩니다.
 
-    Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
-
+```powershell
+Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
+```

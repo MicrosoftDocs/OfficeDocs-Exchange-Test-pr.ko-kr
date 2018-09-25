@@ -30,7 +30,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]   
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -74,7 +74,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 사용자에게 부여할 사용 권한이 포함된 관리 역할 그룹을 보유하고 있지만 다른 관리 범위를 적용하려는 경우 또는 그 밖의 모든 역할을 수동으로 추가하지 않으면서 하나 또는 두 개의 관리 역할을 제거하거나 추가하려는 경우, 기존 역할 그룹을 복사할 수 있습니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Exchange 관리 셸을 사용하여 역할 그룹에서 다중 관리 역할 범위나 단독 범위를 구성한 경우에는 EAC를 사용하여 역할 그룹을 복사할 수 없습니다. 역할 그룹에 대해 여러 범위나 단독 범위를 구성한 경우에는 이 항목 후반부에 나오는 셸 프로시저를 사용하여 역할 그룹을 복사해야 합니다. 관리 역할 범위에 대한 자세한 내용은 <A href="understanding-management-role-scopes-exchange-2013-help.md">관리 역할 범위 이해 (영문)</A>를 참조하십시오.
 
 
@@ -98,18 +98,20 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-08_
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
     ```powershell
-$RoleGroup = Get-RoleGroup <name of role group to copy>
-```
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  새 역할 그룹을 만든 후, 다음 구문을 사용하여 역할 그룹에 구성원을 추가하고 새 역할 그룹을 다른 사용자에게 위임할 수 있는 사용자를 지정합니다.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
-
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```
 예를 들어 다음 명령으로 Organization Management 역할 그룹을 복사하고 새 역할 그룹의 이름을 "Limited Organization Management"로 지정합니다. 이를 통해 Isabelle, Carter 및 Lukas라는 구성원이 추가되며 이는 Jenny 및 Katie에게서 위임될 수 있습니다.
 
+```powershell
     $RoleGroup = Get-RoleGroup "Organization Management"
     New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
-
+```
 새 역할 그룹을 만든 후, 역할을 추가 또는 제거하고 이 역할에 대한 역할 할당 범위를 변경하는 등의 작업을 수행할 수 있습니다.
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-RoleGroup](https://technet.microsoft.com/ko-kr/library/dd638115\(v=exchg.150\)) 및 [New-RoleGroup](https://technet.microsoft.com/ko-kr/library/dd638181\(v=exchg.150\))을 참조하십시오.
@@ -119,17 +121,21 @@ $RoleGroup = Get-RoleGroup <name of role group to copy>
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
     ```powershell
-$RoleGroup = Get-RoleGroup <name of role group to copy>
-```
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  다음 구문을 사용하여 사용자 지정 범위의 새 역할 그룹을 만듭니다.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```
 
 예를 들어 다음 명령으로 Organization Management 역할 그룹을 복사하고 Vancouver Users 받는 사람 범위와 Vancouver Servers 구성 범위의 Vancouver Organization Management라는 새 역할 그룹을 만듭니다.
 
+```powershell
     $RoleGroup = Get-RoleGroup "Organization Management"
     New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```
 
 이 항목의 전반부에 있는 Use the Shell to copy a role group with no scope에 표시된 것처럼 *Members* 매개 변수를 사용하여 그룹을 만드는 경우 역할 그룹에 구성원을 추가할 수도 있습니다. 관리 범위에 대한 자세한 내용은 [관리 역할 범위 이해 (영문)](understanding-management-role-scopes-exchange-2013-help.md)를 참조하십시오.
 
@@ -142,17 +148,21 @@ $RoleGroup = Get-RoleGroup <name of role group to copy>
 1.  다음 구문을 사용하여 복사할 역할 그룹을 변수에 저장합니다.
     
     ```powershell
-$RoleGroup = Get-RoleGroup <name of role group to copy>
-```
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  다음 구문을 사용하여 사용자 지정 범위의 새 역할 그룹을 만듭니다.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```
 
 예를 들어 다음 명령으로 Recipient Management 역할 그룹을 복사하고 Toronto Users OU의 사용자만 관리할 수 있도록 하는 Toronto Recipient Management라는 새 역할 그룹을 만듭니다.
 
+```powershell
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```
 
 이 항목의 전반부에 있는 Use the Shell to copy a role group with no scope에 표시된 것처럼 *Members* 매개 변수를 사용하여 그룹을 만드는 경우 역할 그룹에 구성원을 추가할 수도 있습니다. 관리 범위에 대한 자세한 내용은 [관리 역할 범위 이해 (영문)](understanding-management-role-scopes-exchange-2013-help.md)를 참조하십시오.
 
@@ -207,7 +217,7 @@ $RoleGroup = Get-RoleGroup <name of role group to copy>
 ## EAC를 사용하여 관리 역할을 역할 그룹에 추가
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > 셸을 사용하여 역할 그룹에서 다중 관리 역할 범위나 단독 범위를 구성한 경우에는 EAC를 사용하여 역할 그룹에 역할을 추가할 수 없습니다. 여러 범위나 단독 범위를 역할 그룹에 구성한 경우 이 항목의 뒷부분에 나오는 셸 절차를 사용하여 역할을 역할 그룹에 추가해야 합니다. 관리 역할 범위에 대한 자세한 내용은 <A href="understanding-management-role-scopes-exchange-2013-help.md">관리 역할 범위 이해 (영문)</A>를 참조하십시오.
 
 
@@ -246,11 +256,15 @@ New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transpor
 
 미리 정의된 범위를 사용하여 역할 그룹에 역할을 할당하려면 다음 구문을 사용합니다. 역할 할당 이름은 지정하지 않은 경우 자동으로 만들어집니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```
 
 이 예에서는 Enterprise Support 역할 그룹에 Message Tracking 역할을 할당하고 미리 정의된 범위 Organization을 적용합니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -268,11 +282,14 @@ New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transpor
 
 받는 사람 필터 기반 범위를 사용하여 역할 그룹에 역할을 할당하려면 다음 구문을 사용합니다. 역할 할당 이름은 지정하지 않은 경우 자동으로 만들어집니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
-
+```
 이 예에서는 Seattle Recipient Admins 역할 그룹에 Message Tracking 역할을 할당하고 Seattle Recipients 범위를 적용합니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -290,12 +307,14 @@ New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transpor
 
 구성 범위를 사용하여 역할 그룹에 역할을 할당하려면 다음 구문을 사용합니다. 역할 할당 이름은 지정하지 않은 경우 자동으로 만들어집니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
-
+```
 이 예에서는 Seattle Server Admins 역할 그룹에 Databases 역할을 할당하고 Seattle Servers 범위를 적용합니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
-
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
 ## 셸을 사용하여 OU 범위가 있는 역할 할당 만들기
@@ -310,11 +329,15 @@ OU(조직 단위)에 역할의 쓰기 범위를 적용하려는 경우 *Recipien
 
 역할 그룹에 역할을 할당하고 역할의 쓰기 범위를 특정 OU로 제한하려면 다음 명령을 사용합니다. 역할 할당 이름은 지정하지 않은 경우 자동으로 만들어집니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 이 예에서는 Seattle Recipient Admins 역할 그룹에 Mail Recipients 역할을 할당하고 Contoso.com 도메인의 Sales\\Users OU에 할당 범위를 적용합니다.
 
+```powershell
     New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -331,7 +354,7 @@ OU(조직 단위)에 역할의 쓰기 범위를 적용하려는 경우 *Recipien
 관리 역할 그룹에서 역할을 제거하는 것은 관리자 또는 전문가 사용자 그룹에 부여된 권한을 해지할 수 있는 가장 효과적이고도 간단한 방법입니다. 관리자 또는 전문가 사용자에게 기능을 관리할 수 있는 권한을 부여하지 않으려면 해당 권한을 관리하는 관리 역할 그룹에서 관리 역할을 제거하십시오. 역할이 제거되면 역할 그룹의 구성원이 더 이상 기능을 관리할 수 있는 권한을 보유하지 않게 됩니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 조직 관리 역할 그룹과 같은 일부 역할 그룹은 특정 역할 그룹에서 제거할 수 있는 역할을 제한합니다. 자세한 내용은 <A href="understanding-management-role-groups-exchange-2013-help.md">관리 역할 그룹 이해 (영문)</A>을 참조하십시오.<BR>관리자가 기능 관리 권한을 부여하는 관리 역할이 포함된 다른 역할 그룹의 구성원인 경우 다른 역할 그룹에서 관리자를 제거하거나 다른 역할 그룹에서 기능 관리 권한을 부여하는 역할을 제거하십시오.
 
 
@@ -339,7 +362,7 @@ OU(조직 단위)에 역할의 쓰기 범위를 적용하려는 경우 *Recipien
 ## EAC를 사용하여 역할 그룹에서 관리 역할 제거
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > 셸을 사용하여 역할 그룹에서 다중 범위나 단독 범위를 구성한 경우에는 EAC를 사용하여 역할 그룹에서 역할을 제거할 수 없습니다. 여러 범위나 단독 범위를 역할 그룹에 구성한 경우 이 항목의 뒷부분에 나오는 셸 절차를 사용하여 역할을 역할 그룹에서 제거해야 합니다. 관리 역할 범위에 대한 자세한 내용은 <A href="understanding-management-role-scopes-exchange-2013-help.md">관리 역할 범위 이해 (영문)</A>를 참조하십시오.
 
 
@@ -362,11 +385,15 @@ OU(조직 단위)에 역할의 쓰기 범위를 적용하려는 경우 *Recipien
 
 역할 그룹에서 역할을 제거하려면 다음 구문을 사용합니다.
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```
 
 이 예에서는 Seattle Recipient Administrators 역할 그룹에서 관리자에게 메일 그룹을 관리하도록 허용하는 메일 그룹 역할을 제거합니다. 메일 그룹을 관리하는 권한을 부여하는 역할 할당을 제거할 것이므로 *Delegating* 매개 변수를 `$False`로 설정하여 일반 역할 할당만 반환되도록 합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+   Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351205\(v=exchg.150\))를 참조하십시오.
 
@@ -395,7 +422,7 @@ Exchange 2013의 관리 역할 범위 및 할당에 대한 자세한 내용은 �
 EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역할 그룹과 그 역할 그룹에 할당되는 각 관리 역할 사이의 모든 역할 할당에 대한 범위가 변경됩니다. 특정 역할 할당에 대한 범위를 변경하려면 이 항목 후반부에 나오는 셸 프로시저를 사용해야 합니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > 셸을 사용하여 역할 할당에 대해 다중 범위나 단독 범위를 구성한 경우에는 EAC를 사용하여 역할과 역할 그룹 사이에서 역할 할당에 대한 범위를 관리할 수 없습니다. 이러한 역할 할당에 대해 여러 범위나 단독 범위를 구성한 경우에는 이 항목 후반부에 나오는 셸 프로시저를 사용하여 범위를 관리해야 합니다. 관리 역할 범위에 대한 자세한 내용은 <A href="understanding-management-role-scopes-exchange-2013-help.md">관리 역할 범위 이해 (영문)</A>를 참조하십시오.
 
 
@@ -428,14 +455,17 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 
 역할 그룹에서 모든 역할 할당 범위를 동시에 설정하려면 다음 구문을 사용합니다.
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
-
+```
 사용할 범위를 구성하는 데 필요한 매개 변수만 사용합니다. 예를 들어 Sales Recipient Management 역할 그룹에서 모든 역할 할당에 대한 받는 사람 범위를 Direct Sales Employees로 변경하려면 다음 명령을 사용합니다.
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```
 
 
-> [!NOTE]
+> [!NOTE]  
 > 변경하고자 하는 역할 할당만 변경되었는지 확인하려면 <EM>WhatIf</EM> 스위치를 사용할 수 있습니다. <EM>WhatIf</EM> 스위치와 함께 위의 명령을 실행하여 결과를 확인한 다음 <EM>WhatIf</EM> 스위치를 제거하여 변경 내용을 적용합니다.
 
 
@@ -461,18 +491,22 @@ EAC를 사용하여 역할 그룹에서 범위를 변경하면 실제로는 역�
 1.  역할 그룹에서 모든 역할 할당 이름을 찾으려면 다음 명령을 사용합니다. <strong>Format-List</strong> cmdlet으로 관리 역할 할당을 파이프하면 할당의 전체 이름을 볼 수 있습니다.
     
     ```powershell
-Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
-```
+    Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```
 
 2.  변경할 역할 할당의 이름을 찾습니다. 역할 할당의 이름은 다음 단계에서 사용합니다.
 
 3.  개별 할당에서 범위를 설정하려면 다음 구문을 사용합니다.
     
+    ```powershell
         Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```
 
 사용할 범위를 구성하는 데 필요한 매개 변수만 사용합니다. 예를 들어 Mail Recipients\_Sales Recipient Management 역할 할당에 대한 받는 사람 범위를 All Sales Employees로 변경하려면 다음 명령을 사용합니다.
 
+```powershell
     Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```
 
 관리 역할 할당 변경에 대한 자세한 내용은 [역할 할당을 변경](change-a-role-assignment-exchange-2013-help.md)을 참조하십시오.
 
@@ -492,7 +526,9 @@ Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
     
     1.  셸에서 다음 명령을 실행합니다.
         
+        ```powershell
             Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```
     
     2.  역할 할당의 쓰기 범위가 지정한 범위로 변경되었는지 확인합니다.
 
@@ -501,16 +537,12 @@ Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
 역할 그룹 대리인은 역할 그룹에서 구성원을 추가 또는 제거하거나 역할 그룹의 속성을 변경할 수 있는 사용자 또는 USG(유니버설 보안 그룹)입니다. 역할 그룹 대리인을 추가하거나 제거하여 역할 그룹을 관리할 수 있는 사용자를 제어할 수 있습니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]   
 > 역할 그룹에 대리인을 추가하면 역할 그룹의 대리인 또는 직접적이든 간접적이든 Role Management 관리 역할이 할당된 사용자만 해당 역할 그룹을 관리할 수 있습니다.<BR>직접적이든 간접적이든 사용자가 Role Management 역할을 할당받았지만 역할 그룹의 대리인으로 추가되지 않는 경우 사용자는 <STRONG>Add-RoleGroupMember</STRONG>, <STRONG>Remove-RoleGroupMember</STRONG>, <STRONG>Update-RoleGroupMember</STRONG> 및 <STRONG>Set-RoleGroup</STRONG> cmdlet에서 <EM>BypassSecurityGroupManagerCheck</EM> 스위치를 사용하여 역할 그룹을 관리해야 합니다.
-
-
 
 
 > [!NOTE]
 > 역할 그룹에 대리인을 추가하는 데 EAC를 사용할 수 없습니다.
-
-
 
 ## 셸을 사용하여 역할 그룹에 대리인 추가
 
@@ -519,17 +551,17 @@ Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
 1.  다음 명령을 사용하여 역할 그룹을 변수에 저장합니다.
     
     ```powershell
-$RoleGroup = Get-RoleGroup <role group name>
-```
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  다음 명령을 사용하여 변수에 저장된 역할 그룹에 대리인을 추가합니다.
     
-        $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
-    
+    ```powershell
+    $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```   
 
     > [!NOTE]
     > USG를 추가하려면 <STRONG>Get-Group</STRONG> cmdlet을 사용합니다.
-
 
 
 3.  추가할 각 대리인에 대해 2단계를 반복합니다.
@@ -537,14 +569,16 @@ $RoleGroup = Get-RoleGroup <role group name>
 4.  다음 명령을 사용하여 새 대리인 목록을 실제 역할 그룹에 적용합니다.
     
     ```powershell
-Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
-```
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 이 예에서는 조직 관리 역할 그룹의 대리인으로서 사용자 David Strome을 추가합니다.
 
+   ```powershell
     $RoleGroup = Get-RoleGroup "Organization Management"
     $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
     Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+   ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-RoleGroup](https://technet.microsoft.com/ko-kr/library/dd638182\(v=exchg.150\))를 참조하십시오.
 
@@ -555,32 +589,33 @@ Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
 1.  다음 명령을 사용하여 역할 그룹을 변수에 저장합니다.
     
     ```powershell
-$RoleGroup = Get-RoleGroup <role group name>
-```
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  다음 명령을 사용하여 변수에 저장된 역할 그룹에서 대리인을 제거합니다.
     
-        $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
-    
+    ```powershell
+    $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```   
 
-    > [!NOTE]
+    > [!NOTE]  
     > USG를 제거하려면 <STRONG>Get-Group</STRONG> cmdlet을 사용합니다.
-
-
 
 3.  제거할 각 대리인에 대해 2단계를 반복합니다.
 
 4.  다음 명령을 사용하여 새 대리인 목록을 실제 역할 그룹에 적용합니다.
     
     ```powershell
-Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
-```
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 이 예에서는 조직 관리 역할 그룹의 대리인으로서 사용자 David Strome을 제거합니다.
 
+   ```powershell
     $RoleGroup = Get-RoleGroup "Organization Management"
     $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
     Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+   ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-RoleGroup](https://technet.microsoft.com/ko-kr/library/dd638182\(v=exchg.150\))를 참조하십시오.
 
@@ -591,8 +626,8 @@ Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-RoleGroup <role group name> | Format-List ManagedBy
-```
+    Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```
 
 2.  *ManagedBy* 속성에 나열된 대리자에 역할 그룹을 관리할 수 있는 대리자만 포함되어 있는지 확인합니다.
 

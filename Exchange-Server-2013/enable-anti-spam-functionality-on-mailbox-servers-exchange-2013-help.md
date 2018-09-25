@@ -59,7 +59,9 @@ Exchange 관리 셸의 스크립트를 사용하여 사서함 서버에 이러�
 
 다음 명령을 실행합니다.
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```powershell
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -99,9 +101,9 @@ Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
 
 1.  다음 명령을 실행합니다.
     
-    ```powershell
-Get-TransportConfig | Format-List InternalSMTPServers
-```
+  ```powershell
+  Get-TransportConfig | Format-List InternalSMTPServers
+  ```
 
 2.  적어도 하나의 유효한 내부 SMTP 서버 IP 주소가 표시되는지 확인합니다.
 

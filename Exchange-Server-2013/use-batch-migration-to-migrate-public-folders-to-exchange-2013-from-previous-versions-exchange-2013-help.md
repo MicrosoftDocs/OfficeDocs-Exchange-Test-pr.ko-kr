@@ -428,7 +428,9 @@ Complete-MigrationBatch PublicFolderMigration
 
 1.  PowerShell에서 새로 마이그레이션된 공용 폴더 사서함을 기본 공용 폴더 사서함으로 사용할 일부 테스트 사서함에 할당 하려면 다음 명령을 실행 합니다.
     
-        Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    ```powershell
+    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    ```
 
 2.  이전 단계에서 식별된 테스트 사용자로 Outlook 2007 이상에 로그온하여 다음 공용 폴더 테스트를 수행합니다.
     
@@ -443,26 +445,22 @@ Complete-MigrationBatch PublicFolderMigration
 3.  문제를 실행 하는 경우이 항목의 뒷부분에 마이그레이션 롤백 을 참조 합니다. 수 있는 적절 한 및 예상한 대로 작동 하는 공용 폴더 콘텐츠 및 계층 구조를 하는 경우에 다른 모든 사용자에 대 한 공용 폴더의 잠금을 해제 하려면 다음 명령을 실행 합니다.
     
     ```powershell
-Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
-```
-    
+    Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```    
 
     > [!IMPORTANT]
     > 초기 마이그레이션 유효성 검사를 완료한 후에는 <EM>IsExcludedFromServingHierarchy</EM> 매개 변수를 사용하지 마십시오. 이 매개 변수는 Exchange Online용으로 자동화된 저장소 관리 서비스에 사용됩니다.
 
-
-
 4.  레거시 Exchange 서버에서 다음 명령을 실행하여 공용 폴더 마이그레이션이 완료되었음을 나타냅니다.
     
     ```powershell
-Set-OrganizationConfig -PublicFolderMigrationComplete:$true
-```
-
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```
 5.  마이그레이션이 완료 되는 확인 한 후 다음 명령을 실행 합니다.
     
     ```powershell
-Set-OrganizationConfig -PublicFoldersEnabled Local
-```
+    Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```
 
 6.  마지막으로, 외부의 보낸 사람이 마이그레이션된 메일 사용이 가능한 공용 폴더에 메일을 보낼 수를 원하는 경우 **익명** 사용자 최소한의 **항목 만들기** 에 게 권한을 부여 해야 합니다. 이렇게 하지 않으면 외부 보낸 사람이 배달 실패 알림의 받을 하 고 마이그레이션된 메일 사용이 가능한 공용 폴더에 메시지를 배달 하지 않습니다.
     
@@ -475,16 +473,18 @@ Set-OrganizationConfig -PublicFoldersEnabled Local
 1.  다음 명령을 실행하여 새 폴더 구조의 스냅숏을 만듭니다.
     
     ```powershell
-Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
-```
-
+    Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```
 2.  다음 명령을 실행하여 항목 수, 크기 및 소유자와 같은 공용 폴더 통계에 대한 스냅숏을 만듭니다.
     
-        Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
-
+    ```powershell
+    Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+    ```
 3.  다음 명령을 실행하여 사용 권한의 스냅숏을 만듭니다.
     
-        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    ```powershell
+    Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    ```
 
 ## 레거시 Exchange 서버에서 공용 폴더 데이터베이스 제거
 
@@ -498,28 +498,26 @@ Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
 
 마이그레이션과 관련된 문제가 발생하여 레거시 Exchange 공용 폴더를 다시 활성화해야 하는 경우 다음 단계를 수행하십시오.
 
-> [!CAUTION]
+> [!CAUTION]  
 > 롤백하는 경우 마이그레이션 레거시 Exchange 서버에, 메일 사용이 가능한 공용 폴더 또는 마이그레이션 후 Exchange 2013의 공용 폴더에 게시 된 콘텐츠에 게 보낸 모든 전자 메일을 손실 됩니다. 이 콘텐츠를 저장 하려면 공용 폴더 콘텐츠를.pst 파일로 내보내고 롤백을 완료 되 면 레거시 공용 폴더를 가져올 해야 합니다.
 
 
 1.  레거시 Exchange 서버에서 다음 명령을 실행하여 레거시 Exchange 공용 폴더의 잠금을 해제합니다. 이 프로세스를 수행하는 데 몇 시간이 걸릴 수 있습니다.
     
     ```powershell
-Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
-```
+    Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```
 
 2.  Exchange 2013 서버에서 공용 폴더 사서함을 제거 하려면 다음 명령을 실행 합니다.
     
-    ```
+    ```powershell
     Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-```powershell
-Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-```
     ```
-
+    ```powershell
+    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
 3.  레거시 Exchange 서버에서 다음 명령을 실행하여 `PublicFolderMigrationComplete` 플래그를 `$false`로 설정합니다.
     
     ```powershell
-Set-OrganizationConfig -PublicFolderMigrationComplete:$False
-```
-
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```

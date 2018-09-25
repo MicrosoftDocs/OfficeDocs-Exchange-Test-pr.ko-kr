@@ -53,10 +53,12 @@ _**마지막으로 수정된 항목:** 2013-04-16_
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버를 `MySIPDialPlan`이라는 SIP URI 다이얼 플랜에서 제거합니다.
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 이 예에는 SipDP1, SipDP2, SipDP3의 3개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyMailboxServer`라는 사서함 서버를 SipDP3 다이얼 플랜에서 제거합니다.
 
@@ -90,11 +92,12 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버를 `MySIPDialPlan`이라는 SIP URI 다이얼 플랜에서 제거합니다.
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
-
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 이 예에는 SipDP1, SipDP2, SipDP3의 3개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버를 SipDP3 다이얼 플랜에서 제거합니다.
 
 ```powershell

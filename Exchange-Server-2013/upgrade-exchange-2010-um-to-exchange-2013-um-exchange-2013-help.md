@@ -543,8 +543,9 @@ EAC를 통해 사용자가 통합 메시징을 사용하도록 설정하려면 �
 
 셸을 통해 사용자가 통합 메시징을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
-
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 필요한 경우 EAC를 사용하여 UM을 사용하도록 설정된 사용자를 구성할 수 있습니다.
 
 1.  EAC에서 **받는 사람** \> **사서함**으로 이동합니다.
@@ -573,7 +574,9 @@ EAC를 통해 사용자가 통합 메시징을 사용하도록 설정하려면 �
 
 필요한 경우 셸에서 다음 명령을 실행하여 사용자가 UM을 사용하도록 구성할 수 있습니다.
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+  ```powershell
+  Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+  ```
 
 ## 14단계: Exchange 2013 클라이언트 액세스 서버로 들어오는 모든 수신 전화를 전송하도록 VoIP 게이트웨이, IP PBX 및 SIP 사용 가능 PBX 구성
 
@@ -615,10 +618,8 @@ Exchange 관리 콘솔을 사용하여 Exchange 2010 UM 서버에서 통합 메�
 Disable-UMServer -Identity MyUMServer -Immediate $true
 ```
 
-
 > [!TIP]  
 > Exchange 2010 UM 서버에서 <STRONG>Disable-UMServer</STRONG> cmdlet을 사용하거나 Exchange 2013 사서함 서버에서 <STRONG>Disable-UMService</STRONG> cmdlet을 사용하여 전화 응답을 사용하지 않도록 설정할 수 있습니다.
-
 
 
 ## 16단계: 다이얼 플랜에서 Exchange 2010 통합 메시징 서버 제거
@@ -641,10 +642,12 @@ Exchange 관리 콘솔을 사용하여 다이얼 플랜에서 Exchange 2010 UM �
 
 셸을 사용하여 다이얼 플랜에서 Exchange 2010 UM 서버를 제거하려면 다음 명령을 실행합니다.
 
+  ```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMServer -id MyUMServer
     $s.dialplans-=$dp.identity
     Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+  ```
 
 이 예에는 SipDP1, SipDP2, SipDP3의 3개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyUMServer`라는 UM 서버를 SipDP3 다이얼 플랜에서 제거합니다.
 

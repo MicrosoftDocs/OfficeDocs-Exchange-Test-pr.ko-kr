@@ -45,9 +45,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예제에서는 Outlook 보호 규칙 Project Contoso를 만듭니다. 중요 한 비즈니스 AD RMS 템플릿 사용 하 여 ContosoPMs 메일 그룹에 보낸 메시지를 보호 하는 규칙입니다.
 
-    New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
-
-
+```powershell
+New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+```
 > [!NOTE]
 > Outlook 보호 규칙에 대 한 <CODE>SentTo</CODE> 조건자를 사용 하는 경우 및 메일 그룹을 지정 메시지만 주소가 지정 된 받는 사람, 사람, 참조 또는 숨은 참조에 메일 그룹에 필드 IRM으로 보호 된 됩니다. 메일 그룹의 개별 구성원에 게 보내는 메시지에 IRM 보호 적용 되지 않습니다.
 
@@ -66,7 +66,7 @@ Outlook 보호 규칙 성공적으로 만들었습니다을 확인 하려면 다
   - Outlook 2010 를 사용 하 여 규칙의 조건을 충족 하는 테스트 메시지를 만들고 클라이언트에서 규칙이 트리거되는 있는지 확인 합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]   
     > Outlook에서 사용할 수 있도록 Outlook 보호 규칙에 대 한 다소 시간이 걸릴 수 있습니다.
 
 

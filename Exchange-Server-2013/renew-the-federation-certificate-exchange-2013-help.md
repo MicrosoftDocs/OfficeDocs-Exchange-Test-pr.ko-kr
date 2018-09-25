@@ -119,8 +119,9 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
 새 페더레이션 인증서의 배포를 확인 하려면 Exchange 관리 셸 를 사용 하려면 다음 명령을 실행 합니다.
 
-    $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
-
+```powershell
+$Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```
 **참고:**  **Test-FederationCertificate** cmdlet의 출력을 Exchange 2010 서버 이름을 포함 합니다. Exchange 2013 또는 나중에 cmdlet의 출력에는 서버 이름은 포함 되지 않습니다.
 
 ## 5 단계: 새 페더레이션 인증서를 활성화 합니다.
