@@ -3233,13 +3233,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_finland_passport_number</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_finland_passport_number</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Finland Passport Number --&gt;
-&lt;Entity id=&quot;d1685ac3-1d3a-40f8-8198-32ef5669c7a5&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_finland_passport_number&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_finland_passport_number&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3300,16 +3304,20 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_eu_date</code> 함수가 올바른 날짜 형식의 날짜를 찾습니다.</p></li>
 </ul></li>
 </ul>
-```xml&lt;!-- France Driver&#39;s License Number --&gt;
-&lt;Entity id=&quot;18e55a36-a01b-4b0f-943d-dc10282a1824&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_french_drivers_license&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_french_drivers_license&quot; /&gt;
-          &lt;Match idRef=&quot;Func_eu_date&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- France Driver's License Number -->
+<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_french_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_french_drivers_license" />
+          <Match idRef="Func_eu_date" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3372,12 +3380,16 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <ul>
 <li><p><code>Regex_france_cni</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 </ul>
-```xml&lt;!-- France CNI --&gt;
-&lt;Entity id=&quot;f741ac74-1bc0-4665-b69b-f0c7f927c0c4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;65&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_france_cni&quot; /&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- France CNI -->
+<Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
+  <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_france_cni" />
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3420,13 +3432,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_fr_passport</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- France Passport Number --&gt;
-&lt;Entity id=&quot;3008b884-8c8c-4cd8-a289-99f34fc7ff5d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_fr_passport&quot; /&gt;
-        &lt;Match idRef=&quot;Keyword_passport&quot; /&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- France Passport Number -->
+<Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_fr_passport" />
+        <Match idRef="Keyword_passport" />
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3510,23 +3526,27 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_fr_insee</code>의 키워드가 발견되지 않았습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- France INSEE --&gt;
-&lt;Entity id=&quot;71f62b97-efe0-4aa1-aa49-e14de253619d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_french_insee&quot; /&gt;
-        &lt;Match idRef=&quot;Func_fr_insee&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_fr_insee&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_french_insee&quot; /&gt;
-        &lt;Match idRef=&quot;Func_fr_insee&quot; /&gt;
-        &lt;Any minMatches=&quot;0&quot; maxMatches=&quot;0&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_fr_insee&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- France INSEE -->
+<Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="95">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3615,17 +3635,21 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- German Driver&#39;s License Number --&gt;
-&lt;Entity id=&quot;91da9335-1edb-45b7-a95f-5fe41a16c63c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_german_drivers_license&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_german_drivers_license_number&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_drivers_license_collaborative&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_drivers_license&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- German Driver's License Number -->
+<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_drivers_license_number" />
+          <Match idRef="Keyword_german_drivers_license_collaborative" />
+          <Match idRef="Keyword_german_drivers_license" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3792,13 +3816,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_germany_id_card</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_germany_id_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Germany Identity Card Number --&gt;
-&lt;Entity id=&quot;e577372f-c42e-47a0-9d85-bebed1c237d4&quot; recommendedConfidence=&quot;65&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_germany_id_card&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_germany_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Germany Identity Card Number -->
+<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Regex_germany_id_card"/>
+     <Match idRef="Keyword_germany_id_card"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3873,29 +3901,33 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>5개의 키워드 목록 중에 포함된 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- German Passport Number --&gt;
-&lt;Entity id=&quot;2e3da144-d42b-47ed-b123-fbf78604e52c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_german_passport&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport_collaborative&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport_number&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport1&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport2&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_german_passport_data&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport_collaborative&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport_number&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport1&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_german_passport2&quot; /&gt;
-        &lt;/Any&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- German Passport Number -->
+<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_passport_data" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -3984,13 +4016,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_greece_id_card</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_greece_id_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Greece National ID Card --&gt;
-&lt;Entity id=&quot;82568215-1da1-46d3-874a-d2294d81b5ac&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_greece_id_card&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_greece_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Greece National ID Card -->
+<Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_greece_id_card"/>
+     <Match idRef="Keyword_greece_id_card"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4060,16 +4096,20 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>함수 <code>Func_hong_kong_id_card</code> 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Hong Kong Identity Card (HKID) number --&gt;
-&lt;Entity id=&quot;e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_hong_kong_id_card&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_hong_kong_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_hong_kong_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Hong Kong Identity Card (HKID) number -->
+<Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+     <Match idRef="Keyword_hong_kong_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4135,13 +4175,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_india_permanent_account_number</code> 에서 키워드를 발견 됩니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- India Permanent Account Number --&gt;
-&lt;Entity id=&quot;2602bfee-9bb0-47a5-a7a6-2bf3053e2804&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_india_permanent_account_number&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_india_permanent_account_number&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- India Permanent Account Number -->
+<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_india_permanent_account_number"/>
+     <Match idRef="Keyword_india_permanent_account_number"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4211,16 +4255,20 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>함수 <code>Func_india_aadhaar</code> 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- India Unique Identification (Aadhaar) number --&gt;
-&lt;Entity id=&quot;1ca46b29-76f5-4f46-9383-cfa15e91048f&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_india_aadhaar&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_india_aadhar&quot;/&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_india_aadhaar&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- India Unique Identification (Aadhaar) number -->
+<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_india_aadhaar"/>
+     <Match idRef="Keyword_india_aadhar"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_india_aadhaar"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4293,16 +4341,20 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <ul>
 <li><p><code>Regex_indonesia_id_card</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 </ul>
-```xml&lt;!-- Indonesia Identity Card (KTP) Number --&gt;
-&lt;Entity id=&quot;da68fdb0-f383-4981-8c86-82689d3b7d55&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_indonesia_id_card&quot;/&gt;
-     &lt;Match idRef=&quot;Keyword_indonesia_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-     &lt;IdMatch idRef=&quot;Regex_indonesia_id_card&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Indonesia Identity Card (KTP) Number -->
+<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+     <Match idRef="Keyword_indonesia_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4371,11 +4423,15 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_iban</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;Entity id=&quot;e7dc4711-11b7-4cb0-b88b-2c394a771f0e&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_iban&quot; /&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_iban" />
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4430,27 +4486,31 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_ipv6_address</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_ipaddress</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
-```xml    &lt;!-- IP Address --&gt;
-    &lt;Entity id=&quot;1daa4ad5-e2dd-4ca4-a788-54722c09efb2&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
-      &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_ipv6_address&quot; /&gt;
-        &lt;Any minMatches=&quot;0&quot; maxMatches=&quot;0&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_ipaddress&quot; /&gt;
-        &lt;/Any&gt;
-      &lt;/Pattern&gt;
-      &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_ipv4_address&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_ipaddress&quot; /&gt;
-        &lt;/Any&gt;
-      &lt;/Pattern&gt;
-      &lt;Pattern confidenceLevel=&quot;95&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_ipv6_address&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_ipaddress&quot; /&gt;
-        &lt;/Any&gt;
-      &lt;/Pattern&gt;
-    &lt;/Entity&gt;```</td>
+
+```xml  
+    <!-- IP Address -->
+    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv4_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4539,19 +4599,23 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>함수 <code>Func_ireland_pps</code> 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Ireland Personal Public Service (PPS) Number --&gt;
-&lt;Entity id=&quot;1cdb674d-c19a-4fcf-9f4b-7f56cc87345a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
-  &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_ireland_pps&quot;/&gt;
-     &lt;Any minMatches=&quot;1&quot;&gt;
-  &lt;Match idRef=&quot;Keyword_ireland_pps&quot;/&gt;
-  &lt;Match idRef=&quot;Func_eu_date&quot;/&gt;
-     &lt;/Any&gt;
-  &lt;/Pattern&gt;
-  &lt;Pattern confidenceLevel=&quot;65&quot;&gt;
-     &lt;IdMatch idRef=&quot;Func_ireland_pps&quot;/&gt;
-  &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Ireland Personal Public Service (PPS) Number -->
+<Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_ireland_pps"/>
+     <Any minMatches="1">
+  <Match idRef="Keyword_ireland_pps"/>
+  <Match idRef="Func_eu_date"/>
+     </Any>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_ireland_pps"/>
+  </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4628,15 +4692,20 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_israel_bank_account_number</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_israel_bank_account_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Israel Bank Account Number --&gt;
-&lt;Entity id=&quot;7d08b2ff-a0b9-437f-957c-aeddbf9b2b25&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_israel_bank_account_number&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_israel_bank_account_number&quot; /&gt;
-        &lt;/Any&gt;
-    &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Israel Bank Account Number -->
+<Entity id="7d08b2ff-a0b9-437f-957c-aeddbf9b2b25" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_israel_bank_account_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_israel_bank_account_number" />
+        </Any>
+    </Pattern>
+</Entity>
+
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4696,15 +4765,19 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_Israel_National_ID</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Israel National ID Number --&gt;
-&lt;Entity id=&quot;e05881f5-1db1-418c-89aa-a3ac5c5277ee&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_israeli_national_id_number&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_Israel_National_ID&quot; /&gt;
-        &lt;/Any&gt;
-    &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Israel National ID Number -->
+<Entity id="e05881f5-1db1-418c-89aa-a3ac5c5277ee" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_israeli_national_id_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_Israel_National_ID" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4767,15 +4840,19 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_italy_drivers_license_number</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_italy_drivers_license_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Italy Driver&#39;s license Number --&gt;
-&lt;Entity id=&quot;97d6244f-9157-41bd-8e0c-9d669a5c4d71&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-    &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Regex_italy_drivers_license_number&quot; /&gt;
-        &lt;Any minMatches=&quot;1&quot;&gt;
-          &lt;Match idRef=&quot;Keyword_italy_drivers_license_number&quot; /&gt;
-        &lt;/Any&gt;
-    &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Italy Driver's license Number -->
+<Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_italy_drivers_license_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_italy_drivers_license_number" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4851,23 +4928,27 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_jp_bank_account</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_jp_bank_account</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Japan Bank Account Number --&gt;
-&lt;Entity id=&quot;d354f95b-96ee-4b80-80bc-4377312b55bc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
-  &lt;Version minEngineVersion=&quot;15.01.0131.000&quot;&gt;
-    &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
-          &lt;IdMatch idRef=&quot;Func_jp_bank_account&quot; /&gt;
-          &lt;Match idRef=&quot;Keyword_jp_bank_account&quot; /&gt;
-          &lt;Any minMatches=&quot;1&quot;&gt;
-            &lt;Match idRef=&quot;Func_jp_bank_account_branch_code&quot; /&gt;
-            &lt;Match idRef=&quot;Keyword_jp_bank_branch_code&quot; /&gt;
-          &lt;/Any&gt;
-      &lt;/Pattern&gt;
-  &lt;/Version&gt;    
-     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
-        &lt;IdMatch idRef=&quot;Func_jp_bank_account&quot; /&gt;
-        &lt;Match idRef=&quot;Keyword_jp_bank_account&quot; /&gt;
-    &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+
+```xml
+<!-- Japan Bank Account Number -->
+<Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
+  <Version minEngineVersion="15.01.0131.000">
+    <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_jp_bank_account" />
+          <Match idRef="Keyword_jp_bank_account" />
+          <Any minMatches="1">
+            <Match idRef="Func_jp_bank_account_branch_code" />
+            <Match idRef="Keyword_jp_bank_branch_code" />
+          </Any>
+      </Pattern>
+  </Version>    
+     <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_bank_account" />
+        <Match idRef="Keyword_jp_bank_account" />
+    </Pattern>
+</Entity>
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -4982,13 +5063,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_jp_drivers_license_number</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_jp_drivers_license_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Japan Driver&#39;s License Number --&gt;
+
+```xml
+&lt;!-- Japan Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;c6011143-d087-451c-8313-7f6d4aed2270&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_drivers_license_number&quot; /&gt;
         &lt;Match idRef =&quot;Keyword_jp_drivers_license_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5072,13 +5157,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_jp_passport</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_jp_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Japan Passport Number --&gt;
+
+```xml
+&lt;!-- Japan Passport Number --&gt;
 &lt;Entity id=&quot;75177310-1a09-4613-bf6d-833aae3743f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_passport&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_passport&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5137,13 +5226,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_jp_resident_registration_number</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_jp_resident_registration_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Japan Resident Registration Number --&gt;
+
+```xml
+&lt;!-- Japan Resident Registration Number --&gt;
 &lt;Entity id=&quot;01c1209b-6389-4faf-a5f8-3f7e13899652&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_resident_registration_number&quot; /&gt;
         &lt;Match idRef =&quot;Keyword_jp_resident_registration_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5221,7 +5314,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_jp_sin_pre_1997</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_jp_sin</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Japan Social Insurance Number --&gt;
+
+```xml
+&lt;!-- Japan Social Insurance Number --&gt;
 &lt;Entity id=&quot;c840e719-0896-45bb-84fd-1ed5c95e45ff&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_jp_sin&quot; /&gt;
@@ -5231,7 +5326,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
         &lt;IdMatch idRef=&quot;Func_jp_sin_pre_1997&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_jp_sin&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5299,14 +5396,18 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_malaysia_id_card_number</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_malaysia_id_card_number</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Malaysia ID Card Number --&gt;
+
+```xml
+&lt;!-- Malaysia ID Card Number --&gt;
 &lt;/Entity&gt;
       &lt;Entity id=&quot;7f0e921c-9677-435b-aba2-bb8f1013c749&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
         &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
             &lt;IdMatch idRef=&quot;Regex_malaysia_id_card_number&quot; /&gt;
             &lt;Match idRef=&quot;Keyword_malaysia_id_card_number&quot; /&gt;
         &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5377,14 +5478,18 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_eu_date2</code> 함수가 올바른 날짜 형식의 날짜를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Netherlands Citizen&#39;s Service (BSN) Number --&gt;
+
+```xml
+&lt;!-- Netherlands Citizen&#39;s Service (BSN) Number --&gt;
 &lt;Entity id=&quot;c5f54253-ef7e-44f6-a578-440ed67e946d&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
        &lt;IdMatch idRef=&quot;Func_netherlands_bsn&quot; /&gt; 
        &lt;Match idRef=&quot;Keyword_netherlands_bsn&quot; /&gt; 
        &lt;Match idRef=&quot;Func_eu_date2&quot; /&gt; 
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5446,7 +5551,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_nz_terms</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- New Zealand Health Number --&gt;
+
+```xml
+&lt;!-- New Zealand Health Number --&gt;
 &lt;Entity id=&quot;2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_new_zealand_ministry_of_health_number&quot; /&gt;
@@ -5454,7 +5561,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_nz_terms&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5524,7 +5633,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>함수 <code>Func_norway_id_numbe</code> 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Norway Identification Number --&gt;
+
+```xml
+&lt;!-- Norway Identification Number --&gt;
 &lt;Entity id=&quot;d4c8a798-e9f2-4bd3-9652-500d24080fc3&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_norway_id_number&quot;/&gt;
@@ -5533,7 +5644,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_norway_id_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5601,13 +5714,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_philippines_unified_id</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_philippines_id</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Philippines Unified Multi-Purpose ID number --&gt;
+
+```xml
+&lt;!-- Philippines Unified Multi-Purpose ID number --&gt;
 &lt;Entity id=&quot;019b39dd-8c25-4765-91a3-d9c6baf3c3b3&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_philippines_unified_id&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_philippines_id&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5667,13 +5784,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_polish_national_id_passport_number</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Poland Identity Card--&gt;
+
+```xml
+&lt;!-- Poland Identity Card--&gt;
 &lt;Entity id=&quot;25E64989-ED5D-40CA-A939-6C14183BB7BF&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_polish_national_id&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_polish_national_id_passport_number&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5732,13 +5853,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_pesel_identification_number</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Poland National ID (PESEL) --&gt;      
+
+```xml
+&lt;!-- Poland National ID (PESEL) --&gt;      
 &lt;Entity id=&quot;E3AAF206-4297-412F-9E06-BA8487E22456&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_pesel_identification_number&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_pesel_identification_number&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5796,14 +5921,18 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_polish_national_id_passport_number</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Poland Passport Number --&gt;
+
+```xml
+&lt;!-- Poland Passport Number --&gt;
 &lt;Entity id=&quot;03937FB5-D2B6-4487-B61F-0F8BFF7C3517&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_polish_passport_number&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_polish_national_id_passport_number&quot; /&gt;
       &lt;/Pattern&gt;
 &lt;/Entity&gt;
-&lt;/Version&gt;```</td>
+&lt;/Version&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5861,13 +5990,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_portugal_citizen_card</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_portugal_citizen_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Portugal Citizen Card Number --&gt;
+
+```xml
+&lt;!-- Portugal Citizen Card Number --&gt;
 &lt;Entity id=&quot;91a7ece2-add4-4986-9a15-c84544d81ecd&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_portugal_citizen_card&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_portugal_citizen_card&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -5927,7 +6060,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_saudi_arabia_national_id</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_saudi_arabia_national_id</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- Saudi Arabia National ID --&gt;
+
+```xml
+&lt;!-- Saudi Arabia National ID --&gt;
 &lt;Entity id=&quot;8c5a0ba8-404a-41a3-8871-746aa21ee6c0&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_saudi_arabia_national_id&quot; /&gt;
@@ -5935,7 +6070,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_saudi_arabia_national_id&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6005,7 +6142,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_singapore_nric</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Singapore National Registration Identity Card (NRIC) Number --&gt;
+
+```xml
+&lt;!-- Singapore National Registration Identity Card (NRIC) Number --&gt;
 &lt;Entity id=&quot;cead390a-dd83-4856-9751-fb6dc98c34da&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_singapore_nric&quot;/&gt;
@@ -6014,7 +6153,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_singapore_nric&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6085,13 +6226,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_south_africa_identification_number</code> 에서 키워드를 발견 됩니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- South Africa Identification Number --&gt;
+
+```xml
+&lt;!-- South Africa Identification Number --&gt;
 &lt;Entity id=&quot;e2adf7cb-8ea6-4048-a2ed-d89eb65f2780&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_africa_identification_number&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_south_africa_identification_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6163,7 +6308,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>함수 <code>Func_south_korea_resident_number</code> 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- South Korea Resident Registration Number --&gt;
+
+```xml
+&lt;!-- South Korea Resident Registration Number --&gt;
 &lt;Entity id=&quot;5b802e18-ba80-44c4-bc83-bf2ad36ae36a&quot; recommendedConfidence=&quot;85&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_korea_resident_number&quot;/&gt;
@@ -6172,7 +6319,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Func_south_korea_resident_number&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6239,12 +6388,16 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_spanish_social_security_number</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Spain SSN --&gt;
+
+```xml
+&lt;!-- Spain SSN --&gt;
 &lt;Entity id=&quot;5df987c0-8eae-4bce-ace7-b316347f3070&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_spanish_social_security_number&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6288,12 +6441,16 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_swedish_national_identifier</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Sweden National ID --&gt;
+
+```xml
+&lt;!-- Sweden National ID --&gt;
 &lt;Entity id=&quot;f69aaf40-79be-4fac-8f05-fd1910d272c8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_swedish_national_identifier&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6335,7 +6492,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_sweden_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul></li>
 </ul>
-```xml&lt;!-- Sweden Passport Number --&gt;
+
+```xml
+&lt;!-- Sweden Passport Number --&gt;
 &lt;Entity id=&quot;ba4e7456-55a9-4d89-9140-c33673553526&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_sweden_passport_number&quot; /&gt;
@@ -6344,7 +6503,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_sweden_passport&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6438,12 +6599,16 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_swift</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_swift</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;Entity id=&quot;cb2ab58c-9cb8-4c81-baf8-a4e106791df4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
+
+```xml
+&lt;Entity id=&quot;cb2ab58c-9cb8-4c81-baf8-a4e106791df4&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
 &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_swift&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_swift&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6535,13 +6700,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_taiwanese_national_id</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- Taiwanese National ID --&gt;
+
+```xml
+&lt;!-- Taiwanese National ID --&gt;
 &lt;Entity id=&quot;4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
           &lt;IdMatch idRef=&quot;Func_taiwanese_national_id&quot; /&gt;
           &lt;Match idRef=&quot;Keyword_taiwanese_national_id&quot; /&gt;
       &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6627,13 +6796,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_taiwan_passport</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_taiwan_passport</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Taiwan Passport Number --&gt;
+
+```xml
+&lt;!-- Taiwan Passport Number --&gt;
 &lt;Entity id=&quot;e7251cb4-4c2c-41df-963e-924eb3dae04a&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_taiwan_passport&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_taiwan_passport&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6700,13 +6873,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_taiwan_resident_certificate</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_taiwan_resident_certificate</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
-```xml&lt;!-- Taiwan Resident Certificate (ARC/TARC) --&gt;
+
+```xml
+&lt;!-- Taiwan Resident Certificate (ARC/TARC) --&gt;
 &lt;Entity id=&quot;48269fec-05ea-46ea-b326-f5623a58c6e9&quot; recommendedConfidence=&quot;75&quot; patternsProximity=&quot;300&quot;&gt;
   &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
      &lt;IdMatch idRef=&quot;Regex_taiwan_resident_certificate&quot;/&gt;
      &lt;Match idRef=&quot;Keyword_taiwan_resident_certificate&quot;/&gt;
   &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6780,13 +6957,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_uk_drivers_license</code>의 키워드가 발견되었습니다.</p></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- U.K. Driver&#39;s License Number --&gt;
+
+```xml
+&lt;!-- U.K. Driver&#39;s License Number --&gt;
 &lt;Entity id=&quot;f93de4be-d94c-40df-a8be-461738047551&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_drivers_license&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_uk_drivers_license&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6856,7 +7037,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_uk_electoral</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_uk_electoral</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- U.K. Electoral Number --&gt;
+
+```xml
+&lt;!-- U.K. Electoral Number --&gt;
 &lt;Entity id=&quot;a3eea206-dc0c-4f06-9e22-aa1be3059963&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_uk_electoral&quot; /&gt;
@@ -6864,7 +7047,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_uk_electoral&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -6936,7 +7121,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul></li>
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
-```xml&lt;!-- U.K. NHS Number --&gt;
+
+```xml
+&lt;!-- U.K. NHS Number --&gt;
 &lt;Entity id=&quot;3192014e-2a16-44e9-aa69-4b20375c9a78&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;85&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_nhs_number&quot; /&gt;
@@ -6946,7 +7133,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_uk_nhs_number_dob&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7043,7 +7232,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_uk_nino</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_uk_nino</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
-```xml&lt;!-- U.K. NINO --&gt;
+
+```xml
+&lt;!-- U.K. NINO --&gt;
 &lt;Entity id=&quot;16c07343-c26f-49d2-a987-3daf717e94cc&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_uk_nino&quot; /&gt;
@@ -7057,7 +7248,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Keyword_uk_nino&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7124,12 +7317,16 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_usa_uk_passport</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;Entity id=&quot;178ec42a-18b4-47cc-85c7-d62c92fd67f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
+
+```xml
+&lt;Entity id=&quot;178ec42a-18b4-47cc-85c7-d62c92fd67f8&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_usa_uk_passport&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_passport&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7202,13 +7399,17 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_usa_bank_account_number</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 <li><p><code>Keyword_usa_Bank_Account</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
-```xml&lt;!-- U.S. Bank Account Number --&gt;
+
+```xml
+&lt;!-- U.S. Bank Account Number --&gt;
 &lt;Entity id=&quot;a2ce32a8-f935-4bb6-8e96-2a5157672e2c&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;75&quot;&gt;
         &lt;IdMatch idRef=&quot;Regex_usa_bank_account_number&quot; /&gt;
         &lt;Match idRef=&quot;Keyword_usa_Bank_Account&quot; /&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7314,7 +7515,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
         &lt;Any minMatches=&quot;0&quot; maxMatches=&quot;0&quot;&gt;
           &lt;Match idRef=&quot;Keyword_us_drivers_license&quot; /&gt;
         &lt;/Any&gt;
-    &lt;/Pattern&gt;```</td>
+    &lt;/Pattern&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7501,7 +7704,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Func_us_date</code> 함수가 올바른 날짜 형식의 날짜를 찾습니다.</p></li>
 </ul></li>
 </ul>
-```xml&lt;!-- U.S. Individual Taxpayer Identification Number (ITIN) --&gt;
+
+```xml
+&lt;!-- U.S. Individual Taxpayer Identification Number (ITIN) --&gt;
 &lt;Entity id=&quot;e55e2a32-f92d-4985-a35d-a0b269eb687b&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
     &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_formatted_itin&quot; /&gt;
@@ -7521,7 +7726,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Func_us_date&quot; /&gt;
         &lt;/Any&gt;
     &lt;/Pattern&gt;
-&lt;/Entity&gt;```</td>
+&lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
@@ -7627,7 +7834,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_ssn</code>의 키워드가 발견되었습니다.</p></li>
 <li><p><code>Func_unformatted_ssn</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾지 않습니다.</p></li>
 </ul>
-```xml &lt;!-- U.S. Social Security Number (SSN) --&gt;
+```xml
+&lt;!-- U.S. Social Security Number (SSN) --&gt;
     &lt;Entity id=&quot;a44669fe-0d48-453d-a9b1-2cc83f2cba77&quot; patternsProximity=&quot;300&quot; recommendedConfidence=&quot;75&quot;&gt;
       &lt;Pattern confidenceLevel=&quot;85&quot;&gt;
         &lt;IdMatch idRef=&quot;Func_ssn&quot; /&gt;
@@ -7651,7 +7859,9 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
           &lt;Match idRef=&quot;Func_unformatted_ssn&quot; /&gt;
         &lt;/Any&gt;
       &lt;/Pattern&gt;
-    &lt;/Entity&gt;```</td>
+    &lt;/Entity&gt;
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>키워드</p></td>
