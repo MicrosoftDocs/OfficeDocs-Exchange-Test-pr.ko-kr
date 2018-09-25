@@ -71,11 +71,15 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 관리 역할을 통해 사용 권한이 부여된 특정 사용자를 찾으려면 **Get-ManagementRoleAssignment** cmdlet을 사용하여 모든 유효 사용자 목록을 검색한 다음 cmdlet의 출력을 **Where** cmdlet으로 파이프해야 합니다. **Where** cmdlet은 출력을 필터링하고 지정한 사용자만 반환합니다. 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 이 예에서는 저널링 역할에서 사용자 David Strome을 찾습니다.
 
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```powershell
+Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```
 
 목록에서 반환되는 속성을 변경하거나 목록을 .csv 파일로 내보내려면 이 항목의 후반부에 나오는 Use the Shell to customize output and display it를 참조하십시오.
 
@@ -85,7 +89,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 사용자가 사용 권한을 부여받는 모든 역할을 확인하려면 **Get-ManagementRoleAssignment** cmdlet을 사용하여 모든 관리 역할에서 모든 유효 사용자를 검색한 다음 cmdlet의 출력을 **Where** cmdlet으로 파이프해야 합니다. **Where** cmdlet은 출력을 필터링하고 사용자에게 사용 권한을 부여하는 역할 할당만 반환합니다.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 이 예에서는 사용자 Kim Akers에게 사용 권한을 부여하는 모든 역할 할당을 찾습니다.
 
@@ -142,12 +148,16 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 2.  목록에서 보려는 속성을 선택합니다.
 
 3.  목록을 보려면 다음 구문을 사용합니다.
-    
-        <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+
+    ```powershell
+    <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```
 
 이 예에서는 모든 역할에 있는 David Strome을 찾고 `EffectiveUserName`, `Role`, `CustomRecipientWriteScope` 및 `CustomConfigWriteScope` 속성을 표시합니다.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -167,11 +177,15 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 
 3.  다음 구문을 사용하여 목록을 .csv 파일로 내보냅니다.
     
-        <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```powershell
+    <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```
 
 이 예에서는 모든 역할에 있는 David Strome을 찾고 `EffectiveUserName`, `Role`, `CustomRecipientWriteScope` 및 `CustomConfigWriteScope` 속성을 표시합니다.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```
 
 이제 원하는 뷰어에서 .csv 파일을 볼 수 있습니다.
 
