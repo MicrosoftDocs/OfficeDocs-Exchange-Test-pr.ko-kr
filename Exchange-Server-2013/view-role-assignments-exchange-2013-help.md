@@ -49,7 +49,9 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 **Get-ManagementRoleAssignment** cmdlet을 실행하여 조직에 구성된 모든 역할 할당 목록을 볼 수 있습니다. 지정한 부분 문자열과 일치하는 역할 할당 목록을 검색하려면 와일드카드 문자(\*)를 사용합니다. 이 예에서는 "Tier 1" 문자열로 시작하는 모든 역할 할당 목록을 검색합니다.
 
-    Get-ManagementRoleAssignment "Tier 1*"
+```powershell
+Get-ManagementRoleAssignment "Tier 1*"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -107,7 +109,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients"
 
 미리 정의된 특정 범위를 사용하는 역할 할당 목록을 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```
 
 이 예에서는 미리 정의된 Organization 범위를 사용하는 역할 할당을 모두 검색합니다.
 
@@ -127,7 +131,9 @@ Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
 
 이 예에서는 범위가 contoso.com 도메인의 North America\\Engineering\\Users OU로 지정된 역할 할당을 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 
@@ -193,7 +199,9 @@ Get-ManagementRoleAssignment -WritableRecipient "Brian"
 
 *WritableRecipient* 및 *WritableServer* 매개 변수를 *RoleAssignee* 매개 변수, *GetEffectiveUsers* 스위치 등의 다른 매개 변수와 함께 사용하여 쿼리를 구체화하고 역할 그룹이나 USG를 확장할 수 있습니다. 이 예에서는 EX02 서버를 수정할 수 있고 Server Management 역할 그룹이 할당된 사용자를 모두 검색합니다.
 
-    Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\))를 참조하십시오.
 

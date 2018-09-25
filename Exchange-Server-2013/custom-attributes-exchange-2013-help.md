@@ -79,7 +79,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 이제 다음 예와 같이 *CustomAttribute1* 속성이 SalesOU인 모든 받는 사람에 대해 전자 메일 주소 정책을 만들 수 있습니다.
 
-    New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```
 
 ## ConditionalCustomAttributes 매개 변수를 사용한 사용자 지정 특성 예
 
@@ -87,7 +89,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 이 예에서는 *CustomAttribute1*이 SalesOU로 설정된 받는 사람에 기반하여 동적 배포 그룹을 만듭니다.
 
-    New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```powershell
+New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```
 
 
 > [!NOTE]
@@ -105,7 +109,9 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 
 다음으로 MATH307에 등록한 모든 학생의 동적 배포 그룹이 *RecipientFilter* 매개 변수를 사용하여 생성됩니다. 여기서 *ExtensionCustomAttribute1*은 MATH307입니다. *ExtentionCustomAttributes* 매개 변수를 사용할 때는 `-like` 연산자 대신 `-eq` 연산자를 사용할 수 있습니다.
 
-    New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```powershell
+New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```
 
 이 예에서 Kweku의 *ExtensionCustomAttribute1* 값은 강좌 ENGL210을 추가하고 강좌 ECON202를 제거했음을 반영하여 업데이트됩니다.
 

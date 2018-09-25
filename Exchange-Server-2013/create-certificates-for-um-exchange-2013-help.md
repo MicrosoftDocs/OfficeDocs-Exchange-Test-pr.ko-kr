@@ -81,7 +81,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버에 대해 이름이 `CertUM`인 새 Exchange 인증서 요청을 만듭니다.
 
-    New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```powershell
+New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## EAC를 사용하여 UM에 대한 자체 서명된 인증서 만들기
 
@@ -107,7 +109,9 @@ _**마지막으로 수정된 항목:** 2013-04-29_
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버에 대해 이름이 `UMCert`인 새 Exchange 자체 서명된 인증서를 만듭니다.
 
-    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```powershell
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
 
 
 > [!TIP]

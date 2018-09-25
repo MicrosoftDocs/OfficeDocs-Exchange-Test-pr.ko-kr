@@ -93,7 +93,9 @@ Get-ExchangeServer | format-list
 
 이 예에서는 CAS01 클라이언트 액세스 서버에서 게시 가상 디렉터리를 사용하도록 설정합니다.
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 여기서 `CAS01\owa (Default Web Site)` identity 서버 이름 및 Outlook Web App 가상 디렉터리를 모두입니다.
 
@@ -149,7 +151,9 @@ Get-OwaVirtualDirectory | format-list
 
 이 예에서는 인터넷이라는 이름의 인터넷 일정 게시 공유 정책을 만들고 약속 있음/없음 정보만 공유하도록 정책을 구성합니다 정책은 사용하도록 설정되어 있습니다.
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 이 예에서는 인터넷 공유 정책을 사용자 사서함에 추가합니다.
 
@@ -203,7 +207,9 @@ Get-SharingPolicy <policy name> | format-list
 
 이 예에서는 기본 공유 정책을 업데이트하고 약속 있음/없음 정보만 공유하도록 정책을 구성합니다. 정책은 사용하도록 설정되어 있습니다.
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 

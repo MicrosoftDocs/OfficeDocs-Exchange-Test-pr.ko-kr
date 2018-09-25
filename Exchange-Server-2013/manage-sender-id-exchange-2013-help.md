@@ -66,8 +66,8 @@ Set-SenderIDConfig -Enabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderIDConfig | Format-List Enabled
-```
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -92,8 +92,8 @@ Set-SenderIDConfig -SpoofedDomainAction Reject
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderIDConfig | Format-List SpoofedDomainAction
-```
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -120,8 +120,8 @@ Set-SenderIDConfig -TempErrorAction StampStatus
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderIDConfig | Format-List TempErrorAction
-```
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -129,15 +129,21 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 이 예에서는 kim@contoso.com 및 john@contoso.com으로 전송된 메시지에 대한 보낸 사람 ID 확인을 무시하고 fabrikam.com 도메인에서 전송된 메시지에 대한 보낸 사람 ID 확인을 무시하도록 보낸 사람 ID 에이전트를 구성합니다.
 
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```powershell
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 이 예에서는 다음 정보를 사용하여 보낸 사람 ID 에이전트를 구성합니다.
 
@@ -147,7 +153,9 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 <!-- end list -->
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -156,8 +164,8 @@ Get-SenderIDConfig | Format-List TempErrorAction
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
-```
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

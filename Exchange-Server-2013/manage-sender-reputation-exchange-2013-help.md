@@ -62,12 +62,14 @@ Set-SenderReputationConfig -Enabled $true
 1.  프로토콜 분석 에이전트를 설치 하 고 다음 명령을 실행 하 여 활성화를 확인 합니다.
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  다음 명령을 실행 하 여 구성한 보낸사람 신뢰도 값을 확인 합니다.
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## 셸을 사용 하 여 하거나 내부 또는 외부 메시지에 대 한 보낸사람 신뢰도 사용 하지 않도록 설정
 
@@ -103,7 +105,9 @@ Set-SenderReputationConfig -InternalMailEnabled $true
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  표시된 값이 구성한 값과 일치하는지 확인합니다.
 
@@ -128,8 +132,8 @@ Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderReputationConfig
-```
+    Get-SenderReputationConfig
+    ```
 
 2.  표시된 값이 구성한 값과 일치하는지 확인합니다.
 
@@ -168,11 +172,15 @@ Get-SenderReputationConfig
 
 개방형 프록시 서버를 감지에 대 한 아웃 바운드 액세스를 구성 하려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 이 예에서는 server01 포트 80에서 HTTP 연결 프로토콜을 사용 하는 개방형 프록시 서버를 사용 하도록 보낸사람 신뢰도 구성 합니다.
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -180,7 +188,9 @@ Get-SenderReputationConfig
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

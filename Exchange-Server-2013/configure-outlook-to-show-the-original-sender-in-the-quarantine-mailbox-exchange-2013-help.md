@@ -47,76 +47,78 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 1.  메모장을 열고 다음 코드를 문서에 복사합니다.
     
-        [Description]
-        MessageClass=IPM.Note
-        CLSID={00020D31-0000-0000-C000-000000000046}
-        DisplayName=Quarantine Extension Form
-        Category=Standard
-        Subcategory=Form
-        Comment=This form allows the Original Sender (ReceivedRepresentingEmailAddress), Original Recipient (To), and Original SCL (OriginalScl) values to be viewed as columns.
-        LargeIcon=IPML.ico
-        SmallIcon=IPMS.ico
-        Version=3.0
-        Locale=enu
-        Hidden=1
-        Owner=Microsoft Corporation
-        Contact=Your Name
-        
-        [Platforms]
-        Platform1=Win16
-        Platform2=NTx86
-        Platform9=Win95
-        
-        [Platform.Win16]
-        CPU=ix86
-        OSVersion=Win3.1
-        
-        [Platform.NTx86]
-        CPU=ix86
-        OSVersion=WinNT3.5
-        
-        [Platform.Win95]
-        CPU=ix86
-        OSVersion=Win95
-        
-        [Properties]
-        Property01=ReceivedRepresentingEmailAddress
-        Property02=DisplayTo
-        Property03=OriginalScl
-        
-        [Property.ReceivedRepresentingEmailAddress]
-        Type=31
-        NmidInteger=0x0078
-        DisplayName=ReceivedRepresentingEmailAddress
-        
-        [Property.DisplayTo]
-        Type=31
-        NmidInteger=0x0E04
-        DisplayName=DisplayTo
-        
-        [Property.OriginalScl]
-        Type=3
-        NmidPropset={41F28F13-83F4-4114-A584-EEDB5A6B0BFF}
-        NmidString=OriginalScl
-        DisplayName=OriginalScl
-        
-        [Verbs]
-        Verb1=1
-        
-        [Verb.1]
-        DisplayName=&Open
-        Code=0
-        Flags=0
-        Attribs=2
-        
-        [Extensions]
-        Extensions1=1
-        
-        [Extension.1]
-        Type=31
-        NmidPropset={00020D0C-0000-0000-C000-000000000046}
-        NmidInteger=1
-        Value=1000000000000000
+    ```powershell
+    [Description]
+    MessageClass=IPM.Note
+    CLSID={00020D31-0000-0000-C000-000000000046}
+    DisplayName=Quarantine Extension Form
+    Category=Standard
+    Subcategory=Form
+    Comment=This form allows the Original Sender (ReceivedRepresentingEmailAddress), Original Recipient (To), and Original SCL (OriginalScl) values to be viewed as columns.
+    LargeIcon=IPML.ico
+    SmallIcon=IPMS.ico
+    Version=3.0
+    Locale=enu
+    Hidden=1
+    Owner=Microsoft Corporation
+    Contact=Your Name
+    
+    [Platforms]
+    Platform1=Win16
+    Platform2=NTx86
+    Platform9=Win95
+    
+    [Platform.Win16]
+    CPU=ix86
+    OSVersion=Win3.1
+    
+    [Platform.NTx86]
+    CPU=ix86
+    OSVersion=WinNT3.5
+    
+    [Platform.Win95]
+    CPU=ix86
+    OSVersion=Win95
+    
+    [Properties]
+    Property01=ReceivedRepresentingEmailAddress
+    Property02=DisplayTo
+    Property03=OriginalScl
+    
+    [Property.ReceivedRepresentingEmailAddress]
+    Type=31
+    NmidInteger=0x0078
+    DisplayName=ReceivedRepresentingEmailAddress
+    
+    [Property.DisplayTo]
+    Type=31
+    NmidInteger=0x0E04
+    DisplayName=DisplayTo
+    
+    [Property.OriginalScl]
+    Type=3
+    NmidPropset={41F28F13-83F4-4114-A584-EEDB5A6B0BFF}
+    NmidString=OriginalScl
+    DisplayName=OriginalScl
+    
+    [Verbs]
+    Verb1=1
+    
+    [Verb.1]
+    DisplayName=&Open
+    Code=0
+    Flags=0
+    Attribs=2
+    
+    [Extensions]
+    Extensions1=1
+    
+    [Extension.1]
+    Type=31
+    NmidPropset={00020D0C-0000-0000-C000-000000000046}
+    NmidInteger=1
+    Value=1000000000000000
+    ```
 
 2.  다음 값을 사용하여 Office 양식 폴더에 파일을 저장합니다.
     
@@ -132,7 +134,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
     
     예를 들어 64비트 버전의 Windows에 32비트 미국 영어 버전의 Outlook 2013을 설치한 경우 파일을 다음과 같이 저장합니다.
     
-        "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
+    ```powershell
+    "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
+    ```
     
 
     > [!NOTE]

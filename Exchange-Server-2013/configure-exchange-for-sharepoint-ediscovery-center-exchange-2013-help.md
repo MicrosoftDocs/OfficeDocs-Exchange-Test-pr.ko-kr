@@ -47,7 +47,9 @@ Microsoft Exchange Server 2013에는 *파트너 응용 프로그램*이라고 �
 
 다음 명령을 실행하여 Exchange 2013에서 SharePoint 2013을 신뢰할 수 있는 보안 토큰 발급자로 만듭니다.
 
-    New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```powershell
+New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## 2단계: Exchange 2013을 실행하는 서버에서 SharePoint 2013에 대한 서버 간 인증 구성
 
@@ -55,8 +57,10 @@ Exchange 2013 서버에서 이 단계를 수행합니다. 이러한 절차를 �
 
 다음 명령을 실행하여 SharePoint 파트너 응용 프로그램을 구성합니다.
 
-    cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
-    .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```powershell
+cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
+.\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## 3단계: 검색 관리 역할 그룹에 권한 있는 사용자 추가
 

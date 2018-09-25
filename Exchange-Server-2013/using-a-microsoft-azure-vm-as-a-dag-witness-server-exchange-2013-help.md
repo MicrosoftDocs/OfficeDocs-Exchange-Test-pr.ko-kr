@@ -189,27 +189,31 @@ Azure 측에서 VPN 게이트웨이 설정 하기 위해 [구성 관리 포털�
 
 모든 XML 편집기에 내보낸 파일을 엽니다. 온-프레미스 사이트에 대 한 게이트웨이 연결 "ConnectionsToLocalNetwork" 섹션에 나열 됩니다. 섹션을 찾습니다 XML 파일에서 해당 용어를 검색 합니다. 구성 파일의이 섹션은 다음과 같이 표시 됩니다 (로컬 사이트 사이트인 "A"에 대해 만든 사이트 이름 가정함).
 
-    <ConnectionsToLocalNetwork>
-    
-        <LocalNetworkSiteRef name="Site A">
-    
-            <Connection type="IPsec" />
-    
-    </LocalNetworkSiteRef>
+```powershell
+<ConnectionsToLocalNetwork>
+
+    <LocalNetworkSiteRef name="Site A">
+
+        <Connection type="IPsec" />
+
+</LocalNetworkSiteRef>
+```
 
 두번째 사이트를 구성 하려면 "ConnectionsToLocalNetwork" 섹션에서 다른 "LocalNetworkSiteRef" 섹션을 추가 합니다. 업데이트 된 구성 파일에 섹션은 다음과 같이 표시 됩니다 (둘째 로컬 사이트에는 "사이트 B"에 대 한 사이트 이름 가정함).
 
-    <ConnectionsToLocalNetwork>
-    
-        <LocalNetworkSiteRef name="Site A">
-    
-            <Connection type="IPsec" />
-    
-        <LocalNetworkSiteRef name="Site B">
-    
-            <Connection type="IPsec" />
-    
-    </LocalNetworkSiteRef>
+```powershell
+<ConnectionsToLocalNetwork>
+
+    <LocalNetworkSiteRef name="Site A">
+
+        <Connection type="IPsec" />
+
+    <LocalNetworkSiteRef name="Site B">
+
+        <Connection type="IPsec" />
+
+</LocalNetworkSiteRef>
+```
 
 업데이트 된 구성 설정 파일을 저장 합니다.
 
@@ -227,9 +231,11 @@ PowerShell을 사용 하 여 미리 공유한 키 해야 합니다. PowerShell�
 
 사전 공유 키를 추출 하는 [Get AzureVNetGatewayKey](http://msdn.microsoft.com/en-us/library/azure/dn495198.aspx) cmdlet을 사용 합니다. 각 터널에 대해 한번씩이 cmdlet을 실행 합니다. 다음 예제에서는 가상 네트워크 "Azure 사이트" 및 "사이트 A"와 "사이트 B" 사이트 간의 터널에 대 한 키를 추출 하 실행 해야하는 명령 이 예제에서는 출력을 별도 파일로 저장 됩니다. 또는 이러한 키를 다른 PowerShell cmdlet 파이프라인 하거나 스크립트에 사용할 수 있습니다.
 
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
-    
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```powershell
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
+
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```
 
 ## 온-프레미스 VPN 장치를 구성 합니다.
 
@@ -265,17 +271,21 @@ Microsoft Azure 지원 되는 VPN 장치에 대 한 VPN 장치 구성 스크립�
 
 이 시점 VPN 게이트웨이 통해 Azure 가상 네트워크에 연결 된 두 사이트 모두 합니다. PowerShell에서 다음 명령을 실행 하 여 다중 사이트 VPN의 상태를 확인할 수 있습니다.
 
-    Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```powershell
+Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```
 
 두 터널을 실행 하 고는,이 명령의 출력은 다음과 같은 찾습니다.
 
-    LocalNetworkSiteName    ConnectivityState
-    
-    --------------------    -----------------
-    
-    Site A                  Connected
-    
-    Site B                  Connected
+```powershell
+LocalNetworkSiteName    ConnectivityState
+
+--------------------    -----------------
+
+Site A                  Connected
+
+Site B                  Connected
+```
 
 Azure 관리 포털에서 가상 네트워크 대시보드를 확인 하 여 연결을 확인할 수도 있습니다. 두 사이트에 대 한 **상태** 열 **연결** 로 표시 됩니다.
 
@@ -293,9 +303,11 @@ Azure 관리 포털에서 가상 네트워크 대시보드를 확인 하 여 연
 
 2.  도메인 컨트롤러와 Azure PowerShell을 사용 하 여 파일 서버에 대 한 기본 IP 주소를 지정 합니다. VM에 대 한 기본 IP 주소를 지정 하면 VM를 다시 시작 해야 합니다 하는 업데이트 되도록 해야 합니다. 다음 예에서는 IP 주소 Azure DC 및 Azure FSW 10.0.0.10 및 10.0.0.11 각각 설정 합니다.
     
-        Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
-        
-        Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```powershell
+    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
+    
+    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```
     
 
     > [!NOTE]
@@ -330,8 +342,8 @@ Azure 관리 포털에서 가상 네트워크 대시보드를 확인 하 여 연
 2.  대화 dag 미러링 모니터 서버를 구성 하려면 다음 명령을 실행 합니다.
     
     ```powershell
-Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
-```
+    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```
 
 자세한 내용은 다음 항목을 참조 하십시오.
 
@@ -345,21 +357,23 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
 
 1.  다음 명령을 실행 하 여 DAG 구성의 유효성을 검사 합니다.
     
-        Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```powershell
+    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```
     
     있는지 *WitnessServer* 매개 변수는 Azure에서 파일 서버에 설정, *WitnessDirectory* 매개 변수는 올바른 경로를 설정 하 고 **Primary**를 표시 하는 *WitnessShareInUse* 매개 변수를 확인 합니다.
 
 2.  DAG 노드 수가 짝수인 경우 파일 공유 미러링 모니터 서버가 구성 됩니다. 다음 명령을 실행 하 여 클러스터 속성에서 설정 파일 공유 감시의 유효성을 검사 합니다. *SharePath* 매개 변수 값은 파일 서버를 가리키도록 하 고 올바른 경로 표시 해야 합니다.
     
     ```powershell
-Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
-```
+    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```
 
 3.  다음으로, 다음 명령을 실행 하 여 "파일 공유 감시" 클러스터 리소스의 상태를 확인 합니다. 클러스터 리소스의 *State***Online**를표시 되어야 합니다.
     
     ```powershell
-Get-ClusterResource -Cluster MBX1
-```
+    Get-ClusterResource -Cluster MBX1
+    ```
 
 4.  마지막으로, 공유 성공적으로 만들어졌는지 파일 서버에서 파일 탐색기의 폴더와 서버 관리자에서 공유를 검토 하 여 확인 합니다.
 

@@ -61,7 +61,9 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 
 이 예에서는 이름이 `MyClientAccessServer`인 클라이언트 액세스 서버에서 SIP TCP 수신 포트를 5077로 설정하고 시작 모드를 이중 모드로 설정합니다.
 
-    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+  ```powershell
+  Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+  ```
 
 ## 셸을 사용하여 클라이언트 액세스 서버 속성 보기
 

@@ -42,8 +42,8 @@ Exchange 2013으로 업그레이드하는 작업에 대한 자세한 내용은 �
   - Exchange 2013에서 다음 명령을 실행하여 조직의 시스템 사서함이 포함된 Exchange Server 및 사서함 데이터베이스의 ID와 버전을 가져옵니다.
     
     ```powershell
-Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
-```
+    Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```
     
     <strong>AdminDisplayVersion</strong> 속성은 서버가 실행되는 Exchange의 버전을 나타냅니다. `Version 14.x` 값은 Exchange 2010을, `Version 15.x` 값은 Exchange 2013을 나타냅니다.
 
@@ -91,13 +91,17 @@ Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
 
 조직에 있는 사서함 데이터베이스의 이름을 확인한 후에 Exchange 2013에서 다음 명령을 실행하여 Microsoft Exchange 시스템 사서함을 Exchange 2013 서버에 있는 사서함 데이터베이스로 이동합니다.
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+  ```powershell
+  Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+  ```
 
 ## 작동 여부를 확인하는 방법
 
 Microsoft Exchange 시스템 사서함이 Exchange 2013 서버에 있는 사서함 데이터베이스로 이동되었는지 확인하려면 셸에 다음 명령을 실행합니다.
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+  ```powershell
+  Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+  ```
 
 <strong>AdminDisplayVersion</strong> 속성 값이 <strong>버전 15.x(빌드 xxx.x)</strong>이면 시스템 사서함이 Exchange 2013 서버에 있는 사서함 데이터베이스에 있음이 확인된 것입니다.
 

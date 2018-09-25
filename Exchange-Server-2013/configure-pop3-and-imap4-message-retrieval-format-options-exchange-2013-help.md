@@ -131,8 +131,8 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 설정이 올바른지 확인합니다.
 
@@ -230,8 +230,8 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 설정이 올바른지 확인합니다.
 
@@ -301,8 +301,8 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *PopMessagesRetrievalMimeFormat*의 값이 올바른지 확인합니다.
 
@@ -372,8 +372,8 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *ImapMessagesRetrievalMimeFormat*의 값이 올바른지 확인합니다.
 

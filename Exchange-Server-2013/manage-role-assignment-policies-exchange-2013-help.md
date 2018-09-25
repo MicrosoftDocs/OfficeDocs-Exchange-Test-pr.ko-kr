@@ -67,7 +67,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 
 이 예에서는 명시적 할당 정책 Limited Mailbox Configuration을 만들고 여기에 `MyBaseOptions`, `MyAddressInformation` 및 `MyDisplayName` 역할을 할당합니다.
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+  ```powershell
+  New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638101\(v=exchg.150\))를 참조하십시오.
 
@@ -81,7 +83,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDe
 
 이 예에서는 기본 할당 정책 Limited Mailbox Configuration을 만들고 여기에 `MyBaseOptions`, `MyAddressInformation` 및 `MyDisplayName` 역할을 할당합니다.
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+  ```powershell
+  New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-RoleAssignmentPolicy](https://technet.microsoft.com/ko-kr/library/dd638101\(v=exchg.150\))를 참조하십시오.
 
@@ -275,11 +279,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 역할과 할당 정책 간에 관리 역할 할당을 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+  ```powershell
+  New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+  ```
 
 이 예에서는 MyVoicemail 역할 및 Seattle Users 할당 정책 간에 Seattle Users - Voicemail 역할 할당을 만듭니다.
 
-    New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+  ```powershell
+  New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -307,11 +315,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 역할을 할당 정책에서 제거 하려면 다음 구문을 사용 합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+  ```powershell
+  Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+  ```
 
 이 예제에서는 사용자가 시애틀 사용자 할당 정책에서 자신의 음성 메일 옵션을 관리할 수 있도록 하는 MyVoicemail 관리 역할을 제거 합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+  ```powershell
+  Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351205\(v=exchg.150\))를 참조하십시오.
 

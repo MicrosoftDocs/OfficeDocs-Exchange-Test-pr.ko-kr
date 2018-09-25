@@ -55,7 +55,9 @@ _**마지막으로 수정된 항목:** 2013-02-13_
 
 이 예에서는 공용 폴더 \\Dev\\CustomerEnagagements를 대상 공용 폴더 사서함 Development01에 복원합니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
+  ```powershell
+  New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\))를 참조하십시오.
 
@@ -63,7 +65,9 @@ _**마지막으로 수정된 항목:** 2013-02-13_
 
 이 예에서는 공용 폴더 사서함 PF\_Singapore을 새 공용 폴더 사서함 PF\_Singapore\_Restore에 복원합니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
+  ```powershell
+  New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\))를 참조하십시오.
 

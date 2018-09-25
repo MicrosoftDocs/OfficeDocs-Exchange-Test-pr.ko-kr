@@ -172,11 +172,15 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 다음은 스크립트에 사용된 명령입니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```
 
 이 명령은 DAG1이라는 DAG를 만들고, CAS1을 미러링 모니터 서버로 구성하고, 특정 감시 디렉터리(C:\\DAGWitness\\DAG1.contoso.com)를 구성하고, DAG에 두 개의 IP 주소(MAPI 네트워크의 각 서브넷에 하나씩)를 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```
 
 이 명령은 DAG1이 CAS4의 대체 미러링 모니터 서버와 CAS1에 구성된 것과 동일한 경로를 사용하는 CAS4의 대체 감시 디렉터리를 사용하도록 구성합니다.
 
@@ -186,10 +190,12 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```
 
 이 명령은 각 사서함 서버를 한 번에 하나씩 DAG에 추가합니다. 또한 각 사서함 서버에 Windows 장애 조치(failover) 클러스터링 구성 요소도 설치하고(아직 설치하지 않은 경우), 장애 조치(failover) 클러스터를 만들고, 새로 만든 클러스터에 각 사서함 서버를 가입시킵니다.
 
@@ -217,39 +223,47 @@ DAG를 만들고 DAG에 사서함 서버를 추가한 후 Contoso는 사서함 �
 
 MBX1에 대해 다음 명령을 실행합니다.
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```
 
 MBX2에 대해 다음 명령을 실행합니다.
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```
 
 MBX3에 대해 다음 명령을 실행합니다.
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```
 
 MBX4에 대해 다음 명령을 실행합니다.
 
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```
 
 **Add-MailboxDatabaseCopy** cmdlet에 대한 위 예에서 *ActivationPreference* 매개 변수는 지정되지 않았습니다. 추가된 각 복사본을 사용하여 활성화 기본 설정 번호가 자동으로 증가합니다. 원본 데이터베이스는 항상 우선 설정 번호 1을 갖고, **Add-MailboxDatabaseCopy** cmdlet을 사용하여 추가된 첫 복사본에 우선 설정 번호 2가 자동으로 할당되며, 제거되는 복사본이 없다는 가정 하에 그 다음 추가된 복사본에 우선 설정 번호 3이 할당됩니다. 따라서, 위 예에서는 활성 복사본과 같은 데이터 센터의 수동 복사본이 활성화 우선 설정 번호 2를 갖고, 원격 데이터 센터의 지연되지 않은 수동 복사본이 활성화 우선 설정 번호 3을 가지며, 원격 데이터 센터의 지연된 수동 복사본이 활성화 우선 설정 번호 4를 갖습니다.
 

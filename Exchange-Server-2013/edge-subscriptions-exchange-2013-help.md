@@ -117,7 +117,9 @@ ESRA 계정 및 이러한 계정을 사용하여 안전한 EdgeSync 동기화 �
 
 이 예에서는 Edge 전송 서버를 지정된 사이트에 구독하고 인터넷 송신 커넥터 및 Edge 전송 서버에서 사서함 서버로의 송신 커넥터를 자동으로 만듭니다.
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+  ```powershell
+  New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+  ```
 
 
 > [!NOTE]  

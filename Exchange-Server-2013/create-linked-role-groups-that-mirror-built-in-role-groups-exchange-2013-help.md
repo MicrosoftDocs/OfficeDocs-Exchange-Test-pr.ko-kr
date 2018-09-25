@@ -68,24 +68,32 @@ Microsoft Exchange Server 2013에서 연결된 관리 역할 그룹을 사용하
 2.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  조직 관리 역할 그룹에 할당된 모든 역할을 변수에 저장합니다.
     
-        $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```powershell
+    $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```
 
 4.  조직 관리 연결된 역할 그룹을 만들고 기본 제공 조직 관리 역할 그룹에 할당된 역할을 추가합니다.
     
-        New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```powershell
+    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```
 
 5.  새로운 조직 관리 연결된 역할 그룹과 My\* 형식의 최종 사용자 역할 사이의 모든 일반 할당을 제거합니다.
     
-        Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```
 
 6.  새 조직 관리 연결된 역할 그룹과 모든 관리 역할 사이의 위임 역할 할당을 추가합니다.
     
-        Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```powershell
+    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```
 
 이 예에서는 각 매개 변수에 다음 값이 사용되는 경우를 가정합니다.
 
@@ -98,10 +106,12 @@ $ForeignCredential = Get-Credential
 ```powershell
 $ForeignCredential = Get-Credential
 ```
-    $OrgMgmt  = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
-    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
-    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+```powershell
+$OrgMgmt  = Get-RoleGroup "Organization Management"
+New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+```
 
 ## 다른 모든 연결된 역할 그룹 만들기
 
@@ -112,14 +122,14 @@ $ForeignCredential = Get-Credential
 2.  외부 Active Directory 포리스트 자격 증명을 변수에 저장합니다. 이 과정은 한 번만 수행하면 됩니다.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  다음 cmdlet을 사용하여 역할 그룹 목록을 검색합니다.
     
     ```powershell
-Get-RoleGroup
-```
+    Get-RoleGroup
+    ```
 
 4.  조직 관리 역할 그룹이 아닌 각 역할 그룹에 대해 다음 작업을 수행합니다.
     
@@ -146,10 +156,12 @@ $ForeignCredential = Get-Credential
 ```powershell
 Get-RoleGroup
 ```
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
-    $RoleGroup = Get-RoleGroup "Server Management"
-    New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+```powershell
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+$RoleGroup = Get-RoleGroup "Server Management"
+New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+```
 
 ## 다른 작업
 

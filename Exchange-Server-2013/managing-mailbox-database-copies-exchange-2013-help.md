@@ -628,7 +628,9 @@ RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference 
 
 이 예는 활성 기본 설정을 사용하여 DAG에서 활성 사서함 데이터베이스 복사본을 다시 배포하고 균형 있게 조정하며 배포 요약을 생성합니다.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```powershell
+  RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```
 
 ## 데이터베이스 복사본 모니터링
 

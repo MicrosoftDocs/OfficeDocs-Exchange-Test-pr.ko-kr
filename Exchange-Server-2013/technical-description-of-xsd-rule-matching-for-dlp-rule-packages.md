@@ -23,23 +23,25 @@ _**마지막으로 수정된 항목:** 2016-07-28_
 
 `Match` 요소는 `Pattern` 및 `Evidence` 요소 내에서 일치시킬 기본 키워드, regex 또는 함수를 나타내는 데 사용됩니다. 일치 자체에 대한 정의는 `Rule` 요소 외부에 저장되고 `idRef` 필수 특성을 통해 참조됩니다. 여러 `Match` 요소가 일치 의미 체계를 정의하기 위해 `Pattern` 요소에 직접 포함되거나 `Any` 요소를 사용하여 결합될 수 있는 Pattern 정의에 포함될 수 있습니다.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Rules packageId="...">
-            ...
-    <Entity id="...">
-      <Pattern confidenceLevel="85">
-                 <IdMatch idRef="FormattedSSN" />
-                 <Match idRef="USDate" />
-                 <Match idRef="USAddress" />
-      </Pattern>
-    </Entity>
-            ...
-             <Keyword id="FormattedSSN "> ... </Keyword>
-             <Regex id=" USDate "> ... </Regex>
-             <Regex id="USAddress"> ... </Regex>
-            ...
-    
-    </Rules>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Rules packageId="...">
+        ...
+<Entity id="...">
+    <Pattern confidenceLevel="85">
+                <IdMatch idRef="FormattedSSN" />
+                <Match idRef="USDate" />
+                <Match idRef="USAddress" />
+    </Pattern>
+</Entity>
+        ...
+            <Keyword id="FormattedSSN "> ... </Keyword>
+            <Regex id=" USDate "> ... </Regex>
+            <Regex id="USAddress"> ... </Regex>
+        ...
+
+</Rules>
+```
 
 ## 키워드 기반 일치 정의
 
@@ -53,25 +55,27 @@ _**마지막으로 수정된 항목:** 2016-07-28_
 
 
 
-    <Keyword id="Word_Example">
-        <Group matchStyle="word">
-           <Term>card verification</Term>
-           <Term>cvn</Term>
-           <Term>cid</Term>
-           <Term>cvc2</Term>
-           <Term>cvv2</Term>
-           <Term>pin block</Term>
-           <Term>security code</Term>
-        </Group>
-    </Keyword>
-    ...
-    <Keyword id="String_Example">
-        <Group matchStyle="string">
-           <Term>card</Term>
-           <Term>pin</Term>
-           <Term>security</Term>
-        </Group>
-    </Keyword>
+```xml
+<Keyword id="Word_Example">
+    <Group matchStyle="word">
+        <Term>card verification</Term>
+        <Term>cvn</Term>
+        <Term>cid</Term>
+        <Term>cvc2</Term>
+        <Term>cvv2</Term>
+        <Term>pin block</Term>
+        <Term>security code</Term>
+    </Group>
+</Keyword>
+...
+<Keyword id="String_Example">
+    <Group matchStyle="string">
+        <Term>card</Term>
+        <Term>pin</Term>
+        <Term>security</Term>
+    </Group>
+</Keyword>
+```
 
 ## 정규식 기반 일치 정의
 
@@ -198,17 +202,19 @@ _**마지막으로 수정된 항목:** 2016-07-28_
 
 Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용되는 "id" 특성이 있습니다. 여러 Entity 및 Affinity 규칙에서 단일 Regex 요소를 참조할 수 있습니다. Regex 식은 Regex 요소의 값으로 정의됩니다.
 
-    <Regex id="CCRegex">
-         \bcc\#\s|\bcc\#\:\s
-    </Regex>
-    ...
-    <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
-    </Regex>
-    ...
-    <Regex id="NorthCarolinaDriversLicenseNumber">
-        (^|\s|\:)(\d{1,8})($|\s|\.\s)
-    </Regex>
+```xml     
+<Regex id="CCRegex">
+        \bcc\#\s|\bcc\#\:\s
+</Regex>
+...
+<Regex id="ItinFormatted">
+    (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
+</Regex>
+...
+<Regex id="NorthCarolinaDriversLicenseNumber">
+    (^|\s|\:)(\d{1,8})($|\s|\.\s)
+</Regex>
+```
 
 ## 여러 Match 요소 결합
 
@@ -223,7 +229,7 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
     하위 Match 요소의 정확한 하위 집합 일치
 
 <!-- end list -->
-```
+```xml
     <Any minMatches="3" maxMatches="3">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
@@ -231,7 +237,7 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
     </Any>
 ```
 
-```
+```xml
     <Any maxMatches="0">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
@@ -239,7 +245,7 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
     </Any>
 ```
 
-```
+```xml
     <Any minMatches="1" maxMatches="1">
         <Match idRef="USDate" />
         <Match idRef="USAddress" />
@@ -259,32 +265,34 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
 
 <!-- end list -->
 
-    <Entity id="..." patternsProximity="300" >
-        <Pattern confidenceLevel="65">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any maxMatches="1">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="2" maxMatches="2">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="85">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="3">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-    </Entity>
+```xml
+<Entity id="..." patternsProximity="300" >
+    <Pattern confidenceLevel="65">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any maxMatches="1">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="2" maxMatches="2">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="3">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## 예: 미국 사회 보장 규칙
 
@@ -304,18 +312,20 @@ Regex 요소에는 해당 Entity 또는 Affinity 규칙에서 참조로 사용�
 
 그런 다음 설명을 규칙 스키마 표현으로 변환합니다.
 
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
-             patternsProximity="300" RecommendedConfidence="85">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="FormattedSSN" />
-          <Any minMatches="1">
-              <Match idRef="SSNKeywords" />
-              <Match idRef="USDate" />
-              <Match idRef="USAddress" />
-              <Match idRef="Name" />
-          </Any>
-        </Pattern>
-    </Entity>
+```xml
+<Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
+            patternsProximity="300" RecommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="FormattedSSN" />
+        <Any minMatches="1">
+            <Match idRef="SSNKeywords" />
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## 자세한 내용
 

@@ -65,7 +65,9 @@ Resume-PublicFolderMigrationRequest \PublicFolderMigration
 
 입력 .csv 파일은 \<*Exchange Installation Directory*\>\\V15\\Scripts 디렉터리에 있는 `AggregatePFData.ps1` 스크립트를 실행하여 생성할 수 있습니다. 다음과 같이 스크립트를 실행합니다.
 
-    .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+  ```powershell
+  .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+  ```
 
 ## 기존 공용 폴더 사용 권한은 마이그레이션됩니까?
 

@@ -517,11 +517,15 @@ Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude
 
 이 예에는 Contoso.com으로 끝나는 임의의 SMTP 도메인 이름에 대한 대상이 있고 현재 500개가 넘는 메시지가 포함된 큐 목록이 표시됩니다.
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 이 예에는 SCL이 5보다 큰, contoso.com 도메인의 모든 전자 메일 주소에서 보내는 메시지 목록이 표시됩니다.
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 맨 위로 이동
 
@@ -596,15 +600,21 @@ Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude
 
 1.  셸을 열고 다음 명령을 입력하여 결과의 첫 번째 페이지를 검색합니다.
     
-        $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```powershell
+    $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 2.  책갈피 개체를 설정하려면 다음 명령을 입력하여 첫 번째 페이지의 마지막 요소를 변수에 저장합니다.
     
-        $temp=$results[$results.length-1]
+    ```powershell
+    $temp=$results[$results.length-1]
+    ```
 
 3.  지정된 서버에서 다음 500개의 개체를 검색하고 책갈피 개체를 제외하려면 다음 명령을 입력합니다.
-    
-        Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+
+    ```powershell
+    Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 맨 위로 이동
 

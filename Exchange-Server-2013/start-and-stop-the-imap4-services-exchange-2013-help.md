@@ -60,28 +60,28 @@ IMAP4 서비스를 시작하려면
 1.  클라이언트 액세스 서버 역할을 실행 중인 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 서비스를 시작합니다.
     
     ```powershell
-Start-service msExchangeIMAP4
-```
+    Start-service msExchangeIMAP4
+    ```
 
 2.  사서함 서버 역할을 실행 중인 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 Backend 서비스를 시작합니다.
     
     ```powershell
-Start-service msExchangeIMAP4BE
-```
+    Start-service msExchangeIMAP4BE
+    ```
 
 IMAP4 서비스를 중지하려면
 
 1.  클라이언트 액세스 서버 역할을 실행 중인 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 서비스를 중지합니다.
     
     ```powershell
-Stop-service msExchangeIMAP4
-```
+    Stop-service msExchangeIMAP4
+    ```
 
 2.  사서함 서버 역할을 실행 중인 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 Backend 서비스를 중지합니다.
     
     ```powershell
-Stop-service msExchangeIMAP4BE
-```
+    Stop-service msExchangeIMAP4BE
+    ```
 
 ## net start를 사용하여 IMAP4 서비스 시작 또는 중지
 
@@ -90,28 +90,28 @@ IMAP4 서비스를 시작하려면
 1.  클라이언트 액세스 서버 역할을 실행 중인 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 서비스를 시작합니다.
     
     ```powershell
-net start msExchangeIMAP4
-```
+    net start msExchangeIMAP4
+    ```
 
 2.  사서함 서버 역할을 실행 중인 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 Backend 서비스를 시작합니다.
     
     ```powershell
-net start msExchangeIMAP4BE
-```
+    net start msExchangeIMAP4BE
+    ```
 
 IMAP4 서비스를 중지하려면
 
 1.  클라이언트 액세스 서버 역할을 실행 중인 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 서비스를 중지합니다.
     
     ```powershell
-Net Stop MSExchangeIMAP4
-```
+    Net Stop MSExchangeIMAP4
+    ```
 
 2.  사서함 서버 역할을 실행 중인 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange IMAP4 Backend 서비스를 중지합니다.
     
     ```powershell
-Net Stop MSExchangeIMAP4BE
-```
+    Net Stop MSExchangeIMAP4BE
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

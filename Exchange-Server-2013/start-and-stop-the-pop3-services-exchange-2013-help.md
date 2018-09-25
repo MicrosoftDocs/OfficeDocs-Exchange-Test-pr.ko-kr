@@ -60,28 +60,28 @@ POP3 서비스를 시작하려면:
 1.  클라이언트 액세스 서버 역할을 실행하는 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange POP3 서비스를 시작합니다.
     
     ```powershell
-Start-service MSExchangePOP3
-```
+    Start-service MSExchangePOP3
+    ```
 
 2.  사서함 서버 역할을 실행하는 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange POP3 Backend 서비스를 시작합니다.
     
     ```powershell
-Start-service MSExchangePOP3BE
-```
+    Start-service MSExchangePOP3BE
+    ```
 
 POP3 서비스를 중지 하려면:
 
 1.  클라이언트 액세스 서버 역할을 실행하는 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange POP3 서비스를 중지합니다.
     
     ```powershell
-Stop-service MSExchangePOP3
-```
+    Stop-service MSExchangePOP3
+    ```
 
 2.  사서함 서버 역할을 실행하는 컴퓨터의 셸에서 다음 명령을 실행하여 Microsoft Exchange POP3 Backend 서비스를 중지합니다.
     
     ```powershell
-Stop-service MSExchangePOP3BE
-```
+    Stop-service MSExchangePOP3BE
+    ```
 
 ## net start를 사용하여 POP3 서비스 시작 또는 중지
 
@@ -90,28 +90,28 @@ POP3 서비스를 시작하려면:
 1.  클라이언언트 액세스 서버 역할을 실행하는 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange POP3 서비스를 시작합니다.
     
     ```powershell
-Net Start msExchangePOP3
-```
+    Net Start msExchangePOP3
+    ```
 
 2.  사서함 서버 역할을 실행하는 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange POP3 Backend 서비스를 시작합니다.
     
     ```powershell
-Net Start msExchangePOP3BE
-```
+    Net Start msExchangePOP3BE
+    ```
 
 POP3 서비스를 중지 하려면:
 
 1.  클라이언트 액세스 서버 역할을 실행하는 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange POP3 서비스를 중지합니다.
     
     ```powershell
-Net Stop MSExchangePOP3
-```
+    Net Stop MSExchangePOP3
+    ```
 
 2.  사서함 서버 역할을 실행하는 컴퓨터의 명령 프롬프트에서 다음 명령을 실행하여 Microsoft Exchange POP3 Backend 서비스를 중지합니다.
     
     ```powershell
-Net Stop MSExchangePOP3BE
-```
+    Net Stop MSExchangePOP3BE
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

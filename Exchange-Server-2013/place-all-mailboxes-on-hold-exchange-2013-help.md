@@ -105,7 +105,9 @@ _**마지막으로 수정된 항목:** 2017-01-18_
 
 쉽고 빠르게에 배치할 수 있습니다 모든 사서함 보류 무기한 또는 셸을 사용 하 여 지정 된 기간입니다. 이 명령은 2555 일 (약 7 년)에 대 한 보류에서 모든 사서함을 배치합니다.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 이 예제에서는 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) cmdlet 및 받는 사람 필터를 사용 하 여 조직에 있는 모든 사용자 사서함을 검색 한 다음 목록이 사서함을 소송 보존을 설정 하 고 보존 기간을 지정 하려면 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) cmdlet에 파이프 합니다. 자세한 내용은 [전체 사서함에 소송 보존으로 설정](place-a-mailbox-on-litigation-hold-exchange-2013-help.md)를 참조 하십시오.
 
@@ -129,28 +131,24 @@ EAC를 사용하여 최대 500개의 사서함을 선택하고 보류할 수 있
     
     다음은 일반적인 사용자 또는 사서함 속성을 기준으로 사서함의 하위 집합을 반환 하려면 **Get-Mailbox** 및 **Get-Recipient** cmdlet을 사용 하 여 몇가지 예입니다. 이 예제에서는 관련 사서함 속성 (예: *CustomAttributeN* 또는 *Department*) 채워지고 가정 합니다.
     
-    ```
+    ```powershell
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
 
-    ```
-```powershell
-Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
 
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    ```
+    ```  
 
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
 
-    ```
-```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-```
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
     ```
     
     포함 하거나 사서함을 제외 하는 필터에 다른 사용자 사서함 속성을 사용할 수 있습니다. 자세한 내용은 [필터링 할 수 있는 속성에-Filter 매개 변수](https://technet.microsoft.com/ko-kr/library/bb738155\(v=exchg.150\))를 참조 합니다.

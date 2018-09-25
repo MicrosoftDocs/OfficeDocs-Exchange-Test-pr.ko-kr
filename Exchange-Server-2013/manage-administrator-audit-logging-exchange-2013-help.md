@@ -47,7 +47,9 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 기본적으로 감사 로깅은 실행된 각 cmdlet에 대해 로그 항목을 만듭니다. 처음으로 감사 로깅을 사용하도록 설정하는 경우에는 이 동작을 사용하기 위해 cmdlet 감사 목록을 변경할 필요가 없습니다. 이전에 감사할 cmdlet을 지정했지만 지금 모든 cmdlet을 감사하려면 다음 명령에서와 같이 **Set-AdminAuditLogConfig** cmdlet에서 *AdminAuditLogCmdlets* 매개 변수에 별표(\*) 와일드카드 문자를 지정하면 모든 cmdlet을 감사할 수 있습니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+  ```powershell
+  Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+  ```
 
 *AdminAuditLogCmdlets* 매개 변수를 사용하여 cmdlet 목록을 제공하면 감사할 cmdlet을 지정할 수 있습니다. 감사할 cmdlet의 목록을 제공할 경우에는 단일 cmdlet, 별표(\*) 와일드카드 문자가 있는 cmdlet 또는 이 두 가지를 혼합하여 제공할 수 있습니다. 목록에 있는 각 항목은 쉼표로 구분합니다. 유효한 값은 다음과 같습니다.
 
@@ -61,7 +63,9 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 이 예에서는 위 목록에 지정된 cmdlet을 감사합니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+  ```powershell
+  Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-AdminAuditLogConfig](https://technet.microsoft.com/ko-kr/library/dd298169\(v=exchg.150\))를 참조하십시오.
 
@@ -69,7 +73,9 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 기본적으로 감사 로깅은 지정된 매개 변수에 관계없이 실행된 모든 cmdlet에 대해 로그 항목을 만듭니다. 처음으로 감사 로깅을 사용하도록 설정하는 경우에는 이 동작을 사용하기 위해 매개 변수 감사 목록을 변경할 필요가 없습니다. 이전에 감사할 매개 변수를 지정했지만 지금 모든 매개 변수를 감사하려면 다음 명령에서와 같이 **Set-AdminAuditLogConfig** cmdlet에서 *AdminAuditLogParameters* 매개 변수에 별표(\*) 와일드카드 문자를 지정하면 모든 매개 변수를 감사할 수 있습니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters *
+  ```powershell
+  Set-AdminAuditLogConfig -AdminAuditLogParameters *
+  ```
 
 *AdminAuditLogParameters* 매개 변수를 사용하여 감사할 매개 변수를 지정할 수 있습니다. 감사할 매개 변수의 목록을 제공할 경우에는 단일 매개 변수, 별표(\*) 와일드카드 문자가 있는 매개 변수 또는 이 두 가지를 혼합하여 제공할 수 있습니다. 목록에 있는 각 항목은 쉼표로 구분합니다. 유효한 값은 다음과 같습니다.
 
@@ -89,7 +95,9 @@ Microsoft Exchange Server 2013의 관리자 감사 로깅을 사용하면 지정
 
 이 예에서는 위 목록에 지정된 매개 변수를 감사합니다.
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+  ```powershell
+  Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-AdminAuditLogConfig](https://technet.microsoft.com/ko-kr/library/dd298169\(v=exchg.150\))를 참조하십시오.
 

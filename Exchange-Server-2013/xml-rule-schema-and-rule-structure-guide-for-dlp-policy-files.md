@@ -88,36 +88,40 @@ DLP 정책 템플릿은 XML 문서로 표현됩니다. Exchange 내에 제공된
 
 DLP 정책 템플릿은 다음 스키마를 따르는 XML 문서로 표현됩니다. XML은 대/소문자를 구분합니다. 예를 들어 `dlpPolicyTemplates`는 작동하지만 `DlpPolicyTemplates`는 작동하지 않습니다.
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <dlpPolicyTemplates>
-      <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
-        <contentVersion>4</contentVersion>
-        <publisherName>Microsoft</publisherName>
-        <name>
-          <localizedString lang="en">PCI-DSS</localizedString>
-        </name>
-        <description>
-          <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
-        </description>
-        <keywords></keywords>
-        <ruleParameters></ruleParameters>
-        <ruleParameters/>
-        <policyCommands>
-          <!-- The contents below are applied/executed as rules directly in PS - -->
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
-          </commandBlock>
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
-          </commandBlock>
-        </policyCommands>
-        <policyCommandsResources></policyCommandsResources>
-      </dlpPolicyTemplate>
-    </dlpPolicyTemplates>
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <dlpPolicyTemplates>
+    <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
+      <contentVersion>4</contentVersion>
+      <publisherName>Microsoft</publisherName>
+      <name>
+        <localizedString lang="en">PCI-DSS</localizedString>
+      </name>
+      <description>
+        <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
+      </description>
+      <keywords></keywords>
+      <ruleParameters></ruleParameters>
+      <ruleParameters/>
+      <policyCommands>
+        <!-- The contents below are applied/executed as rules directly in PS - -->
+        <commandBlock>
+          <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
+        </commandBlock>
+        <commandBlock>
+          <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
+        </commandBlock>
+      </policyCommands>
+      <policyCommandsResources></policyCommandsResources>
+    </dlpPolicyTemplate>
+  </dlpPolicyTemplates>
+  ```
 
 모든 요소에 대해 XML 파일에 포함된 매개 변수에 공백이 있는 경우 매개 변수를 큰따옴표로 묶어야 합니다. 그렇지 않으면 제대로 작동하지 않습니다. 아래 예에서 `-SentToScope` 다음에 오는 매개 변수는 허용 가능하며, 공백이 없는 연속 문자열이므로 큰따옴표가 포함되지 않습니다. 하지만 –`Comments`에 대해 제공된 매개 변수는 큰따옴표가 없고 공백을 포함하므로 Exchange 관리 센터에 표시되지 않습니다.
 
-    <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  ```xml
+  <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  ```
 
 ## localizedString 요소
 
@@ -225,15 +229,17 @@ DLP 정책 템플릿의 루트 요소로서 모든 템플릿에 필요합니다.
 
 정책 템플릿의 이 부분은 정책 정의를 인스턴스화하는 데 사용되는 Exchange 관리 셸 명령 목록을 포함합니다. 인스턴스화 프로세스의 일부로 가져오기 프로세스에서 각 명령이 실행됩니다. 다음은 샘플 정책 명령입니다.
 
-    <PolicyCommands>
-        <!-- The contents below are applied/executed as rules directly in PS - -->
-          <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
-          <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
-      </PolicyCommands> 
+  ```xml
+  <PolicyCommands>
+      <!-- The contents below are applied/executed as rules directly in PS - -->
+        <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
+        <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+    </PolicyCommands> 
+  ```
 
 cmdlet 형식은 사용되는 cmdlet에 대한 표준 Exchange 관리 셸 cmdlet 구문입니다. 명령은 순서대로 실행됩니다. 각 명령 노드는 여러 명령으로 이루어진 스크립트 블록을 포함할 수 있습니다. 다음은 DLP 정책 템플릿 내에 분류 규칙 팩을 포함하는 방법과 정책 생성 프로세스의 일부로 규칙 팩을 설치하는 방법을 보여 주는 예입니다. 분류 규칙 팩은 정책 템플릿에 포함되고 나중에 템플릿에서 cmdlet에 매개 변수로 전달됩니다.
 
-``` 
+```powershell 
 <CommandBlock>
   <![CDATA[
 $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>

@@ -96,13 +96,21 @@ X-MS-Exchange-Organization-SenderIdResult:<status>
 <p>PCL 값은 1부터 8까지로 지정할 수 있습니다. PCL 등급이 1부터 3까지이면 <code>Neutral</code> 상태가 반환됩니다. 즉, 해당 메시지의 내용은 피싱일 가능성이 낮습니다. PCL 등급이 4부터 8까지이면 <code>Suspicious</code> 상태가 반환됩니다. 이러한 메시지의 경우에는 피싱 메시지일 가능성이 높습니다.</p>
 <p>이 값은 Outlook이 메시지에 대해 수행하는 작업을 결정하는 데 사용됩니다. Outlook은 PCL 스탬프를 사용하여 의심스러운 메시지의 내용을 차단합니다.</p>
 <p>PCL 스탬프는 다음과 같이 메시지 봉투에 X-헤더로 표시됩니다.</p>
-<pre><code>X-MS-Exchange-Organization-PCL:&lt;status&gt;</code></pre></td>
+
+```powershell
+X-MS-Exchange-Organization-PCL:&lt;status&gt;
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>SCL</p></td>
 <td><p>메시지의 SCL(스팸 지수) 스탬프에는 콘텐츠를 기반으로 한 메시지 등급이 표시됩니다. 콘텐츠 필터 에이전트는 메시지의 내용을 평가하고 SCL 등급을 각 메시지에 할당하기 위해 Microsoft SmartScreen 기술을 사용합니다. SCL 값은 0에서 9 사이이며 이 값이 낮을수록 스팸일 가능성이 낮고 높을수록 스팸일 가능성이 높은 것으로 간주됩니다. Exchange 및 Outlook에서 수행하는 작업은 SCL 임계값 설정에 따라 달라집니다.</p>
-<p>SCL 스탬프는 다음과 같이 메시지 봉투에 X-헤더로 표시됩니다.</p>
-<pre><code>X-MS-Exchange-Organization-SCL:&lt;status&gt;</code></pre>
+<p>SCL 스탬프는 다음과 같이 메시지 봉투에 X-헤더로 표시됩니다.</p>  
+
+```powershell
+X-MS-Exchange-Organization-SCL:&lt;status&gt;
+```
+
 <p>SCL 임계값 및 작업에 대한 자세한 내용은 <a href="spam-confidence-level-threshold-exchange-2013-help.md">스팸 지수 임계값</a>을 참조하십시오.</p></td>
 </tr>
 <tr class="odd">

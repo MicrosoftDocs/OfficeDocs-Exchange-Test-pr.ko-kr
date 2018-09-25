@@ -36,13 +36,17 @@ Active Directory 사용자 계정과 Exchange 사서함 데이터베이스에 �
     
     조직에서 사용할 수 없는 사서함을 확인 하려면 셸에서 다음 명령을 실행 합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+      ```powershell
+      Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+      ```
 
   - **일시 삭제 된 사서함**   다른 사서함 데이터베이스에 사서함이 움직일 Exchange 삭제 되지는 않습니다 완벽 하 게 사서함 원본 사서함 데이터베이스에서 이동이 완료 되 면. 대신, 원본 사서함 데이터베이스에서 사서함을 *일시적으로 삭제 된* 상태로 전환 됩니다. Like 사용할 수 없는 사서함을 일시적으로 삭제 된 사서함은 삭제 된 사서함 보존 기간이 만료 될 때까지 또는 **Remove-StoreMailbox** cmdlet를 사용 하는 사서함을 삭제 하려면 원본 데이터베이스에 유지 됩니다.
     
     조직에서 일시 삭제 된 사서함을 확인 하려면 다음 명령을 실행 합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```powershell
+      Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```
 
 **목차**
 

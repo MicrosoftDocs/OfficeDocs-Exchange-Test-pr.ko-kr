@@ -68,8 +68,8 @@ Set-SenderFilterConfig -Enabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderFilterConfig | Format-List Enabled
-```
+    Get-SenderFilterConfig | Format-List Enabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -77,15 +77,21 @@ Get-SenderFilterConfig | Format-List Enabled
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```powershell
+Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```
 
 다음 예에서는 kim@contoso.com 및 john@contoso.com의 메시지, fabrikam.com 도메인의 메시지, northwindtraders.com 및 모든 하위 도메인의 메시지를 차단하도록 보낸 사람 필터 에이전트를 구성합니다.
 
-    Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```powershell
+Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 다음 예에서는 아래 정보를 사용하여 보낸 사람 필터 에이전트를 구성합니다.
 
@@ -97,7 +103,9 @@ Get-SenderFilterConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -106,8 +114,8 @@ Get-SenderFilterConfig | Format-List Enabled
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
-```
+    Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -132,8 +140,8 @@ Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
-```
+    Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 

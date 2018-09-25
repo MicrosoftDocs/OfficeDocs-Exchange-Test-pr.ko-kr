@@ -87,7 +87,9 @@ Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
 
 IP 차단 목록의 구성을 확인하려면 다음 명령을 실행합니다.
 
-    Get-IPBlockListConfig | Format-List *Enabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *Enabled,*Response
+```
 
 ## 셸을 사용하여 IP 차단 목록을 사용하거나 사용하지 않도록 설정
 
@@ -115,7 +117,9 @@ Get-IPBlockListConfig | Format-List Enabled
 
 IP 차단 목록을 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```powershell
+Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```
 
 이 예에서는 다음과 같은 설정으로 IP 차단 목록을 구성합니다.
 
@@ -127,13 +131,17 @@ IP 차단 목록을 구성하려면 다음 구문을 사용합니다.
 
 <!-- end list -->
 
-    Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```powershell
+Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 IP 차단 목록을 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```
 
 ## 셸을 사용하여 IP 차단 목록 항목 보기
 
@@ -167,7 +175,9 @@ Get-IPBlockListEntry -IPAddress 192.168.1.13
 
 IP 차단 목록 항목을 추가하려면 다음 구문을 사용합니다.
 
-    Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```powershell
+Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```
 
 다음 예에서는 IP 주소 범위 192.168.1.10~192.168.1.15에 대해 IP 차단 목록 항목을 추가하고 2014년 7월 4일 오후 3시에 만료되도록 IP 차단 목록 항목을 구성합니다.
 
@@ -221,7 +231,9 @@ Get-IPBlockListEntry
 
 콘텐츠 필터링에서 모든 IP 차단 목록 공급자를 사용하는 방법을 보려면 다음 명령을 실행합니다.
 
-    Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```
 
 ## 셸을 사용하여 모든 IP 차단 목록 공급자를 사용하거나 사용하지 않도록 설정
 
@@ -249,7 +261,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 콘텐츠 필터링에서 모든 IP 차단 목록 공급자를 사용하는 방법을 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 다음 예에서는 아래 설정을 사용하여 모든 IP 차단 목록 공급자를 구성합니다.
 
@@ -259,7 +273,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```powershell
+Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```
 
 자세한 내용은 [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/ko-kr/library/aa998543\(v=exchg.150\))를 참조하세요.
 
@@ -267,7 +283,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 모든 IP 차단 목록 공급자를 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자 보기
 
@@ -285,13 +303,17 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 다음 예에서는 Contoso IP Block List Provider라는 공급자의 세부 정보를 표시합니다.
 
-    Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```powershell
+Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```
 
 ## 셸을 사용하여 IP 차단 목록 공급자 추가
 
 IP 차단 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
-    Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 다음 예에서는 아래 옵션으로 "Contoso IP Block List Provider"라는 IP 차단 목록 공급자을 만듭니다.
 
@@ -301,7 +323,9 @@ IP 차단 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
 <!-- end list -->
 
-    Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 
 > [!NOTE]
@@ -353,7 +377,9 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
 
 기존 IP 차단 목록 공급자를 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 예를 들어 Contoso IP Block List Provider라는 공급자의 기존 상태 코드 목록에 IP 주소 상태 코드 127.0.0.1을 추가하려면 다음 명령을 실행합니다.
 
@@ -417,7 +443,9 @@ Get-IPBlockListProvider
 
 IP 허용 목록의 구성을 확인하려면 다음 명령을 실행합니다.
 
-    Get-IPAllowListConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## 셸을 사용하여 IP 허용 목록을 사용하거나 사용하지 않도록 설정
 
@@ -445,7 +473,9 @@ Get-IPAllowListConfig | Format-List Enabled
 
 IP 허용 목록을 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```powershell
+Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```
 
 다음 예에서는 내부 및 외부 메일 서버에서 들어오는 연결을 필터링하도록 IP 허용 목록을 구성합니다. 기본적으로 외부 메일 서버의 연결만 필터링됩니다(*ExternalMailEnabled*가 `$true`로 설정되고, *InternalMailEnabled*가 `$false`로 설정됨). 인증되지 않은 연결과 외부 파트너의 인증된 연결은 외부 연결로 간주됩니다.
 
@@ -457,7 +487,9 @@ Set-IPAllowListConfig -InternalMailEnabled $true
 
 IP 허용 목록을 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListConfig | Format-List *MailEnabled
+```
 
 ## 셸을 사용하여 IP 허용 목록 항목 보기
 
@@ -491,7 +523,9 @@ Get-IPAllowListEntry -IPAddress 192.168.1.13
 
 IP 허용 목록 항목을 추가하려면 다음 구문을 사용합니다.
 
-    Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```powershell
+Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```
 
 다음 예에서는 IP 주소 범위 192.168.1.10~192.168.1.15에 대해 IP 허용 목록 항목을 추가하고 2014년 7월 4일 오후 3시에 만료되도록 IP 허용 목록 항목을 구성합니다.
 
@@ -545,7 +579,9 @@ Get-IPAllowListEntry
 
 콘텐츠 필터링에서 모든 IP 허용 목록 공급자를 사용하는 방법을 보려면 다음 명령을 실행합니다.
 
-    Get-IPAllowListProvidersConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## 셸을 사용하여 모든 IP 허용 목록 공급자를 사용하거나 사용하지 않도록 설정
 
@@ -573,7 +609,9 @@ Get-IPAllowListProvidersConfig | Format-List *Enabled
 
 콘텐츠 필터링에서 모든 IP 허용 목록 공급자를 사용하는 방법을 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 다음 예에서는 내부 및 외부 메일 서버에서 들어오는 연결을 필터링하도록 모든 IP 허용 목록 공급자를 구성합니다. 기본적으로 외부 메일 서버의 연결만 필터링됩니다(*ExternalMailEnabled*가 `$true`로 설정되고, *InternalMailEnabled*가 `$false`로 설정됨). 인증되지 않은 연결과 외부 파트너의 인증된 연결은 외부 연결로 간주됩니다.
 
@@ -587,7 +625,9 @@ Set-IPAllowListProvidersConfig -InternalMailEnabled $true
 
 모든 IP 허용 목록 공급자를 올바르게 구성했는지 확인하려면 다음 명령을 실행하여 표시되는 값이 구성한 값인지 확인합니다.
 
-    Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자 보기
 
@@ -605,13 +645,17 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 다음 예에서는 Contoso IP Allow List Provider라는 공급자의 세부 정보를 표시합니다.
 
-    Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```powershell
+Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```
 
 ## 셸을 사용하여 IP 허용 목록 공급자 추가
 
 IP 허용 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
-    Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 다음 예에서는 아래 옵션으로 "Contoso IP Allow List Provider"라는 IP 허용 목록 공급자을 만듭니다.
 
@@ -621,7 +665,9 @@ IP 허용 목록 공급자를 추가하려면 다음 구문을 사용합니다.
 
 <!-- end list -->
 
-    Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 
 > [!NOTE]
@@ -673,7 +719,9 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
 
 기존 IP 허용 목록 공급자를 구성하려면 다음 구문을 사용합니다.
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 예를 들어 Contoso IP Allow List Provider라는 공급자의 기존 상태 코드 목록에 IP 주소 상태 코드 127.0.0.1을 추가하려면 다음 명령을 실행합니다.
 

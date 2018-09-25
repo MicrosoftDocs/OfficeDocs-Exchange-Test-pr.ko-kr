@@ -43,8 +43,8 @@ _**마지막으로 수정된 항목:** 2018-01-17_
     검색 시스템 사서함을 다시 만들려면 다음 명령을 실행 합니다.
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

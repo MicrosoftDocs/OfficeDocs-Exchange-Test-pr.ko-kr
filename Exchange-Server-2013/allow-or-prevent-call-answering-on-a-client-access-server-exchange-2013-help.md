@@ -55,9 +55,13 @@ Exchange 2007 및 Exchange 2010에는 통합 메시징 서버의 작동 상태�
 
 이 예에서는 클라이언트 액세스 서버 `UMCallRouter-05x.contoso.com`이 VoIP 게이트웨이, IP PBX, SIP 사용 가능 PBX 및 SBC에서 들어오는 음성, 팩스, 자동 전화 교환 및 Outlook Voice Access 통화에 응답할 수 있도록 설정하고 변경 내용을 UMCallRouter-05x 서버의 레지스트리에 씁니다.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 이 예에서는 클라이언트 액세스 서버 `UMCallRouter-05x.contoso.com`이 VoIP 게이트웨이, IP PBX, SIP 사용 가능 PBX 및 SBC에서 들어오는 음성, 팩스, 자동 전화 교환 및 Outlook Voice Access 통화에 응답하지 못하도록 설정하고 변경 내용을 Active Directory에만 씁니다.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

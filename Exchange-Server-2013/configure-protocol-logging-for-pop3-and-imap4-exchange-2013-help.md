@@ -41,8 +41,10 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
 이 예에서는 클라이언트 액세스 서버 CAS01에서 IMAP4 또는 POP3에 대한 프로토콜 로깅을 사용 설정합니다.
 
-    Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
-    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
+```powershell
+Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
+Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
+```
 
 
 > [!NOTE]
@@ -56,8 +58,10 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
 이 예에서는 클라이언트 서버 CAS01에서 IMAP4 또는 POP3에 대한 프로토콜 로깅을 사용하지 않도록 설정합니다.
 
-    Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
-    Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
+```powershell
+Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
+Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
+```
 
 
 > [!NOTE]
@@ -74,8 +78,8 @@ POP3 또는 IMAP4 로깅 설정을 수정하려면 다음 매개 변수를 하�
   - *LogFileLocation* 이 매개 변수는 POP3 또는 IMAP4 프로토콜 로그 파일의 위치를 지정합니다. 기본적으로 POP3 프로토콜 로그 파일은 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\Pop3 디렉터리에 있습니다. 이 예는 클라이언트 액세스 서버 CAS01에서 POP3 프로토콜 로깅을 설정합니다. 또한 POP3 프로토콜 로깅 디렉터리를 C:\\Pop3Logging으로 변경합니다.
     
     ```powershell
-Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
-```
+    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+    ```
 
   - *LogFileRollOverSettings* 이 매개 변수는 POP3 또는 IMAP4 프로토콜 로깅이 새 로그 파일을 만드는 빈도를 정의합니다. 기본적으로 새 로그 파일은 매일 생성됩니다. 가능한 값은 다음과 같습니다.
     
@@ -90,22 +94,22 @@ Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\P
     이 설정은 *LogPerFileSizeQuota* 매개 변수의 값이 0으로 설정된 경우에만 적용됩니다. 이 예에서는 매시간 새 로그 파일을 만들도록 클라이언트 액세스 서버 CAS01에서 POP3 프로토콜 로깅을 변경합니다.
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+    ```
 
   - *LogPerFileSizeQuota* 이 매개 변수는 POP3 또는 IMAP 4 프로토콜 로그 파일의 최대 크기(바이트)를 정의합니다. 기본적으로 이 값은 0으로 설정됩니다. 이 값이 0으로 설정된 경우 *LogFileRollOverSettings* 매개 변수에 지정된 빈도로 새 프로토콜 로그 파일이 만들어집니다.
     
     이 예에서는 로그 파일이 2MB 크기가 되면 새 로그 파일을 생성하도록 클라이언트 액세스 서버 CAS01에서 POP3 프로토콜 로깅을 변경합니다.
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+    ```
     
     이 예에서는 만든 날짜 및 크기에 관계없이 동일한 로그 파일을 사용하기 위해 클라이언트 액세스 서버 CAS01에서 POP3 프로토콜 로깅을 변경합니다.
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+    ```
 
 
 > [!NOTE]

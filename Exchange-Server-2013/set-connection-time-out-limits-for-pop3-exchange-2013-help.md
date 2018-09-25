@@ -94,8 +94,8 @@ P o p 3에 대 한 연결 시간 제한 설정 했을 때 하면, 설정 적용 
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  연결 설정이 올바른지 확인합니다.
 

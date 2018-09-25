@@ -91,11 +91,15 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 적절한 Exchange 2013 서버에 스크립트를 복사하고 사용해야 할 스크립트 매개 변수를 결정한 후 다음 구문을 사용하여 역할 항목을 만듭니다.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 이 예에서는 *Name* 및 *Location* 매개 변수를 사용하여 IT Scripts 역할에 BulkProvisionUsers.ps1 스크립트를 추가합니다.
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -113,11 +117,15 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 적절한 Windows 서버에 cmdlet이 포함된 Exchange 2013 Powershell 스냅인을 설치하고 사용해야 할 cmdlet 매개 변수를 결정했으면 다음 구문을 사용하여 역할 항목을 만듭니다.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 이 예에서는 *Database* 및 *Size* 매개 변수를 사용하여 Widget cmdlet 역할에 Contoso.Admin.Cmdlets 스냅인의 **Set-WidgetConfiguration** cmdlet을 추가합니다.
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -159,7 +167,9 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 다음 구문을 사용하여 새 역할을 만듭니다.
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 이 예에서는 IT Global Scripts 역할과 해당 관리 역할 항목을 Diagnostic IT Scripts 역할에 복사합니다.
 

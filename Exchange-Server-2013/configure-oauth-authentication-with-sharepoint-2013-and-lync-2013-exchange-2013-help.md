@@ -51,13 +51,17 @@ Exchange에서 OAuth 인증을 구성하고 나면 파트너 응용 프로그램
 
 이 예에서는 SharePoint 2013에 대한 OAuth 인증을 구성합니다.
 
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+  ```powershell
+  Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+  Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+  ```
 
 이 예에서는 Lync Server 2013에 대한 OAuth 인증을 구성합니다.
 
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
+  ```powershell
+  Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+  Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
+  ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

@@ -49,7 +49,9 @@ SMTP를 기본 전송 메커니즘으로 사용하지 않는 팩스 게이트웨
 
 1.  다음 명령을 실행하여 외부 커넥터를 만듭니다.
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+      ```powershell
+      New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+      ```
     
     이 예에서 Hub01과 Hub02는 외부 시스템으로 메시지를 배달하도록 지정된 조직의 원본 서버입니다. 원본 서버를 둘 이상 사용하면 내결함성이 제공됩니다.
 
@@ -74,8 +76,8 @@ Drop 디렉터리로 사용할 디렉터리를 로컬 파일 시스템에 만듭
 1.  다음 스크립트를 실행하여 외부 커넥터의 Drop 디렉터리를 지정합니다(*DropDirectory* 매개 변수 값을 환경에서 사용하는 해당 경로로 변경).
     
     ```powershell
-Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
-```
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
