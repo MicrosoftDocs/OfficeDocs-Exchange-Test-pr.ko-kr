@@ -93,7 +93,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-12-10_
       - EUM(Exchange 통합 메시징) 프록시 주소
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]   
     > Exchange에서 모든 비 SMTP 전자 메일 주소는 사용자 지정 주소로 간주됩니다. Exchange는 X.400, GroupWise 또는 Lotus Notes 전자 메일 주소 유형에 대해 고유한 대화 상자 또는 속성 페이지를 제공하지 않습니다. 비 SMTP 사용자 지정 전자 메일 주소를 추가하는 경우에는 적절한 DLL(동적 연결 라이브러리) 파일이 있어야 합니다. 적절한 DLL 파일을 제공하지 않으면 사용자 지정된 전자 메일 주소 정책을 만들 수 없습니다. 이벤트 뷰어에 다음과 같은 오류가 로깅됩니다. "'i386' 시스템의 Microsoft Exchange Directory에 'SADF' 주소 유형에 대한 전자 메일 주소 설명 개체가 없습니다."
 
 
@@ -114,7 +114,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-12-10_
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
-> [!CAUTION]
+> [!CAUTION]   
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, 또는 <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>
 
 
@@ -132,9 +132,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-12-10_
     
       - <strong>이 전자 메일 주소를 적용할 받는 사람 유형 지정</strong>
 
-3.  
-    
-    더 자세히이 정책에 적용 될 받는 사람을 제한 하려면 <strong>규칙 추가</strong> 클릭 합니다. 이 부울 <strong>및</strong> 문을 만듭니다.
+3.  더 자세히이 정책에 적용 될 받는 사람을 제한 하려면 <strong>규칙 추가</strong> 클릭 합니다. 이 부울 <strong>및</strong> 문을 만듭니다.
     
 
     > [!WARNING]
@@ -144,9 +142,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-12-10_
 
 4.  정책이 적용될 받는 사람을 보려면 <strong>정책을 적용할 받는 사람 미리 보기</strong>를 클릭합니다.
 
-5.  
-    
-    <strong>저장</strong>을 클릭하여 변경 내용을 저장하고 정책을 만듭니다.
+5.  <strong>저장</strong>을 클릭하여 변경 내용을 저장하고 정책을 만듭니다.
 
 6.  전자 메일 주소 정책을 업데이트해야 정책이 적용된다는 경고가 나타납니다. 정책을 만든 후에 선택한 다음 세부 정보 창에서 <strong>적용</strong>을 클릭합니다.
 
@@ -154,7 +150,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-12-10_
 
 이 예제에서는 함께 자신의 이름의 처음 두 글자를 사용 하 여 자신의 마지막 이름을 포함 하는 전자 메일 주소를 가진 남동쪽 사무실에 사서함 사용자를 포함 하는 전자 메일 주소 정책을 만듭니다.
 
-    New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [New-EmailAddressPolicy](https://technet.microsoft.com/ko-kr/library/aa996800\(v=exchg.150\))를 참조 하십시오.
 

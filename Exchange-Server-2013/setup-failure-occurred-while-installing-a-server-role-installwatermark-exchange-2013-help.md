@@ -34,8 +34,8 @@ Exchange 2007 설치 프로그램에서는 실패 한 서버 역할 설치를 �
 2.  다음 명령을 실행합니다.
     
     ```powershell
-Setup /roles:<Failed Server Role>
-```
+    Setup /roles:<Failed Server Role>
+    ```
     
     하나 이상의 쉼표로 구분 된 목록에서 다음 역할에서이 옵션을 선택 합니다.
     
@@ -44,12 +44,12 @@ Setup /roles:<Failed Server Role>
     EdgeTransport (또는 ET, 또는 E)
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Edge 전송 서버 역할은 다른 서버 역할과 함께 동일한 컴퓨터에 함께 사용할 수 없습니다.
 
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 경계 네트워크에 및 Active Directory 포리스트 외부 Edge 전송 서버 역할을 배포 해야 합니다.
 
     
@@ -62,14 +62,14 @@ Setup /roles:<Failed Server Role>
     ManagementTools (또는 체, 또는 T)
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > ManagementTools를 지정 하는 경우 Exchange 관리 콘솔, Exchange 관리 셸, Exchange 도움말 파일, Exchange 모범 사례 분석기 도구 대 한 Exchange cmdlet 및 Exchange 문제해결 도우미 설치 합니다. 다른 서버 역할을 설치 하는 경우 관리 도구는 자동으로 설치 됩니다.
 
     
     예, 기존 사서함 서버에 허브 전송 서버 역할을 추가 하려면 다음을 입력: <strong>%LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install</strong>
 
 
-> [!NOTE]
+> [!NOTE]  
 > 모든 Exchange Server 2007 서버 역할 이전에 설치 된 경우 성공적으로 사용 하 여 설치 마법사가 유지 관리 모드에서 실행 됩니다. 이전에 Exchange 2007 서버 역할이 성공적으로 설치 된, 설치 마법사에서 중지 한 위치에서 시작 합니다.
 
 
@@ -87,17 +87,17 @@ Setup /roles:<Failed Server Role>
 5.  <strong>서버 역할 선택</strong> 페이지에서 서버 역할을 설치 하려는 대 한 확인란을 선택 하 고 을 클릭 합니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Edge 전송 서버 역할은 다른 서버 역할과 함께 동일한 컴퓨터에 함께 사용할 수 없습니다.
 
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 경계 네트워크에 및 Active Directory 포리스트 외부 Edge 전송 서버 역할을 배포 해야 합니다.
 
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 관리 도구를 선택 하는 경우 Exchange 관리 콘솔, Exchange 관리 셸 대 한 Exchange cmdlet 및 Exchange 도움말 파일을 설치 합니다. 다른 서버 역할을 설치 하는 경우 관리 도구를 자동으로 설치 됩니다.
 
 

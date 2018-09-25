@@ -106,12 +106,14 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 각 메시지 스냅숏 파일이 메시지 내용을에 추가 되 고 메시지 스냅숏 파일에 관련 된 SMTP 이벤트 및 전송 에이전트를 나열 하는 헤더도 시작 됩니다. 이러한 헤더는 `X-CreatedBy: MessageSnapshot-Begin injected headers` 로 시작 하 고 `X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers`를 끝나야 합니다. 이러한 헤더는 각 메시지 스냅숏 파일에서 각 후속 전송 에이전트 및 SMTP 이벤트도 대체 됩니다. 다음은 전자 메일 메시지 파일에 추가 되는 머리글의 한 예입니다.
 
-    X-CreatedBy: MessageSnapshot-Begin injected headers
-    X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
-    X-MessageSnapshot-Record-Id: 21474836486
-    X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
-    X-Receiver: chris@contoso.com
-    X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+  ```powershell
+  X-CreatedBy: MessageSnapshot-Begin injected headers
+  X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
+  X-MessageSnapshot-Record-Id: 21474836486
+  X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
+  X-Receiver: chris@contoso.com
+  X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+  ```
 
 메시지 스냅숏 헤더 파일 모든 원본 메시지 헤더를 포함 하 여 메시지의 내용을 들어 있습니다. 전송 에이전트는 메시지의 내용을 수정 하는 경우 변경 내용이 메시지와 함께 통합 나타납니다. 각 전송 에이전트에 의해 메시지 처리는 각 에이전트에 의해 적용 된 변경 내용은 메시지 내용을에 적용 됩니다. 전송 에이전트 메시지 내용을 변경할 수 없습니다가 해당 에이전트에 의해 생성 되는 메시지 스냅숏 이전 전송 에이전트에 의해 만들어진 메시지 스냅숏 동일 됩니다.
 

@@ -110,28 +110,34 @@ _**마지막으로 수정된 항목:** 2015-04-07_
   - 이 예에서는 외부 페더레이션 도메인 contoso.com에 대한 공유 정책 Contoso를 만듭니다. 이 정책을 사용하여 contoso.com 도메인의 사용자가 사용자의 자세한 일정 약속 있음/없음 정보를 볼 수 있습니다. 기본적으로 이 정책은 사용할 수 있습니다.
     
     ```powershell
-New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
-```
+    New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```
 
   - 이 예에서는 두 가지 다른 페더레이션된 도메인(contoso.com 및 woodgrovebank.com)에 대해 다른 공유 작업을 각 도메인에 구성한 공유 정책 ContosoWoodgrove를 만듭니다. 정책은 사용하지 않도록 설정되어 있습니다.
     
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+      ```powershell
+      New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+      ```
 
   - 이 예에서는 제한된 일정 약속 있음/없음 정보에 대해 공유 작업이 구성된 클라이언트 액세스 서버 CAS01 및 사서함 서버 MAIL01이 있는 Exchange 조직에 대한 익명 공유 정책을 만듭니다. 이 정책을 사용하는 경우 Exchange 조직의 사용자가 인터넷에 액세스할 수 있는 사용자를 초대하고 링크를 전송하여 일정 약속 있음/없음 정보를 볼 수 있습니다. 정책은 사용하도록 설정되어 있습니다.
     
     1.  MAIL01의 웹 프록시 URL을 설정합니다.
         
         ```powershell
-Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
-```
+        Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```
     
     2.  CAS01에서 게시 가상 디렉터리를 사용하도록 설정합니다.
-        
-            Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+      
+          ```powershell
+          Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+          ```
     
     3.  익명 공유 정책을 만들고 제한된 일정 정보 공유를 구성합니다.
         
-            New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+          ```powershell
+          New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+          ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 

@@ -167,7 +167,9 @@ CSS 스타일시트(.css 파일) 파일은 테마에 사용되는 글꼴 및 색
 
 이 예에서는 Outlook Web App의 기본 테마를 설정합니다. 여기서 서버 이름은 `fourthcoffee`이고 가상 디렉터리 이름은 `owa`이며, 웹 사이트 이름은 `default web site`이고 테마는 `Custom` 폴더에 있습니다.
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom 
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom 
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/bb123515\(v=exchg.150\))를 참조하십시오.
 
@@ -175,11 +177,15 @@ CSS 스타일시트(.css 파일) 파일은 테마에 사용되는 글꼴 및 색
 
 이 예에서는 Outlook Web App의 테마 선택을 사용하지 않도록 설정합니다. 여기서 서버 이름은 `fourthcoffee`이고 가상 디렉터리 이름은 `owa`이며 웹 사이트 이름은 `default web site`입니다.
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false 
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false 
+```
 
 다음 예와 같이 두 명령을 동시에 완료할 수도 있습니다.
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/bb123515\(v=exchg.150\))를 참조하십시오.
 

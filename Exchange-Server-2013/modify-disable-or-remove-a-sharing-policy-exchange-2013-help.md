@@ -72,7 +72,7 @@ Exchange 조직의 개별 사용자는 공유 정책을 사용하여 다른 페�
 ## EAC를 사용하여 공유 정책 제거
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > 공유 정책을 제거하려면 먼저 공유 정책을 모든 사용자 사서함에서 제거해야 합니다.
 
 
@@ -88,38 +88,34 @@ Exchange 조직의 개별 사용자는 공유 정책을 사용하여 다른 페�
   - 이 예에서는 조직 외부의 도메인인 contoso.com에 대한 공유 정책 Contoso를 수정합니다. 이 정책을 사용하면 Contoso 도메인의 사용자가 간단한 약속 있음/없음 정보를 볼 수 있습니다.
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
-```
+    Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```
 
   - 이 예에서는 공유 정책 Contoso에 두 번째 도메인을 추가합니다. 기존 정책에 도메인을 추가하는 경우 이전에 포함된 도메인을 모두 포함해야 합니다.
     
-        Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
-
+    ```powershell
+    Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
+    ```
   - 이 예에서는 공유 정책 Contoso를 기본 공유 정책으로 설정합니다.
     
     ```powershell
-Set-SharingPolicy -Identity Contoso -Default $True
-```
-
+    Set-SharingPolicy -Identity Contoso -Default $True
+    ```
   - 이 예에서는 공유 정책 Contoso를 사용하지 않도록 설정합니다.
     
     ```powershell
-Set-SharingPolicy -Identity "Contoso" -Enabled $False
-```
+    Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```
 
   - 첫 번째 예에서는 공유 정책 Contoso를 제거합니다. 두 번째 예에서는 공유 정책 Contoso를 제거하고 정책 제거를 확인하는 메시지를 생략합니다.
     
-      ```
-  ```powershell
-Remove-SharingPolicy -Identity Contoso
-```
-      ```
-
-      ```
-  ```powershell
-Remove-SharingPolicy -Identity Contoso -Confirm
-```
-      ```
-
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso
+    ```
+    
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso -Confirm
+    ```
+    
 구문과 매개 변수에 대한 자세한 내용은 [Set-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd297931\(v=exchg.150\)) 및 [Remove-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd351071\(v=exchg.150\))을 참조하십시오.
 

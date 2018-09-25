@@ -43,7 +43,9 @@ OAB considerations
 
 Exchange 2007 및 Exchange 2010에서는 **Move-OfflineAddressBook** cmdlet을 사용하여 OAB 생성을 다른 사서함 서버로 이동할 수 있습니다. Exchange 2013에서는 OAB 버전 4만 지원합니다. 이 버전은 Exchange 2010의 기본 버전과 같습니다. 다른 OAB 버전을 생성하도록 Exchange 2013을 구성할 수 없으며 OAB 생성은 조직 사서함이 상주하는 사서함 서버에서 수행됩니다. 따라서 Exchange 2013에서 OAB 생성을 이동하려면 조직 사서함을 이동해야 합니다. OAB 생성은 다른 Exchange 2013 사서함 데이터베이스로만 이동할 수 있습니다. OAB 생성을 이전 버전의 Exchange로 이동할 수는 없습니다. Exchange 2013 OAB 조직 사서함을 찾으려면 다음 셸 명령을 실행합니다.
 
-    Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+  ```powershell
+  Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+  ```
 
 그러면 **MoveRequest** cmdlet을 사용하여 사서함을 이동할 수 있습니다.
 

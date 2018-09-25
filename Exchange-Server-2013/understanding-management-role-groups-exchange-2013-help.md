@@ -257,7 +257,9 @@ RBAC에 대한 자세한 내용은 [역할 기반 액세스 제어 이해](under
 
 앞에서 설명한 것처럼 역할 그룹은 여러 계층으로 이루어져 있습니다. 역할 그룹을 만들 때 나타나는 결과를 이해하려면 새 역할 그룹을 만드는 다음 예를 고려해 보십시오.
 
-    New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+  ```powershell
+  New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+  ```
 
 앞의 명령을 실행하면 다음과 같은 결과가 나타납니다.
 

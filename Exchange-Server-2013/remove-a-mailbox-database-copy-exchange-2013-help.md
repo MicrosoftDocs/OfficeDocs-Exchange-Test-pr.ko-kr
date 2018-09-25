@@ -74,8 +74,8 @@ Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
   - 셸에서 다음 명령을 실행하여 복사본이 제거되었는지 확인합니다.
     
     ```powershell
-Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
-```
+    Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```
     
     제거된 수동 복사본이 더 이상 나열되지 않습니다.
 

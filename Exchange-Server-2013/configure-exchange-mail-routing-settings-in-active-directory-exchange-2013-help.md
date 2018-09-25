@@ -43,7 +43,7 @@ Exchange 비용을 설정할 Active Directory IP 사이트 링크의 이름을 �
 
 Active Directory 사이트 링크에 Exchange 관련 비용을 설정하려면 다음 명령을 실행합니다.
 
-``` 
+```powershell 
  Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
@@ -66,8 +66,8 @@ Active Directory 사이트 링크에 Exchange 비용이 성공적으로 설정�
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-AdSiteLink | Format-List Name,ExchangeCost
-```
+    Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```
 
 2.  Active Directory 사이트 링크에 Exchange 비용이 구성되어 있는지 확인합니다.
 
@@ -100,8 +100,8 @@ Active Directory 사이트가 허브 사이트로 성공적으로 구성되었�
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-AdSite | Format-List Name,HubSiteEnabled
-```
+    Get-AdSite | Format-List Name,HubSiteEnabled
+    ```
 
 2.  Active Directory 사이트의 *HubSiteEnabled* 값이 `True`인지 확인합니다.
 

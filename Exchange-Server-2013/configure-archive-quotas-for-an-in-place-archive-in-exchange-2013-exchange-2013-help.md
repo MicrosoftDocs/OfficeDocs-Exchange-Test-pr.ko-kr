@@ -74,6 +74,8 @@ Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5
   - EAC에서 **받는 사람** 에 게 이동 \> 원하는 **사서함** 및 사서함을 선택 합니다. 세부 정보 창의 **원본 위치 보관 함자세히 보기를** 클릭 하 고 보관 사서함의 할당량 설정을 확인 합니다.
 
   - 셸에서 보관 사서함에 대 한 할당량 정보를 표시 하려면 다음 명령을 실행 합니다.
-    
-        Get-Mailbox <Name> | FL Name,Archive*Quota
+
+      ```powershell
+      Get-Mailbox <Name> | FL Name,Archive*Quota
+      ```
 

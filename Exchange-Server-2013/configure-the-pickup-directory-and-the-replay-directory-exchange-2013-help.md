@@ -45,7 +45,9 @@ Pickup 및 Replay 디렉터리는 메시지 파일을 전송 파이프라인에 
 
 Pickup 디렉터리를 구성하려면 다음 구문을 사용합니다.
 
-    Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 이 예에서는 Exchange01이라는 사서함 서버의 Pickup 디렉터리를 다음과 같이 변경합니다.
 
@@ -59,7 +61,9 @@ Pickup 디렉터리를 구성하려면 다음 구문을 사용합니다.
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 
 > [!NOTE]
@@ -75,7 +79,9 @@ Pickup 디렉터리를 구성하려면 다음 구문을 사용합니다.
 
 Replay 디렉터리를 구성하려면 다음 구문을 사용합니다.
 
-    Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 이 예에서는 Exchange01이라는 사서함 서버의 Replay 디렉터리를 다음과 같이 변경합니다.
 
@@ -85,7 +91,9 @@ Replay 디렉터리를 구성하려면 다음 구문을 사용합니다.
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 
 > [!NOTE]
@@ -103,7 +111,9 @@ Pickup 및 Replay 디렉터리가 성공적으로 구성되었는지 확인하�
 
 1.  다음 명령을 실행합니다.
     
-        Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

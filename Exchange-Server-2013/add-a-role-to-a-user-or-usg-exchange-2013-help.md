@@ -69,12 +69,14 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 범위 없이 USG에 역할을 할당하려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
-
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
+```
 이 예에서는 SeattleAdmins USG에 Exchange 서버 역할을 할당합니다.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
-
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
 ## 미리 정의된 상대 범위가 있는 역할 할당 만들기
@@ -83,12 +85,14 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 미리 정의된 범위를 사용하여 USG에 역할을 할당하려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
-
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 이 예에서는 SeattleAdmins USG에 Exchange 서버 역할을 할당하고 미리 정의된 범위 Organization을 적용합니다.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
-
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
 ## 받는 사람 필터 기반 범위를 사용하여 역할 할당 만들기
@@ -99,12 +103,14 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 받는 사람 필터 기반 범위를 사용하여 USG에 역할을 할당하려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
-
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 이 예에서는 Seattle Recipient Admins USG에 Mail Recipients 역할을 할당하고 Seattle Recipients 범위를 적용합니다.
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
-
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
 ## 서버나 데이터베이스 필터 또는 목록 기반 구성 범위를 사용하여 역할 할당 만들기
@@ -115,11 +121,14 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 구성 범위를 사용하여 USG에 역할을 할당하려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
-
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 이 예에서는 MailboxAdmins USG에 Exchange 서버 역할을 할당하고 Mailbox Servers 범위를 적용합니다.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```
 
 앞의 예에서는 서버 구성 범위가 있는 역할 할당을 추가하는 방법을 보여 줍니다. 데이터베이스 구성 범위를 추가하는 구문은 동일합니다. 서버 범위 대신 데이터베이스 범위의 이름을 지정합니다.
 
@@ -131,12 +140,14 @@ OU(조직 구성 단위)에 역할의 쓰기 범위를 적용하려는 경우 *R
 
 USG에 역할을 할당하고 역할의 쓰기 범위를 특정 OU로 제한하려면 다음 구문을 사용합니다.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
-
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 이 예에서는 SalesRecipientAdmins USG에 Mail Recipients 역할을 할당하고 contoso.com 도메인의 Sales/Users OU에 대한 할당 범위를 지정합니다.
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
-
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
 ## 받는 사람 또는 구성의 단독 범위를 사용하여 역할 할당 만들기
@@ -153,7 +164,8 @@ USG에 역할을 할당하고 역할의 쓰기 범위를 특정 OU로 제한하�
 
 이 예에서는 Protected User Admins USG에 Mail Recipients 역할을 할당하고 Protected Users 단독 범위를 적용합니다.
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
-
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 

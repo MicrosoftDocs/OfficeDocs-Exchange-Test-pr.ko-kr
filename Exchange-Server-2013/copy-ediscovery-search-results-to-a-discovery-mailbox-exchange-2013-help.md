@@ -83,15 +83,17 @@ Start-MailboxSearch "Fabrikam Investigation"
 
 검색 결과 예상 하려면 *EstimateOnly* 스위치를 사용 하는 경우 검색 결과 복사 하기 전에 스위치를 제거 해야 합니다. 검색 결과를 복사할 대상 검색 사서함을 지정 해야 합니다. 예는 예측 전용 검색 다음 명령을 사용 하 여 만든 가정해보십시오.
 
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+  ```powershell
+  New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+  ```
 
 이 검색의 결과 검색 사서함으로 복사 하려면 다음 명령을 실행 하는:
 
-  ```
+  ```powershell
   Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
   ```  
   
-  ```
+  ```powershell
   Start-MailboxSearch "FY13 Q2 Financial Results"
   ```
 ## 검색 결과 복사 하는 방법에 대 한 자세한 내용

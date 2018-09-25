@@ -55,11 +55,11 @@ Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPol
 
 **Set-ThrottlingPolicyAssociation** cmdlet을 사용 하 여 정책을 사용 하 여 사용자를 연결할 필요가 없습니다. 다음 명령은에서는 tonysmith 제한 정책 ITStaffPolicy와 연결 하는 다른 방법은 보여줍니다.
 
-```
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
 
-```
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
@@ -72,24 +72,24 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  제한 정책 방금 만든 일반 GlobalThrottlingPolicy 개체를 표시 하는 열에 표시 되는지 확인 합니다.
 
 3.  다음 명령을 실행합니다.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  새 일반 정책에 대 한 속성 값 또는 값을 구성 하면 일치 하는지 확인 합니다.
 
 5.  다음 명령을 실행합니다.
     
     ```powershell
-Get-ThrottlingPolicyAssociation
-```
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  새 일반 정책 되었거나 사용자와 연결 하면 연결 된 사용자가 사용 하 여 있는지 확인 합니다.
 

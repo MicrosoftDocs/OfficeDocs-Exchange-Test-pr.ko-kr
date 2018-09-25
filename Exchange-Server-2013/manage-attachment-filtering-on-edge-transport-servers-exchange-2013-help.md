@@ -70,8 +70,8 @@ Restart-Service MSExchangeTransport
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-TransportAgent "Attachment Filtering Agent"
-```
+    Get-TransportAgent "Attachment Filtering Agent"
+    ```
 
 2.  **Enabled**의 값이 `True`이면 첨부 파일 필터링이 사용하도록 설정된 것이고 값이 `False`이면 첨부 파일 필터링이 사용하지 않도록 설정된 것입니다.
 
@@ -103,7 +103,9 @@ Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
 
 예를 들어 JPEG 첨부 파일의 파일 이름 확장명 항목을 보려면 다음 명령을 실행합니다.
 
-    Get-AttachmentFilteringEntry FileName:*.jpg
+```powershell
+Get-AttachmentFilteringEntry FileName:*.jpg
+```
 
 ## 셸을 사용하여 첨부 파일 필터링 항목 추가
 
@@ -127,7 +129,9 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 
 다음 예에서는 파일 이름 확장명이 .jpg인 첨부 파일을 필터링합니다.
 
-    Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -136,8 +140,8 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 1.  다음 명령을 실행하여 필터링 항목이 있는지 확인합니다.
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  금지된 첨부 파일이 포함된 테스트 메시지를 외부 사서함에서 내부 받는 사람에게 보낸 다음 해당 메시지가 거부, 제거 또는 삭제되는지 확인합니다.
 
@@ -163,7 +167,9 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 
 다음 예에서는 .jpg 파일 이름 확장명에 대한 파일 이름 항목을 제거합니다.
 
-    Remove-AttachmentFilterEntry FileName:*.jpg
+```powershell
+Remove-AttachmentFilterEntry FileName:*.jpg
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -172,8 +178,8 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 1.  다음 명령을 실행하여 필터링 항목이 제거되었는지 확인합니다.
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  허용된 첨부 파일이 포함된 테스트 메시지를 외부 사서함에서 내부 받는 사람에게 보낸 다음 해당 메시지가 첨부 파일과 함께 정상적으로 배달되었는지 확인합니다.
 
@@ -189,7 +195,9 @@ Get-AttachmentFilterListConfig
 
 금지된 첨부 파일이 메시지에서 검색될 때 사용할 첨부 파일 필터링 작업을 구성하려면 다음 구문을 사용합니다.
 
-    Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```powershell
+Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```
 
 이 예에서는 첨부 파일 필터링 구성을 다음과 같이 변경합니다.
 
@@ -199,7 +207,9 @@ Get-AttachmentFilterListConfig
 
 <!-- end list -->
 
-    Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```powershell
+Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```
 
 자세한 내용은 [Set-AttachmentFilterListConfig](https://technet.microsoft.com/ko-kr/library/bb123483\(v=exchg.150\))를 참조하세요.
 

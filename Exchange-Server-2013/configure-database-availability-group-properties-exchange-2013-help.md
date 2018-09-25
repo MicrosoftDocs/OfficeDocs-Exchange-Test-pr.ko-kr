@@ -81,7 +81,9 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
 
 이 예에서는 DAG DAG1에 대해 CAS3의 대체 미러링 모니터 서버와 C:\\DAGFileShareWitnesses\\DAG1.contoso.com의 대체 감시 디렉터리를 미리 구성합니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 이 예에서는 DAG1이라는 DAG에서 DHCP(Dynamic Host Configuration Protocol)를 사용하여 IP 주소를 가져오도록 구성합니다.
 
@@ -126,8 +128,8 @@ DAG가 성공적으로 구성되었는지 확인하려면 다음을 수행하십
   - 셸에서 다음 명령을 실행하여 DAG 구성 설정을 표시하고 DAG가 구성되었는지 확인합니다.
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 자세한 내용
 

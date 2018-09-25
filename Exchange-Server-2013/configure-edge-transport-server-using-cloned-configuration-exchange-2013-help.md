@@ -58,14 +58,14 @@ Edge 전송 서버 구성 정보는 AD LDS(Active Directory Lightweight Directo
 2.  원본 서버에 있는 파일로 원본 서버 구성 데이터를 내보내려면 다음 구문을 사용합니다.
     
     ```powershell
-./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
-```
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```
     
     예를 들어 원본 서버 구성 데이터를 C:\\CloneConfigData.xml 파일로 내보내려면 다음 명령을 실행합니다.
     
     ```powershell
-./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
-```
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -79,11 +79,15 @@ Edge 전송 서버 구성 정보는 AD LDS(Active Directory Lightweight Directo
 
 3.  구성 파일의 유효성을 검사하고 결과를 사용하여 대상 서버에 응답 파일을 만들려면 다음 구문을 사용합니다.
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```
     
     예를 들어 C:\\CloneConfigData.xml 구성 파일의 유효성을 검사하고 C:\\CloneConfigAnswer.xml 응답 파일을 만들려면 다음 명령을 실행합니다.
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```
 
 4.  응답 파일을 열어 대상 서버에 대해 잘못된 설정을 수정합니다. 응답 파일에 수정할 내용이 없으면 입력할 필요가 없습니다. 변경 내용을 저장합니다.
 
@@ -95,11 +99,15 @@ Edge 전송 서버 구성 정보는 AD LDS(Active Directory Lightweight Directo
 
 대상 서버에서 구성 파일을 가져오려면 다음 구문을 사용합니다.
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```
 
 예를 들어 C:\\CloneConfigAnswer.xml 응답 파일을 사용하여 C:\\CloneConfigData.xml 구성 파일을 가져오려면 다음 구문을 실행합니다.
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 

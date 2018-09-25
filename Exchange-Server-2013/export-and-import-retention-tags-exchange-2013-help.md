@@ -64,8 +64,8 @@ _**마지막으로 수정된 항목:** 2017-11-15_
 1.  디렉터리에서 Exchange 설치 경로에 **스크립트** 하위 디렉터리를 변경 하려면이 Exchange 관리 셸 명령을 실행 합니다.
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Export-RetentionTags.ps1 스크립트를 실행하여 보존 태그를 .xml 파일로 내보냅니다.
     
@@ -75,8 +75,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 
     
     ```powershell
-.\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -91,8 +91,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 1.  디렉터리에서 Exchange 설치 경로에 **스크립트** 하위 디렉터리를 변경 하려면이 Exchange 관리 셸 명령을 실행 합니다.
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Import-RetentionTags.ps1 스크립트를 실행하여 이전에 내보낸 XML 파일에서 보존 태그를 가져옵니다.
     
@@ -107,8 +107,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 
     
     ```powershell
-.\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

@@ -139,7 +139,9 @@ _**마지막으로 수정된 항목:** 2013-04-12_
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```powershell
+  New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997663\(v=exchg.150\))를 참조하십시오.
 
@@ -152,8 +154,8 @@ _**마지막으로 수정된 항목:** 2013-04-12_
   - 셸에서 다음 명령을 실행하여 새 사용자 사서함에 대한 정보를 표시합니다.
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## 기존 사용자의 사서함 만들기
 
@@ -230,8 +232,8 @@ Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | En
   - 셸에서 다음 명령을 실행하여 새 사서함 사용 가능 사용자에 대한 정보를 표시합니다.
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     *RecipientTypeDetails* 속성의 값은 `UserMailbox`입니다.
 

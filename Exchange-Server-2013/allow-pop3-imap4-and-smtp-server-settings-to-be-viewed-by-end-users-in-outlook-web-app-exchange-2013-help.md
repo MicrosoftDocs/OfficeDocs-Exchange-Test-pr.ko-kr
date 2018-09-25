@@ -36,7 +36,7 @@ POP3 및 IMAP4에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 I
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 
@@ -76,8 +76,8 @@ Exchange에서 사용자가 POP3 서버 설정을 볼 수 있도록 구성되었
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* 속성이 설정되었는지 확인합니다.
 
@@ -86,8 +86,8 @@ Exchange에서 사용자가 IMAP4 서버 설정을 볼 수 있도록 구성되�
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* 속성이 설정되었는지 확인합니다.
 
@@ -97,7 +97,9 @@ Get-ImapSettings | format-list
 
 이 예에서는 최종 사용자가 Outlook Web App을 사용하여 내부 및 외부 SMTP 서버 설정을 볼 수 있도록 허용합니다.
 
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```powershell
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ReceiveConnector](https://technet.microsoft.com/ko-kr/library/bb125140\(v=exchg.150\))를 참조하십시오.
 
@@ -108,8 +110,8 @@ Exchange에서 사용자가 SMTP 서버 설정을 볼 수 있도록 구성되었
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-ReceiveConnector | format-list
-```
+    Get-ReceiveConnector | format-list
+    ```
 
 2.  *AdvertiseClientSettings* 속성이 `true`로 설정되어 있으면 사용자가 Outlook Web App에서 SMTP 서버 설정을 볼 수 있습니다. *AdvertiseClientSettings*가 `false`로 설정되어 있으면 사용자가 Outlook Web App에서 SMTP 서버 설정을 볼 수 없습니다.
 

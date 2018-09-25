@@ -69,11 +69,15 @@ _**마지막으로 수정된 항목:** 2012-10-02_
 
 이 예제에서는 선임 관리자 역할 그룹의 구성원이 Exchange 조직에서 모든 역할 담당자에 게는 편지 병합 받는 사람 역할을 할당할 수 있도록 하는 위임 역할 할당을 만듭니다.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+  ```powershell
+  New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+  ```
 
 이 예에서는 contoso.com 도메인의 판매/사용자 OU에 대 한 사용자 에게만 편지 병합 받는 사람 역할을 할당할 선임 관리자 역할 그룹의 구성원을 사용 하도록 설정 하려면 위임 역할 할당을 만듭니다.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+  ```powershell
+  New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 

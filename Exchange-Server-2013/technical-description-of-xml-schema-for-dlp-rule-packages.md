@@ -63,6 +63,7 @@ DLP 중요한 정보 검색 엔진에 대해 두 가지 주요 규칙 유형인 
 
 처리의 세부 사항을 정의하는 데 사용되고 이러한 주요 구성 요소에서 참조되는 세 가지 추가 지원 요소는 키워드, regex 및 함수입니다. 참조를 사용하면 주민등록번호 같은 지원 요소의 단일 정의를 여러 엔터티 또는 선호도 규칙에 사용할 수 있습니다. XML 형식의 기본 규칙 구조는 다음과 같이 나타날 수 있습니다.
 
+  ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
     
@@ -111,6 +112,7 @@ DLP 중요한 정보 검색 엔진에 대해 두 가지 주요 규칙 유형인 
         </LocalizedStrings>
       </Rules>
     </RulePackage>
+  ```
 
 ## 엔터티 규칙
 
@@ -136,6 +138,7 @@ DLP 중요한 정보 검색 엔진에 대해 두 가지 주요 규칙 유형인 
 
 IdMatch 및 Match 요소는 일치시킬 콘텐츠의 세부 사항을 정의하는 대신 idRef 특성을 통해 콘텐츠를 참조합니다. 이에 따라 여러 패턴 구성체에서 정의를 다시 사용할 수 있는 기회가 많아집니다.
 
+  ```powershell
     <Entity id="..." patternsProximity="300" > 
         <Pattern confidenceLevel="85">
             <IdMatch idRef="FormattedSSN" />
@@ -156,6 +159,7 @@ IdMatch 및 Match 요소는 일치시킬 콘텐츠의 세부 사항을 정의하
             </Any>
         </Pattern>
     </Entity> 
+  ```
 
 앞의 XML에서 \&quot;…\&quot;로 나타낸 Entity id 요소는 GUID여야 하며 지역화된 문자열 섹션에서 참조됩니다.
 
@@ -211,6 +215,7 @@ CLEntity= 1 – \[(1 – CLPattern1) X (1 – CLPattern1)\]
 
 증거 요소에는 하나 이상의 Match 또는 Any 자식 요소가 있습니다. 자식 Match 요소와 Any 요소가 일치하면 증거가 검색되고 신뢰 수준은 규칙 신뢰 수준 계산에 반영됩니다. 엔터티 규칙과 마찬가지로 선호도 규칙에 대해서도 Match 또는 Any 요소에 동일한 설명이 적용됩니다.
 
+  ```xml
     <Affinity id="..." 
               evidencesProximity="1000"
               thresholdConfidenceLevel="65">
@@ -231,6 +236,7 @@ CLEntity= 1 – \[(1 – CLPattern1) X (1 – CLPattern1)\]
             </Any> 
         </Evidence>
     </Affinity>
+  ```
 
 ## 선호도 근접성 윈도우
 
@@ -327,6 +333,7 @@ CL선호도= 1 – \[(1 – CL증거 1) X (1 – CL증거 2) X (1 – CL증거 2
 
 규칙 스키마는 각 엔터티 및 선호도 요소의 지역화된 이름과 설명을 저장하도록 지원합니다. 각 엔터티 및 선호도 요소의 LocalizedStrings 섹션에는 해당 요소가 포함되어야 합니다. 각 요소를 지역화하려면 각 요소의 다양한 로캘에 대한 이름과 설명을 저장하도록 리소스 요소를 LocalizedStrings 요소의 자식으로 포함하십시오. 리소스 요소는 지역화되는 각 요소에 대한 해당 idRef 특성과 일치하는 필수 idRef 특성을 포함합니다. 리소스 요소의 로캘 자식 요소는 지정된 각 로캘에 대한 지역화된 이름과 설명을 포함합니다.
 
+  ```xml
     <LocalizedStrings>
         <Resource idRef="guid">
             <Locale langcode="en-US" default="true"> 
@@ -343,9 +350,11 @@ CL선호도= 1 – \[(1 – CL증거 1) X (1 – CL증거 2) X (1 – CL증거 2
             </Locale> 
         </Resource>
     </LocalizedStrings>
+  ```
 
 ## 분류 규칙 팩 XML 스키마 정의
 
+  ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
                targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
@@ -621,6 +630,7 @@ CL선호도= 1 – \[(1 – CL증거 1) X (1 – CL증거 2) X (1 – CL증거 2
         </xs:simpleContent>
       </xs:complexType>
     </xs:schema>
+  ```
 
 ## 자세한 내용
 

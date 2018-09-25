@@ -116,30 +116,55 @@ kathleen@contoso.com<br />
 <td><p>원본 메시지에 고 지 사항, &quot;CONTOSO 법적 고 지 사항&quot; 등의 텍스트를 포함 되지 않은 경우 조직 외부</p></td>
 <td><p>조건: <strong>에서 받는 사람이 있는</strong> &gt; <strong>조직 외부의</strong></p>
 <p>예외: <strong>제목이 나 본문</strong> &gt; <strong>다음 텍스트 패턴과 일치 하는 제목이 나 본문</strong> &gt; <strong>CONTOSO 법적 고 지 사항</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches "CONTOSO LEGAL NOTICE"
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>실행 파일 첨부 파일이 받는 메시지</p></td>
 <td><p>조건 1: <strong>보낸 사람이 위치</strong> &gt; <strong>조직 외부의</strong></p>
 <p>조건 2: <strong>첨부 파일</strong> &gt; <strong>에 실행 가능한 콘텐츠가 있음</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>보낸 사람이 마케팅 부서에</p></td>
 <td><p>조건: <strong>보낸 사람이</strong> &gt; <strong>이 그룹의 구성원은</strong> &gt; <strong>그룹 이름</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromMemberOf "Marketing Team"
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>판매 토론 그룹에 외부에서 제공 되는 모든 메시지</p></td>
 <td><p>조건 1: <strong>보낸 사람이 위치</strong> &gt; <strong>조직 외부의</strong></p>
 <p>조건 2: <strong>메시지</strong> &gt; <strong>에이 사용자를 포함 하는 참조 상자 또는</strong> &gt; <strong>그룹 이름</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -SentTo "Sales Discussion Group" -PrependSubject "Sent to Sales Discussion Group: "
+```
+</td>
 </tr>
 <tr class="odd">
 <td><p>한 달에 대 한 보내는 메시지에 대 한 보급 앞에 추가</p></td>
 <td><p>조건 1: <strong>에서 받는 사람이 있는</strong> &gt; <strong>조직 외부의</strong></p>
 <p><strong>새 규칙</strong> 대화 상자 맨 아래에 날짜를 지정 합니다.</p></td>
-<td><p>-ApplyHtmlDisclaimerLocation '를 추가 해서는'-SentToScope 'NotInOrganization'-ActivationDate ' 03/1/2014 년-ExpiryDate ' 03/31/2014 '</p></td>
+<td>
+
+```powershell-
+ApplyHtmlDisclaimerLocation '를 추가 해서는'-SentToScope 'NotInOrganization'-ActivationDate ' 03/1/2014 년-ExpiryDate ' 03/31/2014 '
+```
+</td>
 </tr>
 </tbody>
 </table>
@@ -196,6 +221,7 @@ kathleen@contoso.com<br />
 
 예 서명을, `IMG` 태그 및 포함 된 CSS를 포함 하는 HTML 고 지 사항의 한 예를 살펴보겠습니다.
 
+  ```html
     <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
     %%displayname%%</br>
     %%title%%</br>
@@ -209,6 +235,7 @@ kathleen@contoso.com<br />
     <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you are not the named addressee, you should not disseminate, distribute, or copy this e-mail. If you are not the intended recipient, you are notified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
     <span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
     </div>
+  ```
 
 ## 고 지 사항을 추가할 수 없는 경우 대체 옵션
 

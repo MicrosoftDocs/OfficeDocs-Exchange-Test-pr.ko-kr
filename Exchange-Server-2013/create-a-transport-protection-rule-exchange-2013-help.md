@@ -77,8 +77,8 @@ IRM(정보 권한 관리) 관련 추가 관리 작업에 대한 자세한 내용
   - 전송 보호 규칙을 만들려면 AD RMS 배포에 기존 RMS 템플릿이 있어야 합니다. 다음은 AD RMS 클러스터에서 사용 가능한 템플릿을 검색하는 예입니다.
     
     ```powershell
-Get-RMSTemplate | format-list
-```
+    Get-RMSTemplate | format-list
+    ```
     
     구문과 매개 변수에 대한 자세한 내용은 [Get-RMSTemplate](https://technet.microsoft.com/ko-kr/library/dd297960\(v=exchg.150\))를 참조하십시오.
 
@@ -88,8 +88,9 @@ Get-RMSTemplate | format-list
     > [!NOTE]
     > <CODE>SubjectContainsWords</CODE> 조건자가 이 예에서 사용됩니다. 전송 규칙 조건자의 어떠한 조합이라도 사용하여 규칙의 조건과 예외를 만들 수 있습니다. 사용할 수 있는 조건자에 대한 자세한 내용은 <A href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">전송 규칙 조건 (조건자)</A> 항목을 참조하십시오.
 
-    
-        New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
+      ```powershell
+      New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
+      ```
     
     구문과 매개 변수에 대한 자세한 내용은 [New-TransportRule](https://technet.microsoft.com/ko-kr/library/bb125138\(v=exchg.150\))를 참조하십시오.
 

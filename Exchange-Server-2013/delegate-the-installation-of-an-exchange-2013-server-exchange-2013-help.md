@@ -68,22 +68,22 @@ Exchange 에 대 한 서버를 구축 하려면 Exchange 2013 를 사용 하 여
 3.  다운로드 및 Exchange 2013 설치 파일을 확장 하는 디렉터리를 변경 합니다. 설치 파일을 `C:\Downloads\Exchange 2013`에 있는 경우에 다음 명령을 사용 합니다.
     
     ```powershell
-CD "C:\Downloads\Exchange 2013"
-```
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  설치 프로그램을 실행 하는 위치와 일치 하는 명령을 선택 합니다.
     
       - **구축 하는 컴퓨터에서 설치 프로그램을 실행 중인 경우**, 다음 명령을 실행 합니다.
         
         ```powershell
-Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
       - **다른 컴퓨터에서 설치 프로그램을 실행 하는 경우**, 다음 명령을 실행 합니다.
         
         ```powershell
-Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  서버를 프로 비전 한 후에 Exchange Delegated Setup 역할 그룹에 프로 비전 된 서버에 설치할 수 있어야 하는 사용자를 추가 했을 때 있는지 확인 해야 합니다. 역할 그룹에 사용자를 추가 하는 방법을 [관리 역할 그룹 구성원](manage-role-group-members-exchange-2013-help.md)을 참조 하십시오.
 

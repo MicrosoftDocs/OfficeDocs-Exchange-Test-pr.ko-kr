@@ -63,11 +63,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에 매개 변수를 추가하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```
 
 이 예에서는 Recipient Administrators 역할의 **Set-Mailbox** cmdlet에 *EmailAddresses* 및 *Type* 매개 변수를 추가합니다.
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -77,11 +81,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에서 매개 변수를 제거하려면 다음 구문을 사용하십시오.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```
 
 이 예에서는 Tier 1 Server Administrators 역할의 **Set-SendConnector** cmdlet에서 *Port*, *ProtocolLoggingLevel* 및 *SmartHostAuthMechanism* 매개 변수를 제거합니다.
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -99,11 +107,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에서 모든 매개 변수를 제거하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```
 
 이 예에서는 Recipient Administrators 역할의 **Set-CASMailbox** cmdlet에서 매개 변수를 모두 제거합니다.
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -113,11 +125,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 특정 매개 변수 집합을 지정하려면 다음 구문을 사용하십시오.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 이 예에서는 Seattle Mail Recipients 역할의 **Set-UMMailbox** cmdlet에 *Identity*, *DisplayName*, *MissedCallNotificationEnabled* 및 *PersonalAuthAttendantEnabled* 매개 변수만 포함합니다.
 
-    Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 

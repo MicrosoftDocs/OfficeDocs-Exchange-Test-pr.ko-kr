@@ -61,7 +61,9 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 DAG1이라는 DAG에 서브넷이 10.0.0.0이고 비트마스크가 8인 ReplicationDagNetwork02 네트워크를 만듭니다. 네트워크에서 복제를 사용할 수 있으며 네트워크에 대한 선택적 설명도 추가됩니다.
 
-    New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+  ```powershell
+  New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+  ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -72,8 +74,8 @@ DAG 네트워크가 성공적으로 만들어졌는지 확인하려면 다음 �
   - 셸에서 다음 명령을 실행하여 DAG 네트워크가 만들어졌는지 확인하고 DAG 네트워크 구성 정보를 표시합니다.
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 자세한 내용
 

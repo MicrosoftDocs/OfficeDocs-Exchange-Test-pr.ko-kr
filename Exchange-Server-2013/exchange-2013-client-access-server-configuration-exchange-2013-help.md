@@ -33,11 +33,15 @@ Exchange 2013에서 인증서 마법사를 사용하여 인증 기관에서 발�
     
     연결용 URL 하나를 사용하여 외부에서 Outlook 사용을 구성하려면 Exchange 관리 셸에서 다음 명령을 사용하여 호스트 이름, SSL 필요 여부 및 authpackage를 지정해야 합니다.
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+      ```powershell
+      Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+      ```
     
     Exchange 관리 셸에서 다음 명령을 사용하여 외부에서 연결 가능한 끝점을 지정할 수도 있습니다.
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+      ```powershell
+      Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+      ```
     
 
     > [!TIP]
@@ -47,19 +51,27 @@ Exchange 2013에서 인증서 마법사를 사용하여 인증 기관에서 발�
 
   - Exchange Activesync를 구성하려면 다음 명령을 실행합니다.
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+      ```powershell
+      Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+      ```
 
   - Exchange 웹 서비스 가상 디렉터리를 구성하려면 다음 명령을 실행합니다.
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+      ```powershell
+      Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+      ```
 
   - 오프라인 주소록을 구성하려면 다음 명령을 실행합니다.
     
-        Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+      ```powershell
+      Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+      ```
 
   - 서비스 연결 지점을 구성하려면 다음 명령을 실행합니다.
     
-        Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+      ```powershell
+      Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+      ```
 
 ## Exchange 2007 및 2010 클라이언트 액세스에서 업그레이드
 
@@ -69,29 +81,31 @@ Exchange 2013에 대해 가상 디렉터리를 구성하려면 다음 명령을 
 
 1.  Outlook Web App용 외부 URL을 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     
-        Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+      ```powershell
+      Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+      ```
     
     Outlook Web App 가상 디렉터리를 설정한 후 명령 프롬프트에서 다음 명령을 실행합니다.
     
-      ```
-  ```powershell
-Net stop IISAdmin /y
-```
+      ```powershell
+      Net stop IISAdmin /y
       ```
 
+      ```powershell
+      Net start W3SVC
       ```
-  ```powershell
-Net start W3SVC
-```
-      ```
-
+      
 2.  외부 EAC 액세스를 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     
-        Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+      ```powershell
+      Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+      ```
 
 3.  가용성 서비스를 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+      ```powershell
+      Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+      ```
 
 에 Exchange ActiveSync 또는 Outlook Web App 에 대 한 외부 URL이 올바르게 구성 되었는지 확인 하려면 원격 연결 분석기 Microsoft에서 제공 하는 무료 웹 기반 도구를 사용할 수 있습니다. 원격 연결 분석기 [여기](http://go.microsoft.com/fwlink/?linkid=154308)를 찾을 수 있습니다.
 
@@ -105,9 +119,13 @@ Exchange 2007에 대해 가상 디렉터리를 구성하려면 다음 명령을 
 
   - Exchange ActiveSync 가상 디렉터리에서 외부 URL을 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+      ```powershell
+      Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+      ```
 
   - Outlook Web App 가상 디렉터리에서 외부 URL을 구성하려면 Exchange 관리 셸에서 다음 명령을 실행합니다.
     
-        Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+      ```powershell
+      Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+      ```
 

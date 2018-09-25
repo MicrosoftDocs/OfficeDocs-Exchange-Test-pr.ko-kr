@@ -65,11 +65,15 @@ Exchange 조직의 토폴로지에 따라 송신 커넥터가 자동으로 만�
 
   - 아웃바운드 Edge 전송 서버의 경우 사서함 서버에서 다음 명령을 실행합니다.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```
 
   - 인바운드 Edge 전송 서버의 경우 사서함 서버에서 다음 명령을 실행합니다.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```
 
 ## 스마트 호스트로 아웃바운드 전자 메일 라우팅
 
@@ -77,19 +81,18 @@ Exchange 조직이 모든 아웃바운드 전자 메일을 스마트 호스트�
 
 인터넷 송신 커넥터를 자동으로 만들지 않도록 설정하려면 사서함 서버에서 다음 명령을 실행합니다.
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
-
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```
 Edge 구독 프로세스가 완료되면 인터넷 송신 커넥터를 수동으로 만듭니다. Exchange 조직 내에서 송신 커넥터를 만든 후 커넥터의 원본 서버로 Edge 구독을 선택합니다. `Custom` 사용 유형을 선택하고 하나 이상의 스마트 호스트를 구성합니다. 새 송신 커넥터는 다음에 EdgeSync가 구성 데이터를 동기화할 때 Edge 전송 서버의 AD LDS 인스턴스로 복제됩니다. 사서함 서버에서 **Start-EdgeSynchronization** cmdlet을 실행하여 EdgeSync 동기화를 즉시 강제로 시작할 수 있습니다.
 
 예: 셸을 사용하여 구독된 Edge 전송 서버의 송신 커넥터가 스마트 호스트를 통해 모든 인터넷 주소 공간으로의 메시지를 라우팅하도록 구성합니다. Edge 전송 서버가 아닌 Exchange 조직 내의 사서함 서버에 대해 이 작업을 실행합니다.
 
-    New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
-
-
-> [!IMPORTANT]
+```powershell
+New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```
+> [!IMPORTANT]  
 > 이 예에서는 스마트 호스트 인증 메커니즘을 지정하지 않습니다. 따라서 사용자 Exchange 조직에서 실제로 스마트 호스트 커넥터를 만들 때 올바른 인증 메커니즘을 구성하고 필요한 모든 자격 증명을 제공해야 합니다.
-
-
 
 ## 외부 릴레이 도메인용 송신 커넥터 구성
 
@@ -98,4 +101,3 @@ Exchange 조직에 외부 릴레이 도메인으로 구성된 허용 도메인�
 외부 릴레이 도메인의 DNS MX 리소스 레코드는 Edge 전송 서버로 해석됩니다. 전자 메일을 외부 릴레이 도메인으로 릴레이하는 송신 커넥터가 라우팅에 스마트 호스트를 사용하도록 구성할 수 있습니다. 외부 릴레이 도메인용 송신 커넥터가 DNS 라우팅을 사용하도록 구성하면 라우팅 루프가 발생합니다. 외부 릴레이 도메인에 대한 자세한 내용은 [허용 도메인](accepted-domains-exchange-2013-help.md)를 참조하세요.
 
 맨 위로 이동
-

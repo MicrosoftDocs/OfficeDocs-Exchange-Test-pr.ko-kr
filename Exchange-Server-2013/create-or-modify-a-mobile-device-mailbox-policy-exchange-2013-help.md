@@ -73,7 +73,9 @@ New-MobileDeviceMailboxPolicy cmdlet을 사용하여 새로운 모바일 장치 
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+	```powershell
+    New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+	```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -83,7 +85,9 @@ New-MobileDeviceMailboxPolicy cmdlet을 사용하여 새로운 모바일 장치 
 
 2.  셸에서 다음 명령을 실행합니다.
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+	```powershell
+    Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+	```
 
 ## 기존 모바일 장치 사서함 정책 편집
 
@@ -119,7 +123,9 @@ EAC를 사용하여 모바일 장치 사서함 정책을 편집할 수 있습니
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+	```powershell
+    Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+	```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -130,6 +136,6 @@ EAC를 사용하여 모바일 장치 사서함 정책을 편집할 수 있습니
 2.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
-```
+	Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+	```
 

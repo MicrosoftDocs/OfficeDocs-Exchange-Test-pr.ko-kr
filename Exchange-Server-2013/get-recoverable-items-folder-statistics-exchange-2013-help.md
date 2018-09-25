@@ -53,7 +53,9 @@ Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableIt
 
 이 예제에서는 Soumya Singhi 복구 가능한 항목 폴더에 대 한 폴더 통계를 가져오고 폴더 및 표 형식에서 폴더 크기의 폴더 이름, 폴더 경로, 항목 수를 표시 하는 합니다.
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-MailboxFolderStatistics](https://technet.microsoft.com/ko-kr/library/aa996762\(v=exchg.150\))를 참조 하십시오.
 
@@ -61,7 +63,9 @@ Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableIt
 
 이 예제에서는 소송 보존에 배치 하는 모든 사서함의 목록을 검색 하 고 복구 가능한 항목 폴더에 대 한 사서함 폴더 통계와 각 사서함에 대 한 하위 폴더를 검색 합니다. **Identity** (사서함 폴더 id) 및 **FolderAndSubfolderSize** 속성을 테이블 형식으로 표시 됩니다.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 및 [Get-MailboxFolderStatistics](https://technet.microsoft.com/ko-kr/library/aa996762\(v=exchg.150\))를 참조 하십시오.
 
@@ -69,9 +73,13 @@ Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableIt
 
 할당량 및 사용자 사서함에 대 한 복구 가능한 항목 폴더에 대 한 경고 할당량을 표시 하는이 예제입니다. 또한이 예제에서는 사서함에 소송 보존 또는 In-place Hold 배치 되는 여부에 대 한 정보를 검색 합니다.
 
-    Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 
 조직에서 할당량 및 모든 사용자 사서함에 대 한 복구 가능한 항목 폴더에 대 한 경고 할당량을 표시 하는이 예제입니다. 또한이 예제에서는 보류 정보를 검색 합니다.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 

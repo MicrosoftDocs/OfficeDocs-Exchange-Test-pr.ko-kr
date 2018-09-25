@@ -74,26 +74,26 @@ Edge 구독을 제거하면 AD LDS에서 정보 동기화가 중지됩니다. A
 1.  Edge 전송 서버에서 Edge 구독을 제거하려면 다음 구문을 사용합니다.
     
     ```powershell
-Remove-EdgeSubscription <EdgeTransportServerIdentity>
-```
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     예를 들어 Edge 전송 서버 Edge01에서 Edge 구독을 제거하려면 다음 명령을 실행합니다.
     
     ```powershell
-Remove-EdgeSubscription Edge01
-```
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  사서함 서버에서 Edge 구독을 제거하려면 다음 구문을 사용합니다.
     
     ```powershell
-Remove-EdgeSubscription <MailboxServerIdentity>
-```
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     예를 들어 사서함 서버 Mailbox01에서 Edge 구독을 제거하려면 다음 명령을 실행합니다.
     
     ```powershell
-Remove-EdgeSubscription Mailbox01
-```
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 다음의 경우 Edge 구독을 제거해야 합니다.
 
@@ -151,7 +151,9 @@ Active Directory에서 구성이나 받는 사람을 크게 변경하여 변경 
 
 수동으로 EdgeSync를 실행하려면 다음 구문을 사용합니다.
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```powershell
+  Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```
 
 다음 예에서는 아래와 같은 옵션을 사용하여 EdgeSync를 시작합니다.
 

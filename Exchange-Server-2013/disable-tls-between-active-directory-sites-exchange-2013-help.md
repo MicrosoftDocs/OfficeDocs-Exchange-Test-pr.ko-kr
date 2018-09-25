@@ -79,7 +79,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 사서함 서버에서 수신 커넥터를 만들려면 다음 명령을 실행합니다.
 
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```powershell
+  New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```
 
 이 예에서는 다음 설정을 사용하여 Mailbox01 서버에서 WAN이라는 수신 커넥터를 만듭니다.
 

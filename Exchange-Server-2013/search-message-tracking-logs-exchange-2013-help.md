@@ -48,7 +48,7 @@ Exchange 관리 셸의 <strong>Get-MessageTrackingLog</strong> cmdlet을 사용�
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -59,8 +59,9 @@ Exchange 관리 셸의 <strong>Get-MessageTrackingLog</strong> cmdlet을 사용�
 
 특정 이벤트에 대한 메시지 추적 로그 항목을 검색하려면 다음 구문을 사용합니다.
 
-    Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
-
+```powershell
+Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```
 서버에서 최근 메시지 추적 로그 항목 1,000개를 보려면 다음 명령을 실행합니다.
 
 ```powershell
@@ -69,13 +70,16 @@ Get-MessageTrackingLog
 
 이 예제에서는 메시지 보낸 사람이 pat@contoso.com인 모든 <strong>FAIL</strong> 이벤트에 대해 로컬 서버의 메시지 추적 로그에서 2013년 3월 28일 오전 8시에서 2013년 3월 28일 오후 5시 사이의 모든 항목을 검색합니다.
 
-    Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
-
+```powershell
+Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```
 ## 셸을 사용하여 메시지 추적 로그 검색의 출력 제어
 
 다음 구문을 사용합니다.
 
-    Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```powershell
+Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```
 
 이 예제에서는 다음 검색 조건을 사용하여 메시지 추적 로그를 검색합니다.
 
@@ -89,16 +93,18 @@ Get-MessageTrackingLog
 
 <!-- end list -->
 
-    Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
-
+```powershell
+Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```
 ## 셸을 사용하여 메시지 추적 로그에서 여러 서버의 메시지 항목 검색
 
 일반적으로 <strong>MessageID:</strong>  헤더 필드의 값은 메시지가 Exchange 조직 전체를 이동하는 과정에서 일정하게 유지됩니다. 이 값의 이름은 큐 뷰어 유틸리티에서는 <strong>InternetMessageId</strong>이고 메시지 추적 로그 유틸리티에서는 <strong>MessageId</strong>입니다. 특정 메시지의 `MessageID:` 값을 확인한 후에는 Exchange 조직의 모든 사서함 서버에 있는 메시지 추적 로그에서 해당 메시지에 대한 정보를 검색할 수 있습니다.
 
 모든 사서함 서버에서 특정 메시지에 대한 모든 메시지 추적 로그 항목을 검색하려면 다음 구문을 사용합니다.
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
-
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```
 이 예에서는 다음 검색 조건을 사용하여 모든 Exchange 2013 사서함 서버에서 메시지 추적 로그를 검색합니다.
 
   - <strong>MessageID:</strong>  값이 `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`인 메시지와 관련된 모든 항목을 찾습니다. 꺾쇠 괄호 문자(`<>`)는 생략할 수 있습니다. 생략하지 않을 경우 전체 <strong>MessageID:</strong>  값을 따옴표로 묶어야 합니다.
@@ -109,9 +115,10 @@ Get-MessageTrackingLog
 
 <!-- end list -->
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```
 
 ## EAC를 사용하여 메시지 추적 로그 검색
 
 EAC(Exchange 관리 센터)의 관리자용 배달 보고서 기능을 사용하여 메시지 추적 로그에서 조직의 특정 사서함이 보냈거나 받은 메시지에 대한 정보를 검색할 수 있습니다. 자세한 내용은 [배달 보고서로 메시지 추적](track-messages-with-delivery-reports-exchange-2013-help.md)을 참조하세요.
-

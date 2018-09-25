@@ -46,20 +46,22 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 1.  명령 프롬프트 창에서 다음 명령을 실행 하 여 MSExchangeMailboxAssistants.exe.config 파일을 메모장에서에서 엽니다.
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+    ```
 
 2.  파일의 끝에 *\</appsettings\>* 키를 찾아 *\</appsettings\>* 키 하기 전에 다음 키를 붙여넣습니다.
     
     ```command line
-<add key="IncludeSafeDomains" value="true" />
-```
+    <add key="IncludeSafeDomains" value="true" />
+    ```
 
 3.  작업이 끝나면 저장 하 고 MSExchangeMailboxAssistants.exe.config 파일을 닫습니다.
 
 4.  다음 명령을 실행 하 여 Microsoft Exchange 사서함 도우미 서비스를 다시 시작 합니다.
     
-        net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```powershell
+    net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

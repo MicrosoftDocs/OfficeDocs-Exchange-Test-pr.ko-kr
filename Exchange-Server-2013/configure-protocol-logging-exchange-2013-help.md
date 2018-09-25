@@ -85,7 +85,9 @@ EAC를 사용해 프로토콜 로그 설정이 구성되었는지 확인하려�
 
 송신 커넥터 또는 수신 커넥터에서 프로토콜 로깅을 사용하거나 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    <Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```
 
 이 예에서는 Contoso.com에서 Connection이라는 수신 커넥터에 대해 프로토콜 로깅을 사용하도록 설정합니다.
 
@@ -100,8 +102,8 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 1.  셸에서 다음 명령을 실행합니다.
     
     ```command line
-<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
-```
+    <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -109,7 +111,9 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 
 사서함 서버의 전송 서비스 및 클라이언트 액세스 서버의 프런트 엔드 전송 서비스에 있는 보이지 않는 암시적 조직 내 송신 커넥터에서 프로토콜 로깅을 사용하거나 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    <Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버의 전송 서비스에 있는 조직 내 송신 커넥터에서 프로토콜 로깅을 사용하도록 설정합니다.
 
@@ -123,7 +127,9 @@ Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -147,7 +153,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```powershell
+    Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -155,7 +163,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 프로토콜 로그 설정을 구성하려면 다음 명령을 실행합니다.
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버의 전송 서비스에서 다음 프로토콜 로그 설정을 설정합니다.
 
@@ -169,7 +179,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```
 
 
 > [!NOTE]
@@ -189,7 +201,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

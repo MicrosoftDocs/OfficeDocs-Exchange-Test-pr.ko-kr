@@ -44,14 +44,14 @@ _**마지막으로 수정된 항목:** 2013-02-19_
 1.  다음 명령을 실행하여 콘텐츠 필터 에이전트가 Exchange 서버에 설치되어 있고 사용하도록 설정되어 있는지 확인합니다.
     
     ```powershell
-Get-TransportAgent "Content Filter Agent"
-```
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  다음 명령을 실행하여 콘텐츠 필터링이 사용하도록 설정되어 있는지 확인합니다.
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 자세한 내용은 [콘텐츠 필터링 관리](manage-content-filtering-exchange-2013-help.md)을 참조하십시오.
 
@@ -96,8 +96,8 @@ Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-ContentFilterConfig | Format-List QuarantineMailbox
-```
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 

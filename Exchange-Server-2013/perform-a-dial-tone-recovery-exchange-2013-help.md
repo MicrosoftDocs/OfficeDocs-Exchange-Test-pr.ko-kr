@@ -48,20 +48,20 @@ _**마지막으로 수정된 항목:** 2014-06-27_
 2.  다음 예에서와 같이, [New-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/aa997976\(v=exchg.150\)) cmdlet을 사용하여 발신음 데이터베이스를 만듭니다.
     
     ```powershell
-New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
-```
+    New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+    ```
 
 3.  다음 예에서와 같이, [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) cmdlet을 사용하여 복구될 데이터베이스에서 호스트되는 사용자 사서함을 상주시킵니다.
     
     ```powershell
-Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
-```
+    Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+    ```
 
 4.  다음 예에서와 같이, [Mount-Database](https://technet.microsoft.com/ko-kr/library/aa998871\(v=exchg.150\)) cmdlet을 사용하여 클라이언트 컴퓨터가 데이터베이스에 액세스하고 메시지를 주고 받을 수 있도록 데이터베이스를 마운트합니다.
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
+    Mount-Database -Identity DTDB1
+    ```
 
 5.  RDB(복구 데이터베이스)를 만들고 RDB로 복구할 데이터가 포함된 데이터베이스 및 로그 파일을 복원 또는 복사합니다. 자세한 단계는 [복구 데이터베이스 만들기](create-a-recovery-database-exchange-2013-help.md)를 참조하십시오.
 
@@ -70,50 +70,46 @@ Mount-Database -Identity DTDB1
 7.  다음 예에서와 같이, RDB를 탑재한 다음 [Dismount-Database](https://technet.microsoft.com/ko-kr/library/bb124936\(v=exchg.150\)) cmdlet을 사용하여 이를 분리합니다.
     
     ```powershell
-Mount-Database -Identity RDB1
-```
-        Dismount-Database -Identity RDB1
-
+    Mount-Database -Identity RDB1
+    Dismount-Database -Identity RDB1
+    ```
 8.  RDB가 분리되면 현재 데이터베이스와 RDB 폴더의 로그 파일을 안전한 위치로 이동합니다. 이로써 복구된 데이터베이스를 발신음 데이터베이스로 교체하기 위한 준비 단계가 끝났습니다.
 
 9.  다음 예에서와 같이 발신음 데이터베이스를 분리합니다. 이 데이터베이스를 분리할 때 최종 사용자가 서비스 중단을 겪게 된다는 점에 유의하십시오.
     
     ```powershell
-Dismount-Database -Identity DTDB1
-```
-
+    Dismount-Database -Identity DTDB1
+    ```
 10. 데이터베이스 및 발신음 데이터베이스 폴더의 로그 파일을 RDB 폴더로 이동합니다.
 
 11. 다음 예에서와 같이, 복구된 데이터베이스가 있는 안전한 위치에서 데이터베이스와 로그 파일을 발신음 데이터베이스 폴더로 이동한 다음 데이터베이스를 탑재합니다.
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
-    
+    Mount-Database -Identity DTDB1
+    ```    
     이제 최종 사용자에 대해 중단되었던 서비스가 재개됩니다. 최종 사용자는 원래 프로덕션 데이터베이스에 액세스하고 메시지를 주고 받을 수 있습니다.
 
 12. 다음 예에서와 같이 RDB를 탑재합니다.
     
     ```powershell
-Mount-Database -Identity RDB1
-```
+    Mount-Database -Identity RDB1
+    ```
 
 13. 다음 예에서와 같이, [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) 및 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\)) cmdlet을 사용하여 RDB에서 데이터를 내보내고 복구된 데이터베이스로 가져옵니다. 이렇게 하면 발신음 데이터베이스를 사용하여 주고 받은 모든 메시지를 프로덕션 데이터베이스로 가져옵니다.
 
+    ```powershell
+    $mailboxes = Get-Mailbox -Database DTDB1
     ```
-```powershell
-$mailboxes = Get-Mailbox -Database DTDB1
-```
-    ```
-
-    ```
+    ```powershell
     $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
     ```
 
 14. 복원 작업이 완료되면 다음 예에서와 같이 RDB를 분리하고 제거합니다.
     
-        Dismount-Database -Identity RDB1
-        Remove-MailboxDatabase -Identity RDB1
+    ```powershell
+    Dismount-Database -Identity RDB1
+    Remove-MailboxDatabase -Identity RDB1
+    ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 

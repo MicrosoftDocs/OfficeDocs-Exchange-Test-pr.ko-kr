@@ -61,7 +61,9 @@ Microsoft Exchange Server 2013의 Exchange 관리 셸이나 Exchange 도구 상�
 
 큐에서 메시지를 제거하려면 다음 구문을 사용합니다.
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 이 예에서는 NDR을 보내지 않고 제목이 "Win Big"인 메시지를 큐에서 제거합니다.
 
@@ -117,7 +119,9 @@ Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 이 예에서는 Contoso.com 도메인에 있는 보낸 사람이 전송한 모든 메시지를 다시 시작합니다.
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 이 예에서는 서버 Hub01의 연결할 수 없는 큐에서 메시지 ID가 3인 메시지를 다시 시작합니다.
 
@@ -163,7 +167,9 @@ Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 이 예에서는 큐에서 보낸 사람 도메인이 contoso.com인 모든 메시지를 일시 중단합니다.
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 이 예에서는 Mailbox01이라는 서버의 연결할 수 없는 큐에서 메시지 ID가 3인 메시지를 일시 중단합니다.
 

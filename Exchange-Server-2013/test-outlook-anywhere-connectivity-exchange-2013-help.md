@@ -43,8 +43,9 @@ Outlook Anywhere과 관련된 추가 관리 작업에 대한 자세한 내용은
 
 다음 명령을 실행합니다.
 
-    Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
-
+  ```powershell
+  Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+  ```
 
 > [!NOTE]
 > <EM>OutlookMailboxDeepTestProbe</EM> 매개 변수 값은 사서함 서버에서 연결을 테스트합니다. 클라이언트 액세스 서버에서 연결을 테스트하려면<EM>ProbeIdentity</EM> 매개 변수 값에 <EM>OutlookMailboxCTPProbe</EM>를 사용하십시오.

@@ -83,7 +83,9 @@ Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 
 이 예에서는 12GB의 할당량 및 April Stewart의 사서함에 대 한 15GB의 복구 가능한 항목 할당량 경고를 복구할 수 있는 항목을 구성 합니다.
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```powershell
+  Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```
 
 
 > [!NOTE]

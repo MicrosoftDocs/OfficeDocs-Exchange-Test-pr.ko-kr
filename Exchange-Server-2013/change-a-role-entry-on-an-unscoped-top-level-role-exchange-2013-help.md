@@ -63,11 +63,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에 매개 변수를 추가하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```
 
 이 예에서는 Recipient Administrators 범위가 지정되지 않은 역할의 **CreateUsers.ps1** 스크립트에 *EmailAddress* 및 *City* 매개 변수를 추가합니다.
 
-    Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -89,11 +93,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에서 매개 변수를 제거하려면 다음 구문을 사용하십시오.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```
 
 이 예에서는 Tier 1 Server Administrators 역할의 **Start-Widget** 비 Exchange cmdlet에서 *Delay*, *Force* 및 *Credential* 매개 변수를 제거합니다.
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -117,11 +125,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목에서 모든 매개 변수를 제거하려면 다음 구문을 사용합니다.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```
 
 이 예에서는 Recipient Administrators 역할의 FindMailboxesOverQuota.ps1 스크립트에서 모든 매개 변수를 제거합니다.
 
-    Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 
@@ -141,11 +153,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 특정 매개 변수 집합을 지정하려면 다음 구문을 사용하십시오.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```
 
 이 예에서는 Seattle Mail Recipient Admins 역할의 **Set-Widget** cmdlet에 *Alias*, *DisplayName*, *WidgetConfig* 및 *Enabled* 매개 변수만 포함합니다.
 
-    Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 

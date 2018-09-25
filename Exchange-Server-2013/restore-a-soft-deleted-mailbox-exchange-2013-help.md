@@ -41,14 +41,17 @@ _**마지막으로 수정된 항목:** 2012-11-29_
 
   - 다음 명령을 실행하여 사용자 계정을 연결할 일시 삭제된 사서함이 사서함 데이터베이스에 그대로 있고 사용하지 않는 사서함이 아님을 확인합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
     
     일시 삭제된 사서함은 사서함 데이터베이스에 있어야 하고 *DisconnectReason* 속성의 값은 `SoftDeleted`여야 합니다. 사서함이 데이터베이스에서 제거된 경우 명령은 결과를 반환하지 않습니다.
     
     또는 다음 명령을 실행하여 조직의 일시 삭제된 사서함을 모두 표시합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
-
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
   - 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), 또는 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
@@ -61,15 +64,21 @@ _**마지막으로 수정된 항목:** 2012-11-29_
 
 사서함 복원 요청을 만들려면 일시 삭제된 사서함의 표시 이름, 사서함 GUID 또는 레거시 DN(고유 이름)을 사용해야 합니다. **Get-MailboxStatistics** cmdlet을 사용하여 복원할 일시 삭제된 사서함에 대한 **DisplayName**, **MailboxGuid** 및 **LegacyDN** 속성의 값을 표시합니다. 예를 들면, 다음 명령을 사용하여 조직에서 사용하지 않는 사서함과 일시 삭제된 사서함 모두에 대해 이 정보를 반환합니다.
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 이 예에서는 *SourceStoreMailbox* 매개 변수에서 표시 이름으로 식별되고 MBXDB01 사서함 데이터베이스에 있는 일시 삭제된 사서함을 Debra Garcia라는 대상 사서함에 복원합니다. *AllowLegacyDNMismatch* 매개 변수는 원본 사서함이 일시 삭제된 사서함과 동일한 레거시 DN 값을 갖지 않는 사서함에 복원될 수 있도록 하기 위해 사용됩니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 이 예에서는 Pilar Pinilla의 일시 삭제된 보관 사서함(사서함 GUID로 식별됨)을 현재 보관 사서함에 복원합니다. 기본 사서함과 해당 보관 사서함이 동일한 레거시 DN을 가지므로 *AllowLegacyDNMismatch* 매개 변수는 필요하지 않습니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\))를 참조하십시오.
 

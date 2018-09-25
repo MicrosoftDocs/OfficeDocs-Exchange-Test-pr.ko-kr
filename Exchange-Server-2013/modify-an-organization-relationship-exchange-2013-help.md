@@ -85,19 +85,23 @@ _**마지막으로 수정된 항목:** 2015-01-01_
 
   - 이 예에서는 Contoso 조직 관계에 도메인 이름 service.contoso.com을 추가합니다.
     
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+      ```powershell
+      $domains = (Get-OrganizationRelationship Contoso).DomainNames
+      $domains += 'service.contoso.com'
+      Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+      ```
 
   - 이 예에서는 조직 관계 Contoso를 사용하지 않도록 설정합니다.
     
     ```powershell
-Set-OrganizationRelationship -Identity Contoso -Enabled $false
-```
+    Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```
 
   - 이 예에서는 조직 관계 WoodgroveBank에 대해 일정 약속 있음/없음 정보 액세스를 허용하고 액세스 수준을 `AvailabilityOnly`(약속 있음/없음 일정 정보(시간만))로 설정합니다.
     
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+      ```powershell
+      Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+      ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-OrganizationRelationship](https://technet.microsoft.com/ko-kr/library/ee332343\(v=exchg.150\)) 및 [Set-OrganizationRelationship](https://technet.microsoft.com/ko-kr/library/ee332326\(v=exchg.150\))을 참조하십시오.
 

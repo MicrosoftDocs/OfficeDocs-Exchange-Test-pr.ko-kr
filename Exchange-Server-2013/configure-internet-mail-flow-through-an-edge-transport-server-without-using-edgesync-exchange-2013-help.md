@@ -75,7 +75,9 @@ Edge 전송 서버에 필요한 커넥터는 다음과 같습니다.
 
 인터넷으로 메시지를 보내도록 구성된 송신 커넥터를 만들려면 다음 명령을 실행합니다.
 
-    New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+  ```powershell
+  New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-SendConnector](https://technet.microsoft.com/ko-kr/library/aa998936\(v=exchg.150\))를 참조하십시오.
 
@@ -107,8 +109,10 @@ Edge 전송 서버에 필요한 커넥터는 다음과 같습니다.
 
 Exchange 조직에 메시지를 보내도록 구성된 송신 커넥터를 만들려면 다음 명령을 실행합니다.
 
-    $MailboxCredentials = Get-Credential
-    New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+  ```powershell
+  $MailboxCredentials = Get-Credential
+  New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-SendConnector](https://technet.microsoft.com/ko-kr/library/aa998936\(v=exchg.150\))를 참조하세요.
 
@@ -122,7 +126,9 @@ Exchange 조직에 메시지를 보내도록 구성된 송신 커넥터를 만�
 
 인터넷의 메시지만 수락하도록 기본 수신 커넥터를 수정하려면 다음 명령을 실행합니다.
 
-    Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+  ```powershell
+  Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ReceiveConnector](https://technet.microsoft.com/ko-kr/library/bb125140\(v=exchg.150\))를 참조하십시오.
 
@@ -142,7 +148,9 @@ Exchange 조직에 메시지를 보내도록 구성된 송신 커넥터를 만�
 
 Exchange 조직의 메시지만 수락하도록 구성된 수신 커넥터를 만들려면 다음 명령을 실행합니다.
 
-    New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+  ```powershell
+  New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ReceiveConnector](https://technet.microsoft.com/ko-kr/library/bb125139\(v=exchg.150\))를 참조하십시오.
 
@@ -150,8 +158,10 @@ Exchange 조직의 메시지만 수락하도록 구성된 수신 커넥터를 �
 
 필요한 송신 커넥터와 수신 커넥터를 정상적으로 구성했는지 확인하려면 Edge 전송 서버에서 다음 명령을 실행하여 구성한 값이 제대로 표시되는지 확인합니다.
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
-    Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+  ```powershell
+  Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
+  Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+  ```
 
 ## 사서함 서버 절차
 
@@ -181,8 +191,10 @@ Exchange 조직의 메시지만 수락하도록 구성된 수신 커넥터를 �
 
 Edge 전송 서버로 보내는 메시지를 보내도록 구성된 송신 커넥터를 만들려면 다음 명령을 실행합니다.
 
-    $EdgeCredentials = Get-Credential
-    New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+  ```powershell
+  $EdgeCredentials = Get-Credential
+  New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-SendConnector](https://technet.microsoft.com/ko-kr/library/aa998936\(v=exchg.150\))를 참조하세요.
 
@@ -190,5 +202,7 @@ Edge 전송 서버로 보내는 메시지를 보내도록 구성된 송신 커�
 
 Edge 전송 서버로 보내는 메시지를 보내도록 구성된 송신 커넥터를 정상적으로 만들었는지 확인하려면 사서함 서버에서 다음 명령을 실행하여 구성한 값이 제대로 표시되는지 확인합니다.
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+  ```powershell
+  Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+  ```
 

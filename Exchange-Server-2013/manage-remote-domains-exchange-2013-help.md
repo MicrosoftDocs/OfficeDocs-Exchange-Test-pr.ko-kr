@@ -59,7 +59,9 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 
 이 예에서는 fabrikam.com 도메인 및 모든 하위 도메인으로 보내는 메시지에 대한 원격 도메인 항목을 만듭니다.
 
+```powershell
     New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

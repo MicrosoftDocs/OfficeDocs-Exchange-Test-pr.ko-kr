@@ -43,9 +43,11 @@ Microsoft Outlook을 사용하여 Microsoft Exchange가 전자 메일 메시지�
 
 3.  다음 예와 같이 **속성** 대화 상자의 **인터넷 헤더** 섹션에서 스크롤 막대를 사용하여 스팸 방지 스탬프를 봅니다.
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```
 
 ## Outlook 2007을 사용하여 스팸 방지 스탬프 보기
 
@@ -55,7 +57,8 @@ Microsoft Outlook을 사용하여 Microsoft Exchange가 전자 메일 메시지�
 
 3.  다음 예와 같이 **메시지 옵션** 대화 상자 **인터넷 헤더** 섹션에서 스크롤 막대를 사용하여 스팸 방지 스탬프를 봅니다.
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-
+    ```

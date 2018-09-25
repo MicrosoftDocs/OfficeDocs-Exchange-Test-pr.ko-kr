@@ -57,7 +57,9 @@ _**마지막으로 수정된 항목:** 2014-01-28_
 
 1.  이 예에서는 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)) cmdlet을 사용하여 활성화되어 있는 지연된 복사본의 복제를 일시 중단합니다.
     
-        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```powershell
+    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```
 
 2.  원하는 경우 지연된 복사본을 유지하려면 데이터베이스 복사본 및 해당 로그 파일을 복사합니다.
     
@@ -74,8 +76,8 @@ _**마지막으로 수정된 항목:** 2014-01-28_
 5.  이 예에서는 Eseutil을 사용하여 복구 작업을 수행합니다.
     
     ```powershell
-Eseutil.exe /r eXX /a
-```
+    Eseutil.exe /r eXX /a
+    ```
     
 
     > [!NOTE]
@@ -93,8 +95,8 @@ Eseutil.exe /r eXX /a
 7.  복구 프로세스가 완료되면 이 예에서는 복구 프로세스의 일부로 사용된 데이터베이스에 대해 복제를 다시 시작합니다.
     
     ```powershell
-Resume-MailboxDatabaseCopy DB1\EX3
-```
+    Resume-MailboxDatabaseCopy DB1\EX3
+    ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)) 또는 [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd335220\(v=exchg.150\))를 참조하십시오.
 
@@ -104,7 +106,9 @@ Resume-MailboxDatabaseCopy DB1\EX3
     
     1.  이 예에서는 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)) cmdlet을 사용하여 활성화되어 있는 지연된 복사본의 복제를 일시 중단합니다.
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  원하는 경우 지연된 복사본을 유지하려면 데이터베이스 복사본 및 해당 로그 파일을 복사합니다.
         
@@ -117,8 +121,8 @@ Resume-MailboxDatabaseCopy DB1\EX3
 2.  이 예에서는 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/ko-kr/library/dd298068\(v=exchg.150\)) cmdlet과 *SkipLagChecks* 매개 변수를 사용하여 지연된 사서함 데이터베이스 복사본을 활성화합니다.
     
     ```powershell
-Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
-```
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```
 
 ## 셸에서 SafetyNet 복구를 사용하여 지연된 사서함 데이터베이스 복사본 활성화
 
@@ -126,7 +130,9 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
     
     1.  이 예에서는 [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ko-kr/library/dd351074\(v=exchg.150\)) cmdlet을 사용하여 활성화되어 있는 지연된 복사본의 복제를 일시 중단합니다.
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  원하는 경우 지연된 복사본을 유지하려면 데이터베이스 복사본 및 해당 로그 파일을 복사합니다.
         
@@ -139,8 +145,8 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
 2.  ESEUTIL 데이터베이스 헤더 출력애서 "로그 필요:" 값을 찾아 지연된 데이터베이스 복사본에 필요한 로그를 확인합니다.
     
     ```powershell
-Eseutil /mh <DBPath> | findstr /c:"Log Required"
-```
+    Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```
     
     괄호로 묶인 16진수 값을 적어둡니다. 첫 번째 번호는 생성 번호가 가장 낮은 필수 번호이며(LowGeneration이라고 함) 두 번째 번호는 생성 번호가 가장 높은 필수 번호입니다(HighGeneration이라고 함). HighGeneration보다 높은 생성 시퀀스를 가진 모든 로그 생성 파일을 다른 위치로 이동하여 이 파일이 데이터베이스에 재생되지 않도록 합니다.
 
@@ -148,7 +154,9 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
 
 4.  데이터베이스를 전환하고 지연된 복사본을 활성화합니다. 이 예에서는 여러 매개 변수와 함께 [Move-ActiveMailboxDatabase](https://technet.microsoft.com/ko-kr/library/dd298068\(v=exchg.150\)) cmdlet을 사용하여 데이터베이스를 활성화합니다.
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```powershell
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```
 
 5.  그러면 데이터베이스는 자동으로 탑재되며 SafetyNet으로부터 누락된 메시지의 다시 배달을 요청합니다.
 
@@ -161,6 +169,6 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 상태 정보를 표시합니다.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

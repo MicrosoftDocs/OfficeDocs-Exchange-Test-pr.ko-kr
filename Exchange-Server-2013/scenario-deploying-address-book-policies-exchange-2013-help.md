@@ -231,8 +231,9 @@ Contoso 및 Humungous Insurance ABP는 다음과 같은 주소 목록, 전체 �
 
   - ABP 배포는 한 가상 조직의 사용자가 다른 가상 조직의 사용자에게 전자 메일을 보내지 못하도록 차단하지는 않습니다. 사용자가 다른 조직의 사용자에게 전자 메일을 보내지 못하게 하려면 전송 규칙을 만드는 것이 좋습니다. 예를 들어, Contoso 사용자가 Fabrikam 사용자의 메시지를 받지 못하게 하지만 Fabrikam의 임원진에서는 Contoso 사용자에게 메시지를 보내도록 허용하는 전송 규칙을 만들려면 다음 셸 명령을 실행하십시오.
     
-        New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
-
+      ```powershell
+      New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+      ```
   - Lync 클라이언트에 ABP와 유사한 기능을 적용 하려는 경우에 특정 사용자 개체에 `msRTCSIP-GroupingID` 특성을 설정할 수 있습니다. 자세한 내용은 [PartitionByOU가 Msrtcsip-groupingid로 대체 됨](https://go.microsoft.com/fwlink/p/?linkid=232306) 항목을 참조 합니다.
 
 ## 일반 배포 단계
@@ -287,21 +288,28 @@ ABP를 만들 때 사용자의 Outlook 또는 Outlook Web App에 주소 목록�
 
 이 예에서는 주소 목록 AL\_TAIL\_Users\_DGs를 만듭니다. 주소 목록에는 CustomAttribute15가 TAIL인 모든 사용자 및 메일 그룹이 포함되어 있습니다.
 
-    New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+  ```powershell
+  New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+  ```
 
 받는 사람 필터를 사용한 주소 목록 만들기에 대한 자세한 내용은 [받는 사람 필터를 사용 하 여 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)를 참조하십시오.
 
 ABP를 만들려면 대화방 주소 목록을 제공해야 합니다. 조직에 대화방 또는 장비 사서함 같은 리소스 사서함이 없는 경우에는 빈 대화방 주소 목록을 만드는 것이 좋습니다. 다음 예에서는 조직에 대화방 사서함이 없으므로 빈 대화방 주소 목록을 만듭니다.
 
-    New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+  ```powershell
+  New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+  ```
 
 그러나 이 시나리오에서는 Fabrikam 및 Contoso 모두에 대화방 사서함이 있습니다. 이 예에서는 받는 사람 필터를 사용하여 CustomAttribute15가 FAB인 Fabrikam의 대화방 목록을 만듭니다.
 
-    New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
-
+  ```powershell
+  New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+  ```
 ABP에 사용되는 전체 주소 목록은 주소 목록의 부분 집합이어야 합니다. ABP의 주소 목록보다 개체 수가 적은 GAL을 만들지 마십시오. 이 예에서는 주소 목록 및 대화방 주소 목록에 있는 모든 받는 사람을 포함하는 Tailspin Toys의 전체 주소 목록을 만듭니다.
 
-    New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+  ```powershell
+  New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+  ```
 
 자세한 내용은 [전체 주소 목록 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-lists/create-global-address-list)를 참조하십시오.
 
@@ -319,7 +327,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 필요한 모든 개체를 만든 후에는 ABP를 만들 수 있습니다. 이 예에서는 ABP\_TAIL이라는 이름의 ABP를 만듭니다.
 
-    New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+  ```powershell
+  New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+  ```
 
 자세한 내용은 [주소록 정책 만들기](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/create-an-address-book-policy)를 참조하십시오.
 
@@ -329,7 +339,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 이 예에서는 CustomAttribute15가 "FAB"인 모든 사서함에 ABP\_FAB를 할당합니다.
 
-    Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+  ```powershell
+  Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+  ```
 
 자세한 내용은 [메일 사용자에 게 주소록 정책 할당](https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)을 참조하십시오.
 

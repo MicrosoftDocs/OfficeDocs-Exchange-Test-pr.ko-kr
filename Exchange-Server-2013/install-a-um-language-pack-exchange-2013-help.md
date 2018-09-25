@@ -53,13 +53,9 @@ UM 언어와 관련된 추가 작업에 대한 자세한 내용은 [UM 언어, �
 
 2.  UMLanguagePack를 두번클릭 합니다. *\<CultureCode\>.exe* 파일입니다. 예, 독일어 UM 언어팩 UMLanguagePack.de DE.exe 라는 파일을 다운로드 합니다.
 
-3.  
-    
-    Exchange 2013 설치 마법사의 **사용권 계약** 페이지에서 계약 약관을 읽어 **사용권 계약에 동의** 선택한 후 **다음** 을 클릭 합니다.
+3.  Exchange 2013 설치 마법사의 **사용권 계약** 페이지에서 계약 약관을 읽어 **사용권 계약에 동의** 선택한 후 **다음** 을 클릭 합니다.
 
-4.  
-    
-    **통합 메시징 언어 팩** 페이지의 **다음 통합 메시징 언어 팩이 설치됩니다.** 창에 올바른 언어가 나와 있는지 확인한 다음 **설치**를 클릭합니다.
+4. **통합 메시징 언어 팩** 페이지의 **다음 통합 메시징 언어 팩이 설치됩니다.** 창에 올바른 언어가 나와 있는지 확인한 다음 **설치**를 클릭합니다.
 
 5.  **마침**을 클릭하여 UM 언어 팩 설치를 완료합니다.
 
@@ -73,7 +69,9 @@ setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchan
 
 이 예제에서는 설치 스페인어 (멕시코) (ES-MX) 및 독일어 (DE-DE) UM 사서함 서버에 있는 D:\\Exchange\\UMLanguagePacks 폴더에 다운로드 한 언어팩 합니다.
 
-    setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 > [!CAUTION]
 > /IAcceptExchangeServerLicenseTerms 매개 변수를 사용 하지 않으면 다음과 같은 오류를 볼 수 있습니다: Microsoft Exchange Server 2013 무인 설치를 시작 합니다. Microsoft Exchange Server 2013을 설치 하려면 사용 조건에 동의 해야 합니다. 사용권 계약을 읽고, http://go.microsoft.com/fwlink/p/?LinkId=150127를 방문 합니다. 사용권 계약에 동의 하려면를 실행 중인 명령 /IAcceptExchangeServerLicenseTerms 매개 변수를 추가 합니다. 자세한 내용은 설치 프로그램을 실행 /?.

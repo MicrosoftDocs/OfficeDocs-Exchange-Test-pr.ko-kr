@@ -117,7 +117,9 @@ Exchange 도구 상자에서 큐 뷰어를 사용하여 배달 대기 중인 메
 
 **Get-Message** cmdlet을 사용하여 현재 배달 대기 중인 메시지의 속성을 볼 수 있습니다. 다음 예에서는 현재 다시 시도 상태인 모든 메시지에 대한 보낸 사람 주소, 받는 사람, 제목 및 받은 날짜 정보를 표로 작성합니다.
 
-    Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```powershell
+Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-Message](https://technet.microsoft.com/ko-kr/library/bb124738\(v=exchg.150\))를 참조하십시오.
 

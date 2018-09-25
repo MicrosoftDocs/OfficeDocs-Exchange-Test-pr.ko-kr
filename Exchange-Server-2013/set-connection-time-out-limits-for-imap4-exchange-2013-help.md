@@ -94,8 +94,8 @@ IMAP4에 대해 연결 시간 제한을 설정한 후에는 IMAP4 서비스를 �
 1.  셸에서 다음 명령을 실행합니다.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  설정이 올바른지 확인합니다.
 

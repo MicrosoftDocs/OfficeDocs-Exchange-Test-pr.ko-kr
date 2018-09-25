@@ -83,7 +83,9 @@ Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 
 
 이 예에서는 사서함 서버 MBX5에 사서함 데이터베이스 DB3의 복사본을 추가합니다. 재생 지연 시간은 3일로 설정되고, 자르기 지연 시간은 기본값 0으로 유지되고, 활성화 기본 설정은 값 `4`를 사용하여 구성됩니다.
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -94,8 +96,8 @@ Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 
   - 셸에서 다음 명령을 실행하여 사서함 데이터베이스 복사본이 작성되어 있고 정상 상태인지 확인합니다.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     상태 및 콘텐츠 인덱스 상태가 모두 정상이어야 합니다.
 

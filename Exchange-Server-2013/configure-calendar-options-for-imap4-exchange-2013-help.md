@@ -42,17 +42,16 @@ IMAP4에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop
 ```powershell
 Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 ```
-
 이 예에서는 IMAP4 사용자가 내부 서버를 통해 일정 정보에 액세스하도록 설정합니다.
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
-
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 이 예에서는 IMAP4 사용자가 외부 서버에서 인터넷을 통해 일정 정보에 액세스하도록 설정합니다.
 
 ```powershell
 Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
 ```
-
 이 예에서는 IMAP4 사용자가 직접 Outlook Web App URL을 사용하여 일정 정보에 액세스하도록 설정합니다. `Custom`을 사용 중인 경우 *OWAServerUrl* 매개 변수를 사용하여 Outlook Web App URL을 지정해야 합니다.
 
 ```powershell

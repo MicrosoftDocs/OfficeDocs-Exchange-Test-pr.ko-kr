@@ -38,8 +38,8 @@ _**마지막으로 수정된 항목:** 2015-04-08_
   - **Set-AcceptedDomain** cmdlet의 *AddressBookEnabled* 매개 변수는 허용 도메인의 받는 사람에 대한 받는 사람 필터링을 사용하거나 사용하지 않도록 설정합니다. 기본적으로 받는 사람 필터링은 신뢰할 수 있는 도메인에 대해 사용되도록 설정되고, 내부 릴레이 도메인 및 외부 릴레이 도메인에 대해 사용되지 않도록 설정됩니다. 조직의 허용 도메인에 대한 *AddressBookEnabled* 매개 변수의 상태를 보려면 다음 명령을 실행합니다.
     
     ```powershell
-Get-AcceptedDomain | Format-List Name,AddressBookEnabled
-```
+    Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```
 
   - 이 항목의 절차를 사용하여 받는 사람 필터링을 사용되지 않게 설정하면 필터링 기능이 사용되지 않지만 기본 받는 사람 필터 에이전트는 사용됩니다.
 
@@ -80,8 +80,8 @@ Set-RecipientFilterConfig -Enabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-RecipientFilterConfig | Format-List Enabled
-```
+    Get-RecipientFilterConfig | Format-List Enabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -106,8 +106,8 @@ Set-RecipientFilterConfig -BlockListEnabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockListEnabled
-```
+    Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -127,11 +127,15 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```
 
 이 예에서는 받는 사람 차단 목록의 받는 사람 목록에 chris@contoso.com을 추가하고 받는 사람 목록에서 michelle@contoso.com을 제거합니다.
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -140,8 +144,8 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockedRecipients
-```
+    Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -166,8 +170,8 @@ Set-RecipientFilterConfig -RecipientValidationEnabled $true
 1.  다음 명령을 실행합니다.
     
     ```powershell
-Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
-```
+    Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 

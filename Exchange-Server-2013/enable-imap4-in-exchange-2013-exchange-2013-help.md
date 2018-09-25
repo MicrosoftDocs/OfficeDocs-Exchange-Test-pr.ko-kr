@@ -62,26 +62,26 @@ POP3 및 IMAP4 설정 하는 방법에 대 한 자세한 내용은 [Exchange Ser
 1.  Microsoft Exchange IMAP4 서비스를 자동으로 시작하도록 설정합니다.
     
     ```powershell
-Set-service msExchangeIMAP4 -startuptype automatic
-```
+    Set-service msExchangeIMAP4 -startuptype automatic
+    ```
 
 2.  Microsoft Exchange IMAP4 서비스를 시작합니다.
     
     ```powershell
-Start-service msExchangeIMAP4
-```
+    Start-service msExchangeIMAP4
+    ```
 
 3.  Microsoft Exchange IMAP4 백 엔드 서비스를 자동으로 시작하도록 설정합니다.
     
     ```powershell
-Set-service msExchangeIMAP4BE -startuptype automatic
-```
+    Set-service msExchangeIMAP4BE -startuptype automatic
+    ```
 
 4.  Microsoft Exchange IMAP4 백 엔드 서비스를 시작합니다.
     
     ```powershell
-Start-service msExchangeIMAP4BE
-```
+    Start-service msExchangeIMAP4BE
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

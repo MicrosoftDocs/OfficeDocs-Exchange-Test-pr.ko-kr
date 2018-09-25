@@ -94,25 +94,30 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 2.  명령 프롬프트 창에서 다음 명령을 실행 하 여 EdgeTransport.exe.config 파일을 메모장에서에서 엽니다.
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  `<appSettings>` 섹션에서 다음 키를 수정 합니다.
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```    
+        
     예, D:\\Queue\\QueueDB 및 D:\\Queue\\QueueLogs의 새 트랜잭션 로그에 새 큐 데이터베이스를 만들려면 다음 값을 사용 합니다.
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  작업을 마친 후 저장하고 EdgeTransport.exe.config 파일을 닫습니다.
 
 5.  다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작합니다.
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
-
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 ## 작동 여부는 어떻게 확인합니까?
 
 성공적으로 만들어졌는지 새 큐 데이터베이스 및 트랜잭션 로그를 새 새 위치를 확인 하려면 다음을 수행 합니다.
@@ -140,27 +145,28 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 2.  명령 프롬프트 창에서 다음 명령을 실행 하 여 EdgeTransport.exe.config 파일을 메모장에서에서 엽니다.
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  `<appSettings>` 섹션에서 다음 키를 수정 합니다.
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```    
     예, D:\\Queue\\QueueDB 및 D:\\Queue\\QueueLogs 트랜잭션 로그를 큐 데이터베이스의 위치를 변경 하려면 다음 값을 사용 합니다.
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
-
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 4.  작업을 마친 후 저장하고 EdgeTransport.exe.config 파일을 닫습니다.
 
 5.  다음 명령을 실행 하 여 Microsoft Exchange Transport service를 중지 합니다.
     
     ```powershell
-net stop MSExchangeTransport
-```
-
+    net stop MSExchangeTransport
+    ```
 6.  원래 위치에서 Mail.que 및 Trn.chk 기존 데이터베이스 파일을 새 위치로 이동 합니다.
 
 7.  이동 기존 트랜잭션 로그를 새 위치로 이전 위치에서 Trn.log, Trntmp.log, Trn*nnnnn*.log, Trnres00001.jrs, Trnres00002.jrs, 및 삭제를 파일입니다.
@@ -168,8 +174,8 @@ net stop MSExchangeTransport
 8.  다음 명령을 실행 하 여 Microsoft Exchange Transport service를 시작 합니다.
     
     ```powershell
-net start MSExchangeTransport
-```
+    net start MSExchangeTransport
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -184,4 +190,3 @@ net start MSExchangeTransport
 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), 또는 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)
 
 맨 위로 이동
-

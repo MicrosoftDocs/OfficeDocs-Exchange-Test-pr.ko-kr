@@ -58,8 +58,8 @@ Remove-OrganizationRelationship -Identity "Contoso"
   - 다음 셸 명령을 실행하여 조직 관계 정보가 제거되었는지 확인합니다.
     
     ```powershell
-Get-OrganizationRelationship | Format-List
-```
+    Get-OrganizationRelationship | Format-List
+    ```
 
 
 > [!TIP]

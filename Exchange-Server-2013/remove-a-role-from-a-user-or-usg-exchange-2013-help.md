@@ -53,9 +53,13 @@ Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
 
 역할 할당의 이름을 모르는 경우에 다음 구문을 사용할 수 있습니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```
 
 예: 사용자에서 편지 병합 받는 사람 일반 역할 할당을 제거 하려는 경우 davids, 다음 명령을 사용 합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
+```
 

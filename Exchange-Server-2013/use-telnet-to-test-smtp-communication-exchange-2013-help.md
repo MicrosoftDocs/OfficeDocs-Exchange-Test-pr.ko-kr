@@ -70,10 +70,12 @@ _**마지막으로 수정된 항목:** 2016-12-09_
     
     이 명령을 실행하면 다음과 같은 출력을 확인할 수 있습니다.
     
+    ```powershell
         fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
         fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
         mail1.fabrikam.com internet address = 192.168.1.10
         mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     XM 레코드와 연결된 모든 호스트 이름 또는 IP 주소를 대상 SMTP 서버로 사용할 수 있습니다. 기본 설정 값이 낮은 항목이 기본 SMTP 서버입니다. 부하 분산 및 내결함성에 대해 여러 MX 레코드와 서로 다른 기본 설정 값을 사용할 수 있습니다.
 
@@ -128,8 +130,8 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 8.  **DATA**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
     ```powershell
-354 Start mail input; end with <CLRF>.<CLRF>
-```
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  **Subject: Test from Contoso**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -140,14 +142,14 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 12. Enter 키를 누르고 마침표(**.**)를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
     ```powershell
-250 2.6.0 <GUID> Queued mail for delivery
-```
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. 대상 SMTP 서버와의 연결을 끊으려면 **QUIT**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
     ```powershell
-221 2.0.0 Service closing transmission channel
-```
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. 텔넷 세션을 닫으려면 **quit**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -161,13 +163,10 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - MAIL FROM:chris@contoso.com
 
-  - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
-    
+  - RCPT TO:kate@fabrikam.com NOTIFY=success,failure    
 
     > [!NOTE]
     > RFC 2821에 정의되어 있는 3자리의 SMTP 응답 코드는 모든 SMTP 메시징 서버에 대해 동일합니다. 일부 SMTP 메시징 서버의 경우에는 텍스트 설명이 약간 다를 수도 있습니다.
-
-
 
 ## Open mail1.fabrikam.com 25
 

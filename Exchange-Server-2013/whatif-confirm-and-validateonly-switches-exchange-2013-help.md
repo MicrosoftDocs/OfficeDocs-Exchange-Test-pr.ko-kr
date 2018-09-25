@@ -39,8 +39,10 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 *WhatIf* 스위치와 함께 명령을 실행할 경우 다음 예와 같이 명령의 끝에 *WhatIf* 스위치를 배치합니다.
 
-    New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
-
+  ```poweshell
+  New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+  ```
+  
 이 명령 예를 실행하면 셸에서 다음 텍스트가 반환됩니다.
 
 ```powershell

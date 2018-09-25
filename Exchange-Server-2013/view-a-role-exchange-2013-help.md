@@ -83,8 +83,9 @@ Get-ManagementRole | Format-Table <property 1>, <property 2...>
 
 이 예에서는 조직의 모든 역할 목록을 반환하고 속성 이름이 **Implicit**로 시작하는 모든 속성과 **Name** 속성을 포함합니다.
 
-    Get-ManagementRole | Format-Table Name, Implicit*
-
+```powershell
+Get-ManagementRole | Format-Table Name, Implicit*
+```
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 
 ## 특정 cmdlet이 포함된 관리 역할 표시
@@ -113,7 +114,9 @@ Get-ManagementRole -Cmdlet New-Mailbox
 
 지정한 매개 변수가 포함된 역할 목록을 반환하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```powershell
+Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 이 예에서는 매개 변수가 위치한 cmdlet에 관계없이 *Database* 및 *Server* 매개 변수가 포함된 역할 목록을 반환합니다.
 

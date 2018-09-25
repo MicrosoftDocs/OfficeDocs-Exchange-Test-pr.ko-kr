@@ -51,7 +51,9 @@ Microsoft Exchange Server 2013에서는 Exchange 도구 상자 또는 Exchange �
 
 큐를 보려면 다음 구문을 사용합니다.
 
-    Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```powershell
+Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```
 
 이 예에서는 Exchange 2013 사서함 서버 Mailbox01에서 비어 있지 않은 모든 큐에 대한 기본 정보를 표시합니다.
 
@@ -77,7 +79,9 @@ Get-Queue -Filter {MessageCount -gt 100} | Format-List
 
 여러 Exchange 서버의 큐에 대한 요약 정보를 보려면 다음 명령을 실행합니다.
 
-    Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```powershell
+Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```
 
 이 예에서는 FirstSite라는 Active Directory 사이트의 모든 Exchange 2013 사서함 서버에서 메시지 수가 100개를 초과하는 큐에 대한 요약 정보를 표시합니다.
 
@@ -119,7 +123,9 @@ Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
 
 큐를 다시 시작하려면 다음 구문을 사용합니다.
 
-    Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 이 예에서는 로컬 서버에서 상태가 Suspended인 모든 큐를 다시 시작합니다.
 
@@ -169,7 +175,9 @@ Resume-Queue -Identity Mailbox01\contoso.com
 
 큐를 다시 시도하려면 다음 구문을 사용합니다.
 
-    Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```
 
 이 예에서는 로컬 서버에서 상태가 다시 시도인 모든 큐를 다시 시도합니다.
 
@@ -205,7 +213,9 @@ Retry-Queue -Identity Mailbox01\contoso.com
 
 메시지를 다시 전송하려면 다음 구문을 사용합니다.
 
-    Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```
 
 이 예에서는 Mailbox01 서버에서 상태가 다시 시도인 모든 배달 큐에 있는 모든 메시지를 다시 전송합니다.
 
@@ -248,20 +258,20 @@ Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 1.  다음 명령을 실행하여 메시지 ID를 확인합니다.
     
     ```powershell
-Get-Message -Queue Poison | Format-Table Identity
-```
+    Get-Message -Queue Poison | Format-Table Identity
+    ```
 
 2.  이전 단계의 메시지 ID를 사용하여 다음 명령을 실행합니다.
     
     ```powershell
-Resume-Message <PoisonMessageIdentity>
-```
+    Resume-Message <PoisonMessageIdentity>
+    ```
     
     이 예에서는 포이즌 메시지 큐에서 메시지 ID 값이 222인 메시지를 다시 시작합니다.
     
     ```powershell
-Resume-Message 222
-```
+    Resume-Message 222
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -293,7 +303,9 @@ Resume-Message 222
 
 큐를 일시 중단하려면 다음 구문을 사용합니다.
 
-    Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 이 예에서는 로컬 서버에서 메시지 수가 1,000개 이상이고 상태가 다시 시도인 모든 큐를 일시 중단합니다.
 
