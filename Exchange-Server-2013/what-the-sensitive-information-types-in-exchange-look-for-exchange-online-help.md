@@ -59,7 +59,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_ABA_Routing</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- ABA Routing Number -->
 <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -148,7 +149,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_argentina_national_id</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Argentina National Identity (DNI) Number -->
 <Entity id="eefbb00e-8282-433c-8620-8f1da3bffdb2" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -234,7 +236,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_australia_bank_account_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Australia Bank Account Number -->
 <Entity id="74a54de9-2a30-4aa0-a8aa-3d9327fc07c7" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -328,7 +331,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_australia_drivers_license_number_exclusions</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Australia Drivers License Number -->
 <Entity id="1cbbc8f5-9216-4392-9eb5-5ac2298d1356" patternsProximity="300" recommendedConfidence="75">
    <Pattern confidenceLevel="75">
@@ -507,7 +511,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
     <Pattern confidenceLevel="95">
@@ -589,7 +594,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_passport</code> 또는 <code>Keyword_australia_passport_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Australia Passport Number -->
 <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -704,7 +710,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
     <!-- Australia Tax File Number -->
 <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="95">
@@ -829,7 +836,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Belgium National Number -->
   <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -932,7 +940,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Brazil Legal Entity Number (CNPJ) -->
 <Entity id="9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4" recommendedConfidence="85" patternsProximity="300">
    <Pattern confidenceLevel="85">
@@ -1038,7 +1047,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Brazil CPF Number -->
 <Entity id="78e09124-f2c3-4656-b32a-c1a132cd2711" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1145,7 +1155,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Brazil National ID Card (RG) -->
 <Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1237,7 +1248,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_canada_bank_account_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Canada Bank Account Number -->
 <Entity id="552e814c-cb50-4d94-bbaa-bb1d1ffb34de" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1329,7 +1341,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_canada_drivers_license</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Canada Driver's License Number -->
     <Entity id="37186abb-8e48-4800-ad3c-e3d1610b3db0" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -1574,7 +1587,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_canada_health_service_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Canada Health Service Number -->
 <Entity id="59c0bf39-7fab-482c-af25-00faa4384c94" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1650,7 +1664,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_canada_passport_number</code> 또는 <code>Keyword_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
  <!-- Canada Passport Number -->
 <Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1746,7 +1761,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_canada_phin</code> 또는 <code>Keyword_canada_provinces</code>의 2개 이상의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Canada PHIN -->
 <Entity id="722e12ac-c89a-4ec8-a1b7-fea3469f89db" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1868,7 +1884,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Canada Social Insurance Number -->
 <Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1979,7 +1996,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Chile Identity Card Number -->
 <Entity id="4e979794-49a0-407e-a0b9-2c536937b925" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2071,7 +2089,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- China Resident Identity Card (PRC) Number -->
 <Entity id="c92daa86-2d16-4871-901f-816b3f554fc1" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2160,7 +2179,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Credit Card Number -->
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -2425,7 +2445,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_croatia_id_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!--Croatia Identity Card Number-->
 <Entity id="ff12f884-c20a-4189-b185-34c8e7258d47" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2502,7 +2523,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Croatia Personal Identification (OIB) Number -->
 <Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2579,7 +2601,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Czech National Identity Card Number -->
 <Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2652,7 +2675,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Denmark Personal Identification Number -->
 <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2726,7 +2750,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- DEA Number -->
 <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2781,7 +2806,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
     <!-- EU Debit Card Number -->
     <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -2796,6 +2822,7 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
       </Pattern>
     </Entity>
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -3161,7 +3188,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Finnish National ID-->
 <Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -3234,7 +3262,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_finland_passport_number</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -3305,7 +3334,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- France Driver's License Number -->
 <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3381,7 +3411,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_france_cni</code> 정규식이 해당 패턴과 일치하는 콘텐츠를 찾습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- France CNI -->
 <Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
   <Pattern confidenceLevel="65">
@@ -3433,7 +3464,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- France Passport Number -->
 <Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3527,7 +3559,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- France INSEE -->
 <Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="95">
@@ -3636,7 +3669,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- German Driver's License Number -->
 <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3817,7 +3851,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_germany_id_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Germany Identity Card Number -->
 <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
   <Pattern confidenceLevel="65">
@@ -3902,7 +3937,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- German Passport Number -->
 <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -4017,7 +4053,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_greece_id_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Greece National ID Card -->
 <Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4097,7 +4134,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Hong Kong Identity Card (HKID) number -->
 <Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -4176,7 +4214,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- India Permanent Account Number -->
 <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4256,7 +4295,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4342,7 +4382,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Regex_indonesia_id_card</code> 정규식 패턴과 일치 하는 콘텐츠를 찾습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Indonesia Identity Card (KTP) Number -->
 <Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4424,7 +4465,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_iban" />
@@ -4487,7 +4529,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_ipaddress</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
 
-```xml  
+
+```Command&nbsp;Line  
     <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4510,6 +4553,7 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
       </Pattern>
     </Entity>
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -4600,7 +4644,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Ireland Personal Public Service (PPS) Number -->
 <Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4693,7 +4738,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_israel_bank_account_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Israel Bank Account Number -->
 <Entity id="7d08b2ff-a0b9-437f-957c-aeddbf9b2b25" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4766,7 +4812,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Israel National ID Number -->
 <Entity id="e05881f5-1db1-418c-89aa-a3ac5c5277ee" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4841,7 +4888,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_italy_drivers_license_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Italy Driver's license Number -->
 <Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4929,7 +4977,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_jp_bank_account</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Japan Bank Account Number -->
 <Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
   <Version minEngineVersion="15.01.0131.000">
@@ -5064,7 +5113,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_jp_drivers_license_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Japan Driver's License Number -->
 <Entity id="c6011143-d087-451c-8313-7f6d4aed2270" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5158,7 +5208,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_jp_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Japan Passport Number -->
 <Entity id="75177310-1a09-4613-bf6d-833aae3743f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5227,7 +5278,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_jp_resident_registration_number</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Japan Resident Registration Number -->
 <Entity id="01c1209b-6389-4faf-a5f8-3f7e13899652" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5315,7 +5367,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_jp_sin</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Japan Social Insurance Number -->
 <Entity id="c840e719-0896-45bb-84fd-1ed5c95e45ff" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -5397,7 +5450,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_malaysia_id_card_number</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Malaysia ID Card Number -->
 </Entity>
       <Entity id="7f0e921c-9677-435b-aba2-bb8f1013c749" patternsProximity="300" recommendedConfidence="85">
@@ -5479,7 +5533,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Netherlands Citizen&#39;s Service (BSN) Number -->
 <Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -5552,7 +5607,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- New Zealand Health Number -->
 <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -5634,7 +5690,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Norway Identification Number -->
 <Entity id="d4c8a798-e9f2-4bd3-9652-500d24080fc3" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -5715,7 +5772,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_philippines_id</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Philippines Unified Multi-Purpose ID number -->
 <Entity id="019b39dd-8c25-4765-91a3-d9c6baf3c3b3" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -5785,7 +5843,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Poland Identity Card-->
 <Entity id="25E64989-ED5D-40CA-A939-6C14183BB7BF" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -5854,7 +5913,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Poland National ID (PESEL) -->      
 <Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -5922,7 +5982,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Poland Passport Number -->
 <Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -5991,7 +6052,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_portugal_citizen_card</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Portugal Citizen Card Number -->
 <Entity id="91a7ece2-add4-4986-9a15-c84544d81ecd" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -6061,7 +6123,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_saudi_arabia_national_id</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Saudi Arabia National ID -->
 <Entity id="8c5a0ba8-404a-41a3-8871-746aa21ee6c0" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -6143,7 +6206,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Singapore National Registration Identity Card (NRIC) Number -->
 <Entity id="cead390a-dd83-4856-9751-fb6dc98c34da" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -6227,7 +6291,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- South Africa Identification Number -->
 <Entity id="e2adf7cb-8ea6-4048-a2ed-d89eb65f2780" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -6309,7 +6374,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- South Korea Resident Registration Number -->
 <Entity id="5b802e18-ba80-44c4-bc83-bf2ad36ae36a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -6389,7 +6455,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Spain SSN -->
 <Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -6442,7 +6509,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Sweden National ID -->
 <Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -6493,7 +6561,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Sweden Passport Number -->
 <Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -6600,7 +6669,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_swift</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
 <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_swift" />
@@ -6701,7 +6771,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -6797,7 +6868,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_taiwan_passport</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Taiwan Passport Number -->
 <Entity id="e7251cb4-4c2c-41df-963e-924eb3dae04a" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -6874,7 +6946,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_taiwan_resident_certificate</code> 에서 키워드를 발견 됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
 <Entity id="48269fec-05ea-46ea-b326-f5623a58c6e9" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -6958,7 +7031,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.K. Driver&#39;s License Number -->
 <Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -7038,7 +7112,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_uk_electoral</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.K. Electoral Number -->
 <Entity id="a3eea206-dc0c-4f06-9e22-aa1be3059963" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -7122,7 +7197,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p>체크섬이 통과됩니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.K. NHS Number -->
 <Entity id="3192014e-2a16-44e9-aa69-4b20375c9a78" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -7233,7 +7309,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_uk_nino</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.K. NINO -->
 <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -7318,7 +7395,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_passport</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_usa_uk_passport" />
@@ -7400,7 +7478,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_usa_Bank_Account</code>의 키워드가 발견되었습니다.</p></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.S. Bank Account Number -->
 <Entity id="a2ce32a8-f935-4bb6-8e96-2a5157672e2c" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -7503,7 +7582,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_us_drivers_license_abbreviations</code>의 키워드가 발견되었습니다.</p></li>
 <li><p><code>Keyword_us_drivers_license</code>의 키워드가 발견되지 않았습니다.</p></li>
 </ul>
-```xml    <Pattern confidenceLevel="75">
+
+```Command&nbsp;Line    <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
         <Match idRef="Keyword_us_drivers_license" />
@@ -7705,7 +7785,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 </ul></li>
 </ul>
 
-```xml
+
+```Command&nbsp;Line
 <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
 <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -7834,7 +7915,8 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
 <li><p><code>Keyword_ssn</code>의 키워드가 발견되었습니다.</p></li>
 <li><p><code>Func_unformatted_ssn</code> 함수가 해당 패턴과 일치하는 콘텐츠를 찾지 않습니다.</p></li>
 </ul>
-```xml
+
+```Command&nbsp;Line
 <!-- U.S. Social Security Number (SSN) -->
     <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
@@ -7861,6 +7943,7 @@ Exchange에서 데이터 손실 방지 (DLP)에 DLP 정책에서 사용 하 여 
       </Pattern>
     </Entity>
 ```
+
 </td>
 </tr>
 <tr class="odd">
