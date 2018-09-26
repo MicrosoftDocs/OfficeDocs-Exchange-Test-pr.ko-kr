@@ -133,8 +133,10 @@ Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization M
 
 4.  조직 관리 역할 그룹이 아닌 각 역할 그룹에 대해 다음 작업을 수행합니다.
     
-        $RoleGroup = Get-RoleGroup <name of role group to re-create>
-        New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to re-create>
+    New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```
 
 5.  연결된 역할 그룹으로 다시 만들려는 각 기본 제공 역할 그룹에 대해 앞의 단계를 반복합니다.
 

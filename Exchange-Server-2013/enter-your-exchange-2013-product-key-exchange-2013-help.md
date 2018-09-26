@@ -84,8 +84,6 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 > [!NOTE]
 > 같은 서버에서 이 명령을 다시 실행하여 해당 서버를 Standard Edition 라이선스에서 Enterprise Edition 라이선스로 업그레이드할 수 있습니다.
 
-
-
 ```powershell
 Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
 ```
@@ -113,10 +111,13 @@ EAC를 사용하여 서버가 Standard Edition 또는 Enterprise Edition으로 �
 1.  셸을 엽니다.
 
 2.  다음 명령을 실행하여 특정 Exchange 서버의 라이선스 상태를 확인합니다.
-    
-        Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+        
+    ```powershell
+    Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (옵션) 다음 명령을 실행하여 조직의 모든 Exchange 서버 라이선스 상태를 확인합니다.
-    
-        Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
 
+    ```powershell    
+    Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```

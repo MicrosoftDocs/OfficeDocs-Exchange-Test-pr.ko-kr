@@ -179,7 +179,9 @@ SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c} 중재 사서함 다시 만
 
 완료 되 면 46, 47, 및 51 누락 된 표시 명령 `$OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration (Get-ADUser $OABMBX.SamAccountName -Properties *).msExchCapabilityIdentifiers` 를 실행 하는 경우 모든 기능을 다시 추가 하려면 다음 명령을 실행 합니다.
 
-    Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```powershell
+Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

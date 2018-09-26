@@ -24,19 +24,17 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 > Exchange 관리 셸 스크립트를 자동으로 로드 하지 않습니다. 앞에 있는 모든 스크립트 해야하는 "<STRONG>. \</STRONG> " 등 RollAlternateServiceAccountPassword.ps1 스크립트를 실행 하려면 <CODE>.\RollAlternateServiceAccountPassword.ps1</CODE>를 입력 합니다.
 
 
-
-
 > [!NOTE]
 > 이 스크립트는 영어로 제공 됩니다.
-
 
 
 사용 하 고 스크립트를 작성 하는 방법에 대 한 자세한 내용은 [Exchange 관리 셸을 사용하여 스크립팅](https://technet.microsoft.com/ko-kr/library/bb123798\(v=exchg.150\))을 참조 하십시오.
 
 ## 구문
 
-    RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
-
+```powershell
+RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```
 ## 자세한 정보
 
 이러한 절차를 수행하려면 먼저 사용 권한을 할당받아야 합니다. 필요한 사용 권한을 확인하려면 다음을 참조하세요. 클라이언트 액세스 권한 항목의 "클라이언트 액세스 보안" 항목.
@@ -75,8 +73,6 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 > [!NOTE]
 > 스크립트를 실행 하 고 제대로 작동 하는지 유인된 모드에서 무인된 예약 된 작업을 만들기 전에 확인 합니다.
 
-
-
 스크립트는 스크립트 위치한 폴더에.cmd 파일을 만듭니다. 그런 다음 3 주마다 해당.cmd 파일을 실행 하는 작업을 만듭니다. 같은 예약 된 작업을 수정 하려면, 더 많이 또는 적게 빈도로 실행 되도록 설정 하려면 Windows 작업 스케줄러를 사용할 수 있습니다. 기본적으로 작업에서 현재 로그온 한 사용자로 실행 됩니다. 또한이 스크립트는 사용자가 컴퓨터에 로그온 하는 경우에 실행 됩니다. 사용자의 로그온 여부를 실행 하도록 예약된 된 작업을 수정 하는 것이 좋습니다. 해당 계정에서 Active Directory 권한이 Exchange 엔터프라이즈 관리자 역할와 암호를 다시 설정 하는 경우 다른 계정으로 실행을 선택할 수 있습니다. 예약된 된 작업을 만들 때는 스크립트 무인된 모드에서 자동으로 실행 됩니다.
 
 ## 스크립트의 범위를 벗어났습니다 작업
@@ -91,8 +87,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 스크립트를 실행 하면 출력-verbose 플래그를 사용 하 여 대화형으로 어떤 스크립트 작업이 성공한 나타내야 합니다. 클라이언트 액세스 서버가 업데이트 되었는지, 확인을 위해 ASA 자격 증명에 마지막으로 수정한 시간 스탬프를 확인할 수 있습니다. 다음 예제에서는 클라이언트 액세스 서버 목록을 오류가 발생 하 고 마지막으로 대체 서비스 계정 업데이트 되었습니다.
 
-    Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
-
+```powershell
+Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```
 스크립트 실행 되는 컴퓨터에서 이벤트 로그를 검토할 수 있습니다. 스크립트에 대 한 이벤트 로그 항목 응용 프로그램 이벤트 로그에는 하며 원본 *MSExchange Management Application*에서입니다. 다음 표에 각 로깅되는 이벤트와 이벤트 무엇을 의미 합니다.
 
 ### 이벤트 Id 및 해당 설명을 스크립트합니다
@@ -175,7 +172,6 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 > [!NOTE]
 > <EM>ToArrayMembers</EM> 매개 변수 또는 <EM>ToSpecificServers</EM> 매개 변수를 사용 하는 경우 서버 이름 또는 <EM>Identity</EM> 매개 변수를 사용 하 여 서버 배열 이름을 지정 해야 합니다.
 
-
 </td>
 </tr>
 <tr class="even">
@@ -239,26 +235,30 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예제에서는 스크립트를 사용 하 여를 처음 설치에 대 한 포리스트에 있는 모든 클라이언트 액세스 서버에는 자격 증명을 게시 합니다.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
-
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```
 ## 예 2
 
 사용자 계정 ASA 자격 증명에 대 한 새 암호를 생성 하 고 일치 하는 이름이 클라이언트 액세스 서버 배열의 모든 구성원에 게 암호를 배포 하는이 예제 \* 사서함 \*.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
-
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```
 ## 예 3
 
 이 예제에서는 "Exchange RollAsa" 라는 달 한 번 자동화 된 암호 roll 예약 된 작업을 예약 합니다. 새, 스크립트에서 생성 된 암호와 전체 포리스트에 있는 모든 클라이언트 액세스 서버에 대 한 ASA 자격 증명을 업데이트 됩니다. 예약 된 작업 만들어지지만 스크립트는 실행 되지 않습니다. 예약 된 작업을 실행 하는 경우 무인 설치 모드에서 스크립트를 실행 합니다.
 
-    .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
-
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```
 ## 예 4
 
 이 예제에서는 c a s 01 이라는 클라이언트 액세스 서버 배열에 있는 모든 클라이언트 액세스 서버에 대 한 ASA 자격 증명을 업데이트 합니다. Contoso 도메인에서 Active Directory 컴퓨터 계정 ServiceAc1에서에서 자격 증명을 가져옵니다.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
-
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```
 ## 예 5
 
 이 예제 스크립트를 사용 하 여 새 컴퓨터 또는 되 고 다시 배치 서비스에 서버 배열의 크기를 늘리면 중인 또는 유지 관리 이후 배열 구성원을 다시 소개 하는 컴퓨터에 ASA를 배포 하는 방법을 보여줍니다.

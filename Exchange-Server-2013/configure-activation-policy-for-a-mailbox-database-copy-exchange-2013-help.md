@@ -94,12 +94,11 @@ Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 정품 인증 설정을 확인합니다.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```
 
   - 셸에서 다음 명령을 실행하여 DAG 구성원에 대한 정품 인증 설정을 확인합니다.
     
     ```powershell
-Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-```
-
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```

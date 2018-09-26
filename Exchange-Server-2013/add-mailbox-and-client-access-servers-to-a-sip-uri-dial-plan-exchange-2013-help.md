@@ -38,7 +38,6 @@ Microsoft Lync Server를 배포하는 경우 아웃바운드 통화가 정상적
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 
-
 ## 무슨 작업을 하고 싶으십니까?
 
 ## EAC를 사용하여 사서함 서버를 SIP URI 다이얼 플랜에 추가
@@ -57,7 +56,9 @@ Microsoft Lync Server를 배포하는 경우 아웃바운드 통화가 정상적
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버를 `MySIPDialPlan`이라는 SIP URI 다이얼 플랜에 추가하고 해당 사서함 서버가 새 통화를 수락하지 못하도록 차단합니다. 또한 시작 모드를 이중 모드로 설정하여 사서함 서버가 TCP 및 TLS 요청을 수락할 수 있도록 합니다.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 이 예에서는 `MyMailboxServer`라는 사서함 서버를 `MySIPDialPlan` 및 `MySIPDialPlan2`라는 두 SIP 다이얼 플랜에 추가하고 다음 항목을 설정합니다.
 
@@ -69,7 +70,9 @@ Microsoft Lync Server를 배포하는 경우 아웃바운드 통화가 정상적
 
 <!-- end list -->
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## EAC를 사용하여 클라이언트 액세스 서버를 SIP URI 다이얼 플랜에 추가
 
@@ -93,5 +96,6 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -
 
 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버를 `MySIPDialPlan` 및 `MySIPDialPlan2`라는 두 SIP 다이얼 플랜에 추가하고 서버가 IPv4 및 IPv6 주소를 모두 사용하도록 허용합니다.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
-
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```

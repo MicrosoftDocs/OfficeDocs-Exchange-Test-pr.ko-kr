@@ -177,7 +177,9 @@ New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Datab
 
 이 예에서는 Executives 부서에 있는 모든 사용자와 일치하는 단독 받는 사람 필터 기반 범위를 만듭니다.
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 기본적으로 단독 범위가 생성되면 사용자가 단독 범위를 만들었으며 단독이 아닌 기존 역할 할당에 대한 단독 범위의 영향을 인식하고 있음을 확인해야 합니다. 경고를 표시하지 않으려면 *Force* 스위치를 사용할 수 있습니다. 이 예에서는 앞의 예와 같은 범위를 만들지만 경고를 표시하지 않습니다.
 

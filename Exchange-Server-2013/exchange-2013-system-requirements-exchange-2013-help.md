@@ -277,13 +277,18 @@ Exchange 2013 서버에 권장되는 하드웨어 요구 사항은 설치되는 
 다음 표에는 Exchange 2013에 대해 지원되는 운영 체제가 나열되어 있습니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]   
 > Windows Server Core 모드에서 실행되는 컴퓨터에 Exchange 2013 설치는 지원되지 않습니다. 컴퓨터에서 Windows Server의 전체 설치가 실행 중이어야 합니다. Windows Server Core 모드에서 실행 중인 컴퓨터에 Exchange 2013을 설치하려면 다음 중 하나를 수행하여 서버를 Windows Server 전체 설치로 변환해야 합니다. 
 > <UL>
 > <LI>
 > <P><STRONG>Windows Server 2008 R2</STRONG>&nbsp;&nbsp;&nbsp;Windows Server를 다시 설치하고 <STRONG>전체 설치</STRONG> 옵션을 선택합니다.</P>
 > <LI>
-> <P><STRONG>Windows Server 2012 R2</STRONG> 또는 <STRONG>Windows Server 2012</STRONG>&nbsp;&nbsp;&nbsp;다음 명령을 실행하여 Windows Server Core 모드 서버를 전체 설치로 변환합니다.</P><PRE><CODE>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</CODE></PRE></LI></UL>
+> <P><STRONG>Windows Server 2012 R2</STRONG> 또는 <STRONG>Windows Server 2012</STRONG>&nbsp;&nbsp;&nbsp;다음 명령을 실행하여 Windows Server Core 모드 서버를 전체 설치로 변환합니다.</P>
+
+```powershell
+Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart
+```
+</LI></UL>
 
 
 

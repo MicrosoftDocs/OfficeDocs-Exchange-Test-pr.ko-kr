@@ -49,25 +49,25 @@ _**마지막으로 수정된 항목:** 2013-12-02_
 
 Exchange 2013을 실행 중인 서버에서 상태 집합 및 상태 정보를 보려면 다음 명령 중 하나를 실행합니다.
 
-```
+```powershell
 Get-HealthReport -Identity <ServerName>
 ```
 
-```
+```powershell
 Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
 ```
 
 Exchange 2013을 실행 중인 서버 또는 데이터베이스 가용성 그룹의 상태 집합을 보려면 다음 명령 중 하나를 실행합니다.
 
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
 
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
 
-```
+```powershell
 (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
@@ -91,7 +91,9 @@ Get-HealthReport -Server <ServerName>
 
 Exchange 2013을 실행 중인 서버의 상태 집합과 관련된 프로브, 모니터 및 응답자를 확인하려면 다음 명령을 실행합니다.
 
-    Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```powershell
+Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+```
 
 ## 모니터 및 모니터의 현재 상태 목록 보기
 
@@ -101,5 +103,7 @@ Exchange 2013을 실행 중인 서버의 상태 집합과 관련된 프로브, �
 
 Exchange 2013을 실행 중인 서버의 모니터 및 모니터의 현재 상태 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+```powershell
+Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+```
 
