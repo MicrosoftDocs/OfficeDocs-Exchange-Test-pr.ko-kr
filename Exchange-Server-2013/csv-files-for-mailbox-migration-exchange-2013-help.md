@@ -390,7 +390,9 @@ CSV 파일의 특성 값 EAC 또는 Exchange 관리 셸 마이그레이션 일�
 
 예 한다고 가정 하면 만들어보겠습니다 일괄 처리를 엔터프라이즈 크로스 포리스트 이동 하려면 이동 사용자의 기본 및 다음 Exchange 관리 셸 명령 사용 하 여 대상 포리스트를 보관 사서함에 대 한 Exchange 관리 셸 에서 합니다.
 
-    New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```powershell
+New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```
 
 
 > [!NOTE]
@@ -400,26 +402,32 @@ CSV 파일의 특성 값 EAC 또는 Exchange 관리 셸 마이그레이션 일�
 
 CrossForestBatch1.csv 파일에서 이 마이그레이션 일괄 처리를 위한 부분은 다음과 같습니다.
 
-    EmailAddress,TargetDatabase,TargetArchiveDatabase
-    user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
-    user2@contoso.com,,
-    user3@contoso.com,EXCH-MBX-01,
-    ...
+```powershell
+EmailAddress,TargetDatabase,TargetArchiveDatabase
+user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
+user2@contoso.com,,
+user3@contoso.com,EXCH-MBX-01,
+...
+```
 
 CSV 파일의 값이 기본 마이그레이션 일괄 처리에 대 한 값을 재정의 하 고 대상 포리스트에서 각각 c h X-MBX-01 및 EXCH-MBX-a 01 user1에 대 한 보관 사서함이 이동 합니다. 기본 및 사용자 2에 대 한 보관 사서함 EXCH-MBX-02 또는 EXCH-MBX-03으로 이동 됩니다. C h X-MBX-01에 user3에 대 한 기본 사서함이 이동 하 고 EXCH-MBX-A02 또는 EXCH-MBX-A03으로 보관 사서함이 이동 합니다.
 
 다른 예에 다음 명령을 사용 하 여 Exchange Online 보관 사서함을 이동 하는 하이브리드 배포에는 온 보 딩 원격 이동 마이그레이션에 대 한 일괄 처리를 만들 가정해 보겠습니다.
 
-    New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```powershell
+New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```
 
 단, 이 경우에는 선택한 사용자의 기본 사서함도 이동하려고 합니다. 따라서 OnBoarding1.csv 파일에서 이 마이그레이션 일괄 처리에 해당하는 부분은 다음과 같습니다.
 
-    EmailAddress,MailboxType
-    user1@contoso.com,
-    user2@contoso.com,
-    user3@cloud.contoso.com,PrimaryAndArchive
-    user4@cloud.contoso.com,PrimaryAndArchive
-    ...
+```powershell
+EmailAddress,MailboxType
+user1@contoso.com,
+user2@contoso.com,
+user3@cloud.contoso.com,PrimaryAndArchive
+user4@cloud.contoso.com,PrimaryAndArchive
+...
+```
 
 CSV 파일의 사서함 형식에 대 한 값 명령 일괄 처리 만들기에 *MailboxType* 매개 변수의 값을 재정의 하는 경우 때문에 1 및 사용자 2에 대 한 보관 사서함은 Exchange Online 로 마이그레이션됩니다. 하지만 기본 user3 및 user4에 대 한 보관 사서함 Exchange Online 로 이동 됩니다.
 

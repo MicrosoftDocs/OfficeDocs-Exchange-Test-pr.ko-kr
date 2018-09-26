@@ -63,7 +63,9 @@ Exchange 도구 및 클러스터 관리 도구를 사용 하 여 때는 DAC 모�
 
 Exchange 관리 셸을 사용 하 여만 DAC 모드를 사용할 수 있습니다. 특히, 다음 예제에서와 같이 DAC 모드를 사용 하도록 설정 하려면 [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/ko-kr/library/dd297934\(v=exchg.150\)) cmdlet을 사용할 수 있습니다.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```
 
 위 예제에서는 d a g 2 DAC 모드에 대해 활성화 됩니다.
 

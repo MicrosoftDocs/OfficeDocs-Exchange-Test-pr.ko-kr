@@ -66,8 +66,10 @@ EAC를 사용하여 단일 사용자의 모바일 장치 사서함 정책을 변
 셸에서 **Set-CASMailbox** cmdlet을 사용 하 여 단일 사용자의 모바일 장치 사서함 정책을 변경할 수 있습니다.
 
 1.  셸에서 다음 명령을 실행합니다.
-    
-        Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+
+    ```powershell
+    Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -76,8 +78,10 @@ EAC를 사용하여 단일 사용자의 모바일 장치 사서함 정책을 변
 1.  EAC에서 **받는 사람** \> **사서함**을 클릭하고 특정 받는 사람을 선택합니다. 세부 정보 창에서 **전화 및 음성 기능**으로 스크롤하여 **세부 정보 보기**를 클릭합니다.
 
 2.  셸에서 다음 명령을 실행합니다.
-    
-        Get-CASMailbox -Identity tony@contoso.com 
+
+    ```powershell    
+    Get-CASMailbox -Identity tony@contoso.com 
+    ```
 
 ## 동시에 여러 사용자의 모바일 장치 사서함 정책 변경
 
@@ -102,10 +106,11 @@ EAC를 사용하여 단일 사용자의 모바일 장치 사서함 정책을 변
 셸을 사용하여 필터링된 사용자 집합에 대해 모바일 장치 사서함 정책을 변경할 수 있습니다. 다양한 특성을 기준으로 사용자를 필터링할 수 있습니다.
 
 1.  셸에서 다음 명령을 실행합니다.
-    
-        Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
-         } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
-    
+
+    ```powershell    
+    Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
+     } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ````
 
     > [!NOTE]
     > <CODE>CustomAttribute1</CODE>을 <STRONG>Get-Mailbox</STRONG> 개체의 속성 중 하나로 대체할 수 있습니다. 전체 목록을 보려면 다음을 입력합니다. <CODE>Get-Mailbox username |fl</CODE>.
@@ -120,5 +125,6 @@ EAC를 사용하여 단일 사용자의 모바일 장치 사서함 정책을 변
 
 2.  셸에서 다음 명령을 실행합니다.
     
-        Get-CASMailbox -Identity tony@contoso.com
-
+    ```powershell
+    Get-CASMailbox -Identity tony@contoso.com
+    ```

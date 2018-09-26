@@ -65,7 +65,9 @@ Exchange 조직에는 사서함에서 보내고 받을 수 있는 최대 메시�
 
 이 예에서는 Debra Garcia의 사서함에서 보낸 메시지의 최대 크기를 25MB로, 받은 메시지의 최대 크기를 35MB로 설정합니다.
 
-    Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```powershell
+Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -85,5 +87,7 @@ Exchange 조직에는 사서함에서 보내고 받을 수 있는 최대 메시�
 
 셸에서 다음 명령을 실행합니다.
 
-    Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```powershell
+Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```
 

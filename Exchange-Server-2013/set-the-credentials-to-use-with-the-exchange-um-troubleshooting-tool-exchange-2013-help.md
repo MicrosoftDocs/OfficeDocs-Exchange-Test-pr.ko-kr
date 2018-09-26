@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# Exchange UM 문제해결 도구를 사용 하 여 자격 증명 설정
-
- 
+# Exchange UM 문제해결 도구를 사용 하 여 자격 증명 설정 
 
 _**적용 대상:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
@@ -40,7 +38,7 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
   - UM 문제 해결 도구를 설치합니다. 자세한 단계는 [Exchange UM 문제 해결 도구 설치](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)를 참조하십시오.
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]   
     > 사용할 UM 문제해결 도구 <CODE>SIPClient</CODE> 모드에서를 하는 경우 여러 다른 Office Communications Server 2007 R2 또는 Microsoft Lync Server 요구 사항 및 필수 구성 요소가 있습니다. 자세한 내용은 참조 <A href="https://go.microsoft.com/fwlink/p/?linkid=311961">검사 목록: Office Communications Server 2007 R2 배포 및 Exchange 2010 통합 메시징</A> 또는 <A href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">검사 목록: Lync Server와 Exchange 2013 UM 통합</A>합니다.
 
 
@@ -59,11 +57,13 @@ Microsoft Exchange 2010 UM 문제 해결 도구는 **Test-ExchangeUMCallFlow**�
 
 2.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창의 프롬프트에 다음을 입력하고 Enter 키를 누릅니다.
     
-        $cred=Get-Credential
-
+    ```powershell
+    $cred=Get-Credential
+    ```
 3.  **Windows PowerShell 자격 증명 요청** 창에서 도메인\\사용자 이름과 암호를 입력한 다음 **확인**을 클릭합니다.
 
 4.  **Microsoft Exchange 2010 UM 문제 해결 도구** 창에서 호출 흐름 테스트에 필요한 cmdlet 매개 변수를 지정합니다. 예를 들면 다음과 같습니다.
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
-
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```

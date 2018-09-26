@@ -59,5 +59,6 @@ EAC 또는 셸을 사용하여 특정 Exchange 서비스에 대해 자체 서명
 
 이 예에서는 인증서를 통합 메시징 및 UM 통화 라우터 서비스에 할당합니다.
 
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
-
+```powershell
+Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+```

@@ -55,20 +55,26 @@ DLP 정책에 규칙을 추가하는 방법에 대한 자세한 내용은 [DLP �
 
 DLP는 분류 규칙 패키지를 사용하여 메시지의 중요한 내용을 검색합니다. 문서 지문을 기준으로 분류 규칙 패키지를 만들려면 **New-Fingerprint** 및 **New-DataClassification** cmdlet을 사용합니다. **New-Fingerprint**의 결과는 데이터 분류 규칙 외부에 저장되지 않으므로 **New-Fingerprint**와 **New-DataClassification** 또는 **Set-DataClassification**은 항상 같은 PowerShell 세션에서 실행합니다. 다음 예에서는 C:\\My Documents\\Contoso Employee Template.docx 파일을 기반으로 새 문서 지문을 만듭니다. 새 지문은 같은 PowerShell 세션의 **New-DataClassification** cmdlet에서 사용할 수 있도록 변수로 저장합니다.
 
+```powershell
     $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte
     $Employee_Fingerprint = New-Fingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
+```
 
 C:\\My Documents\\Contoso Customer Information Form.docx 파일의 문서 지문을 사용하는 "Contoso Employee Confidential"이라는 새 데이터 분류 규칙을 만들어 보겠습니다.
 
+```powershell
     $Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte
     $Customer_Fingerprint = New-Fingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
     New-DataClassification -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
+```
 
 이제 **Get-DataClassification** cmdlet을 사용하여 모든 DLP 데이터 분류 규칙 패키지를 사용할 수 있습니다. 이 예에서는 "Contoso Customer Confidential"이 데이터 분류 규칙 패키지 목록에 포함됩니다.
 
 마지막으로 "Contoso Customer Confidential" 데이터 분류 규칙 패키지를 DLP 정책에 추가합니다.
 
+```powershell
     New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
+```
 
 이제 DLP 에이전트가 Contoso Customer Form.docx 문서 지문과 일치하는 문서를 검색합니다.
 

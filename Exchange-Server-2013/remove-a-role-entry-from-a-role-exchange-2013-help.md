@@ -45,11 +45,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 다음 구문을 사용하여 역할에서 전체 관리 역할 항목을 제거할 수 있습니다.
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 이 예에서는 Seattle Server Administrators 역할에서 **Enable-MailUser** cmdlet을 제거합니다.
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351187\(v=exchg.150\))를 참조하십시오.
 
@@ -59,15 +63,21 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할에서 여러 역할 항목을 제거하려면 **Get-ManagementRoleEntry** cmdlet을 사용하여 제거할 역할 항목 목록을 검색해야 합니다. 그런 다음 **Remove-ManagementRoleEntry** cmdlet으로 출력을 파이프해야 합니다. **Get-ManagementRoleEntry** cmdlet와 함께 와일드카드 문자를 사용하여 여러 역할 항목을 일치시킬 수 있습니다. *WhatIf* 스위치를 사용하여 올바른 역할 항목을 제거했는지 확인하는 것이 좋습니다. 다음 구문을 사용합니다.
 
-    Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```
 
 이 예에서는 Seattle Server Administrators 역할에서 journal이라는 단어가 포함된 모든 역할 항목을 제거합니다.
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```
 
 *WhatIf* 스위치를 사용하여 명령을 실행하면 cmdlet은 제거되는 모든 역할 항목 목록을 반환합니다. 목록에 문제가 없어 보이면 *WhatIf* 스위치 없이 명령을 다시 실행하여 역할 항목을 제거합니다.
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd335210\(v=exchg.150\)) 및 [Remove-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351187\(v=exchg.150\))를 참조하십시오.
 
@@ -77,11 +87,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 다음 구문을 사용하여 역할 항목에서 매개 변수를 제거할 수 있습니다.
 
-    Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```
 
 이 예에서는 Seattle Server Administrators 역할의 **Set-Mailbox** 역할 항목에서 *MaxSafeSenders*, *MaxSendSize*, *SecondaryAddress* 및 *UseDatabaseQuotaDefaults* 매개 변수를 제거합니다.
 
-    Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd351162\(v=exchg.150\))를 참조하십시오.
 

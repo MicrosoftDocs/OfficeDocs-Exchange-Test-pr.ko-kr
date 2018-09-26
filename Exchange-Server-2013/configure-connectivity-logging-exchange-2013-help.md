@@ -57,7 +57,9 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 연결 로깅을 구성하려면 다음 명령을 실행합니다.
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+  ```powershell
+  <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+  ```
 
 이 예에서는 Mailbox01이라는 사서함 서버의 전송 서비스에서 다음과 같은 연결 로그 설정을 지정합니다.
 
@@ -71,8 +73,9 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
-
+  ```powershell
+  Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+  ```
 
 > [!NOTE]
 > <UL>
@@ -91,7 +94,8 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
-
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```
 2.  표시된 값이 구성한 값인지 확인합니다.
 

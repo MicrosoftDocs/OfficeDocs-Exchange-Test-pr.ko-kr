@@ -43,7 +43,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 OPR-DG-Finance라는 Outlook 보호 규칙을 제거합니다.
 
-    Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
+```powershell
+Remove-OutlookProtectionRule -Identity "OPR-DG-Finance"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-OutlookProtectionRule](https://technet.microsoft.com/ko-kr/library/dd297961\(v=exchg.150\))을 참조하십시오.
 
@@ -51,7 +53,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 Exchange 조직의 모든 Outlook 보호 규칙을 제거합니다.
 
-    Get-OutlookProtectionRule | Remove-OutlookProtectionRule
+```powershell
+Get-OutlookProtectionRule | Remove-OutlookProtectionRule
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-OutlookProtectionRule](https://technet.microsoft.com/ko-kr/library/dd298004\(v=exchg.150\)) 및 [Remove-OutlookProtectionRule](https://technet.microsoft.com/ko-kr/library/dd297961\(v=exchg.150\))을 참조하십시오.
 

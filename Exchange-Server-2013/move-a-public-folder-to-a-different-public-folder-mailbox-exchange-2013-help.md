@@ -53,7 +53,9 @@ _**마지막으로 수정된 항목:** 2016-11-16_
 
 이 예에서는 공용 폴더 \\CustomerEnagagements에 대해 공용 폴더 사서함 DeveloperReports에서 DeveloperReports01로의 이동 요청을 시작합니다.
 
-    New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```
 
 
 > [!NOTE]
@@ -67,7 +69,9 @@ _**마지막으로 수정된 항목:** 2016-11-16_
 
 이 예에서는 \\Dev 공용 폴더 분기 아래 공용 폴더에 대해 대상 공용 폴더 사서함 DeveloperReports01로의 이동 요청을 시작합니다. 공용 폴더 \\Dev는 이동하지 않습니다.
 
-    New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```
 
 
 > [!NOTE]
@@ -81,15 +85,19 @@ _**마지막으로 수정된 항목:** 2016-11-16_
 
 이 예에서는 `Move-PublicFolderBranch.ps1` 스크립트를 사용하여 공용 폴더 분기를 이동합니다. 이 스크립트는 공용 폴더 \\Dev 및 모든 하위 폴더에 대한 공용 폴더 사서함 DeveloperReports01로의 이동 요청을 시작합니다. 이 스크립트는 스크립트 폴더에 있으며 해당 위치에서 실행해야 합니다.
 
-    CD $env:ExchangeInstallPath\scripts
-    
-    .\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```powershell
+CD $env:ExchangeInstallPath\scripts
+
+.\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 공용 폴더 이동 요청이 정상적으로 수행되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 상태가 `Completed`이면 이동 요청이 정상적으로 수행된 것입니다.
 

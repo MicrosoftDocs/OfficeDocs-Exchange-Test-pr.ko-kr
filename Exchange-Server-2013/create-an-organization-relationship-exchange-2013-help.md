@@ -81,11 +81,15 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+  ```powershell
+  New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+  ```
 
 이 예에서는 **Get-FederationInformation** cmdlet에 제공된 도메인 이름을 사용하여 외부 Exchange 조직 Contoso.com의 구성 정보를 자동으로 검색합니다. 이 방법을 사용하여 조직 관계를 만드는 경우 먼저 **Set-FederatedOrganizationIdentifier** cmdlet을 사용하여 조직 식별자를 만들었는지 확인해야 합니다.
 
-    Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+  ```powershell
+  Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-FederationInformation](https://technet.microsoft.com/ko-kr/library/dd351221\(v=exchg.150\)) 및 [New-OrganizationRelationship](https://technet.microsoft.com/ko-kr/library/ee332357\(v=exchg.150\))을 참조하십시오.
 
@@ -103,7 +107,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+  ```powershell
+  New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-OrganizationRelationship](https://technet.microsoft.com/ko-kr/library/ee332357\(v=exchg.150\))를 참조하십시오.
 
@@ -113,7 +119,9 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 조직 관계가 만들어졌는지 추가로 확인하려면 다음 셸 명령을 실행하여 조직 관계 정보를 검토합니다.
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

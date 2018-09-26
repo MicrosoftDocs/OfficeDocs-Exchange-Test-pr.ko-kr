@@ -40,7 +40,7 @@ _**마지막으로 수정된 항목:** 2013-02-25_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -51,7 +51,9 @@ _**마지막으로 수정된 항목:** 2013-02-25_
 
 이 예에서는 *WhatIf* 스위치를 사용하여 Tony Smith의 사서함을 새로운 데이터베이스 DB01로 이동할 준비가 되었는지 여부와 명령 내에 오류가 있는지 여부를 테스트합니다. *WhatIf* 스위치를 사용하면 사서함에 대해 확인 작업이 수행됩니다. 사서함 이동 준비가 되지 않았으면 오류가 발생합니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -81,7 +83,9 @@ _**마지막으로 수정된 항목:** 2013-02-25_
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -97,7 +101,7 @@ EAC에 로그인하고 다음 단계를 수행합니다.
 
 3.  **이동 구성** 페이지에서 새 배치의 이름을 구성합니다. 보관 사서함에 대해 원하는 옵션과 사서함 데이터베이스 위치를 선택하고 **새로 만들기**를 클릭합니다.
 
-> [!CAUTION]
+> [!CAUTION]  
 > 잘못된 항목 제한을 50개 항목보다 많이 설정하지 않도록 하십시오. 이렇게 설정하는 경우에는 이동이 실패할 수 있습니다. 잘못된 항목 제한을 50개 항목보다 많이 설정하려면 Exchange 관리 셸을 사용하여 –<em>AcceptLargeDataLoss</em> 매개 변수를 true로 설정해야 합니다.
 
 
@@ -105,11 +109,11 @@ EAC에 로그인하고 다음 단계를 수행합니다.
 
 이 예에서는 지정된 .csv 파일의 사서함이 다른 사서함 데이터베이스로 이동되는 로컬 이동을 위한 마이그레이션 일괄 처리를 만듭니다. 이 .csv 파일에는 이동될 각 사서함의 전자 메일 주소가 있는 단일 열이 포함되어 있습니다. 이 열의 헤더 이름은 **EmailAddress**로 지정해야 합니다. 이 예의 마이그레이션 일괄 처리는 **Start-MigrationBatch** cmdlet이나 EAC(Exchange 관리 센터)를 사용하여 수동으로 시작해야 합니다. 또는 *AutoStart* 매개 변수를 사용하여 마이그레이션 일괄 처리를 자동으로 시작할 수 있습니다.
 
-```
+```powershell
 New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
 
-```
+```powershell
 Start-MigrationBatch -Identity LocalMove1
 ```
 
@@ -123,7 +127,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -145,7 +151,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 이 예에서는 Tony Smith의 기본 사서함만 DB01로 이동합니다. 보관 데이터는 이동되지 않습니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))를 참조하십시오.
 
@@ -157,7 +165,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -165,7 +175,7 @@ Start-MigrationBatch -Identity LocalMove1
 
 이 예에서는 마이그레이션 끝점을 구성한 다음 .csv 파일을 사용하여 원본 포리스트에서 대상 포리스트로의 포리스트 간 일괄 이동을 만듭니다.
 
-```
+```powershell
 New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
 
 $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
@@ -188,7 +198,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -206,7 +218,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
 이 예에서는 Tony Smith의 보관 사서함만 DB03으로 이동합니다. 기본 사서함은 이동되지 않습니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -216,7 +230,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -224,7 +240,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
 이 예에서는 Ayla의 기본 사서함 및 보관 사서함을 별도의 데이터베이스로 이동합니다. 기본 데이터베이스는 DB01로 이동되고 보관 사서함은 DB03으로 이동됩니다.
 
-    New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+  ```powershell
+  New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -234,7 +252,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 
@@ -254,7 +274,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
 이 예에서는 Lisa의 기본 사서함을 사서함 데이터베이스 DB01로 이동하고 잘못된 항목 제한을 `100`으로 설정합니다. 잘못된 항목 제한을 더 많이 설정하려면 *AcceptLargeDataLoss* 매개 변수를 사용해야 합니다.
 
-    New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+  ```powershell
+  New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219166\(v=exchg.150\)) 및 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))을 참조하십시오.
 
@@ -264,7 +286,9 @@ New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name Fab
 
   - 셸에서 다음 명령을 실행하여 사서함 이동 정보를 검색합니다.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 자세한 내용은 [Get-MigrationUserStatistics](https://technet.microsoft.com/ko-kr/library/jj218695\(v=exchg.150\))를 참조하십시오.
 

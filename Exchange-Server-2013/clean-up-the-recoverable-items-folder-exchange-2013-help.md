@@ -53,7 +53,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 이 예에서는 Gurinder Singh의 복구 가능한 항목 폴더에서 항목을 영구적으로 삭제 하 고도 검색 사서함 ( Exchange 설치 하 여 만든 검색 사서함)에서 GurinderSingh RecoverableItems 폴더에 항목을 복사 합니다.
 
-    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```powershell
+Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```
 
 
 > [!NOTE]
@@ -92,31 +94,45 @@ _**마지막으로 수정된 항목:** 2015-09-30_
     > <EM>UseDatabaseQuotaDefaults</EM> 매개 변수는 <CODE>$true</CODE>로설정하면 이전 할당량 설정 적용 되지 않습니다. 사서함 데이터베이스에 구성 된 해당 할당량 설정은 개별 사서함 설정 채워져 하는 경우에 적용 됩니다.
 
     
-        Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```powershell
+    Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```
 
 2.  사서함에 대 한 사서함 액세스 설정을 검색 합니다. 나중에 대 한 이러한 설정에 유의 해야 합니다.
     
-        Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```powershell
+    Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```
 
 3.  복구 가능한 항목 폴더의 현재 크기를 검색 합니다. 6 단계에서에서 할당량을 발생 시킬 수 있도록 크기를 note 합니다.
     
-        Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```powershell
+    Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```
 
 4.  현재 관리 되는 폴더 도우미가 작업 주기 구성을 검색 합니다. 나중에 대 한 설정을 확인 해야 합니다.
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+    Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```
 
 5.  이 절차의 기간에 대 한 변경 된 내용이 없습니다를 사서함 데이터를 설정할 수 있는지 확인 하는 사서함에 대 한 클라이언트 액세스를 사용 하지 않도록 설정 합니다.
     
-        Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```powershell
+    Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```
 
 6.  항목이 없는 복구 가능한 항목 폴더에서 삭제 하려면 복구 가능한 항목 할당량을 늘릴 수, 복구 가능한 항목 경고 할당량을 늘릴 수 및 사용자의 복구 가능한 항목 폴더의 현재 크기 보다 큰 값으로 삭제 된 항목 보존 기간을 설정 합니다. 이 원본 위치 유지 또는 소송 보존 상태인 사서함에 대 한 메시지를 유지 하기 위한 특히 중요 합니다. 이러한 설정의을 두번 현재 크기를 발생 시키는 것이 좋습니다.
     
-        Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```
 
 7.  관리 되는 폴더 도우미가 사서함 서버에서을 사용 하지 않도록 설정 합니다.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```
     
 
     > [!IMPORTANT]
@@ -126,7 +142,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 8.  단일 항목 복구를 사용 하지 않도록 설정 하 고 소송 보존으로 설정에서 사서함을 제거 합니다.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```
     
 
     > [!IMPORTANT]
@@ -136,11 +154,15 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 9.  검색 검색 사서함의 폴더를 복구할 수 있는 항목 폴더에서 항목을 복사 하 고 원본 사서함에서 콘텐츠를 삭제 합니다.
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
     지정 된 조건에 맞는 메시지에만 삭제 해야하는 경우 조건을 지정 하려면 *SearchQuery* 매개 변수를 사용 합니다. **제목** 필드에 문자열 "Your bank statement"를 포함 하는 메시지를 삭제 하는이 예제입니다.
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
 
     > [!NOTE]
@@ -150,7 +172,9 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 10. 사서함을 소송 보존에 배치 명 하는 경우 단일 항목 복구가 사용 이전, 이러한 기능을 다시 사용 합니다.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```
     
 
     > [!IMPORTANT]
@@ -176,15 +200,21 @@ _**마지막으로 수정된 항목:** 2015-09-30_
     
     이 예제에서는 사서함을 보존 보류에서 제거 하 고 삭제 된 항목 보존 기간을 14 일의 기본값으로 다시 설정 됩니다 복구 가능한 항목 할당량 사서함 데이터베이스와 동일한 값을 사용 하도록 구성 된 합니다. 1 단계에서에서 적어둔 값이 다르면 하는 경우에 각 값을 지정 하 고 `$false`*UseDatabaseQuotaDefaults* 매개 변수를 설정 하려면 위의 매개 변수를 사용 해야 합니다. 이전에 *RetainDeletedItemsForand UseDatabaseRetentionDefaults* 매개 변수를 다른 값으로 설정 된, 1 단계에서에서 기록한 값도 돌아갈 해야 있습니다.
     
-        Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```
 
 12. 4 단계에서에서 적어둔 값으로 다시 작업 주기를 설정 하 여 관리 되는 폴더 도우미를 사용 합니다. 1 일 작업 주기를 설정 하는이 예제입니다.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```
 
 13. 클라이언트 액세스를 사용 하도록 설정 합니다.
     
-        Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```powershell
+    Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하세요.
 
@@ -210,5 +240,7 @@ _**마지막으로 수정된 항목:** 2015-09-30_
 
 복구 가능한 항목 폴더의 크기를 검색 하는이 예제 및 폴더 및 각 하위 폴더에 하위 폴더와 항목 개수입니다.
 
-    Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```powershell
+Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```
 

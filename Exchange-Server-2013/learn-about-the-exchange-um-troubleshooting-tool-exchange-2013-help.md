@@ -191,7 +191,9 @@ UM 문제 해결 도구는 크로스-프레미스 배포의 구성 문제를 해
 
 다음 예에서는 게이트웨이 모드를 사용하여 Office Communications Server 2007 R2 또는 Lync Server가 포함되지 않은 환경의 통화 흐름을 테스트합니다. 이 예에서는 VoIP 게이트웨이, PBX 및 IP PBX, 통합 메시징 구성 요소 등의 전화 통신 장비를 테스트합니다. 또한 VoIP(Voice over IP) 보안 모드를 보안되지 않음으로 설정하고, IP 주소 10.1.1.1을 다음 홉으로 사용하며, 전환 정보에 내선 번호를 포함합니다.
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 맨 위로 이동
 
@@ -199,8 +201,9 @@ UM 문제 해결 도구는 크로스-프레미스 배포의 구성 문제를 해
 
 SIPClient 모드가 설정된 경우 Office Communications Server 2007 R2 또는 Microsoft Lync Server가 포함된 온-프레미스 또는 크로스-프레미스 배포에서 UM 문제 해결 도구를 사용할 수 있습니다. 다음 예에서는 SIPClient 모드를 사용하며, Office Communications Server 2007 R2 또는 Lync Server 서버가 포함된 환경에서 보안 UM 다이얼 플랜으로 호출 흐름을 테스트합니다. 기본적으로 UM 문제 해결 도구를 실행할 때 이 도구는 컴퓨터에 현재 로그온한 사용자의 자격 증명을 사용합니다. 다음 예를 실행하는 경우 UM 문제 해결 도구를 실행할 때 사용할 자격 증명을 묻는 메시지가 표시됩니다. 자세한 내용은 [Exchange UM 문제해결 도구를 사용 하 여 자격 증명 설정](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)를 참조하십시오.
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
-
+```powershell
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```
 ## UM 문제 해결 도구 설치
 
 UM 문제 해결 도구는 로컬 통합 메시징 서버나 다음 중 하나를 실행하는 다른 64비트 컴퓨터에 설치할 수 있습니다.

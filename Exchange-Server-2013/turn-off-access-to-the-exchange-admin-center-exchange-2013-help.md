@@ -20,16 +20,11 @@ _**마지막으로 수정된 항목:** 2013-05-20_
 보안을 위해 일부 조직에서는 인터넷 사용자에 대해 EAC(Exchange 관리 센터)에 대한 액세스를 제한할 수도 있습니다. 이 절차에서는 EAC에 대한 액세스를 해제하는 방법을 보여줍니다. 이 절차를 통해 사용자가 Outlook Web App의 옵션에 액세스하지 못하게 할 수는 없습니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 이 절차는 이 단계가 적용된 CAS 서버에 대해 EAC 관리자 액세스를 전체적으로 해제합니다. 내부 사용자에 대해 EAC 관리자를 사용하도록 설정하려면 별도의 CAS 서버를 설치하고 다음 명령을 사용하여 내부 요청만 처리하도록 서버를 구성해야 합니다.<BR><CODE>Set-ECPVirtualDirectory -Identity "InternalCAS\ecp (default web site)" -AdminEnabled $True</CODE>
 
-
-
-
-> [!WARNING]
+> [!WARNING]  
 > 이 절차는 온-프레미스 Exchange Server 2013 배포에만 적용됩니다.
-
-
 
 ## 시작하기 전에 알아야 할 내용
 
@@ -51,7 +46,9 @@ _**마지막으로 수정된 항목:** 2013-05-20_
 
 이 예에서는 CAS01 서버의 EAC에 대한 액세스를 해제합니다.
 
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+  ```powershell
+  Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-EcpVirtualDirectory](https://technet.microsoft.com/ko-kr/library/dd297991\(v=exchg.150\))를 참조하십시오.
 

@@ -47,11 +47,15 @@ _**마지막으로 수정된 항목:** 2012-10-16_
 
 전자 메일 주소 정책을 받는 사람 필터를 사용 하 여를 만들려면 다음 구문을 사용 합니다.
 
-    New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```powershell
+New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```
 
 이 예제는 전자 메일 주소의 로컬 부분으로 이루어져 자신의 이름 및 전체 성을의 처음 두 문자가 및 모든 중역에 게 적용 되는 전자 메일 주소 정책을 만듭니다.
 
-    New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+  ```powershell
+  New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+  ```
 
 자세한 구문 및 매개 변수 정보에 대 한 [New-EmailAddressPolicy](https://technet.microsoft.com/ko-kr/library/aa996800\(v=exchg.150\))를 참조 하십시오.
 

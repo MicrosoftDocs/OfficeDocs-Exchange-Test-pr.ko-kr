@@ -67,19 +67,26 @@ POP3에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop3
 
 이 예에서는 서버에 대한 연결 제한을 설정합니다.
 
-    Set-PopSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnections Value
+```
 
 이 예에서는 IP 주소에 대한 연결 제한을 설정합니다.
 
-    Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 이 예에서는 사용자에 대한 연결 제한을 설정합니다.
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
-
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value
+```
 이 예에서는 최대 명령 크기를 설정합니다.
 
-    Set-PopSettings -MaxCommandSize Value
+```powershell
+Set-PopSettings -MaxCommandSize Value
+```
 
 연결 제한을 설정한 후에 POP3 서비스를 다시 시작 해야 합니다. POP3 서비스를 다시 시작 하는 방법에 대 한 정보를 [시작 및 POP3 서비스를 중지 합니다.](start-and-stop-the-pop3-services-exchange-2013-help.md)을 참조 하십시오.
 
@@ -103,7 +110,9 @@ POP3에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop3
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  연결 설정이 올바른지 확인합니다.
 

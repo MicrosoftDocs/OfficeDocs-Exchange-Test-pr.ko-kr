@@ -53,11 +53,15 @@ Exchange 검색과 관련된 추가 관리 작업에 대한 자세한 내용은 
 
 다음 명령은 EXCH01이라는 사서함 데이터베이스에 대해 Exchange 검색을 사용하지 않도록 설정합니다.
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```
 
 다음 명령은 EXCH01이라는 사서함 데이터베이스에 대해 Exchange 검색을 사용하도록 설정합니다.
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\))를 참조하십시오.
 
@@ -89,19 +93,20 @@ Exchange 검색과 관련된 추가 관리 작업에 대한 자세한 내용은 
 
 다음 명령을 실행하여 Microsoft Exchange Search Service를 중지하고 사용하지 않도록 설정합니다.
 
-```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
 ```
 
-```
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Disabled
 ```
 
 다음 명령을 실행하고 Exchange Search Service가 자동으로 시작되도록 구성한 후 이 서비스를 시작합니다.
 
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
-    Set-Service MSExchangeFastSearch -StartupType Automatic
+```powershell
+Start-Service MSExchangeFastSearch
 ```
-```
-    Start-Service MSExchangeFastSearch
-```
+

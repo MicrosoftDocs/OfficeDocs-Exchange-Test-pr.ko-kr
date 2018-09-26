@@ -47,9 +47,7 @@ _**마지막으로 수정된 항목:** 2012-12-10_
 
 2.  목록 보기에서 변경하려는 전자 메일 주소 정책을 선택하고 **편집**![편집 아이콘](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "편집 아이콘")을 클릭합니다.
 
-3.  
-    
-    **전자 메일 주소 정책**에서 **적용 대상**을 클릭하고 설정을 수정합니다.
+3.  **전자 메일 주소 정책**에서 **적용 대상**을 클릭하고 설정을 수정합니다.
 
 ## EAC를 사용하여 전자 메일 주소 정책의 우선 순위 변경
 
@@ -63,8 +61,9 @@ _**마지막으로 수정된 항목:** 2012-12-10_
 
 이 예에서는 현재 조지아 주, 앨라배마 주 및 루이지애나 주에 있는 받는 사람을 포함하는 South East Offices 전자 메일 주소 정책을 편집하여 텍사스 주에 있는 받는 사람도 포함하도록 합니다.
 
-    Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
-
+```powershell
+Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```
 
 > [!NOTE]
 > 전자 메일 주소 정책이 조지아 주, 앨라배마 주 및 루이지애나 주의 받는 사람에게 이미 적용되어 있더라도 매개 변수가 기존 값에 값을 추가하지 않고 덮어쓰기 때문에 매개 변수에 해당하는 받는 사람을 포함해야 합니다.

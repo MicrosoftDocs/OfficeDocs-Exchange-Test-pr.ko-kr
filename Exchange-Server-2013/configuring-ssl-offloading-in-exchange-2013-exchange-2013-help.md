@@ -87,21 +87,29 @@ Outlook Web App에 대해 SSL 오프로딩을 사용하도록 설정하려면 **
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -117,22 +125,30 @@ EAC에 대해 SSL 오프로딩을 사용하도록 설정하려면 **기본 웹 �
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```
         
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeECPAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeECPAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -148,7 +164,9 @@ EAC에 대해 SSL 오프로딩을 사용하도록 설정하려면 **기본 웹 �
     
       - Exchange 관리 셸을 사용하여 **시작**을 클릭하고 **시작** 메뉴에서 **Exchange 관리 셸**을 클릭합니다. 창에 다음을 입력하고 Enter 키를 누릅니다.
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+          ```powershell
+          Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+          ```
 
   - **2단계**   기본적으로 SSL 오프로딩은 사용하도록 설정됩니다. 그러나 SSL 오프로딩이 사용하지 않도록 설정되어 사용하도록 설정하려는 경우에는 EAC 또는 Exchange 관리 셸을 사용할 수 있습니다.
     
@@ -156,7 +174,9 @@ EAC에 대해 SSL 오프로딩을 사용하도록 설정하려면 **기본 웹 �
     
       - 셸을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+          ```powershell
+          Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+          ```
 
   - **3단계**   기본적으로는 **Rpc** 가상 디렉터리에 대해 **SSL 필요**가 선택되지 않지만 SSL을 사용하지 않도록 설정되었음을 확인하려는 경우 IIS(인터넷 정보 서비스) 관리자를 사용할 수 있습니다.
     
@@ -166,15 +186,21 @@ EAC에 대해 SSL 오프로딩을 사용하도록 설정하려면 **기본 웹 �
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -196,21 +222,29 @@ OAB(오프라인 주소록)에 대해 SSL 오프로딩을 사용하도록 설정
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeOABAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeOABAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -226,21 +260,29 @@ EAS(Exchange ActiveSync)에 대해 SSL 오프로딩을 사용하도록 설정하
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+          ```powershell
+          appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+          ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -256,21 +298,29 @@ EWS(Exchange 웹 서비스)에 대해 SSL 오프로딩을 사용하도록 설정
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -286,21 +336,29 @@ EWS(Exchange 웹 서비스)에 대해 SSL 오프로딩을 사용하도록 설정
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -326,21 +384,29 @@ Outlook 클라이언트에 대해 SSL 오프로딩을 사용하도록 설정하�
     
       - 명령줄을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```powershell
+        appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **2단계**   다음 방법 중 하나를 사용하여 올바른 응용 프로그램 풀을 재활용하거나 인터넷 정보 서비스를 다시 시작해야 합니다.
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+        appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - Windows PowerShell cmdlet을 사용하여 다음을 입력하고 Enter 키를 누릅니다.
         
-            IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```powershell
+        IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - 명령줄 사용: **시작** \> **실행**으로 이동하여 **cmd**를 입력하고 Enter 키를 누릅니다. 명령 프롬프트 창에서 다음을 입력하고 Enter 키를 누릅니다.
         
-            iisreset /noforce
+        ```powershell
+        iisreset /noforce
+        ```
     
       - IIS(인터넷 정보 서비스) 관리자 사용: IIS(인터넷 정보 서비스) 관리자의 **작업** 창에서 **다시 시작**을 클릭합니다.
 
@@ -358,16 +424,20 @@ Outlook 클라이언트에 대해 SSL 오프로딩을 사용하도록 설정하�
 
 **Set-WebConfigurationProperty 사용**
 
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
-    iisreset /noforce
+  ```powershell
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
+  ```
+```powershell
+iisreset /noforce
+```
 
 **appcmd 사용**
 
@@ -377,16 +447,20 @@ Outlook 클라이언트에 대해 SSL 오프로딩을 사용하도록 설정하�
 
 
 
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-    iisreset /noforce
+  ```powershell
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+  ```
+```powershell
+iisreset /noforce
+```
 
 맨 위로 이동
 

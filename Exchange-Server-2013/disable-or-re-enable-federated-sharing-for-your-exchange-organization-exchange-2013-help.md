@@ -49,11 +49,15 @@ _**마지막으로 수정된 항목:** 2014-02-17_
 
 이 예에서는 OrgID를 사용하지 않도록 설정하고, Exchange 조직에 대한 페더레이션 및 페더레이션 공유를 사용하지 않도록 설정합니다.
 
-    Set-FederatedOrganizationIdentifier -Enabled $false
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $false
+```
 
 이 예에서는 OrgID를 사용하도록 설정하고, Exchange 조직에 대한 페더레이션 및 페더레이션 공유를 다시 사용하도록 설정합니다.
 
-    Set-FederatedOrganizationIdentifier -Enabled $true
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/ko-kr/library/dd351037\(v=exchg.150\))를 참조하십시오.
 
@@ -63,7 +67,9 @@ _**마지막으로 수정된 항목:** 2014-02-17_
 
 성공 여부를 추가로 알아보려면 다음 셸 명령을 실행하고 *Enabled* 매개 변수에서 반환되는 값을 확인합니다.
 
-    Get-FederatedOrganizationIdentifier
+```powershell
+Get-FederatedOrganizationIdentifier
+```
 
 
 > [!TIP]

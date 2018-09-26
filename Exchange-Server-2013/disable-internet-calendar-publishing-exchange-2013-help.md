@@ -69,11 +69,15 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
 이 예에서는 **인터넷**이라는 전용 인터넷 일정 게시 공유 정책을 사용하지 않도록 설정합니다.
 
-    Set-SharingPolicy -Identity "Internet" -Enabled $false
+```powershell
+Set-SharingPolicy -Identity "Internet" -Enabled $false
+```
 
 이 예에서는 **인터넷**이라는 전용 인터넷 일정 게시 공유 정책을 삭제합니다.
 
-    Remove-SharingPolicy -Identity "Internet"
+```powershell
+Remove-SharingPolicy -Identity "Internet"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-SharingPolicy](https://technet.microsoft.com/ko-kr/library/dd297931\(v=exchg.150\))를 참조하십시오.
 
@@ -81,7 +85,9 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
 공유 정책이 성공적으로 제거되었거나 업데이트되었는지 확인하려면 다음 셸 명령을 실행하여 공유 정책 정보를 확인합니다.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 전용 인터넷 일정 게시 공유 정책을 제거하면 cmdlet 결과에서 정책을 볼 수 없습니다.
 
@@ -105,7 +111,9 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
 이 예에서는 클라이언트 액세스 서버 CAS01에서 Outlook Web App 가상 디렉터리에 대한 익명 기능을 사용하지 않도록 설정합니다.
 
-    Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/bb123515\(v=exchg.150\))를 참조하십시오.
 
@@ -113,7 +121,9 @@ _**마지막으로 수정된 항목:** 2014-02-15_
 
 클라이언트 액세스 서버에서 Outlook Web App 가상 디렉터리에 대한 익명 기능을 사용하지 않도록 설정했는지 확인하려면 다음 셸 명령을 실행하여 *AnonymousFeaturesEnabled* 매개 변수가 `$false`인지 확인합니다.
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-OwaVirtualDirectory](https://technet.microsoft.com/ko-kr/library/aa998588\(v=exchg.150\))를 참조하십시오.
 

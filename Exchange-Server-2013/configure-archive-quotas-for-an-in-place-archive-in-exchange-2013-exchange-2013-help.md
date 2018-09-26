@@ -61,7 +61,9 @@ _**마지막으로 수정된 항목:** 2012-12-04_
 
 이 설정 하는이 예제 Chris Ashton 사서함 보관 할당량 10 기가바이트 (GB)에 사용자는 원본 위치 보관 사서함 꽉 찼음을 경고 메시지를 받지 시간과 더이상 수 있게 됩니다 항목을 이동 하는 보관 합니다. 또한이 예제에서는 보관 경고 할당량 원본 위치 보관 거의 꽉 찼음을 경고 메시지가 받은 사용자는 시간이 며, 9.5 g B로 설정 합니다.
 
-    Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```powershell
+Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -72,6 +74,8 @@ _**마지막으로 수정된 항목:** 2012-12-04_
   - EAC에서 **받는 사람** 에 게 이동 \> 원하는 **사서함** 및 사서함을 선택 합니다. 세부 정보 창의 **원본 위치 보관 함자세히 보기를** 클릭 하 고 보관 사서함의 할당량 설정을 확인 합니다.
 
   - 셸에서 보관 사서함에 대 한 할당량 정보를 표시 하려면 다음 명령을 실행 합니다.
-    
-        Get-Mailbox <Name> | FL Name,Archive*Quota
+
+      ```powershell
+      Get-Mailbox <Name> | FL Name,Archive*Quota
+      ```
 

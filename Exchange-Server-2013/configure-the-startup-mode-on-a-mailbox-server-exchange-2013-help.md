@@ -67,9 +67,13 @@ _**마지막으로 수정된 항목:** 2013-02-15_
 
 이 예에서는 `MyUMServer1`이라는 사서함 서버의 시작 모드를 이중 모드로 설정합니다.
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```
 
 이 예에서는 `MyUMServer1`이라는 사서함 서버의 시작 모드를 TLS 모드로 설정합니다.
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```
 

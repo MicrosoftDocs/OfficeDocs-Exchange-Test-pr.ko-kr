@@ -165,7 +165,9 @@ Exchange 2013의 데이터베이스 복사본과 소송 보존 기능을 사용�
 
 지연된 복사본 재생 동작은 기본적으로 사용하지 않도록 설정되어 있으며 다음 명령을 실행하면 이를 사용하도록 설정할 수 있습니다.
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 재생 동작을 사용하도록 설정한 후 복사본 수가 3개 미만이면 재생이 발생합니다. 다음 DWORD 레지스트리 값을 수정하면 기본값 3을 변경할 수 있습니다.
 
@@ -614,15 +616,21 @@ RedistributeActiveDatabases.ps1 스크립트를 사용하여 활성 사서함 �
 
 이 예는 기본 설정 카운트 목록을 포함하여 DAG에 대한 현재 데이터베이스 배포를 보여 줍니다.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```
 
 이 예는 입력을 요청하지 않고 활성 기본 설정을 사용하여 DAG에서 활성 사서함 데이터베이스 복사본을 다시 배포하고 균형 있게 조정합니다.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```
 
 이 예는 활성 기본 설정을 사용하여 DAG에서 활성 사서함 데이터베이스 복사본을 다시 배포하고 균형 있게 조정하며 배포 요약을 생성합니다.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```powershell
+  RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```
 
 ## 데이터베이스 복사본 모니터링
 

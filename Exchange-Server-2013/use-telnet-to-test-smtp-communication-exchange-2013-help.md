@@ -70,10 +70,12 @@ _**마지막으로 수정된 항목:** 2016-12-09_
     
     이 명령을 실행하면 다음과 같은 출력을 확인할 수 있습니다.
     
+    ```powershell
         fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
         fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
         mail1.fabrikam.com internet address = 192.168.1.10
         mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     XM 레코드와 연결된 모든 호스트 이름 또는 IP 주소를 대상 SMTP 서버로 사용할 수 있습니다. 기본 설정 값이 낮은 항목이 기본 SMTP 서버입니다. 부하 분산 및 내결함성에 대해 여러 MX 레코드와 서로 다른 기본 설정 값을 사용할 수 있습니다.
 
@@ -107,7 +109,12 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 > <LI>
 > <P>텔넷 클라이언트의 명령은 대/소문자를 구분하지 않습니다. 쉽게 구별할 수 있도록 SMTP 명령 동사는 대문자로 표기합니다.</P>
 > <LI>
-> <P>텔넷 세션 내에서 대상 SMTP 서버에 연결한 후에는 백스페이스 키를 사용할 수 없습니다. SMTP 명령을 실수로 잘못 입력한 경우에는 Enter 키를 누른 후에 해당 명령을 다시 입력해야 합니다. 인식할 수 없는 SMTP 명령이나 구문 오류가 있으면 다음과 같은 오류 메시지가 표시됩니다.</P><PRE><CODE>500 5.3.3 Unrecognized command</CODE></PRE></LI></UL>
+> <P>텔넷 세션 내에서 대상 SMTP 서버에 연결한 후에는 백스페이스 키를 사용할 수 없습니다. SMTP 명령을 실수로 잘못 입력한 경우에는 Enter 키를 누른 후에 해당 명령을 다시 입력해야 합니다. 인식할 수 없는 SMTP 명령이나 구문 오류가 있으면 다음과 같은 오류 메시지가 표시됩니다.</P>
+> 
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
+> </LI></UL>
 
 
 
@@ -127,7 +134,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 8.  **DATA**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  **Subject: Test from Contoso**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -137,11 +146,15 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 12. Enter 키를 누르고 마침표(**.**)를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. 대상 SMTP 서버와의 연결을 끊으려면 **QUIT**를 입력한 다음 Enter 키를 누릅니다. 그러면 다음과 같은 응답을 받게 됩니다.
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. 텔넷 세션을 닫으려면 **quit**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -155,13 +168,10 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
   - MAIL FROM:chris@contoso.com
 
-  - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
-    
+  - RCPT TO:kate@fabrikam.com NOTIFY=success,failure    
 
     > [!NOTE]
     > RFC 2821에 정의되어 있는 3자리의 SMTP 응답 코드는 모든 SMTP 메시징 서버에 대해 동일합니다. 일부 SMTP 메시징 서버의 경우에는 텍스트 설명이 약간 다를 수도 있습니다.
-
-
 
 ## Open mail1.fabrikam.com 25
 

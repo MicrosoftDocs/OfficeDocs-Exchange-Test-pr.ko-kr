@@ -43,7 +43,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
   - 모든 사서함 복원 요청의 *Identity* 속성 값을 표시하려면 다음 명령을 실행합니다.
     
-        Get-MailboxRestoreRequest | Format-Table Identity
+    ```powershell
+    Get-MailboxRestoreRequest | Format-Table Identity
+    ```
     
     이 항목의 절차를 수행할 때 이 ID 값을 사용하면 특정 사서함 복원 요청을 지정할 수 있습니다.
 
@@ -63,31 +65,43 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 모든 사서함 복원 요청의 *Identity* 속성 및 해당 값 목록을 표시하려면 다음 명령을 실행합니다.
 
-    Get-MailboxRestoreRequest | Format-Table Identity
+```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
 
 이 ID를 사용하여 특정 사서함 복원 요청에 대한 정보를 가져올 수 있습니다.
 
 이 예에서는 *Identity* 매개 변수를 사용하여 복원 요청 "Pilar Pinilla \\MailboxRestore"의 상태를 반환합니다.
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```
 
 이 예에서는 Pilar Pinilla 대상 사서함에 대한 두 번째 복원 요청과 관련된 모든 정보를 반환합니다.
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```
 
 이 예에서는 원본 데이터베이스 MBD01에서 복원 중인 복원 요청 상태를 반환합니다.
 
-    Get-MailboxRestoreRequest -SourceDatabase MBD01
+```powershell
+Get-MailboxRestoreRequest -SourceDatabase MBD01
+```
 
 이 예에서는 현재 진행 중인 모든 복원 요청을 반환합니다.
 
-    Get-MailboxRestoreRequest -Status InProgress
+```powershell
+Get-MailboxRestoreRequest -Status InProgress
+```
 
 그 밖의 유용한 상태로는 `Queued`, `Completed`, `Suspended` 및 `Failed`가 있습니다.
 
 이 예에서는 일시 중단된 모든 복원 요청을 반환합니다.
 
-    Get-MailboxRestoreRequest -Suspend $true
+```powershell
+Get-MailboxRestoreRequest -Suspend $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829907\(v=exchg.150\))를 참조하십시오.
 
@@ -150,19 +164,27 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예에서는 복원 요청 danp\\MailboxRestore1에 대한 기본 통계를 반환합니다. 반환되는 정보에는 기본적으로 이름, 사서함, 상태 및 완료율이 포함됩니다.
 
-    Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```
 
 이 예에서는 Dan Park의 사서함에 대한 통계를 반환하고 보고서를 .csv 파일로 내보냅니다.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```
 
 이 예에서는 *IncludeReport* 매개 변수를 사용하고 결과를 **Format-List** cmdlet으로 파이프하여 Pilar Pinilla의 사서함에 대한 복원 요청과 관련된 추가 정보를 반환합니다.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List
+``` 
 
 이 예에서는 *IncludeReport* 매개 변수를 사용하여 `Failed` 상태인 모든 복원 요청에 대한 추가 정보를 반환한 다음 해당 정보를 명령이 실행 중인 위치에 있는 AllRestoreReports.txt 파일에 저장합니다.
 
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/ko-kr/library/ff829912\(v=exchg.150\)) 및 [Get-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829907\(v=exchg.150\))을 참조하십시오.
 
@@ -401,11 +423,15 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예에서는 Debra Garcia의 사서함에 대한 복원 요청 MailboxRestore1이 10개의 손상된 사서함 항목을 건너뛰도록 지정합니다.
 
-    Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```powershell
+Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```
 
 이 예에서는 Florence Flipo의 사서함에 대한 복원 요청 MailboxRestore1이 100개의 손상된 사서함 항목을 건너뛰도록 지정합니다. *BadItemLimit* 값이 50보다 크기 때문에 *AcceptLargeDataLoss* 매개 변수가 지정되어야 합니다.
 
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829909\(v=exchg.150\))를 참조하십시오.
 
@@ -421,11 +447,15 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예에서는 Pilar Pinilla의 사서함에 대한 복원 요청 MailboxRestore1을 일시 중단합니다.
 
-    Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 이 예에서는 `InProgress` 상태인 모든 요청을 검색한 후 "Resume after FY13Q2 Maintenance"라는 일시 중단 설명과 함께 출력을 **Suspend-MailboxRestoreRequest** cmdlet으로 파이프하여, 진행 중인 복원 요청을 모두 일시 중단합니다.
 
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```powershell
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829906\(v=exchg.150\))를 참조하십시오.
 
@@ -433,7 +463,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 사서함 복원 요청이 일시 중단되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 *Suspend* 속성의 값이 `True`이면 복원 요청이 일시 중단된 것입니다. *Status* 속성의 값이 `Suspended`인 경우에도 복원 요청이 일시 중단되었음을 나타냅니다.
 
@@ -443,11 +475,15 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예에서는 복원 요청 Pilar Pinilla\\MailboxRestore1을 다시 시작합니다.
 
-    Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 이 예에서는 실패 상태인 모든 복원 요청을 다시 시작합니다.
 
-    Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Resume-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829908\(v=exchg.150\))를 참조하십시오.
 
@@ -455,7 +491,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 복원 요청이 다시 시작되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 *Suspend* 속성의 값이 `False`이면 복원 요청이 다시 시작된 것입니다. *Status* 속성의 값이 `InProgress`인 경우에도 복원 요청이 다시 시작되었음을 나타냅니다.
 
@@ -471,15 +509,21 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 이 예에서는 복원 요청 Pilar Pinilla\\MailboxRestore1을 제거합니다.
 
-    Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 이 예에서는 완료 상태의 모든 복원 요청이 제거됩니다.
 
-    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 이 예에서는 MBXDB01에 저장된 요청에 대해 *RequestGuid* 매개 변수를 사용하여 복원 요청을 취소합니다. *RequestGuid* 및 *RequestQueue* 매개 변수를 필요로 하는 매개 변수 집합을 Microsoft Replication Service 디버깅 목적으로만 사용됩니다. Microsoft 고객 지원 서비스에서 안내하는 경우에만 이 매개 변수 집합을 사용해야 합니다.
 
-    Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```powershell
+Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829910\(v=exchg.150\))를 참조하십시오.
 
@@ -487,7 +531,9 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 사서함 복원 요청이 제거되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```powershell
+Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```
 
 복원 요청이 없다는 내용의 오류가 반환됩니다.
 

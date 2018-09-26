@@ -55,5 +55,7 @@ Microsoft MMC(Microsoft Management Console)에서 서비스 스냅인을 사용�
 
 2.  **열기** 상자에 다음 명령을 입력하고 Enter 키를 누릅니다.
     
-        net stop MSExchangeUM
+    ```powershell
+    net stop MSExchangeUM
+    ```
 

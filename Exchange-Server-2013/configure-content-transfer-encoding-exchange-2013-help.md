@@ -107,21 +107,29 @@ _**마지막으로 수정된 항목:** 2015-03-09_
 
 조직에 대한 콘텐츠 전송 인코딩 방법을 구성하려면 다음 명령을 실행합니다.
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```
 
 예를 들어 콘텐츠 전송 인코딩 방법을 Base64로 설정하려면 다음 명령을 실행합니다.
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```
 
 ## 셸을 사용하여 원격 도메인에 대한 콘텐츠 전송 인코딩 방법 구성
 
 원격 도메인의 모든 받는 사람에 대한 콘텐츠 전송 인코딩 방법을 구성하려면 다음 명령을 실행합니다.
 
-    Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```powershell
+Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```
 
 예를 들어 콘텐츠 전송 인코딩 방법을 Base64로 설정하려면 다음 명령을 실행합니다.
 
-    Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```powershell
+Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

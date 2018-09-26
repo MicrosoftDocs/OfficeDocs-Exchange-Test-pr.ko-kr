@@ -21,11 +21,14 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 즉, 원격 SMTP 메시징 서버가 수신 커넥터에 연결된 후에 받는 기본 응답입니다.
 
-    220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
-
+```powershell
+220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```
 수신 커넥터에서 SMTP 배너의 사용자 지정 값을 지정할 경우 해당 SMTP 수신 커넥터에 연결되는 원격 SMTP 메시징 서버는 다음 응답을 받습니다.
 
-    220 <Banner Text>
+```powershell
+220 <Banner Text>
+```
 
 서버 이름과 메시징 서버 소프트웨어가 SMTP 배너를 통해 공개되지 않도록 인터넷 연결 SMTP 수신 커넥터의 SMTP 배너를 수정할 수 있습니다.
 
@@ -42,7 +45,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]   
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -51,15 +54,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 명령을 실행합니다.
 
-    Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```powershell
+Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```
 
 이 예에서는 From the Internet이라는 기존 수신 커넥터의 SMTP 배너를 수정하여 SMTP 배너에 `220 Contoso Corporation`이 표시되도록 합니다.
 
-    Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```
 
 이 예에서는 From the Internet이라는 수신 커넥터의 사용자 지정 SMTP 배너를 제거합니다. 그러면 SMTP 배너가 기본값으로 돌아갑니다.
 
-    Set-ReceiveConnector "From the Internet" -Banner $null
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner $null
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -67,7 +76,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  수신 커넥터에 액세스할 수 있는 컴퓨터에서 텔넷 클라이언트를 열고 다음 명령을 실행합니다.
     
-        open <Connector FQDN or IP address> <Port>
+    ```powershell
+    open <Connector FQDN or IP address> <Port>
+    ```
 
 2.  수신 커넥터의 응답에 구성한 SMTP 배너가 포함되어 있는지 확인합니다.
 

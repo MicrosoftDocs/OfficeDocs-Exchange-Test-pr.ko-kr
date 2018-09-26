@@ -45,7 +45,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 명령을 실행합니다.
 
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버의 다음과 같은 라우팅 테이블 로그 설정을 지정합니다.
 
@@ -57,7 +59,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```
 
 
 > [!NOTE]
@@ -71,7 +75,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -79,21 +85,29 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  명령 프롬프트 창에서 다음 명령을 실행하여 EdgeTransport.exe.config 응용 프로그램 구성 파일을 메모장에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  `<appSettings>` 섹션의 다음 키를 수정합니다.
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```
     
     예를 들어 라우팅 테이블의 자동 새로 고치기 간격을 10시간으로 변경하려면 다음 값을 사용합니다.
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```
 
 3.  작업을 마친 후 저장하고 EdgeTransport.exe.config 파일을 닫습니다.
 
 4.  다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작합니다.
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

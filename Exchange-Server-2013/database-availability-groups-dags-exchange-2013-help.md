@@ -61,17 +61,21 @@ DAG가 만들어질 때 DAG에는 고유한 이름이 지정되고, 하나 이�
 
 다음 예에서는 셸을 사용하여 세 개의 서버를 포함할 클러스터 관리 액세스 포인트가 포함된 DAG를 만드는 방법을 보여 줍니다. 두 개의 서버(EX1 및 EX2)는 동일한 서브넷(10.0.0.0)에 있고 세 번째 서버(EX3)는 다른 서브넷(192.168.0.0)에 있습니다.
 
+  ```powershell
     New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+  ```
 
 클러스터 관리 액세스 포인트가 없는 DAG를 만드는 명령도 매우 비슷합니다.
 
+  ```powershell
     New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+  ```
 
 DAG1의 클러스터는 EX1이 DAG에 추가될 때 만들어집니다. 클러스터를 만드는 동안 **Add-DatabaseAvailabilityGroupServer** cmdlet은 DAG에 구성된 IP 주소를 검색하고 EX1에서 발견된 서브넷과 일치하지 않는 IP 주소를 무시합니다. 위의 첫 번째 예에서 DAG1의 클러스터는 IP 주소 10.0.0.5를 사용하여 만들어지고 192.168.0.5는 무시됩니다. 위의 두 번째 예에서 *DatabaseAvailabilityGroupIPAddresses* 매개 변수의 값은 관리 액세스 포인트가 없는 DAG에 대해 장애 조치 클러스터를 만드는 작업을 지시합니다. 따라서 클러스터는 핵심 클러스터 리소스 그룹의 IP 주소 또는 네트워크 이름 리소스를 사용하여 만들어집니다.
 

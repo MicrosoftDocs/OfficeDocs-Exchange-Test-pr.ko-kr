@@ -67,11 +67,15 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 범위가 지정되지 않은 최상위 역할에는 상위 역할이 없습니다. 상위가 없는 역할을 만들려면 *UnscopedTopLevel* 스위치를 지정해야 합니다. 다음 구문을 사용하여 새 역할을 만듭니다.
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 이 예제에서는 IT 스크립트의 범위가 지정되지 않은 최상위 역할을 만듭니다.
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 역할을 만든 후 스크립트나 비 Exchange cmdlet을 추가할 때까지는 역할이 비어 있습니다.
 
@@ -87,11 +91,15 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 적절한 Exchange 2013 서버에 스크립트를 복사하고 사용해야 할 스크립트 매개 변수를 결정한 후 다음 구문을 사용하여 역할 항목을 만듭니다.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 이 예에서는 *Name* 및 *Location* 매개 변수를 사용하여 IT Scripts 역할에 BulkProvisionUsers.ps1 스크립트를 추가합니다.
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -109,11 +117,15 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 적절한 Windows 서버에 cmdlet이 포함된 Exchange 2013 Powershell 스냅인을 설치하고 사용해야 할 cmdlet 매개 변수를 결정했으면 다음 구문을 사용하여 역할 항목을 만듭니다.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 이 예에서는 *Database* 및 *Size* 매개 변수를 사용하여 Widget cmdlet 역할에 Contoso.Admin.Cmdlets 스냅인의 **Set-WidgetConfiguration** cmdlet을 추가합니다.
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -155,11 +167,15 @@ _**마지막으로 수정된 항목:** 2014-06-09_
 
 다음 구문을 사용하여 새 역할을 만듭니다.
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 이 예에서는 IT Global Scripts 역할과 해당 관리 역할 항목을 Diagnostic IT Scripts 역할에 복사합니다.
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd298073\(v=exchg.150\))를 참조하십시오.
 

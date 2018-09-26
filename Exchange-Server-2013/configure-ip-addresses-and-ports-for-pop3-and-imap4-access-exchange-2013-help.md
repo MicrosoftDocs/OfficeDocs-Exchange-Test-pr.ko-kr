@@ -73,11 +73,15 @@ POP3에 대해 IP 주소 및 포트 설정을 지정한 후에는 POP3 서비스
 
 이 예에서는 SSL(Secure Sockets Layer)을 지원하는 POP3를 통해 Exchange와 통신하는 데 사용할 IP 주소와 포트를 설정합니다.
 
-    Set-PopSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-PopSettings -SSLBindings: IPaddress:Port
+```
 
 이 예에서는 암호화 또는 TLS(전송 계층 보안) 암호화를 지원하지 않는 POP3를 통해 Exchange와 통신하는 데 사용할 IP 주소와 포트를 설정합니다.
 
-    Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```powershell
+Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```
 
 POP3에 대해 IP 주소 및 포트 설정을 지정한 후에는 POP3 서비스를 다시 시작해야 설정이 적용됩니다. POP3 서비스를 다시 시작하는 방법에 대한 자세한 내용은 [시작 및 POP3 서비스를 중지 합니다.](start-and-stop-the-pop3-services-exchange-2013-help.md)을 참조하십시오.
 
@@ -89,7 +93,9 @@ POP3에 대해 IP 주소 및 포트 설정을 지정한 후에는 POP3 서비스
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  *UnencryptedOrTLSBindings* 및 *SSLBindings* 설정이 올바른지 확인합니다.
 
@@ -123,11 +129,15 @@ IMAP4에 대해 IP 주소 및 포트 설정을 지정한 후에는 IMAP4 서비�
 
 이 예에서는 IMAP4를 통해 Exchange와 통신하는 데 사용할 IP 주소와 포트를 설정합니다.
 
-    Set-ImapSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-ImapSettings -SSLBindings: IPaddress:Port
+```
 
 이 예에서는 암호화 또는 TLS 암호화를 지원하지 않는 IMAP4를 통해 Exchange와 통신하는 데 사용할 IP 주소와 포트를 설정합니다.
 
-    Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```powershell
+Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port
+``` 
 
 IMAP4에 대해 IP 주소 및 포트 설정을 지정한 후에는 IMAP4 서비스를 다시 시작해야 설정이 적용됩니다. IMAP4 서비스를 다시 시작하는 방법에 대한 자세한 내용은 [시작 및 IMAP4 서비스를 중지 합니다.](start-and-stop-the-imap4-services-exchange-2013-help.md)을 참조하십시오.
 
@@ -139,7 +149,9 @@ IMAP4에 대해 IP 주소 및 포트 설정을 지정한 후에는 IMAP4 서비�
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  *UnencryptedOrTLSBindings* 및 *SSLBindings* 설정이 올바른지 확인합니다.
 

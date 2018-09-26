@@ -95,7 +95,7 @@ _**마지막으로 수정된 항목:** 2014-06-19_
     > [!IMPORTANT]
     > UAC(사용자 액세스 제어)를 사용하도록 설정한 경우 관리자 권한 명령 프롬프트에서 <CODE>Setup.exe</CODE>를 실행해야 합니다.
 
-    
+    ```PowerShell
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 
         [/OrganizationName:<name for the new Exchange organization>] 
@@ -110,6 +110,7 @@ _**마지막으로 수정된 항목:** 2014-06-19_
         [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
         [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
         [/TenantOrganizationConfig:<path>]
+    ```
 
 4.  Exchange 2013을 설치할 컴퓨터로 설치 파일이 로컬로 복사됩니다.
 

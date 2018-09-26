@@ -93,7 +93,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
 
 4.  마이그레이션 기능을 <strong>PAW</strong> Office 365 테 넌 트를 사용 하도록 설정 해야 합니다. 이 확인 하려면 Exchange Online PowerShell에서 다음 명령을 실행 합니다.
     
-        Get-MigrationConfig
+    ```powershell
+    Get-MigrationConfig
+    ```
     
     <strong>기능</strong> 에서 출력 <strong>PAW</strong>, 다음 기능을 사용 하도록 목록과를 계속 받을 수 있습니다 하는 경우 *3 단계:.csv 파일을 만들고*합니다.
     
@@ -109,13 +111,17 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
 
   - <strong>TargetGroupMailbox</strong>합니다. Office 365에서 대상 그룹의 SMTP 주소입니다. 기본 SMTP 주소를 참조 하려면 다음 명령을 실행할 수 있습니다.
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```
 
 예제.csv의 경우:
 
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```powershell
+"FolderPath","TargetGroupMailbox"
+"\Sales","sales@contoso.onmicrosoft.com"
+"\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```
 
 참고 Office 365에서 단일 그룹으로 메일 폴더와 일정 폴더를 병합할 수 있습니다. 그러나 그룹에 병합 하는 여러 공용 폴더의 다른 시나리오는 단일 마이그레이션 일괄 처리 내에서 지원 되지 않습니다. 동일한 Office 365 그룹에 여러 공용 폴더를 매핑할 필요가 사람에 게에 연속적으로 실행 되어야 하는 다양 한 마이그레이션 일괄 처리를 실행 하 여이 수행할 수 있습니다. 각 마이그레이션 일괄 처리의 최대 500 개의 항목을 가질 수 있습니다.
 
@@ -129,38 +135,54 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
     
     1.  다음 명령을 입력 하 여 공용 폴더 관리자 역할의 구성원 인 사용자의 계정에 대 한 <strong>LegacyExchangeDN</strong> 을 찾습니다. Note 동일한 사용자의 자격 증명을 나중에이 절차의 3 단계에서 필요한 것입니다.
         
-            Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```powershell
+        Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```
     
     2.  다음 명령을 입력 하 여 공용 폴더 데이터베이스가 포함 된 모든 사서함 서버의 LegacyExchangeDN을 찾습니다.
         
-            Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```powershell
+        Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```
     
     3.  외부에서 Outlook 사용 호스트의 Fully-Qualified 도메인 이름 (FQDN)을 찾습니다. 외부 호스트 이름입니다. 외부에서 Outlook 사용의 여러 인스턴스를 사용 하는 경우에 마이그레이션 끝점에 가장 가까운 하나 또는 Exchange Server 2010 조직에서 공용 폴더 복제본에 가장 가까운 한 인스턴스를 선택 하는 것이 좋습니다. 다음 명령은 외부에서 Outlook 사용의 모든 인스턴스를 찾을 수 있습니다.:
         
-            Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```powershell
+        Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```
 
 2.  Exchange Online PowerShell 다음 명령을 실행 하는 1 단계에서 위의 반환 된 정보를 사용 합니다. 이 명령에서 변수 1 단계에서 값이 됩니다.
     
     1.  변수 `$Source_Credential`으로 Exchange 2010 환경에서 관리자 권한이 있는 사용자의 자격 증명을 전달 합니다. 결국을 실행 하면 마이그레이션 요청 Exchange 온라인을 통해 콘텐츠를 복사 하기 위해 외부에서 Outlook 사용을 통해 Exchange 2010 서버에 액세스를이 자격 증명을 사용 합니다.
         
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
+        ```powershell
+        $Source_Credential = Get-Credential
+        <source_domain>\<PublicFolder_Administrator_Account>
+        ```
     
     2.  1a 단계에서에서 위의 발견 하 고 변수 `$Source_RemoteMailboxLegacyDN`으로 해당 값을 전달 하는 레거시 Exchange 서버에서 마이그레이션 사용자의 ExchangeLegacyDN을 사용 합니다.
         
-            $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```powershell
+        $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```
     
     3.  위의 1b 단계에서에서 위의 발견 하 고 변수 `$Source_RemotePublicFolderServerLegacyDN`으로 해당 값을 전달 하는 공용 폴더 서버의 ExchangeLegacyDN을 사용 합니다.
         
-            $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
-    
+        ```powershell
+        $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```
+            
     4.  외부 호스트 이름을의 외부에서 Outlook 사용 위의 1 c 단계에서 반환 된 및 변수 `$Source_OutlookAnywhereExternalHostName`으로 해당 값을 전달 합니다.
         
-            $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```powershell
+        $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```
 
 3.  Exchange Online PowerShell 마이그레이션 끝점을 만들려면 다음 명령을 실행 합니다.
     
-        $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```powershell
+    $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```
 
 4.  새 공용 폴더-Office 365 그룹 마이그레이션 일괄 처리를 만들려면 다음 명령을 실행 합니다. 이 명령 합니다.
     
@@ -174,11 +196,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
     
     <!-- end list -->
     
-        New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```powershell
+    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```
 
 5.  Exchange Online PowerShell 에서 다음 명령을 실행 하 여 마이그레이션을 시작 합니다. Note이 단계는 4 단계에서 위의 일괄 처리를 만드는 동안 `-AutoStart` 매개 변수는 사용 되지 않았습니다 하는 경우에 필요 합니다.
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 마이그레이션 일괄 처리를 Exchange Online PowerShell 에서 `New-MigrationBatch` cmdlet을 사용 하 여 만들 필요가 하는 동안 마이그레이션 진행 상황을 볼 하 고 Exchange 관리 센터 에서 관리할 수 있습니다. 또한 [Get-MigrationBatch](https://technet.microsoft.com/ko-kr/library/jj219164\(v=exchg.150\)) 및 [Get-MigrationUser](https://technet.microsoft.com/ko-kr/library/jj218702\(v=exchg.150\)) cmdlet을 실행 하 여 마이그레이션의 진행률을 볼 수 있습니다. `New-MigrationBatch` cmdlet은 각 Office 365 그룹 사서함에 대 한 마이그레이션 사용자를 시작 하 고 사서함 마이그레이션 페이지를 사용 하 여 이러한 요청의 상태를 볼 수 있습니다.
 
@@ -208,7 +234,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2018-04-30_
 
 <!-- end list -->
 
-    .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 사용자가 Office 365에서 그룹에 추가 된, 해당를 사용 하 여 시작할 수 있습니다.
 
@@ -234,13 +262,17 @@ Office 365 그룹에는 대부분의 공용 폴더의 데이터는 마이그레�
 
 <!-- end list -->
 
-    .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 ## 7 단계: 공용 폴더를 Office 365 그룹 마이그레이션 완료
 
 수행한 후 공용 폴더 읽기 전용, 마이그레이션을 다시 수행 해야 합니다. 데이터의 마지막 증분 복사본에 대 한 필요한입니다. 마이그레이션을 다시을 실행 하려면 먼저 다음 명령을 실행 하 여 수행할 수 있는 기존 일괄 처리를 제거 해야 합니다.
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 다음에 다음 명령을 실행 하 여 같은.csv 파일이 포함 된 새 일괄 처리를 만듭니다. 이 명령 합니다.
 
@@ -252,11 +284,15 @@ Office 365 그룹에는 대부분의 공용 폴더의 데이터는 마이그레�
 
 <!-- end list -->
 
-    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```powershell
+New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```
 
 새 일괄 처리를 만든 후에 Exchange Online PowerShell 에서 다음 명령을 실행 하 여 마이그레이션을 시작 합니다. 이 단계는 `-AutoStart` 매개 변수는 이전 명령에서 사용 되지 않은 경우에 필요한만 note 합니다.
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 (사용 하면 일괄 처리 상태가 <strong>완료 됨</strong> )이이 단계를 완료 한 후 Office 365 그룹에 모든 데이터를 복사 된 있는지 확인 합니다. 이때 그룹 환경에 만족할 제공 마이그레이션된 공용 폴더를 Exchange 2010 환경에서에서 삭제를 시작할 수 있습니다.
 
@@ -436,7 +472,9 @@ Exchange 2010 서버에서 다음 명령을 실행 합니다. 이 명령 합니�
 
 <!-- end list -->
 
-    .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 Office 365 그룹 또는 그룹에 수행 되는 모든 편집 작업에 추가 된 항목이 공용 폴더에 다시 복사 되지 않습니다에 유의 합니다. 따라서 데이터가 손실 될, 공용 폴더 그룹 동안 추가 된 새 데이터를 가정 합니다.
 

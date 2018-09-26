@@ -59,11 +59,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 특정 역할 중 하나를 역할 항목의 목록을 보려면 다음 구문을 사용 합니다.
 
-    Get-ManagementRoleEntry <role name>\*
+```powershell
+Get-ManagementRoleEntry <role name>\*
+```
 
 이 예제에서는 `Recipient Administrators` 역할에 대해 모든 역할 항목을 검색 합니다.
 
-    Get-ManagementRole "Recipient Administrators\*"
+```powershell
+Get-ManagementRole "Recipient Administrators\*"
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd335210\(v=exchg.150\))를 참조 하십시오.
 
@@ -71,11 +75,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 특정 역할 항목을 포함 하는 모든 역할의 목록을 보려면 다음 구문을 사용 합니다.
 
-    Get-ManagementRoleEntry *\<cmdlet name>
+```powershell
+Get-ManagementRoleEntry *\<cmdlet name>
+```
 
 이 예에서는 **Set-Mailbox** 역할 항목을 포함 하는 모든 역할을 검색 합니다.
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd335210\(v=exchg.150\))를 참조 하십시오.
 
@@ -83,11 +91,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이름이 비슷한 cmdlet을 포함 하는 대상으로 지정 된 역할의 목록을 보려면 다음 구문을 사용 합니다.
 
-    Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```powershell
+Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```
 
 이 예제에서는 이름에 문자열 `Tier 1` 를 포함 하는 역할에 있는 `Mailbox` 문자열 포함 하는 역할 항목의 목록을 반환 합니다.
 
-    Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd335210\(v=exchg.150\))를 참조 하십시오.
 
@@ -95,11 +107,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 단일 역할 항목의 세부 정보를 보려면 다음 구문을 사용 합니다.
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 이 예제에서는 `Recipient Administrators` 역할에서 **Set-Mailbox** 역할 항목의 세부 정보를 검색합니다.
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 보면 역할 항목 **Format-List** cmdlet을 사용 하 여 목록에 너무 많은 매개 변수가 있으면이 항목 뒷부분에 나오는 "단일 역할 항목에서 매개 변수 보기"를 참조 합니다.
 
@@ -111,11 +127,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 역할 항목 개체의 **Parameters** 속성에 저장 된 매개 변수를 보려면 다음 구문을 사용 합니다.
 
-    (Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```powershell
+(Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```
 
 편지 병합 받는 사람 역할에 **Set-Mailbox** 역할 항목에서 매개 변수를 검색 하는이 예제입니다.
 
-    (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```powershell
+(Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Get-ManagementRoleEntry](https://technet.microsoft.com/ko-kr/library/dd335210\(v=exchg.150\))를 참조 하십시오.
 

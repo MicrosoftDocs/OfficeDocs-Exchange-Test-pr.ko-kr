@@ -33,7 +33,9 @@ Exchange 2013 설치 컴퓨터에 설치를 계속 하기 전에 **장애 조치
 
 2.  필요한 Windows 기능을 설치 하려면 다음 명령을 실행 합니다.
     
-        Install-WindowsFeature RSAT-Clustering-CmdInterface
+    ```powershell
+    Install-WindowsFeature RSAT-Clustering-CmdInterface
+    ```
 
 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), 또는 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)
 

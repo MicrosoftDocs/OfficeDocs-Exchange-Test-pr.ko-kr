@@ -43,11 +43,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 콘텐츠 필터링을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -Enabled $false
+```powershell
+Set-ContentFilterConfig -Enabled $false
+```
 
 콘텐츠 필터링을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -Enabled $true
+```powershell
+Set-ContentFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -61,7 +65,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  표시된 *Enabled* 속성의 값을 확인합니다.
 
@@ -71,11 +77,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 외부 메시지에 콘텐츠 필터링을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -ExternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $false
+```
 
 외부 메시지에 콘텐츠 필터링을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -ExternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -83,7 +93,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```
 
 2.  표시된 *ExternalMailEnabled* 속성의 값을 확인합니다.
 
@@ -93,11 +105,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 내부 메시지에 콘텐츠 필터링을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -InternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $true
+```
 
 내부 메시지에 콘텐츠 필터링을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -InternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -105,7 +121,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```
 
 2.  표시된 *InternalMailEnabled* 속성의 값을 확인합니다.
 
@@ -113,7 +131,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 이 예에서는 다음 콘텐츠 필터링 예외를 구성합니다.
 
@@ -125,11 +145,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+```powershell
+Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+```
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 이 예에서는 다음 콘텐츠 필터링 예외를 구성합니다.
 
@@ -143,7 +167,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+```powershell
+Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -151,7 +177,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List Bypassed*
+    ```powershell
+    Get-ContentFilterConfig | Format-List Bypassed*
+    ```
 
 2.  표시된 값이 지정한 설정과 일치하는지 확인합니다.
 
@@ -159,23 +187,33 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 허용되고 차단되는 단어와 구를 추가하려면 다음 명령을 실행합니다.
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase <Phrase> -Influence BadWord -Phrase <Phrase>
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase <Phrase> -Influence BadWord -Phrase <Phrase>
+```
 
 이 예에서는 "customer feedback"이라는 구가 포함된 메시지를 모두 허용합니다.
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```
 
 이 예에서는 "stock tip"이라는 구가 포함된 메시지를 모두 차단합니다.
 
-    Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```powershell
+Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```
 
 허용되거나 차단되는 구를 제거하려면 다음 명령을 실행합니다.
 
-    Remove-ContentFilterPhrase -Phrase <Phrase>
+```powershell
+Remove-ContentFilterPhrase -Phrase <Phrase>
+```
 
 이 예에서는 "stock tip"이라는 구를 제거합니다.
 
-    Remove-ContentFilterPhrase -Phrase "stock tip"
+```powershell
+Remove-ContentFilterPhrase -Phrase "stock tip"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -183,7 +221,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```powershell
+    Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```
 
 2.  표시된 값이 지정한 설정과 일치하는지 확인합니다.
 
@@ -191,7 +231,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 SCL(스팸 지수) 임계값과 작업을 구성하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
+```powershell
+Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
+```
 
 
 > [!NOTE]
@@ -209,7 +251,9 @@ SCL(스팸 지수) 임계값과 작업을 구성하려면 다음 명령을 실�
 
 <!-- end list -->
 
-    Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```powershell
+Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -217,7 +261,9 @@ SCL 임계값을 성공적으로 구성했는지 확인하려면 다음을 수�
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List SCL*
+    ```powershell
+    Get-ContentFilterConfig | Format-List SCL*
+    ```
 
 2.  표시된 값이 지정한 설정과 일치하는지 확인합니다.
 
@@ -227,11 +273,15 @@ SCL 임계값을 성공적으로 구성했는지 확인하려면 다음을 수�
 
 사용자 지정 거부 응답을 구성하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```powershell
+Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```
 
 이 예에서는 사용자 지정된 거부 응답을 보내도록 콘텐츠 필터 에이전트를 구성합니다.
 
-    Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+```powershell
+Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -239,7 +289,9 @@ SCL 임계값을 성공적으로 구성했는지 확인하려면 다음을 수�
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List *Reject*
+    ```powershell
+    Get-ContentFilterConfig | Format-List *Reject*
+    ```
 
 2.  표시된 값이 지정한 설정과 일치하는지 확인합니다.
 
@@ -249,11 +301,15 @@ SCL 임계값을 성공적으로 구성했는지 확인하려면 다음을 수�
 
 Outlook 전자 메일 소인을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```
 
 Outlook 전자 메일 소인을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -261,7 +317,9 @@ Outlook 전자 메일 소인을 성공적으로 구성했는지 확인하려면 
 
 1.  다음 명령을 실행합니다.
     
-        Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```
 
 2.  표시된 값이 지정한 설정과 일치하는지 확인합니다.
 

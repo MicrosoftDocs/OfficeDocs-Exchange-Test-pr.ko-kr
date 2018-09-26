@@ -41,7 +41,9 @@ UM 언어와 관련된 추가 작업에 대한 자세한 내용은 [UM 언어, �
 
 명령 프롬프트에서 다음 명령을 실행합니다.
 
-    Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```powershell
+Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```
 
 이전 명령에서 *\<UmLanguagePackName\>*은 UM 언어 팩의 이름입니다(예: fr-FR).
 

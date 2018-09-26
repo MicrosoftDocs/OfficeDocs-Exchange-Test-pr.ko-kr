@@ -55,7 +55,9 @@ Setup.exe 명령을 사용 하 여 또는 [Exchange Server 2013 UM 언어팩](ht
 
 이 예에서는 setup.exe를 사용하여 일본어(ja-JP) UM 언어 팩을 설치합니다.
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 2단계: Exchange 2013 시스템 사서함으로 Exchange 2007 사용자 지정 인사말, 알림, 메뉴, 음성 안내 이동
 
@@ -65,11 +67,15 @@ Setup.exe 명령을 사용 하 여 또는 [Exchange Server 2013 UM 언어팩](ht
 
 이 명령은 모든 시스템 사서함 목록을 반환합니다.
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 이 명령은 시스템 사서함 및 시스템 사서함의 개별 속성이나 설정 목록을 반환합니다.
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 Exchange 2007의 사용자 지정 인사말, 알림, 메뉴 및 음성 안내를 Exchange 2013으로 가지고 오는 경우 MigrateUMCustomPrompts.ps1 스크립트를 사용해야 합니다. EAC를 사용하여 사용자 지정 인사말, 알림, 메뉴 및 음성 안내를 가져올 수는 없습니다. MigrateUMCustomPrompts.ps1 스크립트는 모든 Exchange Server 2007 UM 사용자 지정 인사말, 알림, 메뉴 및 음성 안내의 복사본을 Exchange 2013 UM으로 마이그레이션합니다. 기본적으로 MigrateUMCustomPrompts.ps1 스크립트는 Exchange 2013 사서함 서버의 *\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts 폴더에 있으며, Exchange 2013 사서함 서버에서 실행되어야 합니다. 스크립트를 실행하려면
 
@@ -126,8 +132,9 @@ UM에서 Exchange 2013 서버와 VoIP 게이트웨이, IP PBX 및 SIP 사용 가
     
     셸에서 다음 명령을 실행하여 Exchange 자체 서명된 인증서를 만듭니다.
     
-        New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+    ```powershell
+    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+    ```
 
     > [!TIP]
     > <EM>Services</EM> 매개 변수를 통해 사용하도록 설정할 서비스를 지정하는 경우에는 만든 인증서에 대해 서비스를 사용하도록 설정하라는 메시지가 표시됩니다. 이 예에서는 통합 메시징 및 통합 메시징 통화 라우터 서비스에서 인증서를 사용하도록 설정하라는 메시지가 표시됩니다. 서비스에서 인증서를 사용하도록 설정하는 방법에 대한 자세한 내용은 <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">UM 및 UM 통화 라우터 서비스에 인증서 할당</A>을 참조하십시오.
@@ -146,7 +153,9 @@ UM에서 Exchange 2013 서버와 VoIP 게이트웨이, IP PBX 및 SIP 사용 가
     
     셸에서 다음 명령을 실행하여 Exchange 자체 서명된 인증서를 사용하도록 설정합니다.
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - 신규 또는 기존 UM 다이얼 플랜을 SIP 보안 또는 보안으로 구성합니다.
 
@@ -182,7 +191,9 @@ SIP 보안 또는 보안 다이얼 플랜을 사용하는 경우 Exchange 2013 �
 
 셸에서 다음 명령을 실행하여 Exchange 2013 클라이언트 액세스 서버에서 UM 시작 모드를 구성합니다.
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 5단계: 모든 Exchange 2013 사서함 서버에서 UM 시작 모드 구성
 
@@ -208,7 +219,9 @@ SIP 보안 또는 보안 다이얼 플랜을 사용하는 경우 Exchange 2013 �
 
 셸에서 다음 명령을 실행하여 Exchange 2013 사서함 서버에서 UM 시작 모드를 구성합니다.
 
+   ```powershell
     Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+   ``` 
 
 ## 6단계: UM 다이얼 플랜 만들기 또는 기존 UM 다이얼 플랜 구성
 
@@ -242,7 +255,9 @@ UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고�
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 다이얼 플랜을 만들 수 있습니다.
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 필요한 경우 EAC를 사용하여 기존 UM 다이얼 플랜을 구성할 수 있습니다.
 
@@ -254,7 +269,9 @@ UM 다이얼 플랜은 통합 메시징에서 사용자의 내선 번호를 고�
 
 필요한 경우 셸에서 다음 명령을 실행하여 기존 UM 다이얼 플랜을 구성할 수 있습니다.
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 Exchange 2007 통합 메시징을 배포할 때는 UM이 수신 전화 응답하도록 하기 위해 통합 메시징 서버를 UM 다이얼 플랜에 추가해야 했습니다. 이제 이 작업은 필요하지 않습니다. Exchange 2013에서는 클라이언트 액세스 서버 및 사서함 서버를 내선 번호 또는 E.164 다이얼 플랜에 연결할 수 없는 대신 SIP URI 다이얼 플랜에 연결해야 합니다. 클라이언트 액세스 서버 및 사서함 서버는 모든 유형의 다이얼 플랜에 대한 모든 수신 전화에 응답합니다.
 
@@ -286,7 +303,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM IP 게이트웨이를 만들 수 있습니다.
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 필요한 경우 EAC를 사용하여 기존 UM IP 게이트웨이를 구성할 수 있습니다.
 
@@ -296,7 +315,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 기존 UM IP 게이트웨이를 구성할 수 있습니다.
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## 8단계: UM 헌트 그룹 만들기
 
@@ -322,8 +343,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 헌트 그룹을 만들 수 있습니다.
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
-
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 > [!TIP]
 > UM 헌트 그룹의 설정은 구성하거나 변경할 수 없습니다. UM 헌트 그룹의 구성 설정을 변경하려면 해당 그룹을 삭제한 후 올바른 설정으로 새 UM 헌트 그룹을 추가해야 합니다.
@@ -360,7 +382,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 자동 전화 교환을 만들 수 있습니다.
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 필요한 경우 EAC를 사용하여 기존 자동 전화 교환을 구성할 수 있습니다.
 
@@ -370,7 +394,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 기존 자동 전화 교환을 구성할 수 있습니다.
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 
 ## 10단계: UM 사서함 정책 만들기 또는 구성
 
@@ -400,7 +426,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 UM 사서함 정책을 만들 수 있습니다.
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 필요한 경우 EAC를 사용하여 기존 UM 사서함 정책을 구성할 수 있습니다.
 
@@ -410,7 +438,9 @@ UM IP 게이트웨이와 UM 헌트 그룹의 조합으로 VoIP 게이트웨이, 
 
 필요한 경우 셸에서 다음 명령을 실행하여 기존 UM 사서함 정책을 구성할 수 있습니다.
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## 11단계: 기존 UM 사용 가능 사서함을 Exchange 2013으로 이동
 
@@ -438,7 +468,9 @@ EAC를 사용하여 Exchange 2007 사서함을 Exchange 2013 사서함 서버로
 
 셸을 사용하여 Exchange 2007사서함을 Exchange 2013 사서함 서버로 이동하려면 다음 명령을 실행합니다.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 12단계: 새 사용자가 UM을 사용하도록 설정하거나 기존 UM 사용 가능 사용자의 설정 구성
 
@@ -476,7 +508,9 @@ EAC를 통해 사용자가 통합 메시징을 사용하도록 설정하려면 �
 
 셸에서 사용자가 통합 메시징을 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 필요한 경우 EAC를 사용하여 UM을 사용하도록 설정된 사용자를 구성할 수 있습니다.
 
@@ -506,7 +540,9 @@ EAC를 통해 사용자가 통합 메시징을 사용하도록 설정하려면 �
 
 필요한 경우 셸에서 다음 명령을 실행하여 사용자가 UM을 사용하도록 구성할 수 있습니다.
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## 13단계: Exchange 2013 클라이언트 액세스 서버로 들어오는 모든 수신 전화를 전송하도록 VoIP 게이트웨이, IP PBX 및 SIP 사용 가능 PBX 구성
 
@@ -544,7 +580,9 @@ Exchange 관리 콘솔을 사용하여 Exchange 2007 UM 서버에서 통합 메�
 
 셸을 사용하여 Exchange 2007 UM 서버에서 통합 메시징을 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 
 > [!TIP]
@@ -572,18 +610,24 @@ Exchange 관리 콘솔을 사용하여 다이얼 플랜에서 Exchange 2007 UM �
 
 셸을 사용하여 다이얼 플랜에서 Exchange 2007 UM 서버를 제거하려면 다음 명령을 실행합니다.
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 이 예에는 SipDP1, SipDP2, SipDP3의 3개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyUMServer`라는 UM 서버를 SipDP3 다이얼 플랜에서 제거합니다.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 이 예에는 SipDP1 및 SipDP2의 2개 SIP URI 다이얼 플랜이 있습니다. 이 예에서는 `MyUMServer`라는 UM 서버를 SipDP2 다이얼 플랜에서 제거합니다.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 
 > [!TIP]

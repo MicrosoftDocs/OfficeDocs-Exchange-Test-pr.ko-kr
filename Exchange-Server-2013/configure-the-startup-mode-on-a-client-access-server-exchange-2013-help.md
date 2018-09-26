@@ -67,9 +67,13 @@ _**마지막으로 수정된 항목:** 2013-02-15_
 
 이 예에서는 `UMCallRouter1`이라는 클라이언트 액세스 서버의 시작 모드를 이중 모드로 설정합니다.
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```
 
 이 예에서는 `UMCallRouter1`이라는 클라이언트 액세스 서버의 시작 모드를 TLS 모드로 설정합니다.
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```
 

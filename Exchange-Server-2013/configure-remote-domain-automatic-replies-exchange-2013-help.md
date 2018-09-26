@@ -41,9 +41,13 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 이 예에서는 Contoso라는 원격 도메인에 대한 자동 회신을 허용하도록 합니다. 기본적으로 이 설정은 사용하도록 설정되어 있지 않습니다.
 
-    Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```
 
 이 예에서는 원격 도메인에 대한 자동 전달을 허용하도록 합니다. 기본적으로 이 설정은 사용하도록 설정되어 있지 않습니다.
 
-    Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```
 

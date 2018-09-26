@@ -73,11 +73,15 @@ _**마지막으로 수정된 항목:** 2012-11-01_
 
 이 예에서는 3이라는 활성화 기본 설정 수를 사용하여 사서함 데이터베이스 복사본을 구성합니다.
 
-    Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
+```powershell
+Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
+```
 
 이 예에서는 재생 지연 시간과 자르기 지연 시간이 1일이고 활성화 기본 설정 수가 2인 Server1에서 호스팅하는 데이터베이스 DB1의 복사본을 구성합니다.
 
-    Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+  ```powershell
+  Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+  ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -87,7 +91,9 @@ _**마지막으로 수정된 항목:** 2012-11-01_
 
   - 셸에서 다음 명령을 실행하여 데이터베이스 복사본에 대한 구성 정보를 표시합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 자세한 내용
 

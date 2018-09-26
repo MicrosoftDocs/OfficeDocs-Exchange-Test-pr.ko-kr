@@ -51,7 +51,9 @@ _**마지막으로 수정된 항목:** 2012-10-12_
 
 이 예에서는 영어(미국) 연락처 세부 항목 템플릿을 복원합니다.
 
-    Restore-DetailsTemplate -Identity "en-US\Contact"
+```powershell
+Restore-DetailsTemplate -Identity "en-US\Contact"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Restore-DetailsTemplate](https://technet.microsoft.com/ko-kr/library/bb125188\(v=exchg.150\))을 참조하십시오.
 

@@ -67,7 +67,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 이 예에서는 30 일에 대 한 삭제 된 항목을 유지 하도록 April Stewart의 사서함을 구성 합니다.
 
-    Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```powershell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -81,7 +83,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 이 예에서는 12GB의 할당량 및 April Stewart의 사서함에 대 한 15GB의 복구 가능한 항목 할당량 경고를 복구할 수 있는 항목을 구성 합니다.
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```powershell
+  Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```
 
 
 > [!NOTE]
@@ -101,7 +105,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 이 예에서는 사서함 데이터베이스 m d b 2에 대 한 일의 삭제 된 항목 보존 기간을 구성 합니다.
 
-    Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```powershell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\))를 참조하십시오.
 
@@ -115,7 +121,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 이 예에서는 15GB 할당량과 사서함 데이터베이스 m d b 2에서 20 g B의 복구 가능한 항목 할당량 경고를 복구할 수 있는 항목을 구성 합니다.
 
-    Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```powershell
+Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb123971\(v=exchg.150\))를 참조하십시오.
 

@@ -48,7 +48,7 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -73,12 +73,15 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
 
 새 신뢰할 수 있는 도메인을 만들려면 다음 구문을 사용합니다.
 
-    New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```
 
 예를 들어 fourthcoffee.com 도메인에 대해 "Fourth Coffee subsidiary"라는 신뢰할 수 있는 도메인을 새로 만들려면 다음 명령을 실행합니다.
 
-    New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
-
+```powershell
+New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 신뢰할 수 있는 도메인이 만들어졌는지 확인하려면 다음을 수행합니다.
@@ -119,25 +122,30 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
 
 기존의 기본 전자 메일 주소를 변경하고 이전의 기본 전자 메일 주소를 프록시 주소로 유지하려면 다음 명령을 실행합니다.
 
-    Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
-
+```powershell
+Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```
 조직의 전자 메일 주소 정책에서 사용하는 전자 메일 주소 형식이 *사용자 별칭*`@contoso.com`인 경우를 예로 들어 보겠습니다. 이 예에서는 "Default Policy"라는 전자 메일 주소 정책의 기본(회신) 주소 도메인을 `@fourthcoffee.com`으로 변경하고 `@contoso.com` 도메인의 이전 기본 회신 주소는 프록시(보조) 주소로 유지합니다.
 
-    Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
-
+```powershell
+Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```
 
 > [!NOTE]
 > 대문자 <CODE>SMTP</CODE> 한정자는 기본(회신) 주소를 지정합니다. 소문자 <CODE>smtp</CODE> 한정자는 프록시(보조) 주소를 지정합니다.
 
 
-
 업데이트된 전자 메일 주소 정책을 받는 사람에게 적용하려면 다음 구문을 사용합니다.
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 예를 들어 "Default Policy"라는 업데이트된 전자 메일 주소 정책을 적용하려면 다음 명령을 실행합니다.
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## 필터링된 받는 사람 집합의 기존 기본 전자 메일 주소 바꾸기
 
@@ -175,13 +183,9 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
     > [!WARNING]
     > 너무 많은 규칙을 적용하면 전자 메일 주소 정책이 사용자를 전혀 포함하지 않는 상태로 제한될 수 있습니다.
 
-
-
 6.  정책이 적용될 받는 사람을 보려면 **정책을 적용할 받는 사람 미리 보기**를 클릭합니다.
 
-7.  
-    
-    **저장**을 클릭하여 변경 내용을 저장하고 정책을 만듭니다.
+7.  **저장**을 클릭하여 변경 내용을 저장하고 정책을 만듭니다.
 
 8.  전자 메일 주소 정책을 업데이트해야 정책이 적용된다는 경고가 나타납니다. 정책을 만든 후에 선택한 다음 세부 정보 창에서 **적용**을 클릭합니다.
 
@@ -189,15 +193,19 @@ Microsoft Exchange Server 2013에서는 조직에 여러 신뢰할 수 있는 �
 
 필터링된 받는 사람 집합의 기존 기본 전자 메일 주소를 바꾸려면 다음 명령을 사용합니다.
 
-    New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
-
+```powershell
+ New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+ ```
 이 예에서는 "Fourth Coffee Recipients"라는 전자 메일 주소 정책을 만들고 Fourth Coffee 부서의 사서함 사용자에게 해당 정책을 할당한 다음, 이 전자 메일 주소 정책이 먼저 적용되도록 해당 정책에 대해 가장 높은 우선 순위를 설정합니다. 이러한 받는 사람에 대해서는 이전 기본 전자 메일 주소가 보존되지 않으므로 이전 기본 전자 메일 주소로는 전자 메일을 받을 수 없습니다.
 
-    New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
-
+```powershell
+New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```
 해당하는 받는 사람에게 새 전자 메일 주소 정책을 적용하려면 다음 명령을 실행합니다.
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 

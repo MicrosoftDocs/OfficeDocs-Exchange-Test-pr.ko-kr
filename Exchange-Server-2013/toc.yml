@@ -665,11 +665,11 @@
       - name: Exchange 2013에서 원본 위치 보관 관리
         href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
       - name: 보관 정책 수정
-        href: modify-archive-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/modify-archive-policies
       - name: 보관 할당량 원본 위치 보관에 대 한 Exchange 2013 구성
         href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
       - name: Lync 대화 및 모임 콘텐츠 Exchange에 보관
-        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: OAuth 인증을 사용하여 Exchange 하이브리드 배포에서 보관 지원
         href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
     - name: 원본 위치 유지 및 소송 보존
@@ -678,38 +678,38 @@
       - name: 만들기 또는 In-place Hold 제거
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/create-or-remove-in-place-holds
       - name: 전체 사서함에 소송 보존으로 설정
-        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold
       - name: 모든 사서함을 보류
-        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/change-the-hold-duration-for-an-inactive-mailbox
       - name: 숨은 참조 및 eDiscovery에 대 한 확장 된 메일 그룹 받는 사람을 보존 합니다.
-        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery
     - name: 원본 위치 eDiscovery
-      href: in-place-ediscovery-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
       items:
       - name: Exchange eDiscovery 사용 권한 할당
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions
       - name: 원본 위치 eDiscovery 검색 만들기
-        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search
       - name: EDiscovery 검색 결과 검색 사서함으로 복사
         href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
       - name: PST 파일로 eDiscovery 검색 결과 내보내기
-        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/export-search-results
       - name: 원본 위치 eDiscovery에 대 한 메시지의 속성 및 검색 연산자
-        href: message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: 검색 사서함 만들기
-        href: create-a-discovery-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: 시작 하거나 원본 위치 eDiscovery 검색을 중지 합니다.
-        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/use-content-search-in-ediscovery
       - name: 원본 위치 eDiscovery 검색 수정
-        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/search-for-ediscovery-activities-in-the-audit-log
       - name: 원본 위치 eDiscovery 검색의 사용자 지정 관리 범위 만들기
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
       - name: 원본 위치 eDiscovery 검색 제거
-        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center
       - name: 메시지-관리자 도움말에 대 한 검색 및 삭제
-        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/search-for-and-delete-messagesadmin-help
       - name: Exchange에서 검색 사서함의 크기 줄이기
-        href: reduce-the-size-of-a-discovery-mailbox-in-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
       - name: Exchange에서 기본 검색 사서함 삭제 및 다시 만들기
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/delete-and-re-create-default-discovery-mailbox
       - name: 검색 시스템 사서함을 다시 만들려면
@@ -726,23 +726,23 @@
       - name: 메시징 레코드 관리 용어 Exchange 2013
         href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
       - name: 보존 태그 및 보존 정책
-        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies
         items:
         - name: 기본 보존 정책
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/default-retention-policy
         - name: 보존 정책 태그를 지 원하는 기본 폴더
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/default-folders
         - name: 보존 기간 계산 방법
-          href: how-retention-age-is-calculated-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/retention-age
         - name: '검사 목록: 보존 정책 배포'
           href: checklist-deploying-retention-policies-exchange-2013-help.md
         - name: 메시징 레코드 관리 절차
-          href: messaging-records-management-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/inactive-mailboxes-in-office-365
           items:
           - name: 보존 정책 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy
           - name: 보존 태그를 추가 하거나 보존 정책에서 보존 태그를 제거 합니다.
-            href: add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags
           - name: 사서함에 보존 정책 적용
             href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy
           - name: 관리 되는 폴더 도우미를 구성 합니다.
@@ -756,14 +756,14 @@
           - name: 관리 되는 폴더에서 마이그레이션
             href: migrate-from-managed-folders-exchange-2013-help.md
           - name: 메시징 레코드 관리를 일시 중단 또는 해제
-            href: turn-off-or-suspend-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
       - name: 모니터링 메시징 레코드 관리
-        href: monitoring-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+        href: monitoring-messaging-records-management-exchange-2013-help.md
         items:
         - name: 메시징 레코드 관리에 대 한 성능 카운터 보기
-          href: view-performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: 메시징 레코드 관리에 대 한 성능 카운터
-          href: performance-counters-for-https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: 메시징 레코드 관리 오류 및 이벤트
           href: messaging-records-management-errors-and-events-exchange-2013-help.md
     - name: 저널링
@@ -792,9 +792,9 @@
         href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
         - name: 메일 흐름 규칙 관리
-          href: manage-mail-flow-rules-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
         - name: 메일 흐름 규칙을 테스트 합니다.
-          href: test-a-mail-flow-rule-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
         - name: 메시지 포함 되는 문서를 무시할 수 있도록 메일 흐름 규칙을 사용 하 여
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter
         - name: 메일 흐름 규칙 단어, 구 또는 패턴의 목록을 기반으로 전자 메일 라우팅에 사용 하 여
@@ -805,7 +805,7 @@
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval
         items:
         - name: 일반적인 메시지 승인 시나리오
-          href: common-message-approval-scenarios-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios
         - name: 관리 하 고 메시지 승인 문제를 해결합니다
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/mail-flow-rules/ttroubleshoot-message-approval
     - name: 데이터 손실 방지
@@ -818,40 +818,40 @@
       - name: 중요 한 정보 형식을 찾습니다.
         href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
       - name: DLP 정책 템플릿
-        href: dlp-policy-templates-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/what-the-dlp-policy-templates-include
         items:
         - name: Exchange에서 제공 하는 DLP 정책 템플릿
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/dlp-policy-templates
         - name: Microsoft 파트너 로부터 정책 서식 파일
-          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: DLP 절차
         href: dlp-procedures-exchange-2013-help.md
         items:
         - name: DLP 정책 관리
-          href: manage-dlp-policies-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/data-loss-prevention-policies
         - name: 템플릿에서 DLP 정책 만들기
           href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template
         - name: 사용자 지정 DLP 정책 만들기
-          href: create-a-custom-dlp-policy-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
         - name: 파일에서 사용자 지정 DLP 정책 서식 파일을 가져오려면
-          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: DLP 정책 검색 보고서 보기
           href: view-dlp-policy-detection-reports-exchange-2013-help.md
         - name: DLP 정책 감지에 대 한 문제 보고서 만들기
           href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
         - name: 자체 DLP 템플릿 및 정보 유형 정의
-          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/create-a-dlp-policy-from-a-template
           items:
           - name: DLP 정책 템플릿 파일 개발
-            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+            href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/create-a-dlp-policy-from-a-template
           - name: 중요 한 정보 규칙 패키지 개발 (영문)
-            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/ko-kr/Office365/SecurityCompliance/eop/exchange-online-protection-overview
           - name: 일치 하는 방법 및 규칙 패키지에 대 한 기술
-            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/eop/exchange-online-protection-overview
           - name: 기본 제공 DLP 중요 한 정보 유형 사용자 지정
-            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/customize-a-built-in-sensitive-information-type
           - name: Exchange에서 DLP 중요 한 정보 유형 내보내기
-            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: 정책 팁
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/policy-tips
         items:
@@ -861,7 +861,7 @@
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting
         items:
         - name: 문서 지문을 사용 하 여 양식 데이터를 보호 합니다.
-          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting
     - name: 정보 권한 관리
       href: information-rights-management-exchange-2013-help.md
       items:
@@ -903,14 +903,14 @@
         - name: 사용 또는 사용 안함 정보 권한 관리 로깅
           href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
     - name: 메시지 서명 및 암호화를 위한 S/MIME
-      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption
       items:
       - name: Outlook Web App에 대 한 S/MIME 설정 구성
-        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/configure-s-mime-settings-for-outlook-web-app
       - name: S/MIME 유효성을 검사 하려면 가상 인증서 컬렉션 설정
-        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/set-up-virtual-certificate-collection-to-validate-s-mime
       - name: 보내기 / 받기 S/MIME의 서명 및 암호화 된 전자 메일
-        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/send-and-receive-s-mime-signed-and-encrypted-email
     - name: 사서함 감사 로깅
       href: mailbox-audit-logging-exchange-2013-help.md
       items:
@@ -938,9 +938,9 @@
       - name: 사서함 감사 로그 내보내기
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs
       - name: 비 소유자 사서함 액세스 보고서 실행
-        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report
       - name: 사서함 단위 소송 보존 보고서 실행
-        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report
       - name: 역할 그룹 변경 내용을 검색 또는 관리자 감사 로그
         href: https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
       - name: 관리자 감사 로그 보기
@@ -1261,14 +1261,14 @@
     - name: 사용자 사서함 만들기
       href: create-user-mailboxes-exchange-2013-help.md
     - name: 사용자 사서함 관리
-      href: manage-user-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes
       items:
       - name: 추가 또는 사서함에 대 한 전자 메일 주소를 제거 합니다.
         href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses
       - name: 사서함에 대 한 전자 메일 전달 구성
         href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding
       - name: 사서함에 대 한 메시지 배달 제한 구성
-        href: configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-message-delivery-restrictions
       - name: 사서함에 대 한 메시지 크기 제한 구성
         href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
       - name: 사서함에 대 한 저장소 할당량 구성
@@ -1289,7 +1289,7 @@
       href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups
       items:
       - name: 메일 그룹 명명 정책을 만들려면
-        href: create-a-distribution-group-naming-policy-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy
       - name: 메일 그룹 명명 정책을 무시합니다
         href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy
     - name: 메일 사용이 가능한 보안 그룹 관리
@@ -1300,7 +1300,7 @@
       - name: 동적 메일 그룹의 구성원 보기
         href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members
     - name: 메일 연락처 관리
-      href: manage-mail-contacts-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-mail-contacts
       items:
       - name: 메일 연락처에 대 한 전자 메일을 사용 하지 않도록 설정 하거나 사용
         href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
@@ -1310,7 +1310,7 @@
       - name: 메일 사용자에 대 한 전자 메일을 사용 하지 않도록 설정 하거나 사용
         href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
     - name: 대화방 사서함 만들기 및 관리
-      href: create-and-manage-room-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-room-mailboxes
     - name: 장비 사서함 관리
       href: https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-equipment-mailboxes
     - name: 연결이 끊어진 사서함
@@ -1367,13 +1367,13 @@
         - name: 하이브리드 배포에 대 한 Exchange 2013 공용 폴더 구성
           href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders
         - name: 하이브리드 배포에 대 한 Exchange Online 공용 폴더 구성
-          href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders
         - name: Exchange 2013 서버에서 사용자 사서함이 있는 레거시 공용 폴더 구성
           href: configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md
         - name: 마이그레이션 일괄 처리를 사용 하 여 이전 버전에서 Exchange 2013 공용 폴더 마이그레이션
           href: use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md
         - name: 마이그레이션 일괄 처리를 사용 하 여 Office 365 및 Exchange Online으로 레거시 공용 폴더 마이그레이션
-          href: use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders
         - name: 마이그레이션 일괄 처리를 사용 하 여 Exchange Online으로 Exchange 2013 공용 폴더 마이그레이션
           href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders
           items:
@@ -1386,7 +1386,7 @@
         - name: 공용 폴더 사서함 만들기
           href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox
         - name: 공용 폴더 만들기
-          href: create-a-public-folder-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/create-public-folder
         - name: 메일 사용이 가능한 또는 공용 폴더 메일-사용 안함
           href: https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder
         - name: 공용 폴더 계층 구조 업데이트
@@ -1415,7 +1415,7 @@
       href: https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: '시나리오: 주소록 정책 배포'
-        href: scenario-deploying-https://docs.microsoft.com/ko-kr/exchange/address-books/address-book-policies/address-book-policies
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
       - name: 주소 주소록 정책 절차
         href: address-book-policy-procedures-exchange-2013-help.md
         items:
@@ -1457,7 +1457,7 @@
         href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/offline-address-book-procedures
         items:
         - name: 오프 라인 주소록 만들기
-          href: create-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/create-offline-address-book
         - name: 주소 목록에 추가 하거나 오프 라인 주소록에서 주소 목록을 제거합니다
           href: https://docs.microsoft.com/ko-kr/exchange/address-books/offline-address-books/add-or-remove-an-address-list
         - name: 기본 오프 라인 주소록을 변경 합니다.
@@ -1586,7 +1586,7 @@
         - name: 휴대폰 및 태블릿 기능
           href: mobile-phone-and-tablet-features-exchange-2013-help.md
         - name: 휴대폰 원격 초기화
-          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mobile-access/remote-wipe-on-mobile-phone
         - name: 전자 메일에 액세스 하려면 휴대폰을 구성 합니다.
           href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mobile-access/configure-email-on-mobile-phone
     - name: POP3 및 IMAP4
@@ -1655,7 +1655,7 @@
       href: outlook-web-app-exchange-2013-help.md
       items:
       - name: Outlook Web App 사서함 정책
-        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies
         items:
         - name: Outlook Web App 사서함 정책 절차
           href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policy-procedures
@@ -1688,18 +1688,18 @@
       href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: 사용 또는 사용 안함 메일 설명
-        href: enable-or-disable-https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: 조직에 대 한 큰 대상 그룹 크기를 구성 합니다.
         href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 받는 사람에 대해 사용자 지정 메일 설명 구성
-        href: configure-custom-mailtips-for-recipients-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-custom-mailtips
       - name: 조직 관계를 통해 메일 설명
         href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships
         items:
         - name: 조직 관계에 대 한 메일 설명 관리
           href: https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: 그룹 메트릭 및 메일 설명
-        href: group-metrics-and-https://docs.microsoft.com/ko-kr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: 그룹 메트릭 구성
           href: configure-group-metrics-exchange-2013-help.md
@@ -1779,7 +1779,7 @@
         - name: 다이얼 플랜에 기본 언어 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language
         - name: 자동 전화 교환에 대 한 언어를 선택 합니다.
-          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language
         - name: UM 언어팩 제거
           href: remove-a-um-language-pack-exchange-2013-help.md
         - name: 가져오기 및 사용자 지정 인사말, 알림, 메뉴 및 음성 안내 내보내기
@@ -1789,7 +1789,7 @@
         - name: 전화 사용자 인터페이스를 사용 하 여 사용자 지정 프롬프트 기록 사용
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording
     - name: Um 전화 시스템 통합
-      href: telephone-system-integration-with-um-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um
       items:
       - name: 전화 통신 개념 및 구성 요소
         href: telephony-concepts-and-components-exchange-2013-help.md
@@ -1799,7 +1799,7 @@
         href: connect-um-to-your-telephone-system-exchange-2013-help.md
         items:
         - name: Exchange 2013에 대 한 전화 통신 관리자
-          href: telephony-advisor-for-exchange-2013-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013
         - name: 지원 되는 VoIP 게이트웨이, IP Pbx 및 Pbx에 대 한 구성 참고 사항
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways
         - name: Um VoIP 게이트웨이, IP PBX 또는 세션 테두리 컨트롤러에 연결
@@ -1809,7 +1809,7 @@
         - name: PBX와 통신 하도록 VoIP 게이트웨이 연결 합니다.
           href: connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md
         - name: 지원 되는 세션 테두리 컨트롤러에 대 한 구성 참고 사항
-          href: configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers
     - name: 음성 메일 시스템 전화 네트워크에 연결
       href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system
       items:
@@ -1826,17 +1826,17 @@
           - name: UM 다이얼 플랜 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan
           - name: UM 다이얼 플랜 관리
-            href: manage-a-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan
           - name: SIP URI 다이얼 플랜에 사서함 및 클라이언트 액세스 서버를 추가 합니다.
             href: add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md
           - name: SIP URI 다이얼 플랜에서 사서함 및 클라이언트 액세스 서버를 제거 합니다.
             href: remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md
           - name: 오디오 코덱 변경
-            href: change-the-audio-codec-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec
           - name: 최대 통화 기간 구성
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration
           - name: 최대 녹음/녹화 기간 구성
-            href: configure-the-maximum-recording-duration-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration
           - name: 녹음/녹화 유휴 시간 제한 값을 구성
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out
           - name: VoIP 보안 설정 구성
@@ -1844,12 +1844,12 @@
           - name: 유사한 이름을 가진 사용자에 대 한 다이얼 플랜을 구성 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names
           - name: UM 다이얼 플랜을 삭제
-            href: delete-a-um-dial-plan-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan
       - name: UM IP 게이트웨이
-        href: um-ip-gateways-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
         items:
         - name: UM IP 게이트웨이 절차
-          href: um-ip-gateway-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures
           items:
           - name: UM IP 게이트웨이 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway
@@ -1860,9 +1860,9 @@
           - name: UM IP 게이트웨이 사용 하지 않도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway
           - name: 정규화 된 도메인 이름 구성
-            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-fully-qualified-domain-name
           - name: IP 주소를 구성 합니다.
-            href: configure-the-ip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address
           - name: 수신 대기 포트를 구성 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port
           - name: UM IP 게이트웨이 삭제 합니다.
@@ -1874,7 +1874,7 @@
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-group-procedures
           items:
           - name: UM 헌트 그룹 만들기
-            href: create-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group
           - name: UM 헌트 그룹 보기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/view-um-hunt-group
           - name: UM 헌트 그룹 삭제
@@ -1919,10 +1919,10 @@
       - name: DTMF 인터페이스
         href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/dtmf-interface
       - name: UM 자동 전화 교환 절차
-        href: um-auto-attendant-procedures-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures
         items:
         - name: UM 자동 전화 교환을 설정합니다
-          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant
           items:
           - name: UM 자동 전화 교환 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant
@@ -1933,29 +1933,29 @@
           - name: 휴일 일정을 만들려면
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule
           - name: 회사 이름 입력
-            href: enter-a-business-name-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name
           - name: 비즈니스 위치를 설정 합니다.
-            href: set-a-business-location-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-a-business-location
           - name: 표준 시간대를 구성 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-the-time-zone
           - name: 사용자 지정 된 업무 시간 인사말을 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-greeting
           - name: 사용자 지정 된 업무 시간 메뉴 음성 안내를 사용 하도록 설정
-            href: enable-a-customized-business-hours-menu-prompt-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-menu-prompt
           - name: 한 사용자 지정 된 업무 시간 외 인사말을 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-greeting
           - name: 사용자 지정 된 업무 시간 외 메뉴 음성 안내를 사용 하도록 설정
-            href: enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-menu-prompt
           - name: 정보 알림을 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-an-informational-announcement
           - name: 메뉴 탐색 만들기
-            href: create-menu-navigation-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-menu-navigation
           - name: 업무 시간 탐색 메뉴 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-business-hours-navigation-menus
           - name: 업무 시간 탐색 메뉴 만들기
-            href: create-non-business-hours-navigation-menus-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-non-business-hours-navigation-menus
         - name: UM 자동 전화 교환 관리
-          href: manage-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant
         - name: DTMF 대체 자동 전화 교환 구성
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-dtmf-fallback-auto-attendant
         - name: UM 자동 전화 교환을 사용 하도록 설정
@@ -1963,7 +1963,7 @@
         - name: UM 자동 전화 교환을 사용 하지 않도록 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/disable-um-auto-attendant
         - name: UM 자동 전화 교환 삭제
-          href: delete-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/delete-um-auto-attendant
         - name: 사용 하도록 설정 하거나 자동 음성 인식 기능을 사용 하지 않도록 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-or-disable-speech-recognition
         - name: 활성화 하거나 금지 자동 전화 교환에서 통화를 전송 합니다.
@@ -1975,15 +1975,15 @@
         - name: 연락할 수 있는 사용자 그룹을 구성 합니다.
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-users-that-can-be-contacted
         - name: 유사한 이름을 가진 사용자에 대 한 자동 전화 교환을 구성합니다
-          href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-auto-attendant-for-users-with-similar-names
     - name: 사용자에 대 한 음성 메일 설정
-      href: set-up-https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
+      href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail
       items:
       - name: UM 사서함 정책
         href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
         items:
         - name: UM 사서함 정책 절차
-          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures
           items:
           - name: UM 사서함 정책 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy
@@ -2004,7 +2004,7 @@
           - name: 사용자에 대 한 음성 메일 설정 관리
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings
           - name: UM 사서함 정책 할당
-            href: assign-a-um-mailbox-policy-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy
           - name: UM 다이얼 플랜을 변경 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-um-dial-plan
           - name: 사용자가 UM 사용이 가능 하지 건 전화를 사용 하도록 설정
@@ -2014,11 +2014,11 @@
           - name: 호출자가 음성 메시지를 남길 발신자 ID가 없는 허용
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/allow-callers-without-caller-id-to-leave-voice-message
           - name: 음성 메시지를 받을 때 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
-            href: include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voice-message-is-received
           - name: 발신자 ID가 없는 발신자에 게 음성 메시지를 남기지에서 방지
-            href: prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/prevent-callers-without-caller-id-from-leaving-voice-message
           - name: 사용자에 대 한 음성 메일을 사용 하지 않도록 설정
-            href: disable-voice-mail-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-voice-mail
           - name: SIP 주소를 변경 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address
           - name: 내선 번호를 변경 합니다.
@@ -2034,7 +2034,7 @@
           - name: E.164 번호 변경
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number
           - name: E.164 번호를 추가 합니다.
-            href: add-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number
           - name: E.164 번호를 제거 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number
     - name: 클라이언트 음성 메일 기능 설정
@@ -2061,17 +2061,17 @@
           - name: Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-users
           - name: Outlook Voice Access 사용자에 대 한 사서함 기능을 설정 합니다.
-            href: set-mailbox-features-for-an-outlook-voice-access-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-mailbox-features-for-a-user
           - name: Outlook Voice Access 사용자에 대 한 자동 음성 인식 기능을 사용 하지 않도록 설정 하거나 사용
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-automatic-speech-recognition
           - name: Outlook Voice Access 사용자에 대 한 정보 알림을 사용 하도록 설정
-            href: enable-an-informational-announcement-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-an-informational-announcement
           - name: Outlook Voice Access 사용자에 대 한 사용자 지정된 인사말을 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-customized-greeting
           - name: Outlook Voice Access 사용자에 대 한 전화에서 재생을 사용 하지 않도록 설정 하거나 사용
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-play-on-phone
           - name: 활성화 또는 비활성화 하는 Outlook Voice Access에서 음성 메시지 보내기
-            href: enable-or-disable-sending-voice-messages-from-outlook-voice-access-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-sending-voice-messages
           - name: 활성화 하거나 금지 하는 Outlook Voice Access에서 통화를 전송 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-prevent-transferring-calls
           - name: Outlook Voice Access 사용자가 문의할 수 있는 사용자 그룹을 구성 합니다.
@@ -2079,13 +2079,13 @@
           - name: Outlook Voice Access 사용자가 검색할 수에 대 한 기본 방식으로 구성
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-primary-search-method
           - name: Outlook Voice Access 사용자가 검색할 수에 대 한 보조 방법 구성
-            href: configure-the-secondary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-secondary-search-method
           - name: Outlook Voice Access 사용자의 연결이 끊어집니다 전에 로그인 실패 횟수를 구성 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-sign-in-failures
           - name: Outlook Voice Access 사용자의 연결이 끊어집니다 전에 입력된 실패 횟수를 구성 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-input-failures
           - name: Outlook Voice Access 사용자에 대 한 개인 인사말에서 제한을 구성합니다
-            href: configure-the-limit-on-personal-greetings-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-personal-greetings-limit
       - name: 음성 통화를 착신 전환 하려면 메일 사용자를 허용
         href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls
         items:
@@ -2093,15 +2093,15 @@
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/forwarding-calls-procedures
           items:
           - name: 허용 또는 전화 응답 규칙 만들기 (영문)에서 사용자를 차단
-            href: allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules
           - name: 허용 하거나 사용자가 동일한 UM 사서함 정책에서 전화 응답 규칙 만들기 (영문) 하지 못하도록
-            href: allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules-in-the-same-mailbox-policy
           - name: 전화 응답 규칙 만들기
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-a-call-answering-rule
           - name: 보기 및 전화 응답 규칙 관리
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/view-and-manage-a-call-answering-rule
           - name: 사용 하도록 설정 하거나 사용자에 대 한 전화 응답 규칙을 사용 하지 않도록 설정
-            href: enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-a-call-answering-rule-for-a-user
           - name: 사용자에 대 한 전화 응답 규칙을 제거 합니다.
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/remove-a-call-answering-rule-for-a-user
       - name: 사용자가 전화를 걸 수 있도록
@@ -2130,7 +2130,7 @@
             - name: 사용자 그룹에 대 한 통화 권한 부여
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users
       - name: 사용자가 음성 메일 대화 내용이 표시 될 수 있도록 허용
-        href: allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript
         items:
         - name: 음성 메일 미리 보기 advisor
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor
@@ -2138,16 +2138,16 @@
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-procedures
           items:
           - name: 사용자에 대 한 음성 메일 미리 보기 파트너 서비스를 구성 합니다.
-            href: configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-voice-mail-preview-partner-services
             items:
             - name: 음성 메일 미리 보기 파트너 주소 설정
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-voice-mail-preview-partner-address
             - name: 음성 메일 미리 보기 파트너 ID를 설정 합니다.
-              href: set-the-voice-mail-preview-partner-id-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-voice-mail-preview-partner-id
             - name: 음성 메일 미리 보기 파트너에 대 한 최대 메시지 기간을 설정 합니다.
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-message-duration-for-a-voice-mail-preview-partner
             - name: 음성 메일 미리 보기 파트너에 대 한 최대 배달 지연 시간을 설정 합니다.
-              href: set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner
           - name: 사용자에 대 한 음성 메일 미리 보기를 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-voice-mail-preview
           - name: 사용자에 대 한 음성 메일 미리 보기를 사용 하지 않도록 설정
@@ -2164,7 +2164,7 @@
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/faxing-procedures
             items:
             - name: 팩스 서버 팩스를 허용 하는 URI 파트너를 설정 합니다.
-              href: set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-partner-fax-server-uri-to-allow-faxing
             - name: 팩스 메시지를 받을 때 전송 되는 전자 메일 메시지와 텍스트를 포함 합니다.
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/include-text-with-the-email-sent-when-a-fax-message-is-received
             - name: 사용자가 팩스를 받을 동일한 다이얼 플랜의 수 있게 합니다.
@@ -2172,18 +2172,18 @@
             - name: 팩스를 받을에서 동일한 다이얼 플랜에 사용자를 방지
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes
             - name: 사용자 그룹에 대 한 팩스를 사용 하도록 설정
-              href: enable-faxing-for-a-group-of-users-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-faxing-for-a-group-of-users
             - name: 사용자 그룹에 대 한 팩스를 사용 하지 않도록 설정
               href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-faxing-for-a-group-of-users
             - name: 팩스를 받을 수 있도록 설정
-              href: enable-a-user-to-receive-faxes-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-user-to-receive-faxes
             - name: 사용자 팩스를 받지 않도록 방지
-              href: prevent-a-user-from-receiving-faxes-exchange-2013-help.md
+              href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes
       - name: 음성 메일 보호
         href: protect-voice-mail-exchange-2013-help.md
         items:
         - name: 보호 된 음성 메일 절차
-          href: protected-voice-mail-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures
           items:
           - name: 인증 된 호출자 로부터 보호 된 음성 메일 구성
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-authenticated-callers
@@ -2206,16 +2206,16 @@
           - name: 사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users
           - name: 사용자에 대 한 메시지 대기 표시기 (MWI)를 사용 하지 않도록 설정
-            href: disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users
           - name: 사용자에 대 한 부재중된 전화 알림을 사용 하도록 설정
             href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-missed-call-notifications
           - name: 사용자에 대 한 부재중된 전화 알림을 사용 하지 않도록 설정
-            href: disable-missed-call-notifications-for-a-user-exchange-2013-help.md
+            href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-missed-call-notifications
     - name: Outlook Voice Access PIN 보안 설정
       href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security
       items:
       - name: PIN 보안 절차
-        href: pin-security-procedures-exchange-2013-help.md
+        href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures
         items:
         - name: Outlook Voice Access PIN 정책 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-policies
@@ -2234,7 +2234,7 @@
         - name: 음성 메일에 대 한 공통 PIN 패턴을 사용 하지 않도록 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/disable-common-pin-patterns
         - name: 음성 메일에 대 한 공통 PIN 패턴을 사용 하도록 설정
-          href: enable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/enable-common-pin-patterns
         - name: 음성 메일 PIN 다시 설정 하기 전에 로그인 실패 횟수 설정
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-pin-reset
         - name: 음성 메일 사용자를 잠그기 전에 로그인 실패 횟수 설정
@@ -2242,13 +2242,13 @@
         - name: 음성 메일에 대 한 PIN이 필요 없는 로그인을 사용 하도록 설정
           href: enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help.md
     - name: 음성 메일 호출에 대 한 보고서 실행된
-      href: run-reports-for-voice-mail-calls-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports
       items:
       - name: UM 보고서 절차
         href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures
         items:
         - name: 조직에서 음성 메일 호출을 검토 합니다.
-          href: review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md
+          href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-organization
         - name: 사용자에 대 한 음성 메일 호출을 검토 합니다.
           href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user
         - name: 조직에서 음성 통화의 오디오 품질을 확인 합니다.
@@ -2279,7 +2279,7 @@
         - name: VoIP 게이트웨이 및 Pbx에 대 한 UM 연결 테스트
           href: test-um-connectivity-to-voip-gateways-and-pbxs-exchange-2013-help.md
     - name: UM 및 음성 메일 용어
-      href: um-and-voice-mail-terminology-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/um-and-voice-mail-terminology
   - name: 사서함 및 클라이언트 액세스 서버
     href: mailbox-and-client-access-servers-exchange-2013-help.md
     items:
@@ -2581,9 +2581,9 @@
       - name: 사용자 조직에서 모든 사용자에 대 한 설정을 제한 변경
         href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
   - name: Exchange 설명서에 대 한
-    href: about-exchange-documentation-exchange-2013-help.md
+    href: https://docs.microsoft.com/ko-kr/exchange/about-exchange-documentation
     items:
     - name: 장애가 있는 사용자를 위한 내게 필요한 옵션
       href: https://docs.microsoft.com/ko-kr/exchange/about-exchange-documentation/accessibility
     - name: 타사 저작권 표시
-      href: third-party-copyright-notices-exchange-2013-help.md
+      href: https://docs.microsoft.com/ko-kr/office365/SecurityCompliance/eop/third-party-copyright-notices

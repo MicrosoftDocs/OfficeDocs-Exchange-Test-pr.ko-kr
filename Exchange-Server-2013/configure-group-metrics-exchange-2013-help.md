@@ -49,11 +49,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 사서함 서버에서 그룹 메트릭 생성을 사용하거나 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 이 예에서는 MBX1이라는 사서함 서버에서 그룹 메트릭 생성을 사용하도록 설정합니다.
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -61,7 +65,9 @@ OAB를 사용하지 않는 조직에서 그룹 메트릭 생성을 사용하거�
 
 1.  다음 명령을 실행합니다.
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  표시된 설정이 구성한 설정과 같은지 확인합니다.
 

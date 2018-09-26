@@ -43,11 +43,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 보낸 사람 ID를 사용하지 않으려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -Enabled $false
+```powershell
+Set-SenderIDConfig -Enabled $false
+```
 
 보낸 사람 ID를 사용하려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -Enabled $true
+```powershell
+Set-SenderIDConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -61,7 +65,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderIDConfig | Format-List Enabled
+    ```powershell
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -69,11 +75,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 스푸핑된 메시지에 대한 보낸 사람 ID의 작업을 구성하려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```
 
 이 예에서는 보내는 도메인에 대한 DNS SPF(보낸 사람 정책 프레임워크) 레코드에 보내는 서버의 IP 주소가 신뢰할 수 있는 SMTP 보내는 서버로 나열되지 않은 메시지를 거부하도록 보낸 사람 ID 에이전트를 구성합니다.
 
-    Set-SenderIDConfig -SpoofedDomainAction Reject
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction Reject
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -81,7 +91,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```powershell
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -89,11 +101,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 일시적인 오류에 대한 보낸 사람 ID의 작업을 구성하려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```
 
 이 예에서는 일시적인 DNS 서버 오류로 인해 보낸 사람 ID 상태를 확인할 수 없는 메시지를 스탬프 처리하도록 보낸 사람 ID 에이전트를 구성합니다. 메시지는 다른 스팸 방지 에이전트에 의해 처리되며 콘텐츠 필터 에이전트는 메시지에 대한 SCL 값을 확인할 때 이 표시를 사용합니다.
 
-    Set-SenderIDConfig -TempErrorAction StampStatus
+```powershell
+Set-SenderIDConfig -TempErrorAction StampStatus
+```
 
 `StampStatus`는 *TempErrorAction* 매개 변수의 기본값입니다.
 
@@ -103,7 +119,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderIDConfig | Format-List TempErrorAction
+    ```powershell
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -111,15 +129,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 이 예에서는 kim@contoso.com 및 john@contoso.com으로 전송된 메시지에 대한 보낸 사람 ID 확인을 무시하고 fabrikam.com 도메인에서 전송된 메시지에 대한 보낸 사람 ID 확인을 무시하도록 보낸 사람 ID 에이전트를 구성합니다.
 
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```powershell
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 이 예에서는 다음 정보를 사용하여 보낸 사람 ID 에이전트를 구성합니다.
 
@@ -129,7 +153,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -137,7 +163,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```powershell
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

@@ -44,7 +44,7 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
       - 사용자는 DAG의 이름을 지정하고, **미러링 모니터 서버** 필드를 비워 두고, 미러링 모니터 서버에서 만들고 공유할 디렉터리를 지정할 수 있습니다. 이 시나리오에서 마법사는 사서함 서버 역할이 설치되어 있지 않은 클라이언트 액세스 서버를 검색하고, 해당 서버에 지정된 감시 디렉터리를 자동으로 만들고 공유하며, 해당 클라이언트 액세스 서버를 미러링 모니터 서버로 사용하도록 DAG를 구성합니다.
     
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]    
     > 지정한 미러링 모니터 서버는 Exchange 2013 또는 Exchange 2010 서버 없으면 미러링 모니터 서버에서 로컬 Administrators 그룹에 Exchange 신뢰할 수 있는 하위 시스템 유니버설 보안 그룹을 추가 해야 합니다. 이러한 보안 권한을 해당 Exchange 수 있는 디렉터리를 만들고 필요에 따라 미러링 모니터 서버에서 공유할 수 있도록 필요 합니다. 적절 한 사용 권한이 구성 되지 않은 경우 다음과 같은 오류가 반환 됩니다.<BR><CODE>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API "AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied."</CODE>
 
 
@@ -72,7 +72,7 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
       - **미러링 모니터 서버**   이 필드에 DAG의 미러링 모니터 서버를 지정합니다. 이 필드를 비워 둘 경우 시스템은 미러링 모니터 서버로 사용할 사서함 서버와 함께 컴퓨터에 설치되지 않은 로컬 Active Directory 사이트의 클라이언트 액세스 서버를 자동으로 선택하려고 시도합니다.
         
 
-        > [!NOTE]
+        > [!NOTE]  
         > 미러링 모니터 서버를 지정하는 경우 호스트 이름이나 FQDN(정규화된 도메인 이름)을 사용해야 합니다. IP 주소 또는 와일드카드 이름은 지원되지 않습니다. 또한 미러링 모니터 서버는 DAG의 구성원일 수 없습니다.
 
     
@@ -86,23 +86,32 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 미러링 모니터 서버 FILESRV1과 로컬 디렉터리 C:\\DAG1을 사용하도록 구성된 DAG인 DAG1을 만듭니다. 또한 DAG1은 DAG의 IP 주소에 DHCP를 사용하도록 구성됩니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```
 
 이 예에서는 DAG2라는 DAG를 만듭니다. 시스템은 사서함 서버 역할을 DAG의 미러링 모니터 서버로 포함되지 않는 로컬 Active Directory 사이트의 클라이언트 액세스 서버를 자동으로 선택합니다. 이 예에서는 모든 DAG 구성원에 동일한 서브넷의 MAPI 네트워크가 포함되므로 DAG2에는 고정 IP 주소 하나가 할당됩니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 이 예에서는 DAG3이라는 DAG를 만듭니다. DAG3은 미러링 모니터 서버 MBX2와 로컬 디렉터리 C:\\DAG3을 사용하도록 구성됩니다. DAG 구성원이 MAPI 네트워크에서 서로 다른 서브넷에 있으므로 DAG3에는 여러 개의 고정 IP 주소가 할당됩니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
-
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```
 이 예에서는 DHCP를 사용하도록 구성된 DAG DAG4를 만듭니다. 또한 시스템에서 미러링 모니터 서버를 자동으로 선택하며 기본 감시 디렉터리가 만들어집니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG4
+```
 
 이 예에서는 관리 액세스 포인트가 포함되지 않은 DAG인 DAG5를 만듭니다. 이 방법은 Windows Server 2012 R2 DAG의 경우에만 유효합니다. 또한 MBX4를 DAG의 미러링 모니터 서버로 사용하고 기본 감시 디렉터리를 만듭니다.
 
-    New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -112,7 +121,9 @@ DAG가 성공적으로 만들어졌는지 확인하려면 다음 중 하나를 �
 
   - 셸에서 다음 명령을 실행하여 DAG가 만들어졌는지, DAG 속성 정보가 표시되는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 자세한 내용
 

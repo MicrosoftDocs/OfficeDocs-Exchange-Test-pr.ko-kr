@@ -9,9 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: MT
 ---
 
-# WhatIf, Confirm 및 ValidateOnly 스위치
-
- 
+# WhatIf, Confirm 및 ValidateOnly 스위치 
 
 _<strong>적용 대상:</strong> Exchange Server 2013_
 
@@ -26,11 +24,8 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 > 스크립트에서 명령과 함께 <EM>WhatIf</EM>, <EM>Confirm</EM> 및 <EM>ValidateOnly</EM> 스위치를 사용하려면 스크립트를 호출하는 명령줄이 아니라 스크립트에서 각 명령에 적합한 스위치를 추가해야 합니다.
 
 
-
-
 > [!NOTE]
 > <EM>WhatIf</EM>, <EM>Confirm</EM> 및 <EM>ValidateOnly</EM>를 스위치 매개 변수라고 합니다. 스위치 매개 변수에 대한 자세한 내용은 <A href="https://technet.microsoft.com/ko-kr/library/bb124388(v=exchg.150)">매개 변수</A>를 참조하십시오.
-
 
 
 ## WhatIf 스위치
@@ -39,11 +34,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 *WhatIf* 스위치와 함께 명령을 실행할 경우 다음 예와 같이 명령의 끝에 *WhatIf* 스위치를 배치합니다.
 
-    New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
-
+```poweshell
+New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+```
+  
 이 명령 예를 실행하면 셸에서 다음 텍스트가 반환됩니다.
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm 스위치
 
@@ -71,15 +70,19 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 *Confirm* 스위치를 명령에 수동으로 적용하려면 다음 예에서와 같이 명령의 끝에 *Confirm* 스위치를 포함하십시오.
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 이 명령 예를 실행하면 셸에서 다음 확인 메시지가 반환됩니다.
 
-    Confirm
-    Are you sure you want to perform this action?
-    Enabling journal rule "Litigation Journal Rule".
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
-    (default is "Y"):
+```poweshell
+Confirm
+Are you sure you want to perform this action?
+Enabling journal rule "Litigation Journal Rule".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
+(default is "Y"):
+```
 
 확인 메시지를 통해 다음을 선택할 수 있습니다.
 
@@ -97,7 +100,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-04_
 
 셸의 기본 동작을 무시하고 이 스위치가 자동으로 적용되는 cmdlet에 대해 확인 메시지를 표시하지 않으려면 다음 예에서와 같이 값이 `$False`인 *Confirm* 스위치를 포함할 수 있습니다.
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 이 경우 확인 메시지가 표시되지 않습니다.
 

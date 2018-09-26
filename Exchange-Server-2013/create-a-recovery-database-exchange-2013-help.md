@@ -39,11 +39,15 @@ _**마지막으로 수정된 항목:** 2013-01-21_
 
 다음은 사서함 서버 MBX2에 복구 데이터베이스를 RDB1을 만드는 예입니다.
 
-    New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```powershell
+New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```
 
 다음은 데이터베이스 파일 및 로그 폴더에 대한 사용자 지정 경로를 사용하여 사서함 서버 MBX1에 복구 데이터베이스 RDB2를 만드는 예입니다.
 
-    New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+  ```powershell
+  New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/aa997976\(v=exchg.150\))를 참조하십시오.
 
@@ -53,7 +57,9 @@ _**마지막으로 수정된 항목:** 2013-01-21_
 
   - 셸에서 다음 명령을 실행하여 복구 데이터베이스에 대한 구성 정보를 표시합니다.
     
-        Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```powershell
+    Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```
 
 ## 다른 작업
 

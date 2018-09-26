@@ -59,7 +59,9 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 이 예에서는 메일 연락처 Neil Black에 대한 전자 메일을 사용하지 않도록 설정합니다.
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-MailContact](https://technet.microsoft.com/ko-kr/library/aa997465\(v=exchg.150\))를 참조하십시오.
 
@@ -73,13 +75,17 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 3.  셸에서 다음 명령을 실행합니다.
     
-        Get-MailContact
+    ```powershell
+    Get-MailContact
+    ```
     
     이 cmdlet은 메일 사용 가능한 연락처만 반환하므로 전자 메일을 사용하지 않도록 설정한 연락처는 결과에 반환되지 않습니다.
 
 4.  셸에서 다음 명령을 실행합니다.
     
-        Get-Contact
+    ```powershell
+    Get-Contact
+    ```
     
     이 cmdlet은 모든 Active Directory 연락처 개체를 반환하므로 전자 메일을 사용하지 않도록 설정한 연락처가 결과에 반환됩니다.
 
@@ -91,7 +97,9 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 이 예에서는 연락처 Rene Valdes를 메일 사용 가능한 상태로 설정합니다. 외부 전자 메일 주소를 제공해야 합니다.
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 셸 및 CSV 파일을 사용하여 여러 개의 연락처를 메일 사용 가능 상태로 설정
 
@@ -99,31 +107,39 @@ Exchange 조직의 기존 메일 연락처에 대해 전자 메일을 사용하�
 
 1.  다음 명령을 실행하여 메일 사용 가능 상태가 아닌 기존 연락처의 목록을 관리자 데스크톱의 Contacts.csv로 내보냅니다.
     
-        Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```powershell
+    Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```
     
     결과 파일은 다음 파일과 유사합니다.
     
-        Name
-        Walter Harp
-        James Alvord
-        Rainer Witt
-        Susan Burk
-        Ian Tien
-        ...
+    ```powershell
+    Name
+    Walter Harp
+    James Alvord
+    Rainer Witt
+    Susan Burk
+    Ian Tien
+    ...
+    ```
 
 2.  이름이 <strong>EmailAddress</strong>인 열 제목을 추가한 후 파일에서 각 연락처에 대한 전자 메일 주소를 추가합니다. 각 연락처에 대한 이름과 외부 전자 메일 주소는 쉼표로 구분해야 합니다. 업데이트된 CSV 파일은 다음 파일과 유사합니다.
     
-        Name,EmailAddress
-        James Alvord,james@contoso.com
-        Susan Burk,sburk@tailspintoys.com
-        Walter Harp,wharp@tailspintoys.com
-        Ian Tien,iant@tailspintoys.com
-        Rainer Witt,rainerw@fourthcoffee.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    James Alvord,james@contoso.com
+    Susan Burk,sburk@tailspintoys.com
+    Walter Harp,wharp@tailspintoys.com
+    Ian Tien,iant@tailspintoys.com
+    Rainer Witt,rainerw@fourthcoffee.com
+    ...
+    ```
 
 3.  다음 명령을 실행하여 CSV 파일의 데이터를 사용해 파일 내 나열된 연락처를 메일 사용 가능한 상태로 설정합니다.
     
-        Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```powershell
+    Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     메일 사용 가능한 상태로 설정된 새 연락처의 정보가 명령 결과에 표시됩니다.
 
@@ -141,5 +157,7 @@ Active Directory 연락처가 성공적으로 메일 사용 가능한 상태로 
 
   - 셸에서 다음 명령을 실행하여 새 메일 연락처에 대한 정보를 표시합니다.
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

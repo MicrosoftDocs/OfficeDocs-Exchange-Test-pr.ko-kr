@@ -49,7 +49,9 @@ IRM(정보 권한 관리) 관련 추가 관리 작업에 대한 자세한 내용
 
 다음은 Exchange 조직에서 저널 보고서 암호 해독을 사용하도록 설정하는 예입니다.
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\)) 항목을 참조하십시오.
 
@@ -57,7 +59,9 @@ IRM(정보 권한 관리) 관련 추가 관리 작업에 대한 자세한 내용
 
 다음은 Exchange 조직에서 저널 보고서 암호 해독을 사용하지 않도록 설정하는 예입니다.
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\)) 항목을 참조하십시오.
 

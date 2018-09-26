@@ -59,7 +59,9 @@ _**마지막으로 수정된 항목:** 2013-08-13_
 
 자동 배포에서 사서함 데이터베이스를 제외하려면 다음 명령을 사용합니다.
 
-    Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```powershell
+Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```
 
 사서함 데이터베이스가 자동 배포에서 제외된 경우, 데이터베이스에 사서함을 만들거나 데이터베이스로 사서함을 이동하는 유일한 방법은 **New-Mailbox** 및 **Enable-Mailbox** cmdlet에서 *Database* 매개 변수를 사용하거나 **New-MoveRequest** cmdlet에서 *TargetDatabase* 매개 변수를 사용하는 것입니다.
 

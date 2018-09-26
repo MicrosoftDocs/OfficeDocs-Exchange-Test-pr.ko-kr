@@ -61,31 +61,43 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 1.  명령 프롬프트 창에서 다음 명령을 실행하여 EdgeTransport.exe.config 파일을 메모장에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  `<appSettings>` 섹션에서 다음 키 중 한 개 또는 두 개 모두 추가합니다.
     
-        <add key="QueueLoggingThreshold" value="<integer>" />
-        <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
+    ```powershell
+    <add key="QueueLoggingThreshold" value="<integer>" />
+    <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
+    ```
     
     예를 들어 **QueueLoggingThreshold** 값을 1로 설정하고 **QueueLoggingInterval** 값을 30초로 설정하려면 다음 값을 사용합니다.
     
-        <add key="QueueLoggingThreshold" value="1" />
-        <add key="QueueLoggingInterval" value="00:00:30" />
+    ```powershell
+    <add key="QueueLoggingThreshold" value="1" />
+    <add key="QueueLoggingInterval" value="00:00:30" />
+    ```
 
 3.  작업이 완료되면 저장하고 EdgeTransport.exe.config 파일을 닫습니다.
 
 4.  다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작합니다.
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 5.  Exchange 관리 셸에서 *QueueDiagnosticsAggregationInterval* 매개 변수의 값을 변경하려면 다음 구문을 사용합니다.
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```powershell
+    Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```
     
     예를 들어 값을 30초로 설정하려면 다음 명령을 실행합니다.
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```powershell
+    Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```
 
 ## 작동 여부를 확인하는 방법
 
@@ -95,5 +107,7 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 2.  다음 명령을 실행하여 *QueueDiagnosticsAggregationInterval* 매개 변수의 값을 확인합니다.
     
-        Get-TransportConfig | Format-List *queue*
+    ```powershell
+    Get-TransportConfig | Format-List *queue*
+    ```
 

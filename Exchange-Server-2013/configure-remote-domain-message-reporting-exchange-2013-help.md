@@ -41,9 +41,13 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 이 예에서는 Contoso라는 원격 도메인에 대한 배달 보고서를 사용하지 않도록 설정합니다. 기본적으로 이 설정은 사용하도록 설정되어 있습니다.
 
-    Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```powershell
+Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```
 
 이 예에서는 원격 도메인에 대한 배달 못 함 보고서를 사용하지 않도록 설정합니다. 기본적으로 이 설정은 사용하도록 설정되어 있습니다.
 
-    Set-RemoteDomain Contoso -NDREnabled $false
+```powershell
+Set-RemoteDomain Contoso -NDREnabled $false
+```
 

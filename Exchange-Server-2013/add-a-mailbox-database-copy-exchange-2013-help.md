@@ -71,15 +71,21 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-30_
 
 이 예에서는 MBX3이라는 사서함 서버에 사서함 데이터베이스 DB1의 복사본을 추가합니다. 재생 지연 시간과 자르기 지연 시간은 기본값 0으로 유지되고, 활성화 기본 설정은 값 2를 사용하여 구성됩니다.
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```
 
 이 예에서는 사서함 서버 MBX4에 사서함 데이터베이스 DB2의 복사본을 추가합니다. 재생 지연 시간과 자르기 지연 시간은 기본값 0으로 유지되고, 활성화 기본 설정은 값 `5`를 사용하여 구성됩니다. 또한 이 복사본에 대한 시드가 연기되므로 지리적으로 MBX4에서 멀리 떨어진 현재 활성 데이터베이스 복사본 대신 로컬 원본 서버를 사용하여 시드할 수 있습니다.
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```
 
 이 예에서는 사서함 서버 MBX5에 사서함 데이터베이스 DB3의 복사본을 추가합니다. 재생 지연 시간은 3일로 설정되고, 자르기 지연 시간은 기본값 0으로 유지되고, 활성화 기본 설정은 값 `4`를 사용하여 구성됩니다.
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX5 -ReplayLagTime 3.00:00:00 -ActivationPreference 4
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -89,7 +95,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2012-10-30_
 
   - 셸에서 다음 명령을 실행하여 사서함 데이터베이스 복사본이 작성되어 있고 정상 상태인지 확인합니다.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     상태 및 콘텐츠 인덱스 상태가 모두 정상이어야 합니다.
 

@@ -39,7 +39,9 @@ Exchange 관리 셸을 사용하여 조직에서 메일 설명을 사용하는 �
 
 **Set-OrganizationConfig** cmdlet을 사용하여 조직에서 메일 설명을 사용하거나 사용하지 않도록 설정합니다. 새 Exchange 조직을 설치하면 기본적으로 메일 설명이 사용되도록 설정됩니다. 이 예에서는 조직에서 메일 설명을 사용하도록 설정하는 방법을 보여 줍니다.
 
-    Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```powershell
+Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-OrganizationConfig](https://technet.microsoft.com/ko-kr/library/aa997443\(v=exchg.150\)) 항목을 참조하십시오.
 

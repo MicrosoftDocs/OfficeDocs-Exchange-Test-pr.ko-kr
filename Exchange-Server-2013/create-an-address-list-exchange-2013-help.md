@@ -36,7 +36,6 @@ _**마지막으로 수정된 항목:** 2012-10-12_
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
-
 ## 무슨 작업을 하고 싶으십니까?
 
 ## EAC를 사용 하 여 주소 목록을 만들려면
@@ -45,13 +44,10 @@ _**마지막으로 수정된 항목:** 2012-10-12_
 
 2.  **주소 목록** 이름을 입력 하 고 목록에 포함할 받는 사람 유형을 지정 합니다.
 
-3.  기본적으로 Exchange 조직의 모든 구성원이 포함 된 주소 목록을 만듭니다. 고유한 사용자 지정 주소 목록을 만들려면 **추가 하는 규칙을** 클릭 합니다.
-    
+3.  기본적으로 Exchange 조직의 모든 구성원이 포함 된 주소 목록을 만듭니다. 고유한 사용자 지정 주소 목록을 만들려면 **추가 하는 규칙을** 클릭 합니다.    
 
     > [!IMPORTANT]
     > 규칙을 추가 하지 않으면, 기본 주소 목록 중 하 나와 함께 중복 된 주소 목록을 만들어야 합니다.
-
-
 
 4.  목록에서 필터링 옵션 (예: **사용자 지정 특성 1** )을 선택 합니다.
 
@@ -73,11 +69,14 @@ _**마지막으로 수정된 항목:** 2012-10-12_
 
 이 예에서는 *RecipientFilter* 매개 변수를 사용하여 주소 목록 MyAddressList를 만들고, 사서함 사용자인 받는 사람을 포함하고, `StateOrProvince`를 `Washington` 또는 `Oregon`으로 설정합니다.
 
-    New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```powershell
+New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```
 
 이 예에서는 기본 제공 조건을 사용하여 All Rooms 부모 컨테이너에 자식 주소 목록 Building 34 Meeting Rooms를 만듭니다.
 
-    New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```powershell
+New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-AddressList](https://technet.microsoft.com/ko-kr/library/aa996912\(v=exchg.150\))를 참조하십시오.
-

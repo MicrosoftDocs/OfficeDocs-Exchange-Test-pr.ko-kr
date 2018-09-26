@@ -47,15 +47,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 구문을 사용하여 파이프라인 추적 보낸 사람 주소를 구성합니다.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```
 
 이 예에서는 Mailbox01 사서함 서버의 전송 서비스에서 보낸 사람 chris@contoso.com이 보낸 모든 메시지의 스냅숏을 캡처하도록 파이프라인 추적을 구성합니다.
 
-    Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```
 
 이 예에서는 Mailbox02 사서함 서버의 전송 서비스에서 수신하는 모든 시스템 생성 메시지의 스냅숏을 캡처하도록 파이프라인 추적을 구성합니다.
 
-    Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```powershell
+Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```
 
 
 > [!WARNING]
@@ -69,11 +75,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 구문을 사용하여 파이프라인 추적 폴더를 구성합니다.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```
 
 다음 예에서는 Mailbox01 사서함 서버의 전송 서비스에 대해 파이프라인 추적 폴더를 D:\\Hub\\Pipeline Tracing으로 설정합니다.
 
-    Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```
 
 ## 3단계: 셸을 사용하여 파이프라인 추적을 사용하도록 설정
 
@@ -81,11 +91,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 구문을 사용하여 파이프라인 추적을 사용하도록 설정합니다.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```
 
 이 예에서는 Mailbox01 사서함 서버의 전송 서비스에서 파이프라인 추적을 사용하도록 설정합니다.
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -93,7 +107,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -105,11 +121,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 다음 구문을 사용하여 파이프라인 추적을 사용하지 않도록 설정합니다.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```
 
 이 예에서는 Mailbox01 사서함 서버의 전송 서비스에서 파이프라인 추적을 사용하지 않도록 설정합니다.
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -117,7 +137,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```
 
 2.  *PipelineTracingEnabled* 매개 변수의 값이 $false인지 확인합니다.
 

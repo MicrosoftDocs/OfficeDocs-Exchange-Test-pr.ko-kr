@@ -34,7 +34,7 @@ _**마지막으로 수정된 항목:** 2014-12-16_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -43,10 +43,13 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 1.  명령 프롬프트 창에서 다음 명령을 실행하여 EdgeTransport.exe.config 응용 프로그램 구성 파일을 메모장에서 엽니다.
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  `<appSettings>` 섹션의 다음 키를 찾습니다.
     
+    ```command line
         <add key="PriorityQueuingEnabled" value="false" />
         <add key="MaxPerDomainHighPriorityConnections" value="3" />
         <add key="MaxPerDomainNormalPriorityConnections" value="15" />
@@ -58,10 +61,12 @@ _**마지막으로 수정된 항목:** 2014-12-16_
         <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
         <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
         <add key="MaxHighPriorityMessageSize" value="250KB" />
-    
+    ```    
     사서함 서버의 전송 서비스에서 우선 순위 큐를 사용하도록 설정하려면 다음 값을 사용합니다.
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+    <add key="PriorityQueuingEnabled" value="true" />
+    ```
     
     나머지 우선 순위 큐 값을 구성하거나 기본값으로 유지합니다.
 
@@ -69,7 +74,9 @@ _**마지막으로 수정된 항목:** 2014-12-16_
 
 4.  다음 명령을 실행하여 Microsoft Exchange Transport Service를 다시 시작합니다.
     
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

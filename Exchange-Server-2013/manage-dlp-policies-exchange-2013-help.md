@@ -71,7 +71,9 @@ Exchange 관리 셸을 하는 방법에 대 한 자세한 내용은 [PowerShell�
 
 이 예에서는 Employee Numbers 라는 가상의 DLP 정책에 대 한 정보를 반환 합니다. 명령은 지정 된 DLP 정책의 자세한 구성을 표시 하려면 **Format-List** cmdlet에 파이프 됩니다.
 
-    Get-DlpPolicy "Employee Numbers" | Format-List
+```powershell
+Get-DlpPolicy "Employee Numbers" | Format-List
+```
 
 구문 및 매개 변수 정보에 대 한 [Get-DlpPolicy](https://technet.microsoft.com/ko-kr/library/jj215752\(v=exchg.150\))를 참조 합니다.
 
@@ -101,7 +103,9 @@ Exchange 관리 셸을 하는 방법에 대 한 자세한 내용은 [PowerShell�
 
 Exchange 관리 셸을 사용 하 여 정책 작업 및 알림 수준을 지정할 수 있습니다. 작업이 적용 되지 않으며 알림 메시지가 표시 되지 않습니다 되도록 Employee Numbers 라는 가상의 DLP 정책에 대 한 모드를 설정 하는이 예제입니다.
 
-    Set-DlpPolicy "Employee Numbers" -Mode Audit
+```powershell
+Set-DlpPolicy "Employee Numbers" -Mode Audit
+```
 
 구문 및 매개 변수 정보에 대 한 [Set-DlpPolicy](https://technet.microsoft.com/ko-kr/library/jj215778\(v=exchg.150\))를 참조 합니다.
 
@@ -121,7 +125,9 @@ EAC를 사용 하는 DLP 정책을 영구적으로 제거할 수 있습니다. �
 
 이 예에서는 Employee Numbers 라는 가상의 DLP 정책을 제거 합니다.
 
-    Remove-DlpPolicy "Employee Numbers"
+```powershell
+Remove-DlpPolicy "Employee Numbers"
+```
 
 구문 및 매개 변수 정보에 대 한 [Remove-DlpPolicy](https://technet.microsoft.com/ko-kr/library/jj215677\(v=exchg.150\))를 참조 합니다.
 

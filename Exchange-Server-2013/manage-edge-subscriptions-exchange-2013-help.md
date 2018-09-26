@@ -73,19 +73,27 @@ Edge 구독을 제거하면 AD LDS에서 정보 동기화가 중지됩니다. A
 
 1.  Edge 전송 서버에서 Edge 구독을 제거하려면 다음 구문을 사용합니다.
     
-        Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     예를 들어 Edge 전송 서버 Edge01에서 Edge 구독을 제거하려면 다음 명령을 실행합니다.
     
-        Remove-EdgeSubscription Edge01
+    ```powershell
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  사서함 서버에서 Edge 구독을 제거하려면 다음 구문을 사용합니다.
     
-        Remove-EdgeSubscription <MailboxServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     예를 들어 사서함 서버 Mailbox01에서 Edge 구독을 제거하려면 다음 명령을 실행합니다.
     
-        Remove-EdgeSubscription Mailbox01
+    ```powershell
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 다음의 경우 Edge 구독을 제거해야 합니다.
 
@@ -143,7 +151,9 @@ Active Directory에서 구성이나 받는 사람을 크게 변경하여 변경 
 
 수동으로 EdgeSync를 실행하려면 다음 구문을 사용합니다.
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```powershell
+  Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```
 
 다음 예에서는 아래와 같은 옵션을 사용하여 EdgeSync를 시작합니다.
 
@@ -155,7 +165,9 @@ Active Directory에서 구성이나 받는 사람을 크게 변경하여 변경 
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -Server Mailbox01
+```powershell
+Start-EdgeSynchronization -Server Mailbox01
+```
 
 이 예에서는 다음 옵션을 사용하여 EdgeSync를 시작합니다.
 
@@ -167,7 +179,9 @@ Active Directory에서 구성이나 받는 사람을 크게 변경하여 변경 
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```powershell
+Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```
 
 ## EdgeSync 결과 확인
 
@@ -181,11 +195,15 @@ Active Directory에서 구성이나 받는 사람을 크게 변경하여 변경 
 
 단일 받는 사람에 대해 EdgeSync 결과를 확인하려면 구독된 Active Directory 사이트의 사서함 서버에서 다음 구문을 사용합니다.
 
-    Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```powershell
+Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```
 
 이 예에서는 사용자 kate@contoso.com에 대해 EdgeSync 결과를 확인합니다.
 
-    Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```powershell
+Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```
 
 맨 위로 이동
 

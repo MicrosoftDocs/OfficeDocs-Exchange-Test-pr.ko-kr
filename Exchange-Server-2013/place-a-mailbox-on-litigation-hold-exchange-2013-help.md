@@ -71,7 +71,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 이 예제에서는 소송 보존으로 설정 하는에서 사서함 bsuneja@contoso.com를 배치합니다. 사서함의 항목은 무기한 또는 보존이 제거 될 때까지 유지 됩니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```
 
 
 > [!NOTE]
@@ -83,7 +85,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 이 예에서는 사서함 bsuneja@contoso.com 소송 보존에 배치 하 고 2555 일 (약 7 년)에 대 한 항목을 유지 합니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 ## 셸을 사용 하 여 지정 된 기간 동안 소송 보존으로 설정 하는에서 모든 사서함을 보류
 
@@ -91,7 +95,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 1 년 (365 일)에 대 한 소송 보존으로 설정에서 조직에서 모든 사용자 사서함을 저장 하는이 예제입니다.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```
 
 이 예제에서는 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\)) cmdlet을 사용 하 여 조직에서 모든 사서함을 검색 하 고 모든 사용자 사서함을 포함 하는 받는 사람 필터를 지정 다음 목록이 사서함을 소송 보존을 설정 하 고 보존 기간을 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) cmdlet에 파이프 합니다.
 
@@ -103,7 +109,9 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
 소송 보존으로 설정에서 사서함 bsuneja@contoso.com를 제거 하는이 예제입니다.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```
 
 맨위로 돌아가기
 
@@ -125,12 +133,16 @@ _**마지막으로 수정된 항목:** 2016-10-18_
 
   - 셸에서 다음 명령 중 하나를 실행 합니다.
     
-        Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```powershell
+    Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```
     
     또는
     
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
-    
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```
+
     사서함 무기한 소송 보존에 배치 되 면 *LitigationHoldDuration* 속성 사서함에 대 한 값 `Unlimited`에 설정 됩니다.
 
 ## 추가 정보
@@ -149,23 +161,23 @@ _**마지막으로 수정된 항목:** 2016-10-18_
     
     다음은 일반적인 사용자 또는 사서함 속성을 기준으로 사서함의 하위 집합을 반환 하려면 **Get-Mailbox** 및 **Get-Recipient** cmdlet을 사용 하 여 몇가지 예입니다. 이 예제에서는 관련 사서함 속성 (예: *CustomAttributeN* 또는 *Department*) 채워지고 가정 합니다.
     
-    ```
+    ```powershell
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
 
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
-
-    ```
+    
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
     ```
 
-    ```
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
 
-    ```
+    ```powershell
     Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
     ```
     

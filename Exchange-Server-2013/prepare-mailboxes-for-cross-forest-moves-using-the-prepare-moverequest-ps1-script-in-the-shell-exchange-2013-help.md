@@ -59,12 +59,16 @@ Microsoft Exchange 2013 사서함 이동 및 **New-MoveRequest** 및 **New-Migra
 
 1.  다음 명령을 실행하여 로컬 포리스트와 원격 포리스트 자격 증명을 가져옵니다.
     
+    ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+    ```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *LocalForestCredential* 및 *RemoteForestCredential* 매개 변수로 전달합니다.
     
+    ```powershell
         Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+    ```
 
 ## 스크립트의 매개 변수 집합
 
@@ -174,12 +178,16 @@ Microsoft Exchange 2013 사서함 이동 및 **New-MoveRequest** 및 **New-Migra
 
 1.  다음 명령을 실행하여 로컬 포리스트와 원격 포리스트 자격 증명을 가져옵니다.
     
+    ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+    ```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *LocalForestCredential* 및 *RemoteForestCredential* 매개 변수로 전달합니다.
     
+     ```powershell
         Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+     ```
 
 ## 예: 파이프라이닝
 
@@ -187,11 +195,15 @@ Microsoft Exchange 2013 사서함 이동 및 **New-MoveRequest** 및 **New-Migra
 
 1.  다음 명령을 실행합니다.
     
+    ```powershell
         $UserCredentials = Get-Credential
+    ```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *RemoteForestCredential* 매개 변수로 전달합니다.
     
+    ```powershell
         "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 예: .csv 파일을 사용하여 메일 사용 가능 사용자를 대량으로 만들기
 
@@ -211,11 +223,15 @@ Cindy@contoso.com
 
 1.  다음 명령을 실행하여 원격 포리스트 자격 증명을 가져옵니다.
     
+    ```powershell
         $UserCredentials = Get-Credential
+    ```
 
 2.  다음 명령을 실행하여 자격 증명 정보를 Prepare-MoveRequest.ps1 스크립트의 *RemoteForestCredential* 매개 변수로 전달합니다.
     
+    ```powershell
         Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 대상 개체별 스크립트 동작
 

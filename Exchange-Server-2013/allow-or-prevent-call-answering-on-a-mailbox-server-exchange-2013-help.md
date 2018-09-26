@@ -55,9 +55,13 @@ Exchange 2007 및 Exchange 2010 에서 통합 메시징 서버의 작동 상태�
 
 들어오는 음성, 팩스, 자동 전화 교환에 응답 하는 사서함 서버 `UMMBXr-05x.contoso.com` 를 사용 하는이 예제 및 Outlook Voice Access에서 VoIP 게이트웨이, IP Pbx, SIP 사용 가능 Pbx 및 Sbc를 호출 하 고 UMMBX 05 레지스트리 하 여 변경 내용을 기록 x 서버입니다.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 이 예제에서는 응답 들어오는 음성, 팩스, 자동 전화 교환 및 Outlook Voice Access 통화에서 VoIP 게이트웨이, IP Pbx, SIP 사용 가능 Pbx 및 Sbc에서 사서함 서버 `UMMBX-05x.contoso.com` 수 없도록 하 고 Active Directory에만 변경 합니다.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

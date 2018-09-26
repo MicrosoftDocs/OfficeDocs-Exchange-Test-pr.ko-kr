@@ -41,41 +41,53 @@ Microsoft Exchange Server 2013에서는 DSN(배달 상태 알림)을 사용하�
 
 Exchange 2013에 포함된 모든 기본 제공 DSN 메시지의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-SystemMessage -Original
+```powershell
+Get-SystemMessage -Original
+```
 
 조직의 모든 사용자 지정 DSN 메시지의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-SystemMessage
+```powershell
+Get-SystemMessage
+```
 
 내부 보낸 사람에게 영어로 전송된 DSN 코드 5.1.2에 대한 사용자 지정 DSN 메시지의 자세한 정보를 보려면 다음 명령을 실행합니다.
 
-    Get-SystemMessage En\Internal\5.1.2 | Format-List
+```powershell
+Get-SystemMessage En\Internal\5.1.2 | Format-List
+```
 
 ## 셸을 사용하여 사용자 지정 DSN 메시지 만들기
 
 다음 명령을 실행합니다.
 
-    New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
-
+```powershell
+New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```
 이 예에서는 영어로 내부 보낸 사람에게 전송된 DSN 코드 5.1.2에 대한 사용자 지정 일반 텍스트 DSN 메시지를 만듭니다.
 
-    New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
-
+```powershell
+New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 이 예에서는 영어로 외부 보낸 사람에게 전송된 DSN 코드 5.1.2에 대한 사용자 지정 일반 텍스트 DSN 메시지를 만듭니다.
 
-    New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
-
+```powershell
+New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```
 이 예에서는 영어로 내부 보낸 사람에게 전송된 DSN 코드 5.1.2에 대한 사용자 지정 HTML DSN 메시지를 만듭니다.
 
-    New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
-
+```powershell
+New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```
 ## 작동 여부는 어떻게 확인합니까?
 
 사용자 지정 DNS 메시지가 만들어졌는지 확인하려면 다음을 수행합니다.
 
 1.  다음 명령을 실행합니다.
     
-        Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```powershell
+    Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 
@@ -85,19 +97,23 @@ Exchange 2013에 포함된 모든 기본 제공 DSN 메시지의 요약 목록�
 
 사용자 지정 DSN 메시지의 텍스트를 변경하려면 다음 명령을 사용합니다.
 
-    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
-
+```powershell
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```
 이 예에서는 내부 보낸 사람에게 영어로 전송된 DSN 코드 5.1.2에 대한 사용자 지정 DSN 메시지에 할당된 텍스트를 변경합니다.
 
-    Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
-
+```powershell
+Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 ## 작동 여부는 어떻게 확인합니까?
 
 사용자 지정 DNS 메시지의 텍스트가 변경되었는지 확인하려면 다음을 수행합니다.
 
 1.  다음 명령을 실행합니다. `Get-SystemMessage`.
     
-        Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```powershell
+    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```
 
 2.  표시되는 값이 자신이 구성한 값인지 확인합니다.
 
@@ -105,11 +121,15 @@ Exchange 2013에 포함된 모든 기본 제공 DSN 메시지의 요약 목록�
 
 다음 명령을 실행합니다.
 
-    Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```powershell
+Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```
 
 이 예에서는 영어로 내부 보낸 사람에게 전송된 DSN 코드 5.1.2에 대한 사용자 지정 DSN 메시지를 제거합니다.
 
-    Remove-SystemMessage En\Internal\5.1.2
+```powershell
+Remove-SystemMessage En\Internal\5.1.2
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -131,11 +151,15 @@ Exchange 받는 사람에게 사서함을 할당하려면 다음 단계를 수�
 
 2.  다음 명령을 실행합니다.
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```powershell
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```
     
     예를 들어 Exchange 받는 사람에게 "Contoso System Mailbox"라는 기존 사서함을 할당하려면 다음 명령을 실행합니다.
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```powershell
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```
 
 ## 2단계: 모니터링할 DSN 코드 지정
 
@@ -149,19 +173,24 @@ Exchange 받는 사람에게 사서함을 할당하려면 다음 단계를 수�
 
 기존 값을 바꾸려면 다음 명령을 실행합니다.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
-
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```
 이 예에서는 DSN 코드가 5.7.1, 5.7.2 및 5.7.3인 DSN 메시지를 모두 Exchange 받는 사람에게 전달하도록 Exchange 조직을 구성합니다.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
-
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```
 기존 값을 수정하지 않고 항목을 추가 또는 제거하려면 다음 명령을 실행합니다.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
-
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```
 이 예에서는 DSN 코드 5.7.5를 추가하고 Exchange 받는 사람에게 전달되는 DSN 메시지의 기존 목록에서 DSN 코드 5.7.1을 제거합니다.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

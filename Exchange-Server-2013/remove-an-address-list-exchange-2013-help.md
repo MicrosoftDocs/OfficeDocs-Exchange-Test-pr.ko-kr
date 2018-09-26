@@ -51,7 +51,9 @@ _**마지막으로 수정된 항목:** 2012-10-14_
 
 다음은 하위 주소록을 포함하지 않는 주소 목록 Sales Department를 제거하는 예입니다.
 
-    Remove-AddressList -Identity "Sales Department"
+```powershell
+Remove-AddressList -Identity "Sales Department"
+```
 
 해당 주소 목록을 제거하려면 **Y**를 입력한 다음 Enter 키를 누릅니다.
 
@@ -61,7 +63,9 @@ _**마지막으로 수정된 항목:** 2012-10-14_
 
 다음은 상위 주소 목록 Departments와 모든 하위 주소 목록을 제거하는 예입니다.
 
-    Remove-AddressList -Identity Departments -Recursive
+```powershell
+Remove-AddressList -Identity Departments -Recursive
+```
 
 **Y**를 입력하여 상위 주소 목록과 해당 하위 주소 목록을 제거할 것인지를 확인한 후 Enter 키를 누릅니다.
 

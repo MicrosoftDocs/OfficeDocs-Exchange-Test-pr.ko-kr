@@ -39,19 +39,24 @@ IMAP4에 대한 자세한 내용은 [Exchange Server 2013의 POP3 및 IMAP4](pop
 
 이 예에서는 IMAP4 사용자가 일정 정보 교환 표준인 iCalendar 표준을 사용하도록 설정합니다.
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
-
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 이 예에서는 IMAP4 사용자가 내부 서버를 통해 일정 정보에 액세스하도록 설정합니다.
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
-
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 이 예에서는 IMAP4 사용자가 외부 서버에서 인터넷을 통해 일정 정보에 액세스하도록 설정합니다.
 
-    Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
-
+```powershell
+Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```
 이 예에서는 IMAP4 사용자가 직접 Outlook Web App URL을 사용하여 일정 정보에 액세스하도록 설정합니다. `Custom`을 사용 중인 경우 *OWAServerUrl* 매개 변수를 사용하여 Outlook Web App URL을 지정해야 합니다.
 
-    Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 IMAP4의 일정 옵션을 지정한 후에는 IMAP4 서비스를 다시 시작해야 합니다. IMAP4 서비스를 다시 시작하는 방법에 대한 자세한 내용은 [시작 및 IMAP4 서비스를 중지 합니다.](start-and-stop-the-imap4-services-exchange-2013-help.md)를 참조하십시오.
 
@@ -63,7 +68,9 @@ IMAP4의 일정 옵션을 지정한 후에는 IMAP4 서비스를 다시 시작�
 
 셸에서 다음 명령을 실행합니다.
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 일정 설정이 올바른지 확인합니다.
 

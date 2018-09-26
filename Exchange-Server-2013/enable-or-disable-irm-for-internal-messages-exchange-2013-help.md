@@ -47,7 +47,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 Exchange 조직의 내부 메시지에 IRM을 사용하도록 설정합니다.
 
-    Set-IRMConfiguration -InternalLicensingEnabled $true
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\)) 항목을 참조하십시오.
 
@@ -55,7 +57,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 Exchange 조직의 내부 메시지에 IRM을 사용하지 않도록 설정합니다.
 
-    Set-IRMConfiguration -InternalLicensingEnabled $false
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-IRMConfiguration](https://technet.microsoft.com/ko-kr/library/dd979792\(v=exchg.150\)) 항목을 참조하십시오.
 

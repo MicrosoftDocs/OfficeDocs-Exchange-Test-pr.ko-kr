@@ -29,7 +29,9 @@ _**마지막으로 수정된 항목:** 2015-01-14_
 
 서버 확인 스크립트를 대상으로 모든 필수 서버 **Get-ClientAccessArray** cmdlet을 사용 하 여 다음 예제와 같이 합니다.
 
-    Get-ClientAccessArray | fl members
+```powershell
+Get-ClientAccessArray | fl members
+```
 
 업데이트에 실패 하는 서버는 클라이언트 액세스 배열 구성원 하는 여전히 하지 적절 하 게 업데이트 하는 경우 Exchange 설치 프로그램을 다시 실행 하 고 다시 서버에 클라이언트 액세스 서버 역할을 추가 합니다. 또한 *ToSpecificServers*매개 변수 사용 하 여 대상으로 하는 개별 서버를 지정할 수 있습니다.
 
@@ -55,7 +57,9 @@ _**마지막으로 수정된 항목:** 2015-01-14_
 
 짧은 시간에 대 한 서버 작동이 중지 되었을는 하는 경우 Exchange 를 영구적으로 제거 하지 않으려면만 현재 서버를 대상으로 있도록 *ToSpecificServers* 매개 변수 사용 하 여 특정 서버에 대해 실행 하려면 스크립트를 조정할 수 있습니다. 또는 제거할 수 있습니다는 RPC 클라이언트 액세스 서비스는 응답 하지 않는 서버 Active Directory 개체에서 **Remove-ClientAccessArray** cmdlet을 사용 하 여 다음 예제와 같이 합니다.
 
-    Remove-RPCClientAccess -Server Server.Contoso.com
+```powershell
+Remove-RPCClientAccess -Server Server.Contoso.com
+```
 
 RPC 클라이언트 액세스 서비스를 제거한 후 [Get-ClientAccessArray](https://technet.microsoft.com/ko-kr/library/dd297976\(v=exchg.150\)) 하 여 서버를 배열 구성원으로 반환 되지 않음 및 스크립트 대상 지정 되지 않습니다. 서버가 다시 작동 되는 즉시 **New-RpcClientAccess** cmdlet을 사용 하 여 RPC 클라이언트 액세스 서비스를 다시 추가할 수 있습니다. RPC 클라이언트 액세스 서비스를 다시 추가 될 때에 영향을 받는 서버에서 Microsoft Exchange 주소록 서비스를 다시 시작 해야 합니다.
 

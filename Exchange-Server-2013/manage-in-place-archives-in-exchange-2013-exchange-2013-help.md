@@ -83,8 +83,10 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 이 예에서는 Active Directory에 Chris Ashton이라는 사용자를 만들고 사서함 데이터베이스 DB01에 사서함을 만든 다음 보관함을 사용하도록 설정합니다. 다음 로그온할 때 암호를 다시 설정해야 합니다. 초기 암호 값을 설정하기 위해 이 예에서는 변수($password)를 만들고, 암호를 입력하라는 메시지를 표시하고, SecureString 개체로 변수에 해당 암호를 할당합니다.
 
-    $password = Read-Host "Enter password" -AsSecureString
-    New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```powershell
+$password = Read-Host "Enter password" -AsSecureString
+New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997663\(v=exchg.150\))를 참조하십시오.
 
@@ -96,7 +98,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
   - 셸에서 다음 명령을 실행하여 새 사용자 사서함 및 보관함에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```
 
   - 셸에서 <strong>Test-ArchiveConnectivity</strong> cmdlet을 사용하여 보관함에 대한 연결을 테스트합니다. 보관함 연결 테스트 방법의 예를 보려면 [Test-ArchiveConnectivity](https://technet.microsoft.com/ko-kr/library/hh529914\(v=exchg.150\))의 예 섹션을 참조하십시오.
 
@@ -124,11 +128,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 이 예에서는 Tony Smith의 사서함에 대해 보관함을 사용하도록 설정합니다.
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 이 예에서는 DB01 데이터베이스에서 온-프레미스 또는 클라우드 기반 보관함이 사용하도록 설정되어 있지 않고 이름이 DiscoverySearchMailbox로 시작하지 않는 사서함을 검색합니다. 결과를 <strong>Enable-Mailbox</strong> cmdlet으로 파이프하여 사서함 데이터베이스 DB01의 모든 사서함에 대한 보관함을 사용하도록 설정합니다.
 
-    Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```powershell
+Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Enable-Mailbox](https://technet.microsoft.com/ko-kr/library/aa998251\(v=exchg.150\)) 및 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\))를 참조하십시오.
 
@@ -140,7 +148,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
   - 셸에서 다음 명령을 실행하여 새 보관함에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,*Archive*
+    ```
 
   - 셸에서 <strong>Test-ArchiveConnectivity</strong> cmdlet을 사용하여 보관함에 대한 연결을 테스트합니다. 보관 연결 테스트 방법의 예제를 보려면 [Test-ArchiveConnectivity](https://technet.microsoft.com/ko-kr/library/hh529914\(v=exchg.150\))의 예제를 참조하십시오.
 
@@ -174,7 +184,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 이 예에서는 Chris Ashton의 사서함에 대해 보관함을 사용하지 않도록 설정합니다. 사서함을 사용하지 않도록 설정하지는 않습니다.
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997210\(v=exchg.150\))를 참조하십시오.
 
@@ -186,7 +198,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
   - 셸에서 다음 명령을 실행하여 사서함 사용자의 보관 속성을 확인합니다.
     
-        Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```powershell
+    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```
     
     보관함이 사용하지 않도록 설정된 경우 보관 관련 속성에 대해 다음 값이 반환됩니다.
     
@@ -243,11 +257,15 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 1.  보관함의 이름을 모르는 경우 셸에서 다음 명령을 실행하여 이름을 확인할 수 있습니다. 이 예에서는 사서함 데이터베이스 DB01을 검색하고 이 데이터베이스를 <strong>Get-MailboxStatistics</strong> cmdlet으로 파이프하여 데이터베이스의 모든 사서함에 대한 사서함 통계를 검색한 후 <strong>Where-Object</strong> cmdlet을 사용하여 결과를 필터링한 다음 연결이 끊어진 보관함의 목록을 검색합니다. 이 명령은 GUID 및 항목 수와 같은 각 보관함에 대한 추가 정보를 표시합니다.
     
-        Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```powershell
+    Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```
 
 2.  보관함을 기본 사서함에 연결합니다. 이 예에서는 Chris Ashton의 보관함을 Chris Ashton의 기본 사서함에 연결하고 GUID를 보관함의 ID로 사용합니다.
     
-        Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```powershell
+    Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
@@ -261,5 +279,7 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-02-01_
 
 연결이 끊어진 보관함이 사서함 사용자에게 연결되었는지 확인하려면 다음 셸 명령을 사용하여 사서함 사용자의 보관함 속성을 검색하고 *ArchiveGuid* 및 *ArchiveDatabase* 속성에 대해 반환된 값을 확인합니다.
 
-    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```powershell
+Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```
 

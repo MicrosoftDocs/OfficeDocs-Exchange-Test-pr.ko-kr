@@ -41,9 +41,13 @@ _**마지막으로 수정된 항목:** 2012-10-02_
 
 범위를 제거하려면 다음 구문을 사용합니다.
 
-    Remove-ManagementScope <scope name>
+```powershell
+Remove-ManagementScope <scope name>
+```
 
 예를 들어, "Dublin Servers" 범위를 제거하려면 다음 명령을 사용합니다.
 
-    Remove-ManagementScope "Dublin Servers"
+```powershell
+Remove-ManagementScope "Dublin Servers"
+```
 

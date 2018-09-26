@@ -49,11 +49,15 @@ _**마지막으로 수정된 항목:** 2015-11-30_
 
 특정 기간에 대 한 로컬 재정의 만들려면 다음 구문을 사용 합니다.
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```
 
 Exchange 의 특정 버전에 대 한 로컬 재정의 만들려면 다음 구문을 사용 합니다.
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```
 
 
 > [!NOTE]
@@ -63,13 +67,17 @@ Exchange 의 특정 버전에 대 한 로컬 재정의 만들려면 다음 구�
 
 응답자 `ActiveDirectoryConnectivityConfigDCServerReboot` 20 일 동안 EXCH03 라는 서버에서 사용할 수 없도록 로컬 재정의 추가 하는이 예제입니다.
 
-    Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```powershell
+Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 을 로컬 재정의 성공적으로 만들어졌는지 확인 하려면 로컬 재정의 목록을 보려면 **Get-ServerMonitoringOverride** cmdlet을 사용 합니다.
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 재정의가 목록에 표시될 것입니다.
 
@@ -77,17 +85,23 @@ Exchange 의 특정 버전에 대 한 로컬 재정의 만들려면 다음 구�
 
 로컬 재정의 제거 하려면 다음 구문을 사용 합니다.
 
-    Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```powershell
+Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```
 
 이 예에서는 EXCH01 서버에서 설정 되는 Exchange 상태에서 `ActiveDirectoryConnectivityConfigDCServerReboot` 응답자의 기존 로컬 재정의 제거 합니다.
 
-    Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```powershell
+Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```
 
 ## 작업이 완료되었는지 어떻게 확인합니까?
 
 로컬 재정의 성공적으로 제거 했는지를 확인 하려면 로컬 재정의 목록을 보려면 **Get-ServerMonitoringOverride** cmdlet을 사용 합니다.
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 제거된 재정의가 목록에 표시되지 않게 됩니다.
 
@@ -95,11 +109,15 @@ Exchange 의 특정 버전에 대 한 로컬 재정의 만들려면 다음 구�
 
 특정 기간에 대 한 전역 재정의 만들려면 다음 구문을 사용 합니다.
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```
 
 Exchange 의 특정 버전에 대 한 전역 재정의 만들려면 다음 구문을 사용 합니다.
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```
 
 
 > [!NOTE]
@@ -109,17 +127,23 @@ Exchange 의 특정 버전에 대 한 전역 재정의 만들려면 다음 구�
 
 30 일 동안 `OnPremisesInboundProxy` 프로브를 사용 하지 않도록 설정 하는 전역 재정의 추가 하는이 예제입니다.
 
-    Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```powershell
+Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```
 
 Exchange 버전 15.01.0225.042를 실행 하는 모든 서버에 대 한 `StorageLogicalDriveSpaceEscalate` 응답자를 사용 하지 않도록 설정 하는 전역 재정의 추가 하는이 예제입니다.
 
-    Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```powershell
+Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
 전역 재정의가 정상적으로 작성되었는지 확인하려면 **Get-GlobalMonitoringOverride** cmdlet을 사용하여 전역 재정의 목록을 확인합니다.
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 재정의가 목록에 표시될 것입니다.
 
@@ -127,17 +151,23 @@ Exchange 버전 15.01.0225.042를 실행 하는 모든 서버에 대 한 `Storag
 
 전역 재정의 제거 하려면 다음 구문을 사용 합니다.
 
-    Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```powershell
+Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```
 
 이 예제에서는 `FrontEndTransport` 상태 집합에서 `OnPremisesInboundProxy` 프로브 `ExtensionAttributes` 속성의 기존 전역 재정의 제거합니다.
 
-    Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```powershell
+Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```
 
 ## 작업이 완료되었는지 어떻게 확인합니까?
 
 전역 재정의가 정상적으로 제거되었는지 확인하려면 **Get-GlobalMonitoringOverride** cmdlet을 사용하여 전역 재정의 목록을 확인합니다.
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 제거된 재정의가 목록에 표시되지 않게 됩니다.
 

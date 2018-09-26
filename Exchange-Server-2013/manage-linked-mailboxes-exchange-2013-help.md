@@ -88,7 +88,7 @@ _**마지막으로 수정된 항목:** 2012-11-27_
       - **\* 사용자 로그온 이름**   이 상자를 사용하여 연결된 사서함을 만드는 데 필요한 사용자 로그온 이름을 입력합니다. 여기에 사용자 이름을 입력합니다. 이 이름은 별칭을 지정하지 않은 경우 연결된 사서함에 대한 전자 메일 주소의 왼쪽 부분에 사용됩니다.
         
 
-        > [!NOTE]
+        > [!NOTE]  
         > 연결된 사서함을 만들 때 Exchange 포리스트에 만들어지는 사용자 계정은 사용하지 않도록 설정되므로 사용자는 사용자 로그온 이름을 사용하여 연결된 사서함에 로그인하지 않고 계정 포리스트의 자격 증명을 사용하여 로그인합니다.
 
 
@@ -116,7 +116,9 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
 이 예에서는 CONTOSO Exchange 리소스 포리스트의 Ayla Kol을 위한 연결된 사서함을 만듭니다. FABRIKAM 도메인은 계정 포리스트에 있습니다. 관리자 계정 FABRIKAM\\administrator는 연결된 도메인 컨트롤러에 액세스할 때 사용됩니다.
 
-    New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+  ```powershell
+  New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997663\(v=exchg.150\)) 항목을 참조하십시오.
 
@@ -128,7 +130,9 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
   - 셸에서 다음 명령을 실행하여 새 연결된 사서함에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## 연결된 사서함 속성 변경
 
@@ -137,10 +141,8 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 여러 연결된 사서함의 속성을 동시에 변경할 수도 있습니다. 자세한 내용은 [사용자 사서함 관리](https://docs.microsoft.com/ko-kr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) 항목의 "사용자 사서함 대량 편집" 섹션을 참조하십시오.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]   
 > 이 작업의 예상 완료 시간은 보거나 변경하려는 속성 수에 따라 다릅니다.
-
-
 
 ## EAC를 사용하여 연결된 사서함 속성 변경
 
@@ -201,7 +203,7 @@ _**마지막으로 수정된 항목:** 2012-11-27_
   - **사서함 사용량**   이 영역에는 사서함의 전체 크기와 전체 사서함 할당량 중에서 사용된 비율이 표시됩니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 앞의 두 상자에 표시되는 정보를 가져오기 위해 EAC는 사서함을 호스트하는 사서함 데이터베이스를 쿼리합니다. EAC가 사서함 데이터베이스를 포함하는 Exchange 저장소와 통신할 수 없는 경우 이러한 상자는 비어 있습니다. 사용자가 처음으로 사서함에 로그인한 경우가 아니면 경고 메시지가 표시됩니다.
 
 
@@ -237,9 +239,8 @@ _**마지막으로 수정된 항목:** 2012-11-27_
       - **사용자 지정 주소 유형**   이 단추를 클릭하고 **\* 전자 메일 주소** 상자에 지원되는 SMTP 이외의 전자 메일 주소 유형 중 하나를 입력합니다.
         
 
-        > [!NOTE]
+        > [!NOTE]  
         > X.400 주소를 제외하고 Exchange는 사용자 지정 주소 형식이 올바른지 확인하지 않습니다. 지정하는 사용자 지정 주소는 해당 주소 유형에 대한 형식 요구 사항을 충족해야 합니다.
-
 
 
   - **이 받는 사람에게 적용된 전자 메일 주소 정책에 따라 전자 메일 주소를 자동으로 업데이트**   조직의 전자 메일 주소 정책이 변경될 때 받는 사람의 전자 메일 주소를 자동으로 업데이트하려면 이 확인란을 선택합니다. 이 확인란은 기본적으로 선택되어 있습니다.
@@ -259,10 +260,8 @@ _**마지막으로 수정된 항목:** 2012-11-27_
   - **통합 메시징**   기본적으로 이 기능은 사용하도록 설정되어 있지 않습니다. UM(통합 메시징)을 사용하도록 설정하면 사용자가 조직의 UM 기능을 사용할 수 있으며 사용자에게 기본 UM 속성 집합이 적용됩니다. 사서함에 대해 UM을 사용하도록 설정하려면 **사용**을 클릭합니다. UM을 사용하도록 설정하는 방법에 대한 자세한 내용은 [음성 메일에 대 한 사용자를 사용 하도록 설정](https://docs.microsoft.com/ko-kr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail) 항목을 참조하십시오.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > UM을 사용하도록 설정하려면 먼저 UM 다이얼 플랜 및 UM 사서함 정책이 있어야 합니다.
-
-
 
   - **모바일 장치**   기본적으로 사용되는 Exchange ActiveSync의 설정을 보고 변경하려면 이 섹션을 사용합니다. Exchange ActiveSync를 사용하면 모바일 장치에서 Exchange 사서함에 액세스할 수 있습니다. 사서함에 대해 이 기능을 사용하지 않도록 설정하려면 **Exchange ActiveSync 사용 안 함**을 클릭합니다.
 
@@ -376,15 +375,21 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
 이 예에서는 **Get-Mailbox** 명령을 사용하여 조직의 연결된 사서함을 모두 찾습니다.
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+  ```powershell
+  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+  ```
 
 이 예에서는 **Set-Mailbox** 명령을 사용하여 전자 메일 메시지의 받는 사람, 참조 및 숨은 참조 줄에 지정할 수 있는 받는 사람 수를 500으로 제한합니다. 이 제한은 조직의 모든 연결된 사서함에 적용됩니다.
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+  ```powershell
+  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+  ```
 
 이 예에서는 Exchange 포리스트의 연결된 사서함과 연관된 fabrikam.com 계정 포리스트의 연결된 마스터 계정을 변경합니다.
 
-    Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+  ```powershell
+  Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+  ```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -394,9 +399,13 @@ _**마지막으로 수정된 항목:** 2012-11-27_
 
   - 셸에서 **Get-Mailbox** cmdlet을 사용하여 변경 사항을 확인합니다. 셸을 사용할 때의 한 가지 장점은 여러 연결된 사서함의 여러 속성을 볼 수 있다는 것입니다. 받는 사람 제한이 변경된 위 예에서는 다음 명령을 실행하여 새 값을 확인할 수 있습니다.
     
-        Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+      ```powershell
+      Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+      ```
     
     연결된 마스터 계정이 변경된 위 예에서는 다음 명령을 실행하여 새 값을 확인합니다.
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

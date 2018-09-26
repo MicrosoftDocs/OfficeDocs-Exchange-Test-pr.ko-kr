@@ -60,7 +60,7 @@ _**마지막으로 수정된 항목:** 2015-07-07_
       - **다음 크기(GB)일 때 경고 표시**   이 상자에는 사용자에게 경고가 표시되기까지의 최대 저장소 제한이 표시됩니다. 사서함 크기가 지정된 값에 도달하거나 초과하면 사용자에게 경고 메시지가 전송됩니다.
         
 
-        > [!IMPORTANT]
+        > [!IMPORTANT]  
         > 이 설정의 값은 <STRONG>보내기 금지</STRONG> 할당량에 지정 된 값의 50%를 초과 하지 않는 한 사용자에 게 <STRONG>경고 보내기</STRONG> 할당량와 관련 된 메시지를 보낼 수 없습니다. 예, 8 MB를 <STRONG>보내기 금지</STRONG> 할당량을 설정 하는 경우 <STRONG>경고 보내기</STRONG> 할당량 최소 4MB를 설정 해야 합니다. 를 지정 하지 않으면 <STRONG>경고 보내기</STRONG> 할당량 메시지를 보낼 수 없습니다.
 
     
@@ -75,16 +75,18 @@ _**마지막으로 수정된 항목:** 2015-07-07_
 문제 경고를 설정 하는이 예제, 보내기, 금지 하 고 보내기 및 받기 금지 할당량 24.5 g B, 24.75 g B 및 25GB Joe Healy의 사서함에 대 한 각각 합니다.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 사서함에 대 한 사용자 지정 설정을 사용 하는 대신 사서함 데이터베이스의 기본값은 되도록 <CODE>$false</CODE>를 <EM>UseDatabaseQuotaDefaults</EM> 매개 변수를 설정 해야 합니다.
 
-
-
-    Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```
 
 문제 경고를 설정 하는이 예제, 보내기, 금지 하 고 보내기 및 받기 금지 900 메가바이트 (MB), 950 MB Ayla Kol의 사서함에 대 한 할당량 및 1GB 각각, 사용자 지정 설정을 사용 하 여 사서함을 구성 합니다.
 
-    Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -106,5 +108,6 @@ _**마지막으로 수정된 항목:** 2015-07-07_
 
 셸에서 다음 명령을 실행합니다.
 
-    Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
-
+```powershel
+Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```

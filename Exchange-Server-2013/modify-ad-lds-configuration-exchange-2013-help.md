@@ -85,7 +85,9 @@ Edge 전송 서버를 Exchange 조직에 구독하기 전에 $env:ExchangeInstal
 
 이 예에서는 AD LDS에서 사용하는 LDAP 포트를 5000으로 변경합니다. 앰퍼샌드(&)는 명령 구문의 일부분입니다.
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+  ```
 
 이 예에서는 AD LDS 구성을 다음과 같이 변경합니다. 앰퍼샌드(&)는 명령 구문의 일부분입니다. 각 매개 변수와 해당 값 사이에는 콜론(:)이 사용됩니다.
 
@@ -99,5 +101,7 @@ Edge 전송 서버를 Exchange 조직에 구독하기 전에 $env:ExchangeInstal
 
 <!-- end list -->
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+  ```
 

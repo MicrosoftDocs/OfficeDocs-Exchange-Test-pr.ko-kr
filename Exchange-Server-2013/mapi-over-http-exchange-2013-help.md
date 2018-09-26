@@ -179,7 +179,9 @@ MAPI over HTTP를 사용하려는 경우 다음 요구 사항을 고려하세요
     
     예를 들어 내부 URL 값을 https://contoso.com/mapi로 설정하고 인증 방법을 `Negotiate`로 설정하여 로컬 Exchange 서버에서 기본 MAPI 가상 디렉터리를 구성하려면 다음 명령을 실행합니다.
     
-        Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+    ```powershell
+    Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+    ```
 
 2.  **인증서 구성**   Exchange 환경에서 사용하는 디지털 인증서는 MAPI 가상 디렉터리에 구성된 것과 같은 *InternalURL* 및 *ExternalURL* 값을 포함해야 합니다. Exchange 2013 인증서 관리에 대한 자세한 내용은 [디지털 인증서 및 SSL](digital-certificates-and-ssl-exchange-2013-help.md)을 참조하세요. Exchange 인증서를 Outlook 클라이언트 워크스테이션에서 신뢰하는지 확인하고, 특히 MAPI 가상 디렉터리에 구성된 URL에 액세스하는 경우에는 인증서 오류가 없는지 확인합니다.
 
@@ -189,7 +191,9 @@ MAPI over HTTP를 사용하려는 경우 다음 요구 사항을 고려하세요
     
     다음 명령을 실행합니다.
     
-        Set-OrganizationConfig -MapiHttpEnabled $true
+    ```powershell
+    Set-OrganizationConfig -MapiHttpEnabled $true
+    ```
 
 ## MAPI over HTTP 연결 테스트
 
@@ -197,13 +201,17 @@ MAPI over HTTP를 사용하려는 경우 다음 요구 사항을 고려하세요
 
 다음 예에서는 Exchange 서버 ContosoMail에서 MAPI over HTTP 연결을 테스트합니다.
 
-    Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```powershell
+Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapiHttpSelfTestProbe
+```
 
 테스트가 정상적으로 완료되면 다음 예와 같은 출력이 반환됩니다.
 
-    MonitorIdentity                                          StartTime              EndTime                Result      Error     Exception
-    ---------------                                          ---------              -------                ------      -----     ---------
-    OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe    2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
+```powershell
+MonitorIdentity                                          StartTime              EndTime                Result      Error     Exception
+---------------                                          ---------              -------                ------      -----     ---------
+OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe    2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
+```
 
 자세한 내용은 [Test-OutlookConnectivity](https://technet.microsoft.com/ko-kr/library/dd638082\(v=exchg.150\))를 참조하세요.
 

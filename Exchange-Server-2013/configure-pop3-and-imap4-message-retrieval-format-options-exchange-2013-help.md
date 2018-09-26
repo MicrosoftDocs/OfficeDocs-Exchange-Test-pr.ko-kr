@@ -71,7 +71,9 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 
 이 예에서는 CAS01 서버의 모든 POP3 사용자에 대한 메시지 검색 형식 옵션을 텍스트로만 설정합니다.
 
-    Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 다음 설정 중에서 선택할 수 있습니다. 숫자 값 또는 텍스트 문자열을 사용하여 *MessageRetrievalMimeFormat* 매개 변수의 값을 지정할 수 있습니다.
 
@@ -128,7 +130,9 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 설정이 올바른지 확인합니다.
 
@@ -166,7 +170,9 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 
 이 예에서는 CAS01 서버의 모든 IMAP4 사용자에 대한 메시지 검색 형식 옵션을 텍스트로만 설정합니다.
 
-    Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 다음 설정 중에서 선택할 수 있습니다. 숫자 값 또는 텍스트 문자열을 사용하여 *MessageRetrievalMimeFormat* 매개 변수의 값을 지정할 수 있습니다.
 
@@ -223,7 +229,9 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 설정이 올바른지 확인합니다.
 
@@ -233,7 +241,9 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 
 이 예에서는 `USER01`의 POP3 액세스에 대한 메시지 검색 형식을 텍스트로만 설정합니다.
 
-    Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```
 
 다음 설정 중에서 선택할 수 있습니다. 숫자 값 또는 텍스트 문자열을 사용하여 *PopMessagesRetrievalMimeFormat* 매개 변수의 값을 지정할 수 있습니다.
 
@@ -290,7 +300,9 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *PopMessagesRetrievalMimeFormat*의 값이 올바른지 확인합니다.
 
@@ -300,7 +312,9 @@ POP3에 대해 메시지 검색 형식을 설정한 후에는 POP3 서비스를 
 
 이 예에서는 `USER01`의 IMAP4 액세스에 대한 메시지 검색 형식을 텍스트로만 설정합니다.
 
-    Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```
 
 숫자 값 또는 텍스트 문자열을 사용하여 *ImapMessagesRetrievalMimeFormat* 매개 변수의 값을 지정할 수 있습니다.
 
@@ -357,7 +371,9 @@ IMAP4에 대해 메시지 검색 형식을 설정한 후에는 IMAP4 서비스�
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *ImapMessagesRetrievalMimeFormat*의 값이 올바른지 확인합니다.
 

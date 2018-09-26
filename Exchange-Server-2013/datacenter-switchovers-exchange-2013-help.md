@@ -67,16 +67,24 @@ DAG가 DAC 모드에 없는 경우 기본 데이터 센터에서 남아 있는 D
 
 1.  각 구성원에서 다음 명령을 실행하여 기본 데이터 센터의 DAG 구성원을 DAG의 기본 클러스터에서 강제로 제거해야 합니다.
     
-        net stop clussvc
-        cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```powershell
+    net stop clussvc
+    ```
+    ```powershell
+    cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```
 
 2.  보조 데이터 센터의 DAG 구성원은 이제 다시 시작된 다음 보조 데이터 센터에서의 제거 프로세스를 완료하는 데 사용됩니다. 각 구성원에서 다음 명령을 실행하여 보조 데이터 센터의 각 DAG 구성원에서 클러스터 서비스를 중지합니다.
     
-        net stop clussvc
+    ```powershell
+    net stop clussvc
+    ```
 
 3.  보조 데이터 센터의 DAG 구성원에서 다음 명령을 실행하여 클러스터 서비스의 쿼럼을 강제로 시작합니다.
     
-        net start clussvc /forcequorum
+    ```powershell
+    net start clussvc /forcequorum
+    ```
 
 4.  장애 조치 클러스터 관리 도구를 열고 DAG의 기본 클러스터에 연결합니다. 클러스터를 확장한 다음 **노드**를 확장합니다. 기본 데이터 센터의 각 노드를 마우스 오른쪽 단추로 클릭하고 **기타 작업**을 선택한 다음 **제거**를 선택합니다. 기본 데이터 센터에서 DAG 구성원 제거가 완료되면 장애 조치 클러스터 관리 도구를 닫습니다.
 
@@ -106,23 +114,33 @@ DAG가 DAC 모드에 없는 경우 보조 데이터 센터에서 사서함 서�
     
     1.  DAG 구성원 수가 홀수인 경우 다음 명령을 실행하여 DAG 쿼럼 모델을 노드 및 파일 공유 과반수에서 노드 과반수 쿼럼으로 변경합니다.
         
-            cluster <DAGName> /quorum /nodemajority
+        ```powershell
+        cluster <DAGName> /quorum /nodemajority
+        ```
     
     2.  DAG 구성원 수가 짝수인 경우 Exchange 관리 셸에서 다음 명령을 실행하여 미러링 모니터 서버 및 디렉터리를 다시 구성합니다.
         
-            Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```powershell
+        Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```
 
 2.  다음 명령을 실행하여 보조 데이터 센터의 나머지 DAG 구성원에서 클러스터 서비스를 시작합니다.
     
-        net start clussvc
+    ```powershell
+    net start clussvc
+    ```
 
 3.  각 DAG 구성원에 대해 다음 명령을 실행하여 DAG에서 사서함 데이터베이스를 활성화하기 위한 서버 전환을 수행합니다.
     
-        Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```powershell
+    Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```
 
 4.  다음 명령을 실행하여 보조 사이트의 각 DAG 구성원에서 사서함 데이터베이스를 탑재합니다.
     
-        Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```powershell
+    Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```
 
 맨 위로 이동
 

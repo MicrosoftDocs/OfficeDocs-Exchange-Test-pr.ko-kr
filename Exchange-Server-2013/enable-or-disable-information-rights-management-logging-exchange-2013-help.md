@@ -53,7 +53,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 사서함 서버에서 IRM 로그를 사용 하는이 예제입니다.
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-TransportService](https://technet.microsoft.com/ko-kr/library/jj215682\(v=exchg.150\))를 참조 하십시오.
 
@@ -61,7 +63,9 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 사서함 서버에서 로깅을 IRM 사용 하지 않도록 설정 합니다.
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-TransportService](https://technet.microsoft.com/ko-kr/library/jj215682\(v=exchg.150\))를 참조 하십시오.
 
@@ -71,5 +75,7 @@ IRM과 관련된 추가 관리 작업에 대한 자세한 내용은 [정보 권�
 
 이 예에서는 EXCH01 서버에 모든 IRM 로깅 속성을 검색 합니다.
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```powershell
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```
 

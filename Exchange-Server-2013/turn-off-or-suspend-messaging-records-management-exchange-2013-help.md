@@ -57,9 +57,11 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 이 셸의 예에서는 보존 정책 Corp-Users에서 보존 태그 Delete - 3 Days의 연결을 해제합니다.
 
-    $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
-    $tags -= "Deleted Items - 3 Days"
-    Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```powershell
+$tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
+$tags -= "Deleted Items - 3 Days"
+Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-RetentionPolicy](https://technet.microsoft.com/ko-kr/library/dd298086\(v=exchg.150\)) 및 [Set-RetentionPolicy](https://technet.microsoft.com/ko-kr/library/dd335196\(v=exchg.150\))를 참조하십시오.
 
@@ -71,15 +73,21 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 이 셸의 예에서는 사서함 jpeoples에서 보존 정책을 제거합니다.
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 이 셸의 예에서는 Exchange 조직의 모든 사서함에서 보존 정책을 제거합니다.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 이 셸의 예에서는 보존 정책 Corp-Finance를 적용한 모든 사서함 사용자에게서 해당 정책을 제거합니다.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\)) 및 [Get-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123685\(v=exchg.150\))를 참조하십시오.
 
@@ -103,15 +111,21 @@ _**마지막으로 수정된 항목:** 2013-02-14_
 
 이 예에서는 Exchange 설치 프로그램에서 만들어진 ArbitrationMailbox 정책에 사용되는 "삭제 안 함" 태그를 제외한, Exchange 조직의 모든 삭제 태그를 제거합니다.
 
-    Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 이 예에서는 "삭제 안 함" 태그를 제외한 모든 보존 태그를 제거합니다.
 
-    Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 이 명령에서는 Exchange 조직의 Corp-Users 보존 정책을 제거합니다.
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 

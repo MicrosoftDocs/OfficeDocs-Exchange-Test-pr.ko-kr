@@ -45,11 +45,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 이 예에서는 보낸사람 신뢰도 비활성화합니다.
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 보낸사람 신뢰도 설정 하는이 예제입니다.
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -57,11 +61,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  프로토콜 분석 에이전트를 설치 하 고 다음 명령을 실행 하 여 활성화를 확인 합니다.
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  다음 명령을 실행 하 여 구성한 보낸사람 신뢰도 값을 확인 합니다.
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## 셸을 사용 하 여 하거나 내부 또는 외부 메시지에 대 한 보낸사람 신뢰도 사용 하지 않도록 설정
 
@@ -69,19 +77,27 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 외부 메시지에 대 한 보낸사람 신뢰도 사용 하지 않으려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 외부 메시지에 대 한 보낸사람 신뢰도 사용 하도록 설정 하려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 내부 메시지에 대 한 보낸사람 신뢰도 사용 하지 않으려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 내부 메시지에 대 한 보낸사람 신뢰도 사용 하도록 설정 하려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -89,7 +105,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  표시된 값이 구성한 값과 일치하는지 확인합니다.
 
@@ -97,11 +115,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 보낸사람 신뢰도 속성을 구성 하려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 이 예에서는 보낸사람 신뢰도 수준 (SRL) 차단 임계값을 6으로 설정 하는 및 36 시간에 대 한 확인 된 유해한 보낸사람 IP 차단 목록에 추가 하려면 보낸사람 신뢰도 구성 합니다.
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -109,7 +131,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderReputationConfig
+    ```powershell
+    Get-SenderReputationConfig
+    ```
 
 2.  표시된 값이 구성한 값과 일치하는지 확인합니다.
 
@@ -148,11 +172,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 개방형 프록시 서버를 감지에 대 한 아웃 바운드 액세스를 구성 하려면 다음 명령을 실행 합니다.
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 이 예에서는 server01 포트 80에서 HTTP 연결 프로토콜을 사용 하는 개방형 프록시 서버를 사용 하도록 보낸사람 신뢰도 구성 합니다.
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -160,7 +188,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  표시된 값이 구성한 값인지 확인합니다.
 

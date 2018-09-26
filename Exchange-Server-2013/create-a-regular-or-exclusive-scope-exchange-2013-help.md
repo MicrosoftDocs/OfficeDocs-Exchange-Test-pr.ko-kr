@@ -46,7 +46,7 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -65,17 +65,17 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 기본 OU가 있는 도메인 제한 필터 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
-
+```powershell
+New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```
 이 예에서는 contoso.com/Sales OU 내의 모든 사서함을 포함하는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```powershell
+New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```
 
-
-> [!NOTE]
+> [!NOTE]  
 > 특정 OU 내에서만 아니라 관리 역할의 암시적 읽기 범위 전체에 필터를 적용하려면 <EM>RecipientRoot</EM> 매개 변수를 생략할 수 있습니다.
-
-
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -87,11 +87,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 서버 필터 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 이 예에서는 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD(Active Directory) 사이트 내의 모든 서버를 포함하는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```powershell
+New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -101,11 +105,15 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 서버 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 이 예에서는 MBX1, MBX3 및 MBX5에만 적용되는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -114,7 +122,7 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 데이터베이스 필터 기반 구성 범위는 **New-ManagementScope** cmdlet의 *DatabaseRestrictionFilter* 매개 변수를 사용하여 만듭니다. 데이터베이스 필터를 사용하면 지정한 필터와 일치하는 데이터베이스에만 적용되는 범위를 만들 수 있습니다.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > 데이터베이스 범위와 관련 된 역할 할당 Microsoft Exchange Server 2010 서비스 팩 1 (SP1)을 실행 하는 서버에 연결 하는 사용자 에게만 적용 됩니다 이상 또는 Exchange 2013 합니다. 데이터베이스 범위와 관련 된 역할 할당을 할당 된 사용자가 사전Exchange 2010 SP1 서버에 연결 하는 경우에 역할 할당 사용자에 게 적용 되지 않습니다 및 사용자 역할 할당에서 제공 하는 모든 권한을 부여 되지 않습니다.
 
 
@@ -123,11 +131,14 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 
 데이터베이스 제한 필터를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
-
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 이 예에서는 데이터베이스의 **Name** 속성에 "경영진"이라는 문자열이 있는 모든 데이터베이스를 포함하는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```powershell
+New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -140,14 +151,17 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 > 데이터베이스 범위와 관련 된 역할 할당 Microsoft Exchange Server 2010 서비스 팩 1 (SP1)을 실행 하는 서버에 연결 하는 사용자 에게만 적용 됩니다 이상 또는 Exchange 2013 합니다. 데이터베이스 범위와 관련 된 역할 할당을 할당 된 사용자가 사전Exchange 2010 SP1 서버에 연결 하는 경우에 역할 할당 사용자에 게 적용 되지 않습니다 및 사용자 역할 할당에서 제공 하는 모든 권한을 부여 되지 않습니다.
 
 
-
 데이터베이스 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 이 예에서는 데이터베이스 Database 1, Database 2 및 Database 3에만 적용되는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -156,19 +170,22 @@ Microsoft Exchange Server 2013의 관리 역할 범위 및 할당에 대한 자�
 **New-ManagementScope** cmdlet으로 만드는 모든 범위는 단독 범위로 지정할 수 있습니다. 단독 범위를 만들려면 이전 섹션 중 하나에 나오는 것과 같은 명령을 사용하여 받는 사람 필터 기반 범위, 서버 필터 기반 범위, 서버 목록 기반 범위, 데이터베이스 필터 기반 범위 또는 데이터베이스 목록 기반 범위를 만든 다음 명령에 *Exclusive* 스위치를 추가하면 됩니다.
 
 
-> [!WARNING]
+> [!WARNING]  
 > 단독 관리 범위를 만들면 수정할 개체가 포함된 단독 범위가 할당된 역할 담당자만 이러한 개체에 액세스할 수 있습니다. 즉, 단독 범위가 있는 역할이 할당된 관리자만 이러한 단독 또는 보호 개체에 액세스할 수 있습니다.
 
 
 
 이 예에서는 Executives 부서에 있는 모든 사용자와 일치하는 단독 받는 사람 필터 기반 범위를 만듭니다.
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 기본적으로 단독 범위가 생성되면 사용자가 단독 범위를 만들었으며 단독이 아닌 기존 역할 할당에 대한 단독 범위의 영향을 인식하고 있음을 확인해야 합니다. 경고를 표시하지 않으려면 *Force* 스위치를 사용할 수 있습니다. 이 예에서는 앞의 예와 같은 범위를 만들지만 경고를 표시하지 않습니다.
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
-
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
 ## 2단계: 관리 역할 할당 추가 또는 변경

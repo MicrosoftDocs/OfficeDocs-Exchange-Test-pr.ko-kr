@@ -95,7 +95,9 @@ _<strong>마지막으로 수정된 항목:</strong> 2016-12-09_
         
         가용성 주소 공간을 구성하려면 Exchange 2007 조직의 Exchange 2010 클라이언트 액세스 서버에서 Exchange 관리 셸을 통해 다음 명령을 실행합니다.
         
-            Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
+          ```powershell
+          Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
+          ```
         
         자세한 구문 및 매개 변수 정보에 대 한 [Add-availabilityaddressspace](https://go.microsoft.com/fwlink/p/?linkid=268413)
 

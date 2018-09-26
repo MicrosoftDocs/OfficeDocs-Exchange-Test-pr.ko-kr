@@ -53,11 +53,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 특정 역할의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole <role name> | Format-List
+```powershell
+Get-ManagementRole <role name> | Format-List
+```
 
 이 예에서는 Mail Recipients 관리 역할의 세부 정보를 검색합니다.
 
-    Get-ManagementRole "Mail Recipients" | Format-List
+```powershell
+Get-ManagementRole "Mail Recipients" | Format-List
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))을 참조하십시오.
 
@@ -67,16 +71,21 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이 예에서는 조직의 모든 역할 목록이 반환됩니다.
 
-    Get-ManagementRole
+```powershell
+Get-ManagementRole
+```
 
 조직에 있는 모든 역할의 특정 속성 목록을 반환하려면 **Format-Table** cmdlet의 결과를 파이프하고 결과 목록에서 원하는 속성을 지정할 수 있습니다. 다음 구문을 사용합니다.
 
-    Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```powershell
+Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```
 
 이 예에서는 조직의 모든 역할 목록을 반환하고 속성 이름이 **Implicit**로 시작하는 모든 속성과 **Name** 속성을 포함합니다.
 
-    Get-ManagementRole | Format-Table Name, Implicit*
-
+```powershell
+Get-ManagementRole | Format-Table Name, Implicit*
+```
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 
 ## 특정 cmdlet이 포함된 관리 역할 표시
@@ -85,11 +94,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 지정한 cmdlet이 포함된 역할 목록을 반환하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole -Cmdlet <cmdlet>
+```powershell
+Get-ManagementRole -Cmdlet <cmdlet>
+```
 
 이 예에서는 **New-Mailbox** cmdlet이 포함된 역할 목록을 반환합니다.
 
-    Get-ManagementRole -Cmdlet New-Mailbox
+```powershell
+Get-ManagementRole -Cmdlet New-Mailbox
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 
@@ -101,15 +114,21 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 지정한 매개 변수가 포함된 역할 목록을 반환하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```powershell
+Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 이 예에서는 매개 변수가 위치한 cmdlet에 관계없이 *Database* 및 *Server* 매개 변수가 포함된 역할 목록을 반환합니다.
 
-    Get-ManagementRole -CmdletParameters Database, Server
+```powershell
+Get-ManagementRole -CmdletParameters Database, Server
+```
 
 이 예에서는 *EmailAddresses* 매개 변수가 **Set-Mailbox** cmdlet에만 있는 역할 목록을 반환합니다.
 
-    Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```powershell
+Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```
 
 *Cmdlet* 또는 *CmdletParameters* 매개 변수에 와일드카드 문자(\*)를 사용하여 cmdlet 또는 매개 변수의 부분 이름을 일치시킬 수도 있습니다.
 
@@ -121,11 +140,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 지정한 역할 유형과 일치하는 역할 목록을 반환하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole -RoleType <roletype>
+```powershell
+Get-ManagementRole -RoleType <roletype>
+```
 
 이 예에서는 `UmMailboxes` 역할 유형에 따라 역할 목록을 반환합니다.
 
-    Get-ManagementRole -RoleType UmMailboxes
+```powershell
+Get-ManagementRole -RoleType UmMailboxes
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 
@@ -135,11 +158,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 상위 역할의 직접 하위 역할 목록을 반환하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRole <parent role name> -GetChildren
+```powershell
+Get-ManagementRole <parent role name> -GetChildren
+```
 
 이 예에서는 Disaster Recovery 역할의 직접 하위 목록을 반환합니다.
 
-    Get-ManagementRole "Disaster Recovery" -GetChildren
+```powershell
+Get-ManagementRole "Disaster Recovery" -GetChildren
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 
@@ -149,11 +176,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 이 예에서는 상위 역할의 모든 하위 역할 목록을 반환합니다.
 
-    Get-ManagementRole <parent role name> -Recurse
+```powershell
+Get-ManagementRole <parent role name> -Recurse
+```
 
 이 예에서는 Mail Recipients 역할의 모든 하위 역할을 반환합니다.
 
-    Get-ManagementRole "Mail Recipients" -Recurse
+```powershell
+Get-ManagementRole "Mail Recipients" -Recurse
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351125\(v=exchg.150\))를 참조하십시오.
 

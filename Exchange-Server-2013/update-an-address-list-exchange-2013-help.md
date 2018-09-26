@@ -53,11 +53,15 @@ _**마지막으로 수정된 항목:** 2012-10-14_
 
 이 예에서는 주소 목록 Washington State를 업데이트합니다.
 
-    Update-AddressList "Washington State"
+```powershell
+Update-AddressList "Washington State"
+```
 
 이름이 같은 주소 목록이 여러 개 있는 경우 업데이트할 주소 목록의 전체 경로를 지정해야 합니다. 예를 들어 North America 아래에 있는 주소 목록 Sales를 업데이트하려고 하는데 Europe 아래에도 Sales 주소 목록이 있는 경우 다음 명령을 사용합니다.
 
-    Update-AddressList "North America\Sales"
+```powershell
+Update-AddressList "North America\Sales"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Update-AddressList](https://technet.microsoft.com/ko-kr/library/aa997982\(v=exchg.150\))를 참조하십시오.
 

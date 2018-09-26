@@ -53,47 +53,53 @@ _**마지막으로 수정된 항목:** 2013-02-21_
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
-
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 ## 사이트 사서함 프로비전 정책의 설정 보기
 
 이 예에서는 조직에 있는 모든 사이트 사서함 프로비전 정책에 대한 자세한 정보를 반환합니다.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 이 예에서는 조직의 모든 정책을 반환하지만 어떤 정책이 기본 정책인지 식별하는 `IsDefault` 정보만 표시합니다.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 기존 사이트 사서함 프로비전 정책 변경
 
 이 예에서는 Default라는 사이트 사서함 프로비전 정책을 사이트 사서함에서 최대 크기 25MB까지의 전자 메일 메시지를 수신할 수 있도록 변경합니다. Exchange를 설치하면 이름이 **Default**인 프로비전 정책이 만들어집니다.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 이 예에서는 경고 할당량을 9.5GB로 변경하고 보내기 및 받기 금지 할당량을 10GB로 변경합니다.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
-
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 ## 사이트 사서함 이름 접두사 구성
 
 새 사이트 사서함을 만들면 기본적으로 해당 전자 메일 주소에 접두사가 붙습니다. 전자 메일 주소 접두사를 사용하면 사이트 사서함을 쉽게 검색 및 쿼리할 수 있고 사용자가 사이트 사서함을 확인하는 데에도 도움이 될 수 있습니다. 원하는 경우에는 접두사를 사용하지 않도록 설정하거나 Office 365의 테넌트 또는 온-프레미스 배포의 지정된 포리스트에 대해 접두사를 변경할 수 있습니다. 기본 접두사 동작을 적용하는 경우 Office 365에서 사이트 사서함을 만들면 기본 접두사 **SMO-**가 추가됩니다. 온-프레미스 배포에서 사이트 사서함을 만드는 경우의 접두사는 **SM-**입니다. 하이브리드 고객이 사이트 사서함을 두 위치에서 만든 다음 프레미스 간에 동기화하는 경우 충돌이 발생하지 않도록 하기 위해 이 두 프레미스 간의 기본 동작은 서로 다릅니다.
 
 이 예에서는 *DefaultAliasPrefixEnabled* 매개 변수를 $false로 설정하여 접두사 이름 지정을 사용하지 않도록 설정합니다.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
-
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 이 예에서는 기본 프로비전 정책을 변경하고 *AliasPrefix*를 FOREST01로 설정합니다.
-
 
 > [!NOTE]
 > 여러 포리스트가 포함된 배포에서는 둘 이상의 포리스트에서 이름이 같은 사이트 사서함을 만든 경우 개체를 포리스트 간에 동기화할 때 충돌을 방지하기 위해 각 포리스트에서 서로 다른 접두사를 사용하는 것이 좋습니다.
 
-
-
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
-
-
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 > [!NOTE]
 > Exchange 온-프레미스와 Office 365를 모두 사용하는 하이브리드 배포에서는 모든 클라우드 기반 사이트 사서함을 만들 때 접두사 <STRONG>SMO-</STRONG>가 추가됩니다. 하이브리드 고객이 사이트 사서함을 두 위치에서 만든 다음 프레미스 간에 동기화하는 경우 충돌이 발생하지 않도록 하기 위해 Office 365 와 Exchange 온-프레미스의 접두사는 서로 다릅니다. AliasPrefix 매개 변수가 DefaultAliasPrefixEnabled 매개 변수보다 우선하므로 <EM>AliasPrefix</EM> 매개 변수를 null이 아닌 유효한 문자열로 설정하면 새 사이트 사서함 각각의 별칭 앞에 해당 문자열이 추가됩니다.
 
@@ -103,7 +109,9 @@ _**마지막으로 수정된 항목:** 2013-02-21_
 
 이 예에서는 Exchange 설치 중에 만들어진 기본 사이트 사서함 정책을 삭제합니다.
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 
 > [!IMPORTANT]

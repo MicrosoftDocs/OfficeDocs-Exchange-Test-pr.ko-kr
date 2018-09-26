@@ -45,11 +45,15 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 하위 역할이 없는 역할을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-ManagementRole <role name>
+```powershell
+Remove-ManagementRole <role name>
+```
 
 이 예에서는 Seattle Server Administrators 역할을 제거합니다.
 
-    Remove-ManagementRole "Seattle Server Administrators"
+```powershell
+Remove-ManagementRole "Seattle Server Administrators"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351170\(v=exchg.150\))을 참조하십시오.
 
@@ -65,13 +69,17 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 제거할 역할만 제거하려면 명령에 *WhatIf* 스위치를 사용하여 명령이 올바른지 확인합니다. 다음 구문을 사용합니다.
 
-    Remove-ManagementRole <role name> -Recurse -WhatIf
+```powershell
+Remove-ManagementRole <role name> -Recurse -WhatIf
+```
 
 *WhatIf* 스위치는 변경 내용을 커밋하지 않고 명령을 수행한 다음 제거했을 역할을 보고합니다. *WhatIf* 스위치에 대한 자세한 내용은 [WhatIf, Confirm 및 ValidateOnly 스위치](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)를 참조하십시오.
 
 제거할 역할만 제거되는지 확인한 후 *WhatIf* 스위치 없이 동일한 명령을 실행합니다. 이 예에서는 London Administrators 역할 및 모든 하위 역할을 제거합니다.
 
-    Remove-ManagementRole "London Administrators" -Recurse
+```powershell
+Remove-ManagementRole "London Administrators" -Recurse
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-ManagementRole](https://technet.microsoft.com/ko-kr/library/dd351170\(v=exchg.150\))를 참조하십시오.
 
@@ -79,7 +87,9 @@ _**마지막으로 수정된 항목:** 2012-10-03_
 
 범위가 지정되지 않은 역할을 제거하려면 이 항목의 앞부분에 있는 Remove a management role with no child roles 및 Remove a management role with child roles에 제공된 것과 동일한 절차를 사용할 수 있습니다. 유일한 차이점은 범위가 지정되지 않은 역할을 제거하는 경우 명령을 실행할 때 *UnScopedTopLevel* 스위치를 지정해야 한다는 것입니다. 이 예에서는 범위가 지정되지 않은 역할 및 모든 하위 역할을 제거합니다.
 
-    Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```powershell
+Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```
 
 다른 역할 제거와 마찬가지로 *WhatIf* 스위치를 사용하여 올바른 역할이 제거되는지 확인해야 합니다.
 

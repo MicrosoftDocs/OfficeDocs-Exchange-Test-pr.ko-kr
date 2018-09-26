@@ -131,7 +131,9 @@ Exchange 2013 설치 방법에 대한 자세한 내용은 [계획 및 배포](pl
     
     2.  다음 명령을 실행합니다.
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```
     
     3.  일반적인 전송 에이전트 관리 작업을 수행합니다.
     
@@ -161,7 +163,9 @@ Exchange 2013 설치 방법에 대한 자세한 내용은 [계획 및 배포](pl
     
     이 문제를 해결하려면 Exchange 2013 클라이언트 액세스 서버의 클라이언트 수신 커넥터에서 `Integrated` 인증 방법을 제거해야 합니다. 클라이언트 수신 커넥터에서 `Integrated` 인증 방법을 제거하려면 **Send-MailMessage** cmdlet을 실행하는 컴퓨터에서 연결을 수신할 수 있는 각 Exchange 2013 클라이언트 액세스 서버에 다음 명령을 실행합니다.
     
-        Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+      ```powershell
+      Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+      ```
 
   - **Exchange 2013 SP1로 업그레이드하면 MAPI over HTTP의 성능이 저하될 수 있음**   Exchange 2013 누적 업데이트에서 Exchange 2013 SP1로 업그레이드하고 MAPI over HTTP를 사용하도록 설정하면 해당 프로토콜을 사용하여 Exchange 2013 SP1 서버에 연결하는 클라이언트의 성능이 저하될 수 있습니다. 누적 업데이트에서 Exchange 2013 SP1로 업그레이드하는 동안 필수 설정이 구성되지 않기 때문입니다. Exchange 2013 RTM에서 Exchange 2013 SP1로 업그레이드하거나 Exchange 2013 SP1 이상 서버를 새로 설치하는 경우에는 이 문제가 발생하지 않습니다.
     
@@ -174,22 +178,26 @@ Exchange 2013 설치 방법에 대한 자세한 내용은 [계획 및 배포](pl
     
     1.  클라이언트 액세스 서버 역할을 실행하는 서버의 Windows 명령 프롬프트에서 다음 명령을 실행합니다.
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+          ```powershell
+          set AppCmdLocation=%windir%\System32\inetsrv
+          set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+          ```
     
     2.  사서함 서버 역할을 실행하는 서버의 Windows 명령 프롬프트에서 다음 명령을 실행합니다.
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+          ```powershell
+          set AppCmdLocation=%windir%\System32\inetsrv
+          set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
+          
+          %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
+          %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+          ```
 
 ## Exchange 2010 동시 사용
 

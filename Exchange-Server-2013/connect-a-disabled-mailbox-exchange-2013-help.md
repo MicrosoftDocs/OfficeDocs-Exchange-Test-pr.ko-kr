@@ -43,8 +43,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
 
   - 다음 명령을 실행하여 사용자 계정을 연결하려는 사용되지 않는 사서함이 사서함 데이터베이스에 있으며 일시 삭제된 사서함이 아닌지 확인합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
-    
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```    
     사용되지 않는 사서함을 연결하려면 사서함이 사서함 데이터베이스에 있고 *DisconnectReason* 속성의 값이 `Disabled`여야 합니다. 사서함이 데이터베이스에서 제거된 경우에는 명령에서 어떤 결과도 반환되지 않습니다.
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
@@ -68,9 +69,8 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
     Exchange 조직의 선택한 Exchange 서버에서 연결이 끊어진 사서함이 목록으로 표시됩니다.
     
 
-    > [!NOTE]
+    > [!NOTE]   
     > 연결이 끊어진 사서함 목록에는 비활성 사서함, 삭제된 사서함 및 일시 삭제된 사서함이 포함됩니다.
-
 
 
 3.  다시 연결하려는 사용되지 않는 사서함을 클릭하고 **연결**을 클릭합니다.
@@ -85,16 +85,21 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
 
 이 예에서는 사용자 사서함을 연결합니다. *Identity* 매개 변수는 Exchange 데이터베이스에 있는 연결이 끊어진 사서함을 지정합니다. *User* 매개 변수는 사서함을 다시 연결할 Active Directory 사용자 계정을 지정합니다.
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 이 예에서는 연결된 사서함을 연결합니다. *Identity* 매개 변수는 Exchange 데이터베이스에 있는 연결이 끊어진 사서함을 지정합니다. *LinkedMasterAccount* 매개 변수는 사서함을 다시 연결할 계정 포리스트의 Active Directory 사용자 계정을 지정합니다. *Alias* 매개 변수는 다시 연결된 사서함의 별칭, 즉 전자 메일 주소에서 @ 기호의 왼쪽 부분을 지정합니다.
 
-    Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```powershell
+Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```
 
 이 예에서는 공유 사서함을 연결합니다.
 
-    Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
-
+```powershell
+Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```
 
 > [!NOTE]
 > <STRONG>Connect-Mailbox</STRONG> cmdlet을 실행할 때 <EM>Alias</EM> 매개 변수를 포함하지 않을 경우 <EM>User</EM> 또는 <EM>LinkedMasterAccount</EM> 매개 변수에 지정된 값을 사용하여 다시 연결할 사서함의 전자 메일 주소 별칭이 만들어집니다.
@@ -113,7 +118,8 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 사용되지
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType* 속성의 **UserMailbox** 값은 사용자 계정과 사서함이 연결되었음을 나타냅니다. **Get-Mailbox** cmdlet을 실행하여 사서함이 있는지 확인할 수도 있습니다.
-

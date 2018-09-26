@@ -51,33 +51,37 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
 
 다음 예는 **Get-Mailbox** cmdlet에서 반환하는 동일한 데이터를 볼 수 있는 다른 방법을 보여 줍니다.
 
+```powershell
     Get-Mailbox TestUser1
     
     Name                      Alias                ServerName       ProhibitSendQuo
                                                                     ta
     ----                      -----                ----------       ---------------
     TestUser1                 TestUser1            mbx              unlimited
-
+```
 첫 번째 예에서는 기본 출력이 표 형식으로 표시되고 미리 결정된 속성 집합이 포함되도록 특정 형식을 지정하지 않고 **Get-Mailbox** cmdlet을 호출합니다.
 
+```powershell
     Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
     
     Name           : TestUser1
     Alias          : TestUser1
     EmailAddresses : {SMTP:TestUser1@contoso.com}
-
+```
 두 번째 예에서는 **Get-Mailbox** cmdlet 출력이 특정 속성과 함께 **Format-List** cmdlet으로 파이프됩니다. 보이는 것처럼 출력 형식과 내용이 크게 다릅니다.
 
+```powershell
     Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
     Name                      : Test User
     Alias                     : TestUser1
     EmailAddresses            : {SMTP:TestUser1@contoso.com}
     EmailAddressPolicyEnabled : True
-
+```
 마지막 예에서 **Get-Mailbox** cmdlet 출력은 두 번째 예에서와 같이 **Format-List** cmdlet으로 파이프됩니다. 그러나 마지막 예에서는 와일드카드 문자를 사용되어 `Email`로 시작하는 일치하는 모든 속성을 검색합니다.
 
 두 개 이상의 개체가 **Format-List** cmdlet으로 전달되면 개체에 대해 지정된 모든 속성이 개체별로 그룹화되어 표시됩니다. 표시 순서는 cmdlet의 기본 매개 변수에 따라 다릅니다. 기본 매개 변수는 주로 *Name* 매개 변수 또는 *Identity* 매개 변수입니다. 예를 들어 **Get-Childitem** cmdlet을 호출하면 기본적으로 파일 이름이 사전순으로 표시됩니다. 이러한 동작을 변경하려면 **Format-List** cmdlet을*GroupBy* 매개 변수 및 출력 그룹화 기준인 속성 값 이름과 함께 호출해야 합니다. 예를 들어 다음 명령은 디렉터리의 모든 파일을 나열하고 확장명으로 그룹화합니다.
 
+```powershell
     Get-Childitem | Format-List Name,Length -GroupBy Extension
     
         Extension: .xml
@@ -105,6 +109,7 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
     
     Name   : Text_02.txt
     Length : 9835
+```
 
 이 예에서 **Format-List** cmdlet은 *GroupBy* 매개 변수에서 지정한 *Extension* 속성으로 항목을 그룹화합니다. 파이프라인 스트림에 있는 개체의 유효한 모든 속성과 함께 *GroupBy* 매개 변수를 사용할 수 있습니다.
 
@@ -116,14 +121,16 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
 
 첫 번째 예에서 **Get-Process** cmdlet에 대한 명령 정보를 표시하기 위해 **Get-Command** cmdlet을 사용하면 *Definition* 속성에 대한 정보가 잘립니다.
 
+```powershell
     Get-Command Get-Process | Format-Table Name,Definition
     
     Name                                    Definition
     ----                                    ----------
     get-process                             get-process [[-ProcessName] String[]...
-
+```
 두 번째 예에서는 *Wrap* 매개 변수를 명령에 추가하여 *Definition* 속성의 전체 내용을 표시합니다.
 
+```powershell
     Get-Command Get-Process | Format-Table Name,Definition -Wrap
     
     Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
@@ -149,7 +156,7 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
                                             ble <String>] [-WarningVariable <String
                                             >] [-OutVariable <String>] [-OutBuffer
                                             <Int32>]
-
+```
 또한 **Format-List** cmdlet과 같이 속성 이름의 일부분과 함께 와일드카드 문자 "`*`"를 지정할 수 있습니다. 와일드카드 문자를 포함하면 각 속성 이름을 개별적으로 입력하지 않고 일치하는 여러 속성을 검색할 수 있습니다.
 
 ## Format-Wide
@@ -158,6 +165,7 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
 
 대부분의 기본적인 사용에서 매개 변수를 지정하지 않고 **Format-Wide** cmdlet을 호출하면 페이지에 맞춰 열을 표시하도록 출력을 정렬합니다. 예를 들어 **Get-Childitem** cmdlet을 실행하여 출력을 **Format-Wide** cmdlet으로 파이프하면 정보가 다음과 같이 표시됩니다.
 
+```powershell
     Get-ChildItem | Format-Wide
     
         Directory: FileSystem::C:\WorkingFolder
@@ -176,9 +184,11 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
     Text_08.txt                             Text_09.txt
     Text_10.txt                             Text_11.txt
     Text_12.txt
+```
 
 일반적으로 매개 변수를 지정하지 않고 **Get-Childitem** cmdlet을 호출하면 디렉터리의 모든 파일 이름이 속성 표로 표시됩니다. 이 예에서는 **Get-Childitem** cmdlet 출력을 **Format-Wide** cmdlet으로 파이프하여 출력이 두 개의 이름 열로 표시됩니다. **Format-Wide** cmdlet 다음에 오는 속성 이름에 의해 지정된 속성 유형이 한 번에 하나만 표시될 수 있습니다. *Autosize* 매개 변수를 추가하면 두 개의 열 표시에서 화면 너비에 맞춰 모든 열 표시로 출력이 변경됩니다.
 
+```powershell
     Get-ChildItem | Format-Wide -AutoSize
     
         Directory: FileSystem::C:\WorkingFolder
@@ -189,9 +199,11 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
     Text_01.txt     Text_02.txt     Text_03.txt     Text_04.txt     Text_05.txt
     Text_06.txt     Text_07.txt     Text_08.txt     Text_09.txt     Text_10.txt
     Text_11.txt     Text_12.txt
+```
 
 이 예에서 표는 두 개의 열이 아니라 다섯 개의 열로 정렬됩니다. *Column* 매개 변수를 사용하면 다음과 같이 최대 열 수를 지정하여 정보를 표시하므로 보다 강력하게 출력을 제어할 수 있습니다.
 
+```powershell
     Get-ChildItem | Format-Wide -Column 4
     
         Directory: FileSystem::C:\WorkingFolder
@@ -203,6 +215,7 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
     Text_02.txt         Text_03.txt         Text_04.txt         Text_05.txt
     Text_06.txt         Text_07.txt         Text_08.txt         Text_09.txt
     Text_10.txt         Text_11.txt         Text_12.txt
+```
 
 이 예에서는 *Column* 매개 변수를 사용하여 열 수를 네 개로 지정했습니다.
 
@@ -212,11 +225,15 @@ Exchange 관리 셸에서는 명령 출력 형식을 지정하는 데 사용할 
 
 **Out-Host** cmdlet은 파이프라인의 끝에 나타나지 않는 기본 cmdlet입니다. 모든 형식 지정 적용되면 **Out-Host** cmdlet은 최종 출력을 콘솔 창으로 보내 표시합니다. **Out-Host** cmdlet은 기본 출력이므로 명시적으로 호출할 필요가 없습니다. 명령의 마지막 cmdlet으로 **Out-File** cmdlet을 호출하여 콘솔 창으로 출력 보내기를 다시 정의할 수 있습니다. 그러면 다음 예에서와 같이 **Out-File** cmdlet은 명령에서 지정한 파일에 출력을 씁니다.
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 이 예에서 **Out-File** cmdlet은 **Get-ChildItem | Format-Wide -Column 4** 명령으로 표시되는 정보를 `OutputFile.txt`라는 파일에 씁니다. 또한 리디렉션 연산자인 오른쪽 꺾쇠 괄호(`>`)를 사용하여 파이프라인 출력을 파일로 리디렉션할 수 있습니다. 원본 파일을 바꾸지 않고 명령의 파이프라인 출력을 기존 파일에 추가하려면 다음 예에서와 같이 오른쪽 이중 꺾쇠 괄호(`>>`)를 사용합니다.
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 이 예에서는 형식 지정을 위해 **Get-Childitem** cmdlet의 출력을 **Format-Wide** cmdlet으로 파이프한 다음 `OutputFile.txt` 파일의 끝에 씁니다. `OutputFile.txt` 파일이 없는 경우 오른쪽 이중 꺾쇠 괄호(`>>`)를 사용하여 파일을 만듭니다.
 
@@ -230,6 +247,7 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
 
 다음 예에서는 간단한 스크립트를 사용하여 명령에서 반환하는 데이터를 출력하고 Internet Explorer에 표시하는 방법을 보여 줍니다. 이 스크립트는 파이프라인을 통과하는 개체를 사용하여 Internet Explorer 창을 연 다음 Internet Explorer에 데이터를 표시합니다.
 
+```powershell
     $Ie = New-Object -Com InternetExplorer.Application
     $Ie.Navigate("about:blank")
     While ($Ie.Busy) { Sleep 1 }
@@ -238,6 +256,7 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
     # If the previous line doesn't work on your system, uncomment the line below.
     # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
+```
 
 이 스크립트를 사용하려면 스크립트가 실행될 컴퓨터의 `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` 디렉터리에 스크립트를 저장합니다. 파일 이름을 `Out-Ie.ps1`이라고 지정합니다. 파일을 저장한 다음 일반 cmdlet으로 스크립트를 사용할 수 있습니다.
 
@@ -249,7 +268,9 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
 
 `Out-Ie` 스크립트는 받은 데이터가 올바른 HTML임을 가정합니다. HTML로 보려는 데이터를 변환하려면 명령 결과를 **ConvertTo-Html** cmdlet으로 파이프해야 합니다. 그런 다음 명령 결과를 `Out-Ie` 스크립트로 파이프할 수 있습니다. 다음 예는 Internet Explorer 창에서 디렉터리 목록을 보는 방법을 보여 줍니다.
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## 데이터를 필터링하는 방법
 
@@ -329,12 +350,14 @@ Exchange 관리 셸에서의 스크립팅 유연성과 용이성으로 인해 �
 
 **Clear-Host** cmdlet은 콘솔 창을 지우는 데 사용됩니다. 예를 들어 다음 명령을 실행하면 **Clear-Host** cmdlet에 대해 정의된 모든 별칭을 찾을 수 있습니다.
 
+```powershell
     Get-Alias | Where {$_.Definition -eq "Clear-Host"}
     
     CommandType     Name                            Definition
     -----------     ----                            ----------
     Alias           clear                           clear-host
     Alias           cls                             clear-host
+```
 
 **Get-Alias** cmdlet과 **Where** 명령은 함께 작동하여 **Clear-Host** cmdlet에 대해 정의된 별칭 목록을 반환합니다. 다른 cmdlet에 대해 정의된 별칭 목록은 반환하지 않습니다. 다음 표에서는 예에서 사용된 **Where** 명령의 각 요소에 대해 간단하게 설명합니다.
 

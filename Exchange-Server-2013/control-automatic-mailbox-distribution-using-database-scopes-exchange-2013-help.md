@@ -63,11 +63,15 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 이 범위에 포함되어야 하는 사서함 데이터베이스의 정적 목록을 정의하려는 경우에는 데이터베이스 목록을 사용합니다. 데이터베이스 목록 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 이 예에서는 데이터베이스 Database 1, Database 2 및 Database 3에만 적용되는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -79,11 +83,15 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 데이터베이스 필터 범위를 만들려면 다음 구문을 사용합니다.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 이 예에서는 데이터베이스의 **Name** 속성에 "ACCT"라는 문자열이 있는 모든 데이터베이스를 포함하는 범위를 만듭니다.
 
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```powershell
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementScope](https://technet.microsoft.com/ko-kr/library/dd335137\(v=exchg.150\))를 참조하십시오.
 
@@ -101,12 +109,16 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 다음 구문을 사용하여 할당하려는 관리 역할과 새 역할 그룹 간에 역할 할당을 새로운 데이터베이스 범위를 통해 만듭니다.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```
 
 이 예에서는 Mail Recipient와 Mail Recipient Creation 역할 간에 역할 할당을 만들고 Accounting Databases 데이터베이스 범위를 이용하여 Accounting Administrators 역할 그룹을 만듭니다.
 
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335193\(v=exchg.150\))를 참조하십시오.
 
@@ -118,12 +130,16 @@ _**마지막으로 수정된 항목:** 2015-04-07_
 
 다음 구문을 사용해서 기존 역할 그룹과 데이터베이스 범위를 적용하려는 관리 역할 간에 역할 할당을 수정할 수 있습니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```
 
 이 예에서는 Accounting Administrators 역할 그룹에 할당된 Mail Recipients 및 Mail Recipient Creation 역할에 Accounting Databases 데이터베이스 범위를 추가합니다.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd351024\(v=exchg.150\)) 또는 [Set-ManagementRoleAssignment](https://technet.microsoft.com/ko-kr/library/dd335173\(v=exchg.150\))를 참조하십시오.
 

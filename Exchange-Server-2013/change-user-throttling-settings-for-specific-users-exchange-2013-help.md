@@ -43,19 +43,23 @@ Exchange 조직에서 개별 사용자가 기본 제한 설정을 변경 하 여
 
 이 예제에서는 제한 정책 ITStaffPolicy 특정 사용자에 게 연결할 수 라는 기본이 아닌 사용자를 만듭니다. 매개 변수를 생략 하면 기본 제한 정책 GlobalThrottlingPolicy에서에서 값을 상속 합니다. 이 정책을 만든 후 특정 사용자와 연결 해야 합니다.
 
-    New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```powershell
+New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```
 
 이 예제에서는 제한 정책 ITStaffPolicy (하는 더 높은 제한을 가진)와 사용자 이름에서는 tonysmith 인 사용자와 연결 합니다.
 
-    Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```powershell
+Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```
 
 **Set-ThrottlingPolicyAssociation** cmdlet을 사용 하 여 정책을 사용 하 여 사용자를 연결할 필요가 없습니다. 다음 명령은에서는 tonysmith 제한 정책 ITStaffPolicy와 연결 하는 다른 방법은 보여줍니다.
 
-```
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
 
-```
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
@@ -67,19 +71,25 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 
 1.  다음 명령을 실행합니다.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  제한 정책 방금 만든 일반 GlobalThrottlingPolicy 개체를 표시 하는 열에 표시 되는지 확인 합니다.
 
 3.  다음 명령을 실행합니다.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  새 일반 정책에 대 한 속성 값 또는 값을 구성 하면 일치 하는지 확인 합니다.
 
 5.  다음 명령을 실행합니다.
     
-        Get-ThrottlingPolicyAssociation
+    ```powershell
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  새 일반 정책 되었거나 사용자와 연결 하면 연결 된 사용자가 사용 하 여 있는지 확인 합니다.
 

@@ -59,13 +59,17 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 주소 다시 쓰기를 사용하지 않도록 설정하려면 다음 명령을 실행합니다.
 
-    Disable-TransportAgent "Address Rewriting Inbound Agent"
-    Disable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Disable-TransportAgent "Address Rewriting Inbound Agent"
+Disable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 주소 다시 쓰기를 사용하도록 설정하려면 다음 명령을 실행합니다.
 
-    Enable-TransportAgent "Address Rewriting Inbound Agent"
-    Enable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Enable-TransportAgent "Address Rewriting Inbound Agent"
+Enable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -73,7 +77,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  다음 명령을 실행합니다.
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  주소 다시 쓰기 인바운드 에이전트 및 주소 다시 쓰기 아웃바운드 에이전트의 **Enabled** 속성 값이 구성한 값인지 확인합니다.
 
@@ -81,15 +87,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 모든 주소 다시 쓰기 항목의 요약 목록을 보려면 다음 명령을 실행합니다.
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 주소 다시 쓰기 항목의 세부 정보를 보려면 다음 구문을 사용합니다.
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 다음 예에서는 주소 다시 쓰기 항목 Rewrite Contoso.com to Northwindtraders.com의 세부 정보가 표시됩니다.
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## 셸을 사용하여 주소 다시 쓰기 항목 만들기
 
@@ -97,39 +109,55 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 단일 받는 사람의 전자 메일 주소를 다시 쓰려면 다음 구문을 사용합니다.
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```
 
 다음 예에서는 받는 사람 joe@contoso.com에 대해 Exchange 조직에서 보내고 받는 모든 메시지의 전자 메일 주소를 다시 씁니다. 아웃바운드 메시지는 support@nortwindtraders.com에서 보내는 것으로 표시되도록 다시 쓰고, support@northwindtraders.com으로 보내는 인바운드 메시지는 해당 받는 사람에게 배달되도록 joe@contoso.com으로 다시 씁니다. *OutboundOnly* 매개 변수의 기본값은 `$false`입니다.
 
-    New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```powershell
+New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```
 
 ## 단일 도메인/하위 도메인의 받는 사람에 대해 전자 메일 주소 다시 쓰기
 
 단일 도메인 또는 하위 도메인의 받는 사람에 대해 전자 메일 주소를 다시 쓰려면 다음 구문을 사용합니다.
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```
 
 다음 예에서는 contoso.com 도메인의 받는 사람에 대해 Exchange 조직에서 보내고 받는 모든 메시지의 전자 메일 주소를 다시 씁니다. 아웃바운드 메시지는 fabrikam.com 도메인에서 보내는 것으로 표시되도록 다시 쓰고, fabrikam.com 전자 메일 주소로 보내는 인바운드 메시지는 해당 도메인의 받는 사람에게 배달되도록 contoso.com으로 다시 씁니다. *OutboundOnly* 매개 변수의 기본값은 `$false`입니다.
 
-    New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```powershell
+New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```
 
 다음 예에서는 sales.contoso.com 하위 도메인의 받는 사람이 전송하는 Exchange 조직에서 보내는 모든 메시지의 전자 메일 주소를 다시 씁니다. 아웃바운드 메시지는 contoso.com 도메인에서 보내는 것으로 표시되도록 다시 쓰고, contoso.com 전자 메일 주소로 보내는 인바운드 메시지는 다시 쓰지 않습니다.
 
-    New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 ## 여러 하위 도메인의 받는 사람에 대해 전자 메일 주소 다시 쓰기
 
 단일 도메인과 모든 하위 도메인의 받는 사람에 대해 전자 메일 주소를 다시 쓰려면 다음 구문을 사용합니다.
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```
 
 다음 예에서는 contoso.com 도메인 및 모든 하위 도메인의 받는 사람이 전송하는 Exchange 조직에서 보내는 모든 메시지의 전자 메일 주소를 다시 씁니다. 아웃바운드 메시지는 contoso.com 도메인에서 보내는 것으로 표시되도록 다시 쓰고, *InternalAddress* 매개 변수에 와일드카드가 사용되므로 contoso.com 받는 사람에게 보내는 인바운드 메시지는 다시 쓸 수 없습니다.
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 다음 예는 위의 예와 같지만 여기서는 legal.contoso.com 및 corp.contoso.com 하위 도메인의 받는 사람이 전송하는 메시지는 다시 쓰지 않습니다.
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -149,7 +177,9 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 단일 받는 사람의 전자 메일 주소를 다시 쓰는 주소 다시 쓰기 항목을 수정하려면 다음 구문을 사용합니다.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```
 
 다음 예에서는 "joe@contoso.com to support@nortwindtraders.com"라는 단일 받는 사람 주소 다시 쓰기 항목의 다음 속성을 수정합니다.
 
@@ -161,39 +191,55 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```powershell
+Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```
 
 ## 단일 도메인/하위 도메인의 받는 사람에 대해 주소 다시 쓰기 항목 수정
 
 단일 도메인 또는 하위 도메인의 받는 사람 전자 메일 주소를 다시 쓰는 주소 다시 쓰기 항목을 수정하려면 다음 구문을 사용합니다.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```
 
 다음 예에서는 "Northwind Traders to Contoso"라는 단일 도메인 주소 다시 쓰기 항목의 내부 주소 값을 변경합니다.
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 여러 하위 도메인의 받는 사람에 대해 주소 다시 쓰기 항목 수정
 
 단일 도메인 및 모든 하위 도메인의 받는 사람 전자 메일 주소를 다시 쓰는 주소 다시 쓰기 항목을 수정하려면 다음 구문을 사용합니다.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```
 
 여러 하위 도메인 주소 다시 쓰기 항목의 기존 예외 목록 값을 바꾸려면 다음 구문을 사용합니다.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```
 
 다음 예에서는 Contoso to Northwind Traders라는 여러 하위 도메인 주소 다시 쓰기 항목의 기존 예외 목록을 marketing.contoso.com 및 legal.contoso.com 값으로 바꿉니다.
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```
 
 기존 예외 목록 값을 수정하지 않고 여러 하위 도메인 주소 다시 쓰기 항목의 예외 값 목록을 선택적으로 추가하거나 제거하려면 다음 구문을 사용합니다.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 다음 예에서는 Contoso to Northwind Traders라는 여러 하위 도메인 주소 다시 쓰기 항목의 예외 목록에 finance.contoso.com을 추가하고 marketing.contoso.com을 목록에서 제거합니다.
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -209,27 +255,39 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 단일 주소 다시 쓰기 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 다음 예에서는 "Contoso.com to Northwindtraders.com" 주소 다시 쓰기 항목을 제거합니다.
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 여러 주소 다시 쓰기 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```powershell
+Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```
 
 다음 예에서는 모든 주소 다시 쓰기 항목을 제거합니다.
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 다음 예에서는 이름에 "to contoso.com"이라는 텍스트가 포함된 주소 다시 쓰기 항목 제거를 시뮬레이트합니다. *WhatIf* 스위치를 사용하면 변경 내용을 커밋하지 않고 결과를 미리 볼 수 있습니다.
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```
 
 원하는 결과가 표시되면 *WhatIf* 스위치를 사용하지 않고 명령을 다시 실행하여 주소 다시 쓰기 항목을 제거합니다.
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

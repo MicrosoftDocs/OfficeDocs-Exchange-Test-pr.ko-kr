@@ -87,7 +87,8 @@ Windows Server 백업을 사용하여 Exchange 데이터베이스를 백업하�
 
   - Exchange 관리 셸에서 다음 명령을 실행하여 선택한 볼륨의 각 데이터베이스가 성공적으로 백업되었는지 확인합니다.
     
-        Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
-    
+    ```powershell
+    Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```    
     데이터베이스의 *SnapshotLastFullBackup* 및 *LastFullBackup* 속성은 마지막으로 성공한 백업이 수행된 시기와 VSS 전체 백업이었는지 여부를 나타냅니다.
 

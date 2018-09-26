@@ -139,7 +139,9 @@ _**마지막으로 수정된 항목:** 2013-04-12_
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```powershell
+  New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-Mailbox](https://technet.microsoft.com/ko-kr/library/aa997663\(v=exchg.150\))를 참조하십시오.
 
@@ -151,7 +153,9 @@ _**마지막으로 수정된 항목:** 2013-04-12_
 
   - 셸에서 다음 명령을 실행하여 새 사용자 사서함에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## 기존 사용자의 사서함 만들기
 
@@ -203,13 +207,17 @@ _**마지막으로 수정된 항목:** 2013-04-12_
 
 이 예에서는 UsersMailboxDatabase라는 Exchange 데이터베이스에서 기존 사용자 estherv@contoso.com에 대한 사서함을 만듭니다.
 
-    Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```powershell
+Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```
 
 **Enable-Mailbox** cmdlet을 사용하여 여러 사용자가 메일을 사용할 수 있도록 설정할 수도 있습니다. 이 작업을 수행하려면 **Get-User** cmdlet의 결과를 **Enable-Mailbox** cmdlet에 파이프합니다. **Get-User** cmdlet을 실행할 때 메일을 사용할 수 없는 사용자만 반환해야 합니다. 이렇게 하려면 *RecipientTypeDetails* 매개 변수에 값 User를 지정해야 합니다. 지정한 조건에 맞는 사용자만 요청하려면 *Filter* 매개 변수를 사용하여 반환되는 결과를 제한할 수도 있습니다. 그런 다음 결과를 **Enable-Mailbox** cmdlet에 파이프합니다.
 
 예를 들어 다음 명령은 아직 메일을 사용할 수 없고 **UserPrincipalName** 속성에 값이 있는 사용자가 사서함을 사용할 수 있도록 설정하며, 실수로 시스템 계정을 사서함으로 변환하지 않도록 하는 데 도움이 됩니다.
 
-    Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```powershell
+Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Enable-Mailbox](https://technet.microsoft.com/ko-kr/library/aa998251\(v=exchg.150\)) 및 [Get-User](https://technet.microsoft.com/ko-kr/library/aa996896\(v=exchg.150\))를 참조하십시오.
 
@@ -223,7 +231,9 @@ _**마지막으로 수정된 항목:** 2013-04-12_
 
   - 셸에서 다음 명령을 실행하여 새 사서함 사용 가능 사용자에 대한 정보를 표시합니다.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     *RecipientTypeDetails* 속성의 값은 `UserMailbox`입니다.
 

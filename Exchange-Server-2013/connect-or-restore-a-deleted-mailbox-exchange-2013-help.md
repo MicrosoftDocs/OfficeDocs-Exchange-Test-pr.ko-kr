@@ -42,14 +42,16 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
     온-프레미스 Exchange 조직의 경우 Active Directory 사용자 및 컴퓨터에서도 이 정보를 확인할 수 있습니다.
     
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > 연결된 사서함, 리소스 사서함 또는 공유 사서함을 삭제한 후 이러한 삭제된 사서함에 연결할 때는 사서함을 연결하려는 Active Directory 사용자 계정이 비활성 상태여야 합니다.
 
 
 
   - 사용자 계정을 연결할 삭제된 사서함이 사서함 데이터베이스에 있으며 일시 삭제된 사서함이 아닌지 확인하려면 다음 명령을 실행합니다.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     삭제된 사서함이 사서함 데이터베이스에 있고 *DisconnectReason* 속성의 값이 `Disabled`여야 합니다. 사서함이 데이터베이스에서 제거된 경우에는 명령에서 어떤 결과도 반환되지 않습니다.
 
@@ -74,7 +76,7 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
     Exchange 조직의 선택한 Exchange 서버에서 연결이 끊어진 사서함이 목록으로 표시됩니다.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 연결이 끊어진 사서함 목록에는 비활성 사서함, 삭제된 사서함 및 일시 삭제된 사서함이 포함됩니다.
 
 
@@ -94,39 +96,45 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 셸에서 **Connect-Mailbox** cmdlet을 사용하여 메일을 사용할 수 없는 사용자 계정에 삭제된 사서함을 연결할 수 있습니다. 연결하려는 사서함의 유형을 지정해야 합니다. 다음 예에서는 사용자 사서함, 대화방 사서함, 장비 사서함 및 공유 사서함을 다시 연결하기 위한 구문을 보여줍니다. 모든 예에서 선택적 매개 변수인 *Alias*는 전자 메일 주소에서 @ 기호 왼쪽 부분에 해당하는 전자 메일 별칭을 지정하는 데 사용됩니다. *Alias* 매개 변수를 포함하지 않을 경우 *User* 또는 *LinkedMasterAccount* 매개 변수에 지정된 값을 사용하여 다시 연결할 사서함의 전자 메일 주소 별칭이 만들어집니다.
 
 
-> [!NOTE]
+> [!NOTE]   
 > 앞서 설명한 것처럼 연결된 사서함, 리소스 사서함 또는 공유 사서함을 연결할 때는 사서함을 연결할 Active Directory 사용자 계정이 비활성 상태여야 합니다.
-
 
 
 이 예에서는 사용자 사서함을 연결합니다. *Identity* 매개 변수는 MBXDB01이라는 사서함 데이터베이스에 보관된 삭제된 사서함의 표시 이름을 지정합니다. *User* 매개 변수는 사서함을 연결할 Active Directory 사용자 계정을 지정합니다.
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
-
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 > [!NOTE]
 > <CODE>LegacyDN</CODE> 또는 <CODE>MailboxGuid</CODE> 속성의 값을 사용하여 삭제된 사서함을 식별할 수도 있습니다.
 
 
-
 이 예에서는 연결된 사서함을 연결합니다. *Identity* 매개 변수는 MBXDB02라는 사서함 데이터베이스에 있는 삭제된 사서함을 지정합니다. *LinkedMasterAccount* 매개 변수는 사서함을 연결할 계정 포리스트의 Active Directory 사용자 계정을 지정합니다. *LinkedDomainController* 매개 변수는 계정 포리스트에 있는 도메인 컨트롤러를 지정합니다.
 
-    Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```powershell
+Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```
 
 이 예에서는 대화방 사서함을 연결합니다.
 
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```powershell
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```
 
 이 예에서는 장비 사서함을 연결합니다.
 
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```powershell
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```
 
 이 예에서는 공유 사서함을 연결합니다.
 
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```powershell
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```
 
-
-> [!NOTE]
+> [!NOTE]   
 > <CODE>LegacyDN</CODE> 또는 <CODE>MailboxGuid</CODE> 값을 사용하여 삭제된 사서함을 식별할 수도 있습니다.
 
 
@@ -143,7 +151,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
   - 셸에서 다음 명령을 실행합니다.
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType* 속성의 **UserMailbox** 값은 사용자 계정과 사서함이 연결되었음을 나타냅니다. **Get-Mailbox \<identity\>** 명령을 실행하여 사서함이 연결되었는지 확인할 수도 있습니다.
 
@@ -157,21 +167,25 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 > [!NOTE]
 > EAC를 사용하여 삭제된 사서함을 복원할 수는 없습니다.
 
-
-
 ## 셸을 사용하여 삭제된 사서함 복원
 
 사서함 복원을 요청하려면 삭제된 사서함의 표시 이름, 레거시 DN(고유 이름) 또는 사서함 GUID를 사용해야 합니다. **Get-MailboxStatistics** cmdlet을 사용하여 복원하려는 삭제된 사서함의 `DisplayName`, `MailboxGuid` 및 `LegacyDN` 속성 값을 표시합니다. 예를 들어 다음 명령을 실행하여 조직의 모든 비활성 사서함 및 삭제된 사서함에 대해 이 정보를 반환합니다.
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 이 예에서는 *SourceStoreMailbox* 매개 변수로 식별되며 MBXDB01 사서함 데이터베이스에 있는 삭제된 사서함을 대상 사서함인 Debra Garcia로 복원합니다. 원본 사서함을 다른 사서함, 즉 레거시 DN 값 동일하지 않은 사서함으로 복원할 수 있도록 *AllowLegacyDNMismatch* 매개 변수가 사용됩니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 이 예에서는 Pilar Pinilla의 삭제된 보관 사서함을 현재 보관 사서함으로 복원합니다. 기본 사서함과 해당 보관 사서함의 레거시 DN이 동일하므로 *AllowLegacyDNMismatch* 매개 변수는 필요하지 않습니다.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829875\(v=exchg.150\))를 참조하십시오.
 
@@ -183,7 +197,9 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
 1.  다음 cmdlet를 실행 하 여 Active Directory 포리스트 및 도메인 컨트롤러의 정규화 된 도메인 이름을 (FQDN)을 가져옵니다.
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+    Get-OrganizationConfig | fl OriginatingServer
+    ```
 
 2.  1 단계에서 반환 되는 정보를 사용 하 고 삭제 된 공용 폴더 사서함에 포함 된 사서함 데이터베이스의 이름 또는 GUID에 대 한 공용 폴더 사서함의 GUID에 대 한 Deleted Objects 컨테이너 Active Directory에서 검색 합니다.
     
@@ -197,26 +213,27 @@ EAC 또는 셸을 사용하여 Active Directory 사용자 계정에 삭제된 �
 
 1.  (수 하 라는 메시지가 적절 한 자격 증명을 제공)에서 다음 명령을 실행 하 여 새 Active Directory 개체를 만듭니다.
     
+    ```powershell
         New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
         
         Get-MailUser <mailUserName> | Disable-MailUser
-    
+    ```    
     `<mailUserName>`, `<emailAddress>`및 `<mailUserName>` 는 값에 다음을 수행 하려는 합니다. 다음 단계에서 동일한 `<mailUserName>` 값을 사용 해야 합니다.
 
 2.  다음 명령을 실행 하 여 방금 만든 Active Directory 개체를 삭제 된 공용 폴더 사서함을 연결 합니다.
     
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
-    
-
+    ```powershell
+    Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```
     > [!NOTE]
     > <CODE>Identity</CODE> 매개 변수는 Active Directory 사용자 개체에 연결 하는 Exchange 데이터베이스에서 사서함 개체를 지정 합니다. 위의 예제에서는 공용 폴더 사서함에 대 한 GUID를 지정 하지만 표시 이름 값 이나 LegacyExchangeDN 값을 사용할 수도 있습니다.
 
 
-
 3.  다음 예제에 따라 공용 폴더 사서함에서 `Update-StoreMailboxState` 를 실행 합니다.
     
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
-    
+    ```powershell
+    Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```    
     2 단계와 같이 `Identity` 매개 변수는 GUID, 표시 이름 또는 공용 폴더 사서함에 대 한 LegacyExchangeDN 값을 수락 합니다.
 
 ## 작동 여부는 어떻게 확인합니까?

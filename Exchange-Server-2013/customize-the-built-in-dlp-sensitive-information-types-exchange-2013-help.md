@@ -63,17 +63,19 @@ Exchange 관리 셸 를 사용 하 여 필요한 XML를 내보내려면 또는 �
 
 3.  신용 카드 번호 규칙 정의를 찾을 **Func\_credit\_card** 찾습니다. (Xml에서 규칙 이름은 공백을 포함할 수 없습니다, 공백을 밑줄로, 일반적으로 대체 되 고 규칙 이름은 줄여서 경우도 있으므로 합니다. 이 예는 미국 주민등록 번호 규칙 "SSN입니다." 약어로 표시 되는 신용 카드 번호 규칙 XML 다음 코드 예제와 같습니다.
     
-        <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
-               patternsProximity="300" recommendedConfidence="85">
-              <Pattern confidenceLevel="85">
-               <IdMatch idRef="Func_credit_card" />
-                <Any minMatches="1">
-                  <Match idRef="Keyword_cc_verification" />
-                  <Match idRef="Keyword_cc_name" />
-                  <Match idRef="Func_expiration_date" />
-                </Any>
-              </Pattern>
-            </Entity>
+      ```xml
+      <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
+              patternsProximity="300" recommendedConfidence="85">
+            <Pattern confidenceLevel="85">
+              <IdMatch idRef="Func_credit_card" />
+              <Any minMatches="1">
+                <Match idRef="Keyword_cc_verification" />
+                <Match idRef="Keyword_cc_name" />
+                <Match idRef="Func_expiration_date" />
+              </Any>
+            </Pattern>
+          </Entity>
+      ```
 
 XML에서 신용 카드 번호 규칙 정의 찾은 했으므로 요구 사항에 맞게 규칙의 XML을 사용자 지정할 수 있습니다. (XML 정의에서 세부 정보를이 항목의 끝에 용어 용어집 참조).
 
@@ -83,108 +85,116 @@ XML에서 신용 카드 번호 규칙 정의 찾은 했으므로 요구 사항�
 
 모든 XML 규칙 정의 다음과 같은 일반 서식 파일을 기반으로 합니다. 에 복사 / 붙여넣기 신용 카드 번호 정의 XML 서식 파일을 일부 값 (다음 예제에서는 "잡혀" 자리 표시자 확인)를 수정 및 하 다음 정책에서 사용할 수 있는 새 규칙으로 수정 된 XML을 업로드 합니다.
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-      <RulePack id=". . .">
-        <Version major="1" minor="0" build="0" revision="0" />
-        <Publisher id=". . ." /> 
-        <Details defaultLangCode=". . .">
-          <LocalizedDetails langcode=" . . . ">
-             <PublisherName>. . .</PublisherName>
-             <Name>. . .</Name>
-             <Description>. . .</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-      
-     <Rules>
-       <!-- Paste the Credit Card Number rule definition here.--> 
+  ```xml
+  <?xml version="1.0" encoding="utf-16"?>
+  <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+    <RulePack id=". . .">
+      <Version major="1" minor="0" build="0" revision="0" />
+      <Publisher id=". . ." /> 
+      <Details defaultLangCode=". . .">
+        <LocalizedDetails langcode=" . . . ">
+            <PublisherName>. . .</PublisherName>
+            <Name>. . .</Name>
+            <Description>. . .</Description>
+        </LocalizedDetails>
+      </Details>
+    </RulePack>
     
-          <LocalizedStrings>
-             <Resource idRef=". . .">
-               <Name default="true" langcode=" . . . ">. . .</Name>
-               <Description default="true" langcode=". . ."> . . .</Description>
-             </Resource>
-          </LocalizedStrings>
-    
-       </Rules>
-    </RulePackage>
+    <Rules>
+      <!-- Paste the Credit Card Number rule definition here.--> 
+  
+        <LocalizedStrings>
+            <Resource idRef=". . .">
+              <Name default="true" langcode=" . . . ">. . .</Name>
+              <Description default="true" langcode=". . ."> . . .</Description>
+            </Resource>
+        </LocalizedStrings>
+  
+      </Rules>
+  </RulePackage>
+  ```
 
 이제 해야 된 항목은 다음과 같은 XML와 비슷합니다. 규칙 패키지와 규칙은 해당 고유 Guid에 의해 식별 됩니다, 때문에 두 Guid를 생성 해야 합니다: 규칙 패키지 및 신용 카드 번호 규칙에 대 한 GUID를 교체할 수 하나에 대 한 하나입니다. (다음 코드 예제에서 엔터티 ID에 대 한 GUID는 새 대체할 필요가 있는 기본 제공 규칙 정의 대 한.) 다양 한 방법을 Guid를 생성할 수 있지만 PowerShell <strong>\[guid\]::NewGuid()</strong>을 입력 하 여 쉽게 수행할 수 있습니다.
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-      <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
-        <Version major="1" minor="0" build="0" revision="0" />
-        <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />
-        <Details defaultLangCode="en">
-          <LocalizedDetails langcode="en">
-            <PublisherName>Contoso Ltd.</PublisherName>
-            <Name>Financial Information</Name>
-            <Description>Modified versions of the Microsoft rule package</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-      
-     <Rules>
-        <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f"
-           patternsProximity="300" recommendedConfidence="85">
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-            <Any minMatches="1">
-              <Match idRef="Keyword_cc_verification" />
-              <Match idRef="Keyword_cc_name" />
-              <Match idRef="Func_expiration_date" />
-            </Any>
-          </Pattern>
-        </Entity>
+  ```xml
+  <?xml version="1.0" encoding="utf-16"?>
+  <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+    <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
+      <Version major="1" minor="0" build="0" revision="0" />
+      <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />
+      <Details defaultLangCode="en">
+        <LocalizedDetails langcode="en">
+          <PublisherName>Contoso Ltd.</PublisherName>
+          <Name>Financial Information</Name>
+          <Description>Modified versions of the Microsoft rule package</Description>
+        </LocalizedDetails>
+      </Details>
+    </RulePack>
     
-          <LocalizedStrings>
-             <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f"> 
-    <!-- This is the GUID for the preceding Credit Card Number entity because the following text is for that Entity. -->
-               <Name default="true" langcode="en-us">Modified Credit Card Number</Name>
-               <Description default="true" langcode="en-us">Credit Card Number that looks for additional keywords, and another version of Credit Card Number that doesn't require keywords (but has a lower confidence level)</Description>
-             </Resource>
-          </LocalizedStrings>
-    
-       </Rules>
-    </RulePackage>
+    <Rules>
+      <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f"
+          patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_credit_card" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_cc_verification" />
+            <Match idRef="Keyword_cc_name" />
+            <Match idRef="Func_expiration_date" />
+          </Any>
+        </Pattern>
+      </Entity>
+  
+        <LocalizedStrings>
+            <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f"> 
+  <!-- This is the GUID for the preceding Credit Card Number entity because the following text is for that Entity. -->
+              <Name default="true" langcode="en-us">Modified Credit Card Number</Name>
+              <Description default="true" langcode="en-us">Credit Card Number that looks for additional keywords, and another version of Credit Card Number that doesn't require keywords (but has a lower confidence level)</Description>
+            </Resource>
+        </LocalizedStrings>
+  
+      </Rules>
+  </RulePackage>
+  ```
 
 ## 중요 한 정보 형식에서 확증 적 인증 거 요구 사항을 제거합니다
 
 이제 Exchange 환경에 업로드할 수 있도록 하 고 있는 새 중요 한 정보 유형을 했으므로 다음 단계를 규칙을 보다 구체적인 만드는 것입니다. 만 체크섬을 전달 하지만 추가 (확증) 증거 (예: 키워드)를 필요로 하지 않습니다 16 자리 숫자를 찾고 규칙을 수정 합니다. 이 작업을 수행 확증 적 인증 거 찾는 XML의 일부를 제거 해야 합니다. 확증 적 인증 거 있기 때문에 일반적으로 특정 키워드 또는 신용 카드 번호 근처 만료 날짜 가양성을 줄일 수 있는 매우 유용 합니다. 해당 증거를 제거 하는 경우 낮춰 **confidenceLevel**,이 예제의 85은 신용 카드 번호를 발견 하는 방법을 판단는 조정 해야 합니다.
 
-    <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-          </Pattern>
-        </Entity>
+  ```powershell
+  <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_credit_card" />
+        </Pattern>
+      </Entity>
+  ```
 
 ## 조직에만 적용 되는 키워드를 찾습니다.
 
 확증 적 인증 거 필요 하지만 다른 또는 추가 키워드를 원하는 해야할 수 및 해당 증거를 검색할 위치를 변경할 수도 있습니다. 확장 하거나 축소 창 확증 적 인증 거 16 자리 숫자가 주위에 **patternsProximity** 를 조정할 수 있습니다. 직접 키워드를 추가 하려면 키워드 목록을 정의 하 고 규칙 내에서 참조 해야 합니다. 다음 XML 키워드 "회사 카드" 및 "Contoso 카드"를 추가 하 고 신용 카드 번호의 150 자 내에서 이러한 구가 포함 된 메시지 신용 카드 번호로 식별 됩니다.
 
-    <Rules>
-    <! -- Modify the patternsProximity to be "150" rather than "300." -->
-        <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-            <Any minMatches="1">
-              <Match idRef="Keyword_cc_verification" />
-              <Match idRef="Keyword_cc_name" />
-    <!-- Add the following XML, which references the keywords at the end of the XML sample. -->
-              <Match idRef="My_Additional_Keywords" />
-              <Match idRef="Func_expiration_date" />
-            </Any>
-          </Pattern>
-        </Entity>
-    <!-- Add the following XML, and update the information inside the <Term> tags with the keywords that you want to detect. -->
-        <Keyword id="My_Additional_Keywords">
-          <Group matchStyle="word">
-            <Term caseSensitive="false">company card</Term>
-            <Term caseSensitive="false">Contoso card</Term>
-          </Group>
-        </Keyword>
+  ```powershell
+  <Rules>
+  <! -- Modify the patternsProximity to be "150" rather than "300." -->
+      <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_credit_card" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_cc_verification" />
+            <Match idRef="Keyword_cc_name" />
+  <!-- Add the following XML, which references the keywords at the end of the XML sample. -->
+            <Match idRef="My_Additional_Keywords" />
+            <Match idRef="Func_expiration_date" />
+          </Any>
+        </Pattern>
+      </Entity>
+  <!-- Add the following XML, and update the information inside the <Term> tags with the keywords that you want to detect. -->
+      <Keyword id="My_Additional_Keywords">
+        <Group matchStyle="word">
+          <Term caseSensitive="false">company card</Term>
+          <Term caseSensitive="false">Contoso card</Term>
+        </Group>
+      </Keyword>
+  ```
 
 ## 규칙을 업로드 합니다.
 

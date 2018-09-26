@@ -33,7 +33,9 @@ _**마지막으로 수정된 항목:** 2017-02-28_
 
   - 기존 페더레이션 인증서가 만료 된 경우를 보려면 Exchange 관리 셸 에서 다음 명령을 실행 합니다.
     
-        Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+    ```powershell
+    Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+    ```
 
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
@@ -49,7 +51,9 @@ _**마지막으로 수정된 항목:** 2017-02-28_
 
 새 페더레이션 인증서를 만들려면 Exchange 관리 셸 에 다음 명령을 실행 합니다.
 
-    $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```powershell
+$SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-ExchangeCertificate](https://technet.microsoft.com/ko-kr/library/aa998327\(v=exchg.150\))를 참조하십시오.
 
@@ -65,11 +69,15 @@ _**마지막으로 수정된 항목:** 2017-02-28_
 
 페더레이션 인증서로 새 인증서를 구성 하려면 Exchange 관리 셸 을 사용 하려면 다음 구문을 사용 합니다.
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```
 
 이 예제에서는 1 단계에서에서 인증서 지문을 값 `6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73` 를 사용 합니다.
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd298034\(v=exchg.150\))을 참조 하십시오.
 
@@ -81,11 +89,15 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
 1.  필요한 TXT 레코드 Exchange 관리 셸 에 다음 명령을 실행 하 여 필요한 값을 찾습니다.
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```
     
     예, contoso.com 페더레이션된 도메인을 사용 하는 경우에 다음 명령을 실행 합니다.
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```
     
     명령 출력은 다음과 같습니다.
     
@@ -107,15 +119,18 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
 새 페더레이션 인증서의 배포를 확인 하려면 Exchange 관리 셸 를 사용 하려면 다음 명령을 실행 합니다.
 
-    $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
-
+```powershell
+$Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```
 **참고:**  **Test-FederationCertificate** cmdlet의 출력을 Exchange 2010 서버 이름을 포함 합니다. Exchange 2013 또는 나중에 cmdlet의 출력에는 서버 이름은 포함 되지 않습니다.
 
 ## 5 단계: 새 페더레이션 인증서를 활성화 합니다.
 
 새 페더레이션 인증서를 활성화 하려면 Exchange 관리 셸 을 사용 하려면 다음 명령을 실행 합니다.
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 자세한 구문 및 매개 변수 정보에 대 한 [Set-FederationTrust](https://technet.microsoft.com/ko-kr/library/dd298034\(v=exchg.150\))을 참조 하십시오.
 
@@ -127,7 +142,9 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
   - Exchange 관리 셸 에서 새 인증서를 사용 하는지 확인 하려면 다음 명령을 실행 합니다.
     
-        Get-FederationTrust | Format-List *priv*
+    ```powershell
+    Get-FederationTrust | Format-List *priv*
+    ```
     
       - **OrgPrivCertificate** 속성에는 새 페더레이션 인증서의 지문을 포함 되어야 합니다.
     
@@ -135,7 +152,9 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
   - Exchange 관리 셸 에서 사용자 조직에 있는 사용자의 전자 메일 주소를 가진 *\<user's email address\>* 바꾸고 페더레이션 트러스트가 제대로 작동 하는지 확인 하려면 다음 명령을 실행 합니다.
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+    Test-FederationTrust -UserIdentity <user's email address>
+    ```
 
 ## 만료 된 페더레이션 인증서를 교체
 
@@ -143,21 +162,29 @@ TXT 레코드 도메인 소유권 증명 (5 단계) 정품 인증 하는 동안�
 
 1.  여러 페더레이션된 도메인을 설치한 경우 마지막 제거할 수 있도록 기본 도메인 공유 되는 도메인을 식별 해야 합니다. 기본 공유 도메인 및 모든 페더레이션된 도메인을 확인 하려면 Exchange 관리 셸 을 사용 하려면 다음 명령을 실행 합니다.
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+    Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```
     
     **AccountNamespace** 속성의 값 형식 `FYDIBOHF25SPDLT<primary shared domain>`에서 기본 공유 도메인을 포함합니다. 예 값 `FYDIBOHF25SPDLT.contoso.com`contoso.com 공유 되는 기본 도메인을 됩니다.
 
 2.  Exchange 관리 셸 에서 다음 명령을 실행 하 여 기본 공유 도메인 아닌 각 페더레이션된 도메인을 제거 합니다.
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 3.  다른 모든 페더레이션된 도메인을 제거한 후 Exchange 관리 셸 에서 다음 명령을 실행 하 여 기본 공유 되는 도메인을 제거 합니다.
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 4.  Exchange 관리 셸 에 다음 명령을 실행 하 여 페더레이션 트러스트를 제거 합니다.
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+    Remove-FederationTrust "Microsoft Federation Gateway"
+    ```
 
 5.  페더레이션 트러스트를 다시 만듭니다. 자세한 내용은 [페더레이션 트러스트 만들기](https://technet.microsoft.com/ko-kr/library/dd335198\(v=exchg.150\))을 참조 하십시오.
 

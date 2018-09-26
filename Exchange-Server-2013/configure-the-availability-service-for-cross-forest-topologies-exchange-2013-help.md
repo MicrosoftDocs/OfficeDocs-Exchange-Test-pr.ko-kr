@@ -59,12 +59,16 @@ GAL 동기화가 가능하도록 하려면 메일 사용 가능 사용자, 연�
 
 이 예에서는 가용성 서비스가 대상 포리스트의 사서함 서버에서 사용자별 약속 있음/없음 정보를 검색하도록 구성합니다.
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-    EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
+EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 이 예에서는 가용성 서비스가 원본 포리스트의 로컬 사서함 서버에서 사용하는 약속 있음/없음 액세스 방법을 정의합니다. 로컬 사서함 서버는 포리스트 ContosoForest.com에서 사용자별로 약속 있음/없음 정보에 액세스하도록 구성됩니다. 이 예에서는 서비스 계정을 사용하여 약속 있음/없음 정보를 검색합니다.
 
-    Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```powershell
+Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```
 
 
 > [!NOTE]
@@ -78,7 +82,9 @@ GAL 동기화가 가능하도록 하려면 메일 사용 가능 사용자, 연�
 
 이 예에서는 서비스 계정으로 신뢰할 수 있는 포리스트 간 가용성을 구성합니다.
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
@@ -94,10 +100,14 @@ GAL 동기화가 가능하도록 하려면 메일 사용 가능 사용자, 연�
 
 이 예에서는 가용성 구성 개체에 조직 차원의 계정을 설정하여 대상 포리스트에서 약속 있음/없음 정보 액세스 수준을 구성합니다.
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 이 예에서는 원본 포리스트의 가용성 주소 공간 구성 개체를 추가합니다.
 
-    $a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
-    Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```powershell
+$a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
+Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```
 

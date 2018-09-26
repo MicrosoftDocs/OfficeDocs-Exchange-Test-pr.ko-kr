@@ -53,18 +53,23 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 데이터베이스의 루트 경로를 구성하는 방법을 보여줍니다.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 이 예에서는 저장소 볼륨의 루트 경로를 구성하는 방법을 보여줍니다.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 데이터베이스 및 볼륨의 루트 경로가 구성되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
-
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 *AutoDagDatabasesRootFolderPath* 및 *AutoDagVolumesRootFolderPath*의 출력에 구성된 경로가 반영되어야 합니다.
 
 ## 2단계: 볼륨당 데이터베이스 수 구성
@@ -73,13 +78,17 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 볼륨당 4개의 데이터베이스가 구성된 DAG에 대해 이 자동 다시 시드 설정을 구성하는 방법을 보여줍니다.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 볼륨당 데이터베이스 수가 구성되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 *AutoDagDatabaseCopiesPerVolume*의 출력에 구성된 값이 반영되어야 합니다.
 
@@ -87,14 +96,18 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 다음으로, 1단계에서 구성한 루트 디렉터리에 해당하는 디렉터리를 만듭니다. 이 예에서는 명령 프롬프트를 사용하여 기본 디렉터리를 만드는 방법을 보여줍니다.
 
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+```powershell
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 데이터베이스 및 볼륨의 루트 디렉터리가 구성되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 만든 디렉터리가 출력 목록에 나타나야 합니다.
 
@@ -114,7 +127,9 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 볼륨 폴더가 탑재되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 탑재된 볼륨이 출력 목록에 나타나야 합니다.
 
@@ -122,19 +137,19 @@ DAG와 관련된 추가 관리 작업에 대한 자세한 내용은 [데이터�
 
 다음으로, 루트 경로 C:\\ExchangeDatabases 아래에 데이터베이스 디렉터리를 만듭니다. 이 예에서는 각 볼륨에서 4개의 데이터베이스가 있는 저장소 구성에 대해 디렉터리를 만드는 방법을 보여줍니다.
 
-```
+```powershell
 md c:\ExchangeDatabases\db001
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004
 ```
 
@@ -142,7 +157,9 @@ md c:\ExchangeDatabases\db004
 
 데이터베이스 폴더가 탑재되었는지 확인하려면 다음 명령을 실행합니다.
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 만든 디렉터리가 출력 목록에 나타나야 합니다.
 
@@ -150,13 +167,17 @@ md c:\ExchangeDatabases\db004
 
 각 데이터베이스에 대한 탑재 지점을 만들고 탑재 지점을 올바른 볼륨에 연결합니다. 예를 들어 db001에 대한 탑재된 폴더는 C:\\ExchangeDatabases\\db001에 있어야 합니다. 이렇게 하려면 diskmgmt.msc 또는 mountvol.exe를 사용합니다. 이 예에서는 mountvol.exe를 사용하여 db001을 C:\\ExchangeDatabases\\db001에 탑재하는 방법을 보여줍니다.
 
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```powershell
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 데이터베이스 탑재 지점이 만들어졌는지 확인하려면 다음 명령을 실행합니다.
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 탑재된 볼륨이 탑재 지점 목록에 나타나야 합니다.
 
@@ -170,35 +191,35 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 이 예에서는 볼륨 1에 저장될 4개의 데이터베이스에 대해 디렉터리를 만드는 방법을 보여줍니다.
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.log
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.db
 ```
 
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.log
 ```
 
@@ -208,7 +229,9 @@ md c:\ExchangeDatabases\db004\db004.log
 
 데이터베이스 디렉터리 구조가 만들어졌는지 확인하려면 다음 명령을 실행합니다.
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 만든 디렉터리가 출력 목록에 나타나야 합니다.
 
@@ -216,13 +239,16 @@ md c:\ExchangeDatabases\db004\db004.log
 
 적절한 폴더로 구성된 로그 및 데이터베이스 경로로 데이터베이스를 만듭니다. 이 예에서는 새로 만든 디렉터리 및 탑재 지점 구조에 저장될 데이터베이스를 만드는 방법을 보여줍니다.
 
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
-
+```powershell
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
 데이터베이스가 적절한 폴더에 만들어졌는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-MailboxDatabase db001 | Format List *path*
+```powershell
+Get-MailboxDatabase db001 | Format List *path*
+```
 
 반환된 데이터베이스 속성은 데이터베이스 파일 및 로그 파일이 위의 폴더에 저장됨을 나타내야 합니다.
 
@@ -232,15 +258,15 @@ DAG에 대해 자동 다시 시드가 구성되었는지 확인하려면 다음�
 
 1.  다음 명령을 실행하여 DAG가 제대로 구성되었는지 확인합니다.
     
-        Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```powershell
+    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```
 
 2.  다음 명령을 실행하여 디렉터리 구조가 제대로 구성되었는지 확인합니다. 여기에 사용된 경로는 기본 경로이며 필요한 경우 실제 사용하는 경로로 바꿉니다.
     
+    ```powershell
+    Dir C:\ExchangeDatabases /s
     ```
-    Dir c:\ExchangeDatabases /s
-    ```
-
-    ```
+    ```powershell
     Dir c:\ExchangeVolumes /s
-    ```
-
+    ```   

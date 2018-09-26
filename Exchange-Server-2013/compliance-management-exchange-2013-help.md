@@ -31,7 +31,9 @@ Compliance Management 역할 그룹의 구성원인 사용자는 정책에 따�
 
 다음 명령을 사용하여 이 역할 그룹의 구성원인 사용자 또는 USG(유니버설 보안 그룹)의 목록을 볼 수 있습니다.
 
-    Get-RoleGroupMember "Compliance Management"
+```powershell
+Get-RoleGroupMember "Compliance Management"
+```
 
 역할 그룹 구성원에 대한 자세한 내용은 [역할 그룹 구성원 관리](manage-role-group-members-exchange-2013-help.md)의 [View the members of a role group](manage-role-group-members-exchange-2013-help.md)를 참조하십시오.
 

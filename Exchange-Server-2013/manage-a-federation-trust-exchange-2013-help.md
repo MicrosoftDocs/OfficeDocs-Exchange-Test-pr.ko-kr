@@ -83,11 +83,15 @@ _**마지막으로 수정된 항목:** 2015-01-01_
 
 1.  이 예에서는 페더레이션 트러스트에서 service.contoso.com 도메인을 제거합니다.
     
-        Remove-FederatedDomain -DomainName service.contoso.com
+    ```powershell
+    Remove-FederatedDomain -DomainName service.contoso.com
+    ```
 
 2.  이 예에서는 페더레이션 트러스트에 marketing.contoso.com 도메인을 추가합니다.
     
-        Add-FederatedDomain -DomainName marketing.contoso.com
+    ```powershell
+    Add-FederatedDomain -DomainName marketing.contoso.com
+    ```
 
 구문과 매개 변수에 대한 자세한 내용은 [Remove-FederatedDomain](https://technet.microsoft.com/ko-kr/library/dd298128\(v=exchg.150\)) 및 [Add-FederatedDomain](https://technet.microsoft.com/ko-kr/library/dd351208\(v=exchg.150\))을 참조하십시오.
 
@@ -97,31 +101,41 @@ _**마지막으로 수정된 항목:** 2015-01-01_
     
     이 예에서는 페더레이션 도메인 및 상태를 비롯한 Exchange 조직의 페더레이션 OrgID와 관련 정보를 표시합니다.
     
-        Get-FederatedOrganizationIdentifier
+    ```powershell
+    Get-FederatedOrganizationIdentifier
+    ```
 
 2.  **페더레이션 트러스트 인증서 보기**
     
     이 예에서는 페더레이션 트러스트 "Azure AD authentication"에서 사용하는 이전, 현재 및 다음 인증서를 표시합니다.
     
-        Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```powershell
+    Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```
 
 3.  **페더레이션 인증서 상태 확인**
     
     이 예에서는 조직의 모든 사서함 및 클라이언트 액세스 서버의 페더레이션 인증서 상태를 표시합니다.
     
-        Test-FederationTrustCertificate
+    ```powershell
+    Test-FederationTrustCertificate
+    ```
 
 4.  **인증서를 다음 인증서로 사용하도록 페더레이션 트러스트 구성**
     
     이 예에서는 제공된 지문이 포함된 인증서를 다음 인증서로 사용하도록 페더레이션 트러스트 "Azure AD authentication"을 구성합니다. 조직의 모든 Exchange 서버에 인증서를 배포한 후 *PublishCertificate* 스위치를 사용하여 이 인증서를 현재 인증서로 사용하도록 페더레이션 트러스트를 구성할 수 있습니다.
     
-        Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```
 
 5.  **다음 인증서를 현재 인증서로 사용하도록 페더레이션 트러스트 구성**
     
     이 예에서는 다음 인증서를 현재 인증서로 사용 하 여 페더레이션 트러스트 Azure AD 인증을 구성 하 고 Azure AD 인증 시스템에 게시 합니다.
     
-        Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```
     
 
     > [!WARNING]
@@ -133,7 +147,9 @@ _**마지막으로 수정된 항목:** 2015-01-01_
     
     페더레이션 메타 데이터 및 인증서는 페더레이션 트러스트 Azure AD 인증에 대 한 Azure AD 인증 시스템의 새로 고치는이 예제입니다.
     
-        Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```
 
 구문 및 매개 변수에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
@@ -153,11 +169,15 @@ _**마지막으로 수정된 항목:** 2015-01-01_
 
 1.  페더레이션 트러스트 정보를 확인하려면 다음 셸 명령을 실행합니다.
     
-        Get-FederationTrust | format-list
+    ```powershell
+    Get-FederationTrust | format-list
+    ```
 
 2.  조직에서 페더레이션 정보를 검색할 수 있는지 확인하려면 다음 셸 명령을 실행합니다. 예를 들어 *DomainNames* 매개 변수에서 sales.contoso.com 및 marketing.contoso.com 도메인이 반환되는지 확인합니다.
     
-        Get-FederationInformation -DomainName <your primary sharing domain>
+    ```powershell
+    Get-FederationInformation -DomainName <your primary sharing domain>
+    ```
 
 
 > [!TIP]

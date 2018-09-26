@@ -41,47 +41,67 @@ RDB와 관련된 추가 관리 작업에 대한 자세한 내용은 [복구 데�
 
 2.  Eseutil을 사용하여 데이터베이스를 완전히 종료된 상태로 전환합니다. 다음 예제에서 EXX는 데이터베이스의 로그 생성 접두사(예: E00, E01, E02 등)입니다.
     
-        Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```powershell
+    Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```
     
     다음 예제에서는 로그 생성 접두사 E01과 복구 데이터베이스 및 로그 파일 경로 E:\\Databases\\RDB1을 보여 줍니다.
     
-        Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```powershell
+    Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```
 
 3.  복구 데이터베이스를 만듭니다. 복구 데이터베이스에 고유한 이름을 지정하되 EdbFilePath 매개 변수에 데이터베이스 파일의 이름과 경로를 사용하고, LogFolderPath 매개 변수에 복구된 로그 파일의 위치를 사용합니다.
     
-        New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
+    ```powershell
+    New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
+    ```
     
     다음 예제에서는 E:\\Databases\\RDB1에 있는 DB1.edb 및 해당 로그 파일을 복구하는 데 사용되는 복구 데이터베이스를 만드는 방법을 보여 줍니다.
     
-        New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
+    ```powershell
+    New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
+    ```
 
 4.  Microsoft Exchange 정보 저장소 서비스를 다시 시작합니다.
     
-        Restart-Service MSExchangeIS
+    ```powershell
+    Restart-Service MSExchangeIS
+    ```
 
 5.  복구 데이터베이스를 탑재합니다.
     
-        Mount-database <RDBName>
+    ```powershell
+    Mount-database <RDBName>
+    ```
 
 6.  탑재된 데이터베이스에 복원할 사서함이 들어 있는지 확인합니다.
     
-        Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```powershell
+    Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```
 
 7.  New-MailboxRestoreRequest cmdlet을 사용하여 사서함 또는 복구 데이터베이스의 항목을 프로덕션 사서함으로 복원합니다.
     
     다음 예제에서는 Morris 별칭을 사용 하 여 대상 사서함에 사서함 데이터베이스 d b 1에서 MailboxGUID 1d20855f-fd54-4681-98e6-e249f7326ddd 있는 원본 사서함을 복원 합니다.
     
-        New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
+    ```powershell
+    New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
+    ```
     
     다음 예제에서는 보관 사서함으로 사서함 데이터베이스 d b 1에 표시 이름 Morris Cornejo Morris@contoso.com가 있는 원본 사서함의 콘텐츠를 복원 합니다.
     
-        New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
+    ```powershell
+    New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
+    ```
 
 8.  [Get-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829907\(v=exchg.150\))를 사용하여 사서함 복원 요청의 상태를 주기적으로 확인합니다.
     
     복원의 상태가 완료됨이면 [Remove-MailboxRestoreRequest](https://technet.microsoft.com/ko-kr/library/ff829910\(v=exchg.150\))를 사용하여 복원 요청을 제거합니다. 예를 들면 다음과 같습니다.
     
-        Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```powershell
+    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```
 
 ## 작동 여부는 어떻게 확인합니까?
 

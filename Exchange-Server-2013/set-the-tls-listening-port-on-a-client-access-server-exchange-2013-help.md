@@ -67,5 +67,7 @@ UM IP 게이트웨이 및 UM IP 게이트웨이 만들 때 SIP 보안 또는 보
 
 5561를 `MyClientAccessServer` 이라는 클라이언트 액세스 서버에서 TLS 수신 대기 포트를 설정 하는이 예제입니다.
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```
 

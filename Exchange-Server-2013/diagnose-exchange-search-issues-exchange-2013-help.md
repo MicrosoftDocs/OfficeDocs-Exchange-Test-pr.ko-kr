@@ -57,7 +57,9 @@ Exchange 검색 하 여 성공적으로 인덱싱할 수 없는 사서함을 검
 
 2.  **사서함 데이터베이스 구성 확인**   사용자의 사서함 데이터베이스에 대한 *IndexEnabled* 매개 변수가 true로 설정되어 있습니까? 예인 경우 3단계로 이동하고, 아니요인 경우 셸에서 다음 명령을 실행하여 *IndexEnabled* 플래그가 true로 설정되어 있는지 확인합니다.
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+    Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```
     
     구문과 매개 변수에 대한 자세한 내용은 [Get-MailboxDatabase](https://technet.microsoft.com/ko-kr/library/bb124924\(v=exchg.150\))를 참조하십시오.
 
@@ -85,13 +87,17 @@ Exchange 검색 하 여 성공적으로 인덱싱할 수 없는 사서함을 검
 
 4.  **데이터베이스 복사본 인덱싱 상태 확인**   콘텐츠 인덱스 상태가 정상입니까? **Get-MailboxDatabaseCopyStatus** cmdlet을 사용하여 데이터베이스 복사본의 콘텐츠 인덱싱 상태를 확인합니다.
     
-        Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```powershell
+    Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```
     
     구문과 매개 변수에 대한 자세한 내용은 [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/ko-kr/library/dd298044\(v=exchg.150\))를 참조하십시오.
 
 5.  **Test-ExchangeSearch cmdlet 실행**   사서함 데이터베이스를 이미 크롤링한 경우에는 사서함 데이터베이스 또는 특정 사서함에 대해 **Test-ExchangeSearch** cmdlet을 실행할 수 있습니다.
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+    Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```
     
     구문과 매개 변수에 대한 자세한 내용은 [Test-ExchangeSearch](https://technet.microsoft.com/ko-kr/library/bb124733\(v=exchg.150\))를 참조하십시오.
 

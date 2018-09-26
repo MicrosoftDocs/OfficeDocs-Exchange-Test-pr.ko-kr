@@ -32,7 +32,7 @@ Microsoft 맬웨어 방지 엔진 및 정의 (서명) 업데이트에 수동으�
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -41,17 +41,23 @@ Microsoft 맬웨어 방지 엔진 및 정의 (서명) 업데이트에 수동으�
 
 엔진 및 정의 업데이트를 다운로드하려면 다음 명령을 실행합니다.
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```
 
 이 예제에서는 mailbox01.contoso.com 라는 Exchange 서버에 엔진 및 정의 업데이트를 수동으로 다운로드 합니다.
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```
 
 필요에 따라 `http://forefrontdl.microsoft.com/server/scanengineupdate`의 기본 위치가 아닌 다른 곳에서 업데이트를 다운로드 하려면 *EngineUpdatePath* 매개 변수를 사용할 수 있습니다. 대체 HTTP 주소 또는 UNC 경로 지정 하려면이 매개 변수를 사용할 수 있습니다. UNC 경로 지정 하는 경우 네트워크 서비스에는 경로에 대 한 액세스를 권한이 있어야 합니다.
 
 이 예제에서는 `\\FileServer01\Data\MalwareUpdates`의 UNC 경로 mailbox01.contoso.com 라는 Exchange 서버에 엔진 및 정의 업데이트를 수동으로 다운로드 합니다.
 
+```powershell
     & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\FileServer01\Data\MalwareUpdates
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -87,15 +93,21 @@ Microsoft 맬웨어 방지 엔진 및 정의 (서명) 업데이트에 수동으�
 
 1.  다음 명령을 실행합니다.
     
-        Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+    ```powershell
+    Add-PsSnapin Microsoft.Forefront.Filtering.Management.Powershell
+    ```
 
 2.  **Get-ProxySettings** 및 **Set-ProxySettings** cmdlet을 사용 하 여 보기 및 맬웨어 방지 업데이트를 다운로드 하는데 사용 되는 프록시 서버 설정을 구성 합니다. **Set-ProxySettings** cmdlet에는 다음 구문을 사용합니다.
     
-        Set-ProxySettings -Enabled <$true | $false> -Server <Name or IP address of proxy server> -Port <TCP port of proxy server>
+    ```powershell
+    Set-ProxySettings -Enabled <$true | $false> -Server <Name or IP address of proxy server> -Port <TCP port of proxy server>
+    ```
     
     예, TCP 포트 80에서 172.17.17.10 주소에 프록시 서버를 사용 하 여 맬웨어 방지 업데이트를 구성 하려면 다음 명령을 실행 합니다.
     
-        Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+    ```powershell
+    Set-ProxySettings -Enabled $true -Server 172.17.17.10 -Port 80
+    ```
     
     프록시 서버 설정을 확인 하려면 **Get-ProxySettings** cmdlet을 실행 합니다.
 

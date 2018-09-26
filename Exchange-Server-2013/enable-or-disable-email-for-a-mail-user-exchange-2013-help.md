@@ -65,7 +65,9 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 이 예에서는 메일 사용자 Yan Li가 전자 메일을 사용할 수 없도록 설정합니다.
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Disable-MailUser](https://technet.microsoft.com/ko-kr/library/aa998578\(v=exchg.150\))를 참조하십시오.
 
@@ -79,13 +81,17 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 3.  셸에서 다음 명령을 실행합니다.
     
-        Get-MailUser
+    ```powershell
+    Get-MailUser
+    ```
     
     이 cmdlet은 메일 사용이 가능한 사용자만 반환하므로 전자 메일을 사용할 수 없도록 설정한 메일 사용자는 결과에 반환되지 않습니다.
 
 4.  셸에서 다음 명령을 실행합니다.
     
-        Get-User
+    ```powershell
+    Get-User
+    ```
     
     이 cmdlet은 모든 Active Directory 사용자 개체를 반환하므로 전자 메일을 사용할 수 없도록 설정한 메일 사용자가 결과에 반환됩니다.
 
@@ -97,7 +103,9 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 이 예에서는 사용자 Sanjay Shah가 메일 사용이 가능하도록 설정합니다. 이를 위해서는 외부 전자 메일 주소를 제공해야 합니다.
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## 셸 및 CSV 파일을 사용하여 여러 사용자에 대해 메일 사용이 가능하도록 설정
 
@@ -105,10 +113,13 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
 
 1.  메일을 사용할 수 없거나 조직에 사서함이 없는 기존 사용자 목록을 관리자의 데스크톱에 UsersToMailEnable.csv라는 파일로 내보내려면 다음 명령을 실행합니다.
     
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```powershell
+    Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
     
     결과 파일은 다음과 같습니다.
     
+    ```powershell
         Name            RecipientType
         ----            -------------
         Guest           User
@@ -121,6 +132,7 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
         Spencer Low     User
         Toni Poe        User
         ...
+    ```
 
 2.  CSV 파일을 다음과 같이 변경합니다.
     
@@ -132,6 +144,7 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
     
     업데이트된 CSV 파일은 다음과 같습니다.
     
+    ```powershell
         Name,EmailAddress
         David Pelton,davidp@contoso.com
         Kim Akers,kakers@tailspintoys.com
@@ -140,26 +153,27 @@ Exchange 조직의 기존 메일 사용자가 전자 메일을 사용할 수 없
         Spencer Low,spencerl@fouthcoffee.com
         Toni Poe,tonip@contoso.com
         ...
+    ```
 
 3.  CSV 파일의 데이터를 사용하여 파일에 있는 사용자가 메일 사용이 가능하도록 설정하려면 다음 명령을 실행합니다.
     
-        Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
-    
+    ```powershell
+    Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     명령 결과에는 메일 사용이 가능한 새 사용자에 대한 정보가 표시됩니다.
 
 ## 작동 여부는 어떻게 확인합니까?
 
 Active Directory 사용자가 메일 사용이 가능하도록 성공적으로 설정되었는지 확인하려면 다음 중 하나를 수행하십시오.
 
-  - EAC에서 **받는 사람** \> **연락처**로 이동합니다. 새 메일 사용자가 연락처 목록에 표시됩니다. **연락처 유형**에 유형이 **메일 사용자**로 표시됩니다.
-    
+  - EAC에서 **받는 사람** \> **연락처**로 이동합니다. 새 메일 사용자가 연락처 목록에 표시됩니다. **연락처 유형**에 유형이 **메일 사용자**로 표시됩니다.    
 
     > [!NOTE]
     > 새 메일 사용자를 표시하려면 <STRONG>새로 고침</STRONG><IMG title="새로 고침 아이콘" alt="새로 고침 아이콘" src="images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif">을 클릭해야 합니다.
 
-
-
   - 셸에서 다음 명령을 실행하여 새 메일 사용자에 대한 정보를 표시합니다.
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

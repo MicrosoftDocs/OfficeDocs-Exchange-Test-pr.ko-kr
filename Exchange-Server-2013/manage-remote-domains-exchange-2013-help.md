@@ -47,15 +47,21 @@ _**마지막으로 수정된 항목:** 2015-04-13_
 
 새 원격 도메인 항목을 만들려면 다음 구문을 사용합니다.
 
-    New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```powershell
+New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```
 
 이 예에서는 contoso.com 도메인으로 보내는 메시지에 대한 원격 도메인 항목을 만듭니다.
 
-    New-RemoteDomain -Name Contoso -DomainName contoso.com
+```powershell
+New-RemoteDomain -Name Contoso -DomainName contoso.com
+```
 
 이 예에서는 fabrikam.com 도메인 및 모든 하위 도메인으로 보내는 메시지에 대한 원격 도메인 항목을 만듭니다.
 
+```powershell
     New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -81,11 +87,15 @@ _**마지막으로 수정된 항목:** 2015-04-13_
 
 원격 도메인 항목을 제거하려면 다음 구문을 사용합니다.
 
-    Remove-RemoteDomain <RemoteDomainName>
+```powershell
+Remove-RemoteDomain <RemoteDomainName>
+```
 
 이 예에서는 원격 도메인 항목 Contoso를 제거합니다.
 
-    Remove-RemoteDomain Contoso
+```powershell
+Remove-RemoteDomain Contoso
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

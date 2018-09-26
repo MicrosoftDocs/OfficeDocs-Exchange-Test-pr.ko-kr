@@ -51,15 +51,21 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 외부 전자 메일 관리자 주소를 구성하려면 다음 구문을 사용합니다.
 
-    Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```
 
 예를 들어 외부 전자 메일 관리자 주소를 `postmaster@contoso.com` 값으로 설정하려면 다음 명령을 실행합니다.
 
-    Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```
 
 외부 전자 메일 관리자 주소를 기본값으로 되돌리려면 다음 명령을 실행합니다.
 
-    Set-TransportConfig -ExternalPostmasterAddress $null
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress $null
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -67,7 +73,9 @@ _**마지막으로 수정된 항목:** 2016-12-09_
 
 1.  사서함 서버에 대해 다음 명령을 실행하여 외부 전자 메일 관리자 주소 값을 확인합니다.
     
-        Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```powershell
+    Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```
 
 2.  외부 전자 메일 계정에서 DSN(배달 상태 알림)을 생성하는 Exchange 조직으로 메시지를 보냅니다. 예를 들어 해당 보낸 사람의 특정 키워드가 포함된 메시지에 대해 배달 못 함 보고서(NDR)를 보내도록 전송 규칙을 구성할 수 있습니다. DSN의 보낸 사람 전자 메일 주소가 지정한 값과 일치하는지 확인합니다.
 

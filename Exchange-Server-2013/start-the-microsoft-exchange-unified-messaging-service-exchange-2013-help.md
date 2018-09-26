@@ -57,5 +57,7 @@ Microsoft Exchange 통합 메시징 서비스가 사서함 서버에서 시작�
 
 2.  **열기** 상자에 다음 명령을 입력하고 Enter 키를 누릅니다.
     
-        net start MSExchangeUM
+    ```powershell
+    net start MSExchangeUM
+    ```
 

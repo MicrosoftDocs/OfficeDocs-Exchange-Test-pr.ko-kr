@@ -59,7 +59,9 @@ Exchange 관리 셸의 스크립트를 사용하여 사서함 서버에 이러�
 
 다음 명령을 실행합니다.
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```powershell
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -69,7 +71,9 @@ Exchange 관리 셸의 스크립트를 사용하여 사서함 서버에 이러�
 
 다음 명령을 실행합니다.
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -81,11 +85,15 @@ Microsoft Exchange Transport Service가 오류 없이 다시 시작되면 이 �
 
 기존 값에 영향을 주지 않고 내부 SMTP 서버의 IP 주소를 추가하려면 다음 명령을 실행합니다.
 
-    Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```
 
 이 예에서는 조직의 전송 구성에 내부 SMTP 서버 주소 10.0.1.10 및 10.0.1.11을 추가합니다.
 
-    Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```
 
 ## 이 단계의 작동 여부는 어떻게 확인합니까?
 
@@ -93,7 +101,9 @@ Microsoft Exchange Transport Service가 오류 없이 다시 시작되면 이 �
 
 1.  다음 명령을 실행합니다.
     
-        Get-TransportConfig | Format-List InternalSMTPServers
+  ```powershell
+  Get-TransportConfig | Format-List InternalSMTPServers
+  ```
 
 2.  적어도 하나의 유효한 내부 SMTP 서버 IP 주소가 표시되는지 확인합니다.
 

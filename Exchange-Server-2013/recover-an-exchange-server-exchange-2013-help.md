@@ -37,7 +37,6 @@ Microsoft Exchange Server 2013의 **Setup /m:RecoverServer** 스위치를 사용
 > <P><STRONG>msExchInstallPath</STRONG> 특성을 찾습니다. 이 특성은 현재 설치 경로를 저장합니다.</P></LI></OL>
 
 
-
 데이터 백업 및 복원과 관련된 다른 관리 작업에 대한 자세한 내용은 [백업, 복원 및 재해 복구](backup-restore-and-disaster-recovery-exchange-2013-help.md)를 참조하십시오.
 
 ## 시작하기 전에 알아야 할 내용
@@ -59,7 +58,6 @@ Microsoft Exchange Server 2013의 **Setup /m:RecoverServer** 스위치를 사용
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
 
-
 ## 손실된 Exchange Server 복구
 
 1.  손실 된 서버에 대 한 컴퓨터 계정을 다시 설정 합니다. 자세한 단계에 대 한 [컴퓨터 계정 재설정](https://go.microsoft.com/fwlink/p/?linkid=165388)를 참조 하십시오.
@@ -74,7 +72,9 @@ Microsoft Exchange Server 2013의 **Setup /m:RecoverServer** 스위치를 사용
 
 6.  Exchange 2013 설치 파일로 이동한 후 다음 명령을 실행합니다.
     
-        Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+    ```
 
 7.  설치가 완료되고 복구한 서버를 프로덕션에 배치하기 전, 이전에 서버에 있었던 모든 사용자 지정 설정을 다시 구성한 다음 서버를 다시 시작합니다.
 

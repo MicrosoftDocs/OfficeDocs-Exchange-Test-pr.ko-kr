@@ -67,7 +67,9 @@ Exchange 2013 클라이언트 액세스 서버를 통해 아웃 바운드 메시
 
 송신 커넥터에 `$true` 를 *FrontendProxyEnabled* 매개 변수를 설정 하는이 예제입니다.
 
-    Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```powershell
+Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

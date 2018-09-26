@@ -43,11 +43,15 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
     
     Exchange 2010의 경우 다음 명령을 실행합니다. 이 명령은 부하 분산 장치를 프로비저닝하는 사서함에서 사서함 데이터베이스를 제외합니다. 그러면 이 데이터베이스에 새 사서함이 자동으로 추가되지 않습니다.
     
-        New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```powershell
+    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```
     
     Exchange 2007의 경우 다음 명령을 실행합니다.
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```
     
 
     > [!NOTE]
@@ -57,17 +61,19 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
 
 3.  새 사서함 데이터베이스 내에서 프록시 사서함을 만들고 주소록에서 해당 사서함을 숨깁니다. 이 사서함의 SMTP는 자동 검색에서 *DefaultPublicFolderMailbox* SMTP로 반환되므로 클라이언트는 이 SMTP를 확인하여 공용 폴더 액세스를 위해 레거시 Exchange 서버에 연결할 수 있습니다.
     
-    ```
+    ```powershell
     New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
 
-    ```
+    ```powershell
     Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
     ```
 
 4.  Exchange 2010의 경우 자동 검색에서 프록시 공용 폴더 사서함을 반환하도록 설정합니다. Exchange 2007의 경우에는 이 단계를 수행할 필요가 없습니다.
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5.  조직의 모든 공용 폴더 서버에 대해 위의 단계를 반복합니다.
 
@@ -77,7 +83,9 @@ Exchange 2013 또는 Exchange 2016 사용자 액세스 Exchange 2010 또는 이�
 
 Exchange Server 2013 온-프레미스 사용자가 레거시 공용 폴더에 액세스하도록 허용합니다. 이렇게 하려면 [Step 2: Make remote public folders discoverable](https://docs.microsoft.com/ko-kr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)에서 만든 모든 프록시 공용 폴더 사서함을 가리킵니다. CU5 이상 업데이트가 설치된 Exchange 2013 서버에서 다음 명령을 실행합니다.
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```
 
 
 > [!NOTE]

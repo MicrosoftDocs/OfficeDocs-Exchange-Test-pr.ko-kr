@@ -57,5 +57,7 @@ VoIP 게이트웨이, IP PBX 또는 SBC(Session Borders Controller)가 SIP 표�
 
 이 예에서는 `MyClientAccessServer`라는 클라이언트 액세스 서버에 대해 TCP 수신 대기 포트를 5566으로 설정합니다.
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```
 

@@ -57,7 +57,9 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 메시지 추적을 구성하려면 다음 명령을 실행합니다.
 
-    Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```powershell
+Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버에 다음과 같은 메시지 추적 로그 설정을 구성합니다.
 
@@ -71,8 +73,9 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
-
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]
 > <UL>
@@ -87,11 +90,15 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 이 예에서는 Mailbox01이라는 사서함 서버의 메시지 추적 로그에서 메시지 제목 기록을 사용하지 않도록 설정합니다.
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 이 예에서는 Mailbox01이라는 사서함 서버에서 메시지 추적을 사용하지 않도록 설정합니다.
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -99,7 +106,8 @@ _**마지막으로 수정된 항목:** 2013-02-18_
 
 1.  셸에서 다음 명령을 실행합니다.
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
-
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```
 2.  표시된 값이 구성한 값인지 확인합니다.
 

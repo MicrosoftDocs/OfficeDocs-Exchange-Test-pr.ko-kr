@@ -63,14 +63,13 @@ Exchange Server 2013 EAC 또는 셸을 사용 하 여 인증서를 관리할 수
 
 다음 명령을 실행 합니다.
 
-  ```
-    $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
+  ```powershell
+  $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
   ```
   
+  ```powershell
+  $reqfile | out-file c:\certreq.txt
   ```
-    $reqfile | out-file c:\certreq.txt
-  ```
-
 ## 작동 여부는 어떻게 확인합니까?
 
 자체 서명 된 인증서를 만든 경우 새로 만든된 인증서는 인증서 관리 UI에에서 표시 됩니다. 인증 기관에서 인증서 요청을 만든 경우에 지정한 위치에 인증서 요청 파일이 됩니다. 인증 기관에는이 파일을 보냅니다.

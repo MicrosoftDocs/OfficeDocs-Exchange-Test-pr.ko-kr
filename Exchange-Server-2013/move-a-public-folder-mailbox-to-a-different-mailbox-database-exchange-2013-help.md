@@ -47,7 +47,9 @@ _**마지막으로 수정된 항목:** 2015-07-21_
 
 이 예에서는 공용 폴더 사서함 PF\_SanFrancisco를 사서함 데이터베이스 MBX\_DB01로 이동시키는 이동 요청을 시작합니다.
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))를 참조하십시오.
 
@@ -57,19 +59,25 @@ _**마지막으로 수정된 항목:** 2015-07-21_
 
 이 예에서는 공용 폴더 사서함 PF\_SanFrancisco를 사서함 데이터베이스 MBX\_DB01로 이동하는 이동 요청을 시작하고 이동 요청이 완료될 준비가 되면 이 요청을 일시 중단합니다.
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd351123\(v=exchg.150\))를 참조하십시오.
 
 이 예에서는 공용 폴더 사서함 PF\_SanFrancisco에 대해 진행 중인 사서함 이동의 상태를 검색합니다.
 
-    Get-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Get-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Get-MoveRequest](https://technet.microsoft.com/ko-kr/library/dd335227\(v=exchg.150\))를 참조하십시오.
 
 이동 요청 상태가 \[Suspended\]로 설정되면 요청을 다시 시작할 수 있습니다. 이 예에서는 공용 폴더 사서함 PF\_SanFrancisco에 대한 이동 요청을 다시 시작합니다.
 
-    Resume-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Resume-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Resume-MoveRequest](https://technet.microsoft.com/ko-kr/library/ee332320\(v=exchg.150\))를 참조하십시오.
 
@@ -77,7 +85,9 @@ _**마지막으로 수정된 항목:** 2015-07-21_
 
 이동 요청이 만들어졌는지 확인하려면 다음 명령을 실행합니다.
 
-    Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```powershell
+Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```
 
 상태가 `Completed`이면 이동 요청이 정상적으로 수행된 것입니다.
 

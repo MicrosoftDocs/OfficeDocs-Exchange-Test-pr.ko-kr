@@ -254,11 +254,15 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
 
 6.  다음 명령을 실행합니다.
     
-        Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+    ```powershell
+    Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+    ```
 
 7.  이 예제에서는 adfs.contoso.com과 같이 명명 된 페더레이션 서비스에 대 한 FsGmsa 라는 새 GMSA 계정을 만듭니다. 페더레이션 서비스 이름에는 클라이언트에 게 표시 되는 값입니다.
     
-        New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
+    ```powershell
+    New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
+    ```
 
 8.  **구성 데이터베이스 지정** 페이지에서 <strong>Windows 내부 데이터베이스를 사용하여 이 서버에 데이터베이스를 만듭니다.</strong>를 선택하고 **다음**을 클릭합니다.
 
@@ -272,11 +276,11 @@ Active Directory Federation Services를 구성하려면 다음을 수행합니�
 
 다음 Windows PowerShell 명령을 앞의 단계와 동일한 작업을 수행 합니다.
 
-```
+```powershell
 Import-Module ADFS
 ```
 
-```
+```powershell
 Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
 ```
 
@@ -350,7 +354,9 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 6.  **규칙 구성** 페이지의 **규칙 유형 선택** 단계에서 **클레임 규칙 이름** 아래에 클레임 규칙의 이름을 입력합니다. **ActiveDirectoryUserSID**와 같이 클레임 규칙을 설명하는 이름을 사용합니다. **사용자 지정 규칙**에 이 규칙에 대한 다음 클레임 규칙 언어 구문을 입력합니다.
     
-        c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+    ```powershell
+    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+    ```
 
 7.  **규칙 구성** 페이지에서 **마침**을 클릭합니다.
 
@@ -360,7 +366,9 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 10. **규칙 구성** 페이지의 **규칙 유형 선택** 단계에서 **클레임 규칙 이름** 아래에 클레임 규칙의 이름을 입력합니다. **ActiveDirectoryUPN**과 같이 클레임 규칙을 설명하는 이름을 사용합니다. **사용자 지정 규칙**에 이 규칙에 대한 다음 클레임 규칙 언어 구문을 입력합니다.
     
-        c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+    ```powershell
+    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+    ```
 
 11. **마침**을 클릭합니다.
 
@@ -378,23 +386,29 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 **IssuanceAuthorizationRules.txt에는 다음 내용이 포함되어 있습니다.**
 
-    @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+```powershell
+@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+```
 
 **IssuanceTransformRules.txt에는 다음 내용이 포함되어 있습니다.**
 
-    @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
-    
-    @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```powershell
+@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
+
+@RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```
 
 **다음 명령을 실행 합니다.**
 
-    [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
-    
-    [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
-    
-    Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
-    
-    Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```powershell
+[string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
+
+[string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
+
+Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+
+Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```
 
 ## 4 단계-웹 응용 프로그램 프록시 역할 서비스 (선택 사항)를 설치 합니다.
 
@@ -430,7 +444,9 @@ EAC에 대해 신뢰 당사자 트러스트를 만들려면 위의 단계를 다
 
 다음 Windows PowerShell cmdlet은 위의 단계와 동일한 작업을 수행합니다.
 
-    Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```powershell
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```
 
 ## 5 단계-웹 응용 프로그램 프록시 역할 서비스 (선택 사항) 구성
 
@@ -460,7 +476,9 @@ AD FS 서버에 연결하도록 웹 응용 프로그램 프록시를 구성해�
 
 다음 Windows PowerShell cmdlet은 위의 단계와 동일한 작업을 수행합니다.
 
-    Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```powershell
+Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```
 
 ## 6 단계-웹 응용 프로그램 프록시 (선택 사항)를 사용 하 여 Outlook Web App 및 EAC를 게시
 
@@ -500,11 +518,15 @@ AD FS 서버에 연결하도록 웹 응용 프로그램 프록시를 구성해�
 
 다음 Windows PowerShell cmdlet은 위의 Outlook Web App용 절차와 동일한 작업을 수행합니다.
 
-    Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/owa/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/owa/' -Name 'OWA' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Outlook Web App'
+```powershell
+Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/owa/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/owa/' -Name 'OWA' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Outlook Web App'
+```
 
 다음 Windows PowerShell cmdlet은 위의 EAC용 절차와 동일한 작업을 수행합니다.
 
-    Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+```powershell
+Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+```
 
 다음이 단계를 완료 한 후 웹 응용 프로그램 프록시는 Outlook Web App 및 EAC 클라이언트에 대 한 AD FS 인증을 수행 합니다를 강조 표시 됩니다 또한 프록시 자신을 대신해 Exchange에 연결 합니다. AD FS 인증을 위해 Exchange 자체 구성, 구성을 테스트 하려면 10 단계로 이동 하므로 필요가 없습니다.
 
@@ -520,8 +542,10 @@ Exchange 2013에서 Outlook Web App 및 EAC에 대해 클레임 기반 인증에
 
 Exchange 관리 셸에서 다음 명령을 실행 합니다.
 
-    $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
-    Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
+```powershell
+$uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
+Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
+```
 
 
 > [!NOTE]
@@ -543,11 +567,15 @@ OWA 및 ECP 가상 디렉터리에 대해 유일한 인증 방법으로 AD FS �
 
 Exchange 관리 셸을 사용 하 여 ECP 가상 디렉터리를 구성 합니다. 셸 창에서 다음 명령을 실행 합니다.
 
-    Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false
+```powershell
+Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false
+```
 
 Exchange 관리 셸을 사용 하 여 OWA 가상 디렉터리를 구성 합니다. 셸 창에서 다음 명령을 실행 합니다.
 
-    Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
+```powershell
+Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
+```
 
 
 > [!NOTE]
@@ -563,7 +591,9 @@ Exchange 가상 디렉터리 변경을 비롯하여 필수 단계를 모두 완�
 
   - Windows PowerShell 사용:
     
-        Restart-Service W3SVC,WAS -noforce
+    ```powershell
+    Restart-Service W3SVC,WAS -noforce
+    ```
 
   - 명령줄 사용: **시작** 및 **실행**을 차례로 클릭하고 `IISReset /noforce`를 입력한 다음 **확인**을 클릭합니다.
 

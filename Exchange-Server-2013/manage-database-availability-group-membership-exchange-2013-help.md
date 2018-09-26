@@ -63,15 +63,21 @@ DAG와 관련된 다른 관리 작업에 대한 자세한 내용은 [데이터�
 
 이 예에서는 MBX1이라는 사서함 서버를 DAG1라는 DAG에 추가합니다.
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 이 예에서는 DAG DAG1에서 사서함 서버 MBX1을 제거합니다. 이 명령을 실행하기 전에 사서함 서버에 복제된 데이터베이스가 없는지 확인합니다.
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 이 예에서는 DAG DAG2에서 사서함 서버 MBX4의 구성 설정을 제거합니다. MBX4는 장기 오프라인 상태가 예상되므로 나머지 온라인 DAG 구성원과의 쿼럼을 설정하기 위해 오프라인 상태에 있는 동안 DAG에서 구성이 제거되고 있습니다.
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -81,7 +87,9 @@ DAG 구성원 자격을 성공적으로 관리했는지 확인하려면 다음 �
 
   - 셸에서 다음 명령을 실행하여 DAG 구성원 정보를 표시합니다.
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## 자세한 내용
 

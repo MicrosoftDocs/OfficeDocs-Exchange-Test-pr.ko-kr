@@ -63,11 +63,15 @@ UM 사서함과 관련된 추가 작업에 대한 자세한 내용은 [음성 �
 
 이 예에서는 Outlook Voice Access로 전화를 거는 사서함 정책과 연결된 사용자에 대해 `MyUMMailboxPolicy`라는 UM 사서함 정책에서 PIN 없는 음성 메일 액세스를 사용하도록 설정합니다.
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## 셸을 사용하여 UM 사용 가능 사용자의 사서함에서 음성 메일 대해 PIN 없는 액세스가 가능하도록 설정
 
 이 예에서는 Outlook Voice Access로 전화를 걸어 `tonys@contoso.com`이라는 사서함에 연결하는 사용자에 대해 PIN 없는 음성 메일 액세스를 사용하도록 설정합니다.
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 

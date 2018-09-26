@@ -67,7 +67,9 @@ EAC 또는 셸을 사용하여 자체 서명된 인증서, 내부 PKI(공개 키
 
 이 예에서는 사용자 이름과 암호를 입력하라는 메시지가 표시된 후 지문 A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC가 포함된 인증서를 파일로 내보냅니다.
 
-    $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+  ```powershell
+  $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+  ```
 
 이 예에서는 다음을 수행합니다.
 
@@ -78,11 +80,11 @@ EAC 또는 셸을 사용하여 자체 서명된 인증서, 내부 PKI(공개 키
 3.  사용자 이름과 암호를 입력한 후 인증서를 파일로 출력합니다.
 
 <!-- end list -->
-  ```
+  ```powershell
     $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
   ```
-  ```
-    Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```powershell
+  Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
   ```
 
 ## EAC를 사용하여 인증서 가져오기
@@ -97,5 +99,7 @@ EAC 또는 셸을 사용하여 자체 서명된 인증서, 내부 PKI(공개 키
 
 이 예에서는 사용자 이름과 암호를 입력한 후 d:\\certificates\\exchange\\SelfSignedUMCert.pfx 인증서 파일에서 인증서를 가져옵니다.
 
-    Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+  ```powershell
+  Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+  ```
 

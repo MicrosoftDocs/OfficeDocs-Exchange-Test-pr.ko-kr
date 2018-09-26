@@ -91,7 +91,9 @@ SharePoint에서 수명 주기 응용 프로그램이 사이트 사서함을 닫
 
 다음 명령을 사용하여 삭제하도록 표시된 사이트 사서함을 검색하고 제거할 수 있습니다.
 
-    Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+  ```powershell
+  Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+  ```
 
 사이트 사서함은 항목 수준에서 보존을 지원하지 않습니다. 사이트 사서함의 보존은 프로젝트 수준에서 이루어지므로 전체 사이트 사서함이 삭제될 때 보존된 항목이 삭제됩니다.
 
@@ -100,10 +102,8 @@ SharePoint에서 수명 주기 응용 프로그램이 사이트 사서함을 닫
 SharePoint의 eDiscovery Console을 사용하면 사용자 사서함 또는 사이트 사서함에 대해 키워드 검색을 수행할 수 있으므로 사이트 사서함이 원본 위치 eDiscovery 범위의 일부가 될 수 있습니다. 또한 사이트 사서함을 법적 보유 상태로 설정할 수 있습니다. 자세한 내용은 [원본 위치 eDiscovery](https://docs.microsoft.com/ko-kr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)를 참조하십시오.
 
 
-> [!NOTE]
+> [!NOTE]  
 > 사이트 사서함 Office 365 에서 법적 대기 시키려면 Exchange Online (계획 2) 라이선스를 할당 해야 합니다. 사이트 사서함 Exchange Online (계획 1) 라이선스를 할당 하는 경우에 보류에 추가 하는 별도 Exchange Online 보관 라이선스가 할당 해야 합니다.
-
-
 
 맨 위로 이동
 

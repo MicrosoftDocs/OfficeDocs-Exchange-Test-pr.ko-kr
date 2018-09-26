@@ -63,23 +63,27 @@ UM 자동 전화 교환과 관련된 추가 관리 작업에 대한 자세한 �
 
 이 예에서는 d:\\UMPrompts의 환영 인사말 파일 welcomegreeting.wav를 UM 다이얼 플랜 `MyUMDialPlan`으로 가져옵니다.
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
-
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 이 예에서는 d:\\UMPrompts의 환영 인사말 파일 welcomegreeting.wav를 UM 자동 전화 교환 `MyUMAutoAttendant`로 가져옵니다.
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
-
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 ## 셸을 사용하여 UM 다이얼 플랜 및 자동 전화 교환에서 사용자 지정 인사말, 알림, 메뉴 및 음성 안내 내보내기
 
 이 예에서는 UM 다이얼 플랜 `MyUMDialPlan`의 환영 인사말을 내보내고 welcomegreeting.wav 파일로 저장합니다.
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
-
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 이 예에서는 UM 자동 전화 교환 `MYUMAutoAttendant`의 업무 시간 환영 인사말을 내보내고 BusinessHoursWelcomeGreeting.wav 파일로 저장합니다.
 
-    $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
-
+```powershell
+$prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```

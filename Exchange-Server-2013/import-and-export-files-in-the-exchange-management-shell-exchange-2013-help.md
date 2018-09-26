@@ -49,11 +49,15 @@ Exchange 2013에서 파일을 가져오기 위한 구문은 로컬 컴퓨터나 
 
 셸은 Exchange 2013 cmdlet에 보낼 파일과 데이터를 수락하는 매개 변수를 알아야 합니다. 이렇게 하려면 다음 구문을 사용합니다.
 
-    <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```powershell
+<Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```
 
 예를 들어 다음 명령은 가상의 **Import-SomeData** cmdlet에 있는 *FileData* 매개 변수에 C:\\MyData.dat 파일을 가져옵니다.
 
-    Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```powershell
+Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```
 
 명령을 실행할 때 다음과 같은 작업이 수행됩니다.
 
@@ -71,8 +75,10 @@ Exchange 2013에서 파일을 가져오기 위한 구문은 로컬 컴퓨터나 
 
 일부 cmdlet은 앞의 구문과 동일한 작업을 수행하는 다음 대체 구문을 사용합니다.
 
-    [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
-    Import-SomeData -FileData $Data
+```powershell
+[Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
+Import-SomeData -FileData $Data
+```
 
 이 대체 구문을 사용하여 동일한 프로세스가 발생합니다. 유일한 차이점은 전체 작업을 한 번에 수행하는 대신에 로컬 파일에서 검색된 데이터가 작성 후 참조할 수 있는 변수에 저장된다는 것입니다. 그런 다음 로컬 파일의 내용을 **Import-SomeData** cmdlet에 전달하기 위해 가져오기 명령에서 변수가 사용됩니다. 두 단계로 구성된 이 프로세스는 로컬 파일의 데이터를 둘 이상의 명령에서 사용하려는 경우에 유용합니다.
 
@@ -142,7 +148,9 @@ Exchange 2013에서 파일을 내보내기 위한 구문은 원격 Exchange 2013
 
 셸은 **FileData** 속성에 저장된 데이터를 로컬 컴퓨터에 저장하려고 한다는 것을 알아야 합니다. 이렇게 하려면 다음 구문을 사용합니다.
 
-    <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }
+```command line
+<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+```
 
 예를 들어 다음 명령은 가상의 **Export-SomeData** cmdlet에 의해 만들어진 개체의 **FileData** 속성에 저장된 데이터를 내보냅니다. 내보낸 데이터는 로컬 컴퓨터에 지정한 파일(이 경우에는 MyData.dat)에 저장됩니다.
 
@@ -152,7 +160,9 @@ Exchange 2013에서 파일을 내보내기 위한 구문은 원격 Exchange 2013
 
 
 
-    Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```powershell
+Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```
 
 명령을 실행할 때 다음과 같은 작업이 수행됩니다.
 

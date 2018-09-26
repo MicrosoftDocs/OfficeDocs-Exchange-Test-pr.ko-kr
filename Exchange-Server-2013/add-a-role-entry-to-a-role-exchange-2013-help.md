@@ -55,11 +55,15 @@ cmdlet에 대한 액세스 권한을 부여하려면 연결된 관리 역할 항
 
 다음 구문을 사용하면 역할 항목을 상위 역할에 표시되는 대로 역할에 추가할 수 있습니다.
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet>
+```
 
 이 예에서는 Recipient Administrators 역할에 **Set-Mailbox** cmdlet을 추가합니다.
 
-    Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```powershell
+Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```
 
 이 명령은 상위 역할을 확인하고 역할 항목이 있으면 하위 역할에 추가합니다. 역할 항목이 이미 하위 역할에 있는 경우에는 *Overwrite* 매개 변수를 포함하여 기존 역할 항목을 덮어쓸 수 있습니다.
 
@@ -69,11 +73,15 @@ cmdlet에 대한 액세스 권한을 부여하려면 연결된 관리 역할 항
 
 상위 역할의 역할 항목을 추가하지만 하위 역할의 역할 항목에 특정 매개 변수만 포함하려면 다음 구문을 사용합니다.
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 이 예에서는 Help Desk 역할에 **Set-Mailbox** cmdlet을 추가하지만 하위 역할의 항목에 *DisplayName* 및 *EmailAddresses* 매개 변수만 포함합니다.
 
-    Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```powershell
+Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```
 
 이 명령은 상위 역할을 확인하고 역할 항목이 있으면 하위 역할에 추가합니다. 역할 항목이 이미 하위 역할에 있는 경우에는 *Overwrite* 매개 변수를 포함하여 기존 역할 항목을 덮어쓸 수 있습니다.
 
@@ -85,11 +93,15 @@ cmdlet에 대한 액세스 권한을 부여하려면 연결된 관리 역할 항
 
 상위 역할의 여러 항목을 하위 역할에 추가하려면 다음 구문을 사용합니다.
 
-    Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```powershell
+Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```
 
 이 예에서는 Mail Recipients 상위 역할에서 cmdlet 이름에 `Mailbox` 문자열이 포함된 모든 역할 항목을 Seattle Mail Recipients 하위 역할에 추가합니다.
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```
 
 하위 역할에 역할 항목이 이미 있는 경우 *Overwrite* 매개 변수를 포함하여 기존 역할 항목을 덮어쓸 수 있습니다.
 

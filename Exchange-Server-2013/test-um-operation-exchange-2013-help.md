@@ -47,15 +47,21 @@ _**마지막으로 수정된 항목:** 2013-06-25_
 
 이 예에서는 로컬 사서함 서버에서 연결 및 작동 테스트를 수행한 다음 VoIP(Voice over IP) 연결 정보를 표시합니다.
 
-    Test-UMConnectivity
+```powershell
+Test-UMConnectivity
+```
 
 이 예에서는 TCP 포트 5060에서 암호화되지 않은 들어오는 SIP 요청을 수신 대기하는 로컬 클라이언트 액세스 서버의 기능을 테스트합니다.
 
-    Test-UMConnectivity -ListenPort 5060
+```powershell
+Test-UMConnectivity -ListenPort 5060
+```
 
 이 예에서는 TCP 포트 5061에서 암호화된 들어오는 SIP 요청을 수신 대기하는 로컬 클라이언트 액세스 서버의 기능을 테스트합니다.
 
-    Test-UMConnectivity -ListenPort 5061
+```powershell
+Test-UMConnectivity -ListenPort 5061
+```
 
 
 > [!NOTE]

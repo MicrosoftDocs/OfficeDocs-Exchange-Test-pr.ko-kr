@@ -32,7 +32,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
   - 이 항목의 절차에 적용할 수 있는 바로 가기 키에 대한 자세한 내용은 [Exchange 관리 센터의 바로 가기 키](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)을 참조하세요.
 
 
-> [!TIP]
+> [!TIP]  
 > 문제가 있습니까? Exchange 포럼에서 도움을 요청하세요. 포럼 주소는 다음과 같습니다. <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, 또는 <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>
 
 
@@ -44,7 +44,7 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 클라이언트 액세스 서버의 프런트엔드 전송 서비스에서 전송 에이전트를 관리 하려면 Exchange 관리 셸을 사용할 수 없습니다. 대신, 클라이언트 액세스 서버에서 Windows PowerShell을 열고 다음 Exchange cmdlet에는 Windows PowerShell 세션을 가져올 수 해야 합니다.
 
 
-> [!WARNING]
+> [!WARNING]  
 > 프런트엔드 전송 서비스에서 전송 에이전트 관리 이외의 작업에 대 한 Windows PowerShell에서 Exchange cmdlet을 실행 하는 것은 지원 되지 않습니다. Windows PowerShell에서 Exchange cmdlet을 실행 하 여 Exchange 관리 셸 및 역할 기반 액세스 제어 rbac (역할)을 무시 하는 경우 발생할 수 있는 심각한 결과 있습니다. 항상 Exchange 관리 셸에서 Exchange cmdlet을 실행 해야 합니다. 자세한 내용은 <A href="release-notes-for-exchange-2013-exchange-2013-help.md">Exchange Server 2013 릴리스 정보</A>을 참조 하십시오.
 
 
@@ -53,13 +53,16 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 1.  클라이언트 액세스 서버에서 Windows PowerShell을 열고 다음 명령을 실행 합니다.
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-
+    ```powershell
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 2.  명령을 실행 하 여 설명한 것 처럼, 명령에 다음 값을 추가 하지만: `-TransportService FrontEnd`합니다.
     
     예, 클라이언트 액세스 서버의 프런트엔드 전송 서비스에 전송 에이전트를 보려면 다음 명령을 실행 합니다.
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## 셸을 사용 하 여 전송 에이전트를 설치 하려면
 
@@ -71,12 +74,14 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 설치 하려면 다음 구문을 사용 합니다.
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
-
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 이 예제에서는 사서함 서버의 전송 서비스에서 전송 에이전트 Contoso 라는 가상의 전송 에이전트를 설치 합니다.
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
-
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 ## 작동 여부는 어떻게 확인합니까?
 
 전송 에이전트 성공적으로 설치를 확인 하려면 `Get-TransportAgent` 명령을 실행 하 고 전송 에이전트가 나열 되는지 확인 합니다.
@@ -85,11 +90,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 사용 하도록 설정 하려면 다음 구문을 사용 합니다.
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 사서함 서버의 전송 서비스에서 Contoso 전송 에이전트 라는 전송 에이전트를 설정 하는이 예제입니다.
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -99,11 +108,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 사용 하지 않도록 설정 하려면 다음 구문을 사용 하십시오.
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 이 예에서는 사서함 서버의 전송 서비스에서 Fabirkam 전송 에이전트 라는 전송 에이전트를 비활성화 합니다.
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -113,15 +126,21 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트의 요약 목록을 보려면 다음 명령을 실행 합니다.
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 특정 전송 에이전트의 자세한 구성을 보려면 다음 명령을 실행 합니다.
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 이 예에서는 전송 규칙 에이전트 라는 전송 에이전트의 자세한 구성을 제공 합니다.
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## 셸을 사용 하 여 전송 에이전트의 우선순위를 구성 하려면
 
@@ -129,11 +148,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 기존 전송 에이전트의 우선순위를 수정 하려면 다음 명령을 실행 합니다.
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 사서함 서버의 전송 서비스에서 Contoso 전송 에이전트 라는 기존 전송 에이전트에 대 한 3의 우선순위 에이전트 값을 설정 하는이 예제입니다.
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 
@@ -145,11 +168,15 @@ _**마지막으로 수정된 항목:** 2015-04-08_
 
 전송 에이전트를 제거 하려면 다음 명령을 실행 합니다.
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 이 예에서는 사서함 서버의 전송 서비스에서 Fabrikam 전송 에이전트 라는 전송 에이전트를 제거 합니다.
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 작동 여부는 어떻게 확인합니까?
 

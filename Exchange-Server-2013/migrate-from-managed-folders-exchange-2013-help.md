@@ -262,13 +262,15 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 Contoso 관리되는 폴더 사서함 정책에 표시된 해당 관리되는 콘텐츠 설정을 기반으로 하여 보존 태그를 만듭니다.
 
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-RetentionPolicyTag](https://technet.microsoft.com/ko-kr/library/dd335226\(v=exchg.150\))를 참조하십시오.
 
@@ -282,13 +284,15 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 Contoso 관리되는 폴더 사서함 정책에 표시된 관리되는 폴더 및 해당 관리되는 콘텐츠 설정을 기반으로 하여 보존 태그를 만듭니다. 보존 설정은 *ManagedFolderToUpgrade* 매개 변수를 사용하지 않고 수동으로 지정합니다.
 
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-RetentionPolicyTag](https://technet.microsoft.com/ko-kr/library/dd335226\(v=exchg.150\))를 참조하십시오.
 
@@ -304,7 +308,9 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 보존 정책 RP-Corp를 만들고 새로 만든 보존 태그를 정책에 연결합니다.
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```powershell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [New-RetentionPolicy](https://technet.microsoft.com/ko-kr/library/dd297970\(v=exchg.150\))를 참조하십시오.
 
@@ -314,7 +320,9 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 Ken Kwok 사서함에서 관리되는 폴더 사서함 정책 및 모든 관리되는 폴더를 제거합니다. 메시지가 있는 관리되는 폴더는 제거되지 않습니다.
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 4단계: 사용자 사서함에 보존 정책 적용
 
@@ -328,7 +336,9 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
 
 이 예에서는 새로 만든 보존 정책 RP-Corp를 사서함 사용자 Ken Kwok에 적용합니다.
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 구문과 매개 변수에 대한 자세한 내용은 [Set-Mailbox](https://technet.microsoft.com/ko-kr/library/bb123981\(v=exchg.150\))를 참조하십시오.
 
@@ -340,11 +350,15 @@ MRM과 관련된 기타 관리 작업에 대한 자세한 내용은 [메시징 �
     
     이 명령은 조직에서 모든 사서함에 적용된 보존 정책 및 해당 보존 상태를 검색합니다.
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - 관리되는 폴더 도우미가 보존 정책을 포함한 사서함을 처리하고 나면 [Get-RetentionPolicyTag](https://technet.microsoft.com/ko-kr/library/dd298009\(v=exchg.150\)) cmdlet을 사용하여 사용자 사서함에서 프로비전된 보존 태그를 검색할 수 있습니다.
     
     이 명령은 April Stewart의 사서함에 실제로 적용된 보존 태그를 검색합니다.
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

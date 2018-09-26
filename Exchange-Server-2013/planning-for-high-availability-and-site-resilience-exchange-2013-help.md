@@ -315,7 +315,9 @@ Exchange 서버 및 역방향 프록시 서버에 사용하는 인증서의 수�
 
 외부에서 Outlook 사용 클라이언트의 경우, 각 데이터 센터에 한 가지 SAN(주체 대체 이름)을 사용하고 인증서에 여러 호스트 이름을 포함하는 것이 좋습니다. 데이터베이스, 서버 또는 데이터 센터 전환 후 외부에서 Outlook 사용 연결을 확인하려면 각 인증서에 동일한 인증서 사용자 이름을 사용하고, Microsoft 표준 형식(msstd)에 동일한 사용자 이름으로 Outlook 공급자 구성 개체 Active Directory를 구성해야 합니다. 예를 들어, 인증서 사용자 이름 mail.contoso.com을 사용하는 경우 특성을 다음과 같이 구성합니다.
 
-    Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```powershell
+Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```
 
 Exchange와 통합되는 일부 응용 프로그램에는 추가 인증서를 사용해야 할 수도 있는 특정 인증서 요구 사항이 있습니다. Exchange 2013은 OCS(Office Communications Server)와 함께 사용할 수 있습니다. OCS에는 인증서 사용자 이름에 OCS 서버 이름을 사용하는 1024비트 이상의 인증서가 필요합니다. 인증서 사용자 이름에 OCS 서버 이름을 사용하면 외부에서 Outlook 사용이 제대로 작동하지 않으므로, OCS 환경에 별도의 추가 인증서를 사용해야 합니다.
 

@@ -67,11 +67,15 @@ MRS 프록시 끝점을 사용하도록 설정할 클라이언트 액세스 서�
 
 다음 명령은 EXCH-SRV-01이라는 클라이언트 액세스 서버에서 MRS 프록시 끝점을 사용하도록 설정합니다.
 
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+  ```powershell
+  Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+  ```
 
 다음 명령은 Exchange 조직의 모든 클라이언트 액세스 서버에서 MRS 프록시 끝점을 사용하도록 설정합니다.
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 
 > [!IMPORTANT]
@@ -93,7 +97,9 @@ MRS 프록시 끝점이 사용하도록 설정되었는지 확인하려면 다�
 
 셸에서 다음 명령을 실행합니다.
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 *MRSProxyEnabled* 매개 변수가 `True`로 설정되었는지 확인합니다.
 
@@ -101,11 +107,11 @@ MRS 프록시 끝점이 사용하도록 설정되었는지 확인할 수 있는 
 
 다음 예에서는 corp.contoso.com 포리스트에서 서버와의 연결을 테스트합니다.
 
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
 

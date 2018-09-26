@@ -65,7 +65,9 @@ _**마지막으로 수정된 항목:** 2016-08-09_
 
 이 예에서는 C:\\My Documents\\DLP Backup.xml 파일의 사용자 지정 DLP 정책 템플릿 파일을 가져옵니다. XML 파일에서 DLP 정책 컬렉션 가져오기 (영문)를 제거 하거나 조직에 정의 된 모든 기존 DLP 정책을 덮어씁니다. 가져오기 및 현재 DLP 정책을 덮어쓰기 전에 현재 DLP 정책 모음의 백업이 되어있는지 확인 합니다.
 
-    Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```powershell
+Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```
 
 ## 자세한 내용
 

@@ -86,8 +86,10 @@ Exchange 2013을 사용할 수 있게 조직을 준비하는 첫 번째 단계�
 2.  Windows 명령 프롬프트 창을 열고 Exchange 설치 파일을 다운로드한 위치로 이동합니다.
 
 3.  다음 명령을 실행하여 스키마를 확장합니다.
-    
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+
+    ```powershell
+    Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```
 
 설치 프로그램이 스키마 확장을 끝내면 Active Directory가 모든 도메인 컨트롤러로 변경 내용을 복제하는 동안 기다려야 합니다. 복제가 어떻게 진행되는지 확인하려면 `repadmin` 도구를 사용할 수 있습니다. `Repadmin`은 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2의 Active Directory 도메인 서비스 도구 기능에 포함됩니다. 이 도구의 사용 방법에 대한 자세한 내용은 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)을 참조하세요.
 
@@ -123,7 +125,9 @@ Exchange를 위해 Active Directory를 준비하기 전에 다음 사항에 유�
 
 2.  다음 명령을 실행합니다.
     
-        Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+    ```
 
 설치 프로그램이 Exchange를 위한 Active Directory 준비를 끝내면 Active Directory가 모든 도메인 컨트롤러로 변경 내용을 복제하는 동안 기다려야 합니다. 복제가 어떻게 진행되는지 확인하려면 `repadmin` 도구를 사용할 수 있습니다. `repadmin`은 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2의 Active Directory 도메인 서비스 도구 기능에 포함됩니다. 이 도구의 사용 방법에 대한 자세한 내용은 [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)을 참조하세요.
 
@@ -149,7 +153,9 @@ Active Directory 포리스트의 모든 도메인을 준비하기 전에 다음�
 
 2.  다음 명령을 실행합니다.
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 준비할 Active Directory 도메인 선택
 
@@ -175,7 +181,9 @@ Active Directory 포리스트에서 모든 도메인을 준비하기 전에 다�
 
 2.  다음 명령을 실행합니다. 준비할 도메인의 FQDN을 포함합니다. 명령을 실행할 도메인을 준비하려면 FQDN을 포함할 필요가 없습니다.
     
-        Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+    ```
 
 3.  Exchange 서버를 설치하려고 하거나 메일 사용 가능 사용자가 위치할 각 Active Directory 도메인에 대해 이러한 단계를 반복합니다.
 

@@ -53,35 +53,47 @@ _**마지막으로 수정된 항목:** 2014-05-05_
 
 특정 큐에서 특정 메시지를 내보내려면 다음 명령을 실행합니다.
 
-    Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```powershell
+Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```
 
 이 예에서는 서버 Mailbox01의 도메인 contoso.com 배달 큐에 있는 1234라는 **InternalMessageID**를 갖고 있는 메시지의 복사본을 D:\\Contoso Export 경로의 export.eml 파일로 내보냅니다.
 
-    Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```powershell
+Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```
 
 ## 셸을 사용하여 특정 큐에서 모든 메시지 내보내기
 
 특정 큐에서 모든 메시지를 내보내고 각 메시지의 **InternetMessageID** 값을 파일 이름으로 사용하려면 다음 구문을 사용합니다.
 
-    Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 **InternetMessageID** 값에는 꺾쇠 괄호(\> 및 \<)가 포함되어 있으며 꺾쇠 괄호는 파일 이름에서 허용되지 않으므로 제거해야 합니다.
 
 이 예에서는 Mailbox01 서버의 contoso.com 배달 큐에 있는 모든 메시지의 복사본을 D:\\Contoso Export라는 로컬 디렉터리로 내보냅니다.
 
-    Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 ## 셸을 사용하여 서버의 모든 큐에서 특정 메시지 내보내기
 
 서버의 모든 큐에서 특정 메시지를 내보내고 각 메시지의 **InternetMessageID** 값을 파일 이름으로 사용하려면 다음 구문을 사용합니다.
 
-    Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 **InternetMessageID** 값에는 꺾쇠 괄호(\> 및 \<)가 포함되어 있으며 꺾쇠 괄호는 파일 이름에서 허용되지 않으므로 제거해야 합니다.
 
 이 예에서는 Mailbox01 서버의 모든 큐에서 contoso.com 도메인의 보낸 사람이 보낸 모든 메시지 복사본을 D:\\Contoso Export라는 로컬 디렉터리로 내보냅니다.
 
-    Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 
 > [!NOTE]
